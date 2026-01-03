@@ -75,6 +75,7 @@ def generate_response(instruction: str, context: str, max_tokens: int = 256, tem
         do_sample=True,
         temperature=temperature,
         top_p=0.9,
+        repetition_penalty=1.2,
         streamer=streamer,
     )
     

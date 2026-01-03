@@ -20,28 +20,25 @@ class MDTOrchestrator:
         """
         yield "🏥 *Starting Virtual MDT Analysis...*\n\n"
         
-        # Simple, direct instruction without external dependencies
-        instruction = """You are leading a Virtual MDT. Analyze this patient case and provide a CONCISE care plan.
+        # Ultra-Strict Prompt to prevent looping
+        instruction = """You are leading a Virtual MDT. Analyze this patient case and provide a SHORT summary.
+        
+OUTPUT FORMAT:
+**Patient**: [Name/Age/Condition]
 
-FORMAT YOUR RESPONSE EXACTLY LIKE THIS:
-## MDT Discussion Summary
+**Key Findings**:
+* [Finding 1]
+* [Finding 2]
 
-**Patient:** [1 sentence summary]
-
-### Key Specialist Findings:
-- 🩹 Tissue Viability: [1 bullet point]
-- 💚 Relational Care: [1 bullet point]
-- 🛡️ Patient Safety: [PASS/FAIL for safety gates]
-
-### Recommended Care Actions:
+**Actions**:
 1. [Action 1]
 2. [Action 2]
-3. [Action 3]
 
-DO NOT REPEAT YOURSELF. BE EXTREMELY CONCISE. MAX 200 WORDS TOTAL."""
+KEEP IT UNDER 100 WORDS. DO NOT REPEAT SECTIONS."""
         
         final_output = ""
-        for chunk in self.generate_fn(instruction, patient_case, max_tokens=250):
+        # Increased max_tokens slightly to allow natural finish, but reliance is on repetition_penalty
+        for chunk in self.generate_fn(instruction, patient_case, max_tokens=300):
             final_output = chunk
             yield chunk
         
