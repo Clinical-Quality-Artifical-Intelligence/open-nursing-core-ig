@@ -21,6 +21,10 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git remote add hf https://NurseCitizenDeveloper:$HF_TOKEN@huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing
-          # Pushes only the contents of hf_space/ to the HF Space root
-          git push hf `git subtree split --prefix hf_space main`:main --force
+          cd hf_space
+          git init
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add .
+          git commit -m "Deploy to Hugging Face Space"
+          git push --force https://NurseCitizenDeveloper:$HF_TOKEN@huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing HEAD:main
