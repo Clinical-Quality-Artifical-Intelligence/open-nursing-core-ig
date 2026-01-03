@@ -9,6 +9,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStream
 from threading import Thread
 from huggingface_hub import login
 from mdt_orchestrator import MDTOrchestrator
+from rag_engine import RelationalRAG
 
 # Login to Hugging Face (Requires HF_TOKEN secret in Space settings)
 if os.getenv("HF_TOKEN"):
@@ -433,6 +434,67 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                     ["65-year-old man with dementia, frequent falls. Skin intact but reluctant to mobilise. Wife 'Dadi' is his main carer and prefers to be involved in all decisions."],
                 ],
                 inputs=mdt_input,
+            )
+
+        # Tab 8: Evidence Hub (RAG)
+        with gr.TabItem("📚 Evidence Hub"):
+            gr.Markdown("""
+            ### Relational Evidence Hub
+            Search and chat with the **FONS Knowledge Base** and **Relational Care standards**. 
+            This tool uses Retrieval-Augmented Generation (RAG) to ensure answers are based on evidence.
+            """)
+            
+            with gr.Row():
+                with gr.Column(scale=1):
+                    rag_query = gr.Textbox(
+                        label="Search the Knowledge Base",
+                        placeholder="e.g., 'What are the FONS principles for dementia care?'",
+                        lines=2,
+                    )
+                    rag_btn = gr.Button("🔍 Search & Chat", variant="primary")
+                
+                with gr.Column(scale=2):
+                    rag_output = gr.Markdown(
+                        label="Evidence-Based Response",
+                        value="*Search results will appear here...*",
+                    )
+            
+            # Initialize RAG for the standalone tab
+            tab_rag = RelationalRAG("knowledge_base/fons_knowledge.jsonl")
+            
+            def chat_with_evidence(query: str):
+                """Search evidence and then generate a grounded response."""
+                results = tab_rag.search(query)
+                context = tab_rag.format_context(results)
+                
+                yield "⏳ *Retrieving evidence and drafting response...*\n\n"
+                
+                instruction = f"Answer the following question based ONLY on the EVIDENCE provided below. If the evidence doesn't contain the answer, say so.\n\n{context}"
+                
+                full_response = f"### 📚 Evidence-Based Answer\n\n"
+                for chunk in generate_response(instruction, query, max_tokens=500):
+                    full_response = "### 📚 Evidence-Based Answer\n\n" + chunk
+                    yield full_response
+                
+                full_response += "\n\n---\n#### 🔍 Sources Used:\n"
+                for i, res in enumerate(results):
+                    full_response += f"- [{res['source']}] {res['content'][:100]}...\n"
+                
+                yield full_response
+
+            rag_btn.click(
+                fn=chat_with_evidence,
+                inputs=rag_query,
+                outputs=rag_output,
+            )
+            
+            gr.Examples(
+                examples=[
+                    ["What are the key principles of person-centred practice according to FONS?"],
+                    ["How can I document care for someone from a diverse background with respect?"],
+                    ["What does 'shared decision making' look like in a nursing context?"],
+                ],
+                inputs=rag_query,
             )
     
     # Footer

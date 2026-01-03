@@ -13,6 +13,7 @@ The agents are:
 
 from dataclasses import dataclass
 from typing import Generator, List
+from rag_engine import RelationalRAG
 
 # =============================================================================
 # AGENT DEFINITIONS (System Prompts)
@@ -69,6 +70,7 @@ class MDTOrchestrator:
                          and yields text chunks. This is the core LLM call.
         """
         self.generate_fn = generate_fn
+        self.rag = RelationalRAG("knowledge_base/fons_knowledge.jsonl")
         self.agent_order = [
             ("tissue_viability", "🩹", "Tissue Viability Specialist"),
             ("relational_lead", "💚", "Relational Facilitator"),
@@ -87,6 +89,11 @@ class MDTOrchestrator:
         """
         discussion_log = []
         
+        # 0. Search for relevant evidence first
+        yield "🔍 *Searching Evidence Hub for relevant research...*\n\n"
+        search_results = self.rag.search(patient_case)
+        evidence_context = self.rag.format_context(search_results)
+        
         # 1. Get initial perspectives from each specialist
         yield "## 🏥 Virtual MDT Discussion\n\n"
         
@@ -94,7 +101,7 @@ class MDTOrchestrator:
             yield f"### {icon} {display_name}\n"
             
             system_prompt = AGENT_PROMPTS[agent_key]
-            instruction = f"{system_prompt}\n\nReview this patient case and provide your specialist input."
+            instruction = f"{system_prompt}\n\n{evidence_context}\n\nReview this patient case using the EVIDENCE provided above."
             
             agent_response = ""
             for chunk in self.generate_fn(instruction, patient_case, max_tokens=300):
