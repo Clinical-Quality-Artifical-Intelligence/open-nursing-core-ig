@@ -8,6 +8,7 @@ import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer
 from threading import Thread
 from huggingface_hub import login
+from mdt_orchestrator import MDTOrchestrator
 
 # Login to Hugging Face (Requires HF_TOKEN secret in Space settings)
 if os.getenv("HF_TOKEN"):
@@ -380,6 +381,58 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                     ["Mobilising with frame. Eating and drinking well. No concerns."],
                 ],
                 inputs=gates_input,
+            )
+
+        # Tab 7: Virtual MDT (Multi-Agent Team)
+        with gr.TabItem("🏥 Virtual MDT"):
+            gr.Markdown("""
+            ### Phase 9: Virtual Multi-Disciplinary Team Discussion
+            This tool simulates an MDT meeting with specialized AI agents:
+            *   **🩹 Tissue Viability Specialist**: Skin equity and pressure risk.
+            *   **💚 Relational Facilitator**: Empathy and person-centred language.
+            *   **🛡️ Safety Auditor**: Phase 8 Safety Gates validation.
+            *   **📋 Clinical Coordinator**: Synthesizes the final "Super-Gold" Care Plan.
+            
+            > Enter a complex patient case below to see how the team collaborates.
+            """)
+            
+            with gr.Row():
+                with gr.Column(scale=1):
+                    mdt_input = gr.Textbox(
+                        label="Patient Case / Handover Note",
+                        placeholder="e.g., '78-year-old patient, dark skin tone, bedbound following stroke, NBM pending swallow review, catheter in situ.'",
+                        lines=6,
+                    )
+                    mdt_btn = gr.Button("🏥 Start MDT Discussion", variant="primary")
+                
+                with gr.Column(scale=2):
+                    mdt_output = gr.Markdown(
+                        label="MDT Discussion Log",
+                        value="*Results will appear here...*",
+                    )
+            
+            # Initialize the orchestrator with the generate_response function
+            orchestrator = MDTOrchestrator(generate_response)
+            
+            def run_mdt_discussion(patient_case: str):
+                """Run the MDT and yield the formatted discussion."""
+                full_output = ""
+                for chunk in orchestrator.run_discussion(patient_case):
+                    full_output = chunk
+                    yield full_output
+
+            mdt_btn.click(
+                fn=run_mdt_discussion,
+                inputs=mdt_input,
+                outputs=mdt_output,
+            )
+            
+            gr.Examples(
+                examples=[
+                    ["78-year-old lady, dark skin (Fitzpatrick V), bedbound after hip fracture. NBM pending swallow assessment. IDC draining haematuria. Family anxious about care home placement."],
+                    ["65-year-old man with dementia, frequent falls. Skin intact but reluctant to mobilise. Wife 'Dadi' is his main carer and prefers to be involved in all decisions."],
+                ],
+                inputs=mdt_input,
             )
     
     # Footer
