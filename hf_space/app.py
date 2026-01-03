@@ -445,56 +445,6 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                 inputs=mdt_input,
             )
 
-        # Tab 9: Memory Bank (Dadi's Mirror)
-        with gr.TabItem("🧠 Memory Bank"):
-            gr.Markdown("""
-            ### Person-Centred Memory Bank
-            Store and recall specific details about your patients to ensure continuity of relational care.
-            AI agents in the MDT and Chat Assistant will automatically check this bank.
-            """)
-            
-            with gr.Row():
-                with gr.Column(scale=1):
-                    gr.Markdown("#### ➕ Add/Update Profile")
-                    mem_name = gr.Textbox(label="Patient Key Name (Full Name)", placeholder="e.g. Mrs. Singh")
-                    mem_pref = gr.Textbox(label="Preferred Name / Nickname", placeholder="e.g. Dadi")
-                    mem_culture = gr.Textbox(label="Cultural/Personal Preferences", placeholder="e.g. Likes tea at 10am, prefers daughter involved in decisions.")
-                    mem_save_btn = gr.Button("💾 Save to Memory", variant="primary")
-                    mem_status = gr.Markdown("")
-
-                with gr.Column(scale=1):
-                    gr.Markdown("#### 📂 Current Memory Records")
-                    mem_list = gr.Dropdown(label="Select Patient to View", choices=memory_manager.list_patients())
-                    mem_refresh = gr.Button("🔄 Refresh List")
-                    mem_display = gr.JSON(label="Patient Detail")
-
-            def save_to_memory(name, pref, culture):
-                if not name: return "❌ Name is required."
-                memory_manager.upsert_patient(name, {
-                    "preferred_name": pref,
-                    "preferences": culture
-                })
-                return f"✅ Saved {name} to memory."
-
-            def get_mem_details(name):
-                if not name: return {}
-                return memory_manager.memory.get(name, {})
-
-            def refresh_mem_list():
-                return gr.Dropdown(choices=memory_manager.list_patients())
-
-            mem_save_btn.click(fn=save_to_memory, inputs=[mem_name, mem_pref, mem_culture], outputs=mem_status)
-            mem_list.change(fn=get_mem_details, inputs=mem_list, outputs=mem_display)
-            mem_refresh.click(fn=refresh_mem_list, outputs=mem_list)
-
-            gr.Examples(
-                examples=[
-                    ["Mrs. Singh", "Dadi", "Sikh background. Prefers female care staff for hygiene. Loves gardening talk."],
-                    ["John Doe", "Johnny", "Retired docker. Likes routine. Hard of hearing in left ear."],
-                ],
-                inputs=[mem_name, mem_pref, mem_culture],
-            )
-    
     # Footer
     gr.Markdown("""
     ---
@@ -508,5 +458,6 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
 # Launch
 if __name__ == "__main__":
     demo.queue().launch()
+
 
 
