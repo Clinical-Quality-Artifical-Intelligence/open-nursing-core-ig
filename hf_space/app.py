@@ -478,7 +478,7 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                 
                 yield "⏳ *Retrieving evidence and drafting response...*\n\n"
                 
-                instruction = f"Answer the following question based ONLY on the EVIDENCE provided below. If the evidence doesn't contain the answer, say so.\n\n{context}"
+                instruction = f"Answer the following question using the EVIDENCE below as your primary source. If the evidence is limited, supplement with your nursing knowledge, but always prioritize the evidence.\n\n{context}"
                 
                 full_response = f"### 📚 Evidence-Based Answer\n\n"
                 for chunk in generate_response(instruction, query, max_tokens=500):
@@ -569,3 +569,4 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
 # Launch
 if __name__ == "__main__":
     demo.queue().launch()
+
