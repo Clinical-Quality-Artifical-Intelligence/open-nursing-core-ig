@@ -292,10 +292,10 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                 outputs=adpie_output,
             )
 
-        # Tab 5: Semantic Review
+        # Tab 6: Semantic Review (Now Tab 6, previously Tab 5)
         with gr.TabItem("🧠 Semantic Review"):
             gr.Markdown("""
-            ### Clinical Semantic Analysis (openEHR Inspired)
+            ### 🧠 Clinical Semantic Analysis (openEHR Inspired)
             This tool performs a deep audit of your nursing documentation. It checks the note against 
             the **ONC Relational Care Logical Model** and suggests formal **NANDA-I** mappings.
             
