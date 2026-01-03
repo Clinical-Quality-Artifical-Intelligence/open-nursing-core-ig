@@ -50,3 +50,4 @@ Intégrée avec un **Hub de Preuves de 61 Mo** hébergé sur Hugging Face.
 
 ---
 **Propulsé par [NurseCitizenDeveloper](https://huggingface.co/NurseCitizenDeveloper)** | *Ensemble, nous codons le soin.*
+

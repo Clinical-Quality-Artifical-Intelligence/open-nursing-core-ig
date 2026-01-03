@@ -50,3 +50,4 @@ Integrada con un **Hub de Evidencia de 61MB** alojado en Hugging Face.
 
 ---
 **Impulsado por [NurseCitizenDeveloper](https://huggingface.co/NurseCitizenDeveloper)** | *Juntos, codificamos el cuidado.*
+

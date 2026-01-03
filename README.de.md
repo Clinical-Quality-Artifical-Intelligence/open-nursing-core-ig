@@ -1,7 +1,7 @@
 
 <div align="center">
 
-![Open Nursing Core Banner](hf_space/onc_project_banner.png)
+![Open Nursing Core Banner](assets/onc_project_banner.png)
 
 # 🌍 Open Nursing Core (ONC)
 ### Global Relational AI for Person-Centred Care
@@ -21,3 +21,4 @@
 *Updates coming soon.*
 
 Please refer to the [**English Documentation**](README.md) for the full feature set.
+

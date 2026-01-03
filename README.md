@@ -1,7 +1,7 @@
 
 <div align="center">
 
-![Open Nursing Core Banner](hf_space/onc_project_banner.png)
+![Open Nursing Core Banner](assets/onc_project_banner.png)
 
 # 🌍 Open Nursing Core (ONC)
 ### Global Relational AI for Person-Centred Care
@@ -65,3 +65,4 @@ We welcome contributions from nurses, developers, and researchers!
 
 ---
 **Powered by [NurseCitizenDeveloper](https://huggingface.co/NurseCitizenDeveloper)** | *Together, we code care.*
+
