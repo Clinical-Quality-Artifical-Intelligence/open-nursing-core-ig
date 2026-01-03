@@ -11,6 +11,7 @@ The agents are:
 4. Patient Safety Auditor: Validates against Phase 8 Safety Gates.
 """
 
+from dataclasses import dataclass
 from typing import Generator, List
 from rag_engine import RelationalRAG
 from memory_manager import MemoryManager
