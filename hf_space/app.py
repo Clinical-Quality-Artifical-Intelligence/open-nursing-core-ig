@@ -320,6 +320,67 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                 ],
                 inputs=review_input,
             )
+
+        # Tab 6: Super-Gold Safety Gates
+        with gr.TabItem("🛡️ Safety & Quality Gates"):
+            gr.Markdown("""
+            ### Phase 8: Clinical Safety & Dignity Gates
+            This tool validates your documentation against the new **"Super-Gold"** invariants.
+            It checks for:
+            *   **Mobility**: Bedbound patients MUST have a Pressure Ulcer risk assessment (Waterlow/Braden).
+            *   **Nutrition**: Dysphagia signs MUST trigger a "Protected Mealtimes" flag.
+            *   **Elimination**: Catheter care MUST reference a specific device (Dignity check).
+            *   **Hygiene**: NBM patients MUST have frequent Oral Care planned.
+            """)
+            
+            with gr.Row():
+                with gr.Column():
+                    gates_input = gr.Textbox(
+                        label="Clinical Note / Care Plan",
+                        placeholder="e.g., 'Patient is bedbound. Sacrum red. NBM for surgery tomorrow.'",
+                        lines=5,
+                    )
+                    gates_btn = gr.Button("🛡️ Run Safety Gate Check", variant="primary")
+                
+                with gr.Column():
+                    gates_output = gr.Textbox(
+                        label="Safety Gate Results",
+                        lines=10,
+                        interactive=False,
+                    )
+            
+            def check_safety_gates(note: str):
+                """Run specific safety gate checks on the note."""
+                instruction = """Perform a SAFETY GATE CHECK on this nursing note against these 4 rules. 
+                Output PASS or FAIL for each gate with a reason.
+                
+                1. [Mobility Gate]: If 'bedbound' or 'immobile', is a Pressure Ulcer Risk Assessment (Braden/Waterlow/Purpose T) documented?
+                2. [Nutrition Gate]: If 'dysphagia' or 'choking risk', is 'Protected Mealtimes' or 'Swallow Plan' mentioned?
+                3. [Hygiene Gate]: If 'NBM' (Nil By Mouth), is 'Oral Care' frequency specified?
+                4. [Elimination Gate]: If 'catheter' is present, is the specific device/size mentioned?
+                
+                Format:
+                🛡️ Mobility Gate: [PASS/FAIL] - Reason
+                🛡️ Nutrition Gate: [PASS/FAIL] - Reason
+                🛡️ Hygiene Gate: [PASS/FAIL] - Reason
+                🛡️ Elimination Gate: [PASS/FAIL] - Reason
+                """
+                for response in generate_response(instruction, note, max_tokens=400):
+                    yield response
+
+            gates_btn.click(
+                fn=check_safety_gates,
+                inputs=gates_input,
+                outputs=gates_output,
+            )
+            
+            gr.Examples(
+                examples=[
+                    ["Patient is bedbound following stroke. NBM pending speech therapy review. Catheter draining clear urine."],
+                    ["Mobilising with frame. Eating and drinking well. No concerns."],
+                ],
+                inputs=gates_input,
+            )
     
     # Footer
     gr.Markdown("""

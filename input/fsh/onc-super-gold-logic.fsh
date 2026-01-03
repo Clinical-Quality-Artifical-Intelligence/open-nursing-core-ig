@@ -35,3 +35,35 @@ Description: "Captures the measurable outcomes of relational and empathic nursin
 * http://snomed.info/sct#161096001 "Patient feels respected"
 * http://snomed.info/sct#307823004 "Patient feels heard"
 * http://snomed.info/sct#428131006 "Therapeutic relationship established"
+
+// -----------------------------------------------------------------------------
+// 4. Elimination Safety Gates
+// -----------------------------------------------------------------------------
+Invariant: onc-catheter-gate
+Description: "Safety Rule: Catheter care observations must reference a specific Device resource to ensure traceability."
+Severity: #error
+Expression: "device.exists()"
+
+// -----------------------------------------------------------------------------
+// 5. Nutrition Safety Gates
+// -----------------------------------------------------------------------------
+Invariant: onc-dysphagia-gate
+Description: "Safety Rule: If swallowing difficulty is detected, a Protected Mealtime flag must be considered."
+Severity: #warning
+Expression: "value.coding.where(code = 'dysphagia-present').exists() implies hasMember.exists()"
+
+// -----------------------------------------------------------------------------
+// 6. Mobility Safety Gates
+// -----------------------------------------------------------------------------
+Invariant: onc-mobility-gate
+Description: "Safety Rule: If patient is Bedbound, a Pressure Ulcer Risk Assessment reference is mandatory."
+Severity: #error
+Expression: "value.coding.where(code = 'bedbound').exists() implies hasMember.exists()"
+
+// -----------------------------------------------------------------------------
+// 7. Hygiene Safety Gates
+// -----------------------------------------------------------------------------
+Invariant: onc-oral-gate
+Description: "Safety Rule: If patient is Nil By Mouth (NBM), Oral Care frequency must be specified."
+Severity: #warning
+Expression: "value.coding.where(code = 'nbm').exists() implies component.where(code.coding.code = 'frequency').exists()"

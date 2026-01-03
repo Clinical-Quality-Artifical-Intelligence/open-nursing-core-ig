@@ -76,6 +76,16 @@ Title: "Mobility Assessment"
 Description: "Assessment of capability to move and limitations."
 * code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#mobility
 * value[x] only CodeableConcept
+* obeys onc-mobility-gate
+* component 0..* MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.ordered = false
+* component ^slicing.rules = #open
+* component contains empathyIndex 1..1 MS
+* component[empathyIndex].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#empathy-index
+* component[empathyIndex].value[x] only CodeableConcept
+* component[empathyIndex].valueCodeableConcept from ONCEmpathyIndexVS (required)
 
 Profile: ONCDeviceUseStatement
 Parent: DeviceUseStatement
@@ -97,6 +107,15 @@ Title: "Personal Hygiene Needs Assessment"
 Description: "Assessment of assistance required for personal hygiene."
 * code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#hygiene-needs
 * value[x] only CodeableConcept
+* component 0..* MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.ordered = false
+* component ^slicing.rules = #open
+* component contains empathyIndex 1..1 MS
+* component[empathyIndex].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#empathy-index
+* component[empathyIndex].value[x] only CodeableConcept
+* component[empathyIndex].valueCodeableConcept from ONCEmpathyIndexVS (required)
 
 Profile: ONCOralCareAssessment
 Parent: ONCNursingAssessment
@@ -105,6 +124,16 @@ Title: "Oral Care Needs Assessment"
 Description: "Assessment of mouth care needs and oral health."
 * code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#oral-care
 * value[x] only CodeableConcept
+* obeys onc-oral-gate
+* component 0..* MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.ordered = false
+* component ^slicing.rules = #open
+* component contains empathyIndex 1..1 MS
+* component[empathyIndex].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#empathy-index
+* component[empathyIndex].value[x] only CodeableConcept
+* component[empathyIndex].valueCodeableConcept from ONCEmpathyIndexVS (required)
 
 // -----------------------------------------------------------------------------
 // 5. Medication Self-Management

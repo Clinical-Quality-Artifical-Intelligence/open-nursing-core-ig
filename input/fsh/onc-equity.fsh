@@ -113,6 +113,7 @@ Description: "Custom observation codes for Open Nursing Core"
 * #empathy-3 "Moderate Empathy" "Active relational engagement with shared decision making."
 * #empathy-4 "High Empathy" "Authentic partnership with deep understanding of patient experience."
 * #empathy-5 "Relational Excellence" "Flourishing partnership with total alignment on 'What Matters to Me'."
+* #empathy-index "ONC Empathy Index" "Formal assessment of the depth of therapeutic empathy"
 
 // =============================================================================
 // Abbey Pain Scale Codes
