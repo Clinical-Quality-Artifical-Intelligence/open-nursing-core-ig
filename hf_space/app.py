@@ -445,67 +445,6 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                 inputs=mdt_input,
             )
 
-        # Tab 8: Evidence Hub (RAG)
-        with gr.TabItem("📚 Evidence Hub"):
-            gr.Markdown("""
-            ### Relational Evidence Hub
-            Search and chat with the **FONS Knowledge Base** and **Relational Care standards**. 
-            This tool uses Retrieval-Augmented Generation (RAG) to ensure answers are based on evidence.
-            """)
-            
-            with gr.Row():
-                with gr.Column(scale=1):
-                    rag_query = gr.Textbox(
-                        label="Search the Knowledge Base",
-                        placeholder="e.g., 'What are the FONS principles for dementia care?'",
-                        lines=2,
-                    )
-                    rag_btn = gr.Button("🔍 Search & Chat", variant="primary")
-                
-                with gr.Column(scale=2):
-                    rag_output = gr.Markdown(
-                        label="Evidence-Based Response",
-                        value="*Search results will appear here...*",
-                    )
-            
-            # Initialize RAG for the standalone tab
-            tab_rag = RelationalRAG("knowledge_base/fons_knowledge.jsonl")
-            
-            def chat_with_evidence(query: str):
-                """Search evidence and then generate a grounded response."""
-                results = tab_rag.search(query)
-                context = tab_rag.format_context(results)
-                
-                yield "⏳ *Retrieving evidence and drafting response...*\n\n"
-                
-                instruction = f"Answer the following question using the EVIDENCE below as your primary source. If the evidence is limited, supplement with your nursing knowledge, but always prioritize the evidence.\n\n{context}"
-                
-                full_response = f"### 📚 Evidence-Based Answer\n\n"
-                for chunk in generate_response(instruction, query, max_tokens=500):
-                    full_response = "### 📚 Evidence-Based Answer\n\n" + chunk
-                    yield full_response
-                
-                full_response += "\n\n---\n#### 🔍 Sources Used:\n"
-                for i, res in enumerate(results):
-                    full_response += f"- [{res['source']}] {res['content'][:100]}...\n"
-                
-                yield full_response
-
-            rag_btn.click(
-                fn=chat_with_evidence,
-                inputs=rag_query,
-                outputs=rag_output,
-            )
-            
-            gr.Examples(
-                examples=[
-                    ["What are the key principles of person-centred practice according to FONS?"],
-                    ["How can I document care for someone from a diverse background with respect?"],
-                    ["What does 'shared decision making' look like in a nursing context?"],
-                ],
-                inputs=rag_query,
-            )
-
         # Tab 9: Memory Bank (Dadi's Mirror)
         with gr.TabItem("🧠 Memory Bank"):
             gr.Markdown("""
@@ -569,4 +508,5 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
 # Launch
 if __name__ == "__main__":
     demo.queue().launch()
+
 
