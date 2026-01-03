@@ -6,14 +6,11 @@
 <strong>🚀 Model Live on Hugging Face:</strong> <a href="https://huggingface.co/NurseCitizenDeveloper/nursing-llama-3-8b-fons" target="_blank">NurseCitizenDeveloper/nursing-llama-3-8b-fons</a>
 </div>
 
-<div style="margin-top: 20px; margin-bottom: 20px;">
-<iframe
-	src="https://nursecitizendeveloper-relational-ai-nursing.hf.space"
-	frameborder="0"
-	width="100%"
-	height="800"
-    style="border-radius: 8px; border: 1px solid #e1e4e8;"
-></iframe>
+<div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+<a href="https://huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing" target="_blank">
+<img src="relational-ai-screenshot.png" alt="Relational AI for Nursing Interface" style="max-width: 100%; border-radius: 8px; border: 1px solid #e1e4e8; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+</a>
+<p style="margin-top: 10px; font-size: 14px; color: #666;">👆 <strong>Click the image to try the live demo on Hugging Face</strong></p>
 </div>
 
 ## Overview
@@ -51,8 +48,8 @@ This AI model is designed to work alongside the FHIR profiles defined in this IG
 *   **Input:** Structured data from `Patient`, `Observation` (e.g., Skin Tone), and `Condition` resources.
 *   **Output:** Narrative text for `Composition` or `ClinicalImpression` resources.
 
-## The "Super-Gold" Standard (Exceeding openEHR)
-The Open Nursing Core project aims to exceed traditional clinical modeling (like openEHR) by making the "Human Elements" of nursing computable and mandatory.
+## The "Super-Gold" Standard: Advancing Relational Care
+The Open Nursing Core project aims to build upon rigorous clinical modeling (like openEHR) by making the "Human Elements" of nursing computable and mandatory.
 
 ### 1. The ONC Empathy Index
 We have standardized the measurement of empathy. Documentation is no longer just "data"—it is scored on its **therapeutic depth (1-5)** helping nurses reflect on the quality of their engagement.
