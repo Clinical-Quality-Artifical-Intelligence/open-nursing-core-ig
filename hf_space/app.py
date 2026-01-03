@@ -325,7 +325,7 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
         # Tab 6: Super-Gold Safety Gates
         with gr.TabItem("🛡️ Safety & Quality Gates"):
             gr.Markdown("""
-            ### Phase 8: Clinical Safety & Dignity Gates
+            ### Clinical Safety & Dignity Gates
             This tool validates your documentation against the new **"Super-Gold"** invariants.
             It checks for:
             *   **Mobility**: Bedbound patients MUST have a Pressure Ulcer risk assessment (Waterlow/Braden).
@@ -386,11 +386,11 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
         # Tab 7: Virtual MDT (Multi-Agent Team)
         with gr.TabItem("🏥 Virtual MDT"):
             gr.Markdown("""
-            ### Phase 9: Virtual Multi-Disciplinary Team Discussion
+            ### Virtual Multi-Disciplinary Team Discussion
             This tool simulates an MDT meeting with specialized AI agents:
             *   **🩹 Tissue Viability Specialist**: Skin equity and pressure risk.
             *   **💚 Relational Facilitator**: Empathy and person-centred language.
-            *   **🛡️ Safety Auditor**: Phase 8 Safety Gates validation.
+            *   **🛡️ Safety Auditor**: Safety Gates validation.
             *   **📋 Clinical Coordinator**: Synthesizes the final "Super-Gold" Care Plan.
             
             > Enter a complex patient case below to see how the team collaborates.
@@ -418,7 +418,7 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                 """Run the MDT and yield the formatted discussion."""
                 full_output = ""
                 for chunk in orchestrator.run_discussion(patient_case):
-                    full_output = chunk
+                    full_output += chunk
                     yield full_output
 
             mdt_btn.click(
