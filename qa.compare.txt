@@ -1,7 +1,7 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 81, warn = 137, info = 360
+err = 81, warn = 138, info = 372
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingcoreig.com)
  Build Errors : 17 / 29 / 0
@@ -55,13 +55,13 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-glasgow-coma-scale : 0 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-goal-evaluation : 2 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-heart-rate : 0 / 1 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-hygiene-assessment : 0 / 1 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-hygiene-assessment : 0 / 1 / 8
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-inspired-oxygen : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-medication-ability : 0 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-medication-self-admin : 0 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-mental-capacity : 2 / 0 / 5
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-mmse : 0 / 1 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-mobility-assessment : 0 / 1 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-mobility-assessment : 0 / 1 / 8
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-monk-skintone-observation : 0 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-morse-fall-scale : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-must-score : 0 / 1 / 12
@@ -73,7 +73,7 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-goal : 1 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-intervention : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-problem : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-care-assessment : 0 / 1 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-care-assessment : 0 / 2 / 8
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-health : 3 / 0 / 17
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-intake-assessment : 0 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oxygen-saturation : 0 / 1 / 2
@@ -470,8 +470,12 @@ INFORMATION: StructureDefinition/onc-heart-rate: StructureDefinition.snapshot.el
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-heart-rate'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-hygiene-assessment.json ==
 INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.snapshot.element[55].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.snapshot.element[42].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-inspired-oxygen.json ==
 INFORMATION: StructureDefinition/onc-inspired-oxygen: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -498,8 +502,12 @@ INFORMATION: StructureDefinition/onc-mmse: StructureDefinition.snapshot.element[
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-mmse'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-mobility-assessment.json ==
 INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.snapshot.element[55].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.snapshot.element[42].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-monk-skintone-observation.json ==
 INFORMATION: StructureDefinition/onc-monk-skintone-observation: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
@@ -548,8 +556,13 @@ INFORMATION: StructureDefinition/onc-nursing-goal: StructureDefinition.snapshot.
 == fsh-generated/resources/StructureDefinition-onc-nursing-problem.json ==
 == fsh-generated/resources/StructureDefinition-onc-oral-care-assessment.json ==
 INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.snapshot.element[55].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/onc-oral-care-assessment: StructureDefinition.snapshot.element[0].constraint[7]: onc-oral-gate: The left side is inherently a collection, and so the expression 'code.coding.code = 'frequency'' may fail or return false if there is more than one item in the content being evaluated
 INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.snapshot.element[42].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-oral-health.json ==
 ERROR: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-oral-health'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-health.json - the canonical URL (https://opennursingcoreig.com/StructureDefinition/onc-oral-health) does not match the URL (https://fhir.clinyq.ai/StructureDefinition/onc-oral-health). Use the special-url parameter if you really mean for it not to match

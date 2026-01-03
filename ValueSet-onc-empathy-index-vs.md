@@ -16,6 +16,9 @@ A clinical scale measuring the depth of therapeutic empathy in nurse-patient int
 
  **References** 
 
+* [Personal Hygiene Needs Assessment](StructureDefinition-onc-hygiene-assessment.md)
+* [Mobility Assessment](StructureDefinition-onc-mobility-assessment.md)
+* [Oral Care Needs Assessment](StructureDefinition-onc-oral-care-assessment.md)
 * [Relational Care Logical Model](StructureDefinition-onc-relational-care-logical.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +53,7 @@ A clinical scale measuring the depth of therapeutic empathy in nurse-patient int
   "name" : "ONCEmpathyIndexVS",
   "title" : "ONC Empathy & Relational Engagement Index",
   "status" : "draft",
-  "date" : "2026-01-03T01:44:04+00:00",
+  "date" : "2026-01-03T21:32:36+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome.",
   "compose" : {

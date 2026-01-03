@@ -1294,7 +1294,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+      "StructureDefinition-onc-mobility-assessment.html" : "Mobility Assessment",
+      "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model",
+      "StructureDefinition-onc-oral-care-assessment.html" : "Oral Care Needs Assessment",
+      "StructureDefinition-onc-hygiene-assessment.html" : "Personal Hygiene Needs Assessment"
     },
     {
       "url" : "https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs",

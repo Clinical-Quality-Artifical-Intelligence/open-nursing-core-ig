@@ -41,11 +41,11 @@ Custom observation codes for Open Nursing Core
   "name" : "ONCObservationCodes",
   "title" : "ONC Observation Codes",
   "status" : "draft",
-  "date" : "2026-01-03T01:44:04+00:00",
+  "date" : "2026-01-03T21:32:36+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Custom observation codes for Open Nursing Core",
   "content" : "complete",
-  "count" : 131,
+  "count" : 132,
   "concept" : [
     {
       "code" : "mst-score",
@@ -401,6 +401,11 @@ Custom observation codes for Open Nursing Core
       "code" : "empathy-5",
       "display" : "Relational Excellence",
       "definition" : "Flourishing partnership with total alignment on 'What Matters to Me'."
+    },
+    {
+      "code" : "empathy-index",
+      "display" : "ONC Empathy Index",
+      "definition" : "Formal assessment of the depth of therapeutic empathy"
     },
     {
       "code" : "abbey-score",

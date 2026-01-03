@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-goal-evaluation.
   "name" : "ONCGoalEvaluation",
   "title" : "ONC Goal Evaluation",
   "status" : "draft",
-  "date" : "2026-01-03T01:44:04+00:00",
+  "date" : "2026-01-03T21:32:36+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.",
   "fhirVersion" : "4.0.1",

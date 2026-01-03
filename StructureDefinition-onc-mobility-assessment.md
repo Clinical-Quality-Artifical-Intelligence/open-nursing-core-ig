@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessm
   "name" : "ONCMobilityAssessment",
   "title" : "Mobility Assessment",
   "status" : "draft",
-  "date" : "2026-01-03T01:44:04+00:00",
+  "date" : "2026-01-03T21:32:36+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of capability to move and limitations.",
   "fhirVersion" : "4.0.1",
@@ -86,7 +86,16 @@ Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessm
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "onc-mobility-gate",
+            "severity" : "error",
+            "human" : "Safety Rule: If patient is Bedbound, a Pressure Ulcer Risk Assessment reference is mandatory.",
+            "expression" : "value.coding.where(code = 'bedbound').exists() implies hasMember.exists()",
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment"
+          }
+        ]
       },
       {
         "id" : "Observation.code",
@@ -108,6 +117,55 @@ Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessm
             "code" : "CodeableConcept"
           }
         ]
+      },
+      {
+        "id" : "Observation.component",
+        "path" : "Observation.component",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "pattern",
+              "path" : "code"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1,
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:empathyIndex",
+        "path" : "Observation.component",
+        "sliceName" : "empathyIndex",
+        "min" : 1,
+        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:empathyIndex.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+              "code" : "empathy-index"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Observation.component:empathyIndex.value[x]",
+        "path" : "Observation.component.value[x]",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ],
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs"
+        }
       }
     ]
   }
