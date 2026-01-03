@@ -4,6 +4,7 @@ MDT Orchestrator: Virtual Multi-Disciplinary Team for Nursing Care
 Simplified version that produces a single concise care plan summary.
 """
 
+from typing import Generator
 from rag_engine import RelationalRAG
 from memory_manager import MemoryManager
 
