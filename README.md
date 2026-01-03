@@ -1,7 +1,7 @@
 
 <div align="center">
 
-![Open Nursing Core Banner](https://huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing/resolve/main/onc_project_banner.png)
+![Open Nursing Core Banner](hf_space/onc_project_banner.png)
 
 # 🌍 Open Nursing Core (ONC)
 ### Global Relational AI for Person-Centred Care
