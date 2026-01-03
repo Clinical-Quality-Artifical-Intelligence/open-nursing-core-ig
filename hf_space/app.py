@@ -10,6 +10,7 @@ from threading import Thread
 from huggingface_hub import login
 from mdt_orchestrator import MDTOrchestrator
 from rag_engine import RelationalRAG
+from memory_manager import MemoryManager
 
 # Login to Hugging Face (Requires HF_TOKEN secret in Space settings)
 if os.getenv("HF_TOKEN"):
@@ -88,10 +89,18 @@ def generate_response(instruction: str, context: str, max_tokens: int = 256, tem
         yield partial_response
 
 
+# Initialize Shared Memory
+memory_manager = MemoryManager("knowledge_base/patient_memory.json")
+
 def chat_interface(message: str, history: list):
-    """Chat interface handler."""
-    # Use the message as both instruction and context for simple chat
-    for response in generate_response(message, "General nursing documentation context."):
+    """Chat interface handler with memory awareness."""
+    # Check for memory context
+    memory_context = memory_manager.get_patient_context(message)
+    context = "General nursing documentation context."
+    if memory_context:
+        context = f"PERSON-CENTRED MEMORY:\n{memory_context}\n\nUse this context to be more empathetic and person-centred."
+        
+    for response in generate_response(message, context):
         yield response
 
 
@@ -495,6 +504,56 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                     ["What does 'shared decision making' look like in a nursing context?"],
                 ],
                 inputs=rag_query,
+            )
+
+        # Tab 9: Memory Bank (Dadi's Mirror)
+        with gr.TabItem("🧠 Memory Bank"):
+            gr.Markdown("""
+            ### Person-Centred Memory Bank
+            Store and recall specific details about your patients to ensure continuity of relational care.
+            AI agents in the MDT and Chat Assistant will automatically check this bank.
+            """)
+            
+            with gr.Row():
+                with gr.Column(scale=1):
+                    gr.Markdown("#### ➕ Add/Update Profile")
+                    mem_name = gr.Textbox(label="Patient Key Name (Full Name)", placeholder="e.g. Mrs. Singh")
+                    mem_pref = gr.Textbox(label="Preferred Name / Nickname", placeholder="e.g. Dadi")
+                    mem_culture = gr.Textbox(label="Cultural/Personal Preferences", placeholder="e.g. Likes tea at 10am, prefers daughter involved in decisions.")
+                    mem_save_btn = gr.Button("💾 Save to Memory", variant="primary")
+                    mem_status = gr.Markdown("")
+
+                with gr.Column(scale=1):
+                    gr.Markdown("#### 📂 Current Memory Records")
+                    mem_list = gr.Dropdown(label="Select Patient to View", choices=memory_manager.list_patients())
+                    mem_refresh = gr.Button("🔄 Refresh List")
+                    mem_display = gr.JSON(label="Patient Detail")
+
+            def save_to_memory(name, pref, culture):
+                if not name: return "❌ Name is required."
+                memory_manager.upsert_patient(name, {
+                    "preferred_name": pref,
+                    "preferences": culture
+                })
+                return f"✅ Saved {name} to memory."
+
+            def get_mem_details(name):
+                if not name: return {}
+                return memory_manager.memory.get(name, {})
+
+            def refresh_mem_list():
+                return gr.Dropdown(choices=memory_manager.list_patients())
+
+            mem_save_btn.click(fn=save_to_memory, inputs=[mem_name, mem_pref, mem_culture], outputs=mem_status)
+            mem_list.change(fn=get_mem_details, inputs=mem_list, outputs=mem_display)
+            mem_refresh.click(fn=refresh_mem_list, outputs=mem_list)
+
+            gr.Examples(
+                examples=[
+                    ["Mrs. Singh", "Dadi", "Sikh background. Prefers female care staff for hygiene. Loves gardening talk."],
+                    ["John Doe", "Johnny", "Retired docker. Likes routine. Hard of hearing in left ear."],
+                ],
+                inputs=[mem_name, mem_pref, mem_culture],
             )
     
     # Footer

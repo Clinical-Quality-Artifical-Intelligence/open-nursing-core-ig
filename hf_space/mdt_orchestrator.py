@@ -11,9 +11,9 @@ The agents are:
 4. Patient Safety Auditor: Validates against Phase 8 Safety Gates.
 """
 
-from dataclasses import dataclass
 from typing import Generator, List
 from rag_engine import RelationalRAG
+from memory_manager import MemoryManager
 
 # =============================================================================
 # AGENT DEFINITIONS (System Prompts)
@@ -71,6 +71,7 @@ class MDTOrchestrator:
         """
         self.generate_fn = generate_fn
         self.rag = RelationalRAG("knowledge_base/fons_knowledge.jsonl")
+        self.memory = MemoryManager("knowledge_base/patient_memory.json")
         self.agent_order = [
             ("tissue_viability", "🩹", "Tissue Viability Specialist"),
             ("relational_lead", "💚", "Relational Facilitator"),
@@ -89,11 +90,17 @@ class MDTOrchestrator:
         """
         discussion_log = []
         
-        # 0. Search for relevant evidence first
-        yield "🔍 *Searching Evidence Hub for relevant research...*\n\n"
+        # 0. Search for relevant evidence and memory first
+        yield "🔍 *Checking Evidence Hub and Person-Centred Memory...*\n\n"
         search_results = self.rag.search(patient_case)
         evidence_context = self.rag.format_context(search_results)
         
+        memory_context = self.memory.get_patient_context(patient_case)
+        if memory_context:
+            yield f"💡 *Memory Found:* {memory_context.splitlines()[0]}\n\n"
+        else:
+            memory_context = ""
+
         # 1. Get initial perspectives from each specialist
         yield "## 🏥 Virtual MDT Discussion\n\n"
         
@@ -101,7 +108,7 @@ class MDTOrchestrator:
             yield f"### {icon} {display_name}\n"
             
             system_prompt = AGENT_PROMPTS[agent_key]
-            instruction = f"{system_prompt}\n\n{evidence_context}\n\nReview this patient case using the EVIDENCE provided above."
+            instruction = f"{system_prompt}\n\n{evidence_context}\n\n{memory_context}\n\nReview this patient case using the EVIDENCE and MEMORY provided above."
             
             agent_response = ""
             for chunk in self.generate_fn(instruction, patient_case, max_tokens=300):
