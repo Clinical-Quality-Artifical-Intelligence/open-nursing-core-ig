@@ -290,9 +290,9 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
             
             with gr.Row():
                 with gr.Column():
-                    out_llama = gr.Textbox(label="🦙 Fine-Tuned (Super-Gold)", lines=12)
+                    out_llama = gr.Markdown(label="🦙 Fine-Tuned (Super-Gold)", value="*Super-Gold output will appear here...*")
                 with gr.Column():
-                    out_gemma = gr.Textbox(label="🍦 Vanilla (Base Llama-3)", lines=12)
+                    out_gemma = gr.Markdown(label="🍦 Vanilla (Base Llama-3)", value="*Vanilla output will appear here...*")
             
             comp_btn.click(
                 fn=generate_comparison,
