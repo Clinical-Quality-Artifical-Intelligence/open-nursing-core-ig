@@ -34,26 +34,48 @@ ALPACA_TEMPLATE = """Below is an instruction that describes a task, paired with 
 # ============================================
 # LOAD MODEL (PEFT / Adapter Compatible)
 # ============================================
-BASE_MODEL = "NousResearch/Meta-Llama-3-8B" # Non-gated alternative to original Meta repo
-print(f"🔄 Loading base model: {BASE_MODEL}")
+# ============================================
+# LOAD MODELS (Comparing "Super-Gold" vs "Relational MedGemma")
+# ============================================
+# 8-bit quantization requested for Dual-Model Comparison Mode (L4 GPU)
 
-# tokenizer should be loaded from the adapter repo if it has custom tokens
-tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
+# 1. Load Llama-3-8B (The "Super-Gold" Standard)
+LLAMA_ID = "NurseCitizenDeveloper/nursing-llama-3-8b-fons"
+BASE_LLAMA = "NousResearch/Meta-Llama-3-8B"
+print(f"🔄 Loading Llama-3 Base: {BASE_LLAMA}")
 
-# Load base model (Requires HF_TOKEN secret in Space settings)
-model = AutoModelForCausalLM.from_pretrained(
-    BASE_MODEL,
-    torch_dtype=torch.float16,
+tokenizer_llama = AutoTokenizer.from_pretrained(LLAMA_ID)
+model_llama = AutoModelForCausalLM.from_pretrained(
+    BASE_LLAMA,
     device_map="auto",
+    load_in_8bit=True,  # 8-bit for efficiency
     trust_remote_code=True,
 )
-
-# Load Adapters
+print(f"🧩 Applying Llama adapter: {LLAMA_ID}")
 from peft import PeftModel
-print(f"🧩 Applying nursing adapters from: {MODEL_ID}")
-model = PeftModel.from_pretrained(model, MODEL_ID)
+model_llama = PeftModel.from_pretrained(model_llama, LLAMA_ID)
 
-print("✅ Super-Gold Model loaded and ready!")
+# 2. Load MedGemma-4B (The "Relational" Expert)
+GEMMA_ID = "NurseCitizenDeveloper/relational-intelligence-unsloth-medgemma"
+BASE_GEMMA = "google/medgemma-4b-it"
+print(f"🔄 Loading MedGemma Base: {BASE_GEMMA}")
+
+tokenizer_gemma = AutoTokenizer.from_pretrained(GEMMA_ID)
+model_gemma = AutoModelForCausalLM.from_pretrained(
+    BASE_GEMMA,
+    device_map="auto",
+    load_in_8bit=True, # 8-bit for efficiency
+    trust_remote_code=True,
+    token=os.getenv("HF_TOKEN") # Explicit token sometimes needed for gated models
+)
+print(f"🧩 Applying MedGemma adapter: {GEMMA_ID}")
+model_gemma = PeftModel.from_pretrained(model_gemma, GEMMA_ID)
+
+print("✅ Both Models Loaded Successfully! (Comparsion Mode Ready)")
+
+# Alias the "Primary" model for existing functions
+tokenizer = tokenizer_llama
+model = model_llama
 
 # ============================================
 # GENERATION FUNCTION
@@ -87,6 +109,49 @@ def generate_response(instruction: str, context: str, max_tokens: int = 256, tem
         partial_response += new_text
         yield partial_response
 
+
+
+
+# 2. GENERATE COMPARISON (Llama vs MedGemma)
+def generate_comparison(scenario: str):
+    """Generate side-by-side responses from both models"""
+    
+    # --- Generate Llama-3 Response ---
+    # Use ALPACA prompt (instruction tuned)
+    prompt_llama = ALPACA_TEMPLATE.format(
+        instruction="Analyze this clinical scenario using FONS nursing principles. Focus on person-centred care and safety.", 
+        context=scenario
+    )
+    inputs_llama = tokenizer_llama(prompt_llama, return_tensors="pt").to(model_llama.device)
+    output_llama = model_llama.generate(
+        **inputs_llama, 
+        max_new_tokens=400, 
+        repetition_penalty=1.2,
+        do_sample=True,
+        temperature=0.7
+    )
+    res_llama = tokenizer_llama.decode(output_llama[0], skip_special_tokens=True)
+    # Clean up Alpaca artifact if present
+    if "### Response:" in res_llama:
+        res_llama = res_llama.split("### Response:")[1].strip()
+
+    # --- Generate MedGemma Response ---
+    # Use Gemma Chat Template: <start_of_turn>user...<end_of_turn><start_of_turn>model...
+    prompt_gemma = f"<start_of_turn>user\nAnalyze this clinical scenario. Focus heavily on Relational Care, Emotional Intelligence, and the IPDJ framework.\n\nSCENARIO:\n{scenario}<end_of_turn>\n<start_of_turn>model\n"
+    
+    inputs_gemma = tokenizer_gemma(prompt_gemma, return_tensors="pt").to(model_gemma.device)
+    output_gemma = model_gemma.generate(
+        **inputs_gemma, 
+        max_new_tokens=400,
+        do_sample=True,
+        temperature=0.7
+    )
+    res_gemma = tokenizer_gemma.decode(output_gemma[0], skip_special_tokens=True)
+    # Clean up Gemma artifact (usually just returns the answer, but good to be safe)
+    if "<start_of_turn>model" in res_gemma:
+        res_gemma = res_gemma.split("<start_of_turn>model")[1].strip()
+
+    return res_llama, res_gemma
 
 
 # Restored basic chat interface (No Memory)
@@ -185,6 +250,35 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                 ],
                 retry_btn=None,
                 undo_btn=None,
+            )
+
+        # Tab 1.5: Model Comparison (New)
+        with gr.TabItem("📊 Model Comparison"):
+            gr.Markdown("""
+            ### 🤖 Battle of the Arrays: Llama-3 vs MedGemma
+            Compare the output of two specialized models side-by-side:
+            *   **Left**: `Llama-3-8B-FONS` (The Generalist Clinical Expert)
+            *   **Right**: `MedGemma-4B-Relational` (The Relational Care Specialist)
+            """)
+            
+            with gr.Row():
+                comp_input = gr.Textbox(
+                    label="Clinical Scenario", 
+                    placeholder="e.g. Patient is refusing care due to anxiety...",
+                    lines=3
+                )
+                comp_btn = gr.Button("⚔️ Compare Models", variant="primary")
+            
+            with gr.Row():
+                with gr.Column():
+                    out_llama = gr.Textbox(label="🦙 Llama-3-8B (Super-Gold)", lines=12)
+                with gr.Column():
+                    out_gemma = gr.Textbox(label="🏥 MedGemma-4B (Relational)", lines=12)
+            
+            comp_btn.click(
+                fn=generate_comparison,
+                inputs=comp_input,
+                outputs=[out_llama, out_gemma]
             )
         
         # Tab 2: Language Rewriter
