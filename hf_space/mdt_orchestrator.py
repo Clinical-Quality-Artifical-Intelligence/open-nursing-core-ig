@@ -16,53 +16,60 @@ class MDTOrchestrator:
 
     def run_discussion(self, patient_case: str) -> Generator[str, None, None]:
         """
-        Runs a simplified MDT and yields a concise care plan.
-        CRITICAL: Gradio streaming requires yielding the FULL accumulated output each time.
+        Runs a simplified MDT. NON-STREAMING to avoid Gradio issues.
+        Collects all outputs, then yields the final formatted result.
         """
-        full_output = "🏥 *Starting Virtual MDT Analysis...*\n\n"
-        yield full_output
+        yield "🏥 *Analyzing patient case... Please wait...*"
         
-        # Helper to stream an agent and accumulate output
-        def stream_agent(prompt: str, header: str) -> None:
-            nonlocal full_output
-            full_output += header
-            yield full_output
-            
-            last_chunk = ""
+        # Helper to get final output from generator
+        def get_response(prompt: str) -> str:
+            result = ""
             for chunk in self.generate_fn(prompt, patient_case, max_tokens=100):
-                last_chunk = chunk
-                yield full_output + chunk
-            
-            full_output += last_chunk + "\n\n"
+                result = chunk  # Each chunk is cumulative, so last one is complete
+            return result.strip()
         
         # 1. Tissue Viability Agent
-        prompt_tv = f"""Role: Tissue Viability Nurse.
+        prompt_tv = """Role: Tissue Viability Nurse.
 Task: Assess skin risks (Waterlow), wounds, and device pressure for this patient.
-Output: 3 bullet points starting with "- ". NO INTRO. NO OUTRO."""
-        for out in stream_agent(prompt_tv, "### 🩹 Tissue Viability\n"):
-            yield out
-
-        # 2. Relational Care Agent
-        prompt_rel = f"""Role: Relational Care Lead.
-Task: Identify emotional needs, preferences, and cultural dignity for this patient.
-Output: 3 bullet points starting with "- ". NO INTRO. NO OUTRO."""
-        for out in stream_agent(prompt_rel, "### 💚 Relational Care\n"):
-            yield out
-
-        # 3. Safety Agent
-        prompt_safe = f"""Role: Safety Auditor.
-Task: Check for sepsis (NEWS2), falls risk, and allergies for this patient.
-Output: 3 bullet points starting with "- ". NO INTRO. NO OUTRO."""
-        for out in stream_agent(prompt_safe, "### 🛡️ Patient Safety\n"):
-            yield out
-
-        # 4. Consensus Plan
-        prompt_plan = f"""Role: MDT Chair.
-Task: Create a numbered list of 3 actionable care steps for this patient.
-Output: Numbered list (1. 2. 3.) only. NO INTRO. NO OUTRO."""
-        for out in stream_agent(prompt_plan, "### 📋 Consensus Plan\n"):
-            yield out
+Output: Exactly 3 bullet points starting with "- ". Be concise. NO intro, NO outro."""
+        tv_output = get_response(prompt_tv)
         
-        full_output += "---\n✅ **MDT Complete**"
-        yield full_output
+        # 2. Relational Care Agent
+        prompt_rel = """Role: Relational Care Lead.
+Task: Identify emotional needs, preferences, and cultural dignity for this patient.
+Output: Exactly 3 bullet points starting with "- ". Be concise. NO intro, NO outro."""
+        rel_output = get_response(prompt_rel)
+        
+        # 3. Safety Agent
+        prompt_safe = """Role: Safety Auditor.
+Task: Check for sepsis risk (NEWS2), falls risk, and allergies for this patient.
+Output: Exactly 3 bullet points starting with "- ". Be concise. NO intro, NO outro."""
+        safe_output = get_response(prompt_safe)
+        
+        # 4. Consensus Plan
+        prompt_plan = """Role: MDT Chair.
+Task: Create 3 actionable care steps for this patient.
+Output: Numbered list (1. 2. 3.) only. Be concise. NO intro, NO outro."""
+        plan_output = get_response(prompt_plan)
+        
+        # Assemble final output
+        final_output = f"""🏥 **Virtual MDT Summary**
+
+### 🩹 Tissue Viability
+{tv_output}
+
+### 💚 Relational Care
+{rel_output}
+
+### 🛡️ Patient Safety
+{safe_output}
+
+### 📋 Consensus Plan
+{plan_output}
+
+---
+✅ **MDT Complete**"""
+        
+        yield final_output
+
 
