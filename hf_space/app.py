@@ -115,43 +115,48 @@ def generate_response(instruction: str, context: str, max_tokens: int = 256, tem
 # 2. GENERATE COMPARISON (Llama vs MedGemma)
 def generate_comparison(scenario: str):
     """Generate side-by-side responses from both models"""
-    
-    # --- Generate Llama-3 Response ---
-    # Use ALPACA prompt (instruction tuned)
-    prompt_llama = ALPACA_TEMPLATE.format(
-        instruction="Analyze this clinical scenario using FONS nursing principles. Focus on person-centred care and safety.", 
-        context=scenario
-    )
-    inputs_llama = tokenizer_llama(prompt_llama, return_tensors="pt").to(model_llama.device)
-    output_llama = model_llama.generate(
-        **inputs_llama, 
-        max_new_tokens=400, 
-        repetition_penalty=1.2,
-        do_sample=True,
-        temperature=0.7
-    )
-    res_llama = tokenizer_llama.decode(output_llama[0], skip_special_tokens=True)
-    # Clean up Alpaca artifact if present
-    if "### Response:" in res_llama:
-        res_llama = res_llama.split("### Response:")[1].strip()
+    try:
+        # --- Generate Llama-3 Response ---
+        # Use ALPACA prompt (instruction tuned)
+        prompt_llama = ALPACA_TEMPLATE.format(
+            instruction="Analyze this clinical scenario using FONS nursing principles. Focus on person-centred care and safety.", 
+            context=scenario
+        )
+        inputs_llama = tokenizer_llama(prompt_llama, return_tensors="pt").to(model_llama.device)
+        output_llama = model_llama.generate(
+            **inputs_llama, 
+            max_new_tokens=400, 
+            repetition_penalty=1.2,
+            do_sample=True,
+            temperature=0.7
+        )
+        res_llama = tokenizer_llama.decode(output_llama[0], skip_special_tokens=True)
+        # Clean up Alpaca artifact if present
+        if "### Response:" in res_llama:
+            res_llama = res_llama.split("### Response:")[1].strip()
 
-    # --- Generate MedGemma Response ---
-    # Use Gemma Chat Template: <start_of_turn>user...<end_of_turn><start_of_turn>model...
-    prompt_gemma = f"<start_of_turn>user\nAnalyze this clinical scenario. Focus heavily on Relational Care, Emotional Intelligence, and the IPDJ framework.\n\nSCENARIO:\n{scenario}<end_of_turn>\n<start_of_turn>model\n"
-    
-    inputs_gemma = tokenizer_gemma(prompt_gemma, return_tensors="pt").to(model_gemma.device)
-    output_gemma = model_gemma.generate(
-        **inputs_gemma, 
-        max_new_tokens=400,
-        do_sample=True,
-        temperature=0.7
-    )
-    res_gemma = tokenizer_gemma.decode(output_gemma[0], skip_special_tokens=True)
-    # Clean up Gemma artifact (usually just returns the answer, but good to be safe)
-    if "<start_of_turn>model" in res_gemma:
-        res_gemma = res_gemma.split("<start_of_turn>model")[1].strip()
+        # --- Generate MedGemma Response ---
+        # Use Gemma Chat Template: <start_of_turn>user...<end_of_turn><start_of_turn>model...
+        prompt_gemma = f"<start_of_turn>user\nAnalyze this clinical scenario. Focus heavily on Relational Care, Emotional Intelligence, and the IPDJ framework.\n\nSCENARIO:\n{scenario}<end_of_turn>\n<start_of_turn>model\n"
+        
+        inputs_gemma = tokenizer_gemma(prompt_gemma, return_tensors="pt").to(model_gemma.device)
+        output_gemma = model_gemma.generate(
+            **inputs_gemma, 
+            max_new_tokens=400,
+            do_sample=True,
+            temperature=0.7
+        )
+        res_gemma = tokenizer_gemma.decode(output_gemma[0], skip_special_tokens=True)
+        # Clean up Gemma artifact (usually just returns the answer, but good to be safe)
+        if "<start_of_turn>model" in res_gemma:
+            res_gemma = res_gemma.split("<start_of_turn>model")[1].strip()
 
-    return res_llama, res_gemma
+        return res_llama, res_gemma
+        
+    except Exception as e:
+        import traceback
+        error_msg = f"❌ ERROR: {str(e)}\n\n{traceback.format_exc()}"
+        return error_msg, error_msg
 
 
 # Restored basic chat interface (No Memory)
