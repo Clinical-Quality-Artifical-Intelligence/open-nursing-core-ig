@@ -71,6 +71,17 @@ model_gemma = AutoModelForCausalLM.from_pretrained(
 print(f"🧩 Applying MedGemma adapter: {GEMMA_ID}")
 model_gemma = PeftModel.from_pretrained(model_gemma, GEMMA_ID)
 
+# --- CRITICAL FIX: Set Pad Token for Generation ---
+# CUDA Logic Assertion Errors often occur if pad_token is missing
+if tokenizer_llama.pad_token is None:
+    tokenizer_llama.pad_token = tokenizer_llama.eos_token
+    tokenizer_llama.pad_token_id = tokenizer_llama.eos_token_id
+
+if tokenizer_gemma.pad_token is None:
+    # Gemma often uses <eos> as pad if not defined
+    tokenizer_gemma.pad_token = tokenizer_gemma.eos_token
+    tokenizer_gemma.pad_token_id = tokenizer_gemma.eos_token_id
+
 print("✅ Both Models Loaded Successfully! (Comparsion Mode Ready)")
 
 # Alias the "Primary" model for existing functions
