@@ -20,25 +20,29 @@ class MDTOrchestrator:
         """
         yield "🏥 *Starting Virtual MDT Analysis...*\n\n"
         
-        # Ultra-Strict Prompt to prevent looping
-        instruction = """You are leading a Virtual MDT. Analyze this patient case and provide a SHORT summary.
-        
-OUTPUT FORMAT:
-**Patient**: [Name/Age/Condition]
+        # Ultra-Strict Prompt with Explicit Agent Headers
+        instruction = """You are the Chair of a Virtual MDT. Review the patient case and provide a summary from three specialists.
 
-**Key Findings**:
-* [Finding 1]
-* [Finding 2]
+USE THIS EXACT FORMAT:
 
-**Actions**:
+### 🩹 Tissue Viability
+* [Assess skin integrity, pressure risks (Waterlow), and device issues]
+
+### 💚 Relational Care
+* [Identify patient preferences, cultural needs, or emotional state]
+
+### 🛡️ Patient Safety
+* [Verify safety gates like NEWS2, falls risk, or allergies]
+
+### 📋 Consensus Plan
 1. [Action 1]
 2. [Action 2]
 
-KEEP IT UNDER 100 WORDS. DO NOT REPEAT SECTIONS."""
+KEEP IT UNDER 150 WORDS. DO NOT REPEAT TEXT."""
         
         final_output = ""
-        # Increased max_tokens slightly to allow natural finish, but reliance is on repetition_penalty
-        for chunk in self.generate_fn(instruction, patient_case, max_tokens=300):
+        # Using a slightly lower max_tokens to encourage brevity, reliance on prompt structure
+        for chunk in self.generate_fn(instruction, patient_case, max_tokens=350):
             final_output = chunk
             yield chunk
         
