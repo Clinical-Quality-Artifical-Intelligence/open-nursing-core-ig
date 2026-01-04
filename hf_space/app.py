@@ -35,54 +35,29 @@ ALPACA_TEMPLATE = """Below is an instruction that describes a task, paired with 
 # LOAD MODEL (PEFT / Adapter Compatible)
 # ============================================
 # ============================================
-# LOAD MODELS (Comparing "Super-Gold" vs "Relational MedGemma")
+# LOAD MODEL (PEFT / Adapter Compatible)
 # ============================================
-# 8-bit quantization requested for Dual-Model Comparison Mode (L4 GPU)
-
-# 1. Load Llama-3-8B (The "Super-Gold" Standard)
-LLAMA_ID = "NurseCitizenDeveloper/nursing-llama-3-8b-fons"
-BASE_LLAMA = "NousResearch/Meta-Llama-3-8B"
+# 8-bit quantization for efficiency on L4 GPU
 print(f"🔄 Loading Llama-3 Base: {BASE_LLAMA}")
 
-tokenizer_llama = AutoTokenizer.from_pretrained(LLAMA_ID)
-model_llama = AutoModelForCausalLM.from_pretrained(
+tokenizer = AutoTokenizer.from_pretrained(LLAMA_ID)
+model = AutoModelForCausalLM.from_pretrained(
     BASE_LLAMA,
     device_map="auto",
-    load_in_8bit=True,  # 8-bit for efficiency
+    load_in_8bit=True,
     trust_remote_code=True,
 )
+
 print(f"🧩 Applying Llama adapter: {LLAMA_ID}")
 from peft import PeftModel
-model_llama = PeftModel.from_pretrained(model_llama, LLAMA_ID)
+model = PeftModel.from_pretrained(model, LLAMA_ID)
 
-# 2. Load Vanilla Llama-3-8B (The "Control" Group)
-# We load a fresh instance of the base model to compare against the fine-tuned one
-VANILLA_ID = "NousResearch/Meta-Llama-3-8B"
-print(f"🔄 Loading Vanilla Base: {VANILLA_ID}")
+# Fix pad token to prevent CUDA crashes
+if tokenizer.pad_token is None:
+    tokenizer.pad_token = tokenizer.eos_token
+    tokenizer.pad_token_id = tokenizer.eos_token_id
 
-tokenizer_vanilla = AutoTokenizer.from_pretrained(VANILLA_ID)
-# Fix padding token for Vanilla Llama (Base often lacks it)
-tokenizer_vanilla.pad_token = tokenizer_vanilla.eos_token
-tokenizer_vanilla.pad_token_id = tokenizer_vanilla.eos_token_id
-
-model_vanilla = AutoModelForCausalLM.from_pretrained(
-    VANILLA_ID,
-    device_map="auto",
-    load_in_8bit=True, # 8-bit for efficiency
-    trust_remote_code=True,
-)
-print("✅ Vanilla Base Model Loaded!")
-
-# --- CRITICAL FIX: Set Pad Token for Generation ---
-if tokenizer_llama.pad_token is None:
-    tokenizer_llama.pad_token = tokenizer_llama.eos_token
-    tokenizer_llama.pad_token_id = tokenizer_llama.eos_token_id
-
-print("✅ Both Models Loaded Successfully! (Comparsion Mode Ready)")
-
-# Alias the "Primary" model for existing functions
-tokenizer = tokenizer_llama
-model = model_llama
+print("✅ Model Loaded Successfully!")
 
 # ============================================
 # GENERATION FUNCTION
@@ -119,59 +94,7 @@ def generate_response(instruction: str, context: str, max_tokens: int = 256, tem
 
 
 
-# 2. GENERATE COMPARISON (Llama vs MedGemma)
-def generate_comparison(scenario: str):
-    """Generate side-by-side responses from both models"""
-    try:
-        # --- Generate Llama-3 Response ---
-        # Use ALPACA prompt (instruction tuned)
-        prompt_llama = ALPACA_TEMPLATE.format(
-            instruction="Analyze this clinical scenario using FONS nursing principles. Focus on person-centred care and safety.", 
-            context=scenario
-        )
-        inputs_llama = tokenizer_llama(prompt_llama, return_tensors="pt").to(model_llama.device)
-        input_len_llama = inputs_llama["input_ids"].shape[1]
-        
-        output_llama = model_llama.generate(
-            **inputs_llama, 
-            max_new_tokens=400, 
-            repetition_penalty=1.2,
-            do_sample=True,
-            temperature=0.7
-        )
-        # Decode ONLY new tokens (generated part)
-        res_llama = tokenizer_llama.decode(output_llama[0][input_len_llama:], skip_special_tokens=True)
-
-
-        # --- Generate Vanilla Llama (Control) Response ---
-        # Use a GENERIC prompt to show how a standard AI responds (Medical Model)
-        prompt_vanilla = ALPACA_TEMPLATE.format(
-            instruction="Analyze this clinical scenario and suggest a nursing care plan.", 
-            context=scenario
-        )
-        inputs_vanilla = tokenizer_vanilla(prompt_vanilla, return_tensors="pt").to(model_vanilla.device)
-        input_len_vanilla = inputs_vanilla["input_ids"].shape[1]
-        
-        output_vanilla = model_vanilla.generate(
-            **inputs_vanilla, 
-            max_new_tokens=400,
-            do_sample=True,
-            temperature=0.7
-        )
-        # Decode ONLY new tokens (generated part)
-        res_vanilla = tokenizer_vanilla.decode(output_vanilla[0][input_len_vanilla:], skip_special_tokens=True)
-        
-        # Fallback if Vanilla is truly empty (sometimes base models just stop)
-        if not res_vanilla.strip():
-            res_vanilla = "*(The Base Model generated no text. This often happens because standard Llama-3 is not instruction-tuned and may not understand the prompt format.)*"
-
-        return res_llama, res_vanilla
-        
-    except Exception as e:
-        import traceback
-        error_msg = f"❌ ERROR: {str(e)}\n\n{traceback.format_exc()}"
-        return error_msg, error_msg
-
+# Restored basic chat interface (No Memory)
 
 # Restored basic chat interface (No Memory)
 def chat_interface(message: str, history: list):
@@ -271,35 +194,6 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                 undo_btn=None,
             )
 
-        # Tab 1.5: Model Comparison (New)
-        with gr.TabItem("📊 Model Comparison"):
-            gr.Markdown("""
-            ### 🤖 The Fine-Tuning Effect: Super-Gold vs Vanilla
-            Compare the specialized nursing model against the generic base model to see the value of FONS training:
-            *   **Left**: `Llama-3-8B-FONS` (Fine-tuned on Nursing Logic)
-            *   **Right**: `Llama-3-8B-Base` (Generic "Vanilla" Model)
-            """)
-            
-            with gr.Row():
-                comp_input = gr.Textbox(
-                    label="Clinical Scenario", 
-                    placeholder="e.g. Patient is refusing care due to anxiety...",
-                    lines=3
-                )
-                comp_btn = gr.Button("⚔️ Compare Models", variant="primary")
-            
-            with gr.Row():
-                with gr.Column():
-                    out_llama = gr.Markdown(label="🦙 Fine-Tuned (Super-Gold)", value="*Super-Gold output will appear here...*")
-                with gr.Column():
-                    out_gemma = gr.Markdown(label="🍦 Vanilla (Base Llama-3)", value="*Vanilla output will appear here...*")
-            
-            comp_btn.click(
-                fn=generate_comparison,
-                inputs=comp_input,
-                outputs=[out_llama, out_gemma]
-            )
-        
         # Tab 2: Language Rewriter
         with gr.TabItem("✨ Language Rewriter"):
             gr.Markdown("""
