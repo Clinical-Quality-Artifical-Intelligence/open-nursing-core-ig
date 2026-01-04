@@ -55,32 +55,28 @@ print(f"🧩 Applying Llama adapter: {LLAMA_ID}")
 from peft import PeftModel
 model_llama = PeftModel.from_pretrained(model_llama, LLAMA_ID)
 
-# 2. Load MedGemma-4B (The "Relational" Expert)
-GEMMA_ID = "NurseCitizenDeveloper/relational-intelligence-unsloth-medgemma"
-BASE_GEMMA = "google/medgemma-4b-it"
-print(f"🔄 Loading MedGemma Base: {BASE_GEMMA}")
+# 2. Load Vanilla Llama-3-8B (The "Control" Group)
+# We load a fresh instance of the base model to compare against the fine-tuned one
+VANILLA_ID = "NousResearch/Meta-Llama-3-8B"
+print(f"🔄 Loading Vanilla Base: {VANILLA_ID}")
 
-tokenizer_gemma = AutoTokenizer.from_pretrained(GEMMA_ID)
-model_gemma = AutoModelForCausalLM.from_pretrained(
-    BASE_GEMMA,
+tokenizer_vanilla = AutoTokenizer.from_pretrained(VANILLA_ID)
+# Fix padding token for Vanilla Llama (Base often lacks it)
+tokenizer_vanilla.pad_token = tokenizer_vanilla.eos_token
+tokenizer_vanilla.pad_token_id = tokenizer_vanilla.eos_token_id
+
+model_vanilla = AutoModelForCausalLM.from_pretrained(
+    VANILLA_ID,
     device_map="auto",
     load_in_8bit=True, # 8-bit for efficiency
     trust_remote_code=True,
-    token=os.getenv("HF_TOKEN") # Explicit token sometimes needed for gated models
 )
-print(f"🧩 Applying MedGemma adapter: {GEMMA_ID}")
-model_gemma = PeftModel.from_pretrained(model_gemma, GEMMA_ID)
+print("✅ Vanilla Base Model Loaded!")
 
 # --- CRITICAL FIX: Set Pad Token for Generation ---
-# CUDA Logic Assertion Errors often occur if pad_token is missing
 if tokenizer_llama.pad_token is None:
     tokenizer_llama.pad_token = tokenizer_llama.eos_token
     tokenizer_llama.pad_token_id = tokenizer_llama.eos_token_id
-
-if tokenizer_gemma.pad_token is None:
-    # Gemma often uses <eos> as pad if not defined
-    tokenizer_gemma.pad_token = tokenizer_gemma.eos_token
-    tokenizer_gemma.pad_token_id = tokenizer_gemma.eos_token_id
 
 print("✅ Both Models Loaded Successfully! (Comparsion Mode Ready)")
 
@@ -146,24 +142,25 @@ def generate_comparison(scenario: str):
         if "### Response:" in res_llama:
             res_llama = res_llama.split("### Response:")[1].strip()
 
-        # --- Generate MedGemma Response ---
-        # ⚠️ TEMPORARILY DISABLED: MedGemma has a known incompatibility with 8-bit quantization
-        # and this specific LoRA adapter. The model needs to be tested standalone in Colab first.
-        # See: https://huggingface.co/NurseCitizenDeveloper/relational-intelligence-unsloth-medgemma
-        res_gemma = """⚠️ **MedGemma Disabled (Compatibility Issue)**
+        # --- Generate Vanilla Llama (Control) Response ---
+        # Use ALPACA prompt (same as fine-tuned) to show the difference purely from weights
+        prompt_vanilla = ALPACA_TEMPLATE.format(
+            instruction="Analyze this clinical scenario using FONS nursing principles. Focus on person-centred care and safety.", 
+            context=scenario
+        )
+        inputs_vanilla = tokenizer_vanilla(prompt_vanilla, return_tensors="pt").to(model_vanilla.device)
+        output_vanilla = model_vanilla.generate(
+            **inputs_vanilla, 
+            max_new_tokens=400,
+            do_sample=True,
+            temperature=0.7
+        )
+        res_vanilla = tokenizer_vanilla.decode(output_vanilla[0], skip_special_tokens=True)
+        # Clean up Alpaca artifact if present
+        if "### Response:" in res_vanilla:
+            res_vanilla = res_vanilla.split("### Response:")[1].strip()
 
-The Relational Intelligence MedGemma adapter requires further testing. 
-Common causes:
-1. Vocabulary mismatch between base model and adapter
-2. 8-bit quantization incompatibility with PEFT adapters
-
-**Next Steps:**
-- Test MedGemma standalone in a Colab notebook first
-- Verify the adapter was trained on `google/medgemma-4b-it` exactly
-- Consider using `load_in_4bit` or `float16` instead of `8bit`
-"""
-
-        return res_llama, res_gemma
+        return res_llama, res_vanilla
         
     except Exception as e:
         import traceback
@@ -272,10 +269,10 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
         # Tab 1.5: Model Comparison (New)
         with gr.TabItem("📊 Model Comparison"):
             gr.Markdown("""
-            ### 🤖 Battle of the Arrays: Llama-3 vs MedGemma
-            Compare the output of two specialized models side-by-side:
-            *   **Left**: `Llama-3-8B-FONS` (The Generalist Clinical Expert)
-            *   **Right**: `MedGemma-4B-Relational` (The Relational Care Specialist)
+            ### 🤖 The Fine-Tuning Effect: Super-Gold vs Vanilla
+            Compare the specialized nursing model against the generic base model to see the value of FONS training:
+            *   **Left**: `Llama-3-8B-FONS` (Fine-tuned on Nursing Logic)
+            *   **Right**: `Llama-3-8B-Base` (Generic "Vanilla" Model)
             """)
             
             with gr.Row():
@@ -288,9 +285,9 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
             
             with gr.Row():
                 with gr.Column():
-                    out_llama = gr.Textbox(label="🦙 Llama-3-8B (Super-Gold)", lines=12)
+                    out_llama = gr.Textbox(label="🦙 Fine-Tuned (Super-Gold)", lines=12)
                 with gr.Column():
-                    out_gemma = gr.Textbox(label="🏥 MedGemma-4B (Relational)", lines=12)
+                    out_gemma = gr.Textbox(label="🍦 Vanilla (Base Llama-3)", lines=12)
             
             comp_btn.click(
                 fn=generate_comparison,
