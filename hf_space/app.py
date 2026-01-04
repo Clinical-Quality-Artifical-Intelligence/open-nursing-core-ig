@@ -144,9 +144,9 @@ def generate_comparison(scenario: str):
 
 
         # --- Generate Vanilla Llama (Control) Response ---
-        # Use ALPACA prompt (same as fine-tuned) to show the difference purely from weights
+        # Use a GENERIC prompt to show how a standard AI responds (Medical Model)
         prompt_vanilla = ALPACA_TEMPLATE.format(
-            instruction="Analyze this clinical scenario using FONS nursing principles. Focus on person-centred care and safety.", 
+            instruction="Analyze this clinical scenario and suggest a nursing care plan.", 
             context=scenario
         )
         inputs_vanilla = tokenizer_vanilla(prompt_vanilla, return_tensors="pt").to(model_vanilla.device)
