@@ -130,6 +130,8 @@ def generate_comparison(scenario: str):
             context=scenario
         )
         inputs_llama = tokenizer_llama(prompt_llama, return_tensors="pt").to(model_llama.device)
+        input_len_llama = inputs_llama["input_ids"].shape[1]
+        
         output_llama = model_llama.generate(
             **inputs_llama, 
             max_new_tokens=400, 
@@ -137,10 +139,9 @@ def generate_comparison(scenario: str):
             do_sample=True,
             temperature=0.7
         )
-        res_llama = tokenizer_llama.decode(output_llama[0], skip_special_tokens=True)
-        # Clean up Alpaca artifact if present
-        if "### Response:" in res_llama:
-            res_llama = res_llama.split("### Response:")[1].strip()
+        # Decode ONLY new tokens (generated part)
+        res_llama = tokenizer_llama.decode(output_llama[0][input_len_llama:], skip_special_tokens=True)
+
 
         # --- Generate Vanilla Llama (Control) Response ---
         # Use ALPACA prompt (same as fine-tuned) to show the difference purely from weights
@@ -149,16 +150,20 @@ def generate_comparison(scenario: str):
             context=scenario
         )
         inputs_vanilla = tokenizer_vanilla(prompt_vanilla, return_tensors="pt").to(model_vanilla.device)
+        input_len_vanilla = inputs_vanilla["input_ids"].shape[1]
+        
         output_vanilla = model_vanilla.generate(
             **inputs_vanilla, 
             max_new_tokens=400,
             do_sample=True,
             temperature=0.7
         )
-        res_vanilla = tokenizer_vanilla.decode(output_vanilla[0], skip_special_tokens=True)
-        # Clean up Alpaca artifact if present
-        if "### Response:" in res_vanilla:
-            res_vanilla = res_vanilla.split("### Response:")[1].strip()
+        # Decode ONLY new tokens (generated part)
+        res_vanilla = tokenizer_vanilla.decode(output_vanilla[0][input_len_vanilla:], skip_special_tokens=True)
+        
+        # Fallback if Vanilla is truly empty (sometimes base models just stop)
+        if not res_vanilla.strip():
+            res_vanilla = "*(The Base Model generated no text. This often happens because standard Llama-3 is not instruction-tuned and may not understand the prompt format.)*"
 
         return res_llama, res_vanilla
         
