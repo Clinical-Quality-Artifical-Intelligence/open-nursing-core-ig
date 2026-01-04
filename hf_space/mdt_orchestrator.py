@@ -17,45 +17,52 @@ class MDTOrchestrator:
     def run_discussion(self, patient_case: str) -> Generator[str, None, None]:
         """
         Runs a simplified MDT and yields a concise care plan.
+        CRITICAL: Gradio streaming requires yielding the FULL accumulated output each time.
         """
-        yield "🏥 *Starting Virtual MDT Analysis...*\n\n"
+        full_output = "🏥 *Starting Virtual MDT Analysis...*\n\n"
+        yield full_output
         
-        # ARCHITECTURE CHANGE: SEQUENTIAL AGENTS
-        # Instead of one big prompt (which loops), we call each specialist individually.
+        # Helper to stream an agent and accumulate output
+        def stream_agent(prompt: str, header: str) -> None:
+            nonlocal full_output
+            full_output += header
+            yield full_output
+            
+            last_chunk = ""
+            for chunk in self.generate_fn(prompt, patient_case, max_tokens=100):
+                last_chunk = chunk
+                yield full_output + chunk
+            
+            full_output += last_chunk + "\n\n"
         
         # 1. Tissue Viability Agent
-        yield "### 🩹 Tissue Viability\n"
         prompt_tv = f"""Role: Tissue Viability Nurse.
-Task: Assess skin risks (Waterlow), wounds, and device pressure for this patient: "{patient_case}"
-Output: 3 bullet points. NO INTRO. NO OUTRO."""
-        for chunk in self.generate_fn(prompt_tv, patient_case, max_tokens=100):
-            yield chunk
-        yield "\n\n"
+Task: Assess skin risks (Waterlow), wounds, and device pressure for this patient.
+Output: 3 bullet points starting with "- ". NO INTRO. NO OUTRO."""
+        for out in stream_agent(prompt_tv, "### 🩹 Tissue Viability\n"):
+            yield out
 
         # 2. Relational Care Agent
-        yield "### 💚 Relational Care\n"
         prompt_rel = f"""Role: Relational Care Lead.
-Task: Identify emotional needs, preferences, and cultural dignity for this patient: "{patient_case}"
-Output: 3 bullet points. NO INTRO. NO OUTRO."""
-        for chunk in self.generate_fn(prompt_rel, patient_case, max_tokens=100):
-            yield chunk
-        yield "\n\n"
+Task: Identify emotional needs, preferences, and cultural dignity for this patient.
+Output: 3 bullet points starting with "- ". NO INTRO. NO OUTRO."""
+        for out in stream_agent(prompt_rel, "### 💚 Relational Care\n"):
+            yield out
 
         # 3. Safety Agent
-        yield "### 🛡️ Patient Safety\n"
         prompt_safe = f"""Role: Safety Auditor.
-Task: Check for sepsis (NEWS2), falls risk, and allergies for this patient: "{patient_case}"
-Output: 3 bullet points. NO INTRO. NO OUTRO."""
-        for chunk in self.generate_fn(prompt_safe, patient_case, max_tokens=100):
-            yield chunk
-        yield "\n\n"
+Task: Check for sepsis (NEWS2), falls risk, and allergies for this patient.
+Output: 3 bullet points starting with "- ". NO INTRO. NO OUTRO."""
+        for out in stream_agent(prompt_safe, "### 🛡️ Patient Safety\n"):
+            yield out
 
         # 4. Consensus Plan
-        yield "### 📋 Consensus Plan\n"
         prompt_plan = f"""Role: MDT Chair.
-Task: Create a numbered list of 3 actionable care steps for: "{patient_case}"
-Output: Numbered list only. NO INTRO. NO OUTRO."""
-        for chunk in self.generate_fn(prompt_plan, patient_case, max_tokens=100):
-            yield chunk
+Task: Create a numbered list of 3 actionable care steps for this patient.
+Output: Numbered list (1. 2. 3.) only. NO INTRO. NO OUTRO."""
+        for out in stream_agent(prompt_plan, "### 📋 Consensus Plan\n"):
+            yield out
         
-        yield "\n\n---\n✅ **MDT Complete**"
+        full_output += "---\n✅ **MDT Complete**"
+        yield full_output
+
