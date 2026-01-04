@@ -88,6 +88,15 @@ def generate_response(instruction: str, context: str, max_tokens: int = 256, tem
         yield partial_response
 
 
+
+# Restored basic chat interface (No Memory)
+def chat_interface(message: str, history: list):
+    """Simple chat interface handler."""
+    context = "You are an expert clinical nursing assistant. Provide empathetic, person-centred, and clinically accurate responses based on FONS principles."
+    for response in generate_response(message, context):
+        yield response
+
+
 def rewrite_clinical_note(original_note: str):
     """Rewrite a clinical note using person-centred language."""
     instruction = "Rewrite this clinical note using person-centred, dignified language that respects the patient. Focus on their experience and preferences."
