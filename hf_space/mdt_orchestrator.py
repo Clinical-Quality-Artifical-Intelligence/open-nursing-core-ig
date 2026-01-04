@@ -20,30 +20,42 @@ class MDTOrchestrator:
         """
         yield "🏥 *Starting Virtual MDT Analysis...*\n\n"
         
-        # Ultra-Strict Prompt with Explicit Agent Headers
-        instruction = """You are the Chair of a Virtual MDT. Review the patient case and provide a summary from three specialists.
-
-USE THIS EXACT FORMAT:
-
-### 🩹 Tissue Viability
-* [Assess skin integrity, pressure risks (Waterlow), and device issues]
-
-### 💚 Relational Care
-* [Identify patient preferences, cultural needs, or emotional state]
-
-### 🛡️ Patient Safety
-* [Verify safety gates like NEWS2, falls risk, or allergies]
-
-### 📋 Consensus Plan
-1. [Action 1]
-2. [Action 2]
-
-KEEP IT UNDER 150 WORDS. DO NOT REPEAT TEXT."""
+        # ARCHITECTURE CHANGE: SEQUENTIAL AGENTS
+        # Instead of one big prompt (which loops), we call each specialist individually.
         
-        final_output = ""
-        # Using a slightly lower max_tokens to encourage brevity, reliance on prompt structure
-        for chunk in self.generate_fn(instruction, patient_case, max_tokens=350):
-            final_output = chunk
+        # 1. Tissue Viability Agent
+        yield "### 🩹 Tissue Viability\n"
+        prompt_tv = f"""Role: Tissue Viability Nurse.
+Task: Assess skin risks (Waterlow), wounds, and device pressure for this patient: "{patient_case}"
+Output: 3 bullet points. NO INTRO. NO OUTRO."""
+        for chunk in self.generate_fn(prompt_tv, patient_case, max_tokens=100):
+            yield chunk
+        yield "\n\n"
+
+        # 2. Relational Care Agent
+        yield "### 💚 Relational Care\n"
+        prompt_rel = f"""Role: Relational Care Lead.
+Task: Identify emotional needs, preferences, and cultural dignity for this patient: "{patient_case}"
+Output: 3 bullet points. NO INTRO. NO OUTRO."""
+        for chunk in self.generate_fn(prompt_rel, patient_case, max_tokens=100):
+            yield chunk
+        yield "\n\n"
+
+        # 3. Safety Agent
+        yield "### 🛡️ Patient Safety\n"
+        prompt_safe = f"""Role: Safety Auditor.
+Task: Check for sepsis (NEWS2), falls risk, and allergies for this patient: "{patient_case}"
+Output: 3 bullet points. NO INTRO. NO OUTRO."""
+        for chunk in self.generate_fn(prompt_safe, patient_case, max_tokens=100):
+            yield chunk
+        yield "\n\n"
+
+        # 4. Consensus Plan
+        yield "### 📋 Consensus Plan\n"
+        prompt_plan = f"""Role: MDT Chair.
+Task: Create a numbered list of 3 actionable care steps for: "{patient_case}"
+Output: Numbered list only. NO INTRO. NO OUTRO."""
+        for chunk in self.generate_fn(prompt_plan, patient_case, max_tokens=100):
             yield chunk
         
         yield "\n\n---\n✅ **MDT Complete**"
