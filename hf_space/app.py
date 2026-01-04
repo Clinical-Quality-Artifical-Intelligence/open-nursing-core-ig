@@ -150,14 +150,17 @@ def generate_comparison(scenario: str):
         # Use Gemma Chat Template: <start_of_turn>user...<end_of_turn><start_of_turn>model...
         prompt_gemma = f"<start_of_turn>user\nAnalyze this clinical scenario. Focus heavily on Relational Care, Emotional Intelligence, and the IPDJ framework.\n\nSCENARIO:\n{scenario}<end_of_turn>\n<start_of_turn>model\n"
         
-        inputs_gemma = tokenizer_gemma(prompt_gemma, return_tensors="pt").to(model_gemma.device)
+        # MedGemma is Multimodal - use the inner .tokenizer for text-only
+        # (AutoTokenizer sometimes returns a Processor, which causes CUDA asserts)
+        inner_tok = getattr(tokenizer_gemma, 'tokenizer', tokenizer_gemma)
+        inputs_gemma = inner_tok(prompt_gemma, return_tensors="pt").to(model_gemma.device)
         output_gemma = model_gemma.generate(
             **inputs_gemma, 
             max_new_tokens=400,
             do_sample=True,
             temperature=0.7
         )
-        res_gemma = tokenizer_gemma.decode(output_gemma[0], skip_special_tokens=True)
+        res_gemma = inner_tok.decode(output_gemma[0], skip_special_tokens=True)
         # Clean up Gemma artifact (usually just returns the answer, but good to be safe)
         if "<start_of_turn>model" in res_gemma:
             res_gemma = res_gemma.split("<start_of_turn>model")[1].strip()
