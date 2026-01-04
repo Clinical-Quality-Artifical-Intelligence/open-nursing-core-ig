@@ -38,6 +38,9 @@ ALPACA_TEMPLATE = """Below is an instruction that describes a task, paired with 
 # LOAD MODEL (PEFT / Adapter Compatible)
 # ============================================
 # 8-bit quantization for efficiency on L4 GPU
+LLAMA_ID = "NurseCitizenDeveloper/nursing-llama-3-8b-fons"
+BASE_LLAMA = "NousResearch/Meta-Llama-3-8B"
+
 print(f"🔄 Loading Llama-3 Base: {BASE_LLAMA}")
 
 tokenizer = AutoTokenizer.from_pretrained(LLAMA_ID)
