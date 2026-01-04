@@ -9,8 +9,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStream
 from threading import Thread
 from huggingface_hub import login
 from mdt_orchestrator import MDTOrchestrator
-from rag_engine import RelationalRAG
-from memory_manager import MemoryManager
 
 # Login to Hugging Face (Requires HF_TOKEN secret in Space settings)
 if os.getenv("HF_TOKEN"):
