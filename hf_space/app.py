@@ -88,21 +88,6 @@ def generate_response(instruction: str, context: str, max_tokens: int = 256, tem
         yield partial_response
 
 
-# Initialize Shared Memory
-memory_manager = MemoryManager("knowledge_base/patient_memory.json")
-
-def chat_interface(message: str, history: list):
-    """Chat interface handler with memory awareness."""
-    # Check for memory context
-    memory_context = memory_manager.get_patient_context(message)
-    context = "General nursing documentation context."
-    if memory_context:
-        context = f"PERSON-CENTRED MEMORY:\n{memory_context}\n\nUse this context to be more empathetic and person-centred."
-        
-    for response in generate_response(message, context):
-        yield response
-
-
 def rewrite_clinical_note(original_note: str):
     """Rewrite a clinical note using person-centred language."""
     instruction = "Rewrite this clinical note using person-centred, dignified language that respects the patient. Focus on their experience and preferences."
