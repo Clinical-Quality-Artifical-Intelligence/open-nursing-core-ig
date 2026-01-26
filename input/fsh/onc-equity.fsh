@@ -205,6 +205,10 @@ Description: "Custom observation codes for Open Nursing Core"
 * #oral-care "Oral Care Needs" "Assessment of oral health and care requirements"
 * #medication-ability "Medication Management Ability" "Ability to manage own medications"
 * #medication-self-admin "Medication Self-Administration" "Observation of self-administration technique"
+* #dressing-assessment "Dressing Assessment" "Assessment of ability to dress and undress"
+* #skin-assessment "Skin Assessment" "Detailed assessment of skin condition and integrity"
+* #nursing-needs "Nursing Care Needs" "Identified nursing care needs"
+* #nursing-strengths "Nursing Strengths" "Identified patient strengths and capabilities"
 
 
 ValueSet: ONCMonkScaleVS
