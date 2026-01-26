@@ -74,7 +74,7 @@ Based on your repository structure:
     \"hl7\"
   ],
   \"author\": \"ClinyQAi\",
-  \"license\": \"Apache-2.0\",
+  \"license\": \"MIT\",
   \"repository\": {
     \"type\": \"git\",
     \"url\": \"https://github.com/ClinyQAi/open-nursing-core-ig.git\"
