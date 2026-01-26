@@ -16,7 +16,7 @@ Assessment of ability to take food and fluids orally.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/example-oral-intake](Observation-example-oral-intake.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-oral-intake-assessment)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-oral-intake-asse
   "name" : "ONCOralIntakeAssessment",
   "title" : "Oral Intake Assessment",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of ability to take food and fluids orally.",
   "fhirVersion" : "4.0.1",

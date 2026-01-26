@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-must-score"/>
+  <meta>
+    <profile value="https://opennursingcoreig.com/StructureDefinition/onc-must-score"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation example-must-score</b></p><a name="example-must-score"> </a><a name="hcexample-must-score"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-must-score.html">MUST Score (Malnutrition Universal Screening Tool)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-score}">MUST Score</span></p><p><b>subject</b>: <a href="Patient-patient-example-jane.html">Jane Doe  Female, DoB Unknown</a></p><p><b>effective</b>: 2025-03-15 10:00:00+0000</p><p><b>performer</b>: <a href="Practitioner-practitioner-example.html">Practitioner Nightingale </a></p><p><b>value</b>: 1 {score}</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-bmi-score}">MUST BMI Score</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-weight-loss-score}">MUST Weight Loss Score</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-acute-disease-score}">MUST Acute Disease Score</span></p><p><b>value</b>: 0</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+      <code value="must-score"/>
+      <display value="MUST Score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-jane"/>
+  </subject>
+  <effectiveDateTime value="2025-03-15T10:00:00Z"/>
+  <performer>
+    <reference value="Practitioner/practitioner-example"/>
+  </performer>
+  <valueQuantity>
+    <value value="1"/>
+    <unit value="{score}"/>
+  </valueQuantity>
+  <component>
+    <code>
+      <coding>
+        <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+        <code value="must-bmi-score"/>
+        <display value="MUST BMI Score"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="0"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+        <code value="must-weight-loss-score"/>
+        <display value="MUST Weight Loss Score"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="1"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+        <code value="must-acute-disease-score"/>
+        <display value="MUST Acute Disease Score"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="0"/>
+    </valueQuantity>
+  </component>
+</Observation>

@@ -16,7 +16,7 @@ Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicat
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/example-waterlow-score](Observation-example-waterlow-score.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-waterlow-score)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
   "name" : "ONCWaterlowScore",
   "title" : "Waterlow Score",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.",
   "fhirVersion" : "4.0.1",
@@ -120,6 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "short" : "Waterlow total score (0-64+, higher = higher risk)",
+        "min" : 1,
         "type" : [
           {
             "code" : "Quantity"

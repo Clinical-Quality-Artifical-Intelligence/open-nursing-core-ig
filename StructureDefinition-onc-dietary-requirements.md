@@ -16,7 +16,7 @@ Documentation of specific dietary needs (e.g. textural modification, cultural).
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/example-dietary-requirements](Observation-example-dietary-requirements.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-dietary-requirements)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-dietary-requirem
   "name" : "ONCDietaryRequirements",
   "title" : "Dietary Requirements",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Documentation of specific dietary needs (e.g. textural modification, cultural).",
   "fhirVersion" : "4.0.1",

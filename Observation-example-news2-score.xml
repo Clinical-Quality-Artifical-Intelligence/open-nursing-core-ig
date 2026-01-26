@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-news2-score"/>
+  <meta>
+    <profile value="https://opennursingcoreig.com/StructureDefinition/onc-news2-score"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation example-news2-score</b></p><a name="example-news2-score"> </a><a name="hcexample-news2-score"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-news2-score.html">NEWS2 Score</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes news2-score}">NEWS2 Score</span></p><p><b>subject</b>: <a href="Patient-patient-example-jane.html">Jane Doe  Female, DoB Unknown</a></p><p><b>effective</b>: 2025-03-15 10:00:00+0000</p><p><b>performer</b>: <a href="Practitioner-practitioner-example.html">Practitioner Nightingale </a></p><p><b>value</b>: 5 {score}</p><p><b>hasMember</b>: </p><ul><li><a href="Observation-example-respiration-rate.html">Observation Respiratory rate</a></li><li><a href="Observation-example-oxygen-saturation.html">Observation Oxygen saturation in Arterial blood by Pulse oximetry</a></li><li><a href="Observation-example-inspired-oxygen.html">Observation Inhaled oxygen flow rate</a></li><li><a href="Observation-example-blood-pressure.html">Observation Blood pressure panel with all children optional</a></li><li><a href="Observation-example-heart-rate.html">Observation Heart rate</a></li><li><a href="Observation-example-acvpu.html">Observation ACVPU (Alert Confusion Voice Pain Unresponsive) scale score</a></li><li><a href="Observation-example-temperature.html">Observation Body temperature</a></li></ul></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+      <code value="news2-score"/>
+      <display value="NEWS2 Score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-jane"/>
+  </subject>
+  <effectiveDateTime value="2025-03-15T10:00:00Z"/>
+  <performer>
+    <reference value="Practitioner/practitioner-example"/>
+  </performer>
+  <valueQuantity>
+    <value value="5"/>
+    <unit value="{score}"/>
+  </valueQuantity>
+  <hasMember>
+    <reference value="Observation/example-respiration-rate"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/example-oxygen-saturation"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/example-inspired-oxygen"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/example-blood-pressure"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/example-heart-rate"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/example-acvpu"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/example-temperature"/>
+  </hasMember>
+</Observation>

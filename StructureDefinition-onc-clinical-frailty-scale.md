@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-clinical-frailty
   "name" : "ONCClinicalFrailtyScale",
   "title" : "Clinical Frailty Scale (CFS)",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status.",
   "fhirVersion" : "4.0.1",
@@ -116,6 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-clinical-frailty
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "short" : "Frailty Level (1-9)",
+        "min" : 1,
         "type" : [
           {
             "code" : "CodeableConcept"

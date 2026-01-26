@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "ONCBloodPressure"] ; # 
   fhir:title [ fhir:v "Blood Pressure"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T10:54:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-26T11:35:16+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Blood pressure observation for NEWS2 (systolic BP used for scoring)"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
@@ -1320,7 +1320,7 @@
        fhir:definition [ fhir:v "The information determined as a result of making the observation, if the information has a simple value." ] ;
        fhir:comment [ fhir:v "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below." ] ;
        fhir:requirements [ fhir:v "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Observation.value[x]" ] ;

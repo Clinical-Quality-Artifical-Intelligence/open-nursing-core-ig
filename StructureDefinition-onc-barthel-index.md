@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
   "name" : "ONCBarthelIndex",
   "title" : "Barthel Index",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.",
   "fhirVersion" : "4.0.1",
@@ -111,6 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "short" : "Barthel Index total (0-100)",
+        "min" : 1,
         "type" : [
           {
             "code" : "Quantity"

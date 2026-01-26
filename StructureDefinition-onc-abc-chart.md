@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abc-chart.csv), 
   "name" : "ONCABCChart",
   "title" : "PBS ABC Chart",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities.",
   "fhirVersion" : "4.0.1",
@@ -116,6 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abc-chart.csv), 
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "short" : "Hypothesized Function (SEAT)",
+        "min" : 1,
         "type" : [
           {
             "code" : "CodeableConcept"

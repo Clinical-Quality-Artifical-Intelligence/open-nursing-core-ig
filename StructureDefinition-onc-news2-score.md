@@ -16,7 +16,7 @@ National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Ful
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/example-news2-score](Observation-example-news2-score.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-news2-score)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-score.csv)
   "name" : "ONCNEWS2Score",
   "title" : "NEWS2 Score",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
   "fhirVersion" : "4.0.1",
@@ -112,6 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-score.csv)
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "short" : "NEWS2 total score (0-20)",
+        "min" : 1,
         "type" : [
           {
             "code" : "Quantity"

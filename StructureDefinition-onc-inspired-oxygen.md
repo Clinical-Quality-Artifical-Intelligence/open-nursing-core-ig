@@ -16,7 +16,7 @@ Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/example-inspired-oxygen](Observation-example-inspired-oxygen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-inspired-oxygen)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-inspired-oxygen.
   "name" : "ONCInspiredOxygen",
   "title" : "Inspired Oxygen",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)",
   "fhirVersion" : "4.0.1",

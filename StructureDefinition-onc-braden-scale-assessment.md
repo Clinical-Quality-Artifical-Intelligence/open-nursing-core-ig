@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
   "name" : "ONCBradenScaleAssessment",
   "title" : "Braden Scale Assessment",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
   "fhirVersion" : "4.0.1",
@@ -120,6 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
       {
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
+        "min" : 1,
         "type" : [
           {
             "code" : "Quantity"

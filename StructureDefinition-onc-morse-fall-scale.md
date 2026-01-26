@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-morse-fall-scale
   "name" : "ONCMorseFallScale",
   "title" : "Morse Fall Scale",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125.",
   "fhirVersion" : "4.0.1",
@@ -111,6 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-morse-fall-scale
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "short" : "Morse Fall Scale total (0-125)",
+        "min" : 1,
         "type" : [
           {
             "code" : "Quantity"

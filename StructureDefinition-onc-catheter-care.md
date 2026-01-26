@@ -16,7 +16,7 @@ Documentation of catheter site care and status.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/example-catheter-care](Observation-example-catheter-care.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-catheter-care)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-catheter-care.cs
   "name" : "ONCCatheterCare",
   "title" : "Catheter Care",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Documentation of catheter site care and status.",
   "fhirVersion" : "4.0.1",

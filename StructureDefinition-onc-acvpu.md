@@ -16,7 +16,7 @@ ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, U
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/example-acvpu](Observation-example-acvpu.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-acvpu)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-acvpu.csv), [Exc
   "name" : "ONCACVPU",
   "title" : "ACVPU Consciousness Level",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)",
   "fhirVersion" : "4.0.1",

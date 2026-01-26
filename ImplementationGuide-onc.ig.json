@@ -10,7 +10,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",
@@ -894,6 +894,50 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/example-acvpu"
+      },
+      "name" : "example-acvpu",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-acvpu"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-bladder-assessment"
+      },
+      "name" : "example-bladder-assessment",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-blood-pressure"
+      },
+      "name" : "example-blood-pressure",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-bowel-assessment"
+      },
+      "name" : "example-bowel-assessment",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/example-bristol-stool"
       },
       "name" : "example-bristol-stool",
@@ -905,10 +949,43 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/example-catheter-care"
+      },
+      "name" : "example-catheter-care",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-catheter-care"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/example-clinical-frailty"
       },
       "name" : "example-clinical-frailty",
       "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-continence-assessment"
+      },
+      "name" : "example-continence-assessment",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-dietary-requirements"
+      },
+      "name" : "example-dietary-requirements",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements"
     },
     {
       "extension" : [{
@@ -938,10 +1015,109 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/example-heart-rate"
+      },
+      "name" : "example-heart-rate",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-heart-rate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-hygiene-assessment"
+      },
+      "name" : "example-hygiene-assessment",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-inspired-oxygen"
+      },
+      "name" : "example-inspired-oxygen",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-medication-ability"
+      },
+      "name" : "example-medication-ability",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-medication-ability"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-medication-self-admin"
+      },
+      "name" : "example-medication-self-admin",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/example-mental-capacity"
       },
       "name" : "example-mental-capacity",
       "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-mobility-assessment"
+      },
+      "name" : "example-mobility-assessment",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-monk-skin-tone"
+      },
+      "name" : "example-monk-skin-tone",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-must-score"
+      },
+      "name" : "example-must-score",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-must-score"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-news2-score"
+      },
+      "name" : "example-news2-score",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-news2-score"
     },
     {
       "extension" : [{
@@ -971,10 +1147,43 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/example-oral-care-assessment"
+      },
+      "name" : "example-oral-care-assessment",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/example-oral-health"
       },
       "name" : "example-oral-health",
       "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-oral-intake"
+      },
+      "name" : "example-oral-intake",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-oxygen-saturation"
+      },
+      "name" : "example-oxygen-saturation",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation"
     },
     {
       "extension" : [{
@@ -1016,6 +1225,17 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/example-respiration-rate"
+      },
+      "name" : "example-respiration-rate",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/example-seizure-record"
       },
       "name" : "example-seizure-record",
@@ -1027,10 +1247,43 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/example-swallowing-assessment"
+      },
+      "name" : "example-swallowing-assessment",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-temperature"
+      },
+      "name" : "example-temperature",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-body-temperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/example-urinalysis"
       },
       "name" : "example-urinalysis",
       "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-waterlow-score"
+      },
+      "name" : "example-waterlow-score",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
     },
     {
       "extension" : [{

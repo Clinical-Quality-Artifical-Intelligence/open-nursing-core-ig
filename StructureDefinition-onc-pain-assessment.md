@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-pain-assessment.
   "name" : "ONCPainAssessment",
   "title" : "Pain Assessment (NRS 0-10)",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Pain severity assessment using the Numeric Rating Scale (0-10)",
   "fhirVersion" : "4.0.1",
@@ -134,6 +134,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-pain-assessment.
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "short" : "Pain severity score (0-10)",
+        "min" : 1,
         "type" : [
           {
             "code" : "Quantity"

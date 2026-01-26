@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T10:54:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-26T11:35:16+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
@@ -1812,6 +1812,90 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-acvpu> ;
+         fhir:reference [ fhir:v "Observation/example-acvpu" ]
+       ] ;
+       fhir:name [ fhir:v "example-acvpu" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-acvpu"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-acvpu>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-bladder-assessment> ;
+         fhir:reference [ fhir:v "Observation/example-bladder-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "example-bladder-assessment" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-blood-pressure> ;
+         fhir:reference [ fhir:v "Observation/example-blood-pressure" ]
+       ] ;
+       fhir:name [ fhir:v "example-blood-pressure" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-bowel-assessment> ;
+         fhir:reference [ fhir:v "Observation/example-bowel-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "example-bowel-assessment" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://opennursingcoreig.com/Observation/example-bristol-stool> ;
          fhir:reference [ fhir:v "Observation/example-bristol-stool" ]
        ] ;
@@ -1833,6 +1917,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-catheter-care> ;
+         fhir:reference [ fhir:v "Observation/example-catheter-care" ]
+       ] ;
+       fhir:name [ fhir:v "example-catheter-care" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-catheter-care"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-catheter-care>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://opennursingcoreig.com/Observation/example-clinical-frailty> ;
          fhir:reference [ fhir:v "Observation/example-clinical-frailty" ]
        ] ;
@@ -1841,6 +1946,48 @@
          a fhir:Canonical ;
          fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"^^xsd:anyURI ;
          fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-continence-assessment> ;
+         fhir:reference [ fhir:v "Observation/example-continence-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "example-continence-assessment" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-dietary-requirements> ;
+         fhir:reference [ fhir:v "Observation/example-dietary-requirements" ]
+       ] ;
+       fhir:name [ fhir:v "example-dietary-requirements" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements>
        ]
      ] [
        fhir:extension ( [
@@ -1896,6 +2043,111 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-heart-rate> ;
+         fhir:reference [ fhir:v "Observation/example-heart-rate" ]
+       ] ;
+       fhir:name [ fhir:v "example-heart-rate" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-heart-rate"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-heart-rate>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-hygiene-assessment> ;
+         fhir:reference [ fhir:v "Observation/example-hygiene-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "example-hygiene-assessment" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-inspired-oxygen> ;
+         fhir:reference [ fhir:v "Observation/example-inspired-oxygen" ]
+       ] ;
+       fhir:name [ fhir:v "example-inspired-oxygen" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-medication-ability> ;
+         fhir:reference [ fhir:v "Observation/example-medication-ability" ]
+       ] ;
+       fhir:name [ fhir:v "example-medication-ability" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-medication-ability"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-medication-ability>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-medication-self-admin> ;
+         fhir:reference [ fhir:v "Observation/example-medication-self-admin" ]
+       ] ;
+       fhir:name [ fhir:v "example-medication-self-admin" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://opennursingcoreig.com/Observation/example-mental-capacity> ;
          fhir:reference [ fhir:v "Observation/example-mental-capacity" ]
        ] ;
@@ -1904,6 +2156,90 @@
          a fhir:Canonical ;
          fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"^^xsd:anyURI ;
          fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-mobility-assessment> ;
+         fhir:reference [ fhir:v "Observation/example-mobility-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "example-mobility-assessment" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-monk-skin-tone> ;
+         fhir:reference [ fhir:v "Observation/example-monk-skin-tone" ]
+       ] ;
+       fhir:name [ fhir:v "example-monk-skin-tone" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-must-score> ;
+         fhir:reference [ fhir:v "Observation/example-must-score" ]
+       ] ;
+       fhir:name [ fhir:v "example-must-score" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-must-score"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-must-score>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-news2-score> ;
+         fhir:reference [ fhir:v "Observation/example-news2-score" ]
+       ] ;
+       fhir:name [ fhir:v "example-news2-score" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-news2-score"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-news2-score>
        ]
      ] [
        fhir:extension ( [
@@ -1959,6 +2295,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-oral-care-assessment> ;
+         fhir:reference [ fhir:v "Observation/example-oral-care-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "example-oral-care-assessment" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://opennursingcoreig.com/Observation/example-oral-health> ;
          fhir:reference [ fhir:v "Observation/example-oral-health" ]
        ] ;
@@ -1967,6 +2324,48 @@
          a fhir:Canonical ;
          fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"^^xsd:anyURI ;
          fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-oral-health>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-oral-intake> ;
+         fhir:reference [ fhir:v "Observation/example-oral-intake" ]
+       ] ;
+       fhir:name [ fhir:v "example-oral-intake" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-oxygen-saturation> ;
+         fhir:reference [ fhir:v "Observation/example-oxygen-saturation" ]
+       ] ;
+       fhir:name [ fhir:v "example-oxygen-saturation" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation>
        ]
      ] [
        fhir:extension ( [
@@ -2044,6 +2443,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-respiration-rate> ;
+         fhir:reference [ fhir:v "Observation/example-respiration-rate" ]
+       ] ;
+       fhir:name [ fhir:v "example-respiration-rate" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://opennursingcoreig.com/Observation/example-seizure-record> ;
          fhir:reference [ fhir:v "Observation/example-seizure-record" ]
        ] ;
@@ -2065,6 +2485,48 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-swallowing-assessment> ;
+         fhir:reference [ fhir:v "Observation/example-swallowing-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "example-swallowing-assessment" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-temperature> ;
+         fhir:reference [ fhir:v "Observation/example-temperature" ]
+       ] ;
+       fhir:name [ fhir:v "example-temperature" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-body-temperature"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-body-temperature>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://opennursingcoreig.com/Observation/example-urinalysis> ;
          fhir:reference [ fhir:v "Observation/example-urinalysis" ]
        ] ;
@@ -2073,6 +2535,27 @@
          a fhir:Canonical ;
          fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"^^xsd:anyURI ;
          fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/example-waterlow-score> ;
+         fhir:reference [ fhir:v "Observation/example-waterlow-score" ]
+       ] ;
+       fhir:name [ fhir:v "example-waterlow-score" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score>
        ]
      ] [
        fhir:extension ( [

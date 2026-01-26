@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
   "name" : "ONCMentalCapacity",
   "title" : "Mental Capacity Assessment",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.",
   "fhirVersion" : "4.0.1",
@@ -116,6 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "short" : "Outcome (Capacity Present/Absent)",
+        "min" : 1,
         "type" : [
           {
             "code" : "CodeableConcept"

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-fluid-balance.cs
   "name" : "ONCFluidBalance",
   "title" : "Fluid Balance",
   "status" : "draft",
-  "date" : "2026-01-26T10:54:48+00:00",
+  "date" : "2026-01-26T11:35:16+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring.",
   "fhirVersion" : "4.0.1",
@@ -116,6 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-fluid-balance.cs
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "short" : "Net Fluid Balance (Input - Output)",
+        "min" : 1,
         "type" : [
           {
             "code" : "Quantity"

@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="draft"/>
-  <date value="2026-01-26T10:54:48+00:00"/>
+  <date value="2026-01-26T11:35:16+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."/>
   <packageId value="onc.ig"/>
@@ -714,6 +714,46 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/example-acvpu"/>
+      </reference>
+      <name value="example-acvpu"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-acvpu"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-bladder-assessment"/>
+      </reference>
+      <name value="example-bladder-assessment"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-blood-pressure"/>
+      </reference>
+      <name value="example-blood-pressure"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-bowel-assessment"/>
+      </reference>
+      <name value="example-bowel-assessment"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/example-bristol-stool"/>
       </reference>
       <name value="example-bristol-stool"/>
@@ -724,10 +764,40 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/example-catheter-care"/>
+      </reference>
+      <name value="example-catheter-care"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-catheter-care"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/example-clinical-frailty"/>
       </reference>
       <name value="example-clinical-frailty"/>
       <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-continence-assessment"/>
+      </reference>
+      <name value="example-continence-assessment"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-dietary-requirements"/>
+      </reference>
+      <name value="example-dietary-requirements"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -754,10 +824,100 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/example-heart-rate"/>
+      </reference>
+      <name value="example-heart-rate"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-heart-rate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-hygiene-assessment"/>
+      </reference>
+      <name value="example-hygiene-assessment"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-inspired-oxygen"/>
+      </reference>
+      <name value="example-inspired-oxygen"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-medication-ability"/>
+      </reference>
+      <name value="example-medication-ability"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-medication-ability"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-medication-self-admin"/>
+      </reference>
+      <name value="example-medication-self-admin"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/example-mental-capacity"/>
       </reference>
       <name value="example-mental-capacity"/>
       <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-mobility-assessment"/>
+      </reference>
+      <name value="example-mobility-assessment"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-monk-skin-tone"/>
+      </reference>
+      <name value="example-monk-skin-tone"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-must-score"/>
+      </reference>
+      <name value="example-must-score"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-must-score"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-news2-score"/>
+      </reference>
+      <name value="example-news2-score"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-news2-score"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -784,10 +944,40 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/example-oral-care-assessment"/>
+      </reference>
+      <name value="example-oral-care-assessment"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/example-oral-health"/>
       </reference>
       <name value="example-oral-health"/>
       <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-oral-intake"/>
+      </reference>
+      <name value="example-oral-intake"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-oxygen-saturation"/>
+      </reference>
+      <name value="example-oxygen-saturation"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -825,6 +1015,16 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/example-respiration-rate"/>
+      </reference>
+      <name value="example-respiration-rate"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/example-seizure-record"/>
       </reference>
       <name value="example-seizure-record"/>
@@ -835,10 +1035,40 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/example-swallowing-assessment"/>
+      </reference>
+      <name value="example-swallowing-assessment"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-temperature"/>
+      </reference>
+      <name value="example-temperature"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-body-temperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/example-urinalysis"/>
       </reference>
       <name value="example-urinalysis"/>
       <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-waterlow-score"/>
+      </reference>
+      <name value="example-waterlow-score"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
