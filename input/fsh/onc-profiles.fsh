@@ -11,7 +11,7 @@ Description: "Base profile for nursing assessment observations conforming to UK 
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * performer 1..1 MS
 * performer only Reference(Practitioner or PractitionerRole)
-* value[x] 1..1 MS
+* value[x] 0..1 MS
 * value[x] only CodeableConcept or Quantity or string
 
 Profile: ONCBradenScaleAssessment
