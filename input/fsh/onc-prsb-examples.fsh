@@ -40,7 +40,7 @@ Description: "Demonstration of the ONCDressingAssessment profile."
 * status = #final
 * subject = Reference(Patient/example-patient)
 * performer = Reference(Practitioner/example-nurse)
-* code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#dressing-assessment
+* code = http://snomed.info/sct#165235000 "Ability to dress"
 * valueCodeableConcept.text = "Requires assistance with lower body dressing"
 // In a real implementation, this would be bound to a SNOMED code, e.g., "Dependency in dressing lower body"
 
@@ -55,6 +55,6 @@ Description: "Demonstration of the ONCSkinAssessment profile for general skin in
 * status = #final
 * subject = Reference(Patient/example-patient)
 * performer = Reference(Practitioner/example-nurse)
-* code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#skin-assessment
+* code = http://snomed.info/sct#711041003 "Assessment of skin integrity"
 * bodySite.text = "Left lower leg"
 * valueCodeableConcept.text = "Dry, papery skin with no breaks"
