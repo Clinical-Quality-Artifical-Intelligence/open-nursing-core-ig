@@ -18,5 +18,11 @@ pages:
     title: Home
   relation-ai.md:
     title: Relational Ai (AI Model)
+  safety.md:
+    title: Clinical Safety
+  security.md:
+    title: Security & Privacy
+  terminology.md:
+    title: Terminology
   history.md:
     title: Published Versions
