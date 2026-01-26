@@ -1,50 +1,54 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 100, warn = 138, info = 403
+err = 117, warn = 141, info = 376
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingcoreig.com)
- Build Errors : 20 / 52 / 0
+ Build Errors : 27 / 52 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 3 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 0 / 2 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ConceptMap-ONCToNandaMapping : 5 / 3 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-ExampleNursingNeed-Dressing : 2 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-example-nursing-problem : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Goal-example-patient-goal : 2 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ImplementationGuide-onc.ig : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleDressingAssessment : 4 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleNursingStrength-Motivation : 4 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleSkinAssessment : 4 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-4at-delirium : 7 / 1 / 10
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-abbey-pain : 1 / 1 / 8
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-abc-chart : 1 / 1 / 5
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-acvpu : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-bladder-assessment : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-bladder-assessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-blood-pressure : 5 / 0 / 3
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-bowel-assessment : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-bowel-assessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-bristol-stool : 1 / 1 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-catheter-care : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-catheter-care : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-clinical-frailty : 0 / 1 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-continence-assessment : 0 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-dietary-requirements : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-continence-assessment : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-dietary-requirements : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-fluid-balance : 1 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-goal-evaluation : 1 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-heart-rate : 3 / 0 / 3
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-hygiene-assessment : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-hygiene-assessment : 0 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-inspired-oxygen : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-medication-ability : 0 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-medication-self-admin : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-medication-ability : 1 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-medication-self-admin : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-mental-capacity : 2 / 1 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-mobility-assessment : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-mobility-assessment : 0 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-monk-skin-tone : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-must-score : 0 / 0 / 5
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-news2-score : 0 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-care-assessment : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-care-assessment : 0 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-health : 1 / 1 / 6
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-intake : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-intake : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oxygen-saturation : 4 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-patient-story : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-reasonable-adjustment : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-respiration-rate : 3 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-seizure-record : 1 / 1 / 5
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-swallowing-assessment : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-swallowing-assessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-temperature : 3 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-urinalysis : 1 / 1 / 6
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-waterlow-score : 1 / 0 / 3
@@ -62,29 +66,30 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-abc-chart : 2 / 0 / 17
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-acvpu : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-barthel-index : 0 / 1 / 4
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-bladder-assessment : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-bladder-assessment : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-blood-pressure : 0 / 0 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-body-temperature : 0 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-bowel-assessment : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-bowel-assessment : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment : 0 / 0 / 20
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-bristol-stool-chart : 2 / 0 / 5
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-catheter-care : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-catheter-care : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale : 2 / 0 / 5
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-continence-assessment : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-continence-assessment : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-device-use-statement : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-dietary-requirements : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-dietary-requirements : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-dressing-assessment : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-equity-marker : 0 / 2 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-fluid-balance : 2 / 0 / 13
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-glasgow-coma-scale : 0 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-goal-evaluation : 2 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-heart-rate : 0 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-hygiene-assessment : 0 / 0 / 8
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-hygiene-assessment : 0 / 0 / 6
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-inspired-oxygen : 0 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-medication-ability : 0 / 0 / 4
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-medication-self-admin : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-medication-ability : 2 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-medication-self-admin : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-mental-capacity : 2 / 0 / 5
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-mmse : 0 / 1 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-mobility-assessment : 0 / 0 / 8
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-mobility-assessment : 0 / 0 / 6
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-monk-skintone-observation : 0 / 0 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-morse-fall-scale : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-must-score : 0 / 0 / 12
@@ -95,10 +100,12 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-clinical-impression : 2 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-goal : 1 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-intervention : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-need : 0 / 0 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-problem : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-care-assessment : 0 / 1 / 8
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-strength : 0 / 0 / 3
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-care-assessment : 0 / 1 / 6
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-health : 3 / 0 / 17
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-intake-assessment : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-intake-assessment : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oxygen-saturation : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-pain-assessment : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-story : 2 / 0 / 4
@@ -108,9 +115,10 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-relational-observation : 2 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-respiration-rate : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-seizure-record : 2 / 0 / 15
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-skin-assessment : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-skintone-observation : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-sleep-pattern : 2 / 1 / 13
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-swallowing-assessment : 0 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-swallowing-assessment : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-urinalysis : 2 / 0 / 23
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-waterlow-score : 0 / 0 / 6
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-what-matters : 2 / 0 / 4
@@ -192,6 +200,13 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observation-skin-tone.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient-example-jane.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/practitioner-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Condition-ExampleNursingNeed-Dressing.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 873: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
+ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 730: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
+ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 816: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
+ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 653: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
+ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 739: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
+ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 721: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
+ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 807: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
 ERROR: StructureDefinition-onc-relational-care-logical-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 230, column 473: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
 ERROR: StructureDefinition-onc-relational-care-logical-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 258, column 473: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
 ERROR: StructureDefinition-onc-relational-care-logical-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 286, column 473: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
@@ -235,11 +250,34 @@ WARNING: ConceptMap/ONCToNandaMapping: ConceptMap.group[0].source: No definition
 ERROR: ConceptMap/ONCToNandaMapping: ConceptMap.group[0].target: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/nanda-i'
 WARNING: ConceptMap/ONCToNandaMapping: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
 ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ConceptMap-ONCToNandaMapping: URL Mismatch https://opennursingcoreig.com/ConceptMap/ONCToNandaMapping vs https://fhir.clinyq.ai/ConceptMap/onc-to-nanda
+== fsh-generated/resources/Condition-ExampleNursingNeed-Dressing.json ==
+INFORMATION: Condition/ExampleNursingNeed-Dressing: Condition.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+ERROR: Condition/ExampleNursingNeed-Dressing: Condition.subject: Unable to resolve resource with reference 'Patient/example-patient'
+ERROR: Condition.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
 == fsh-generated/resources/Condition-example-nursing-problem.json ==
 == fsh-generated/resources/Goal-example-patient-goal.json ==
 ERROR: Goal/example-patient-goal: Goal.target[0].measure.coding[0].display: Wrong Display Name 'Functional status' for http://loinc.org#88020-3. Valid display is one of 3 choices: 'Functional capacity NYHA' (en-US), 'Functional capacity NYHA' (en-US) or 'Functional capacity NYHA' (en-US) (for the language(s) 'en-US')
 ERROR: Goal/example-patient-goal: Goal.target[0].detail.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Objective achieved' for http://snomed.info/sct#385652002. Valid display is 'Started (qualifier value)' (en) (for the language(s) 'en-US')
 == fsh-generated/resources/ImplementationGuide-onc.ig.json ==
+== fsh-generated/resources/Observation-ExampleDressingAssessment.json ==
+ERROR: Observation/ExampleDressingAssessment: Observation.subject: Unable to resolve resource with reference 'Patient/example-patient'
+ERROR: Observation/ExampleDressingAssessment: Observation.performer[0]: Unable to resolve resource with reference 'Practitioner/example-nurse'
+WARNING: Observation/ExampleDressingAssessment: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+ERROR: Observation.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
+ERROR: Observation.text.div: Hyperlink 'Practitioner/example-nurse' at 'div/p/a' for 'Practitioner/example-nurse' does not resolve
+== fsh-generated/resources/Observation-ExampleNursingStrength-Motivation.json ==
+INFORMATION: Observation/ExampleNursingStrength-Motivation: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+ERROR: Observation/ExampleNursingStrength-Motivation: Observation.subject: Unable to resolve resource with reference 'Patient/example-patient'
+ERROR: Observation/ExampleNursingStrength-Motivation: Observation.performer[0]: Unable to resolve resource with reference 'Practitioner/example-nurse'
+WARNING: Observation/ExampleNursingStrength-Motivation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+ERROR: Observation.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
+ERROR: Observation.text.div: Hyperlink 'Practitioner/example-nurse' at 'div/p/a' for 'Practitioner/example-nurse' does not resolve
+== fsh-generated/resources/Observation-ExampleSkinAssessment.json ==
+ERROR: Observation/ExampleSkinAssessment: Observation.subject: Unable to resolve resource with reference 'Patient/example-patient'
+ERROR: Observation/ExampleSkinAssessment: Observation.performer[0]: Unable to resolve resource with reference 'Practitioner/example-nurse'
+WARNING: Observation/ExampleSkinAssessment: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+ERROR: Observation.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
+ERROR: Observation.text.div: Hyperlink 'Practitioner/example-nurse' at 'div/p/a' for 'Practitioner/example-nurse' does not resolve
 == fsh-generated/resources/Observation-example-4at-delirium.json ==
 INFORMATION: Observation/example-4at-delirium: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: Observation/example-4at-delirium: Observation.component[0].code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
@@ -277,7 +315,6 @@ INFORMATION: Observation/example-abc-chart: Observation.component[2].code: Refer
 WARNING: Observation/example-abc-chart: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-acvpu.json ==
 == fsh-generated/resources/Observation-example-bladder-assessment.json ==
-INFORMATION: Observation/example-bladder-assessment: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-blood-pressure.json ==
 INFORMATION: Observation/example-blood-pressure: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/example-blood-pressure: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1). Note that other slices are allowed in addition to this required slice
@@ -286,20 +323,16 @@ ERROR: Observation/example-blood-pressure: Observation.component[0].value.ofType
 ERROR: Observation/example-blood-pressure: Observation.component[1].value.ofType(Quantity): Observation.component:DiastolicBP.value[x].system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
 ERROR: Observation/example-blood-pressure: Observation.component[1].value.ofType(Quantity): Observation.component:DiastolicBP.value[x].code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
 == fsh-generated/resources/Observation-example-bowel-assessment.json ==
-INFORMATION: Observation/example-bowel-assessment: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-bristol-stool.json ==
 ERROR: Observation/example-bristol-stool: Observation.category[0]: The pattern [system http://terminology.hl7.org/CodeSystem/observation-category, code exam, and display 'null'] defined in the profile https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart|0.1.0 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Observation.category[0].coding.code,message=Value is 'survey' but is fixed to 'exam' in the profile https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart|0.1.0#Observation]]
 INFORMATION: Observation/example-bristol-stool: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 WARNING: Observation/example-bristol-stool: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-catheter-care.json ==
-INFORMATION: Observation/example-catheter-care: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-clinical-frailty.json ==
 INFORMATION: Observation/example-clinical-frailty: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 WARNING: Observation/example-clinical-frailty: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-continence-assessment.json ==
-INFORMATION: Observation/example-continence-assessment: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-dietary-requirements.json ==
-INFORMATION: Observation/example-dietary-requirements: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-fluid-balance.json ==
 ERROR: Observation/example-fluid-balance: Observation.category[0]: The pattern [system http://terminology.hl7.org/CodeSystem/observation-category, code exam, and display 'null'] defined in the profile https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance|0.1.0 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Observation.category[0].coding.code,message=Value is 'survey' but is fixed to 'exam' in the profile https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance|0.1.0#Observation]]
 INFORMATION: Observation/example-fluid-balance: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
@@ -315,21 +348,18 @@ ERROR: Observation/example-heart-rate: Observation: Slice 'Observation.category:
 ERROR: Observation/example-heart-rate: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1)
 ERROR: Observation/example-heart-rate: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1)
 == fsh-generated/resources/Observation-example-hygiene-assessment.json ==
-INFORMATION: Observation/example-hygiene-assessment: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: Observation/example-hygiene-assessment: Observation.component[0].code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: Observation/example-hygiene-assessment: Observation.component[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-inspired-oxygen.json ==
 == fsh-generated/resources/Observation-example-medication-ability.json ==
-INFORMATION: Observation/example-medication-ability: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+ERROR: Observation/example-medication-ability: Observation.code.coding[0].display: Wrong Display Name 'Manage medication' for http://snomed.info/sct#285033005. Valid display is 'Ability to manage medication' (en) (for the language(s) 'en-US')
 == fsh-generated/resources/Observation-example-medication-self-admin.json ==
-INFORMATION: Observation/example-medication-self-admin: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-mental-capacity.json ==
 ERROR: Observation/example-mental-capacity: Observation.category[0]: The pattern [system http://terminology.hl7.org/CodeSystem/observation-category, code exam, and display 'null'] defined in the profile https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity|0.1.0 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Observation.category[0].coding.code,message=Value is 'survey' but is fixed to 'exam' in the profile https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity|0.1.0#Observation]]
 INFORMATION: Observation/example-mental-capacity: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 ERROR: Observation/example-mental-capacity: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Mental Capacity Finding Value Set' (https://opennursingcoreig.com/ValueSet/onc-mca-vs|0.1.0), and a coding from this value set is required) (codes = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#mca-present)
 WARNING: Observation/example-mental-capacity: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-mobility-assessment.json ==
-INFORMATION: Observation/example-mobility-assessment: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: Observation/example-mobility-assessment: Observation.component[0].code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: Observation/example-mobility-assessment: Observation.component[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-monk-skin-tone.json ==
@@ -342,7 +372,6 @@ INFORMATION: Observation/example-must-score: Observation.component[2].code: Refe
 == fsh-generated/resources/Observation-example-news2-score.json ==
 INFORMATION: Observation/example-news2-score: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-oral-care-assessment.json ==
-INFORMATION: Observation/example-oral-care-assessment: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: Observation/example-oral-care-assessment: Observation.component[0].code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: Observation/example-oral-care-assessment: Observation.component[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-oral-health.json ==
@@ -354,7 +383,6 @@ INFORMATION: Observation/example-oral-health: Observation.component[2].code: Ref
 INFORMATION: Observation/example-oral-health: Observation.component[3].code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 WARNING: Observation/example-oral-health: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-oral-intake.json ==
-INFORMATION: Observation/example-oral-intake: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-oxygen-saturation.json ==
 INFORMATION: Observation/example-oxygen-saturation: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/example-oxygen-saturation: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1). Note that other slices are allowed in addition to this required slice
@@ -380,7 +408,6 @@ INFORMATION: Observation/example-seizure-record: Observation.component[1].code: 
 INFORMATION: Observation/example-seizure-record: Observation.component[2].code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 WARNING: Observation/example-seizure-record: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-swallowing-assessment.json ==
-INFORMATION: Observation/example-swallowing-assessment: Observation.code: Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/Observation-example-temperature.json ==
 INFORMATION: Observation/example-temperature: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/example-temperature: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1). Note that other slices are allowed in addition to this required slice
@@ -492,8 +519,6 @@ INFORMATION: StructureDefinition/onc-barthel-index: StructureDefinition.differen
 INFORMATION: StructureDefinition/onc-barthel-index: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-barthel-index'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-bladder-assessment.json ==
-INFORMATION: StructureDefinition/onc-bladder-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-bladder-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-bladder-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-blood-pressure.json ==
 INFORMATION: StructureDefinition/onc-blood-pressure: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -502,8 +527,6 @@ INFORMATION: StructureDefinition/onc-blood-pressure: StructureDefinition.snapsho
 == fsh-generated/resources/StructureDefinition-onc-body-temperature.json ==
 INFORMATION: StructureDefinition/onc-body-temperature: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-bowel-assessment.json ==
-INFORMATION: StructureDefinition/onc-bowel-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-bowel-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-bowel-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment.json ==
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
@@ -533,8 +556,6 @@ INFORMATION: StructureDefinition/onc-bristol-stool-chart: StructureDefinition.sn
 INFORMATION: StructureDefinition/onc-bristol-stool-chart: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-bristol-stool-chart: URL Mismatch https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart vs https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart
 == fsh-generated/resources/StructureDefinition-onc-catheter-care.json ==
-INFORMATION: StructureDefinition/onc-catheter-care: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-catheter-care: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-catheter-care: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale.json ==
 ERROR: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale.json - the canonical URL (https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale) does not match the URL (https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale). Use the special-url parameter if you really mean for it not to match
@@ -544,15 +565,13 @@ INFORMATION: StructureDefinition/onc-clinical-frailty-scale: StructureDefinition
 INFORMATION: StructureDefinition/onc-clinical-frailty-scale: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale: URL Mismatch https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale vs https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale
 == fsh-generated/resources/StructureDefinition-onc-continence-assessment.json ==
-INFORMATION: StructureDefinition/onc-continence-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-continence-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-continence-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-device-use-statement.json ==
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-dietary-requirements.json ==
-INFORMATION: StructureDefinition/onc-dietary-requirements: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-dietary-requirements: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-dietary-requirements: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-onc-dressing-assessment.json ==
+INFORMATION: StructureDefinition/onc-dressing-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-equity-marker.json ==
 WARNING: StructureDefinition/onc-equity-marker: StructureDefinition.context[0]: Review the extension type for onc-equity-marker: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-equity-marker'): The Implementation Guide contains no examples for this extension
@@ -582,9 +601,7 @@ ERROR: StructureDefinition/onc-goal-evaluation: StructureDefinition.differential
 == fsh-generated/resources/StructureDefinition-onc-heart-rate.json ==
 INFORMATION: StructureDefinition/onc-heart-rate: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-hygiene-assessment.json ==
-INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.snapshot.element[55].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -592,12 +609,10 @@ INFORMATION: StructureDefinition/onc-hygiene-assessment: StructureDefinition.sna
 == fsh-generated/resources/StructureDefinition-onc-inspired-oxygen.json ==
 INFORMATION: StructureDefinition/onc-inspired-oxygen: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-medication-ability.json ==
-INFORMATION: StructureDefinition/onc-medication-ability: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-medication-ability: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+ERROR: StructureDefinition/onc-medication-ability: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Manage medication' for http://snomed.info/sct#285033005. Valid display is 'Ability to manage medication' (en) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-medication-ability: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Manage medication' for http://snomed.info/sct#285033005. Valid display is 'Ability to manage medication' (en) (for the language(s) 'en-US')
 INFORMATION: StructureDefinition/onc-medication-ability: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-medication-self-admin.json ==
-INFORMATION: StructureDefinition/onc-medication-self-admin: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-medication-self-admin: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-medication-self-admin: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-mental-capacity.json ==
 ERROR: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-mental-capacity.json - the canonical URL (https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity) does not match the URL (https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity). Use the special-url parameter if you really mean for it not to match
@@ -610,9 +625,7 @@ ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated
 INFORMATION: StructureDefinition/onc-mmse: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-mmse'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-mobility-assessment.json ==
-INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.snapshot.element[55].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-mobility-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -658,11 +671,16 @@ WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/Structur
 ERROR: StructureDefinition/onc-nursing-goal: StructureDefinition.snapshot.element[0].constraint[5]: Error in constraint 'onc-goal-evaluation-timing' with expression 'target.dueDate.exists() implies (lifecycleStatus = 'active' or lifecycleStatus = 'completed' or lifecycleStatus = 'cancelled')': Error evaluating FHIRPath expression: The name 'dueDate' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Goal#Goal.target] (@char 8)
 INFORMATION: StructureDefinition/onc-nursing-goal: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-onc-nursing-intervention.json ==
+== fsh-generated/resources/StructureDefinition-onc-nursing-need.json ==
+INFORMATION: StructureDefinition/onc-nursing-need: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-nursing-need: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-nursing-need: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-onc-nursing-problem.json ==
+== fsh-generated/resources/StructureDefinition-onc-nursing-strength.json ==
+INFORMATION: StructureDefinition/onc-nursing-strength: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-nursing-strength: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 == fsh-generated/resources/StructureDefinition-onc-oral-care-assessment.json ==
-INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.snapshot.element[55].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-oral-care-assessment: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/onc-oral-care-assessment: StructureDefinition.snapshot.element[0].constraint[7]: onc-oral-gate: The left side is inherently a collection, and so the expression 'code.coding.code = 'frequency'' may fail or return false if there is more than one item in the content being evaluated
@@ -689,8 +707,6 @@ INFORMATION: StructureDefinition/onc-oral-health: StructureDefinition.snapshot.e
 INFORMATION: StructureDefinition/onc-oral-health: StructureDefinition.snapshot.element[50].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oral-health: URL Mismatch https://opennursingcoreig.com/StructureDefinition/onc-oral-health vs https://fhir.clinyq.ai/StructureDefinition/onc-oral-health
 == fsh-generated/resources/StructureDefinition-onc-oral-intake-assessment.json ==
-INFORMATION: StructureDefinition/onc-oral-intake-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-oral-intake-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-oral-intake-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-oxygen-saturation.json ==
 INFORMATION: StructureDefinition/onc-oxygen-saturation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -756,6 +772,8 @@ INFORMATION: StructureDefinition/onc-seizure-record: StructureDefinition.snapsho
 INFORMATION: StructureDefinition/onc-seizure-record: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/onc-seizure-record: StructureDefinition.snapshot.element[42].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-seizure-record: URL Mismatch https://opennursingcoreig.com/StructureDefinition/onc-seizure-record vs https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record
+== fsh-generated/resources/StructureDefinition-onc-skin-assessment.json ==
+INFORMATION: StructureDefinition/onc-skin-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-skintone-observation.json ==
 INFORMATION: StructureDefinition/onc-skintone-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-sleep-pattern.json ==
@@ -775,8 +793,6 @@ INFORMATION: StructureDefinition/onc-sleep-pattern: StructureDefinition.snapshot
 WARNING: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-sleep-pattern: URL Mismatch https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern vs https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern
 == fsh-generated/resources/StructureDefinition-onc-swallowing-assessment.json ==
-INFORMATION: StructureDefinition/onc-swallowing-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
-INFORMATION: StructureDefinition/onc-swallowing-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-swallowing-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-onc-urinalysis.json ==
 ERROR: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-urinalysis.json - the canonical URL (https://opennursingcoreig.com/StructureDefinition/onc-urinalysis) does not match the URL (https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis). Use the special-url parameter if you really mean for it not to match

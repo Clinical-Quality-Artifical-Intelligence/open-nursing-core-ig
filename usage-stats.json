@@ -35,6 +35,10 @@
   "profiles": {
     "Observation": [
       {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength",
+        "title": "ONC Nursing Strength"
+      },
+      {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment",
         "title": "Oral Care Needs Assessment"
       },
@@ -61,6 +65,10 @@
       {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate",
         "title": "Respiration Rate"
+      },
+      {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment",
+        "title": "Skin Integrity Assessment"
       },
       {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation",
@@ -110,6 +118,10 @@
       }
     ],
     "Condition": [
+      {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-nursing-need",
+        "title": "ONC Nursing Need"
+      },
       {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem",
         "title": "Nursing Problem"

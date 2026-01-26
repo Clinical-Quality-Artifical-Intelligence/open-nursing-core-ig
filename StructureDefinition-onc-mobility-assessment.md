@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessm
   "name" : "ONCMobilityAssessment",
   "title" : "Mobility Assessment",
   "status" : "draft",
-  "date" : "2026-01-26T11:35:16+00:00",
+  "date" : "2026-01-26T23:55:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of capability to move and limitations.",
   "fhirVersion" : "4.0.1",
@@ -103,8 +103,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessm
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "mobility"
+              "system" : "http://snomed.info/sct",
+              "code" : "82971005",
+              "display" : "Impaired mobility"
             }
           ]
         }

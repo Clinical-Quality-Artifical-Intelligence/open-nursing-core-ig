@@ -12,7 +12,7 @@ Profile: [Personal Hygiene Needs Assessment](StructureDefinition-onc-hygiene-ass
 
 **category**: Survey
 
-**code**: Personal Hygiene Needs
+**code**: Assessment of personal hygiene pattern
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -56,8 +56,9 @@ Profile: [Personal Hygiene Needs Assessment](StructureDefinition-onc-hygiene-ass
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "hygiene-needs"
+        "system" : "http://snomed.info/sct",
+        "code" : "712552002",
+        "display" : "Assessment of personal hygiene pattern"
       }
     ]
   },

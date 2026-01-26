@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-swallowing-asses
   "name" : "ONCSwallowingAssessment",
   "title" : "Swallowing Assessment",
   "status" : "draft",
-  "date" : "2026-01-26T11:35:16+00:00",
+  "date" : "2026-01-26T23:55:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Screening for dysphagia and swallowing difficulties.",
   "fhirVersion" : "4.0.1",
@@ -94,8 +94,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-swallowing-asses
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "swallowing"
+              "system" : "http://snomed.info/sct",
+              "code" : "30175009",
+              "display" : "Initial oral examination"
             }
           ]
         }

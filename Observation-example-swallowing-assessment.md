@@ -12,7 +12,7 @@ Profile: [Swallowing Assessment](StructureDefinition-onc-swallowing-assessment.m
 
 **category**: Survey
 
-**code**: Swallowing Assessment
+**code**: Initial oral examination
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -49,8 +49,9 @@ Profile: [Swallowing Assessment](StructureDefinition-onc-swallowing-assessment.m
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "swallowing"
+        "system" : "http://snomed.info/sct",
+        "code" : "30175009",
+        "display" : "Initial oral examination"
       }
     ]
   },

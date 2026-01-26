@@ -12,7 +12,7 @@ Profile: [Oral Care Needs Assessment](StructureDefinition-onc-oral-care-assessme
 
 **category**: Survey
 
-**code**: Oral Care Needs
+**code**: Initial oral examination
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -56,8 +56,9 @@ Profile: [Oral Care Needs Assessment](StructureDefinition-onc-oral-care-assessme
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "oral-care"
+        "system" : "http://snomed.info/sct",
+        "code" : "30175009",
+        "display" : "Initial oral examination"
       }
     ]
   },

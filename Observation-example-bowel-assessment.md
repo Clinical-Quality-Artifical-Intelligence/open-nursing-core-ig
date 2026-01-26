@@ -12,7 +12,7 @@ Profile: [Bowel Assessment](StructureDefinition-onc-bowel-assessment.md)
 
 **category**: Survey
 
-**code**: Bowel Assessment
+**code**: Bowel assessment
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -49,8 +49,9 @@ Profile: [Bowel Assessment](StructureDefinition-onc-bowel-assessment.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "bowel-assessment"
+        "system" : "http://snomed.info/sct",
+        "code" : "268389004",
+        "display" : "Bowel assessment"
       }
     ]
   },

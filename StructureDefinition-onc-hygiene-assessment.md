@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-hygiene-assessme
   "name" : "ONCHygieneAssessment",
   "title" : "Personal Hygiene Needs Assessment",
   "status" : "draft",
-  "date" : "2026-01-26T11:35:16+00:00",
+  "date" : "2026-01-26T23:55:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of assistance required for personal hygiene.",
   "fhirVersion" : "4.0.1",
@@ -94,8 +94,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-hygiene-assessme
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "hygiene-needs"
+              "system" : "http://snomed.info/sct",
+              "code" : "712552002",
+              "display" : "Assessment of personal hygiene pattern"
             }
           ]
         }

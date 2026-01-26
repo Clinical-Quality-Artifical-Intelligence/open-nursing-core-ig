@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-medication-self-
   "name" : "ONCMedicationSelfAdmin",
   "title" : "Medication Self-Administration Observation",
   "status" : "draft",
-  "date" : "2026-01-26T11:35:16+00:00",
+  "date" : "2026-01-26T23:55:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of the patient performing self-administration.",
   "fhirVersion" : "4.0.1",
@@ -94,8 +94,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-medication-self-
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "medication-self-admin"
+              "system" : "http://snomed.info/sct",
+              "code" : "225425006",
+              "display" : "Self-administration of medication"
             }
           ]
         }

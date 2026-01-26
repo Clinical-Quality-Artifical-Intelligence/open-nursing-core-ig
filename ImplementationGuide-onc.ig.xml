@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="draft"/>
-  <date value="2026-01-26T11:35:16+00:00"/>
+  <date value="2026-01-26T23:55:12+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."/>
   <packageId value="onc.ig"/>
@@ -678,6 +678,61 @@
       <name value="Dietary Requirements"/>
       <description value="Documentation of specific dietary needs (e.g. textural modification, cultural)."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-dressing-assessment"/>
+      </reference>
+      <name value="Dressing and Undressing Assessment"/>
+      <description value="Assessment of assistance required for dressing and undressing, as per PRSB Personal Hygiene section."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleDressingAssessment"/>
+      </reference>
+      <name value="Example Dressing Assessment"/>
+      <description value="Demonstration of the ONCDressingAssessment profile."/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-dressing-assessment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ExampleNursingNeed-Dressing"/>
+      </reference>
+      <name value="Example Nursing Need: Dressing Difficulty"/>
+      <description value="Demonstration of the ONCNursingNeed profile."/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-need"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleNursingStrength-Motivation"/>
+      </reference>
+      <name value="Example Nursing Strength: Motivation"/>
+      <description value="Demonstration of the ONCNursingStrength profile."/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleSkinAssessment"/>
+      </reference>
+      <name value="Example Skin Assessment"/>
+      <description value="Demonstration of the ONCSkinAssessment profile for general skin integrity."/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1539,6 +1594,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-nursing-need"/>
+      </reference>
+      <name value="ONC Nursing Need"/>
+      <description value="A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-nursing-strength"/>
+      </reference>
+      <name value="ONC Nursing Strength"/>
+      <description value="A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -1786,6 +1863,17 @@
       </reference>
       <name value="Seizure Record"/>
       <description value="Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-skin-assessment"/>
+      </reference>
+      <name value="Skin Integrity Assessment"/>
+      <description value="Detailed assessment of skin condition (e.g., intact, dry, broken), separate from pressure ulcer risk."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

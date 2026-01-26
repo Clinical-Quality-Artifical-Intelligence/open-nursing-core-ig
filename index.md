@@ -93,7 +93,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2026-01-26T11:35:16+00:00",
+  "date" : "2026-01-26T23:55:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",
@@ -1090,6 +1090,76 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         "name" : "Dietary Requirements",
         "description" : "Documentation of specific dietary needs (e.g. textural modification, cultural).",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-dressing-assessment"
+        },
+        "name" : "Dressing and Undressing Assessment",
+        "description" : "Assessment of assistance required for dressing and undressing, as per PRSB Personal Hygiene section.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/ExampleDressingAssessment"
+        },
+        "name" : "Example Dressing Assessment",
+        "description" : "Demonstration of the ONCDressingAssessment profile.",
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-dressing-assessment"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Condition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Condition/ExampleNursingNeed-Dressing"
+        },
+        "name" : "Example Nursing Need: Dressing Difficulty",
+        "description" : "Demonstration of the ONCNursingNeed profile.",
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-need"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/ExampleNursingStrength-Motivation"
+        },
+        "name" : "Example Nursing Strength: Motivation",
+        "description" : "Demonstration of the ONCNursingStrength profile.",
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/ExampleSkinAssessment"
+        },
+        "name" : "Example Skin Assessment",
+        "description" : "Demonstration of the ONCSkinAssessment profile for general skin integrity.",
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment"
       },
       {
         "extension" : [
@@ -2199,6 +2269,34 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-nursing-need"
+        },
+        "name" : "ONC Nursing Need",
+        "description" : "A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-nursing-strength"
+        },
+        "name" : "ONC Nursing Strength",
+        "description" : "A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "CodeSystem"
           }
         ],
@@ -2513,6 +2611,20 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         },
         "name" : "Seizure Record",
         "description" : "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-skin-assessment"
+        },
+        "name" : "Skin Integrity Assessment",
+        "description" : "Detailed assessment of skin condition (e.g., intact, dry, broken), separate from pressure ulcer risk.",
         "exampleBoolean" : false
       },
       {

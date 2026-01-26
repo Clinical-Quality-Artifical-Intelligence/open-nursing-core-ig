@@ -12,7 +12,7 @@ Profile: [Medication Management Ability](StructureDefinition-onc-medication-abil
 
 **category**: Survey
 
-**code**: Medication Management Ability
+**code**: Manage medication
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -49,8 +49,9 @@ Profile: [Medication Management Ability](StructureDefinition-onc-medication-abil
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "medication-ability"
+        "system" : "http://snomed.info/sct",
+        "code" : "285033005",
+        "display" : "Manage medication"
       }
     ]
   },

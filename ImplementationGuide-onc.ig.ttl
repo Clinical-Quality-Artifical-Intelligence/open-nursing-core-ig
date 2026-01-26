@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T11:35:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-26T23:55:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
@@ -1736,6 +1736,115 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-dressing-assessment> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-dressing-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "Dressing and Undressing Assessment" ] ;
+       fhir:description [ fhir:v "Assessment of assistance required for dressing and undressing, as per PRSB Personal Hygiene section." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/ExampleDressingAssessment> ;
+         fhir:reference [ fhir:v "Observation/ExampleDressingAssessment" ]
+       ] ;
+       fhir:name [ fhir:v "Example Dressing Assessment" ] ;
+       fhir:description [ fhir:v "Demonstration of the ONCDressingAssessment profile." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-dressing-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-dressing-assessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Condition/ExampleNursingNeed-Dressing> ;
+         fhir:reference [ fhir:v "Condition/ExampleNursingNeed-Dressing" ]
+       ] ;
+       fhir:name [ fhir:v "Example Nursing Need: Dressing Difficulty" ] ;
+       fhir:description [ fhir:v "Demonstration of the ONCNursingNeed profile." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nursing-need"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-need>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/ExampleNursingStrength-Motivation> ;
+         fhir:reference [ fhir:v "Observation/ExampleNursingStrength-Motivation" ]
+       ] ;
+       fhir:name [ fhir:v "Example Nursing Strength: Motivation" ] ;
+       fhir:description [ fhir:v "Demonstration of the ONCNursingStrength profile." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/Observation/ExampleSkinAssessment> ;
+         fhir:reference [ fhir:v "Observation/ExampleSkinAssessment" ]
+       ] ;
+       fhir:name [ fhir:v "Example Skin Assessment" ] ;
+       fhir:description [ fhir:v "Demonstration of the ONCSkinAssessment profile for general skin integrity." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment>
        ]
      ] [
        fhir:extension ( [
@@ -3465,6 +3574,48 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-need> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-nursing-need" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Nursing Need" ] ;
+       fhir:description [ fhir:v "A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-nursing-strength" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Nursing Strength" ] ;
+       fhir:description [ fhir:v "A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -3935,6 +4086,27 @@
        ] ;
        fhir:name [ fhir:v "Seizure Record" ] ;
        fhir:description [ fhir:v "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-skin-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "Skin Integrity Assessment" ] ;
+       fhir:description [ fhir:v "Detailed assessment of skin condition (e.g., intact, dry, broken), separate from pressure ulcer risk." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

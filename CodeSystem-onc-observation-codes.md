@@ -41,11 +41,11 @@ Custom observation codes for Open Nursing Core
   "name" : "ONCObservationCodes",
   "title" : "ONC Observation Codes",
   "status" : "draft",
-  "date" : "2026-01-26T11:35:16+00:00",
+  "date" : "2026-01-26T23:55:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Custom observation codes for Open Nursing Core",
   "content" : "complete",
-  "count" : 132,
+  "count" : 136,
   "concept" : [
     {
       "code" : "mst-score",
@@ -706,6 +706,26 @@ Custom observation codes for Open Nursing Core
       "code" : "medication-self-admin",
       "display" : "Medication Self-Administration",
       "definition" : "Observation of self-administration technique"
+    },
+    {
+      "code" : "dressing-assessment",
+      "display" : "Dressing Assessment",
+      "definition" : "Assessment of ability to dress and undress"
+    },
+    {
+      "code" : "skin-assessment",
+      "display" : "Skin Assessment",
+      "definition" : "Detailed assessment of skin condition and integrity"
+    },
+    {
+      "code" : "nursing-needs",
+      "display" : "Nursing Care Needs",
+      "definition" : "Identified nursing care needs"
+    },
+    {
+      "code" : "nursing-strengths",
+      "display" : "Nursing Strengths",
+      "definition" : "Identified patient strengths and capabilities"
     }
   ]
 }

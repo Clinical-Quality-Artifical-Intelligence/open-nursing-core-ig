@@ -12,7 +12,7 @@ Profile: [Bladder Assessment](StructureDefinition-onc-bladder-assessment.md)
 
 **category**: Survey
 
-**code**: Bladder Assessment
+**code**: Assessment of urinary bladder
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -49,8 +49,9 @@ Profile: [Bladder Assessment](StructureDefinition-onc-bladder-assessment.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "bladder-assessment"
+        "system" : "http://snomed.info/sct",
+        "code" : "268390008",
+        "display" : "Assessment of urinary bladder"
       }
     ]
   },

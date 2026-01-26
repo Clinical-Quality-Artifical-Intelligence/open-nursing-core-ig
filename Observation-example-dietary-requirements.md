@@ -12,7 +12,7 @@ Profile: [Dietary Requirements](StructureDefinition-onc-dietary-requirements.md)
 
 **category**: Survey
 
-**code**: Dietary Requirements
+**code**: Eating / feeding / drinking finding
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -49,8 +49,9 @@ Profile: [Dietary Requirements](StructureDefinition-onc-dietary-requirements.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "dietary-requirements"
+        "system" : "http://snomed.info/sct",
+        "code" : "116336009",
+        "display" : "Eating / feeding / drinking finding"
       }
     ]
   },

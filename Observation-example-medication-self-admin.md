@@ -12,7 +12,7 @@ Profile: [Medication Self-Administration Observation](StructureDefinition-onc-me
 
 **category**: Survey
 
-**code**: Medication Self-Administration
+**code**: Self-administration of medication
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -49,8 +49,9 @@ Profile: [Medication Self-Administration Observation](StructureDefinition-onc-me
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "medication-self-admin"
+        "system" : "http://snomed.info/sct",
+        "code" : "225425006",
+        "display" : "Self-administration of medication"
       }
     ]
   },

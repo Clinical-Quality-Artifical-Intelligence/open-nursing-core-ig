@@ -245,6 +245,13 @@
     "name" : "ONCDietaryRequirements"
   },
   {
+    "id" : "onc-dressing-assessment",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-dressing-assessment",
+    "version" : "0.1.0",
+    "name" : "ONCDressingAssessment"
+  },
+  {
     "id" : "onc-equity-marker",
     "type" : "StructureDefinition",
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-equity-marker",
@@ -385,11 +392,25 @@
     "name" : "ONCNursingIntervention"
   },
   {
+    "id" : "onc-nursing-need",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-need",
+    "version" : "0.1.0",
+    "name" : "ONCNursingNeed"
+  },
+  {
     "id" : "onc-nursing-problem",
     "type" : "StructureDefinition",
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem",
     "version" : "0.1.0",
     "name" : "ONCNursingProblem"
+  },
+  {
+    "id" : "onc-nursing-strength",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength",
+    "version" : "0.1.0",
+    "name" : "ONCNursingStrength"
   },
   {
     "id" : "onc-oral-care-assessment",
@@ -446,6 +467,13 @@
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate",
     "version" : "0.1.0",
     "name" : "ONCRespirationRate"
+  },
+  {
+    "id" : "onc-skin-assessment",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment",
+    "version" : "0.1.0",
+    "name" : "ONCSkinAssessment"
   },
   {
     "id" : "onc-skintone-observation",

@@ -12,7 +12,7 @@ Profile: [Catheter Care](StructureDefinition-onc-catheter-care.md)
 
 **category**: Survey
 
-**code**: Catheter Care Interaction
+**code**: Care of central line
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -49,8 +49,9 @@ Profile: [Catheter Care](StructureDefinition-onc-catheter-care.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "catheter-care"
+        "system" : "http://snomed.info/sct",
+        "code" : "226005007",
+        "display" : "Care of central line"
       }
     ]
   },

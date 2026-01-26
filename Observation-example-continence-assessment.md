@@ -12,7 +12,7 @@ Profile: [Continence Assessment](StructureDefinition-onc-continence-assessment.m
 
 **category**: Survey
 
-**code**: Continence Assessment
+**code**: Bowel continence assessment
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -49,8 +49,9 @@ Profile: [Continence Assessment](StructureDefinition-onc-continence-assessment.m
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "continence-assessment"
+        "system" : "http://snomed.info/sct",
+        "code" : "417476007",
+        "display" : "Bowel continence assessment"
       }
     ]
   },

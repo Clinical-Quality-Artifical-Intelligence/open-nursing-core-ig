@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-medication-abili
   "name" : "ONCMedicationAbility",
   "title" : "Medication Management Ability",
   "status" : "draft",
-  "date" : "2026-01-26T11:35:16+00:00",
+  "date" : "2026-01-26T23:55:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of the patient's ability to manage their own medication.",
   "fhirVersion" : "4.0.1",
@@ -94,8 +94,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-medication-abili
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "medication-ability"
+              "system" : "http://snomed.info/sct",
+              "code" : "285033005",
+              "display" : "Manage medication"
             }
           ]
         }

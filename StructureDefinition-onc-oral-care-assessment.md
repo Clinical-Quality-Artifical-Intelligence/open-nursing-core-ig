@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-oral-care-assess
   "name" : "ONCOralCareAssessment",
   "title" : "Oral Care Needs Assessment",
   "status" : "draft",
-  "date" : "2026-01-26T11:35:16+00:00",
+  "date" : "2026-01-26T23:55:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of mouth care needs and oral health.",
   "fhirVersion" : "4.0.1",
@@ -103,8 +103,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-oral-care-assess
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "oral-care"
+              "system" : "http://snomed.info/sct",
+              "code" : "30175009",
+              "display" : "Initial oral examination"
             }
           ]
         }

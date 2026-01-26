@@ -12,7 +12,7 @@ Profile: [Mobility Assessment](StructureDefinition-onc-mobility-assessment.md)
 
 **category**: Survey
 
-**code**: Mobility Assessment
+**code**: Impaired mobility
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -56,8 +56,9 @@ Profile: [Mobility Assessment](StructureDefinition-onc-mobility-assessment.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "mobility"
+        "system" : "http://snomed.info/sct",
+        "code" : "82971005",
+        "display" : "Impaired mobility"
       }
     ]
   },

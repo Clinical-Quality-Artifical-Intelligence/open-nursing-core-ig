@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ONCPrognosisVS"] ; # 
   fhir:title [ fhir:v "Nursing Prognosis ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T11:35:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-26T23:55:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Prognosis codes for clinical impression"] ; # 
   fhir:compose [

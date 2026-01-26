@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-catheter-care</b></p><a name=\"example-catheter-care\"> </a><a name=\"hcexample-catheter-care\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-catheter-care.html\">Catheter Care</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes catheter-care}\">Catheter Care Interaction</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>effective</b>: 2025-03-15 10:00:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: Catheter changed, patent, clear urine draining.</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-catheter-care</b></p><a name=\"example-catheter-care\"> </a><a name=\"hcexample-catheter-care\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-catheter-care.html\">Catheter Care</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 226005007}\">Care of central line</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>effective</b>: 2025-03-15 10:00:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: Catheter changed, patent, clear urine draining.</p></div>"
   },
   "status" : "final",
   "category" : [{
@@ -17,8 +17,9 @@
   }],
   "code" : {
     "coding" : [{
-      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-      "code" : "catheter-care"
+      "system" : "http://snomed.info/sct",
+      "code" : "226005007",
+      "display" : "Care of central line"
     }]
   },
   "subject" : {

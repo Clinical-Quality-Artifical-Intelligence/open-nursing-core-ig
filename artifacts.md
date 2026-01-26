@@ -52,6 +52,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Continence Assessment](StructureDefinition-onc-continence-assessment.md) | Assessment of bladder and bowel control status. |
 | [Device Use Statement](StructureDefinition-onc-device-use-statement.md) | Documentation of mobility aids or other devices used by the patient. |
 | [Dietary Requirements](StructureDefinition-onc-dietary-requirements.md) | Documentation of specific dietary needs (e.g. textural modification, cultural). |
+| [Dressing and Undressing Assessment](StructureDefinition-onc-dressing-assessment.md) | Assessment of assistance required for dressing and undressing, as per PRSB Personal Hygiene section. |
 | [Fluid Balance](StructureDefinition-onc-fluid-balance.md) | Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring. |
 | [Glasgow Coma Scale](StructureDefinition-onc-glasgow-coma-scale.md) | Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6). |
 | [Heart Rate](StructureDefinition-onc-heart-rate.md) | Heart rate (pulse) observation for NEWS2 |
@@ -72,6 +73,8 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [ONC Nursing Clinical Impression](StructureDefinition-onc-nursing-clinical-impression.md) | Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations. |
 | [ONC Nursing Goal](StructureDefinition-onc-nursing-goal.md) | Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes. |
 | [ONC Nursing Intervention](StructureDefinition-onc-nursing-intervention.md) | Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase. |
+| [ONC Nursing Need](StructureDefinition-onc-nursing-need.md) | A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model. |
+| [ONC Nursing Strength](StructureDefinition-onc-nursing-strength.md) | A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models. |
 | [Open Nursing Core Assessment](StructureDefinition-onc-nursing-assessment.md) | Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations. |
 | [Oral Care Needs Assessment](StructureDefinition-onc-oral-care-assessment.md) | Assessment of mouth care needs and oral health. |
 | [Oral Health Assessment](StructureDefinition-onc-oral-health.md) | Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration. |
@@ -85,6 +88,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Relational Engagement Score](StructureDefinition-onc-relational-observation.md) | Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care. |
 | [Respiration Rate](StructureDefinition-onc-respiration-rate.md) | Respiration rate observation for NEWS2 |
 | [Seizure Record](StructureDefinition-onc-seizure-record.md) | Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns. |
+| [Skin Integrity Assessment](StructureDefinition-onc-skin-assessment.md) | Detailed assessment of skin condition (e.g., intact, dry, broken), separate from pressure ulcer risk. |
 | [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) | Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis). |
 | [Sleep Pattern](StructureDefinition-onc-sleep-pattern.md) | Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing. |
 | [Swallowing Assessment](StructureDefinition-onc-swallowing-assessment.md) | Screening for dysphagia and swallowing difficulties. |
@@ -161,6 +165,10 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
+| [Example Dressing Assessment](Observation-ExampleDressingAssessment.md) | Demonstration of the ONCDressingAssessment profile. |
+| [Example Nursing Need: Dressing Difficulty](Condition-ExampleNursingNeed-Dressing.md) | Demonstration of the ONCNursingNeed profile. |
+| [Example Nursing Strength: Motivation](Observation-ExampleNursingStrength-Motivation.md) | Demonstration of the ONCNursingStrength profile. |
+| [Example Skin Assessment](Observation-ExampleSkinAssessment.md) | Demonstration of the ONCSkinAssessment profile for general skin integrity. |
 | [example-4at-delirium](Observation-example-4at-delirium.md) |  |
 | [example-abbey-pain](Observation-example-abbey-pain.md) |  |
 | [example-abc-chart](Observation-example-abc-chart.md) |  |

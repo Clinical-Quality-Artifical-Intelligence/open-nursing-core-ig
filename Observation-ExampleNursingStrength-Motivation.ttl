@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://opennursingcoreig.com/Observation/ExampleNursingStrength-Motivation> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleNursingStrength-Motivation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleNursingStrength-Motivation</b></p><a name=\"ExampleNursingStrength-Motivation\"> </a><a name=\"hcExampleNursingStrength-Motivation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-nursing-strength.html\">ONC Nursing Strength</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes nursing-strengths}\">Nursing Strengths</span></p><p><b>subject</b>: <a href=\"Patient/example-patient\">Patient/example-patient</a></p><p><b>performer</b>: <a href=\"Practitioner/example-nurse\">Practitioner/example-nurse</a></p><p><b>value</b>: Highly motivated to maintain independence in upper body dressing.</p><p><b>note</b>: </p><blockquote><div><p>Patient explicitly stated desire to continue buttoning own shirt if given enough time.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
+       ] ;
+       fhir:code [ fhir:v "nursing-strengths" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://opennursingcoreig.com/Patient/example-patient> ;
+     fhir:reference [ fhir:v "Patient/example-patient" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <https://opennursingcoreig.com/Practitioner/example-nurse> ;
+     fhir:reference [ fhir:v "Practitioner/example-nurse" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:String ;
+     fhir:v "Highly motivated to maintain independence in upper body dressing."
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Patient explicitly stated desire to continue buttoning own shirt if given enough time." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

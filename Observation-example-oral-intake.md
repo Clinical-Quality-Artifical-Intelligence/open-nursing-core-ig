@@ -12,7 +12,7 @@ Profile: [Oral Intake Assessment](StructureDefinition-onc-oral-intake-assessment
 
 **category**: Survey
 
-**code**: Oral Intake Assessment
+**code**: Ability to drink
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -49,8 +49,9 @@ Profile: [Oral Intake Assessment](StructureDefinition-onc-oral-intake-assessment
   "code" : {
     "coding" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "oral-intake"
+        "system" : "http://snomed.info/sct",
+        "code" : "288852001",
+        "display" : "Ability to drink"
       }
     ]
   },

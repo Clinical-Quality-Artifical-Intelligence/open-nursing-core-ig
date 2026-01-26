@@ -68,6 +68,7 @@
 * [Continence Assessment](StructureDefinition-onc-continence-assessment.md)
 * [Device Use Statement](StructureDefinition-onc-device-use-statement.md)
 * [Dietary Requirements](StructureDefinition-onc-dietary-requirements.md)
+* [Dressing and Undressing Assessment](StructureDefinition-onc-dressing-assessment.md)
 * [Fluid Balance](StructureDefinition-onc-fluid-balance.md)
 * [Glasgow Coma Scale](StructureDefinition-onc-glasgow-coma-scale.md)
 * [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
@@ -89,7 +90,9 @@
 * [ONC Nursing Clinical Impression](StructureDefinition-onc-nursing-clinical-impression.md)
 * [ONC Nursing Goal](StructureDefinition-onc-nursing-goal.md)
 * [ONC Nursing Intervention](StructureDefinition-onc-nursing-intervention.md)
+* [ONC Nursing Need](StructureDefinition-onc-nursing-need.md)
 * [Nursing Problem](StructureDefinition-onc-nursing-problem.md)
+* [ONC Nursing Strength](StructureDefinition-onc-nursing-strength.md)
 * [Oral Care Needs Assessment](StructureDefinition-onc-oral-care-assessment.md)
 * [Oral Health Assessment](StructureDefinition-onc-oral-health.md)
 * [Oral Intake Assessment](StructureDefinition-onc-oral-intake-assessment.md)
@@ -101,6 +104,7 @@
 * [Relational Engagement Score](StructureDefinition-onc-relational-observation.md)
 * [Respiration Rate](StructureDefinition-onc-respiration-rate.md)
 * [Seizure Record](StructureDefinition-onc-seizure-record.md)
+* [Skin Integrity Assessment](StructureDefinition-onc-skin-assessment.md)
 * [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md)
 * [Sleep Pattern](StructureDefinition-onc-sleep-pattern.md)
 * [Swallowing Assessment](StructureDefinition-onc-swallowing-assessment.md)
@@ -134,8 +138,12 @@
 
 ### Examples
 
+* [ExampleNursingNeed-Dressing (Condition)](Condition-ExampleNursingNeed-Dressing.md)
 * [example-nursing-problem (Condition)](Condition-example-nursing-problem.md)
 * [example-patient-goal (Goal)](Goal-example-patient-goal.md)
+* [ExampleDressingAssessment (Observation)](Observation-ExampleDressingAssessment.md)
+* [ExampleNursingStrength-Motivation (Observation)](Observation-ExampleNursingStrength-Motivation.md)
+* [ExampleSkinAssessment (Observation)](Observation-ExampleSkinAssessment.md)
 * [example-4at-delirium (Observation)](Observation-example-4at-delirium.md)
 * [example-abbey-pain (Observation)](Observation-example-abbey-pain.md)
 * [example-abc-chart (Observation)](Observation-example-abc-chart.md)
