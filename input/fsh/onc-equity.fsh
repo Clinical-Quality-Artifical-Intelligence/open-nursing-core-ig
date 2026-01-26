@@ -248,16 +248,3 @@ Description: "A technical extension applied to observations that have passed the
 * valueBoolean 1..1
 
 
-// =============================================================================
-// Empathy Index Value Set
-// =============================================================================
-ValueSet: ONCEmpathyIndexVS
-Id: onc-empathy-index-vs
-Title: "ONC Empathy Index Value Set"
-Description: "Value set for the ONC Empathy Index."
-* ^experimental = false
-* include ONCObservationCodes#empathy-1
-* include ONCObservationCodes#empathy-2
-* include ONCObservationCodes#empathy-3
-* include ONCObservationCodes#empathy-4
-* include ONCObservationCodes#empathy-5
