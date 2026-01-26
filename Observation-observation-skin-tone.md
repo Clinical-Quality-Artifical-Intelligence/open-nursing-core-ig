@@ -16,7 +16,7 @@ Profile: [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Fitzpatrick skin type II
 

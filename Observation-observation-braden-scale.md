@@ -16,23 +16,23 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
-**value**: 18 {score}(Details: UCUM code1 = '1')
+**value**: 18 {score} (Details: UCUM code1 = '1')
 
 **hasMember**: [Observation Skin type [Fitzpatrick Classification Scale]](Observation-observation-skin-tone.md)
 
-> **component****code**:Braden Sensory Perception**value**: 3 {score}(Details: UCUM code1 = '1')
+> **component****code**: Braden Sensory Perception**value**: 3 {score} (Details: UCUM code1 = '1')
 
-> **component****code**:Braden Moisture**value**: 4 {score}(Details: UCUM code1 = '1')
+> **component****code**: Braden Moisture**value**: 4 {score} (Details: UCUM code1 = '1')
 
-> **component****code**:Braden Activity**value**: 2 {score}(Details: UCUM code1 = '1')
+> **component****code**: Braden Activity**value**: 2 {score} (Details: UCUM code1 = '1')
 
-> **component****code**:Braden Mobility**value**: 3 {score}(Details: UCUM code1 = '1')
+> **component****code**: Braden Mobility**value**: 3 {score} (Details: UCUM code1 = '1')
 
-> **component****code**:Braden Nutrition**value**: 3 {score}(Details: UCUM code1 = '1')
+> **component****code**: Braden Nutrition**value**: 3 {score} (Details: UCUM code1 = '1')
 
-> **component****code**:Braden Friction/Shear**value**: 3 {score}(Details: UCUM code1 = '1')
+> **component****code**: Braden Friction/Shear**value**: 3 {score} (Details: UCUM code1 = '1')
 
 
 

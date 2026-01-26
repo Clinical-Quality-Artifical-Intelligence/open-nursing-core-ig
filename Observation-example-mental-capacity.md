@@ -16,7 +16,7 @@ Profile: [Mental Capacity Assessment](StructureDefinition-onc-mental-capacity.md
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Capacity Present
 

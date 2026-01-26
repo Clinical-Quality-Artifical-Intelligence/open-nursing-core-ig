@@ -43,6 +43,9 @@ Generic: line 0, col 0, Error - The link 'https://opennursingcoreig.com/ValueSet
 Generic: line 0, col 0, Error - The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - The link 'https://opennursingcoreig.com' for "https://opennursingcoreig.com" is a canonical link and is therefore unsafe with regard to versions (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-onc-patient-goal.html' for "OncPatientGoal" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'ValueSet-onc-skin-tone-vs.html' for "SkinToneVS" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'ValueSet-onc-news2-score-vs.html' for "NEWS2ScoreVS" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'ValueSet-onc-pain-score-vs.html' for "PainScoreVS" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
@@ -611,4 +614,4 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/PlanDefinition-news2-escalation.json: line 0, col 0, Error - URL Mismatch https://opennursingcoreig.com/PlanDefinition/news2-escalation-plan vs http://opennursingcore.org/PlanDefinition/news2-escalation (BUSINESSRULE)
 
 err = 81, warn = 138, info = 372
-IG Publisher Version: 2.0.29
+IG Publisher Version: 2.0.30

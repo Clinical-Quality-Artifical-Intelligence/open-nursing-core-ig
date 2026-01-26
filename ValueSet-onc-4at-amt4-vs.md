@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-4at-amt4-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-03 | *Computable Name*:AMT4VS |
+| Draft as of 2026-01-26 | *Computable Name*:AMT4VS |
 
  
 Scoring options for AMT4 (Age, DOB, Place, Year) 
@@ -50,7 +50,7 @@ Scoring options for AMT4 (Age, DOB, Place, Year)
   "name" : "AMT4VS",
   "title" : "4AT AMT4 Value Set",
   "status" : "draft",
-  "date" : "2026-01-03T21:32:36+00:00",
+  "date" : "2026-01-26T10:54:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Scoring options for AMT4 (Age, DOB, Place, Year)",
   "compose" : {

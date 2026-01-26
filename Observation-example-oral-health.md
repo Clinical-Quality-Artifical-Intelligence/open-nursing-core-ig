@@ -16,17 +16,17 @@ Profile: [Oral Health Assessment](StructureDefinition-onc-oral-health.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: 0 {score}
 
-> **component****code**:Lips**value**: Pink, moist
+> **component****code**: Lips**value**: Pink, moist
 
-> **component****code**:Tongue**value**: Pink, moist
+> **component****code**: Tongue**value**: Pink, moist
 
-> **component****code**:Gums**value**: Healthy
+> **component****code**: Gums**value**: Healthy
 
-> **component****code**:Teeth/Dentures**value**: Own teeth, good repair
+> **component****code**: Teeth/Dentures**value**: Own teeth, good repair
 
 
 

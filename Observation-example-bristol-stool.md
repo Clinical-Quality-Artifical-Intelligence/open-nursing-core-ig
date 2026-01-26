@@ -16,7 +16,7 @@ Profile: [Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: 4 {score}
 

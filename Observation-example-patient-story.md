@@ -16,7 +16,7 @@ Profile: [Patient Story](StructureDefinition-onc-patient-story.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Jane was a librarian for 40 years. She loves classical music and gardening. She lost her husband 2 years ago.
 

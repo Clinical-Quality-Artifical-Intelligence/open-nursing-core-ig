@@ -16,9 +16,9 @@ Profile: [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**focus**: [Goal: lifecycleStatus = active; description =](Goal-example-patient-goal.md)
+**focus**: [Goal: lifecycleStatus = active; description = ](Goal-example-patient-goal.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Objective achieved
 

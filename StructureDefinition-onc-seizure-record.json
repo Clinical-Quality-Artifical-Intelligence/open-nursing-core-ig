@@ -10,7 +10,7 @@
   "name" : "ONCSeizureRecord",
   "title" : "Seizure Record",
   "status" : "draft",
-  "date" : "2026-01-03T21:32:36+00:00",
+  "date" : "2026-01-26T10:54:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
   "fhirVersion" : "4.0.1",

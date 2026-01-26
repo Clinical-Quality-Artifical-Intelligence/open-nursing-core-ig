@@ -16,21 +16,21 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: 2 {score}
 
-> **component****code**:Vocalization**value**: 0
+> **component****code**: Vocalization**value**: 0
 
-> **component****code**:Facial Expression**value**: 1
+> **component****code**: Facial Expression**value**: 1
 
-> **component****code**:Body Language**value**: 0
+> **component****code**: Body Language**value**: 0
 
-> **component****code**:Behavioral Change**value**: 1
+> **component****code**: Behavioral Change**value**: 1
 
-> **component****code**:Psychological Change**value**: 0
+> **component****code**: Psychological Change**value**: 0
 
-> **component****code**:Physical Changes**value**: 0
+> **component****code**: Physical Changes**value**: 0
 
 
 

@@ -16,17 +16,17 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: 5 {score}
 
-> **component****code**:Alertness**value**:Normal
+> **component****code**: Alertness**value**: Normal
 
-> **component****code**:AMT4 Score**value**:1 Error
+> **component****code**: AMT4 Score**value**: 1 Error
 
-> **component****code**:Attention**value**:Months backwards < 7 months correct
+> **component****code**: Attention**value**: Months backwards < 7 months correct
 
-> **component****code**:Acute Change**value**:No
+> **component****code**: Acute Change**value**: No
 
 
 

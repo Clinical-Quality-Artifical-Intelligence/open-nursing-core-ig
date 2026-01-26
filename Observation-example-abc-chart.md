@@ -16,7 +16,7 @@ Profile: [PBS ABC Chart](StructureDefinition-onc-abc-chart.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Frustration/Tangible
 
@@ -27,11 +27,11 @@ Profile: [PBS ABC Chart](StructureDefinition-onc-abc-chart.md)
 Aggressive episode managed with de-escalation.
 
 
-> **component****code**:Antecedent**value**: Denied access to garden due to rain.
+> **component****code**: Antecedent**value**: Denied access to garden due to rain.
 
-> **component****code**:Behaviour**value**: Shouting and hitting door.
+> **component****code**: Behaviour**value**: Shouting and hitting door.
 
-> **component****code**:Consequence**value**: Verbal de-escalation, distraction with music.
+> **component****code**: Consequence**value**: Verbal de-escalation, distraction with music.
 
 
 

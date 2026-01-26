@@ -4,7 +4,7 @@ OpenNursingCoreIG : Validation Results
 err = 81, warn = 138, info = 372
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingcoreig.com)
- Build Errors : 17 / 29 / 0
+ Build Errors : 20 / 29 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 3 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 0 / 2 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type : 0 / 0 / 1
@@ -163,6 +163,9 @@ ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/d
 ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1064, column 9: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
 WARNING: history.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 40: The link 'https://opennursingcoreig.com' for "https://opennursingcoreig.com" is a canonical link and is therefore unsafe with regard to versions
 ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 211, column 8: The link 'StructureDefinition-onc-patient-goal.html' for "OncPatientGoal" cannot be resolved
+ERROR: terminology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/strong/a at Line 159, column 20: The link 'ValueSet-onc-skin-tone-vs.html' for "SkinToneVS" cannot be resolved
+ERROR: terminology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/strong/a at Line 163, column 20: The link 'ValueSet-onc-news2-score-vs.html' for "NEWS2ScoreVS" cannot be resolved
+ERROR: terminology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/strong/a at Line 167, column 20: The link 'ValueSet-onc-pain-score-vs.html' for "PainScoreVS" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

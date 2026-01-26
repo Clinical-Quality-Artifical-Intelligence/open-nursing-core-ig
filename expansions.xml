@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1fc79942-f64e-47e8-9079-3ba6bd865116"/>
+  <id value="9971573c-9beb-43b0-9b74-cba391cf88a1"/>
   <meta>
-    <lastUpdated value="2026-01-03T21:32:36.370+00:00"/>
+    <lastUpdated value="2026-01-26T10:54:48.151+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -146,10 +146,10 @@
         <name value="ACVPUValueSet"/>
         <title value="ACVPU Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c1e1484c-bed6-42f1-86b7-401c8cf2eab7"/>
-          <timestamp value="2026-01-03T21:33:49+00:00"/>
+          <identifier value="urn:uuid:65600535-187f-4b9e-8e63-cc8e383f1560"/>
+          <timestamp value="2026-01-26T10:56:09+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -326,10 +326,10 @@
         <title value="Goal Evaluation Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8e5ec7d2-a755-4210-951a-ffd1b186343c"/>
-          <timestamp value="2026-01-03T21:33:54+00:00"/>
+          <identifier value="urn:uuid:f06d477b-6c29-4e87-846f-795f209a6268"/>
+          <timestamp value="2026-01-26T10:56:16+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -461,10 +461,10 @@
         <title value="Housing Status Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3ce52d6e-78db-405b-94e1-3cac24074df9"/>
-          <timestamp value="2026-01-03T21:34:03+00:00"/>
+          <identifier value="urn:uuid:87747131-dd30-4921-9c31-8999943ac2f9"/>
+          <timestamp value="2026-01-26T10:56:26+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -585,10 +585,10 @@
         <name value="InspiredOxygenValueSet"/>
         <title value="Inspired Oxygen Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a7880570-ac90-4616-b04b-67496efda35d"/>
-          <timestamp value="2026-01-03T21:33:55+00:00"/>
+          <identifier value="urn:uuid:c9fb3941-d8bb-48a8-ae3c-96bd1647e972"/>
+          <timestamp value="2026-01-26T10:56:17+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -694,10 +694,10 @@
         <name value="NEWS2CodeValueSet"/>
         <title value="NEWS2 Code Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f5ad52f5-bf91-4590-bba0-ad94e495f35d"/>
-          <timestamp value="2026-01-03T21:34:04+00:00"/>
+          <identifier value="urn:uuid:05784120-0484-4cfb-83a5-b63012c826ee"/>
+          <timestamp value="2026-01-26T10:56:26+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -794,10 +794,10 @@
         <name value="NEWS2SubscoreCodeValueSet"/>
         <title value="NEWS2 Sub-Score Codes"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:06a8608c-596e-45a6-a0c4-88cc1f211154"/>
-          <timestamp value="2026-01-03T21:34:04+00:00"/>
+          <identifier value="urn:uuid:5505ae17-03a7-48a9-b14b-8d92c2ce781f"/>
+          <timestamp value="2026-01-26T10:56:26+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -930,10 +930,10 @@
         <title value="Nursing Intervention Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:92c7d384-ebbf-4104-936b-6c2472fa0e38"/>
-          <timestamp value="2026-01-03T21:34:04+00:00"/>
+          <identifier value="urn:uuid:098b4077-5e25-420f-8f5b-1374768b1501"/>
+          <timestamp value="2026-01-26T10:56:26+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1118,10 +1118,10 @@
         <title value="Nursing Problem Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1f087344-34d0-44c8-8fb7-9421c0730451"/>
-          <timestamp value="2026-01-03T21:33:58+00:00"/>
+          <identifier value="urn:uuid:df152eee-0653-4002-8be9-050bb264ea4e"/>
+          <timestamp value="2026-01-26T10:56:21+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1216,10 +1216,10 @@
         <name value="AcuteChangeVS"/>
         <title value="4AT Acute Change Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:14af6fd7-b17b-442d-8fe3-1d8aeecb2cb7"/>
-          <timestamp value="2026-01-03T21:33:46+00:00"/>
+          <identifier value="urn:uuid:ff90754d-9862-4f79-9d90-9dd2ff39ac7f"/>
+          <timestamp value="2026-01-26T10:56:07+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1367,10 +1367,10 @@
         <name value="AlertnessVS"/>
         <title value="4AT Alertness Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:60d14a69-d27c-4120-ad64-f7c4e4d1f106"/>
-          <timestamp value="2026-01-03T21:33:46+00:00"/>
+          <identifier value="urn:uuid:0e1e3dcf-d287-4d57-8c82-60578f987f30"/>
+          <timestamp value="2026-01-26T10:56:07+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1464,10 +1464,10 @@
         <name value="AMT4VS"/>
         <title value="4AT AMT4 Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d60e453c-a1af-4117-84bb-2f95c0ba6afa"/>
-          <timestamp value="2026-01-03T21:33:46+00:00"/>
+          <identifier value="urn:uuid:1b8aa719-7c38-4a9a-abd6-6a222ee63ad7"/>
+          <timestamp value="2026-01-26T10:56:07+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1538,10 +1538,10 @@
         <name value="AttentionVS"/>
         <title value="4AT Attention Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5040ce0d-aa4e-4af2-977e-aaa8d268a3ad"/>
-          <timestamp value="2026-01-03T21:33:46+00:00"/>
+          <identifier value="urn:uuid:68d06632-0b1a-435e-9d29-66bef4bc7ed8"/>
+          <timestamp value="2026-01-26T10:56:07+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1721,10 +1721,10 @@
         <name value="ONCADPIEVS"/>
         <title value="ADPIE Nursing Process Phases"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:096b8536-4637-4684-adba-58ea4a23f1e7"/>
-          <timestamp value="2026-01-03T21:34:04+00:00"/>
+          <identifier value="urn:uuid:eb3f49d9-28a0-4e95-ac9d-22212a5e92f6"/>
+          <timestamp value="2026-01-26T10:56:26+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2009,10 +2009,10 @@
         <name value="ClinicalFrailtyScaleVS"/>
         <title value="Clinical Frailty Scale Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ad61a29f-cd58-402b-b54e-7b2d7d8b255c"/>
-          <timestamp value="2026-01-03T21:33:52+00:00"/>
+          <identifier value="urn:uuid:e286fb1a-d10e-44cd-ad56-f9996490c6e1"/>
+          <timestamp value="2026-01-26T10:56:12+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -2233,10 +2233,10 @@
         <name value="ONCEmpathyIndexVS"/>
         <title value="ONC Empathy &amp; Relational Engagement Index"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1d73142e-a5e8-4d7a-a263-9454059d7cce"/>
-          <timestamp value="2026-01-03T21:33:54+00:00"/>
+          <identifier value="urn:uuid:fb4b1f0c-94c4-4656-9cea-e4b66637d152"/>
+          <timestamp value="2026-01-26T10:56:16+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2378,10 +2378,10 @@
         <name value="ONCGoalTargetMeasureVS"/>
         <title value="Goal Target Measure ValueSet"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:dd40a90c-99a3-4eb0-9844-2bbea0aff2db"/>
-          <timestamp value="2026-01-03T21:34:04+00:00"/>
+          <identifier value="urn:uuid:339ef8ca-7e11-4780-bd8d-fa1aa6b3ff67"/>
+          <timestamp value="2026-01-26T10:56:26+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2537,10 +2537,10 @@
         <name value="MentalCapacityVS"/>
         <title value="Mental Capacity Finding Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:96807725-bab6-4bda-866b-feb070faab3d"/>
-          <timestamp value="2026-01-03T21:33:55+00:00"/>
+          <identifier value="urn:uuid:116118d6-772a-4e5a-951b-4ad9523a5cca"/>
+          <timestamp value="2026-01-26T10:56:17+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2823,10 +2823,10 @@
         <name value="ONCMonkScaleVS"/>
         <title value="Monk Skin Tone Scale ValueSet"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c8d508ed-f31f-4886-a82e-fd5db3f6a19f"/>
-          <timestamp value="2026-01-03T21:33:56+00:00"/>
+          <identifier value="urn:uuid:1b176fc6-6d02-4629-8aef-493cbf264f0f"/>
+          <timestamp value="2026-01-26T10:56:18+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -2968,10 +2968,10 @@
         <name value="PBSFunctionVS"/>
         <title value="PBS Behaviour Function ValueSet"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:addeacd9-a882-45a0-88e4-634bb0b8327e"/>
-          <timestamp value="2026-01-03T21:33:48+00:00"/>
+          <identifier value="urn:uuid:0d6aacae-59d1-4476-b1f9-4c1e34c65c52"/>
+          <timestamp value="2026-01-26T10:56:09+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -3083,10 +3083,10 @@
         <name value="ONCPrognosisVS"/>
         <title value="Nursing Prognosis ValueSet"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:980e7b23-f8e7-4332-b15f-79dea93d63f7"/>
-          <timestamp value="2026-01-03T21:34:04+00:00"/>
+          <identifier value="urn:uuid:b1f03c6a-a35f-447b-a6e7-ec8772cdedb7"/>
+          <timestamp value="2026-01-26T10:56:27+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3167,10 +3167,10 @@
         <name value="ONCRelationalOutcomesVS"/>
         <title value="ONC Relational Care Outcomes"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e36466f5-9e44-42d2-8b10-b1314e873867"/>
-          <timestamp value="2026-01-03T21:34:04+00:00"/>
+          <identifier value="urn:uuid:e985da27-c698-40e6-9436-16e9048f637f"/>
+          <timestamp value="2026-01-26T10:56:27+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -3281,10 +3281,10 @@
         <name value="PainAssessmentCodeValueSet"/>
         <title value="Pain Assessment Code Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:861b6758-75c9-4937-a4c6-5ce881ac4aff"/>
-          <timestamp value="2026-01-03T21:34:00+00:00"/>
+          <identifier value="urn:uuid:5a03b5e1-ade0-495b-aa1d-e0cfdf2b3c5e"/>
+          <timestamp value="2026-01-26T10:56:22+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3433,10 +3433,10 @@
         <title value="Problem Category Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:08bcd7c3-5074-4411-b16e-b063c834692e"/>
-          <timestamp value="2026-01-03T21:33:58+00:00"/>
+          <identifier value="urn:uuid:6fbc0506-2bae-4c09-8d93-876cead25658"/>
+          <timestamp value="2026-01-26T10:56:21+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -3649,10 +3649,10 @@
         <title value="Fitzpatrick Skin Tone Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:84becb08-bb01-4211-ba9b-466df58a6ddb"/>
-          <timestamp value="2026-01-03T21:34:01+00:00"/>
+          <identifier value="urn:uuid:57f36b32-9369-461f-9690-c16ce1b478bc"/>
+          <timestamp value="2026-01-26T10:56:24+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -3879,10 +3879,10 @@
         <name value="WoundStageValueSet"/>
         <title value="Wound Stage Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-03T21:32:36+00:00"/>
+        <date value="2026-01-26T10:54:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:381a8bfd-89bf-414c-9da9-9fb6d46c230c"/>
-          <timestamp value="2026-01-03T21:34:03+00:00"/>
+          <identifier value="urn:uuid:77492a84-512f-4b2c-94df-a3770c391034"/>
+          <timestamp value="2026-01-26T10:56:26+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>

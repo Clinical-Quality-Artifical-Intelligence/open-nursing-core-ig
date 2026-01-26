@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ImplementationGuide/onc.ig | *Version*:0.1.0 |
-| Draft as of 2026-01-03 | *Computable Name*:OpenNursingCoreIG |
+| Draft as of 2026-01-26 | *Computable Name*:OpenNursingCoreIG |
 
 # Open Nursing Core FHIR Implementation Guide
 
@@ -93,7 +93,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2026-01-03T21:32:36+00:00",
+  "date" : "2026-01-26T10:54:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",
@@ -2373,6 +2373,39 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           ],
           "nameUrl" : "relation-ai.html",
           "title" : "Relational Ai (AI Model)",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "safety.html"
+            }
+          ],
+          "nameUrl" : "safety.html",
+          "title" : "Clinical Safety",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "security.html"
+            }
+          ],
+          "nameUrl" : "security.html",
+          "title" : "Security & Privacy",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "terminology.html"
+            }
+          ],
+          "nameUrl" : "terminology.html",
+          "title" : "Terminology",
           "generation" : "markdown"
         },
         {

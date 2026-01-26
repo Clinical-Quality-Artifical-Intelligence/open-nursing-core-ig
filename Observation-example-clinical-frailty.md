@@ -16,7 +16,7 @@ Profile: [Clinical Frailty Scale (CFS)](StructureDefinition-onc-clinical-frailty
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Mildly Frail
 

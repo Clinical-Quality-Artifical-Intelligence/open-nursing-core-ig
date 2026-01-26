@@ -16,13 +16,13 @@ Profile: [Fluid Balance](StructureDefinition-onc-fluid-balance.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: 500 mL
 
-> **component****code**:Total Fluid Input**value**: 2000 mL
+> **component****code**: Total Fluid Input**value**: 2000 mL
 
-> **component****code**:Total Fluid Output**value**: 1500 mL
+> **component****code**: Total Fluid Output**value**: 1500 mL
 
 
 

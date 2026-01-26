@@ -16,15 +16,15 @@ Profile: [Seizure Record](StructureDefinition-onc-seizure-record.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Tonic-clonic seizure lasting 2 mins
 
-> **component****code**:Seizure Type**value**: Tonic-Clonic
+> **component****code**: Seizure Type**value**: Tonic-Clonic
 
-> **component****code**:Seizure Duration**value**: 2 min
+> **component****code**: Seizure Duration**value**: 2 min
 
-> **component****code**:Recovery Phase**value**: Sleepy for 30 mins post-ictal
+> **component****code**: Recovery Phase**value**: Sleepy for 30 mins post-ictal
 
 
 

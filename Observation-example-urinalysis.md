@@ -16,17 +16,17 @@ Profile: [Urinalysis](StructureDefinition-onc-urinalysis.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Suggestive of UTI
 
-> **component****code**:Leukocytes**value**: ++
+> **component****code**: Leukocytes**value**: ++
 
-> **component****code**:Nitrites**value**: Positive
+> **component****code**: Nitrites**value**: Positive
 
-> **component****code**:Blood**value**: Negative
+> **component****code**: Blood**value**: Negative
 
-> **component****code**:pH**value**: 6 {pH}
+> **component****code**: pH**value**: 6 {pH}
 
 
 

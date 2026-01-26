@@ -16,7 +16,7 @@ Profile: [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.m
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Requires large print documents (Font size 16+).
 

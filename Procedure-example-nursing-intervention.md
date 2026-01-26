@@ -8,7 +8,7 @@
 
 Profile: [ONC Nursing Intervention](StructureDefinition-onc-nursing-intervention.md)
 
-**Intervention Goal Reference**: [Goal: lifecycleStatus = active; description =](Goal-example-patient-goal.md)
+**Intervention Goal Reference**: [Goal: lifecycleStatus = active; description = ](Goal-example-patient-goal.md)
 
 **status**: Completed
 
@@ -21,7 +21,7 @@ Profile: [ONC Nursing Intervention](StructureDefinition-onc-nursing-intervention
 | | |
 | :--- | :--- |
 | - | **Actor** |
-| * | [Practitioner Nightingale](Practitioner-practitioner-example.md) |
+| * | [Practitioner Nightingale ](Practitioner-practitioner-example.md) |
 
 
 

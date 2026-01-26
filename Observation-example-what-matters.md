@@ -16,7 +16,7 @@ Profile: [What Matters to Me](StructureDefinition-onc-what-matters.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
+**performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Being able to walk her dog (Buster) daily.
 
