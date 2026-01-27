@@ -6,14 +6,14 @@
   "status" : "active",
   "package-id" : "onc.ig",
   "ig-ver" : "1.0.0",
-  "date" : "Tue, 27 Jan, 2026 01:09:05 +0000",
-  "dateISO8601" : "2026-01-27T01:09:05+00:00",
-  "errs" : 91,
-  "warnings" : 140,
-  "hints" : 124,
+  "date" : "Tue, 27 Jan, 2026 08:26:02 +0000",
+  "dateISO8601" : "2026-01-27T08:26:02+00:00",
+  "errs" : 93,
+  "warnings" : 138,
+  "hints" : 125,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1656025328
+  "maxMemory" : 1700894208
 }

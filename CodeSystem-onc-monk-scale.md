@@ -14,6 +14,7 @@
  This Code system is referenced in the content logical definition of the following value sets: 
 
 * [ONCMonkScaleVS](ValueSet-onc-monk-scale-vs.md)
+* [SkinToneVS](ValueSet-onc-skin-tone-vs.md)
 
 
 
@@ -28,7 +29,7 @@
   "name" : "ONCMonkScale",
   "title" : "Monk Skin Tone Scale CodeSystem",
   "status" : "active",
-  "date" : "2026-01-27T01:09:05+00:00",
+  "date" : "2026-01-27T08:26:02+00:00",
   "publisher" : "The Open Nursing Community",
   "content" : "complete",
   "count" : 10,

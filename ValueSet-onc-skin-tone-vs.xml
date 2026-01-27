@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="onc-skin-tone-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet onc-skin-tone-vs</b></p><a name="onc-skin-tone-vs"> </a><a name="hconc-skin-tone-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-onc-monk-scale.html"><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li><li>Include codes from<a href="CodeSystem-onc-observation-codes.html"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span> where code  is-a <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-1">fitzpatrick-1</a></li></ul></div>
+  </text>
+  <url value="https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs"/>
+  <version value="1.0.0"/>
+  <name value="SkinToneVS"/>
+  <title value="Skin Tone Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-01-27T08:26:02+00:00"/>
+  <publisher value="The Open Nursing Community"/>
+  <description value="Monk and Fitzpatrick scales for equitable skin assessment."/>
+  <compose>
+    <include>
+      <system value="https://opennursingcoreig.com/CodeSystem/onc-monk-scale"/>
+    </include>
+    <include>
+      <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+      <filter>
+        <property value="code"/>
+        <op value="is-a"/>
+        <value value="fitzpatrick-1"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

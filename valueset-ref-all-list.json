@@ -1391,6 +1391,27 @@
       "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
     },
     {
+      "url" : "https://opennursingcoreig.com/ValueSet/onc-news2-score-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "NEWS2ScoreVS",
+      "title" : "NEWS2 Score Categories Value Set",
+      "description" : "NEWS2 total score categories.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://opennursingcoreig.com/ValueSet/onc-pain-score-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PainScoreVS",
+      "title" : "Pain Score Value Set",
+      "description" : "Standard 0-10 or Abbey Pain Scale score",
+      "systems" : [
+        "http://snomed.info/sct",
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
+      ]
+    },
+    {
       "url" : "https://opennursingcoreig.com/ValueSet/onc-pbs-function-vs",
       "version" : "1.0.0",
       "status" : "active",
@@ -1426,6 +1447,22 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "SkinToneVS",
+      "title" : "Skin Tone Value Set",
+      "description" : "Monk and Fitzpatrick scales for equitable skin assessment.",
+      "systems" : [
+        "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+    },
+    {
       "url" : "https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs",
       "version" : "1.0.0",
       "status" : "active",
@@ -1448,20 +1485,6 @@
       "uses" : {
       },
       "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem"
-    },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/skintone-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "SkinToneVS",
-      "title" : "Fitzpatrick Skin Tone Value Set",
-      "description" : "Value set for Fitzpatrick skin type classifications",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
     },
     {
       "url" : "https://opennursingcoreig.com/ValueSet/wound-stage-vs",

@@ -19,7 +19,6 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="66555-4"/>
-      <display value="Skin type [Fitzpatrick Classification Scale]"/>
     </coding>
   </code>
   <subject>

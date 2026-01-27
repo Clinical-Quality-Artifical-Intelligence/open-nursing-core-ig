@@ -156,22 +156,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><strong><a name="l278">​</a><a href="ValueSet-onc-skin-tone-vs.html">SkinToneVS</a></strong></td>
+      <td><strong><a href="ValueSet-onc-skin-tone-vs.html">SkinToneVS</a></strong></td>
       <td>Monk and Fitzpatrick scales for equitable skin assessment.</td>
     </tr>
     <tr>
-      <td><strong><a name="l289">​</a><a href="ValueSet-onc-news2-score-vs.html">NEWS2ScoreVS</a></strong></td>
+      <td><strong><a href="ValueSet-onc-news2-score-vs.html">NEWS2ScoreVS</a></strong></td>
       <td>NEWS2 total score categories.</td>
     </tr>
     <tr>
-      <td><strong><a name="l300">​</a><a href="ValueSet-onc-pain-score-vs.html">PainScoreVS</a></strong></td>
-      <td>Standard 0-10 or Abbey Pain Scale scores.</td>
+      <td><strong><a href="ValueSet-onc-pain-score-vs.html">PainScoreVS</a></strong></td>
+      <td>Standard 0-10 or Abbey Pain Scale score</td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="mapping">Mapping</h2>
-<p>Implementers <strong>MUST</strong> map local legacy codes to the SNOMED CT / LOINC codes defined in these ValueSets.</p>
+<p>To ensure semantic interoperability, internal ONC concepts are mapped to international standards using ConceptMaps.</p>
+
+<ul>
+  <li><strong><a name="l319">​</a><a href="ConceptMap-onc-to-nanda.html">Mapping ONC to NANDA-I</a></strong>: Alignment of relational care findings to formal nursing diagnoses.</li>
+</ul>
+
+<p>Implementers <strong>MUST</strong> map local legacy codes to the SNOMED CT and LOINC codes defined in these ValueSets to maintain decision-support integrity.</p>
 
 
 
@@ -192,7 +198,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="null">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 27, 2026 01:09+0000">2026-01-27</span>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="null">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 27, 2026 08:26+0000">2026-01-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

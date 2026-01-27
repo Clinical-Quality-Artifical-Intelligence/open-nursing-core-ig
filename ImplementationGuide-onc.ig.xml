@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2026-01-27T01:09:05+00:00"/>
+  <date value="2026-01-27T08:26:02+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready."/>
   <packageId value="onc.ig"/>
@@ -1137,17 +1137,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/skintone-vs"/>
-      </reference>
-      <name value="Fitzpatrick Skin Tone Value Set"/>
-      <description value="Value set for Fitzpatrick skin type classifications"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1405,6 +1394,17 @@
       </reference>
       <name value="NEWS2 Score"/>
       <description value="National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-news2-score-vs"/>
+      </reference>
+      <name value="NEWS2 Score Categories Value Set"/>
+      <description value="NEWS2 total score categories."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1715,6 +1715,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-pain-score-vs"/>
+      </reference>
+      <name value="Pain Score Value Set"/>
+      <description value="Standard 0-10 or Abbey Pain Scale score"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1885,6 +1896,17 @@
       </reference>
       <name value="Skin Tone Observation"/>
       <description value="Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-skin-tone-vs"/>
+      </reference>
+      <name value="Skin Tone Value Set"/>
+      <description value="Monk and Fitzpatrick scales for equitable skin assessment."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

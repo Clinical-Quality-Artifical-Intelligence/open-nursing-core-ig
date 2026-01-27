@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "2dc0ed2b-14f5-4e55-9696-8224aa32ed8c",
+  "id" : "d4959049-94ca-4596-ba5d-8d94ad8ca704",
   "meta" : {
-    "lastUpdated" : "2026-01-27T01:09:05.724+00:00"
+    "lastUpdated" : "2026-01-27T08:26:02.419+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "name" : "ACVPUValueSet",
       "title" : "ACVPU Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:44020ee3-19fd-4bae-8d5a-3f7ae3b61610",
-        "timestamp" : "2026-01-27T01:10:30+00:00",
+        "identifier" : "urn:uuid:970734a0-c3fc-49ac-a3ac-8aaa7ff833fc",
+        "timestamp" : "2026-01-27T08:27:19+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -90,10 +90,10 @@
       "title" : "Goal Evaluation Value Set",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a5febcb9-5828-470a-a449-640bbfe6a819",
-        "timestamp" : "2026-01-27T01:10:34+00:00",
+        "identifier" : "urn:uuid:4b790cce-552c-4145-a192-8f1298c6c1cc",
+        "timestamp" : "2026-01-27T08:27:24+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -157,10 +157,10 @@
       "title" : "Housing Status Value Set",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:d7397205-ee4b-486c-8b22-08e921ef73d2",
-        "timestamp" : "2026-01-27T01:10:48+00:00",
+        "identifier" : "urn:uuid:a3c1ceb6-7f6e-4524-9ff5-af43ad859097",
+        "timestamp" : "2026-01-27T08:27:38+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -213,10 +213,10 @@
       "name" : "InspiredOxygenValueSet",
       "title" : "Inspired Oxygen Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:94bc86a5-be9c-4205-a238-1886043b2501",
-        "timestamp" : "2026-01-27T01:10:35+00:00",
+        "identifier" : "urn:uuid:42c3b89b-d625-41fe-9f9c-2a9484cd54b9",
+        "timestamp" : "2026-01-27T08:27:25+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -269,10 +269,10 @@
       "name" : "NEWS2CodeValueSet",
       "title" : "NEWS2 Code Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:663ab85e-3e01-4cfb-8a44-e2a92fe6f632",
-        "timestamp" : "2026-01-27T01:10:48+00:00",
+        "identifier" : "urn:uuid:cb8872f2-af11-412a-8b71-9dd7489c8b6e",
+        "timestamp" : "2026-01-27T08:27:38+00:00",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -316,10 +316,10 @@
       "name" : "NEWS2SubscoreCodeValueSet",
       "title" : "NEWS2 Sub-Score Codes",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e7f903c3-01cb-47b5-b93d-922f00d7b5e2",
-        "timestamp" : "2026-01-27T01:10:48+00:00",
+        "identifier" : "urn:uuid:8e13ebfd-27af-4704-a5c8-5474b8aae005",
+        "timestamp" : "2026-01-27T08:27:38+00:00",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -364,10 +364,10 @@
       "title" : "Nursing Intervention Value Set",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a54c1d09-347c-4820-bf13-072e1f356c4a",
-        "timestamp" : "2026-01-27T01:10:48+00:00",
+        "identifier" : "urn:uuid:3259210a-e390-4936-bed6-e38cc71b925f",
+        "timestamp" : "2026-01-27T08:27:38+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -426,10 +426,10 @@
       "title" : "Nursing Problem Value Set",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:b30dcdc2-07bb-40c9-92c5-b70d8ecf7ce3",
-        "timestamp" : "2026-01-27T01:10:43+00:00",
+        "identifier" : "urn:uuid:eed3a670-8730-4c5b-bb2a-96956c324989",
+        "timestamp" : "2026-01-27T08:27:32+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -496,10 +496,10 @@
       "name" : "AcuteChangeVS",
       "title" : "4AT Acute Change Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:f8843f0c-326f-468e-97da-87192ff3b023",
-        "timestamp" : "2026-01-27T01:10:27+00:00",
+        "identifier" : "urn:uuid:3b5955cb-d59b-4fdc-affd-c3675f663a1b",
+        "timestamp" : "2026-01-27T08:27:17+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -542,10 +542,10 @@
       "name" : "AlertnessVS",
       "title" : "4AT Alertness Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:09fcce6f-073e-495f-a8a5-abefa1cb6e73",
-        "timestamp" : "2026-01-27T01:10:27+00:00",
+        "identifier" : "urn:uuid:c398711d-94c5-4b01-9088-64d545dffb30",
+        "timestamp" : "2026-01-27T08:27:17+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -611,10 +611,10 @@
       "name" : "AMT4VS",
       "title" : "4AT AMT4 Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:4acb97e5-46e1-44a7-8d36-99da41171f2d",
-        "timestamp" : "2026-01-27T01:10:27+00:00",
+        "identifier" : "urn:uuid:2dc20eeb-5c65-4b68-bc69-4e9118d6350e",
+        "timestamp" : "2026-01-27T08:27:17+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -657,10 +657,10 @@
       "name" : "AttentionVS",
       "title" : "4AT Attention Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:78965979-5d4f-45fb-90db-42fce0c36714",
-        "timestamp" : "2026-01-27T01:10:27+00:00",
+        "identifier" : "urn:uuid:42ab3bb0-1bfc-4ecb-8237-049a03cc8c4f",
+        "timestamp" : "2026-01-27T08:27:17+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -703,10 +703,10 @@
       "name" : "ONCADPIEVS",
       "title" : "ADPIE Nursing Process Phases",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a539c910-1555-4ed6-bed2-2780175b412c",
-        "timestamp" : "2026-01-27T01:10:48+00:00",
+        "identifier" : "urn:uuid:86e4a4c7-73fe-4061-8007-7e1826cfba00",
+        "timestamp" : "2026-01-27T08:27:38+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -770,10 +770,10 @@
       "name" : "ClinicalFrailtyScaleVS",
       "title" : "Clinical Frailty Scale Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:f61bd12d-5bf9-476d-8bc6-c3ec9744985b",
-        "timestamp" : "2026-01-27T01:10:33+00:00",
+        "identifier" : "urn:uuid:55417d81-04e5-409c-b045-3bfc5b8adbed",
+        "timestamp" : "2026-01-27T08:27:23+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -857,10 +857,10 @@
       "name" : "ONCEmpathyIndexVS",
       "title" : "ONC Empathy & Relational Engagement Index",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:de1f1d76-64d7-4f6f-ba0e-49d432302891",
-        "timestamp" : "2026-01-27T01:10:35+00:00",
+        "identifier" : "urn:uuid:22869150-baaa-4308-8ba5-44120141ce9e",
+        "timestamp" : "2026-01-27T08:27:25+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -924,10 +924,10 @@
       "name" : "ONCGoalTargetMeasureVS",
       "title" : "Goal Target Measure ValueSet",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:057ea16c-0778-433a-bfef-acaa254fabee",
-        "timestamp" : "2026-01-27T01:10:49+00:00",
+        "identifier" : "urn:uuid:3dd3e8d4-7729-4e15-8216-cebd06bac310",
+        "timestamp" : "2026-01-27T08:27:38+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -988,10 +988,10 @@
       "name" : "MentalCapacityVS",
       "title" : "Mental Capacity Finding Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:62f9eea2-229a-445f-894f-ee1896f485ca",
-        "timestamp" : "2026-01-27T01:10:36+00:00",
+        "identifier" : "urn:uuid:4a7f29eb-5969-4bcd-88c0-32c95c293382",
+        "timestamp" : "2026-01-27T08:27:26+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1045,10 +1045,10 @@
       "name" : "ONCMonkScaleVS",
       "title" : "Monk Skin Tone Scale ValueSet",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:40061c8f-ecbc-49b3-a172-12416d43b4d6",
-        "timestamp" : "2026-01-27T01:10:37+00:00",
+        "identifier" : "urn:uuid:d5e0af2c-7266-4813-94f5-ed0cc48b705a",
+        "timestamp" : "2026-01-27T08:27:27+00:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{
@@ -1125,6 +1125,119 @@
     }
   },
   {
+    "fullUrl" : "https://opennursingcoreig.com/ValueSet/onc-news2-score-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 0 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr></table></div>"
+      },
+      "url" : "https://opennursingcoreig.com/ValueSet/onc-news2-score-vs",
+      "version" : "1.0.0",
+      "name" : "NEWS2ScoreVS",
+      "title" : "NEWS2 Score Categories Value Set",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-01-27T08:26:02+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:06d506db-0d39-4376-a57f-f2fd6d97e304",
+        "timestamp" : "2026-01-27T08:27:38+00:00",
+        "total" : 0,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://opennursingcoreig.com/ValueSet/onc-pain-score-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"CodeSystem-onc-observation-codes.html\">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-260385009\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/260385009\">260385009</a></td><td>Negative</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;260385009&quot;, &quot;display&quot;: &quot;Negative&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;260385009&quot;&gt;&lt;display value=&quot;Negative&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-225330006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/225330006\">225330006</a></td><td>Client participation</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;225330006&quot;, &quot;display&quot;: &quot;Client participation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;225330006&quot;&gt;&lt;display value=&quot;Client participation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-abbey-score\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-abbey-score\">abbey-score</a></td><td>Abbey Pain Scale Score</td><td>Total Abbey Pain Scale Score (0-100+ but usually 0-18+)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;abbey-score&quot;, &quot;display&quot;: &quot;Abbey Pain Scale Score&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;abbey-score&quot;&gt;&lt;display value=&quot;Abbey Pain Scale Score&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://opennursingcoreig.com/ValueSet/onc-pain-score-vs",
+      "version" : "1.0.0",
+      "name" : "PainScoreVS",
+      "title" : "Pain Score Value Set",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-01-27T08:26:02+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:5dd6728d-f5dc-4142-b01d-4ccb28645588",
+        "timestamp" : "2026-01-27T08:27:39.444Z",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "260385009",
+          "display" : "Negative"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "225330006",
+          "display" : "Client participation"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "abbey-score",
+          "display" : "Abbey Pain Scale Score"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://opennursingcoreig.com/ValueSet/onc-pbs-function-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1137,10 +1250,10 @@
       "name" : "PBSFunctionVS",
       "title" : "PBS Behaviour Function ValueSet",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:6bd80a68-1380-436b-85e0-d8cbcb7d9bae",
-        "timestamp" : "2026-01-27T01:10:29+00:00",
+        "identifier" : "urn:uuid:d3c4d016-824d-49a0-88fb-ebcfc319ec24",
+        "timestamp" : "2026-01-27T08:27:19+00:00",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -1184,10 +1297,10 @@
       "name" : "ONCPrognosisVS",
       "title" : "Nursing Prognosis ValueSet",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a85430d5-a5fd-4685-85fc-ea86bb61716e",
-        "timestamp" : "2026-01-27T01:10:49+00:00",
+        "identifier" : "urn:uuid:e6899d4a-7a6c-46c4-98a3-72a56740e53e",
+        "timestamp" : "2026-01-27T08:27:39+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1240,10 +1353,10 @@
       "name" : "ONCRelationalOutcomesVS",
       "title" : "ONC Relational Care Outcomes",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:95820b1d-051f-4599-950b-3006dc9ba752",
-        "timestamp" : "2026-01-27T01:10:49+00:00",
+        "identifier" : "urn:uuid:1f19bf43-c315-4a37-a449-77585d6d8125",
+        "timestamp" : "2026-01-27T08:27:39+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -1274,6 +1387,112 @@
     }
   },
   {
+    "fullUrl" : "https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li><a href=\"CodeSystem-onc-monk-scale.html\">codesystem Monk Skin Tone Scale CodeSystem v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://opennursingcoreig.com/CodeSystem/onc-monk-scale|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"CodeSystem-onc-observation-codes.html\">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 11 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-monk-scale-A\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-monk-scale.html#onc-monk-scale-A\">A</a></td><td>Light Skin</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;A&quot;, &quot;display&quot;: &quot;Light Skin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;A&quot;&gt;&lt;display value=&quot;Light Skin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-monk-scale-B\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-monk-scale.html#onc-monk-scale-B\">B</a></td><td>Light-Medium Skin</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;B&quot;, &quot;display&quot;: &quot;Light-Medium Skin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;B&quot;&gt;&lt;display value=&quot;Light-Medium Skin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-monk-scale-C\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-monk-scale.html#onc-monk-scale-C\">C</a></td><td>Medium Skin</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;C&quot;, &quot;display&quot;: &quot;Medium Skin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;C&quot;&gt;&lt;display value=&quot;Medium Skin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-monk-scale-D\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-monk-scale.html#onc-monk-scale-D\">D</a></td><td>Medium-Dark Skin</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;D&quot;, &quot;display&quot;: &quot;Medium-Dark Skin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;D&quot;&gt;&lt;display value=&quot;Medium-Dark Skin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-monk-scale-E\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-monk-scale.html#onc-monk-scale-E\">E</a></td><td>Dark Skin</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;E&quot;, &quot;display&quot;: &quot;Dark Skin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;E&quot;&gt;&lt;display value=&quot;Dark Skin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-monk-scale-F\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-monk-scale.html#onc-monk-scale-F\">F</a></td><td>Deep Dark Skin</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;F&quot;, &quot;display&quot;: &quot;Deep Dark Skin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;display value=&quot;Deep Dark Skin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-monk-scale-G\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-monk-scale.html#onc-monk-scale-G\">G</a></td><td>Very Dark Skin</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;G&quot;, &quot;display&quot;: &quot;Very Dark Skin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;G&quot;&gt;&lt;display value=&quot;Very Dark Skin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-monk-scale-H\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-monk-scale.html#onc-monk-scale-H\">H</a></td><td>Deepest Dark Skin</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;Deepest Dark Skin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;Deepest Dark Skin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-monk-scale-I\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-monk-scale.html#onc-monk-scale-I\">I</a></td><td>Ultra Dark Skin</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Ultra Dark Skin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Ultra Dark Skin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-monk-scale-J\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-monk-scale.html#onc-monk-scale-J\">J</a></td><td>Black Skin</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;J&quot;, &quot;display&quot;: &quot;Black Skin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;J&quot;&gt;&lt;display value=&quot;Black Skin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-fitzpatrick-1\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-1\">fitzpatrick-1</a></td><td>Type I</td><td>Pale white; always burns, never tans</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-1&quot;, &quot;display&quot;: &quot;Type I&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-1&quot;&gt;&lt;display value=&quot;Type I&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs",
+      "version" : "1.0.0",
+      "name" : "SkinToneVS",
+      "title" : "Skin Tone Value Set",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-01-27T08:26:02+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:dd72562b-974e-4271-810e-ce89ddd7dac6",
+        "timestamp" : "2026-01-27T08:27:36.131Z",
+        "total" : 11,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale|1.0.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+          "code" : "A",
+          "display" : "Light Skin"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+          "code" : "B",
+          "display" : "Light-Medium Skin"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+          "code" : "C",
+          "display" : "Medium Skin"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+          "code" : "D",
+          "display" : "Medium-Dark Skin"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+          "code" : "E",
+          "display" : "Dark Skin"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+          "code" : "F",
+          "display" : "Deep Dark Skin"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+          "code" : "G",
+          "display" : "Very Dark Skin"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+          "code" : "H",
+          "display" : "Deepest Dark Skin"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+          "code" : "I",
+          "display" : "Ultra Dark Skin"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+          "code" : "J",
+          "display" : "Black Skin"
+        },
+        {
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "fitzpatrick-1",
+          "display" : "Type I"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1286,10 +1505,10 @@
       "name" : "PainAssessmentCodeValueSet",
       "title" : "Pain Assessment Code Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:67b477ff-40ea-4316-9ea7-79454b2ffa36",
-        "timestamp" : "2026-01-27T01:10:44+00:00",
+        "identifier" : "urn:uuid:7b6d2392-b50d-4008-8184-4291c8390820",
+        "timestamp" : "2026-01-27T08:27:33+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1343,10 +1562,10 @@
       "title" : "Problem Category Value Set",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:cd1b948e-4937-4c9c-9ddd-4a91ade9eedb",
-        "timestamp" : "2026-01-27T01:10:43+00:00",
+        "identifier" : "urn:uuid:2ff774cd-5874-44c6-b6a5-a54e812876f4",
+        "timestamp" : "2026-01-27T08:27:32+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1388,79 +1607,6 @@
     }
   },
   {
-    "fullUrl" : "https://opennursingcoreig.com/ValueSet/skintone-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-onc-observation-codes.html\">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 6 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-fitzpatrick-1\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-1\">fitzpatrick-1</a></td><td>Type I</td><td>Pale white; always burns, never tans</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-1&quot;, &quot;display&quot;: &quot;Type I&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-1&quot;&gt;&lt;display value=&quot;Type I&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-fitzpatrick-2\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-2\">fitzpatrick-2</a></td><td>Type II</td><td>White; usually burns, tans with difficulty</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-2&quot;, &quot;display&quot;: &quot;Type II&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-2&quot;&gt;&lt;display value=&quot;Type II&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-fitzpatrick-3\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-3\">fitzpatrick-3</a></td><td>Type III</td><td>Cream white; sometimes mild burn, gradually tans</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-3&quot;, &quot;display&quot;: &quot;Type III&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-3&quot;&gt;&lt;display value=&quot;Type III&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-fitzpatrick-4\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-4\">fitzpatrick-4</a></td><td>Type IV</td><td>Moderate brown; rarely burns, tans with ease</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-4&quot;, &quot;display&quot;: &quot;Type IV&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-4&quot;&gt;&lt;display value=&quot;Type IV&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-fitzpatrick-5\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-5\">fitzpatrick-5</a></td><td>Type V</td><td>Dark brown; very rarely burns, tans very easily</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-5&quot;, &quot;display&quot;: &quot;Type V&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-5&quot;&gt;&lt;display value=&quot;Type V&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-fitzpatrick-6\"> </a><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-6\">fitzpatrick-6</a></td><td>Type VI</td><td>Deeply pigmented dark brown to black; never burns, tans very easily</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-6&quot;, &quot;display&quot;: &quot;Type VI&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-6&quot;&gt;&lt;display value=&quot;Type VI&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
-      },
-      "url" : "https://opennursingcoreig.com/ValueSet/skintone-vs",
-      "version" : "1.0.0",
-      "name" : "SkinToneVS",
-      "title" : "Fitzpatrick Skin Tone Value Set",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2026-01-27T01:09:05+00:00",
-      "expansion" : {
-        "identifier" : "urn:uuid:f4f5c943-1619-4f51-9612-a6259013a328",
-        "timestamp" : "2026-01-27T01:10:46+00:00",
-        "total" : 6,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "en"
-        },
-        {
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-          "code" : "fitzpatrick-1",
-          "display" : "Type I"
-        },
-        {
-          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-          "code" : "fitzpatrick-2",
-          "display" : "Type II"
-        },
-        {
-          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-          "code" : "fitzpatrick-3",
-          "display" : "Type III"
-        },
-        {
-          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-          "code" : "fitzpatrick-4",
-          "display" : "Type IV"
-        },
-        {
-          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-          "code" : "fitzpatrick-5",
-          "display" : "Type V"
-        },
-        {
-          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-          "code" : "fitzpatrick-6",
-          "display" : "Type VI"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://opennursingcoreig.com/ValueSet/wound-stage-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1473,10 +1619,10 @@
       "name" : "WoundStageValueSet",
       "title" : "Wound Stage Value Set",
       "status" : "active",
-      "date" : "2026-01-27T01:09:05+00:00",
+      "date" : "2026-01-27T08:26:02+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:5e4856d0-ee0c-4630-911f-fb81a8e9f13f",
-        "timestamp" : "2026-01-27T01:10:48+00:00",
+        "identifier" : "urn:uuid:84c5ac4a-600e-40f1-b928-d588250fde71",
+        "timestamp" : "2026-01-27T08:27:37+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{

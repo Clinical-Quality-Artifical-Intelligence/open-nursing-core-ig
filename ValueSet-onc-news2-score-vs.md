@@ -1,22 +1,22 @@
-# Fitzpatrick Skin Tone Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# NEWS2 Score Categories Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Fitzpatrick Skin Tone Value Set**
+* **NEWS2 Score Categories Value Set**
 
-## ValueSet: Fitzpatrick Skin Tone Value Set 
+## ValueSet: NEWS2 Score Categories Value Set 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/ValueSet/skintone-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:SkinToneVS |
+| *Official URL*:https://opennursingcoreig.com/ValueSet/onc-news2-score-vs | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:NEWS2ScoreVS |
 
  
-Value set for Fitzpatrick skin type classifications 
+NEWS2 total score categories. 
 
  **References** 
 
-* [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 
@@ -44,44 +44,32 @@ Value set for Fitzpatrick skin type classifications
 ```json
 {
   "resourceType" : "ValueSet",
-  "id" : "skintone-vs",
-  "url" : "https://opennursingcoreig.com/ValueSet/skintone-vs",
+  "id" : "onc-news2-score-vs",
+  "url" : "https://opennursingcoreig.com/ValueSet/onc-news2-score-vs",
   "version" : "1.0.0",
-  "name" : "SkinToneVS",
-  "title" : "Fitzpatrick Skin Tone Value Set",
+  "name" : "NEWS2ScoreVS",
+  "title" : "NEWS2 Score Categories Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T01:09:05+00:00",
+  "date" : "2026-01-27T08:26:02+00:00",
   "publisher" : "The Open Nursing Community",
-  "description" : "Value set for Fitzpatrick skin type classifications",
+  "description" : "NEWS2 total score categories.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "system" : "http://snomed.info/sct",
         "concept" : [
           {
-            "code" : "fitzpatrick-1",
-            "display" : "Type I"
+            "code" : "50601000000100",
+            "display" : "National Early Warning Score 2 low risk"
           },
           {
-            "code" : "fitzpatrick-2",
-            "display" : "Type II"
+            "code" : "50602000000101",
+            "display" : "National Early Warning Score 2 medium risk"
           },
           {
-            "code" : "fitzpatrick-3",
-            "display" : "Type III"
-          },
-          {
-            "code" : "fitzpatrick-4",
-            "display" : "Type IV"
-          },
-          {
-            "code" : "fitzpatrick-5",
-            "display" : "Type V"
-          },
-          {
-            "code" : "fitzpatrick-6",
-            "display" : "Type VI"
+            "code" : "50604000000104",
+            "display" : "National Early Warning Score 2 high risk"
           }
         ]
       }

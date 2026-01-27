@@ -10,20 +10,22 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-consistency-type.html" : "Fluid Consistency Type Codes",
-      "ValueSet-housing-status-vs.html" : "Housing Status Value Set",
       "ValueSet-inspired-oxygen-vs.html" : "Inspired Oxygen Value Set",
-      "ValueSet-nursing-intervention-valueset.html" : "Nursing Intervention Value Set",
-      "ValueSet-goal-evaluation-valueset.html" : "Goal Evaluation Value Set",
-      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
-      "ValueSet-onc-goal-target-measure-vs.html" : "Goal Target Measure ValueSet",
-      "ValueSet-onc-4at-acute-change-vs.html" : "4AT Acute Change Value Set",
-      "ValueSet-onc-prognosis-vs.html" : "Nursing Prognosis ValueSet",
+      "ValueSet-onc-relational-outcomes-vs.html" : "ONC Relational Care Outcomes",
+      "ValueSet-onc-news2-score-vs.html" : "NEWS2 Score Categories Value Set",
       "ValueSet-onc-4at-amt4-vs.html" : "4AT AMT4 Value Set",
+      "http://hl7.org/fhir/R4/valueset-consistency-type.html" : "Fluid Consistency Type Codes",
+      "ValueSet-goal-evaluation-valueset.html" : "Goal Evaluation Value Set",
+      "ValueSet-housing-status-vs.html" : "Housing Status Value Set",
+      "ValueSet-onc-goal-target-measure-vs.html" : "Goal Target Measure ValueSet",
       "ValueSet-onc-4at-attention-vs.html" : "4AT Attention Value Set",
+      "ValueSet-onc-4at-acute-change-vs.html" : "4AT Acute Change Value Set",
+      "ValueSet-nursing-intervention-valueset.html" : "Nursing Intervention Value Set",
+      "ValueSet-onc-prognosis-vs.html" : "Nursing Prognosis ValueSet",
+      "ValueSet-onc-pain-score-vs.html" : "Pain Score Value Set",
       "ValueSet-acvpu-vs.html" : "ACVPU Value Set",
       "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
-      "ValueSet-onc-relational-outcomes-vs.html" : "ONC Relational Care Outcomes"
+      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set"
     },
     {
       "url" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
@@ -34,7 +36,8 @@
       "description" : "",
       "uses" : {
       },
-      "ValueSet-onc-monk-scale-vs.html" : "Monk Skin Tone Scale ValueSet"
+      "ValueSet-onc-monk-scale-vs.html" : "Monk Skin Tone Scale ValueSet",
+      "ValueSet-onc-skin-tone-vs.html" : "Skin Tone Value Set"
     },
     {
       "url" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
@@ -45,18 +48,19 @@
       "description" : "Custom observation codes for Open Nursing Core",
       "uses" : {
       },
-      "ValueSet-onc-cfs-vs.html" : "Clinical Frailty Scale Value Set",
+      "ConceptMap-ONCToNandaMapping.html" : "Mapping ONC Relational Concepts to NANDA-I",
       "ValueSet-onc-mca-vs.html" : "Mental Capacity Finding Value Set",
-      "ValueSet-wound-stage-vs.html" : "Wound Stage Value Set",
       "ValueSet-news2-subscore-code-vs.html" : "NEWS2 Sub-Score Codes",
       "ValueSet-onc-adpie-vs.html" : "ADPIE Nursing Process Phases",
+      "ValueSet-news2-code-vs.html" : "NEWS2 Code Value Set",
       "ValueSet-onc-pbs-function-vs.html" : "PBS Behaviour Function ValueSet",
       "ValueSet-onc-empathy-index-vs.html" : "ONC Empathy & Relational Engagement Index",
-      "ValueSet-skintone-vs.html" : "Fitzpatrick Skin Tone Value Set",
-      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
-      "ConceptMap-ONCToNandaMapping.html" : "Mapping ONC Relational Concepts to NANDA-I",
-      "ValueSet-news2-code-vs.html" : "NEWS2 Code Value Set",
-      "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set"
+      "ValueSet-onc-skin-tone-vs.html" : "Skin Tone Value Set",
+      "ValueSet-wound-stage-vs.html" : "Wound Stage Value Set",
+      "ValueSet-onc-pain-score-vs.html" : "Pain Score Value Set",
+      "ValueSet-onc-cfs-vs.html" : "Clinical Frailty Scale Value Set",
+      "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
+      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set"
     },
     {
       "url" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type",

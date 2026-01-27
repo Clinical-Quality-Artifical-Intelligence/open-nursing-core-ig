@@ -122,7 +122,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ACVPU Value Set](ValueSet-acvpu-vs.md) | ACVPU consciousness level codes |
 | [ADPIE Nursing Process Phases](ValueSet-onc-adpie-vs.md) | The five phases of the professional nursing process. |
 | [Clinical Frailty Scale Value Set](ValueSet-onc-cfs-vs.md) | Codes for Rockwood Clinical Frailty Scale (1-9) |
-| [Fitzpatrick Skin Tone Value Set](ValueSet-skintone-vs.md) | Value set for Fitzpatrick skin type classifications |
 | [Goal Evaluation Value Set](ValueSet-goal-evaluation-valueset.md) | Value set for evaluating patient goal outcomes |
 | [Goal Target Measure ValueSet](ValueSet-onc-goal-target-measure-vs.md) | Codes used for goal target measures |
 | [Housing Status Value Set](ValueSet-housing-status-vs.md) | Value set for patient housing status |
@@ -130,6 +129,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Mental Capacity Finding Value Set](ValueSet-onc-mca-vs.md) | Codes indicating presence or absence of capacity |
 | [Monk Skin Tone Scale ValueSet](ValueSet-onc-monk-scale-vs.md) |  |
 | [NEWS2 Code Value Set](ValueSet-news2-code-vs.md) | LOINC and SNOMED codes for NEWS2 |
+| [NEWS2 Score Categories Value Set](ValueSet-onc-news2-score-vs.md) | NEWS2 total score categories. |
 | [NEWS2 Sub-Score Codes](ValueSet-news2-subscore-code-vs.md) | SNOMED codes for NEWS2 sub-scores |
 | [Nursing Intervention Value Set](ValueSet-nursing-intervention-valueset.md) | Value set for nursing interventions |
 | [Nursing Problem Value Set](ValueSet-nursing-problem-valueset.md) | Value set for nursing problems and diagnoses |
@@ -138,7 +138,9 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ONC Relational Care Outcomes](ValueSet-onc-relational-outcomes-vs.md) | Captures the measurable outcomes of relational and empathic nursing care. |
 | [PBS Behaviour Function ValueSet](ValueSet-onc-pbs-function-vs.md) | Common functions of behaviour (SEAT) |
 | [Pain Assessment Code Value Set](ValueSet-pain-assessment-code-vs.md) | LOINC codes for pain severity assessment |
+| [Pain Score Value Set](ValueSet-onc-pain-score-vs.md) | Standard 0-10 or Abbey Pain Scale score |
 | [Problem Category Value Set](ValueSet-problem-category-valueset.md) | Value set for categorizing nursing problems |
+| [Skin Tone Value Set](ValueSet-onc-skin-tone-vs.md) | Monk and Fitzpatrick scales for equitable skin assessment. |
 | [Wound Stage Value Set](ValueSet-wound-stage-vs.md) |  |
 
 ### Terminology: Code Systems 

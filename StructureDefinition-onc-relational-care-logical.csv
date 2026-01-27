@@ -8,7 +8,7 @@
 "onc-relational-care-logical.empathyIndex","onc-relational-care-logical.empathyIndex","","","",1,1,"","","","code {[]} {[]}
 ","The ONC Empathy Index (1-5) measuring relational quality.","The ONC Empathy Index (1-5) measuring relational quality.","","","","","","","","","",,"required","","https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs","",,,,"onc-relational-care-logical.empathyIndex",1,1,"",""
 "onc-relational-care-logical.skinToneEquity","onc-relational-care-logical.skinToneEquity","","","",1,1,"","","","code {[]} {[]}
-","The patient's skin tone classification (Fitzpatrick or Monk) used to guide clinical assessment.","The patient's skin tone classification (Fitzpatrick or Monk) used to guide clinical assessment.","","","","","","","","","",,"extensible","","https://opennursingcoreig.com/ValueSet/onc-skintone-vs","",,,,"onc-relational-care-logical.skinToneEquity",1,1,"",""
+","The patient's skin tone classification (Fitzpatrick or Monk) used to guide clinical assessment.","The patient's skin tone classification (Fitzpatrick or Monk) used to guide clinical assessment.","","","","","","","","","",,"extensible","","https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs","",,,,"onc-relational-care-logical.skinToneEquity",1,1,"",""
 "onc-relational-care-logical.mandatoryEquityValidation","onc-relational-care-logical.mandatoryEquityValidation","","","",1,1,"","","","boolean {[]} {[]}
 ","Technical flag ensuring the 'Fairness Gate' was passed.","Technical flag ensuring the 'Fairness Gate' was passed.","","","","","","","","","",,,,,"",,,,"onc-relational-care-logical.mandatoryEquityValidation",1,1,"",""
 "onc-relational-care-logical.adpieStatus","onc-relational-care-logical.adpieStatus","","","",1,1,"","","","code {[]} {[]}

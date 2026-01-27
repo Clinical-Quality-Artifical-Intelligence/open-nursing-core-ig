@@ -1,10 +1,10 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 91, warn = 140, info = 124
-IG Publisher Version: 2.0.30 Out of date - current version is null
-Generated Tue Jan 27 01:12:22 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://opennursingcoreig.com)
- Build Errors : 27 / 52 / 0
+err = 93, warn = 138, info = 125
+IG Publisher Version: 2.0.30
+Generated Tue Jan 27 08:29:04 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://opennursingcoreig.com)
+ Build Errors : 10 / 52 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 3 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 0 / 2 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type : 0 / 0 / 1
@@ -111,7 +111,7 @@ Generated Tue Jan 27 01:12:22 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (can
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-story : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-qsofa : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-reasonable-adjustment : 0 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-relational-care-logical : 1 / 18 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-relational-care-logical : 0 / 16 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-relational-observation : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-respiration-rate : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-seizure-record : 0 / 0 / 5
@@ -141,12 +141,14 @@ Generated Tue Jan 27 01:12:22 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (can
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-goal-target-measure-vs : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-mca-vs : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-monk-scale-vs : 0 / 2 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-news2-score-vs : 3 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-pain-score-vs : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-pbs-function-vs : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-prognosis-vs : 1 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-relational-outcomes-vs : 3 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-skin-tone-vs : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-pain-assessment-code-vs : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-problem-category-valueset : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-skintone-vs : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-wound-stage-vs : 0 / 2 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/Library-onc-news2-cql : 2 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/PlanDefinition-news2-escalation : 3 / 1 / 1
@@ -207,26 +209,9 @@ ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div
 ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 739: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
 ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 721: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
 ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 807: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 230, column 473: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 258, column 473: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 286, column 473: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 311, column 356: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 378, column 9: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 437, column 356: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 505, column 9: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 562, column 356: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 629, column 9: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 747, column 356: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 814, column 9: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 873, column 356: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 940, column 9: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 997, column 356: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
-ERROR: StructureDefinition-onc-relational-care-logical.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1064, column 9: The link 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' for "https://opennursingcoreig.com/ValueSet/onc-skintone-vs" cannot be resolved
 WARNING: history.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 40: The link 'https://opennursingcoreig.com' for "https://opennursingcoreig.com" is a canonical link and is therefore unsafe with regard to versions
 ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 211, column 8: The link 'StructureDefinition-onc-patient-goal.html' for "OncPatientGoal" cannot be resolved
-ERROR: terminology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/strong/a at Line 159, column 20: The link 'ValueSet-onc-skin-tone-vs.html' for "SkinToneVS" cannot be resolved
-ERROR: terminology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/strong/a at Line 163, column 20: The link 'ValueSet-onc-news2-score-vs.html' for "NEWS2ScoreVS" cannot be resolved
-ERROR: terminology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/strong/a at Line 167, column 20: The link 'ValueSet-onc-pain-score-vs.html' for "PainScoreVS" cannot be resolved
+ERROR: terminology.html#/html/body/div/div/div/div/div/ul/li/strong/a at Line 177, column 16: The link 'ConceptMap-onc-to-nanda.html' for "Mapping ONC to NANDA-I" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -377,7 +362,7 @@ INFORMATION: Observation/observation-braden-scale: Observation: Observation.hasM
 WARNING: Observation/observation-braden-scale: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-observation-skin-tone.json ==
 ERROR: Observation/observation-skin-tone: Observation.value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type II' for http://snomed.info/sct#403154004. Valid display is 'Millipede burn (disorder)' (en) (for the language(s) 'en-US')
-ERROR: Observation/observation-skin-tone: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Fitzpatrick Skin Tone Value Set' (https://opennursingcoreig.com/ValueSet/skintone-vs|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#403154004)
+ERROR: Observation/observation-skin-tone: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Skin Tone Value Set' (https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#403154004)
 WARNING: Observation/observation-skin-tone: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Patient-patient-example-jane.json ==
 WARNING: Patient/patient-example-jane: Patient.extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory' could not be found, so the code cannot be validated
@@ -543,7 +528,6 @@ WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.sn
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -552,12 +536,10 @@ WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.di
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-ERROR: StructureDefinition.text.div: Hyperlink 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' at 'div/table/tr/td/a' for 'https://opennursingcoreig.com/ValueSet/onc-skintone-vs' does not resolve
 == fsh-generated/resources/StructureDefinition-onc-relational-observation.json ==
 INFORMATION: StructureDefinition/onc-relational-observation: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-relational-observation'): The Implementation Guide contains no examples for this profile
@@ -652,6 +634,12 @@ WARNING: ValueSet/onc-mca-vs: ValueSet: Published value sets SHOULD conform to t
 == fsh-generated/resources/ValueSet-onc-monk-scale-vs.json ==
 WARNING: ValueSet/onc-monk-scale-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/onc-monk-scale-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-onc-news2-score-vs.json ==
+ERROR: ValueSet/onc-news2-score-vs: ValueSet.compose.include[0].concept[0]: The code '50601000000100' is not valid in the system http://snomed.info/sct (Unknown code '50601000000100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+ERROR: ValueSet/onc-news2-score-vs: ValueSet.compose.include[0].concept[1]: The code '50602000000101' is not valid in the system http://snomed.info/sct (Unknown code '50602000000101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+ERROR: ValueSet/onc-news2-score-vs: ValueSet.compose.include[0].concept[2]: The code '50604000000104' is not valid in the system http://snomed.info/sct (Unknown code '50604000000104' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+== fsh-generated/resources/ValueSet-onc-pain-score-vs.json ==
+INFORMATION: ValueSet/onc-pain-score-vs: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Pain score' for http://snomed.info/sct#225330006. Valid display is 'Client participation' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 == fsh-generated/resources/ValueSet-onc-pbs-function-vs.json ==
 WARNING: ValueSet/onc-pbs-function-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-onc-prognosis-vs.json ==
@@ -662,11 +650,11 @@ ERROR: ValueSet/onc-relational-outcomes-vs: ValueSet.compose.include[0].concept[
 ERROR: ValueSet/onc-relational-outcomes-vs: ValueSet.compose.include[0].concept[1]: The code '307823004' is not valid in the system http://snomed.info/sct (Unknown code '307823004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 ERROR: ValueSet/onc-relational-outcomes-vs: ValueSet.compose.include[0].concept[2]: The code '428131006' is not valid in the system http://snomed.info/sct (Unknown code '428131006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 WARNING: ValueSet/onc-relational-outcomes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-onc-skin-tone-vs.json ==
 == fsh-generated/resources/ValueSet-pain-assessment-code-vs.json ==
 INFORMATION: ValueSet/pain-assessment-code-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Pain severity - 0-10 verbal numeric rating' for http://loinc.org#72514-3. Valid display is one of 3 choices: 'Pain severity - 0-10 verbal numeric rating [Score] - Reported' (en-US), 'Pain severity - 0-10 verbal numeric rating [Score] - Reported' (en-US) or 'Pain severity 0-10 Score Reported' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 WARNING: ValueSet/pain-assessment-code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-problem-category-valueset.json ==
-== fsh-generated/resources/ValueSet-skintone-vs.json ==
 == fsh-generated/resources/ValueSet-wound-stage-vs.json ==
 WARNING: ValueSet/wound-stage-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/wound-stage-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present

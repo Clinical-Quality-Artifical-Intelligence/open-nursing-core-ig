@@ -48,8 +48,7 @@ Profile: [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md
     "coding" : [
       {
         "system" : "http://loinc.org",
-        "code" : "66555-4",
-        "display" : "Skin type [Fitzpatrick Classification Scale]"
+        "code" : "66555-4"
       }
     ]
   },

@@ -93,7 +93,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-01-27T01:09:05+00:00",
+  "date" : "2026-01-27T08:26:02+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready.",
   "packageId" : "onc.ig",
@@ -1686,20 +1686,6 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/skintone-vs"
-        },
-        "name" : "Fitzpatrick Skin Tone Value Set",
-        "description" : "Value set for Fitzpatrick skin type classifications",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -2027,6 +2013,20 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         },
         "name" : "NEWS2 Score",
         "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-news2-score-vs"
+        },
+        "name" : "NEWS2 Score Categories Value Set",
+        "description" : "NEWS2 total score categories.",
         "exampleBoolean" : false
       },
       {
@@ -2423,6 +2423,20 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-pain-score-vs"
+        },
+        "name" : "Pain Score Value Set",
+        "description" : "Standard 0-10 or Abbey Pain Scale score",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -2639,6 +2653,20 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         },
         "name" : "Skin Tone Observation",
         "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-skin-tone-vs"
+        },
+        "name" : "Skin Tone Value Set",
+        "description" : "Monk and Fitzpatrick scales for equitable skin assessment.",
         "exampleBoolean" : false
       },
       {

@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://opennursingcoreig.com/ValueSet/onc-pain-score-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "onc-pain-score-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-pain-score-vs</b></p><a name=\"onc-pain-score-vs\"> </a><a name=\"hconc-pain-score-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/260385009\">260385009</a></td><td>Negative</td></tr><tr><td><a href=\"http://snomed.info/id/225330006\">225330006</a></td><td>Pain score</td></tr></table></li><li>Include codes from<a href=\"CodeSystem-onc-observation-codes.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where code  is-a <a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-abbey-score\">abbey-score</a></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://opennursingcoreig.com/ValueSet/onc-pain-score-vs"^^xsd:anyURI ;
+     fhir:l <https://opennursingcoreig.com/ValueSet/onc-pain-score-vs>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "PainScoreVS"] ; # 
+  fhir:title [ fhir:v "Pain Score Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-27T08:26:02+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
+  fhir:description [ fhir:v "Standard 0-10 or Abbey Pain Scale score"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "260385009" ] ;
+         fhir:display [ fhir:v "Negative" ]
+       ] [
+         fhir:code [ fhir:v "225330006" ] ;
+         fhir:display [ fhir:v "Pain score" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "code" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "abbey-score" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

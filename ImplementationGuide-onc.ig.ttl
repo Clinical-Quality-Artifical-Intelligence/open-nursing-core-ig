@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-27T01:09:05+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-27T08:26:02+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
@@ -2695,27 +2695,6 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://opennursingcoreig.com/ValueSet/skintone-vs> ;
-         fhir:reference [ fhir:v "ValueSet/skintone-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Fitzpatrick Skin Tone Value Set" ] ;
-       fhir:description [ fhir:v "Value set for Fitzpatrick skin type classifications" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -3205,6 +3184,27 @@
        ] ;
        fhir:name [ fhir:v "NEWS2 Score" ] ;
        fhir:description [ fhir:v "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-news2-score-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-news2-score-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NEWS2 Score Categories Value Set" ] ;
+       fhir:description [ fhir:v "NEWS2 total score categories." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3805,6 +3805,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-pain-score-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-pain-score-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Pain Score Value Set" ] ;
+       fhir:description [ fhir:v "Standard 0-10 or Abbey Pain Scale score" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -4128,6 +4149,27 @@
        ] ;
        fhir:name [ fhir:v "Skin Tone Observation" ] ;
        fhir:description [ fhir:v "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-skin-tone-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Skin Tone Value Set" ] ;
+       fhir:description [ fhir:v "Monk and Fitzpatrick scales for equitable skin assessment." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

@@ -38,8 +38,7 @@
          fhir:v "http://loinc.org"^^xsd:anyURI ;
          fhir:l <http://loinc.org>
        ] ;
-       fhir:code [ fhir:v "66555-4" ] ;
-       fhir:display [ fhir:v "Skin type [Fitzpatrick Classification Scale]" ]
+       fhir:code [ fhir:v "66555-4" ]
      ] )
   ] ; # 
   fhir:subject [

@@ -38,12 +38,14 @@
 * [Goal Target Measure ValueSet](ValueSet-onc-goal-target-measure-vs.md)
 * [Mental Capacity Finding Value Set](ValueSet-onc-mca-vs.md)
 * [Monk Skin Tone Scale ValueSet](ValueSet-onc-monk-scale-vs.md)
+* [NEWS2 Score Categories Value Set](ValueSet-onc-news2-score-vs.md)
+* [Pain Score Value Set](ValueSet-onc-pain-score-vs.md)
 * [PBS Behaviour Function ValueSet](ValueSet-onc-pbs-function-vs.md)
 * [Nursing Prognosis ValueSet](ValueSet-onc-prognosis-vs.md)
 * [ONC Relational Care Outcomes](ValueSet-onc-relational-outcomes-vs.md)
+* [Skin Tone Value Set](ValueSet-onc-skin-tone-vs.md)
 * [Pain Assessment Code Value Set](ValueSet-pain-assessment-code-vs.md)
 * [Problem Category Value Set](ValueSet-problem-category-valueset.md)
-* [Fitzpatrick Skin Tone Value Set](ValueSet-skintone-vs.md)
 * [Wound Stage Value Set](ValueSet-wound-stage-vs.md)
 
 ### Logicals
