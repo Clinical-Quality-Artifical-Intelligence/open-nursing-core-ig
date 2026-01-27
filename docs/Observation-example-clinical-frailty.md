@@ -37,7 +37,7 @@ Mildly Frail - slowing up, needs help with high order IADLs
   "id" : "example-clinical-frailty",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"
+      "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"
     ]
   },
   "status" : "final",

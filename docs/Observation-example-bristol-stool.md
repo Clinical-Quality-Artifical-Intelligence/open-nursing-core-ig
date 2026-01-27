@@ -30,7 +30,7 @@ Profile: [Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.md)
   "id" : "example-bristol-stool",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart"
+      "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
     ]
   },
   "status" : "final",

@@ -6,7 +6,7 @@ Parent: ONCNursingAssessment
 Id: onc-fluid-balance
 Title: "Fluid Balance"
 Description: "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam

@@ -37,7 +37,7 @@ Profile: [Oral Health Assessment](StructureDefinition-onc-oral-health.md)
   "resourceType" : "Observation",
   "id" : "example-oral-health",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-oral-health"]
   },
   "status" : "final",
   "category" : [

@@ -42,7 +42,7 @@ Aggressive episode managed with de-escalation.
   "resourceType" : "Observation",
   "id" : "example-abc-chart",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"]
   },
   "status" : "final",
   "category" : [

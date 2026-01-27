@@ -34,7 +34,7 @@ Profile: [Fluid Balance](StructureDefinition-onc-fluid-balance.md)
   "id" : "example-fluid-balance",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance"
+      "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"
     ]
   },
   "status" : "final",

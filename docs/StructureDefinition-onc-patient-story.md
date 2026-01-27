@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-patient-story | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-patient-story | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCPatientStory |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-patient-story.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-patient-story",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-patient-story",
   "version" : "0.1.0",
   "name" : "ONCPatientStory",
   "title" : "Patient Story",

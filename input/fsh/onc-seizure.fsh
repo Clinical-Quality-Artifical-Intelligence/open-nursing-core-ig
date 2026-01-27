@@ -6,7 +6,7 @@ Parent: ONCNursingAssessment
 Id: onc-seizure-record
 Title: "Seizure Record"
 Description: "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam

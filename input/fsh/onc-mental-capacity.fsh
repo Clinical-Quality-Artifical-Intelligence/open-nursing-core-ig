@@ -9,7 +9,7 @@ Parent: ONCNursingAssessment
 Id: onc-mental-capacity
 Title: "Mental Capacity Assessment"
 Description: "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam

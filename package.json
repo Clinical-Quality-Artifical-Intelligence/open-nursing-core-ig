@@ -1,6 +1,6 @@
 {
     "name": "@cliniqai/open-nursing-core-ig",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Open Nursing Core FHIR Implementation Guide - UK Core compliant nursing profiles for NEWS2, clinical assessments, and care documentation. BETA RELEASE - Feedback Welcome.",
     "main": "package/package.json",
     "files": [
@@ -37,13 +37,13 @@
     "bugs": {
         "url": "https://github.com/ClinyQAi/open-nursing-core-ig/issues"
     },
-    "homepage": "https://fhir.clinyq.ai",
+    "homepage": "https://opennursingcoreig.com",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com",
         "access": "public"
     },
     "fhir": {
-        "canonical": "https://fhir.clinyq.ai",
+        "canonical": "https://opennursingcoreig.com",
         "version": "4.0.1",
         "jurisdiction": "GB",
         "dependencies": {

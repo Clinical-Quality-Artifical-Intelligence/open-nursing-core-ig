@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCFluidBalance |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-fluid-balance.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-fluid-balance",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance",
   "version" : "0.1.0",
   "name" : "ONCFluidBalance",
   "title" : "Fluid Balance",

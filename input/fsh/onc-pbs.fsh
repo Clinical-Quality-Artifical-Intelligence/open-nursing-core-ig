@@ -6,7 +6,7 @@ Parent: ONCNursingAssessment
 Id: onc-abc-chart
 Title: "PBS ABC Chart"
 Description: "Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam

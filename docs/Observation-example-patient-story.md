@@ -30,7 +30,7 @@ Profile: [Patient Story](StructureDefinition-onc-patient-story.md)
   "id" : "example-patient-story",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story"
+      "https://opennursingcoreig.com/StructureDefinition/onc-patient-story"
     ]
   },
   "status" : "final",

@@ -6,7 +6,7 @@ Parent: ONCNursingAssessment
 Id: onc-oral-health
 Title: "Oral Health Assessment"
 Description: "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-oral-health"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam

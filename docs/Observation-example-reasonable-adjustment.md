@@ -30,7 +30,7 @@ Profile: [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.m
   "id" : "example-reasonable-adjustment",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"
+      "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"
     ]
   },
   "status" : "final",

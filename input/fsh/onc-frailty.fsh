@@ -12,7 +12,7 @@ Parent: ONCNursingAssessment
 Id: onc-clinical-frailty-scale
 Title: "Clinical Frailty Scale (CFS)"
 Description: "Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
