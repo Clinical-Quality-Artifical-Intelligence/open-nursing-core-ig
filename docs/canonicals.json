@@ -415,105 +415,105 @@
   {
     "id" : "onc-4at-delirium",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium",
     "version" : "0.1.0",
     "name" : "ONC4ATDelirium"
   },
   {
     "id" : "onc-abbey-pain-scale",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale",
     "version" : "0.1.0",
     "name" : "ONCAbbeyPainScale"
   },
   {
     "id" : "onc-abc-chart",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart",
     "version" : "0.1.0",
     "name" : "ONCABCChart"
   },
   {
     "id" : "onc-bristol-stool-chart",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart",
     "version" : "0.1.0",
     "name" : "ONCBristolStoolChart"
   },
   {
     "id" : "onc-clinical-frailty-scale",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale",
     "version" : "0.1.0",
     "name" : "ONCClinicalFrailtyScale"
   },
   {
     "id" : "onc-fluid-balance",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance",
     "version" : "0.1.0",
     "name" : "ONCFluidBalance"
   },
   {
     "id" : "onc-mental-capacity",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity",
     "version" : "0.1.0",
     "name" : "ONCMentalCapacity"
   },
   {
     "id" : "onc-oral-health",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-health",
     "version" : "0.1.0",
     "name" : "ONCOralHealth"
   },
   {
     "id" : "onc-patient-story",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-patient-story",
     "version" : "0.1.0",
     "name" : "ONCPatientStory"
   },
   {
     "id" : "onc-reasonable-adjustment",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment",
     "version" : "0.1.0",
     "name" : "ONCReasonableAdjustment"
   },
   {
     "id" : "onc-relational-observation",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation",
     "version" : "0.1.0",
     "name" : "ONCRelationalObservation"
   },
   {
     "id" : "onc-seizure-record",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record",
     "version" : "0.1.0",
     "name" : "ONCSeizureRecord"
   },
   {
     "id" : "onc-sleep-pattern",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern",
     "version" : "0.1.0",
     "name" : "ONCSleepPattern"
   },
   {
     "id" : "onc-urinalysis",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis",
     "version" : "0.1.0",
     "name" : "ONCUrinalysis"
   },
   {
     "id" : "onc-what-matters",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-what-matters",
     "version" : "0.1.0",
     "name" : "ONCWhatMattersToMe"
   }

@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-urinalysis",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"]
   },
   "text" : {
     "status" : "generated",

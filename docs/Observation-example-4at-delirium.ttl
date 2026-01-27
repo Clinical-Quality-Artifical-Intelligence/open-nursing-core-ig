@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "example-4at-delirium"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"^^xsd:anyURI ;
-       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium>
      ] )
   ] ; # 
   fhir:text [

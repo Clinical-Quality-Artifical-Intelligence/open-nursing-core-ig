@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-what-matters",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-what-matters"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-what-matters"]
   },
   "text" : {
     "status" : "generated",

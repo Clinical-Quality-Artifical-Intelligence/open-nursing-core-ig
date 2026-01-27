@@ -20,7 +20,7 @@ Description: "A vendor-neutral clinical model of the relational nursing assessme
 // TERMINOLOGY BINDINGS
 // =============================================================================
 * adpieStatus from ONCADPIEVS (required)
-* skinToneEquity from https://opennursingcoreig.com/ValueSet/onc-skintone-vs (extensible)
+* skinToneEquity from https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs (extensible)
 * empathyIndex from ONCEmpathyIndexVS (required)
 
 // =============================================================================

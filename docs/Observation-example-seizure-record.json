@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-seizure-record",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"]
   },
   "text" : {
     "status" : "generated",
