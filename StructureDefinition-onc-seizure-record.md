@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-seizure-record | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONCSeizureRecord |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-seizure-record",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record",
   "version" : "1.0.0",
   "name" : "ONCSeizureRecord",
   "title" : "Seizure Record",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
   "fhirVersion" : "4.0.1",

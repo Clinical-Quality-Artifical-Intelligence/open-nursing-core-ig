@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-fluid-balance",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"]
   },
   "text" : {
     "status" : "generated",

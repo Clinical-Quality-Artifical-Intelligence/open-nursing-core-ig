@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2026-01-27T00:24:44+00:00"/>
+  <date value="2026-01-27T01:09:05+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready."/>
   <packageId value="onc.ig"/>
@@ -742,7 +742,7 @@
         <reference value="Observation/example-4at-delirium"/>
       </reference>
       <name value="example-4at-delirium"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -752,7 +752,7 @@
         <reference value="Observation/example-abbey-pain"/>
       </reference>
       <name value="example-abbey-pain"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -762,7 +762,7 @@
         <reference value="Observation/example-abc-chart"/>
       </reference>
       <name value="example-abc-chart"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -812,7 +812,7 @@
         <reference value="Observation/example-bristol-stool"/>
       </reference>
       <name value="example-bristol-stool"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -832,7 +832,7 @@
         <reference value="Observation/example-clinical-frailty"/>
       </reference>
       <name value="example-clinical-frailty"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -862,7 +862,7 @@
         <reference value="Observation/example-fluid-balance"/>
       </reference>
       <name value="example-fluid-balance"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -932,7 +932,7 @@
         <reference value="Observation/example-mental-capacity"/>
       </reference>
       <name value="example-mental-capacity"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1012,7 +1012,7 @@
         <reference value="Observation/example-oral-health"/>
       </reference>
       <name value="example-oral-health"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-oral-health"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1053,7 +1053,7 @@
         <reference value="Observation/example-patient-story"/>
       </reference>
       <name value="example-patient-story"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-patient-story"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-patient-story"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1083,7 +1083,7 @@
         <reference value="Observation/example-seizure-record"/>
       </reference>
       <name value="example-seizure-record"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1113,7 +1113,7 @@
         <reference value="Observation/example-urinalysis"/>
       </reference>
       <name value="example-urinalysis"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1133,7 +1133,7 @@
         <reference value="Observation/example-what-matters"/>
       </reference>
       <name value="example-what-matters"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-what-matters"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-what-matters"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

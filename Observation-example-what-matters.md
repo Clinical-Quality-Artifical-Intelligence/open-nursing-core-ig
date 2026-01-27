@@ -37,7 +37,7 @@ This is her primary motivation for physiotherapy.
   "id" : "example-what-matters",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters"
+      "https://opennursingcoreig.com/StructureDefinition/onc-what-matters"
     ]
   },
   "status" : "final",

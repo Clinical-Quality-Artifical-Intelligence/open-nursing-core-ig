@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "example-seizure-record"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record"^^xsd:anyURI ;
-       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-seizure-record>
      ] )
   ] ; # 
   fhir:text [

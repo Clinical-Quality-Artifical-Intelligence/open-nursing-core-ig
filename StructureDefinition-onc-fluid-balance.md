@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONCFluidBalance |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-fluid-balance.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-fluid-balance",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance",
   "version" : "1.0.0",
   "name" : "ONCFluidBalance",
   "title" : "Fluid Balance",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring.",
   "fhirVersion" : "4.0.1",

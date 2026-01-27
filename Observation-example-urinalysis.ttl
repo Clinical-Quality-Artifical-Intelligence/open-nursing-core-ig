@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "example-urinalysis"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"^^xsd:anyURI ;
-       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-urinalysis>
      ] )
   ] ; # 
   fhir:text [

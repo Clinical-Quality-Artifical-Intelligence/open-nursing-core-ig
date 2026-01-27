@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-patient-story | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-patient-story | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONCPatientStory |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-patient-story.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-patient-story",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-patient-story",
   "version" : "1.0.0",
   "name" : "ONCPatientStory",
   "title" : "Patient Story",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'.",
   "fhirVersion" : "4.0.1",

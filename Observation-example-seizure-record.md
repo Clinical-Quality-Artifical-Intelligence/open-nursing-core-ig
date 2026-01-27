@@ -36,7 +36,7 @@ Profile: [Seizure Record](StructureDefinition-onc-seizure-record.md)
   "id" : "example-seizure-record",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record"
+      "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"
     ]
   },
   "status" : "final",

@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "example-abc-chart"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart"^^xsd:anyURI ;
-       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-abc-chart>
      ] )
   ] ; # 
   fhir:text [

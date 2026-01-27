@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "example-patient-story"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story"^^xsd:anyURI ;
-       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-patient-story>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-patient-story"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-patient-story>
      ] )
   ] ; # 
   fhir:text [

@@ -93,7 +93,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready.",
   "packageId" : "onc.ig",
@@ -1172,7 +1172,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-4at-delirium"
         },
         "name" : "example-4at-delirium",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"
       },
       {
         "extension" : [
@@ -1185,7 +1185,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-abbey-pain"
         },
         "name" : "example-abbey-pain",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale"
       },
       {
         "extension" : [
@@ -1198,7 +1198,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-abc-chart"
         },
         "name" : "example-abc-chart",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"
       },
       {
         "extension" : [
@@ -1263,7 +1263,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-bristol-stool"
         },
         "name" : "example-bristol-stool",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
       },
       {
         "extension" : [
@@ -1289,7 +1289,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-clinical-frailty"
         },
         "name" : "example-clinical-frailty",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"
       },
       {
         "extension" : [
@@ -1328,7 +1328,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-fluid-balance"
         },
         "name" : "example-fluid-balance",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"
       },
       {
         "extension" : [
@@ -1419,7 +1419,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-mental-capacity"
         },
         "name" : "example-mental-capacity",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"
       },
       {
         "extension" : [
@@ -1523,7 +1523,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-oral-health"
         },
         "name" : "example-oral-health",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-health"
       },
       {
         "extension" : [
@@ -1576,7 +1576,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-patient-story"
         },
         "name" : "example-patient-story",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-patient-story"
       },
       {
         "extension" : [
@@ -1615,7 +1615,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-seizure-record"
         },
         "name" : "example-seizure-record",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"
       },
       {
         "extension" : [
@@ -1654,7 +1654,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-urinalysis"
         },
         "name" : "example-urinalysis",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"
       },
       {
         "extension" : [
@@ -1680,7 +1680,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-what-matters"
         },
         "name" : "example-what-matters",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-what-matters"
       },
       {
         "extension" : [

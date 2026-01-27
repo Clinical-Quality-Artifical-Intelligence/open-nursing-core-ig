@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-bristol-stool",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"]
   },
   "text" : {
     "status" : "generated",

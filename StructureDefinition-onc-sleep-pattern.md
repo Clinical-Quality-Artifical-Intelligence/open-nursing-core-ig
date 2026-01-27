@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONCSleepPattern |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-sleep-pattern.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-sleep-pattern",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern",
   "version" : "1.0.0",
   "name" : "ONCSleepPattern",
   "title" : "Sleep Pattern",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing.",
   "fhirVersion" : "4.0.1",

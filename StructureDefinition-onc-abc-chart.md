@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-abc-chart | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONCABCChart |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-abc-chart.csv), 
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-abc-chart",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart",
   "version" : "1.0.0",
   "name" : "ONCABCChart",
   "title" : "PBS ABC Chart",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities.",
   "fhirVersion" : "4.0.1",

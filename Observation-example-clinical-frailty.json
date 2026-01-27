@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-clinical-frailty",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"]
   },
   "text" : {
     "status" : "generated",

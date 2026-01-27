@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-4at-delirium",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"]
   },
   "text" : {
     "status" : "generated",

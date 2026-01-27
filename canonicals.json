@@ -14,111 +14,6 @@
     "name" : "NEWS2_Escalation_Protocol"
   },
   {
-    "id" : "ONCToNandaMapping",
-    "type" : "ConceptMap",
-    "url" : "https://fhir.clinyq.ai/ConceptMap/onc-to-nanda",
-    "version" : "1.0.0",
-    "name" : "ONCToNandaMapping"
-  },
-  {
-    "id" : "onc-4at-delirium",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium",
-    "version" : "1.0.0",
-    "name" : "ONC4ATDelirium"
-  },
-  {
-    "id" : "onc-abbey-pain-scale",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale",
-    "version" : "1.0.0",
-    "name" : "ONCAbbeyPainScale"
-  },
-  {
-    "id" : "onc-abc-chart",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart",
-    "version" : "1.0.0",
-    "name" : "ONCABCChart"
-  },
-  {
-    "id" : "onc-bristol-stool-chart",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart",
-    "version" : "1.0.0",
-    "name" : "ONCBristolStoolChart"
-  },
-  {
-    "id" : "onc-clinical-frailty-scale",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale",
-    "version" : "1.0.0",
-    "name" : "ONCClinicalFrailtyScale"
-  },
-  {
-    "id" : "onc-fluid-balance",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance",
-    "version" : "1.0.0",
-    "name" : "ONCFluidBalance"
-  },
-  {
-    "id" : "onc-mental-capacity",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity",
-    "version" : "1.0.0",
-    "name" : "ONCMentalCapacity"
-  },
-  {
-    "id" : "onc-oral-health",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health",
-    "version" : "1.0.0",
-    "name" : "ONCOralHealth"
-  },
-  {
-    "id" : "onc-patient-story",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story",
-    "version" : "1.0.0",
-    "name" : "ONCPatientStory"
-  },
-  {
-    "id" : "onc-relational-observation",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation",
-    "version" : "1.0.0",
-    "name" : "ONCRelationalObservation"
-  },
-  {
-    "id" : "onc-seizure-record",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record",
-    "version" : "1.0.0",
-    "name" : "ONCSeizureRecord"
-  },
-  {
-    "id" : "onc-sleep-pattern",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern",
-    "version" : "1.0.0",
-    "name" : "ONCSleepPattern"
-  },
-  {
-    "id" : "onc-urinalysis",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis",
-    "version" : "1.0.0",
-    "name" : "ONCUrinalysis"
-  },
-  {
-    "id" : "onc-what-matters",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters",
-    "version" : "1.0.0",
-    "name" : "ONCWhatMattersToMe"
-  },
-  {
     "id" : "onc-monk-scale",
     "type" : "CodeSystem",
     "url" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
@@ -138,6 +33,13 @@
     "url" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type",
     "version" : "1.0.0",
     "name" : "ONCProblemType"
+  },
+  {
+    "id" : "ONCToNandaMapping",
+    "type" : "ConceptMap",
+    "url" : "https://opennursingcoreig.com/ConceptMap/onc-to-nanda",
+    "version" : "1.0.0",
+    "name" : "ONCToNandaMapping"
   },
   {
     "id" : "onc.ig",
@@ -166,6 +68,27 @@
     "url" : "https://opennursingcoreig.com/StructureDefinition/observation-goal-reference",
     "version" : "1.0.0",
     "name" : "ObservationGoalReference"
+  },
+  {
+    "id" : "onc-4at-delirium",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium",
+    "version" : "1.0.0",
+    "name" : "ONC4ATDelirium"
+  },
+  {
+    "id" : "onc-abbey-pain-scale",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale",
+    "version" : "1.0.0",
+    "name" : "ONCAbbeyPainScale"
+  },
+  {
+    "id" : "onc-abc-chart",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart",
+    "version" : "1.0.0",
+    "name" : "ONCABCChart"
   },
   {
     "id" : "onc-acvpu",
@@ -217,11 +140,25 @@
     "name" : "ONCBradenScaleAssessment"
   },
   {
+    "id" : "onc-bristol-stool-chart",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart",
+    "version" : "1.0.0",
+    "name" : "ONCBristolStoolChart"
+  },
+  {
     "id" : "onc-catheter-care",
     "type" : "StructureDefinition",
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-catheter-care",
     "version" : "1.0.0",
     "name" : "ONCCatheterCare"
+  },
+  {
+    "id" : "onc-clinical-frailty-scale",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale",
+    "version" : "1.0.0",
+    "name" : "ONCClinicalFrailtyScale"
   },
   {
     "id" : "onc-continence-assessment",
@@ -257,6 +194,13 @@
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-equity-marker",
     "version" : "1.0.0",
     "name" : "ONCEquityMarker"
+  },
+  {
+    "id" : "onc-fluid-balance",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance",
+    "version" : "1.0.0",
+    "name" : "ONCFluidBalance"
   },
   {
     "id" : "onc-glasgow-coma-scale",
@@ -306,6 +250,13 @@
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin",
     "version" : "1.0.0",
     "name" : "ONCMedicationSelfAdmin"
+  },
+  {
+    "id" : "onc-mental-capacity",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity",
+    "version" : "1.0.0",
+    "name" : "ONCMentalCapacity"
   },
   {
     "id" : "onc-mmse",
@@ -420,6 +371,13 @@
     "name" : "ONCOralCareAssessment"
   },
   {
+    "id" : "onc-oral-health",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-health",
+    "version" : "1.0.0",
+    "name" : "ONCOralHealth"
+  },
+  {
     "id" : "onc-oral-intake-assessment",
     "type" : "StructureDefinition",
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment",
@@ -439,6 +397,13 @@
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-pain-assessment",
     "version" : "1.0.0",
     "name" : "ONCPainAssessment"
+  },
+  {
+    "id" : "onc-patient-story",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-patient-story",
+    "version" : "1.0.0",
+    "name" : "ONCPatientStory"
   },
   {
     "id" : "onc-qsofa",
@@ -462,11 +427,25 @@
     "name" : "ONCRelationalCareModel"
   },
   {
+    "id" : "onc-relational-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation",
+    "version" : "1.0.0",
+    "name" : "ONCRelationalObservation"
+  },
+  {
     "id" : "onc-respiration-rate",
     "type" : "StructureDefinition",
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate",
     "version" : "1.0.0",
     "name" : "ONCRespirationRate"
+  },
+  {
+    "id" : "onc-seizure-record",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record",
+    "version" : "1.0.0",
+    "name" : "ONCSeizureRecord"
   },
   {
     "id" : "onc-skin-assessment",
@@ -483,6 +462,13 @@
     "name" : "ONCSkinToneObservation"
   },
   {
+    "id" : "onc-sleep-pattern",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern",
+    "version" : "1.0.0",
+    "name" : "ONCSleepPattern"
+  },
+  {
     "id" : "onc-swallowing-assessment",
     "type" : "StructureDefinition",
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment",
@@ -490,11 +476,25 @@
     "name" : "ONCSwallowingAssessment"
   },
   {
+    "id" : "onc-urinalysis",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis",
+    "version" : "1.0.0",
+    "name" : "ONCUrinalysis"
+  },
+  {
     "id" : "onc-waterlow-score",
     "type" : "StructureDefinition",
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score",
     "version" : "1.0.0",
     "name" : "ONCWaterlowScore"
+  },
+  {
+    "id" : "onc-what-matters",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-what-matters",
+    "version" : "1.0.0",
+    "name" : "ONCWhatMattersToMe"
   },
   {
     "id" : "onc-wound-assessment",

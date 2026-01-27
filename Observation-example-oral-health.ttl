@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "example-oral-health"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"^^xsd:anyURI ;
-       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-oral-health>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-oral-health"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-oral-health>
      ] )
   ] ; # 
   fhir:text [

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONCBristolStoolChart |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-bristol-stool-ch
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-bristol-stool-chart",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart",
   "version" : "1.0.0",
   "name" : "ONCBristolStoolChart",
   "title" : "Bristol Stool Chart",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment.",
   "fhirVersion" : "4.0.1",
@@ -132,7 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-bristol-stool-ch
             "severity" : "error",
             "human" : "Bristol score must be between 1 and 7",
             "expression" : "$this >= 1 and $this <= 7",
-            "source" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
           }
         ]
       },

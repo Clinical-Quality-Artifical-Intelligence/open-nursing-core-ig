@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ONCMonkScaleVS"] ; # 
   fhir:title [ fhir:v "Monk Skin Tone Scale ValueSet"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-27T00:24:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-27T01:09:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:compose [
      fhir:include ( [

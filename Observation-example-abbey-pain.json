@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-abbey-pain",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale"]
   },
   "text" : {
     "status" : "generated",

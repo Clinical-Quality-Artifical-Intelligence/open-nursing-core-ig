@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONCMentalCapacity |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-mental-capacity",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity",
   "version" : "1.0.0",
   "name" : "ONCMentalCapacity",
   "title" : "Mental Capacity Assessment",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.",
   "fhirVersion" : "4.0.1",

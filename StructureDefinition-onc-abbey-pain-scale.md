@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONCAbbeyPainScale |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-abbey-pain-scale",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale",
   "version" : "1.0.0",
   "name" : "ONCAbbeyPainScale",
   "title" : "Abbey Pain Scale",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Pain assessment for people with dementia or who cannot verbalise. Assesses 6 parameters: Vocalization, Facial Expression, Body Language, Behavioral Change, Physiological Change, Physical Changes. Total score determines pain severity (0-2 No pain, 3-7 Mild, 8-13 Moderate, 14+ Severe).",
   "fhirVersion" : "4.0.1",

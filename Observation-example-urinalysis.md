@@ -37,7 +37,9 @@ Profile: [Urinalysis](StructureDefinition-onc-urinalysis.md)
   "resourceType" : "Observation",
   "id" : "example-urinalysis",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"]
+    "profile" : [
+      "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"
+    ]
   },
   "status" : "final",
   "category" : [

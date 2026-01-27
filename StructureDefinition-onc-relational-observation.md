@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-relational-observation | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONCRelationalObservation |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-obser
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-relational-observation",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation",
   "version" : "1.0.0",
   "name" : "ONCRelationalObservation",
   "title" : "Relational Engagement Score",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care.",
   "fhirVersion" : "4.0.1",
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-obser
             "severity" : "error",
             "human" : "Engagement score must be between 1 (Low) and 5 (High)",
             "expression" : "$this >= 1 and $this <= 5",
-            "source" : "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation"
           }
         ],
         "mustSupport" : true

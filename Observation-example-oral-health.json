@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-oral-health",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-oral-health"]
   },
   "text" : {
     "status" : "generated",

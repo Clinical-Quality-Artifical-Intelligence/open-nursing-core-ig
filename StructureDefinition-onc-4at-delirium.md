@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONC4ATDelirium |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-4at-delirium",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium",
   "version" : "1.0.0",
   "name" : "ONC4ATDelirium",
   "title" : "4AT Delirium Assessment",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium.",
   "fhirVersion" : "4.0.1",
@@ -132,7 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
             "severity" : "error",
             "human" : "4AT score must be between 0 and 12",
             "expression" : "$this >= 0 and $this <= 12",
-            "source" : "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"
           }
         ]
       },

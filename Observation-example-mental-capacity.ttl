@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "example-mental-capacity"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"^^xsd:anyURI ;
-       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity>
      ] )
   ] ; # 
   fhir:text [

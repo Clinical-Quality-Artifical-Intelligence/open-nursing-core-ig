@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-27T00:24:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-27T01:09:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
@@ -1864,8 +1864,8 @@
        fhir:name [ fhir:v "example-4at-delirium" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium>
        ]
      ] [
        fhir:extension ( [
@@ -1885,8 +1885,8 @@
        fhir:name [ fhir:v "example-abbey-pain" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale>
        ]
      ] [
        fhir:extension ( [
@@ -1906,8 +1906,8 @@
        fhir:name [ fhir:v "example-abc-chart" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-abc-chart>
        ]
      ] [
        fhir:extension ( [
@@ -2011,8 +2011,8 @@
        fhir:name [ fhir:v "example-bristol-stool" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart>
        ]
      ] [
        fhir:extension ( [
@@ -2053,8 +2053,8 @@
        fhir:name [ fhir:v "example-clinical-frailty" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale>
        ]
      ] [
        fhir:extension ( [
@@ -2116,8 +2116,8 @@
        fhir:name [ fhir:v "example-fluid-balance" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance>
        ]
      ] [
        fhir:extension ( [
@@ -2263,8 +2263,8 @@
        fhir:name [ fhir:v "example-mental-capacity" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity>
        ]
      ] [
        fhir:extension ( [
@@ -2431,8 +2431,8 @@
        fhir:name [ fhir:v "example-oral-health" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-oral-health>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-oral-health"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-oral-health>
        ]
      ] [
        fhir:extension ( [
@@ -2516,8 +2516,8 @@
        fhir:name [ fhir:v "example-patient-story" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-patient-story>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-patient-story"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-patient-story>
        ]
      ] [
        fhir:extension ( [
@@ -2579,8 +2579,8 @@
        fhir:name [ fhir:v "example-seizure-record" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-seizure-record>
        ]
      ] [
        fhir:extension ( [
@@ -2642,8 +2642,8 @@
        fhir:name [ fhir:v "example-urinalysis" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-urinalysis>
        ]
      ] [
        fhir:extension ( [
@@ -2684,8 +2684,8 @@
        fhir:name [ fhir:v "example-what-matters" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-what-matters>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-what-matters"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-what-matters>
        ]
      ] [
        fhir:extension ( [

@@ -37,7 +37,7 @@ Assessment for decision to return home.
   "id" : "example-mental-capacity",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"
+      "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"
     ]
   },
   "status" : "final",

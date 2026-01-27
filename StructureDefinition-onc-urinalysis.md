@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-urinalysis | *Version*:1.0.0 |
 | Draft as of 2026-01-27 | *Computable Name*:ONCUrinalysis |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-urinalysis",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis",
   "version" : "1.0.0",
   "name" : "ONCUrinalysis",
   "title" : "Urinalysis",
   "status" : "draft",
-  "date" : "2026-01-27T00:24:44+00:00",
+  "date" : "2026-01-27T01:09:05+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health.",
   "fhirVersion" : "4.0.1",

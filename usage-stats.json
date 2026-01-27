@@ -43,6 +43,10 @@
         "title": "Oral Care Needs Assessment"
       },
       {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-oral-health",
+        "title": "Oral Health Assessment"
+      },
+      {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment",
         "title": "Oral Intake Assessment"
       },
@@ -55,6 +59,10 @@
         "title": "Pain Assessment (NRS 0-10)"
       },
       {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-patient-story",
+        "title": "Patient Story"
+      },
+      {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-qsofa",
         "title": "qSOFA (Quick SOFA)"
       },
@@ -63,8 +71,16 @@
         "title": "Reasonable Adjustment"
       },
       {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation",
+        "title": "Relational Engagement Score"
+      },
+      {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate",
         "title": "Respiration Rate"
+      },
+      {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record",
+        "title": "Seizure Record"
       },
       {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment",
@@ -75,12 +91,24 @@
         "title": "Skin Tone Observation"
       },
       {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern",
+        "title": "Sleep Pattern"
+      },
+      {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment",
         "title": "Swallowing Assessment"
       },
       {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis",
+        "title": "Urinalysis"
+      },
+      {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score",
         "title": "Waterlow Score"
+      },
+      {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-what-matters",
+        "title": "What Matters to Me"
       },
       {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment",
