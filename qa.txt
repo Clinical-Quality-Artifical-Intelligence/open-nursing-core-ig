@@ -1,14 +1,14 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 93, warn = 138, info = 125
-IG Publisher Version: 2.0.30
-Generated Tue Jan 27 08:29:04 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://opennursingcoreig.com)
- Build Errors : 10 / 52 / 0
+err = 89, warn = 138, info = 125
+IG Publisher Version: 2.0.30 Out of date - current version is null
+Generated Tue Jan 27 09:33:56 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://opennursingcoreig.com)
+ Build Errors : 9 / 52 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 3 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 0 / 2 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ConceptMap-ONCToNandaMapping : 7 / 2 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ConceptMap-onc-to-nanda : 3 / 2 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-ExampleNursingNeed-Dressing : 2 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-example-nursing-problem : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Goal-example-patient-goal : 2 / 0 / 1
@@ -211,7 +211,6 @@ ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div
 ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 807: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
 WARNING: history.html#/html/body/div/div/div/div/div/ul/li/a at Line 165, column 40: The link 'https://opennursingcoreig.com' for "https://opennursingcoreig.com" is a canonical link and is therefore unsafe with regard to versions
 ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 211, column 8: The link 'StructureDefinition-onc-patient-goal.html' for "OncPatientGoal" cannot be resolved
-ERROR: terminology.html#/html/body/div/div/div/div/div/ul/li/strong/a at Line 177, column 16: The link 'ConceptMap-onc-to-nanda.html' for "Mapping ONC to NANDA-I" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -226,16 +225,12 @@ INFORMATION: CodeSystem/onc-observation-codes: CodeSystem: CodeSystems SHOULD ha
 WARNING: CodeSystem/onc-observation-codes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/onc-observation-codes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-onc-problem-type.json ==
-== fsh-generated/resources/ConceptMap-ONCToNandaMapping.json ==
-ERROR: ConceptMap.where(url = 'https://opennursingcoreig.com/ConceptMap/onc-to-nanda'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ConceptMap-ONCToNandaMapping.json - the canonical URL (https://opennursingcoreig.com/ConceptMap/ONCToNandaMapping) does not match the URL (https://opennursingcoreig.com/ConceptMap/onc-to-nanda). Use the special-url parameter if you really mean for it not to match
-ERROR: ConceptMap.url: Resource id/url mismatch: ONCToNandaMapping/https://opennursingcoreig.com/ConceptMap/onc-to-nanda
-ERROR: ConceptMap.where(url = 'https://opennursingcoreig.com/ConceptMap/onc-to-nanda'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ConceptMap-ONCToNandaMapping.json - the canonical URL (https://opennursingcoreig.com/ConceptMap/ONCToNandaMapping) does not match the URL (https://opennursingcoreig.com/ConceptMap/onc-to-nanda). Use the special-url parameter if you really mean for it not to match
-WARNING: ConceptMap/ONCToNandaMapping: ConceptMap.source.ofType(canonical): A definition could not be found for Canonical URL 'https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs'
-ERROR: ConceptMap/ONCToNandaMapping: ConceptMap.target.ofType(canonical): A definition could not be found for Canonical URL 'http://terminology.hl7.org/CodeSystem/nanda-i'
-ERROR: ConceptMap/ONCToNandaMapping: ConceptMap.group[0].target: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/nanda-i'
-ERROR: ConceptMap/ONCToNandaMapping: ConceptMap.group[0].element[2].code: The source code 'skintone-observation' is not valid in the code system https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0
-WARNING: ConceptMap/ONCToNandaMapping: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
-ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ConceptMap-ONCToNandaMapping: URL Mismatch https://opennursingcoreig.com/ConceptMap/ONCToNandaMapping vs https://opennursingcoreig.com/ConceptMap/onc-to-nanda
+== fsh-generated/resources/ConceptMap-onc-to-nanda.json ==
+WARNING: ConceptMap/onc-to-nanda: ConceptMap.source.ofType(canonical): A definition could not be found for Canonical URL 'https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs'
+ERROR: ConceptMap/onc-to-nanda: ConceptMap.target.ofType(canonical): A definition could not be found for Canonical URL 'http://terminology.hl7.org/CodeSystem/nanda-i'
+ERROR: ConceptMap/onc-to-nanda: ConceptMap.group[0].target: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/nanda-i'
+ERROR: ConceptMap/onc-to-nanda: ConceptMap.group[0].element[2].code: The source code 'skintone-observation' is not valid in the code system https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0
+WARNING: ConceptMap/onc-to-nanda: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
 == fsh-generated/resources/Condition-ExampleNursingNeed-Dressing.json ==
 ERROR: Condition/ExampleNursingNeed-Dressing: Condition.subject: Unable to resolve resource with reference 'Patient/example-patient'
 ERROR: Condition.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve

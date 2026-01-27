@@ -93,7 +93,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-01-27T08:26:02+00:00",
+  "date" : "2026-01-27T09:30:37+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready.",
   "packageId" : "onc.ig",
@@ -1816,7 +1816,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           }
         ],
         "reference" : {
-          "reference" : "ConceptMap/ONCToNandaMapping"
+          "reference" : "ConceptMap/onc-to-nanda"
         },
         "name" : "Mapping ONC Relational Concepts to NANDA-I",
         "description" : "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.",

@@ -21,13 +21,13 @@ Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.
 ```json
 {
   "resourceType" : "ConceptMap",
-  "id" : "ONCToNandaMapping",
+  "id" : "onc-to-nanda",
   "url" : "https://opennursingcoreig.com/ConceptMap/onc-to-nanda",
   "version" : "1.0.0",
   "name" : "ONCToNandaMapping",
   "title" : "Mapping ONC Relational Concepts to NANDA-I",
   "status" : "draft",
-  "date" : "2026-01-27T08:26:02+00:00",
+  "date" : "2026-01-27T09:30:37+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.",
   "sourceCanonical" : "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs",

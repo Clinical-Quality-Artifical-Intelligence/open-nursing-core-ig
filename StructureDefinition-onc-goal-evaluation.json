@@ -10,7 +10,7 @@
   "name" : "ONCGoalEvaluation",
   "title" : "ONC Goal Evaluation",
   "status" : "active",
-  "date" : "2026-01-27T08:26:02+00:00",
+  "date" : "2026-01-27T09:30:37+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.",
   "fhirVersion" : "4.0.1",

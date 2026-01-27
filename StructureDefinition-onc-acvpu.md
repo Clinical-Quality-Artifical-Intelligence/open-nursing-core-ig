@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-acvpu.csv), [Exc
   "name" : "ONCACVPU",
   "title" : "ACVPU Consciousness Level",
   "status" : "active",
-  "date" : "2026-01-27T08:26:02+00:00",
+  "date" : "2026-01-27T09:30:37+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)",
   "fhirVersion" : "4.0.1",

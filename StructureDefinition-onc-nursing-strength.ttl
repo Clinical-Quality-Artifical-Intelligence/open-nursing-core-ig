@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ONCNursingStrength"] ; # 
   fhir:title [ fhir:v "ONC Nursing Strength"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-27T08:26:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-27T09:30:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 

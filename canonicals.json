@@ -35,7 +35,7 @@
     "name" : "ONCProblemType"
   },
   {
-    "id" : "ONCToNandaMapping",
+    "id" : "onc-to-nanda",
     "type" : "ConceptMap",
     "url" : "https://opennursingcoreig.com/ConceptMap/onc-to-nanda",
     "version" : "1.0.0",

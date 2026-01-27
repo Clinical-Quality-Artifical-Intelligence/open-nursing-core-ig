@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Pain Score Value Set"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-01-27T08:26:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-27T09:30:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Standard 0-10 or Abbey Pain Scale score"] ; # 
   fhir:compose [

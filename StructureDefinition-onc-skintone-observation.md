@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-skintone-observa
   "name" : "ONCSkinToneObservation",
   "title" : "Skin Tone Observation",
   "status" : "active",
-  "date" : "2026-01-27T08:26:02+00:00",
+  "date" : "2026-01-27T09:30:37+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
   "fhirVersion" : "4.0.1",

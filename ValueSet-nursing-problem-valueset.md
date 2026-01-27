@@ -51,7 +51,7 @@ Value set for nursing problems and diagnoses
   "title" : "Nursing Problem Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T08:26:02+00:00",
+  "date" : "2026-01-27T09:30:37+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for nursing problems and diagnoses",
   "compose" : {

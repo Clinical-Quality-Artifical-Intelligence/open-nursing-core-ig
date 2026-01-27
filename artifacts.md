@@ -159,7 +159,7 @@ These define transformations to convert between codes by systems conforming with
 
 | | |
 | :--- | :--- |
-| [Mapping ONC Relational Concepts to NANDA-I](ConceptMap-ONCToNandaMapping.md) | Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. |
+| [Mapping ONC Relational Concepts to NANDA-I](ConceptMap-onc-to-nanda.md) | Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. |
 
 ### Example: Example Instances 
 
