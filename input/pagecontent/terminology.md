@@ -12,9 +12,9 @@ The IG defines specific ValueSets for nursing assessments where standard codes m
 
 | ValueSet | Description |
 |----------|-------------|
-| **[SkinToneVS](ValueSet-skintone-vs.html)** | Monk and Fitzpatrick scales for equitable skin assessment. |
-| **[NEWS2ScoreVS](ValueSet-news2-score-vs.html)** | NEWS2 total score categories. |
-| **[PainScoreVS](ValueSet-pain-score-vs.html)** | Standard 0-10 or Abbey Pain Scale scores. |
+| **[SkinToneVS](ValueSet-onc-skin-tone-vs.html)** | Monk and Fitzpatrick scales for equitable skin assessment. |
+| **[NEWS2ScoreVS](ValueSet-onc-news2-score-vs.html)** | NEWS2 total score categories. |
+| **[PainScoreVS](ValueSet-onc-pain-score-vs.html)** | Standard 0-10 or Abbey Pain Scale score |
 
 ## Mapping
 To ensure semantic interoperability, internal ONC concepts are mapped to international standards using ConceptMaps.

@@ -40,7 +40,7 @@ Description: "Value set for categorizing nursing problems"
 * include codes from system ONCProblemType
 
 ValueSet: SkinToneVS
-Id: skintone-vs
+Id: onc-skin-tone-vs
 Title: "Skin Tone Value Set"
 Description: "Monk and Fitzpatrick scales for equitable skin assessment."
 * ^experimental = false
@@ -48,18 +48,18 @@ Description: "Monk and Fitzpatrick scales for equitable skin assessment."
 * include codes from system ONCObservationCodes where code is-a #fitzpatrick-1
 
 ValueSet: NEWS2ScoreVS
-Id: news2-score-vs
+Id: onc-news2-score-vs
 Title: "NEWS2 Score Categories Value Set"
-Description: "Value set for NEWS2 risk categories (Low, Medium, High)."
+Description: "NEWS2 total score categories."
 * ^experimental = false
 * include http://snomed.info/sct#50601000000100 "National Early Warning Score 2 low risk"
 * include http://snomed.info/sct#50602000000101 "National Early Warning Score 2 medium risk"
 * include http://snomed.info/sct#50604000000104 "National Early Warning Score 2 high risk"
 
 ValueSet: PainScoreVS
-Id: pain-score-vs
+Id: onc-pain-score-vs
 Title: "Pain Score Value Set"
-Description: "Standard 0-10 or Abbey Pain Scale scores."
+Description: "Standard 0-10 or Abbey Pain Scale score"
 * ^experimental = false
 * include http://snomed.info/sct#260385009 "Negative" // Equivalent to 0
 * include http://snomed.info/sct#225330006 "Pain score"
