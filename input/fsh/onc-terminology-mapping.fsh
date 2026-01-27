@@ -6,16 +6,16 @@
 Instance: ONCToNandaMapping
 InstanceOf: ConceptMap
 Usage: #definition
-* url = "https://fhir.clinyq.ai/ConceptMap/onc-to-nanda"
+* url = "https://opennursingcoreig.com/ConceptMap/onc-to-nanda"
 * name = "ONCToNandaMapping"
 * title = "Mapping ONC Relational Concepts to NANDA-I"
 * status = #draft
 * description = "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses."
-* sourceCanonical = "https://fhir.clinyq.ai/ValueSet/onc-relational-findings-vs"
+* sourceCanonical = "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs"
 * targetCanonical = "http://terminology.hl7.org/CodeSystem/nanda-i" // Placeholder URL
 
 // Example Mapping
-* group[0].source = "https://fhir.clinyq.ai/CodeSystem/onc-observation-codes"
+* group[0].source = "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
 * group[0].target = "http://terminology.hl7.org/CodeSystem/nanda-i"
 
 // Map: Patient Story narrative mentioning isolation -> NANDA Social Isolation

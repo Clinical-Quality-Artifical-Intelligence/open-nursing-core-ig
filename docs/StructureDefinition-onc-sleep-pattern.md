@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCSleepPattern |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-sleep-pattern.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-sleep-pattern",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern",
   "version" : "0.1.0",
   "name" : "ONCSleepPattern",
   "title" : "Sleep Pattern",

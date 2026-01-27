@@ -13,7 +13,7 @@ Parent: Observation
 Id: onc-what-matters
 Title: "What Matters to Me"
 Description: "Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-what-matters"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
@@ -30,7 +30,7 @@ Parent: Observation
 Id: onc-patient-story
 Title: "Patient Story"
 Description: "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-patient-story"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
@@ -47,7 +47,7 @@ Parent: Observation
 Id: onc-relational-observation
 Title: "Relational Engagement Score"
 Description: "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey

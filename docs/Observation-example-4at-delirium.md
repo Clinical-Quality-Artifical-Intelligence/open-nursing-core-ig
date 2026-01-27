@@ -38,7 +38,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
   "id" : "example-4at-delirium",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"
+      "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"
     ]
   },
   "status" : "final",

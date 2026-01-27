@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-relational-observation | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCRelationalObservation |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-obser
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-relational-observation",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation",
   "version" : "0.1.0",
   "name" : "ONCRelationalObservation",
   "title" : "Relational Engagement Score",
@@ -127,7 +127,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-obser
             "severity" : "error",
             "human" : "Engagement score must be between 1 (Low) and 5 (High)",
             "expression" : "$this >= 1 and $this <= 5",
-            "source" : "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation"
           }
         ],
         "mustSupport" : true

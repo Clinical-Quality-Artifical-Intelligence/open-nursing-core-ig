@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCReasonableAdjustment |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-reasonable-adjus
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-reasonable-adjustment",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment",
   "version" : "0.1.0",
   "name" : "ONCReasonableAdjustment",
   "title" : "Reasonable Adjustment",

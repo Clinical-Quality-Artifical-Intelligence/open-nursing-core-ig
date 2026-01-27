@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCBristolStoolChart |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-bristol-stool-ch
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-bristol-stool-chart",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart",
   "version" : "0.1.0",
   "name" : "ONCBristolStoolChart",
   "title" : "Bristol Stool Chart",
@@ -130,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-bristol-stool-ch
             "severity" : "error",
             "human" : "Bristol score must be between 1 and 7",
             "expression" : "$this >= 1 and $this <= 7",
-            "source" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
           }
         ]
       },

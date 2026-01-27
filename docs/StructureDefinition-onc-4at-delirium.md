@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONC4ATDelirium |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-4at-delirium",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium",
   "version" : "0.1.0",
   "name" : "ONC4ATDelirium",
   "title" : "4AT Delirium Assessment",
@@ -130,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
             "severity" : "error",
             "human" : "4AT score must be between 0 and 12",
             "expression" : "$this >= 0 and $this <= 12",
-            "source" : "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"
           }
         ]
       },

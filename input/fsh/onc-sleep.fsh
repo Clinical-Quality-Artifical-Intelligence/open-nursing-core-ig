@@ -6,7 +6,7 @@ Parent: ONCNursingAssessment
 Id: onc-sleep-pattern
 Title: "Sleep Pattern"
 Description: "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam

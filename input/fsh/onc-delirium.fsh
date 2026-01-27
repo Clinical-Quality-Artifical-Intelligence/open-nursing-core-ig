@@ -12,7 +12,7 @@ Parent: ONCNursingAssessment
 Id: onc-4at-delirium
 Title: "4AT Delirium Assessment"
 Description: "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey

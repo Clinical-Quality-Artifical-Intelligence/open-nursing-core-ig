@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCClinicalFrailtyScale |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-clinical-frailty
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-clinical-frailty-scale",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale",
   "version" : "0.1.0",
   "name" : "ONCClinicalFrailtyScale",
   "title" : "Clinical Frailty Scale (CFS)",

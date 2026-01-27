@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-seizure-record | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCSeizureRecord |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-seizure-record",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record",
   "version" : "0.1.0",
   "name" : "ONCSeizureRecord",
   "title" : "Seizure Record",
