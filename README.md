@@ -69,6 +69,23 @@ We welcome contributions from nurses, developers, and researchers!
 4. Push to the branch: `git push origin feature/amazing-feature`.
 5. Open a Pull Request.
 
+## 📑 Citation
+
+If you use the Open Nursing Core IG or the Relational AI models in your research, please cite it as follows:
+
+```bibtex
+@software{ClinyQAi_Open_Nursing_Core_2026,
+  author = {Clinical Quality Artificial Intelligence (ClinyQAi)},
+  title = {Open Nursing Core FHIR Implementation Guide (ONC-IG)},
+  version = {1.0.0},
+  year = {2026},
+  url = {https://opennursingcoreig.com},
+  publisher = {NurseCitizenDeveloper}
+}
+```
+
+Alternatively, you can use the "Cite this repository" button in the GitHub sidebar (requires `CITATION.cff`).
+
 ---
 **Powered by [NurseCitizenDeveloper](https://huggingface.co/NurseCitizenDeveloper)** | *Together, we code care.*
 
