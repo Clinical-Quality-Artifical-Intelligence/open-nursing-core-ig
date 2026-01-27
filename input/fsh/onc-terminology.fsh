@@ -63,7 +63,7 @@ Description: "Standard 0-10 or Abbey Pain Scale score"
 * ^experimental = false
 * include http://snomed.info/sct#260385009 "Negative" // Equivalent to 0
 * include http://snomed.info/sct#225330006 "Pain score"
-* include codes from system ONCObservationCodes where code concept is-a #abbey-score
+* include codes from system ONCObservationCodes where code is-a #abbey-score
 
 ValueSet: HousingStatusVS
 Id: housing-status-vs
