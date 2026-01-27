@@ -1,3 +1,7 @@
+# Research and Manuscripts (Private)
+research/
+*.md.bak
+
 # Open Nursing Platform (formerly open-nursing-core-ig/NHS Validator) - .gitignore
 
 # Vector database (generated)
