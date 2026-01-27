@@ -1,4 +1,4 @@
-# What Matters to Me - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# What Matters to Me - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-what-matters | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCWhatMattersToMe |
+| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-what-matters | *Version*:1.0.0 |
+| Draft as of 2026-01-27 | *Computable Name*:ONCWhatMattersToMe |
 
  
 Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-what-matters.csv
   "resourceType" : "StructureDefinition",
   "id" : "onc-what-matters",
   "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCWhatMattersToMe",
   "title" : "What Matters to Me",
   "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care.",
   "fhirVersion" : "4.0.1",

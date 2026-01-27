@@ -1,4 +1,4 @@
-# NEWS2 Escalation Protocol - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# NEWS2 Escalation Protocol - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,17 +8,17 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://opennursingcore.org/PlanDefinition/news2-escalation | *Version*:0.1.0 |
-| Active as of 2026-01-26 | *Computable Name*:NEWS2_Escalation_Protocol |
+| *Official URL*:http://opennursingcore.org/PlanDefinition/news2-escalation | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:NEWS2_Escalation_Protocol |
 
 * **Actions: **: **Url: **
   * : [NEWS2 Escalation Protocol](PlanDefinition-news2-escalation-plan.md)
 * **Actions: **: **Version: **
-  * : 0.1.0
+  * : 1.0.0
 * **Actions: **: **Title: **
   * : NEWS2 Escalation Protocol
 * **Actions: **: **Date: **
-  * : 2026-01-26 23:55:12+0000
+  * : 2026-01-27 00:24:44+0000
 * **Actions: **: **Publisher: **
   * : The Open Nursing Community
 * **Actions: **: **Libraries: **
@@ -37,7 +37,7 @@
   "resourceType" : "PlanDefinition",
   "id" : "news2-escalation-plan",
   "url" : "http://opennursingcore.org/PlanDefinition/news2-escalation",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "NEWS2_Escalation_Protocol",
   "title" : "NEWS2 Escalation Protocol",
   "type" : {
@@ -49,7 +49,7 @@
     ]
   },
   "status" : "active",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "library" : ["http://opennursingcore.org/Library/ONC-NEWS2-CQL"],
   "action" : [

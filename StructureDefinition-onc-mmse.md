@@ -1,4 +1,4 @@
-# Mini Mental State Examination (MMSE) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Mini Mental State Examination (MMSE) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mmse | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCMMSE |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mmse | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCMMSE |
 
  
 Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-mmse.csv), [Exce
   "resourceType" : "StructureDefinition",
   "id" : "onc-mmse",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-mmse",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCMMSE",
   "title" : "Mini Mental State Examination (MMSE)",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30.",
   "fhirVersion" : "4.0.1",

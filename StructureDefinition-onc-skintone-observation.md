@@ -1,4 +1,4 @@
-# Skin Tone Observation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Skin Tone Observation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCSkinToneObservation |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCSkinToneObservation |
 
  
 Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis). 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-skintone-observa
   "resourceType" : "StructureDefinition",
   "id" : "onc-skintone-observation",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCSkinToneObservation",
   "title" : "Skin Tone Observation",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
   "fhirVersion" : "4.0.1",

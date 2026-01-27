@@ -1,4 +1,4 @@
-# ONC Equity Marker - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# ONC Equity Marker - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-equity-marker | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCEquityMarker |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-equity-marker | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCEquityMarker |
 
 A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware).
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-equity-marker.cs
   "resourceType" : "StructureDefinition",
   "id" : "onc-equity-marker",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-equity-marker",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCEquityMarker",
   "title" : "ONC Equity Marker",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware).",
   "fhirVersion" : "4.0.1",

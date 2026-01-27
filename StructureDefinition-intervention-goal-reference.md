@@ -1,4 +1,4 @@
-# Intervention Goal Reference - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Intervention Goal Reference - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:InterventionGoalReference |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:InterventionGoalReference |
 
 Extension to link nursing interventions to the patient goals they are intended to achieve.
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-intervention-goal-re
   "resourceType" : "StructureDefinition",
   "id" : "intervention-goal-reference",
   "url" : "https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "InterventionGoalReference",
   "title" : "Intervention Goal Reference",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve.",
   "fhirVersion" : "4.0.1",

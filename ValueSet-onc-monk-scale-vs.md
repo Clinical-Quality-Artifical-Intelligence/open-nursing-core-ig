@@ -1,4 +1,4 @@
-# Monk Skin Tone Scale ValueSet - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Monk Skin Tone Scale ValueSet - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCMonkScaleVS |
+| *Official URL*:https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCMonkScaleVS |
 
  **References** 
 
@@ -43,11 +43,11 @@
   "resourceType" : "ValueSet",
   "id" : "onc-monk-scale-vs",
   "url" : "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCMonkScaleVS",
   "title" : "Monk Skin Tone Scale ValueSet",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "compose" : {
     "include" : [

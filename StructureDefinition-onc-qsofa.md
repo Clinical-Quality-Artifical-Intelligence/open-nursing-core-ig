@@ -1,4 +1,4 @@
-# qSOFA (Quick SOFA) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# qSOFA (Quick SOFA) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-qsofa | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCqSOFA |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-qsofa | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCqSOFA |
 
  
 Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-qsofa.csv), [Exc
   "resourceType" : "StructureDefinition",
   "id" : "onc-qsofa",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-qsofa",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCqSOFA",
   "title" : "qSOFA (Quick SOFA)",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3.",
   "fhirVersion" : "4.0.1",

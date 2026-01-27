@@ -17,11 +17,11 @@
      fhir:v "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory"^^xsd:anyURI ;
      fhir:l <https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "UKCoreEthnicCategory"] ; # 
   fhir:title [ fhir:v "UK Core Ethnic Category"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T23:55:12+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-27T00:24:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "An extension to record the ethnic category of a patient, as per UK Core standards."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 

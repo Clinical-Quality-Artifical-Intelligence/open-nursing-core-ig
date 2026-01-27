@@ -1,4 +1,4 @@
-# Relational Ai (AI Model) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Relational Ai (AI Model) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * **Relational Ai (AI Model)**

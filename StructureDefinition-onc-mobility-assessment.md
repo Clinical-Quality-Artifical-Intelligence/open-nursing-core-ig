@@ -1,4 +1,4 @@
-# Mobility Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Mobility Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCMobilityAssessment |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCMobilityAssessment |
 
  
 Assessment of capability to move and limitations. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessm
   "resourceType" : "StructureDefinition",
   "id" : "onc-mobility-assessment",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCMobilityAssessment",
   "title" : "Mobility Assessment",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of capability to move and limitations.",
   "fhirVersion" : "4.0.1",

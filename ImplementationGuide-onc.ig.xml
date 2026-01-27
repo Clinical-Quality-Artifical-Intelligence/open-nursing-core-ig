@@ -3,17 +3,17 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="onc.ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide onc.ig</b></p><a name="onc.ig"> </a><a name="hconc.ig"> </a><h2>OpenNursingCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://opennursingcoreig.com/ImplementationGuide/onc.ig</pre><div><p>Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide onc.ig</b></p><a name="onc.ig"> </a><a name="hconc.ig"> </a><h2>OpenNursingCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://opennursingcoreig.com/ImplementationGuide/onc.ig</pre><div><p>Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready.</p>
 </div></div>
   </text>
   <url value="https://opennursingcoreig.com/ImplementationGuide/onc.ig"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
-  <status value="draft"/>
-  <date value="2026-01-26T23:55:12+00:00"/>
+  <status value="active"/>
+  <date value="2026-01-27T00:24:44+00:00"/>
   <publisher value="The Open Nursing Community"/>
-  <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."/>
+  <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
   <fhirVersion value="4.0.1"/>
@@ -47,7 +47,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="draft"/>
+        <valueString value="release"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -250,7 +250,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="draft"/>
+        <valueString value="release"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

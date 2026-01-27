@@ -1,4 +1,4 @@
-# Morse Fall Scale - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Morse Fall Scale - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-morse-fall-scale | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCMorseFallScale |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-morse-fall-scale | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCMorseFallScale |
 
  
 Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-morse-fall-scale
   "resourceType" : "StructureDefinition",
   "id" : "onc-morse-fall-scale",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-morse-fall-scale",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCMorseFallScale",
   "title" : "Morse Fall Scale",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125.",
   "fhirVersion" : "4.0.1",

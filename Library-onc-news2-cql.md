@@ -1,4 +1,4 @@
-# ONC NEWS2 Auto-Calculation Logic - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# ONC NEWS2 Auto-Calculation Logic - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://opennursingcore.org/Library/ONC-NEWS2-CQL | *Version*:0.1.0 |
-| Active as of 2026-01-26 | *Computable Name*:ONC_NEWS2_Logic |
+| *Official URL*:http://opennursingcore.org/Library/ONC-NEWS2-CQL | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONC_NEWS2_Logic |
 
  
 Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations. 
@@ -17,13 +17,13 @@ Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR O
 * * **Content: **text/cql: ````````: **Id: **
   * ?: onc-news2-cql
 * * **Content: **text/cql: ````````: **Version: **
-  * ?: 0.1.0
+  * ?: 1.0.0
 * * **Content: **text/cql: ````````: **Url: **
   * ?: [ONC NEWS2 Auto-Calculation Logic](Library-onc-news2-cql.md)
 * * **Content: **text/cql: ````````: **Experimental: **
   * ?: true
 * * **Content: **text/cql: ````````: **Date: **
-  * ?: 2026-01-26 23:55:12+0000
+  * ?: 2026-01-27 00:24:44+0000
 * * **Content: **text/cql: ````````: **Publisher: **
   * ?: The Open Nursing Community
 * * **Content: **text/cql: ````````: **Description: **
@@ -38,7 +38,7 @@ Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR O
   "resourceType" : "Library",
   "id" : "onc-news2-cql",
   "url" : "http://opennursingcore.org/Library/ONC-NEWS2-CQL",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONC_NEWS2_Logic",
   "title" : "ONC NEWS2 Auto-Calculation Logic",
   "status" : "active",
@@ -51,7 +51,7 @@ Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR O
       }
     ]
   },
-  "date" : "2026-01-26T23:55:12+00:00",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations.",
   "content" : [

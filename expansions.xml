@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="3ff844b6-3c24-443f-af68-3e0034a93d3f"/>
+  <id value="a24f02b1-ebbb-48f6-9973-ee223777a4c6"/>
   <meta>
-    <lastUpdated value="2026-01-26T23:55:12.753+00:00"/>
+    <lastUpdated value="2026-01-27T00:24:44.990+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -142,14 +142,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/acvpu-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="ACVPUValueSet"/>
         <title value="ACVPU Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:45479345-bb4b-41b3-8f7a-e36fca364251"/>
-          <timestamp value="2026-01-26T23:56:28+00:00"/>
+          <identifier value="urn:uuid:f209ed3e-f371-4a40-9e30-a1fc6ab46f2e"/>
+          <timestamp value="2026-01-27T00:26:03+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -321,15 +321,15 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="GoalEvaluationValueSet"/>
         <title value="Goal Evaluation Value Set"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9024b2ee-03c9-486d-b8ea-bfe0e20c0813"/>
-          <timestamp value="2026-01-26T23:56:35+00:00"/>
+          <identifier value="urn:uuid:82466da3-963d-4894-be07-003c7a062ae1"/>
+          <timestamp value="2026-01-27T00:26:09+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -456,15 +456,15 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/housing-status-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="HousingStatusVS"/>
         <title value="Housing Status Value Set"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0505e304-864e-4789-81a1-c6a022d2fbe9"/>
-          <timestamp value="2026-01-26T23:56:48+00:00"/>
+          <identifier value="urn:uuid:91333787-1239-411e-b099-a621401200ae"/>
+          <timestamp value="2026-01-27T00:26:23+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -581,14 +581,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/inspired-oxygen-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="InspiredOxygenValueSet"/>
         <title value="Inspired Oxygen Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:af67ace5-c1b9-4847-b7b9-b505e7e6a3ea"/>
-          <timestamp value="2026-01-26T23:56:35+00:00"/>
+          <identifier value="urn:uuid:8d98f218-8fb4-4e0e-89eb-fa2e28037fd7"/>
+          <timestamp value="2026-01-27T00:26:10+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -638,9 +638,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 1 concepts</p>
@@ -677,12 +677,12 @@
                 <td>National Early Warning Score 2 Total Score</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;news2-score&quot;, &quot;display&quot;: &quot;NEWS2 Score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;news2-score&quot;, &quot;display&quot;: &quot;NEWS2 Score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;news2-score&quot;&gt;&lt;display value=&quot;NEWS2 Score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;news2-score&quot;&gt;&lt;display value=&quot;NEWS2 Score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -690,14 +690,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/news2-code-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="NEWS2CodeValueSet"/>
         <title value="NEWS2 Code Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:fa284b60-68c9-481a-9ab9-360d03c8a8da"/>
-          <timestamp value="2026-01-26T23:56:48+00:00"/>
+          <identifier value="urn:uuid:bee88dfe-5cee-442f-abd8-5a50e84749e4"/>
+          <timestamp value="2026-01-27T00:26:23+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -718,7 +718,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
@@ -738,9 +738,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 1 concepts</p>
@@ -777,12 +777,12 @@
                 <td>Sub-score for NEWS2 parameter</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;news2-subscore&quot;, &quot;display&quot;: &quot;NEWS2 Sub-score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;news2-subscore&quot;, &quot;display&quot;: &quot;NEWS2 Sub-score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;news2-subscore&quot;&gt;&lt;display value=&quot;NEWS2 Sub-score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;news2-subscore&quot;&gt;&lt;display value=&quot;NEWS2 Sub-score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -790,14 +790,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/news2-subscore-code-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="NEWS2SubscoreCodeValueSet"/>
         <title value="NEWS2 Sub-Score Codes"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4b311d50-bb77-4873-94d8-b4179e311ef2"/>
-          <timestamp value="2026-01-26T23:56:48+00:00"/>
+          <identifier value="urn:uuid:a0d775e5-4601-40fe-82b5-00f0a22f7fc4"/>
+          <timestamp value="2026-01-27T00:26:23+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -818,7 +818,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
@@ -925,15 +925,15 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="NursingInterventionValueSet"/>
         <title value="Nursing Intervention Value Set"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3098264d-d4a0-467f-bb89-c5df591201fa"/>
-          <timestamp value="2026-01-26T23:56:48+00:00"/>
+          <identifier value="urn:uuid:98532822-7fb8-469e-8e20-096e70ffbc07"/>
+          <timestamp value="2026-01-27T00:26:23+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -996,9 +996,9 @@
                   </span>
                 </li>
                 <li>
-                  <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+                  <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
               </ul>
@@ -1100,12 +1100,12 @@
                 <td>Risk of falls diagnosis</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;risk-falls&quot;, &quot;display&quot;: &quot;Risk of falls&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;risk-falls&quot;, &quot;display&quot;: &quot;Risk of falls&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;risk-falls&quot;&gt;&lt;display value=&quot;Risk of falls&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;risk-falls&quot;&gt;&lt;display value=&quot;Risk of falls&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1113,15 +1113,15 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/nursing-problem-valueset"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="NursingProblemValueSet"/>
         <title value="Nursing Problem Value Set"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e88cd619-8ed9-4ad9-bc71-79ed9c57878e"/>
-          <timestamp value="2026-01-26T23:56:42+00:00"/>
+          <identifier value="urn:uuid:161a35c9-3950-4fe9-af5d-848471b3cd39"/>
+          <timestamp value="2026-01-27T00:26:17+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1150,7 +1150,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -1212,14 +1212,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-4at-acute-change-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="AcuteChangeVS"/>
         <title value="4AT Acute Change Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:51f8cdd7-2bee-475a-96c7-d75ebeeb3e3d"/>
-          <timestamp value="2026-01-26T23:56:25+00:00"/>
+          <identifier value="urn:uuid:556d92a2-c72d-4c4d-925c-aaf24fa674ed"/>
+          <timestamp value="2026-01-27T00:26:00+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1267,9 +1267,9 @@
                   </span>
                 </li>
                 <li>
-                  <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+                  <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
               </ul>
@@ -1308,12 +1308,12 @@
                 <td>4AT Item 1: Alertness</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;4at-alertness&quot;, &quot;display&quot;: &quot;Normal (fully alert, not agitated)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;4at-alertness&quot;, &quot;display&quot;: &quot;Normal (fully alert, not agitated)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;4at-alertness&quot;&gt;&lt;display value=&quot;Normal (fully alert, not agitated)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;4at-alertness&quot;&gt;&lt;display value=&quot;Normal (fully alert, not agitated)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1363,14 +1363,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-4at-alertness-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="AlertnessVS"/>
         <title value="4AT Alertness Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8fbb4d87-f29b-403f-81fc-c81d574a10f5"/>
-          <timestamp value="2026-01-26T23:56:25+00:00"/>
+          <identifier value="urn:uuid:a3c22cb3-bdf1-494b-96b5-d9f32769ca0f"/>
+          <timestamp value="2026-01-27T00:26:00+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1391,7 +1391,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <parameter>
             <name value="used-valueset"/>
@@ -1460,14 +1460,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-4at-amt4-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="AMT4VS"/>
         <title value="4AT AMT4 Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f7f5eb94-8d0b-41df-9813-de1352dbacda"/>
-          <timestamp value="2026-01-26T23:56:25+00:00"/>
+          <identifier value="urn:uuid:070a68ac-00c5-40ce-9a02-f0ee02239218"/>
+          <timestamp value="2026-01-27T00:26:00+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1534,14 +1534,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-4at-attention-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="AttentionVS"/>
         <title value="4AT Attention Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:827f9770-1d6b-40c9-a0a4-cb8f3b86533b"/>
-          <timestamp value="2026-01-26T23:56:25+00:00"/>
+          <identifier value="urn:uuid:8317e94e-5f62-46f3-b7e4-3a963267fd8e"/>
+          <timestamp value="2026-01-27T00:26:00+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1581,9 +1581,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -1620,12 +1620,12 @@
                 <td>Assessment phase of the nursing process</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;adpie-a&quot;, &quot;display&quot;: &quot;Assessment&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;adpie-a&quot;, &quot;display&quot;: &quot;Assessment&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;adpie-a&quot;&gt;&lt;display value=&quot;Assessment&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;adpie-a&quot;&gt;&lt;display value=&quot;Assessment&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1641,12 +1641,12 @@
                 <td>Diagnosis phase of the nursing process</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;adpie-d&quot;, &quot;display&quot;: &quot;Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;adpie-d&quot;, &quot;display&quot;: &quot;Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;adpie-d&quot;&gt;&lt;display value=&quot;Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;adpie-d&quot;&gt;&lt;display value=&quot;Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1662,12 +1662,12 @@
                 <td>Planning phase of the nursing process</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;adpie-p&quot;, &quot;display&quot;: &quot;Planning&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;adpie-p&quot;, &quot;display&quot;: &quot;Planning&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;adpie-p&quot;&gt;&lt;display value=&quot;Planning&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;adpie-p&quot;&gt;&lt;display value=&quot;Planning&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1683,12 +1683,12 @@
                 <td>Implementation phase of the nursing process</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;adpie-i&quot;, &quot;display&quot;: &quot;Implementation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;adpie-i&quot;, &quot;display&quot;: &quot;Implementation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;adpie-i&quot;&gt;&lt;display value=&quot;Implementation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;adpie-i&quot;&gt;&lt;display value=&quot;Implementation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1704,12 +1704,12 @@
                 <td>Evaluation phase of the nursing process</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;adpie-e&quot;, &quot;display&quot;: &quot;Evaluation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;adpie-e&quot;, &quot;display&quot;: &quot;Evaluation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;adpie-e&quot;&gt;&lt;display value=&quot;Evaluation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;adpie-e&quot;&gt;&lt;display value=&quot;Evaluation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1717,14 +1717,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-adpie-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="ONCADPIEVS"/>
         <title value="ADPIE Nursing Process Phases"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9b753b1b-c84d-43bb-9ebd-0fa0a617b2fa"/>
-          <timestamp value="2026-01-26T23:56:48+00:00"/>
+          <identifier value="urn:uuid:b506ac52-f4e5-4168-9288-9b48e926e5c6"/>
+          <timestamp value="2026-01-27T00:26:23+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -1745,7 +1745,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
@@ -1785,9 +1785,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 9 concepts</p>
@@ -1824,12 +1824,12 @@
                 <td>Robus, active, energetic and motivated</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cfs-1&quot;, &quot;display&quot;: &quot;Very Fit&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;cfs-1&quot;, &quot;display&quot;: &quot;Very Fit&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;cfs-1&quot;&gt;&lt;display value=&quot;Very Fit&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;cfs-1&quot;&gt;&lt;display value=&quot;Very Fit&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1845,12 +1845,12 @@
                 <td>No active disease symptoms but less fit than category 1</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cfs-2&quot;, &quot;display&quot;: &quot;Well&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;cfs-2&quot;, &quot;display&quot;: &quot;Well&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;cfs-2&quot;&gt;&lt;display value=&quot;Well&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;cfs-2&quot;&gt;&lt;display value=&quot;Well&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1866,12 +1866,12 @@
                 <td>Medical problems are well controlled, but not regularly active</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cfs-3&quot;, &quot;display&quot;: &quot;Managing Well&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;cfs-3&quot;, &quot;display&quot;: &quot;Managing Well&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;cfs-3&quot;&gt;&lt;display value=&quot;Managing Well&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;cfs-3&quot;&gt;&lt;display value=&quot;Managing Well&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1887,12 +1887,12 @@
                 <td>Not dependent for daily help, but symptoms limit activities</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cfs-4&quot;, &quot;display&quot;: &quot;Vulnerable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;cfs-4&quot;, &quot;display&quot;: &quot;Vulnerable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;cfs-4&quot;&gt;&lt;display value=&quot;Vulnerable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;cfs-4&quot;&gt;&lt;display value=&quot;Vulnerable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1908,12 +1908,12 @@
                 <td>Need help with high order IADLs (finances, transportation, heavy housework)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cfs-5&quot;, &quot;display&quot;: &quot;Mildly Frail&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;cfs-5&quot;, &quot;display&quot;: &quot;Mildly Frail&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;cfs-5&quot;&gt;&lt;display value=&quot;Mildly Frail&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;cfs-5&quot;&gt;&lt;display value=&quot;Mildly Frail&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1929,12 +1929,12 @@
                 <td>Need help with all outside activities and some housekeeping</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cfs-6&quot;, &quot;display&quot;: &quot;Moderately Frail&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;cfs-6&quot;, &quot;display&quot;: &quot;Moderately Frail&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;cfs-6&quot;&gt;&lt;display value=&quot;Moderately Frail&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;cfs-6&quot;&gt;&lt;display value=&quot;Moderately Frail&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1950,12 +1950,12 @@
                 <td>Completely dependent for personal care</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cfs-7&quot;, &quot;display&quot;: &quot;Severely Frail&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;cfs-7&quot;, &quot;display&quot;: &quot;Severely Frail&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;cfs-7&quot;&gt;&lt;display value=&quot;Severely Frail&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;cfs-7&quot;&gt;&lt;display value=&quot;Severely Frail&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1971,12 +1971,12 @@
                 <td>Completely dependent, approaching end of life</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cfs-8&quot;, &quot;display&quot;: &quot;Very Severely Frail&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;cfs-8&quot;, &quot;display&quot;: &quot;Very Severely Frail&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;cfs-8&quot;&gt;&lt;display value=&quot;Very Severely Frail&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;cfs-8&quot;&gt;&lt;display value=&quot;Very Severely Frail&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1992,12 +1992,12 @@
                 <td>Approaching the end of life (life expectancy &lt;6 months)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cfs-9&quot;, &quot;display&quot;: &quot;Terminally Ill&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;cfs-9&quot;, &quot;display&quot;: &quot;Terminally Ill&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;cfs-9&quot;&gt;&lt;display value=&quot;Terminally Ill&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;cfs-9&quot;&gt;&lt;display value=&quot;Terminally Ill&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2005,14 +2005,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-cfs-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="ClinicalFrailtyScaleVS"/>
         <title value="Clinical Frailty Scale Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:aa00c2b3-9987-40bb-aed1-020087b1bf0a"/>
-          <timestamp value="2026-01-26T23:56:32+00:00"/>
+          <identifier value="urn:uuid:bd2cd2b2-db9f-428b-ac6a-89c621076021"/>
+          <timestamp value="2026-01-27T00:26:06+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -2033,7 +2033,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
@@ -2093,9 +2093,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -2132,12 +2132,12 @@
                 <td>Task-focused interaction with minimal person-centred engagement.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;empathy-1&quot;, &quot;display&quot;: &quot;Low Empathy: Task-focused interaction with minimal person-centred engagement.&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;empathy-1&quot;, &quot;display&quot;: &quot;Low Empathy: Task-focused interaction with minimal person-centred engagement.&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;empathy-1&quot;&gt;&lt;display value=&quot;Low Empathy: Task-focused interaction with minimal person-centred engagement.&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;empathy-1&quot;&gt;&lt;display value=&quot;Low Empathy: Task-focused interaction with minimal person-centred engagement.&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2153,12 +2153,12 @@
                 <td>Professional interaction with patient identity acknowledged.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;empathy-2&quot;, &quot;display&quot;: &quot;Basic Empathy: Professional interaction with patient identity acknowledged.&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;empathy-2&quot;, &quot;display&quot;: &quot;Basic Empathy: Professional interaction with patient identity acknowledged.&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;empathy-2&quot;&gt;&lt;display value=&quot;Basic Empathy: Professional interaction with patient identity acknowledged.&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;empathy-2&quot;&gt;&lt;display value=&quot;Basic Empathy: Professional interaction with patient identity acknowledged.&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2174,12 +2174,12 @@
                 <td>Active relational engagement with shared decision making.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;empathy-3&quot;, &quot;display&quot;: &quot;Moderate Empathy: Active relational engagement with shared decision making.&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;empathy-3&quot;, &quot;display&quot;: &quot;Moderate Empathy: Active relational engagement with shared decision making.&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;empathy-3&quot;&gt;&lt;display value=&quot;Moderate Empathy: Active relational engagement with shared decision making.&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;empathy-3&quot;&gt;&lt;display value=&quot;Moderate Empathy: Active relational engagement with shared decision making.&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2195,12 +2195,12 @@
                 <td>Authentic partnership with deep understanding of patient experience.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;empathy-4&quot;, &quot;display&quot;: &quot;High Empathy: Authentic partnership with deep understanding of patient experience.&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;empathy-4&quot;, &quot;display&quot;: &quot;High Empathy: Authentic partnership with deep understanding of patient experience.&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;empathy-4&quot;&gt;&lt;display value=&quot;High Empathy: Authentic partnership with deep understanding of patient experience.&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;empathy-4&quot;&gt;&lt;display value=&quot;High Empathy: Authentic partnership with deep understanding of patient experience.&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2216,12 +2216,12 @@
                 <td>Flourishing partnership with total alignment on 'What Matters to Me'.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;empathy-5&quot;, &quot;display&quot;: &quot;Relational Excellence: Flourishing partnership with total alignment on 'What Matters to Me'.&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;empathy-5&quot;, &quot;display&quot;: &quot;Relational Excellence: Flourishing partnership with total alignment on 'What Matters to Me'.&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;empathy-5&quot;&gt;&lt;display value=&quot;Relational Excellence: Flourishing partnership with total alignment on 'What Matters to Me'.&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;empathy-5&quot;&gt;&lt;display value=&quot;Relational Excellence: Flourishing partnership with total alignment on 'What Matters to Me'.&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2229,14 +2229,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="ONCEmpathyIndexVS"/>
         <title value="ONC Empathy &amp; Relational Engagement Index"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8834d96e-e93e-4614-9854-0a27ec5a3e9b"/>
-          <timestamp value="2026-01-26T23:56:35+00:00"/>
+          <identifier value="urn:uuid:827922c9-2524-4ea3-9613-67d900ad308a"/>
+          <timestamp value="2026-01-27T00:26:10+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2257,7 +2257,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
@@ -2374,14 +2374,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="ONCGoalTargetMeasureVS"/>
         <title value="Goal Target Measure ValueSet"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:84f45f1b-66c3-4249-a9c9-318d82b11dbe"/>
-          <timestamp value="2026-01-26T23:56:48+00:00"/>
+          <identifier value="urn:uuid:e2d3f870-cf88-4f1d-96ce-c9b26ac5bde9"/>
+          <timestamp value="2026-01-27T00:26:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2439,9 +2439,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -2478,12 +2478,12 @@
                 <td>Patient has capacity for this decision</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;capacity-present&quot;, &quot;display&quot;: &quot;Capacity Present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;capacity-present&quot;, &quot;display&quot;: &quot;Capacity Present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;capacity-present&quot;&gt;&lt;display value=&quot;Capacity Present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;capacity-present&quot;&gt;&lt;display value=&quot;Capacity Present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2499,12 +2499,12 @@
                 <td>Patient lacks capacity for this decision</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;capacity-absent&quot;, &quot;display&quot;: &quot;Capacity Absent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;capacity-absent&quot;, &quot;display&quot;: &quot;Capacity Absent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;capacity-absent&quot;&gt;&lt;display value=&quot;Capacity Absent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;capacity-absent&quot;&gt;&lt;display value=&quot;Capacity Absent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2520,12 +2520,12 @@
                 <td>Decision made in patient's best interest</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;best-interest&quot;, &quot;display&quot;: &quot;Best Interest Decision Required&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;best-interest&quot;, &quot;display&quot;: &quot;Best Interest Decision Required&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;best-interest&quot;&gt;&lt;display value=&quot;Best Interest Decision Required&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;best-interest&quot;&gt;&lt;display value=&quot;Best Interest Decision Required&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2533,14 +2533,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-mca-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="MentalCapacityVS"/>
         <title value="Mental Capacity Finding Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:434d1241-b962-4a72-80d9-05d356cd41ee"/>
-          <timestamp value="2026-01-26T23:56:36+00:00"/>
+          <identifier value="urn:uuid:9786e501-3e65-46fd-a153-2ab036d33e9f"/>
+          <timestamp value="2026-01-27T00:26:11+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2561,7 +2561,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
@@ -2591,9 +2591,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-monk-scale.html">codesystem Monk Skin Tone Scale CodeSystem v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-monk-scale.html">codesystem Monk Skin Tone Scale CodeSystem v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-monk-scale|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-monk-scale|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 10 concepts</p>
@@ -2626,12 +2626,12 @@
                 <td>Light Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;A&quot;, &quot;display&quot;: &quot;Light Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;A&quot;, &quot;display&quot;: &quot;Light Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;A&quot;&gt;&lt;display value=&quot;Light Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;A&quot;&gt;&lt;display value=&quot;Light Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2646,12 +2646,12 @@
                 <td>Light-Medium Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;B&quot;, &quot;display&quot;: &quot;Light-Medium Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;B&quot;, &quot;display&quot;: &quot;Light-Medium Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;B&quot;&gt;&lt;display value=&quot;Light-Medium Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;B&quot;&gt;&lt;display value=&quot;Light-Medium Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2666,12 +2666,12 @@
                 <td>Medium Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;C&quot;, &quot;display&quot;: &quot;Medium Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;C&quot;, &quot;display&quot;: &quot;Medium Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;C&quot;&gt;&lt;display value=&quot;Medium Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;C&quot;&gt;&lt;display value=&quot;Medium Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2686,12 +2686,12 @@
                 <td>Medium-Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D&quot;, &quot;display&quot;: &quot;Medium-Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;D&quot;, &quot;display&quot;: &quot;Medium-Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D&quot;&gt;&lt;display value=&quot;Medium-Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;D&quot;&gt;&lt;display value=&quot;Medium-Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2706,12 +2706,12 @@
                 <td>Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;E&quot;, &quot;display&quot;: &quot;Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;E&quot;, &quot;display&quot;: &quot;Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;E&quot;&gt;&lt;display value=&quot;Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;E&quot;&gt;&lt;display value=&quot;Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2726,12 +2726,12 @@
                 <td>Deep Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;F&quot;, &quot;display&quot;: &quot;Deep Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;F&quot;, &quot;display&quot;: &quot;Deep Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;display value=&quot;Deep Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;display value=&quot;Deep Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2746,12 +2746,12 @@
                 <td>Very Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;G&quot;, &quot;display&quot;: &quot;Very Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;G&quot;, &quot;display&quot;: &quot;Very Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;G&quot;&gt;&lt;display value=&quot;Very Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;G&quot;&gt;&lt;display value=&quot;Very Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2766,12 +2766,12 @@
                 <td>Deepest Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;Deepest Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;Deepest Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;Deepest Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;Deepest Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2786,12 +2786,12 @@
                 <td>Ultra Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Ultra Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Ultra Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Ultra Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Ultra Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2806,12 +2806,12 @@
                 <td>Black Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;J&quot;, &quot;display&quot;: &quot;Black Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;J&quot;, &quot;display&quot;: &quot;Black Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;J&quot;&gt;&lt;display value=&quot;Black Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;J&quot;&gt;&lt;display value=&quot;Black Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2819,14 +2819,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="ONCMonkScaleVS"/>
         <title value="Monk Skin Tone Scale ValueSet"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c07b6d4c-9824-4dbb-b731-5f96a715d80b"/>
-          <timestamp value="2026-01-26T23:56:37+00:00"/>
+          <identifier value="urn:uuid:a792f6c2-5736-4db2-83d9-7024a1dfb3eb"/>
+          <timestamp value="2026-01-27T00:26:11+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -2847,7 +2847,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-monk-scale|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-monk-scale|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-monk-scale"/>
@@ -2912,9 +2912,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 1 concepts</p>
@@ -2951,12 +2951,12 @@
                 <td>Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;abc-function&quot;, &quot;display&quot;: &quot;Function of Behaviour&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;abc-function&quot;, &quot;display&quot;: &quot;Function of Behaviour&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;abc-function&quot;&gt;&lt;display value=&quot;Function of Behaviour&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;abc-function&quot;&gt;&lt;display value=&quot;Function of Behaviour&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2964,14 +2964,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-pbs-function-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="PBSFunctionVS"/>
         <title value="PBS Behaviour Function ValueSet"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0b65a210-4177-4ad8-b80e-a9efcb12a056"/>
-          <timestamp value="2026-01-26T23:56:27+00:00"/>
+          <identifier value="urn:uuid:93e2c346-e976-4f3b-afa2-f98eca0191ad"/>
+          <timestamp value="2026-01-27T00:26:02+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -2992,7 +2992,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
@@ -3079,14 +3079,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-prognosis-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="ONCPrognosisVS"/>
         <title value="Nursing Prognosis ValueSet"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bfb45168-0d86-4cb8-a19e-268bd2775b14"/>
-          <timestamp value="2026-01-26T23:56:49+00:00"/>
+          <identifier value="urn:uuid:b6ff5392-2f8c-4b7c-8b03-5de42936b126"/>
+          <timestamp value="2026-01-27T00:26:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3163,14 +3163,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="ONCRelationalOutcomesVS"/>
         <title value="ONC Relational Care Outcomes"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:df73849b-8a62-4585-ae79-850474592b5e"/>
-          <timestamp value="2026-01-26T23:56:49+00:00"/>
+          <identifier value="urn:uuid:52476c66-f7d8-45a8-8a85-8956b4e02ce8"/>
+          <timestamp value="2026-01-27T00:26:24+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -3277,14 +3277,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="PainAssessmentCodeValueSet"/>
         <title value="Pain Assessment Code Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c886f02f-975f-46fe-b298-2e2cd182e09b"/>
-          <timestamp value="2026-01-26T23:56:44+00:00"/>
+          <identifier value="urn:uuid:fb20593c-d15e-479c-868e-e6e974002708"/>
+          <timestamp value="2026-01-27T00:26:18+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3334,9 +3334,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-problem-type.html">codesystem Problem Type CodeSystem v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-problem-type.html">codesystem Problem Type CodeSystem v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-problem-type|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-problem-type|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -3373,12 +3373,12 @@
                 <td>A clinical judgment about individual, family, or community responses to actual or potential health problems</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;nursing-diagnosis&quot;, &quot;display&quot;: &quot;Nursing Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;nursing-diagnosis&quot;, &quot;display&quot;: &quot;Nursing Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;nursing-diagnosis&quot;&gt;&lt;display value=&quot;Nursing Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;nursing-diagnosis&quot;&gt;&lt;display value=&quot;Nursing Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3394,12 +3394,12 @@
                 <td>A clinical judgment about an individual's vulnerability to developing an undesirable health condition</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;risk-diagnosis&quot;, &quot;display&quot;: &quot;Risk Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;risk-diagnosis&quot;, &quot;display&quot;: &quot;Risk Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;risk-diagnosis&quot;&gt;&lt;display value=&quot;Risk Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;risk-diagnosis&quot;&gt;&lt;display value=&quot;Risk Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3415,12 +3415,12 @@
                 <td>A clinical judgment about motivation to increase wellbeing</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;health-promotion&quot;, &quot;display&quot;: &quot;Health Promotion Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;health-promotion&quot;, &quot;display&quot;: &quot;Health Promotion Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;health-promotion&quot;&gt;&lt;display value=&quot;Health Promotion Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;health-promotion&quot;&gt;&lt;display value=&quot;Health Promotion Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3428,15 +3428,15 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/problem-category-valueset"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="ProblemCategoryValueSet"/>
         <title value="Problem Category Value Set"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e3b73fb4-bff2-4acf-bf0a-1486e7c15cf0"/>
-          <timestamp value="2026-01-26T23:56:42+00:00"/>
+          <identifier value="urn:uuid:1b7b201d-6209-414b-b528-9ce71750176f"/>
+          <timestamp value="2026-01-27T00:26:17+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -3457,7 +3457,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-problem-type|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-problem-type|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-problem-type"/>
@@ -3487,9 +3487,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -3526,12 +3526,12 @@
                 <td>Pale white; always burns, never tans</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-1&quot;, &quot;display&quot;: &quot;Type I&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-1&quot;, &quot;display&quot;: &quot;Type I&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-1&quot;&gt;&lt;display value=&quot;Type I&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-1&quot;&gt;&lt;display value=&quot;Type I&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3547,12 +3547,12 @@
                 <td>White; usually burns, tans with difficulty</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-2&quot;, &quot;display&quot;: &quot;Type II&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-2&quot;, &quot;display&quot;: &quot;Type II&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-2&quot;&gt;&lt;display value=&quot;Type II&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-2&quot;&gt;&lt;display value=&quot;Type II&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3568,12 +3568,12 @@
                 <td>Cream white; sometimes mild burn, gradually tans</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-3&quot;, &quot;display&quot;: &quot;Type III&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-3&quot;, &quot;display&quot;: &quot;Type III&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-3&quot;&gt;&lt;display value=&quot;Type III&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-3&quot;&gt;&lt;display value=&quot;Type III&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3589,12 +3589,12 @@
                 <td>Moderate brown; rarely burns, tans with ease</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-4&quot;, &quot;display&quot;: &quot;Type IV&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-4&quot;, &quot;display&quot;: &quot;Type IV&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-4&quot;&gt;&lt;display value=&quot;Type IV&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-4&quot;&gt;&lt;display value=&quot;Type IV&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3610,12 +3610,12 @@
                 <td>Dark brown; very rarely burns, tans very easily</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-5&quot;, &quot;display&quot;: &quot;Type V&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-5&quot;, &quot;display&quot;: &quot;Type V&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-5&quot;&gt;&lt;display value=&quot;Type V&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-5&quot;&gt;&lt;display value=&quot;Type V&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3631,12 +3631,12 @@
                 <td>Deeply pigmented dark brown to black; never burns, tans very easily</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-6&quot;, &quot;display&quot;: &quot;Type VI&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fitzpatrick-6&quot;, &quot;display&quot;: &quot;Type VI&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-6&quot;&gt;&lt;display value=&quot;Type VI&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fitzpatrick-6&quot;&gt;&lt;display value=&quot;Type VI&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3644,15 +3644,15 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/skintone-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="SkinToneVS"/>
         <title value="Fitzpatrick Skin Tone Value Set"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:dc1dc42a-4002-402a-9d77-4732dbcc00e9"/>
-          <timestamp value="2026-01-26T23:56:46+00:00"/>
+          <identifier value="urn:uuid:3839f6c1-9c00-40d3-b77b-c7ac27b73fe8"/>
+          <timestamp value="2026-01-27T00:26:21+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -3673,7 +3673,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
@@ -3718,9 +3718,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -3757,12 +3757,12 @@
                 <td>Stage 1 pressure ulcer</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;stage-1&quot;, &quot;display&quot;: &quot;Stage 1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;stage-1&quot;, &quot;display&quot;: &quot;Stage 1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;stage-1&quot;&gt;&lt;display value=&quot;Stage 1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;stage-1&quot;&gt;&lt;display value=&quot;Stage 1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3778,12 +3778,12 @@
                 <td>Stage 2 pressure ulcer</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;stage-2&quot;, &quot;display&quot;: &quot;Stage 2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;stage-2&quot;, &quot;display&quot;: &quot;Stage 2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;stage-2&quot;&gt;&lt;display value=&quot;Stage 2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;stage-2&quot;&gt;&lt;display value=&quot;Stage 2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3799,12 +3799,12 @@
                 <td>Stage 3 pressure ulcer</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;stage-3&quot;, &quot;display&quot;: &quot;Stage 3&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;stage-3&quot;, &quot;display&quot;: &quot;Stage 3&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;stage-3&quot;&gt;&lt;display value=&quot;Stage 3&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;stage-3&quot;&gt;&lt;display value=&quot;Stage 3&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3820,12 +3820,12 @@
                 <td>Stage 4 pressure ulcer</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;stage-4&quot;, &quot;display&quot;: &quot;Stage 4&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;stage-4&quot;, &quot;display&quot;: &quot;Stage 4&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;stage-4&quot;&gt;&lt;display value=&quot;Stage 4&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;stage-4&quot;&gt;&lt;display value=&quot;Stage 4&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3841,12 +3841,12 @@
                 <td>Unstageable pressure ulcer</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;unstageable&quot;, &quot;display&quot;: &quot;Unstageable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;unstageable&quot;, &quot;display&quot;: &quot;Unstageable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;unstageable&quot;&gt;&lt;display value=&quot;Unstageable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;unstageable&quot;&gt;&lt;display value=&quot;Unstageable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3862,12 +3862,12 @@
                 <td>Deep tissue injury</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;deep-tissue&quot;, &quot;display&quot;: &quot;Deep Tissue Injury&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;deep-tissue&quot;, &quot;display&quot;: &quot;Deep Tissue Injury&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;deep-tissue&quot;&gt;&lt;display value=&quot;Deep Tissue Injury&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;deep-tissue&quot;&gt;&lt;display value=&quot;Deep Tissue Injury&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3875,14 +3875,14 @@
           </div>
         </text>
         <url value="https://opennursingcoreig.com/ValueSet/wound-stage-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="WoundStageValueSet"/>
         <title value="Wound Stage Value Set"/>
-        <status value="draft"/>
-        <date value="2026-01-26T23:55:12+00:00"/>
+        <status value="active"/>
+        <date value="2026-01-27T00:24:44+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:33aae38f-751f-4925-9250-3ae497cc5759"/>
-          <timestamp value="2026-01-26T23:56:48+00:00"/>
+          <identifier value="urn:uuid:a5d63672-f89e-414b-a186-8868eb1c2a0a"/>
+          <timestamp value="2026-01-27T00:26:23+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -3903,7 +3903,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>

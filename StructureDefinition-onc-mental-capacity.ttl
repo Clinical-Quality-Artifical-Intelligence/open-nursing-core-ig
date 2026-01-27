@@ -17,11 +17,11 @@
      fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"^^xsd:anyURI ;
      fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "ONCMentalCapacity"] ; # 
   fhir:title [ fhir:v "Mental Capacity Assessment"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T23:55:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-27T00:24:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
@@ -87,7 +87,7 @@
        ] ;
        fhir:value [
          a fhir:String ;
-         fhir:v "0.1.0"
+         fhir:v "1.0.0"
        ]
      ] ) ;
      fhir:element ( [

@@ -3,14 +3,14 @@
   "id" : "onc-monk-scale-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-monk-scale-vs</b></p><a name=\"onc-monk-scale-vs\"> </a><a name=\"hconc-monk-scale-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-onc-monk-scale.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-monk-scale-vs</b></p><a name=\"onc-monk-scale-vs\"> </a><a name=\"hconc-monk-scale-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-onc-monk-scale.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
   },
   "url" : "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCMonkScaleVS",
   "title" : "Monk Skin Tone Scale ValueSet",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "compose" : {
     "include" : [{

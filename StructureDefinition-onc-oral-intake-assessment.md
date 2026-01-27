@@ -1,4 +1,4 @@
-# Oral Intake Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Oral Intake Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCOralIntakeAssessment |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCOralIntakeAssessment |
 
  
 Assessment of ability to take food and fluids orally. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-oral-intake-asse
   "resourceType" : "StructureDefinition",
   "id" : "onc-oral-intake-assessment",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCOralIntakeAssessment",
   "title" : "Oral Intake Assessment",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of ability to take food and fluids orally.",
   "fhirVersion" : "4.0.1",

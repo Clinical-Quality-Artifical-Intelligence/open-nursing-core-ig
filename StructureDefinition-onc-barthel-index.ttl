@@ -17,11 +17,11 @@
      fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-barthel-index"^^xsd:anyURI ;
      fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-barthel-index>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "ONCBarthelIndex"] ; # 
   fhir:title [ fhir:v "Barthel Index"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T23:55:12+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-27T00:24:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
@@ -87,7 +87,7 @@
        ] ;
        fhir:value [
          a fhir:String ;
-         fhir:v "0.1.0"
+         fhir:v "1.0.0"
        ]
      ] ) ;
      fhir:element ( [

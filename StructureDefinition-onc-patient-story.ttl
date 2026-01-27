@@ -17,11 +17,11 @@
      fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story"^^xsd:anyURI ;
      fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-patient-story>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "ONCPatientStory"] ; # 
   fhir:title [ fhir:v "Patient Story"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T23:55:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-27T00:24:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 

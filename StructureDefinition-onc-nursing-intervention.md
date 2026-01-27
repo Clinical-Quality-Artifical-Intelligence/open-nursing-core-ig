@@ -1,4 +1,4 @@
-# ONC Nursing Intervention - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# ONC Nursing Intervention - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCNursingIntervention |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCNursingIntervention |
 
  
 Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-interven
   "resourceType" : "StructureDefinition",
   "id" : "onc-nursing-intervention",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCNursingIntervention",
   "title" : "ONC Nursing Intervention",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.",
   "fhirVersion" : "4.0.1",

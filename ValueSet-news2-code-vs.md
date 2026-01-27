@@ -1,4 +1,4 @@
-# NEWS2 Code Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# NEWS2 Code Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/ValueSet/news2-code-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:NEWS2CodeValueSet |
+| *Official URL*:https://opennursingcoreig.com/ValueSet/news2-code-vs | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:NEWS2CodeValueSet |
 
  
 LOINC and SNOMED codes for NEWS2 
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "news2-code-vs",
   "url" : "https://opennursingcoreig.com/ValueSet/news2-code-vs",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "NEWS2CodeValueSet",
   "title" : "NEWS2 Code Value Set",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "LOINC and SNOMED codes for NEWS2",
   "compose" : {

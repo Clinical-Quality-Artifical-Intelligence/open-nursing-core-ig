@@ -1,4 +1,4 @@
-# 4AT AMT4 Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# 4AT AMT4 Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/ValueSet/onc-4at-amt4-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:AMT4VS |
+| *Official URL*:https://opennursingcoreig.com/ValueSet/onc-4at-amt4-vs | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:AMT4VS |
 
  
 Scoring options for AMT4 (Age, DOB, Place, Year) 
@@ -46,11 +46,11 @@ Scoring options for AMT4 (Age, DOB, Place, Year)
   "resourceType" : "ValueSet",
   "id" : "onc-4at-amt4-vs",
   "url" : "https://opennursingcoreig.com/ValueSet/onc-4at-amt4-vs",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "AMT4VS",
   "title" : "4AT AMT4 Value Set",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Scoring options for AMT4 (Age, DOB, Place, Year)",
   "compose" : {

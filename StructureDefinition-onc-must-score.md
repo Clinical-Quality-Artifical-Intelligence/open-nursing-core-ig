@@ -1,4 +1,4 @@
-# MUST Score (Malnutrition Universal Screening Tool) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# MUST Score (Malnutrition Universal Screening Tool) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-must-score | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCMUSTScore |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-must-score | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCMUSTScore |
 
  
 Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
   "resourceType" : "StructureDefinition",
   "id" : "onc-must-score",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-must-score",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCMUSTScore",
   "title" : "MUST Score (Malnutrition Universal Screening Tool)",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening.",
   "fhirVersion" : "4.0.1",

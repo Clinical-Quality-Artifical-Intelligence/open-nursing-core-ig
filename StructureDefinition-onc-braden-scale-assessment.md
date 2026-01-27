@@ -1,4 +1,4 @@
-# Braden Scale Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Braden Scale Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCBradenScaleAssessment |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCBradenScaleAssessment |
 
  
 A profile for the Braden Scale pressure ulcer risk assessment 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
   "resourceType" : "StructureDefinition",
   "id" : "onc-braden-scale-assessment",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCBradenScaleAssessment",
   "title" : "Braden Scale Assessment",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
   "fhirVersion" : "4.0.1",

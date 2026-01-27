@@ -1,4 +1,4 @@
-# ONC Nursing Need - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# ONC Nursing Need - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-need | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCNursingNeed |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-need | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:ONCNursingNeed |
 
  
 A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-need.csv
   "resourceType" : "StructureDefinition",
   "id" : "onc-nursing-need",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-need",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCNursingNeed",
   "title" : "ONC Nursing Need",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model.",
   "fhirVersion" : "4.0.1",

@@ -1,4 +1,4 @@
-# Mental Capacity Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Mental Capacity Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ONCMentalCapacity |
+| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity | *Version*:1.0.0 |
+| Draft as of 2026-01-27 | *Computable Name*:ONCMentalCapacity |
 
  
 Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
   "resourceType" : "StructureDefinition",
   "id" : "onc-mental-capacity",
   "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "ONCMentalCapacity",
   "title" : "Mental Capacity Assessment",
   "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.",
   "fhirVersion" : "4.0.1",

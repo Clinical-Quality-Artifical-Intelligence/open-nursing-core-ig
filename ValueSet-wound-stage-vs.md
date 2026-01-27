@@ -1,4 +1,4 @@
-# Wound Stage Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# Wound Stage Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/ValueSet/wound-stage-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:WoundStageValueSet |
+| *Official URL*:https://opennursingcoreig.com/ValueSet/wound-stage-vs | *Version*:1.0.0 |
+| Active as of 2026-01-27 | *Computable Name*:WoundStageValueSet |
 
  **References** 
 
@@ -43,11 +43,11 @@
   "resourceType" : "ValueSet",
   "id" : "wound-stage-vs",
   "url" : "https://opennursingcoreig.com/ValueSet/wound-stage-vs",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "WoundStageValueSet",
   "title" : "Wound Stage Value Set",
-  "status" : "draft",
-  "date" : "2026-01-26T23:55:12+00:00",
+  "status" : "active",
+  "date" : "2026-01-27T00:24:44+00:00",
   "publisher" : "The Open Nursing Community",
   "compose" : {
     "include" : [

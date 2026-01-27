@@ -11,19 +11,19 @@
   fhir:id [ fhir:v "onc.ig"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide onc.ig</b></p><a name=\"onc.ig\"> </a><a name=\"hconc.ig\"> </a><h2>OpenNursingCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://opennursingcoreig.com/ImplementationGuide/onc.ig</pre><div><p>Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.</p>\n</div></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide onc.ig</b></p><a name=\"onc.ig\"> </a><a name=\"hconc.ig\"> </a><h2>OpenNursingCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://opennursingcoreig.com/ImplementationGuide/onc.ig</pre><div><p>Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready.</p>\n</div></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://opennursingcoreig.com/ImplementationGuide/onc.ig"^^xsd:anyURI ;
      fhir:l <https://opennursingcoreig.com/ImplementationGuide/onc.ig>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T23:55:12+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-27T00:24:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
-  fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."] ; # 
+  fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -106,7 +106,7 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "draft"
+           fhir:v "release"
          ]
        ] ) ;
        fhir:url [
@@ -715,7 +715,7 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "draft"
+           fhir:v "release"
          ]
        ] ) ;
        fhir:url [

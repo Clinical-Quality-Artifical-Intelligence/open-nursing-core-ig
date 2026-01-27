@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet onc-prognosis-vs</b></p><a name="onc-prognosis-vs"> </a><a name="hconc-prognosis-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/17621005">17621005</a></td><td>Normal</td></tr><tr><td><a href="http://snomed.info/id/260388008">260388008</a></td><td>Worsening</td></tr><tr><td><a href="http://snomed.info/id/385633008">385633008</a></td><td>Improving</td></tr></table></li></ul></div>
   </text>
   <url value="https://opennursingcoreig.com/ValueSet/onc-prognosis-vs"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="ONCPrognosisVS"/>
   <title value="Nursing Prognosis ValueSet"/>
-  <status value="draft"/>
-  <date value="2026-01-26T23:55:12+00:00"/>
+  <status value="active"/>
+  <date value="2026-01-27T00:24:44+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="Prognosis codes for clinical impression"/>
   <compose>

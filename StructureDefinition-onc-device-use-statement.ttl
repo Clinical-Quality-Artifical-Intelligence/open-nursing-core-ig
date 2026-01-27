@@ -17,11 +17,11 @@
      fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement"^^xsd:anyURI ;
      fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "ONCDeviceUseStatement"] ; # 
   fhir:title [ fhir:v "Device Use Statement"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T23:55:12+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-27T00:24:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Documentation of mobility aids or other devices used by the patient."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
