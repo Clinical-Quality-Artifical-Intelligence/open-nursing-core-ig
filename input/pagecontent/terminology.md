@@ -12,9 +12,13 @@ The IG defines specific ValueSets for nursing assessments where standard codes m
 
 | ValueSet | Description |
 |----------|-------------|
-| **[SkinToneVS](ValueSet-onc-skin-tone-vs.html)** | Monk and Fitzpatrick scales for equitable skin assessment. |
-| **[NEWS2ScoreVS](ValueSet-onc-news2-score-vs.html)** | NEWS2 total score categories. |
-| **[PainScoreVS](ValueSet-onc-pain-score-vs.html)** | Standard 0-10 or Abbey Pain Scale scores. |
+| **[SkinToneVS](ValueSet-skintone-vs.html)** | Monk and Fitzpatrick scales for equitable skin assessment. |
+| **[NEWS2ScoreVS](ValueSet-news2-score-vs.html)** | NEWS2 total score categories. |
+| **[PainScoreVS](ValueSet-pain-score-vs.html)** | Standard 0-10 or Abbey Pain Scale scores. |
 
 ## Mapping
-Implementers **MUST** map local legacy codes to the SNOMED CT / LOINC codes defined in these ValueSets.
+To ensure semantic interoperability, internal ONC concepts are mapped to international standards using ConceptMaps.
+
+- **[Mapping ONC to NANDA-I](ConceptMap-onc-to-nanda.html)**: Alignment of relational care findings to formal nursing diagnoses.
+
+Implementers **MUST** map local legacy codes to the SNOMED CT and LOINC codes defined in these ValueSets to maintain decision-support integrity.

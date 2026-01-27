@@ -41,15 +41,29 @@ Description: "Value set for categorizing nursing problems"
 
 ValueSet: SkinToneVS
 Id: skintone-vs
-Title: "Fitzpatrick Skin Tone Value Set"
-Description: "Value set for Fitzpatrick skin type classifications"
+Title: "Skin Tone Value Set"
+Description: "Monk and Fitzpatrick scales for equitable skin assessment."
 * ^experimental = false
-* include ONCObservationCodes#fitzpatrick-1 "Type I"
-* include ONCObservationCodes#fitzpatrick-2 "Type II"
-* include ONCObservationCodes#fitzpatrick-3 "Type III"
-* include ONCObservationCodes#fitzpatrick-4 "Type IV"
-* include ONCObservationCodes#fitzpatrick-5 "Type V"
-* include ONCObservationCodes#fitzpatrick-6 "Type VI"
+* include codes from system ONCMonkScale
+* include codes from system ONCObservationCodes where code is-a #fitzpatrick-1
+
+ValueSet: NEWS2ScoreVS
+Id: news2-score-vs
+Title: "NEWS2 Score Categories Value Set"
+Description: "Value set for NEWS2 risk categories (Low, Medium, High)."
+* ^experimental = false
+* include http://snomed.info/sct#50601000000100 "National Early Warning Score 2 low risk"
+* include http://snomed.info/sct#50602000000101 "National Early Warning Score 2 medium risk"
+* include http://snomed.info/sct#50604000000104 "National Early Warning Score 2 high risk"
+
+ValueSet: PainScoreVS
+Id: pain-score-vs
+Title: "Pain Score Value Set"
+Description: "Standard 0-10 or Abbey Pain Scale scores."
+* ^experimental = false
+* include http://snomed.info/sct#260385009 "Negative" // Equivalent to 0
+* include http://snomed.info/sct#225330006 "Pain score"
+* include codes from system ONCObservationCodes where code concept is-a #abbey-score
 
 ValueSet: HousingStatusVS
 Id: housing-status-vs
