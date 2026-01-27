@@ -6,7 +6,7 @@ Parent: ONCNursingAssessment
 Id: onc-abbey-pain-scale
 Title: "Abbey Pain Scale"
 Description: "Pain assessment for people with dementia or who cannot verbalise. Assesses 6 parameters: Vocalization, Facial Expression, Body Language, Behavioral Change, Physiological Change, Physical Changes. Total score determines pain severity (0-2 No pain, 3-7 Mild, 8-13 Moderate, 14+ Severe)."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-urinalysis | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCUrinalysis |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-urinalysis",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis",
   "version" : "0.1.0",
   "name" : "ONCUrinalysis",
   "title" : "Urinalysis",

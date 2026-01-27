@@ -6,7 +6,7 @@ Parent: ONCNursingAssessment
 Id: onc-urinalysis
 Title: "Urinalysis"
 Description: "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam

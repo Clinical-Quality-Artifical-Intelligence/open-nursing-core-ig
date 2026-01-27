@@ -42,7 +42,7 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
   "id" : "example-abbey-pain",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale"
+      "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale"
     ]
   },
   "status" : "final",

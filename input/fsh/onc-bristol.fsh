@@ -6,7 +6,7 @@ Parent: ONCNursingAssessment
 Id: onc-bristol-stool-chart
 Title: "Bristol Stool Chart"
 Description: "Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
 * ^version = "0.1.0"
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam

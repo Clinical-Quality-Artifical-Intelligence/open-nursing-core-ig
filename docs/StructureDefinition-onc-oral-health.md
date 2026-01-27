@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-oral-health | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-oral-health | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCOralHealth |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-oral-health.csv)
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-oral-health",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-health",
   "version" : "0.1.0",
   "name" : "ONCOralHealth",
   "title" : "Oral Health Assessment",

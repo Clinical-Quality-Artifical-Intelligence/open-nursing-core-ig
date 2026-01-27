@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-what-matters | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-what-matters | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCWhatMattersToMe |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-what-matters.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-what-matters",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-what-matters",
   "version" : "0.1.0",
   "name" : "ONCWhatMattersToMe",
   "title" : "What Matters to Me",

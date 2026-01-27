@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-abc-chart | *Version*:0.1.0 |
 | Draft as of 2026-01-01 | *Computable Name*:ONCABCChart |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abc-chart.csv), 
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-abc-chart",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart",
   "version" : "0.1.0",
   "name" : "ONCABCChart",
   "title" : "PBS ABC Chart",

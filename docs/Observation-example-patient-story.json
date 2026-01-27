@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-patient-story",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-patient-story"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-patient-story"]
   },
   "text" : {
     "status" : "generated",

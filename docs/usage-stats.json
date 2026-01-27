@@ -56,63 +56,63 @@
         "title": "Wound Assessment"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium",
         "title": "4AT Delirium Assessment"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale",
         "title": "Abbey Pain Scale"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart",
         "title": "PBS ABC Chart"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart",
         "title": "Bristol Stool Chart"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale",
         "title": "Clinical Frailty Scale (CFS)"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance",
         "title": "Fluid Balance"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity",
         "title": "Mental Capacity Assessment"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-oral-health",
         "title": "Oral Health Assessment"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-patient-story",
         "title": "Patient Story"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment",
         "title": "Reasonable Adjustment"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation",
         "title": "Relational Engagement Score"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record",
         "title": "Seizure Record"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern",
         "title": "Sleep Pattern"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis",
         "title": "Urinalysis"
       },
       {
-        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters",
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-what-matters",
         "title": "What Matters to Me"
       }
     ],
