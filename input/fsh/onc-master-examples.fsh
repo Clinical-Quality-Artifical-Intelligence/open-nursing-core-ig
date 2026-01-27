@@ -25,6 +25,7 @@ Usage: #example
 * performer = Reference(practitioner-example)
 // FIX: Added the mandatory Nursing Category
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
+* code = http://loinc.org#66555-4
 * valueCodeableConcept = http://snomed.info/sct#403154004 "Fitzpatrick skin type II"
 
 // ==============================================================================

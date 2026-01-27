@@ -1,3 +1,5 @@
+Alias: $LNC = http://loinc.org
+
 Extension: UKCoreEthnicCategory
 Id: UKCore-Extension-EthnicCategory
 Title: "UK Core Ethnic Category"
@@ -19,7 +21,7 @@ Parent: ONCNursingAssessment
 Id: onc-skintone-observation
 Title: "Skin Tone Observation"
 Description: "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis)."
-* code = http://loinc.org#66555-4 "Skin type [Fitzpatrick Classification Scale]"
+* code = $LNC#66555-4
 * value[x] only CodeableConcept
 * valueCodeableConcept from SkinToneVS (required)
 
