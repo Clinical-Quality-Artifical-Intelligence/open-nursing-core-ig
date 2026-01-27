@@ -2,15 +2,15 @@ id: onc.ig
 canonical: https://opennursingcoreig.com
 name: OpenNursingCoreIG
 title: Open Nursing Core FHIR Implementation Guide (ONC-IG)
-status: draft
-version: 0.1.0
+status: active
+version: 1.0.0
 fhirVersion: 4.0.1
 publisher:
   name: The Open Nursing Community
-description: "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."
+description: "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready."
 license: MIT
 copyrightYear: 2025+
-releaseLabel: draft
+releaseLabel: release
 
 # Pages configuration
 pages:
