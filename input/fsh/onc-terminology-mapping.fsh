@@ -3,7 +3,7 @@
 // This file maps custom ONC concepts to international nursing terminologies.
 // =============================================================================
 
-Instance: ONCToNandaMapping
+Instance: onc-to-nanda
 InstanceOf: ConceptMap
 Usage: #definition
 * url = "https://opennursingcoreig.com/ConceptMap/onc-to-nanda"
