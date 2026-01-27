@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-mental-capacity",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"]
   },
   "text" : {
     "status" : "generated",

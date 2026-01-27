@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "example-reasonable-adjustment"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"^^xsd:anyURI ;
-       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment>
      ] )
   ] ; # 
   fhir:text [

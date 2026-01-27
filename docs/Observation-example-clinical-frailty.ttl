@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "example-clinical-frailty"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"^^xsd:anyURI ;
-       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale>
      ] )
   ] ; # 
   fhir:text [

@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "example-what-matters"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters"^^xsd:anyURI ;
-       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-what-matters>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-what-matters"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-what-matters>
      ] )
   ] ; # 
   fhir:text [

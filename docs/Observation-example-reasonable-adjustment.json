@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "example-reasonable-adjustment",
   "meta" : {
-    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"]
   },
   "text" : {
     "status" : "generated",
