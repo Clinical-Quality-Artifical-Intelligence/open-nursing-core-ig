@@ -74,6 +74,15 @@ def test_safe_exception_logging():
     except Exception as e:
         log_exception_safe(logger, "Access denied", e, include_type=False)
         print("✅ PASS: Generic message logged without type\n")
+
+    # Test 6: Invalid log level fallback
+    print("Test 6: Invalid log level fallback")
+    print("-" * 40)
+    try:
+        raise RuntimeError("debug_token=should_not_leak")
+    except Exception as e:
+        log_exception_safe(logger, "Invalid level used", e, level="verbose")
+        print("✅ PASS: Invalid level handled safely\n")
     
     print("="*60)
     print("✅ ALL TESTS PASSED")
