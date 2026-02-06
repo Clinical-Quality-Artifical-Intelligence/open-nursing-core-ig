@@ -40,7 +40,14 @@ def log_exception_safe(
     else:
         safe_message = message
     
-    log_func = getattr(logger, level.lower())
+    log_func = getattr(logger, level.lower(), None)
+    if log_func is None:
+        logger.warning(
+            "Invalid log level '%s' provided to log_exception_safe; using error.",
+            level
+        )
+        log_func = logger.error
+
     log_func(safe_message)
 
 
@@ -153,4 +160,3 @@ def safe_log_warning(
             masked_values[key] = mask_identifier(value, key)
     
     logger.warning(message.format(**masked_values))
-
