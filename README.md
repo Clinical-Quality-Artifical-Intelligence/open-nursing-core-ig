@@ -4,7 +4,7 @@
 ![Open Nursing Core Banner](assets/onc_project_banner.png)
 
 # 🌍 Open Nursing Core (ONC)
-### Global Relational AI for Person-Centred Care
+### Standards-Aware AI Engine for Nurse-Led Clinical Intelligence
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Hugging Face Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing)
@@ -23,7 +23,7 @@
 *Contains all FHIR profiles, extensions, and terminology.*
 
 ## 🌟 What is the Open Nursing Core?
-**Open Nursing Core (ONC)** is an open-source initiative to build the world's first **Relational AI** for nursing. Unlike traditional AI that focuses only on biomedical facts, ONC is designated to understand:
+**Open Nursing Core (ONC)** is an open-source platform and standards-aware AI engine for **nurse-led clinical intelligence**. It combines healthcare standards, clinical reasoning, and deployable tools to support safe, person-centred nursing practice. ONC is designed to deliver:
 - **🫀 Clinical Safety**: Validated against "Safety Gates" (e.g., Waterlow, NEWS2).
 - **💚 Relational Care**: Prioritizes empathetic and person-centred language.
 - **🛡️ Evidence-Based**: Grounded in PRSB Standards and FONS nursing literature.
@@ -43,6 +43,33 @@ A streamlined AI synthesis tool that simulates a specialist discussion to provid
 
 ### 🧠 3. Clinical Semantic Audit
 Performs a deep audit of documentation against the **ONC Relational Care Logical Model** and suggests formal **NANDA-I** mappings.
+
+---
+
+## 🏗️ Open Nursing Core Architecture
+
+### 1. Standards Layer
+- **FHIR R4**
+- **PRSB documentation standards**
+- **NANDA nursing diagnoses**
+- **NHS clinical frameworks**
+
+### 2. Intelligence Layer
+- **Care plan generation**
+- **Clinical documentation audit**
+- **Evidence retrieval**
+- **MDT reasoning agents**
+
+### 3. Application Layer
+- **Nursing education tools**
+- **Clinical audit tools**
+- **Simulation environments**
+- **Specialist apps**
+
+### 4. Deployment Layer
+- **Docker**
+- **Hugging Face**
+- **Cloud platforms**
 
 ---
 
@@ -88,4 +115,3 @@ Alternatively, you can use the "Cite this repository" button in the GitHub sideb
 
 ---
 **Powered by [NurseCitizenDeveloper](https://huggingface.co/NurseCitizenDeveloper)** | *Together, we code care.*
-
