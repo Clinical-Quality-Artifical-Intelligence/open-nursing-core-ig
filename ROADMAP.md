@@ -33,6 +33,7 @@
 > **Status:** Active development · [Track on GitHub](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues)
 
 ### 🎯 Monk Skin Tone Scale archetype
+**Priority:** High · **Lead:** Kumbi Kariwo · **Help wanted:** Clinical review + openEHR mapping
 **Priority:** High · **Help wanted:** Clinical review + openEHR mapping
 
 The Fitzpatrick scale was designed for UV photoreactivity, not inclusive skin tone classification.
@@ -48,6 +49,7 @@ in clinical AI and dermatology. We are:
 ---
 
 ### ⚖️ Equity-driven safety constraints (extended)
+**Priority:** High · **Lead:** Kumbi Kariwo · **Help wanted:** Clinical evidence review
 **Priority:** High · **Help wanted:** Clinical evidence review
 
 - [ ] Extend CQL safety rules to cover wound assessment (beyond pressure ulcers)
@@ -118,6 +120,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 ---
 
 <div align="center">
+
+**Project co-leads:** Kumbi Kariwo (Health Inequalities & AI Equity) · Lincoln (FHIR IG & Nurse Citizen Developer)
 
 *This roadmap is a living document. Last updated: March 2026.*
 *To suggest changes, [open a discussion](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/discussions).*
