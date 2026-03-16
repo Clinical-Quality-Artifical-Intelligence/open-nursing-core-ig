@@ -1,16 +1,2 @@
-# Open Nursing Core IG — CI/CD
-#
-# This is a UN/UNICC mirror of the primary GitHub repository.
-# The full CI pipeline (FHIR validation, IG publishing) runs on GitHub Actions.
-#
+# CI disabled — UN mirror. CI runs on GitHub Actions.
 # See: https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig
-
-workflow:
-  rules:
-    - when: never   # Prevents any pipeline from starting on this mirror
-
-mirror-notice:
-  stage: .pre
-  script:
-    - echo "UN/UNICC mirror — CI runs on GitHub Actions"
-    - echo "https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig"
