@@ -34,6 +34,7 @@
 
 ### 🎯 Monk Skin Tone Scale archetype
 **Priority:** High · **Lead:** Kumbi Kariwo · **Help wanted:** Clinical review + openEHR mapping
+**Priority:** High · **Help wanted:** Clinical review + openEHR mapping
 
 The Fitzpatrick scale was designed for UV photoreactivity, not inclusive skin tone classification.
 The [Monk Skin Tone Scale](https://skintone.google) (10-point, open-source) is increasingly adopted
@@ -49,6 +50,7 @@ in clinical AI and dermatology. We are:
 
 ### ⚖️ Equity-driven safety constraints (extended)
 **Priority:** High · **Lead:** Kumbi Kariwo · **Help wanted:** Clinical evidence review
+**Priority:** High · **Help wanted:** Clinical evidence review
 
 - [ ] Extend CQL safety rules to cover wound assessment (beyond pressure ulcers)
 - [ ] Add skin tone documentation constraint to falls risk assessment
