@@ -90,10 +90,10 @@ python app.py
 
 ## 👥 Project Leadership
 
-| Name | Role | Credentials |
-|------|------|-------------|
-| **Kumbi Kariwo** | Health Inequalities & AI Equity Lead · Co-lead (Monk Skin Tone & Equity profiles) | FRCN, QN |
-| **Lincoln** | Nurse Citizen Developer · FHIR IG Lead | Practice Educator, NMC Registered |
+| Name | Role |
+|------|------|
+| **Kumbi Kariwo** | Health Inequalities & AI Equity Lead · Co-lead (Monk Skin Tone & Equity profiles) |
+| **Lincoln** | Nurse Citizen Developer · FHIR IG Lead · Practice Educator, NMC Registered |
 
 ONC-IG is a nurse-led initiative. Clinical leadership by nurses, for nurses —
 built on open standards and hosted by the [United Nations (UNICC)](https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig).
