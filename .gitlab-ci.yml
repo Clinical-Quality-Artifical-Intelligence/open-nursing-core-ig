@@ -1,0 +1,10 @@
+# Open Nursing Core IG — CI/CD Configuration
+# 
+# This project is developed on GitHub and mirrored here for UN/UNICC visibility.
+# The full CI pipeline (FHIR validation, IG publishing) runs on GitHub Actions.
+# 
+# See: https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig
+
+workflow:
+  rules:
+    - when: never
