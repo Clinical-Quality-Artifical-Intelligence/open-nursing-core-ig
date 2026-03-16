@@ -1,0 +1,34 @@
+title: "[IDEA] "
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Share an idea for ONC-IG
+        This is the place for early-stage thinking — a clinical area we haven't covered,
+        a standards alignment you've spotted, or a feature that would help nurses.
+        No need to have a solution — just start the conversation.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - New FHIR profile
+        - openEHR archetype
+        - Terminology / coding
+        - Clinical safety
+        - Health equity
+        - Relational care
+        - Tooling / developer experience
+        - Documentation
+        - Other
+    validations:
+      required: true

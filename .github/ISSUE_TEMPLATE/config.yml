@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Community Discussion (General Q&A)
+    url: https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/discussions
+    about: Ask questions, share ideas, or introduce yourself to the community
+  - name: 🏛️ openEHR CKM Forum
+    url: https://discourse.openehr.org
+    about: Discuss archetype alignment and openEHR collaboration
+  - name: 🌐 Live Implementation Guide
+    url: https://opennursingcoreig.com
+    about: Browse the published IG before filing an issue
