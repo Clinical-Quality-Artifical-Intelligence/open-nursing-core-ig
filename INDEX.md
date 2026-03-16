@@ -1,224 +1,238 @@
-# 📚 Complete Documentation Index
+<div align="center">
 
-## Quick Start (5 minutes)
+# 🏥 Open Nursing Core FHIR Implementation Guide
 
-**New to the project?** Start here:
-- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - One-page overview of all features
+### *ONC-IG v1.0.0 — Production Release*
 
-## Feature Documentation
+[![FHIR R4](https://img.shields.io/badge/FHIR-R4%20%284.0.1%29-red?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0xIDE1aC0ydi02aDJ2NnptMC04aC0yVjdoMnYyeiIvPjwvc3ZnPg==)](https://hl7.org/fhir/R4/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![IG Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)](https://opennursingcoreig.com)
+[![PRSB Aligned](https://img.shields.io/badge/Aligned-PRSB%20Standards-blue)](https://theprsb.org)
+[![NMC Standards](https://img.shields.io/badge/NMC-Standards%202018-navy)](https://nmc.org.uk)
+[![UN Hosted](https://img.shields.io/badge/Hosted-UNICC%20%7C%20United%20Nations-009edb)](https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig)
 
-Learn what the application can do:
-- **[FEATURES.md](FEATURES.md)** - Complete feature guide with examples
-  - Authentication system overview
-  - Chat history persistence
-  - Role-based access control
-  - Visualization dashboard
-  - Production recommendations
-
-## Deployment Guides
-
-### For Azure Deployment (Recommended - 30 minutes)
-1. **[PRODUCTION_QUICKSTART.md](PRODUCTION_QUICKSTART.md)** - Step-by-step Azure deployment
-   - Set up Azure resources
-   - Configure secrets
-   - Build and push Docker image
-   - Deploy to Azure Container Instances
-
-### For All Deployment Platforms (Comprehensive)
-- **[PRODUCTION_DEPLOYMENT.md](PRODUCTION_DEPLOYMENT.md)** - Complete deployment reference
-  - Multiple platform options (Azure, Docker, K8s, Heroku, On-premises)
-  - HTTPS/SSL configuration
-  - Monitoring & logging
-  - Backup & recovery
-  - Production security checklist
-  - Troubleshooting guide
-
-### For General Deployment Information
-- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Original deployment guide
-  - General setup instructions
-  - Docker and cloud options
-  - Security considerations
-
-## Project Information
-
-### Understanding the Project
-- **[README.md](README.md)** - Project mission and background
-  - The Open Nursing Core (ONC) initiative
-  - Acknowledgments and leadership
-  - Licensing information
-
-### Progress Tracking
-- **[PHASE1_COMPLETE.md](PHASE1_COMPLETE.md)** - Phase 1 completion report
-  - What was accomplished
-  - Code metrics
-  - Next phase recommendations
-
-## File Organization
-
-```
-open-nursing-core-ig/
-├── 📄 Documentation
-│   ├── README.md                      ← Project overview
-│   ├── QUICK_REFERENCE.md             ← Start here (5 min read)
-│   ├── FEATURES.md                    ← Feature documentation
-│   ├── DEPLOYMENT.md                  ← General deployment
-│   ├── PRODUCTION_QUICKSTART.md       ← Azure in 30 min
-│   ├── PRODUCTION_DEPLOYMENT.md       ← All platforms (900+ lines)
-│   ├── PHASE1_COMPLETE.md             ← Completion report
-│   └── INDEX.md                       ← This file
-│
-├── 🐍 Python Application
-│   ├── app.py                         ← Main Streamlit application
-│   ├── visualizations.py              ← Visualization components
-│   ├── harvest_fons.py                ← Download FoNS articles
-│   └── ingest_fast.py                 ← Build knowledge database
-│
-├── 🐳 Docker & Deployment
-│   ├── Dockerfile                     ← Production multi-stage build
-│   ├── docker-compose.yml             ← Local testing environment
-│   └── .env.production.example        ← Configuration template
-│
-├── 🔧 Configuration
-│   ├── requirements.txt                ← Python dependencies
-│   ├── ig.ini                         ← FHIR configuration
-│   ├── sushi-config.yaml              ← SUSHI compiler config
-│   └── .gitignore                     ← Git exclusions
-│
-├── 📊 GitHub Actions
-│   ├── .github/workflows/publish.yaml       ← Build & publish IG
-│   └── .github/workflows/production-deploy.yml ← CI/CD pipeline
-│
-└── 📁 Data Directories
-    ├── chroma_db_fons/                ← Knowledge database
-    ├── fons_knowledge_base/           ← FoNS articles
-    ├── docs/                          ← Generated documentation
-    ├── input/                         ← FHIR input files
-    └── output/                        ← Generated outputs
-```
-
-## Which File Should I Read?
-
-### "I just want to get started quickly"
-→ Read: **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** (5 minutes)
-
-### "I want to understand all the features"
-→ Read: **[FEATURES.md](FEATURES.md)** (15 minutes)
-
-### "I want to deploy to Azure right now"
-→ Read: **[PRODUCTION_QUICKSTART.md](PRODUCTION_QUICKSTART.md)** (30 minutes)
-
-### "I need a complete deployment reference"
-→ Read: **[PRODUCTION_DEPLOYMENT.md](PRODUCTION_DEPLOYMENT.md)** (comprehensive)
-
-### "I'm deploying on a specific platform"
-→ Search for your platform in [PRODUCTION_DEPLOYMENT.md](PRODUCTION_DEPLOYMENT.md):
-- Azure Container Instances
-- Azure App Service
-- Kubernetes (AKS)
-- Docker Compose
-- Heroku
-- On-premises servers
-
-### "I need to understand the architecture"
-→ Read: **[PHASE1_COMPLETE.md](PHASE1_COMPLETE.md)** (architecture section)
-
-### "I want to know about security"
-→ Search "Security" in [PRODUCTION_DEPLOYMENT.md](PRODUCTION_DEPLOYMENT.md)
-
-## Key Documentation Highlights
-
-### Authentication & Security
-- Multi-user login system
-- 3 user roles (Nurse, Clinician, Admin)
-- Role-based access control
-- Chat history per user
-- Session management
-- Production security checklist
-
-### Features
-- Interactive chat with AI
-- 5-tab dashboard with visualizations
-- Care plan tracking
-- Problem assessment
-- Intervention analysis
-- Health indicators
-- Chat export functionality
-
-### Deployment Options
-- Azure (Recommended - easiest)
-- Docker Compose (local testing)
-- Kubernetes (enterprise scale)
-- Heroku (simplest alternative)
-- On-premises (full control)
-
-### Code Quality
-- PEP 8 compliant
-- Production logging
-- Error handling
-- Input validation
-- Security scanning
-- Automated testing
-
-## Getting Help
-
-### Have a question?
-1. Check the relevant documentation file above
-2. Search GitHub Issues: https://github.com/ClinyQAi/open-nursing-core-ig/issues
-3. Check Discussions: https://github.com/ClinyQAi/open-nursing-core-ig/discussions
-
-### Found a bug?
-1. Open a GitHub Issue with details
-2. Check troubleshooting sections in relevant docs
-
-### Want to contribute?
-1. Review the code structure
-2. Check existing issues/PRs
-3. Follow Python PEP 8 standards
-4. Add tests for new features
-
-## Project Status
-
-**Current Version:** 2.0.0  
-**Status:** Phase 1 Complete ✅  
-**Release Date:** November 29, 2025
-
-### What's Implemented
-- ✅ Authentication system
-- ✅ Chat history persistence
-- ✅ Role-based access control
-- ✅ Interactive visualizations
-- ✅ Production-ready code
-- ✅ Docker/container support
-- ✅ CI/CD pipeline
-- ✅ Comprehensive documentation
-
-### What's Next (Phase 2)
-- [ ] Database integration (PostgreSQL)
-- [ ] Advanced analytics
-- [ ] EHR integration
-- [ ] Mobile app (React Native)
-
-## Quick Links
-
-**GitHub Repository:**
-https://github.com/ClinyQAi/open-nursing-core-ig
-
-**Live Documentation:**
-https://clinyqai.github.io/open-nursing-core-ig/
-
-**Issues & Discussions:**
-https://github.com/ClinyQAi/open-nursing-core-ig/issues
-
-## 📞 Support
-
-For issues or questions:
-1. Check the documentation
-2. Search existing GitHub issues
-3. Open a new issue with details
-4. Join discussions for feature requests
+**[🌐 Live IG](https://opennursingcoreig.com)** &nbsp;·&nbsp;
+**[📦 GitHub](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig)** &nbsp;·&nbsp;
+**[🇺🇳 UNICC Mirror](https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig)** &nbsp;·&nbsp;
+**[📖 Cite This Work](#-citation)**
 
 ---
 
-**Last Updated:** November 29, 2025  
-**Maintainer:** ClinyQAi Team  
-**License:** MIT
+*Foundational FHIR profiles for the nursing process (ADPIE), with Clinical Safety and Health Equity modules.*
+*Built by nurses, for nurses — open source, standards-aligned, UN-hosted.*
+
+</div>
+
+---
+
+## 📋 Contents
+
+| Section | Description |
+|---------|-------------|
+| [🚀 Quick Start](#-quick-start) | Get oriented in 5 minutes |
+| [🧬 FHIR Profiles](#-fhir-profiles) | What clinical profiles are included |
+| [📁 Repository Structure](#-repository-structure) | Where everything lives |
+| [📚 Documentation](#-documentation) | Guides and references |
+| [🌍 Multilingual](#-multilingual-readmes) | README in 8 languages |
+| [🤝 Contributing](#-contributing) | How to get involved |
+| [📎 Citation](#-citation) | How to cite this work |
+| [🔗 Links](#-links) | All important URLs |
+
+---
+
+## 🚀 Quick Start
+
+```
+New to ONC-IG? Read in this order:
+1. README.md          — What ONC is and why it exists
+2. This file          — Navigate the repository
+3. sushi-config.yaml  — Understand the IG configuration
+4. input/fsh/         — Browse the FHIR profiles
+5. opennursingcoreig.com — Read the published IG
+```
+
+> 💡 **For clinicians:** Visit [opennursingcoreig.com](https://opennursingcoreig.com) — no technical knowledge needed.
+> **For developers:** Clone this repo and run `sushi .` to build locally (requires [SUSHI](https://fshschool.org/docs/sushi/installation/)).
+
+---
+
+## 🧬 FHIR Profiles
+
+ONC-IG ships **30+ FHIR profiles** covering the full nursing assessment lifecycle:
+
+### 🩺 Clinical Assessment Profiles
+
+| Profile | Description | Standard |
+|---------|-------------|----------|
+| `onc-news2-full` | National Early Warning Score 2 | NHS England |
+| `onc-glasgow-coma-scale` | GCS neurological assessment | Teasdale & Jennett |
+| `onc-must-score` | Malnutrition Universal Screening Tool | BAPEN |
+| `onc-abbey` | Abbey Pain Scale (non-verbal patients) | Abbey et al. |
+| `onc-bristol` | Bristol Stool Form Scale | NICE |
+| `onc-mmse` | Mini-Mental State Examination | Folstein |
+| `onc-frailty` | Clinical Frailty Scale | Rockwood |
+| `onc-delirium` | Delirium assessment | 4AT / CAM |
+| `onc-hydration` | Fluid balance & hydration | NHS Trust |
+| `onc-oral-health` | Oral health assessment | BSDH |
+| `onc-mental-capacity` | MCA 2005 capacity assessment | UK Law |
+
+### 🧠 ADPIE Process Profiles
+
+| Profile | Description |
+|---------|-------------|
+| `onc-logical-models` | ADPIE logical model (Assessment → Diagnosis → Planning → Implementation → Evaluation) |
+| `onc-goal-evaluation` | SMART goal tracking against care plan |
+| `onc-additional-assessments` | Supplementary holistic assessment forms |
+| `onc-clinical-assessments` | Core clinical assessment battery |
+
+### ⚖️ Safety & Equity Profiles
+
+| Profile | Description |
+|---------|-------------|
+| `onc-equity` | Health equity flags (Fitzpatrick skin tone, SDOH) |
+| `onc-alignment-prsb` | PRSB Standards of Proficiency alignment map |
+
+### 📐 CQL Clinical Decision Support
+
+| Resource | Description |
+|----------|-------------|
+| `Library-onc-news2-cql` | NEWS2 scoring logic in Clinical Quality Language |
+| `PlanDefinition-news2-escalation` | NEWS2 → escalation pathway trigger rules |
+
+---
+
+## 📁 Repository Structure
+
+```
+open-nursing-core-ig/
+│
+├── 📋 input/                        ← FHIR source files (edit here)
+│   ├── fsh/                         ← FHIR Shorthand profiles (30+ files)
+│   ├── resources/                   ← JSON resources (CQL, PlanDefinitions)
+│   ├── cql/                         ← Clinical Quality Language libraries
+│   ├── pagecontent/                 ← IG narrative pages (Markdown)
+│   ├── images/                      ← Diagrams and figures
+│   └── includes/                    ← Reusable fragments
+│
+├── 📦 docs/                         ← Generated IG output (do not edit)
+│
+├── ⚙️  sushi-config.yaml            ← IG publisher configuration
+├── ⚙️  ig.ini                       ← FHIR IG publisher settings
+├── ⚙️  package-list.json            ← Published version history
+│
+├── 🤖 .github/workflows/
+│   ├── docs.yml                     ← Build & publish IG to GitHub Pages
+│   ├── hf-sync.yml                  ← Sync to Hugging Face Spaces
+│   ├── production-deploy.yml        ← Production deployment pipeline
+│   └── publish-package.yml          ← NPM package publish
+│
+├── 🐳 Dockerfile                    ← Container image
+├── 🐳 docker-compose.yml            ← Local dev environment
+│
+├── 📊 ml/                           ← Machine learning components
+├── 📱 mobile/                       ← Mobile application
+├── 🧪 core/                         ← Core library
+├── 🗄️  db/                          ← Database layer
+├── 🌌 hf_space/                     ← Hugging Face Space app
+├── 📈 visualizations/               ← Visualisation components
+│
+├── 📄 README.md                     ← Project overview (start here)
+├── 📄 CONTRIBUTING.md               ← How to contribute
+├── 📄 SECURITY.md                   ← Security policy & reporting
+├── 📄 LICENSE                       ← MIT License
+└── 📄 CITATION.cff                  ← How to cite this work
+```
+
+---
+
+## 📚 Documentation
+
+| Document | Purpose | Read Time |
+|----------|---------|-----------|
+| [README.md](README.md) | Project mission, architecture, key features | 10 min |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution guidelines, code standards | 5 min |
+| [SECURITY.md](SECURITY.md) | Security policy and vulnerability reporting | 3 min |
+| [DEPLOYMENT.md](DEPLOYMENT.md) | Deployment options and configuration | 15 min |
+| [FEATURES.md](FEATURES.md) | Full feature catalogue | 10 min |
+| [BUG_REPORT.md](BUG_REPORT.md) | Known issues and workarounds | As needed |
+
+---
+
+## 🌍 Multilingual READMEs
+
+This project is committed to global accessibility. The README is available in:
+
+| Language | File | Region |
+|----------|------|--------|
+| 🇩🇪 Deutsch | [README.de.md](README.de.md) | DACH |
+| 🇪🇸 Español | [README.es.md](README.es.md) | Latin America & Spain |
+| 🇫🇷 Français | [README.fr.md](README.fr.md) | Francophone |
+| 🇯🇵 日本語 | [README.ja.md](README.ja.md) | Japan |
+| 🇰🇷 한국어 | [README.kr.md](README.kr.md) | Korea |
+| 🇧🇷 Português | [README.pt.md](README.pt.md) | Brazil & Portugal |
+| 🇷🇺 Русский | [README.ru.md](README.ru.md) | Russia & CIS |
+| 🇨🇳 中文 | [README.zh.md](README.zh.md) | China |
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from nurses, informaticians, FHIR developers, and health systems professionals.
+
+```
+1. Fork the repository on GitHub
+2. Create a branch:  git checkout -b feature/my-profile
+3. Edit FSH files in input/fsh/
+4. Run:              sushi .
+5. Commit (GPG-signed):  git commit -S -m "feat: add new profile"
+6. Open a Pull Request
+```
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md) before your first PR.
+
+> 🔒 **Security issues** — report privately via the process in [SECURITY.md](SECURITY.md), not as public issues.
+
+---
+
+## 📎 Citation
+
+If you use ONC-IG in research or clinical systems, please cite:
+
+```bibtex
+@software{onc_ig_2026,
+  author    = {Clinical Quality Artificial Intelligence},
+  title     = {Open Nursing Core FHIR Implementation Guide (ONC-IG)},
+  version   = {1.0.0},
+  year      = {2026},
+  url       = {https://opennursingcoreig.com},
+  license   = {MIT}
+}
+```
+
+> Full citation metadata: [CITATION.cff](CITATION.cff)
+
+---
+
+## 🔗 Links
+
+| Resource | URL |
+|----------|-----|
+| 🌐 Live Implementation Guide | https://opennursingcoreig.com |
+| 📦 GitHub (primary) | https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig |
+| 🇺🇳 UNICC Mirror | https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig |
+| 🐛 Issues | https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues |
+| 💬 Discussions | https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/discussions |
+| 🤗 Hugging Face | https://huggingface.co/NurseCitizenDeveloper |
+| 🏥 HL7 FHIR R4 Spec | https://hl7.org/fhir/R4/ |
+| 📐 PRSB Standards | https://theprsb.org |
+
+---
+
+<div align="center">
+
+**Open Nursing Core FHIR Implementation Guide** &nbsp;·&nbsp; v1.0.0 &nbsp;·&nbsp; MIT License
+
+*Built with ❤️ by the Open Nursing Community*
+*Hosted by the [United Nations International Computing Centre (UNICC)](https://www.unicc.org)*
+
+</div>
