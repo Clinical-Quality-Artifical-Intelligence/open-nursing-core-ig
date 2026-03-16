@@ -1,0 +1,71 @@
+name: "🩺 Clinical Review"
+description: "Flag a clinical error, inaccuracy, or unsafe assumption in a FHIR profile or terminology binding"
+title: "[CLINICAL] "
+labels: ["clinical-review", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reviewing ONC-IG clinically. Your expertise matters — these profiles are used in real clinical contexts.
+        Please be as specific as possible. Screenshots, citations, or references to published guidelines are very welcome.
+
+  - type: dropdown
+    id: profile
+    attributes:
+      label: Which profile or file is affected?
+      options:
+        - onc-news2-full (NEWS2)
+        - onc-equity (Skin Tone / Equity)
+        - onc-abbey (Abbey Pain Scale)
+        - onc-bristol (Bristol Stool Scale)
+        - onc-frailty (Clinical Frailty Scale)
+        - onc-glasgow-coma-scale (GCS)
+        - onc-must-score (MUST)
+        - onc-mmse (MMSE)
+        - onc-delirium (Delirium / 4AT)
+        - onc-mental-capacity (MCA 2005)
+        - onc-hydration (Fluid Balance)
+        - onc-oral-health (Oral Health)
+        - onc-goal-evaluation (SMART Goals)
+        - onc-logical-models (ADPIE)
+        - onc-alignment-prsb (PRSB Alignment)
+        - Other / Not listed
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is the clinical concern?
+      description: Describe the error, inaccuracy, or unsafe assumption. Be as specific as possible.
+      placeholder: "e.g. The MUST score threshold for high risk is set to ≥2 but the BAPEN 2023 guidance specifies ≥3 for this population..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence or guideline
+      description: Link to a guideline, published paper, or clinical standard that supports your concern.
+      placeholder: "e.g. BAPEN MUST Tool 2023 — https://www.bapen.org.uk/..."
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Clinical severity
+      options:
+        - "🔴 Patient safety concern — could cause harm if not corrected"
+        - "🟠 Clinical inaccuracy — wrong but unlikely to cause direct harm"
+        - "🟡 Improvement — would improve clinical utility"
+        - "🔵 Minor — terminology or wording"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to suggest a correction or draft a fix
+        - label: I am a registered nurse / allied health professional
+        - label: I have reviewed the CONTRIBUTING.md guidelines

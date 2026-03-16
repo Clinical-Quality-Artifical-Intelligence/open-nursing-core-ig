@@ -1,0 +1,50 @@
+name: "🏛️ openEHR Archetype Alignment"
+description: "Discuss alignment between an ONC-IG FHIR profile and an existing or proposed openEHR archetype"
+title: "[ARCHETYPE] "
+labels: ["openehr", "dual-model", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ONC-IG is exploring dual-model alignment between FHIR profiles and openEHR archetypes.
+        This issue type is for informaticians, openEHR contributors, and CKM reviewers
+        working on the intersection of both standards.
+
+  - type: input
+    id: fhir-profile
+    attributes:
+      label: ONC-IG FHIR profile
+      placeholder: "e.g. onc-equity.fsh"
+
+  - type: input
+    id: archetype
+    attributes:
+      label: Corresponding openEHR archetype (if known)
+      placeholder: "e.g. openEHR-EHR-OBSERVATION.skin_tone.v0 (CKM draft)"
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of alignment work
+      options:
+        - "Map existing archetype to FHIR profile"
+        - "Propose new archetype for CKM submission"
+        - "Identify gap — no archetype exists"
+        - "Flag conflict between archetype and FHIR profile"
+        - "FHIRconnect / openFHIR mapping"
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: Details
+      description: Describe the alignment, gap, or mapping you're proposing.
+    validations:
+      required: true
+
+  - type: input
+    id: ckm-link
+    attributes:
+      label: CKM link (if applicable)
+      placeholder: "https://ckm.openehr.org/ckm/archetypes/..."
