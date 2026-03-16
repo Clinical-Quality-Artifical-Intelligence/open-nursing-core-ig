@@ -88,30 +88,45 @@ python app.py
 
 ---
 
+## 👥 Project Leadership
+
+| Name | Role | Credentials |
+|------|------|-------------|
+| **Kumbi Kariwo** | Health Inequalities & AI Equity Lead · Co-lead (Monk Skin Tone & Equity profiles) | FRCN, QN |
+| **Lincoln** | Nurse Citizen Developer · FHIR IG Lead | Practice Educator, NMC Registered |
+
+ONC-IG is a nurse-led initiative. Clinical leadership by nurses, for nurses —
+built on open standards and hosted by the [United Nations (UNICC)](https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig).
+
+---
+
 ## 🤝 Contributing
-We welcome contributions from nurses, developers, and researchers!
-1. Fork the repo.
-2. Create your branch: `git checkout -b feature/amazing-feature`.
-3. Commit your changes: `git commit -m 'Add amazing feature'`.
-4. Push to the branch: `git push origin feature/amazing-feature`.
-5. Open a Pull Request.
+
+We welcome contributions from nurses, developers, clinical informaticians, and researchers.
+See [ROADMAP.md](ROADMAP.md) for current priorities and [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
+
+**Quick links:**
+- 🩺 [Report a clinical error](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/new?template=clinical-review.yml)
+- 🧬 [Propose a new FHIR profile](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/new?template=fhir-profile-suggestion.yml)
+- 🏛️ [openEHR archetype alignment](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/new?template=archetype-openehr.yml)
+- 💬 [Join the discussion](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/discussions)
 
 ## 📑 Citation
 
-If you use the Open Nursing Core IG or the Relational AI models in your research, please cite it as follows:
+If you use ONC-IG in research or clinical systems, please cite:
 
 ```bibtex
-@software{ClinyQAi_Open_Nursing_Core_2026,
-  author = {Clinical Quality Artificial Intelligence (ClinyQAi)},
-  title = {Open Nursing Core FHIR Implementation Guide (ONC-IG)},
-  version = {1.0.0},
-  year = {2026},
-  url = {https://opennursingcoreig.com},
-  publisher = {NurseCitizenDeveloper}
+@software{ONC_IG_2026,
+  author    = {Kariwo, Kumbi and NurseCitizenDeveloper, Lincoln},
+  title     = {Open Nursing Core FHIR Implementation Guide (ONC-IG)},
+  version   = {1.0.0},
+  year      = {2026},
+  url       = {https://opennursingcoreig.com},
+  license   = {MIT}
 }
 ```
 
-Alternatively, you can use the "Cite this repository" button in the GitHub sidebar (requires `CITATION.cff`).
+Alternatively, use the **"Cite this repository"** button in the GitHub sidebar.
 
 ---
 **Powered by [NurseCitizenDeveloper](https://huggingface.co/NurseCitizenDeveloper)** | *Together, we code care.*

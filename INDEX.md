@@ -232,7 +232,7 @@ If you use ONC-IG in research or clinical systems, please cite:
 
 **Open Nursing Core FHIR Implementation Guide** &nbsp;·&nbsp; v1.0.0 &nbsp;·&nbsp; MIT License
 
-*Built with ❤️ by the Open Nursing Community*
+*Co-led by **Kumbi Kariwo FRCN QN** (Health Inequalities & AI Equity) and **Lincoln** (Nurse Citizen Developer)*
 *Hosted by the [United Nations International Computing Centre (UNICC)](https://www.unicc.org)*
 
 </div>

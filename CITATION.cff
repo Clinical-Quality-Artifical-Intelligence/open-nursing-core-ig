@@ -1,19 +1,44 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
+
 authors:
-- family-names: "Clinical Quality Artificial Intelligence"
-  given-names: "ClinyQAi"
+- family-names: "Kariwo"
+  given-names: "Kumbi"
+  alias: "KumbiKariwo"
+  affiliation: "Open Nursing Core Initiative"
+  orcid: ""
+- family-names: "NurseCitizenDeveloper"
+  given-names: "Lincoln"
   alias: "NurseCitizenDeveloper"
+  affiliation: "Open Nursing Core Initiative"
+  orcid: ""
+
 title: "Open Nursing Core FHIR Implementation Guide (ONC-IG)"
 version: 1.0.0
-doi: 10.5281/zenodo.1234567  # Placeholder DOI, update if registered
+doi: 10.5281/zenodo.1234567
 date-released: 2026-01-27
 url: "https://opennursingcoreig.com"
 repository-code: "https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig"
+license: MIT
+
+abstract: >
+  The Open Nursing Core FHIR Implementation Guide (ONC-IG) provides foundational HL7 FHIR R4
+  profiles for the nursing process (ADPIE), including structured assessments for NEWS2, MUST,
+  Abbey Pain Scale, Glasgow Coma Scale, and Clinical Frailty. It includes an Equity Module
+  with computable safety constraints to address documented clinical bias in skin assessment
+  for patients with darker skin tones, led by Kumbi Kariwo FRCN QN.
+  Aligned to PRSB Standards, NMC Standards of Proficiency (2018), and NHS clinical frameworks.
+  Hosted by the United Nations International Computing Centre (UNICC).
+
 keywords:
   - FHIR
   - Nursing Informatics
   - Interoperability
   - SNOMED CT
   - PRSB
-license: MIT
+  - Health Equity
+  - Monk Skin Tone Scale
+  - Clinical Safety
+  - NMC
+  - ADPIE
+  - openEHR
