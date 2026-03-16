@@ -1,0 +1,65 @@
+name: "🧬 FHIR Profile Suggestion"
+description: "Propose a new FHIR profile, extension, or terminology binding for ONC-IG"
+title: "[PROFILE] "
+labels: ["profile-proposal", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ONC-IG is a community Implementation Guide. New profiles should map to real nursing assessments,
+        align to PRSB/NMC standards, and use validated clinical instruments where possible.
+
+  - type: input
+    id: name
+    attributes:
+      label: Proposed profile name
+      placeholder: "e.g. ONC Nutritional Assessment (MUST Extended)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: clinical-context
+    attributes:
+      label: Clinical context
+      description: What nursing assessment or process does this support? Who uses it and when?
+    validations:
+      required: true
+
+  - type: textarea
+    id: standard
+    attributes:
+      label: Underlying validated instrument or standard
+      description: Is this based on a validated tool (e.g. BAPEN MUST, Abbey Pain Scale)? Please link to the source.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: fhir-base
+    attributes:
+      label: Likely FHIR base resource
+      options:
+        - Observation
+        - QuestionnaireResponse
+        - Condition
+        - Procedure
+        - CarePlan
+        - Goal
+        - RiskAssessment
+        - Other / Unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: alignment
+    attributes:
+      label: Standards alignment
+      description: Does this align to PRSB, NMC, NICE, NHS England, or other standards?
+
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I can draft the FSH profile
+        - label: I can provide clinical review
+        - label: I would like someone else to draft it and I'll review
