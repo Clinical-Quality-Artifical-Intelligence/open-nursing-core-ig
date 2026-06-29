@@ -53,9 +53,14 @@ RUN mkdir -p /app/.streamlit && \
     echo '[browser]' >> /app/.streamlit/config.toml && \
     echo 'gatherUsageStats = false' >> /app/.streamlit/config.toml
 
-# Health check
+# Run as a non-root user to limit the blast radius of a container compromise
+RUN useradd --create-home --uid 10001 appuser \
+    && chown -R appuser:appuser /app
+USER appuser
+
+# Health check (Streamlit's dedicated health endpoint)
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD curl -f http://localhost:8501/ || exit 1
+    CMD curl -f http://localhost:8501/_stcore/health || exit 1
 
 # Expose port
 EXPOSE 8501
