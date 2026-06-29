@@ -6,7 +6,9 @@ import os
 import shutil
 import hashlib
 import hmac
+import json
 import logging
+import threading
 from typing import Optional, List, Dict, Any, Union
 
 try:
@@ -48,6 +50,11 @@ except ImportError:
     DB_AVAILABLE = False
 
 logger = logging.getLogger(__name__)
+
+# Serialises access to the JSON chat-history fallback. Streamlit handles each
+# session on its own thread, so concurrent read-modify-write of the shared file
+# would otherwise corrupt it or lose messages.
+_chat_file_lock = threading.Lock()
 
 def hash_password(password: str) -> str:
     """
@@ -213,22 +220,21 @@ def save_chat_message(username: str, role: str, content: str, chat_history_file:
             from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Failed to save to database", e, level="warning")
 
-    # 2. Fallback to JSON
+    # 2. Fallback to JSON (lock the full read-modify-write to stay thread-safe)
     try:
-        history_data = {}
-        if os.path.exists(chat_history_file):
-            import json
-            with open(chat_history_file, "r") as f:
-                history_data = json.load(f)
+        with _chat_file_lock:
+            history_data = {}
+            if os.path.exists(chat_history_file):
+                with open(chat_history_file, "r") as f:
+                    history_data = json.load(f)
 
-        if username not in history_data:
-            history_data[username] = []
+            if username not in history_data:
+                history_data[username] = []
 
-        history_data[username].append({"role": role, "content": content})
+            history_data[username].append({"role": role, "content": content})
 
-        import json
-        with open(chat_history_file, "w") as f:
-            json.dump(history_data, f, indent=2)
+            with open(chat_history_file, "w") as f:
+                json.dump(history_data, f, indent=2)
         return True
     except Exception as e:
         from core.safe_logging import log_exception_safe
@@ -253,11 +259,11 @@ def load_chat_history(username: str, chat_history_file: str = ".chat_history.jso
 
     # 2. Fallback to JSON
     try:
-        import json
-        if os.path.exists(chat_history_file):
-            with open(chat_history_file, "r") as f:
-                history_data = json.load(f)
-                return history_data.get(username, [])
+        with _chat_file_lock:
+            if os.path.exists(chat_history_file):
+                with open(chat_history_file, "r") as f:
+                    history_data = json.load(f)
+                    return history_data.get(username, [])
     except Exception as e:
         from core.safe_logging import log_exception_safe
         log_exception_safe(logger, "Failed to load chat history from file", e, level="warning")
