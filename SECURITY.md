@@ -16,7 +16,7 @@ We actively maintain the latest version of the Open Nursing Core Implementation 
 Instead, please report them via GitHub Security Advisories:
 
 1. **GitHub Security Advisories** (Preferred):
-   - Go to https://github.com/ClinyQAi/open-nursing-core-ig/security/advisories/new
+   - Go to https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/security/advisories/new
    - Provide a detailed description of the vulnerability
    - Include steps to reproduce if applicable
 

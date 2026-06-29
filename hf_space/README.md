@@ -48,7 +48,7 @@ This Space uses [NurseCitizenDeveloper/nursing-llama-3-8b-fons](https://huggingf
 
 - 📘 **FHIR IG:** [opennursingcoreig.com](https://opennursingcoreig.com)
 - 🤗 **Model:** [NurseCitizenDeveloper/nursing-llama-3-8b-fons](https://huggingface.co/NurseCitizenDeveloper/nursing-llama-3-8b-fons)
-- 💻 **GitHub:** [ClinyQAi/open-nursing-core-ig](https://github.com/ClinyQAi/open-nursing-core-ig)
+- 💻 **GitHub:** [Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig)
 
 ## License
 

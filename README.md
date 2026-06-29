@@ -80,7 +80,7 @@ Performs a deep audit of documentation against the **ONC Relational Care Logical
 
 ### Run Locally
 ```bash
-git clone https://github.com/ClinyQAi/open-nursing-core-ig.git
+git clone https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig.git
 cd open-nursing-core-ig/hf_space
 pip install -r requirements.txt
 python app.py

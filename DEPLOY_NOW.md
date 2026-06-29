@@ -18,7 +18,7 @@ Here are your credentials. **DO NOT share these publicly or commit them to git**
 
 ### **FASTEST: GitHub Actions (Recommended)** ⭐⭐⭐
 
-1. Go to: https://github.com/ClinyQAi/open-nursing-core-ig/settings/secrets/actions
+1. Go to: https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/settings/secrets/actions
 
 2. Add 6 repository secrets (click "New repository secret" for each):
    - `AZURE_CLIENT_ID` → Your Client ID
@@ -28,7 +28,7 @@ Here are your credentials. **DO NOT share these publicly or commit them to git**
    - `AZURE_OPENAI_ENDPOINT` → Your OpenAI Endpoint
    - `AZURE_OPENAI_API_KEY` → Your OpenAI API Key
 
-3. Go to: https://github.com/ClinyQAi/open-nursing-core-ig/actions
+3. Go to: https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/actions
 
 4. Click **"Deploy to Azure"** workflow
 
@@ -48,7 +48,7 @@ Here are your credentials. **DO NOT share these publicly or commit them to git**
 On your machine with Azure CLI:
 
 ```bash
-git clone https://github.com/ClinyQAi/open-nursing-core-ig.git
+git clone https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig.git
 cd open-nursing-core-ig
 git pull origin main
 
@@ -154,7 +154,7 @@ http://nursing-validator.uksouth.azurecontainers.io:8501
 
 ### If GitHub Actions deployment fails:
 1. Check all 6 secrets are added correctly (no extra spaces)
-2. View workflow logs: https://github.com/ClinyQAi/open-nursing-core-ig/actions
+2. View workflow logs: https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/actions
 3. Check logs match your credentials exactly
 
 ### If you need to view container logs:
