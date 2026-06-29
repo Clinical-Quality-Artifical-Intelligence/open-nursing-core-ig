@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-prognosis-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCPrognosisVS |
+| Active as of 2026-06-29 | *Computable Name*:ONCPrognosisVS |
 
  
 Prognosis codes for clinical impression 
@@ -50,29 +50,25 @@ Prognosis codes for clinical impression
   "name" : "ONCPrognosisVS",
   "title" : "Nursing Prognosis ValueSet",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Prognosis codes for clinical impression",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "17621005",
+        "display" : "Normal"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "17621005",
-            "display" : "Normal"
-          },
-          {
-            "code" : "260388008",
-            "display" : "Worsening"
-          },
-          {
-            "code" : "385633008",
-            "display" : "Improving"
-          }
-        ]
-      }
-    ]
+        "code" : "260388008",
+        "display" : "Worsening"
+      },
+      {
+        "code" : "385633008",
+        "display" : "Improving"
+      }]
+    }]
   }
 }
 

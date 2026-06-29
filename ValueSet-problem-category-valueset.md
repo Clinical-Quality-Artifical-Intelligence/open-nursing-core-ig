@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/problem-category-valueset | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ProblemCategoryValueSet |
+| Active as of 2026-06-29 | *Computable Name*:ProblemCategoryValueSet |
 
  
 Value set for categorizing nursing problems 
@@ -51,15 +51,13 @@ Value set for categorizing nursing problems
   "title" : "Problem Category Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for categorizing nursing problems",
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type"
-      }
-    ]
+    "include" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type"
+    }]
   }
 }
 

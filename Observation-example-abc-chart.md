@@ -42,80 +42,60 @@ Aggressive episode managed with de-escalation.
   "resourceType" : "Observation",
   "id" : "example-abc-chart",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "abc-chart"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "abc-chart"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueCodeableConcept" : {
     "text" : "Frustration/Tangible"
   },
-  "note" : [
-    {
-      "text" : "Aggressive episode managed with de-escalation."
-    }
-  ],
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "abc-antecedent"
-          }
-        ]
-      },
-      "valueString" : "Denied access to garden due to rain."
+  "note" : [{
+    "text" : "Aggressive episode managed with de-escalation."
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "abc-antecedent"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "abc-behaviour"
-          }
-        ]
-      },
-      "valueString" : "Shouting and hitting door."
+    "valueString" : "Denied access to garden due to rain."
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "abc-behaviour"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "abc-consequence"
-          }
-        ]
-      },
-      "valueString" : "Verbal de-escalation, distraction with music."
-    }
-  ]
+    "valueString" : "Shouting and hitting door."
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "abc-consequence"
+      }]
+    },
+    "valueString" : "Verbal de-escalation, distraction with music."
+  }]
 }
 
 ```

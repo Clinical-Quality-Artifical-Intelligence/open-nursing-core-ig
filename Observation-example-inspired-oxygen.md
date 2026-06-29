@@ -31,47 +31,35 @@ Profile: [Inspired Oxygen](StructureDefinition-onc-inspired-oxygen.md)
   "resourceType" : "Observation",
   "id" : "example-inspired-oxygen",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "3151-8",
-        "display" : "Inhaled oxygen flow rate"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "3151-8",
+      "display" : "Inhaled oxygen flow rate"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "722742002",
-        "display" : "Breathing room air"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "722742002",
+      "display" : "Breathing room air"
+    }]
   }
 }
 

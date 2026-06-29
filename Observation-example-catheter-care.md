@@ -31,39 +31,29 @@ Profile: [Catheter Care](StructureDefinition-onc-catheter-care.md)
   "resourceType" : "Observation",
   "id" : "example-catheter-care",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-catheter-care"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-catheter-care"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "226005007",
-        "display" : "Care of central line"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "226005007",
+      "display" : "Care of central line"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueString" : "Catheter changed, patent, clear urine draining."
 }
 

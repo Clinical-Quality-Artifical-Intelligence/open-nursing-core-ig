@@ -32,9 +32,7 @@ Profile: [ONC Nursing Goal](StructureDefinition-onc-nursing-goal.md)
   "resourceType" : "Goal",
   "id" : "example-patient-goal",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"]
   },
   "lifecycleStatus" : "active",
   "description" : {
@@ -43,34 +41,26 @@ Profile: [ONC Nursing Goal](StructureDefinition-onc-nursing-goal.md)
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "target" : [
-    {
-      "measure" : {
-        "coding" : [
-          {
-            "system" : "http://loinc.org",
-            "code" : "88020-3",
-            "display" : "Functional status"
-          }
-        ]
-      },
-      "detailCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "385652002",
-            "display" : "Objective achieved"
-          }
-        ]
-      },
-      "dueDate" : "2025-12-31"
-    }
-  ],
-  "addresses" : [
-    {
-      "reference" : "Condition/example-nursing-problem"
-    }
-  ]
+  "target" : [{
+    "measure" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "88020-3",
+        "display" : "Functional status"
+      }]
+    },
+    "detailCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "385652002",
+        "display" : "Objective achieved"
+      }]
+    },
+    "dueDate" : "2025-12-31"
+  }],
+  "addresses" : [{
+    "reference" : "Condition/example-nursing-problem"
+  }]
 }
 
 ```

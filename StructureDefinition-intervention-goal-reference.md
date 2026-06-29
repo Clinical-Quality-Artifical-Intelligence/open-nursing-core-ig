@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:InterventionGoalReference |
+| Active as of 2026-06-29 | *Computable Name*:InterventionGoalReference |
 
 Extension to link nursing interventions to the patient goals they are intended to achieve.
 
@@ -22,7 +22,7 @@ Extension to link nursing interventions to the patient goals they are intended t
 * Use this Extension: [ONC Nursing Intervention](StructureDefinition-onc-nursing-intervention.md)
 * Examples for this Extension: [Procedure/example-nursing-intervention](Procedure-example-nursing-intervention.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/intervention-goal-reference)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-intervention-goal-reference.json)
 
 ### Formal Views of Extension Content
 
@@ -47,59 +47,49 @@ Other representations of profile: [CSV](StructureDefinition-intervention-goal-re
   "name" : "InterventionGoalReference",
   "title" : "Intervention Goal Reference",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Element"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Element"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Intervention Goal Reference",
-        "definition" : "Extension to link nursing interventions to the patient goals they are intended to achieve."
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
-            ]
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Intervention Goal Reference",
+      "definition" : "Extension to link nursing interventions to the patient goals they are intended to achieve."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"]
+      }]
+    }]
   }
 }
 

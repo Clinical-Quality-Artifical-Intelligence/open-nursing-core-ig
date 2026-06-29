@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,46 +7,51 @@
 
 <https://opennursingcoreig.com/ValueSet/acvpu-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "acvpu-vs"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet acvpu-vs</b></p><a name=\"acvpu-vs\"> </a><a name=\"hcacvpu-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/248234008\">248234008</a></td><td>Mentally alert</td></tr><tr><td><a href=\"http://snomed.info/id/300202002\">300202002</a></td><td>Responds to voice</td></tr><tr><td><a href=\"http://snomed.info/id/450847001\">450847001</a></td><td>Responds to pain</td></tr><tr><td><a href=\"http://snomed.info/id/422768004\">422768004</a></td><td>Unresponsive</td></tr><tr><td><a href=\"http://snomed.info/id/130987000\">130987000</a></td><td>Acute confusion</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "https://opennursingcoreig.com/ValueSet/acvpu-vs"^^xsd:anyURI ;
-     fhir:l <https://opennursingcoreig.com/ValueSet/acvpu-vs>
-  ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
-  fhir:name [ fhir:v "ACVPUValueSet"] ; # 
-  fhir:title [ fhir:v "ACVPU Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-27T09:30:37+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
-  fhir:description [ fhir:v "ACVPU consciousness level codes"] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [
-         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-         fhir:l <http://snomed.info/sct>
-       ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "248234008" ] ;
-         fhir:display [ fhir:v "Mentally alert" ]
-       ] [
-         fhir:code [ fhir:v "300202002" ] ;
-         fhir:display [ fhir:v "Responds to voice" ]
-       ] [
-         fhir:code [ fhir:v "450847001" ] ;
-         fhir:display [ fhir:v "Responds to pain" ]
-       ] [
-         fhir:code [ fhir:v "422768004" ] ;
-         fhir:display [ fhir:v "Unresponsive" ]
-       ] [
-         fhir:code [ fhir:v "130987000" ] ;
-         fhir:display [ fhir:v "Acute confusion" ]
-       ] )
-     ] )
-  ] . # 
+  fhir:Resource.id [ fhir:value "acvpu-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet acvpu-vs</b></p><a name=\"acvpu-vs\"> </a><a name=\"hcacvpu-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/248234008\">248234008</a></td><td>Mentally alert</td></tr><tr><td><a href=\"http://snomed.info/id/300202002\">300202002</a></td><td>Responds to voice</td></tr><tr><td><a href=\"http://snomed.info/id/450847001\">450847001</a></td><td>Responds to pain</td></tr><tr><td><a href=\"http://snomed.info/id/422768004\">422768004</a></td><td>Unresponsive</td></tr><tr><td><a href=\"http://snomed.info/id/130987000\">130987000</a></td><td>Acute confusion</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://opennursingcoreig.com/ValueSet/acvpu-vs"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "ACVPUValueSet"] ;
+  fhir:ValueSet.title [ fhir:value "ACVPU Value Set"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-29T21:13:26+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "The Open Nursing Community"] ;
+  fhir:ValueSet.description [ fhir:value "ACVPU consciousness level codes"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "248234008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mentally alert" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "300202002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Responds to voice" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "450847001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Responds to pain" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "422768004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unresponsive" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "130987000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acute confusion" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/ValueSet/acvpu-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

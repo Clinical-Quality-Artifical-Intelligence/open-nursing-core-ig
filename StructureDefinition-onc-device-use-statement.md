@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCDeviceUseStatement |
+| Active as of 2026-06-29 | *Computable Name*:ONCDeviceUseStatement |
 
  
 Documentation of mobility aids or other devices used by the patient. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* This Profile is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-device-use-statement)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-device-use-statement.json)
 
 ### Formal Views of Profile Content
 
@@ -41,69 +41,63 @@ Other representations of profile: [CSV](StructureDefinition-onc-device-use-state
   "name" : "ONCDeviceUseStatement",
   "title" : "Device Use Statement",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Documentation of mobility aids or other devices used by the patient.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "quick",
-      "uri" : "http://siframework.org/cqf",
-      "name" : "Quality Improvement and Clinical Knowledge (QUICK)"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "quick",
+    "uri" : "http://siframework.org/cqf",
+    "name" : "Quality Improvement and Clinical Knowledge (QUICK)"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "DeviceUseStatement",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "DeviceUseStatement",
-        "path" : "DeviceUseStatement"
-      },
-      {
-        "id" : "DeviceUseStatement.subject",
-        "path" : "DeviceUseStatement.subject",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
-          }
-        ]
-      },
-      {
-        "id" : "DeviceUseStatement.timing[x]",
-        "path" : "DeviceUseStatement.timing[x]",
-        "mustSupport" : true
-      },
-      {
-        "id" : "DeviceUseStatement.bodySite",
-        "path" : "DeviceUseStatement.bodySite",
-        "mustSupport" : true
-      }
-    ]
+    "element" : [{
+      "id" : "DeviceUseStatement",
+      "path" : "DeviceUseStatement"
+    },
+    {
+      "id" : "DeviceUseStatement.subject",
+      "path" : "DeviceUseStatement.subject",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }]
+    },
+    {
+      "id" : "DeviceUseStatement.timing[x]",
+      "path" : "DeviceUseStatement.timing[x]",
+      "mustSupport" : true
+    },
+    {
+      "id" : "DeviceUseStatement.bodySite",
+      "path" : "DeviceUseStatement.bodySite",
+      "mustSupport" : true
+    }]
   }
 }
 

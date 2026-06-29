@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity | *Version*:1.0.0 |
-| Draft as of 2026-01-27 | *Computable Name*:ONCMentalCapacity |
+| Draft as of 2026-06-29 | *Computable Name*:ONCMentalCapacity |
 
  
 Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice. 
@@ -18,7 +18,7 @@ Records the outcome of a Mental Capacity Assessment for a specific decision. Fun
 
 * Examples for this Profile: [Observation/example-mental-capacity](Observation-example-mental-capacity.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-mental-capacity)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-mental-capacity.json)
 
 ### Formal Views of Profile Content
 
@@ -41,100 +41,90 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
   "name" : "ONCMentalCapacity",
   "title" : "Mental Capacity Assessment",
   "status" : "draft",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
-        "id" : "Observation.category",
-        "path" : "Observation.category",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-              "code" : "exam"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "mca-assessment"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "short" : "Outcome (Capacity Present/Absent)",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-mca-vs"
-        }
-      },
-      {
-        "id" : "Observation.note",
-        "path" : "Observation.note",
-        "short" : "The specific decision being assessed (CRITICAL)",
-        "min" : 1,
-        "mustSupport" : true
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.category",
+      "path" : "Observation.category",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "exam"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "mca-assessment"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "short" : "Outcome (Capacity Present/Absent)",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-mca-vs"
+      }
+    },
+    {
+      "id" : "Observation.note",
+      "path" : "Observation.note",
+      "short" : "The specific decision being assessed (CRITICAL)",
+      "min" : 1,
+      "mustSupport" : true
+    }]
   }
 }
 

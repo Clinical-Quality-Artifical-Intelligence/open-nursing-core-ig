@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,64 +7,65 @@
 
 <https://opennursingcoreig.com/ConceptMap/onc-to-nanda> a fhir:ConceptMap ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "onc-to-nanda"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap onc-to-nanda</b></p><a name=\"onc-to-nanda\"> </a><a name=\"hconc-to-nanda\"> </a><p>Mapping from https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs to http://terminology.hl7.org/CodeSystem/nanda-i</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-onc-observation-codes.html\">ONC Observation Codes</a> to <code>http://terminology.hl7.org/CodeSystem/nanda-i</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>patient-story</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\" title=\"relatedto\">is related to</a></td><td>00053 (Social Isolation)</td></tr><tr><td>relational-engagement (Relational Engagement Score)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\" title=\"relatedto\">is related to</a></td><td>00054 (Risk for Loneliness)</td></tr><tr><td>skintone-observation</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#specializes\" title=\"specializes\">has specialization</a></td><td>399912005 (Wound Assessment)</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "https://opennursingcoreig.com/ConceptMap/onc-to-nanda"^^xsd:anyURI ;
-     fhir:l <https://opennursingcoreig.com/ConceptMap/onc-to-nanda>
-  ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
-  fhir:name [ fhir:v "ONCToNandaMapping"] ; # 
-  fhir:title [ fhir:v "Mapping ONC Relational Concepts to NANDA-I"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-27T09:30:37+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
-  fhir:description [ fhir:v "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses."] ; # 
-  fhir:source [
-     a fhir:Canonical ;
-     fhir:v "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs"^^xsd:anyURI ;
-     fhir:l <https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs>
-  ] ; # 
-  fhir:target [
-     a fhir:Canonical ;
-     fhir:v "http://terminology.hl7.org/CodeSystem/nanda-i"^^xsd:anyURI ;
-     fhir:l <http://terminology.hl7.org/CodeSystem/nanda-i>
-  ] ; # 
-  fhir:group ( [
-     fhir:source [
-       fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-       fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-     ] ;
-     fhir:target [
-       fhir:v "http://terminology.hl7.org/CodeSystem/nanda-i"^^xsd:anyURI ;
-       fhir:l <http://terminology.hl7.org/CodeSystem/nanda-i>
-     ] ;
-     fhir:element ( [
-       fhir:code [ fhir:v "patient-story" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "00053" ] ;
-         fhir:display [ fhir:v "Social Isolation" ] ;
-         fhir:equivalence [ fhir:v "relatedto" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "relational-engagement" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "00054" ] ;
-         fhir:display [ fhir:v "Risk for Loneliness" ] ;
-         fhir:equivalence [ fhir:v "relatedto" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "skintone-observation" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "399912005" ] ;
-         fhir:display [ fhir:v "Wound Assessment" ] ;
-         fhir:equivalence [ fhir:v "specializes" ]
-       ] )
-     ] )
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "onc-to-nanda"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap onc-to-nanda</b></p><a name=\"onc-to-nanda\"> </a><a name=\"hconc-to-nanda\"> </a><p>Mapping from https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs to http://terminology.hl7.org/CodeSystem/nanda-i</p><br/><p>Mapping from <a href=\"CodeSystem-onc-observation-codes.html\">ONC Observation Codes</a> to <code>http://terminology.hl7.org/CodeSystem/nanda-i</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>patient-story</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\" title=\"relatedto\">is related to</a></td><td>00053 (Social Isolation)</td></tr><tr><td>relational-engagement (Relational Engagement Score)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\" title=\"relatedto\">is related to</a></td><td>00054 (Risk for Loneliness)</td></tr><tr><td>skintone-observation</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#specializes\" title=\"specializes\">has specialization</a></td><td>399912005 (Wound Assessment)</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://opennursingcoreig.com/ConceptMap/onc-to-nanda"] ;
+  fhir:ConceptMap.version [ fhir:value "1.0.0"] ;
+  fhir:ConceptMap.name [ fhir:value "ONCToNandaMapping"] ;
+  fhir:ConceptMap.title [ fhir:value "Mapping ONC Relational Concepts to NANDA-I"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.date [ fhir:value "2026-06-29T21:13:26+00:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "The Open Nursing Community"] ;
+  fhir:ConceptMap.description [ fhir:value "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses."] ;
+  fhir:ConceptMap.sourceCanonical [
+     fhir:value "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs" ;
+     fhir:link <https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs>
+  ] ;
+  fhir:ConceptMap.targetCanonical [
+     fhir:value "http://terminology.hl7.org/CodeSystem/nanda-i" ;
+     fhir:link <http://terminology.hl7.org/CodeSystem/nanda-i>
+  ] ;
+  fhir:ConceptMap.group [
+     fhir:index 0 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "http://terminology.hl7.org/CodeSystem/nanda-i" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "patient-story" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "00053" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Social Isolation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "relational-engagement" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "00054" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Risk for Loneliness" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "skintone-observation" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "399912005" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Wound Assessment" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "specializes" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/ConceptMap/onc-to-nanda.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -32,42 +32,32 @@ Patient requires assistance with buttons and zippers due to arthritis.
   "resourceType" : "Condition",
   "id" : "ExampleNursingNeed-Dressing",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-nursing-need"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-nursing-need"]
   },
   "clinicalStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code" : "active"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
   },
   "verificationStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-        "code" : "confirmed"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
   },
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "nursing-needs"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "nursing-needs"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-patient"
   },
-  "note" : [
-    {
-      "text" : "Patient requires assistance with buttons and zippers due to arthritis."
-    }
-  ]
+  "note" : [{
+    "text" : "Patient requires assistance with buttons and zippers due to arthritis."
+  }]
 }
 
 ```

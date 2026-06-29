@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,100 +7,94 @@
 
 <https://opennursingcoreig.com/Observation/example-must-score> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "example-must-score"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-must-score"^^xsd:anyURI ;
-       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-must-score>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-must-score</b></p><a name=\"example-must-score\"> </a><a name=\"hcexample-must-score\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-must-score.html\">MUST Score (Malnutrition Universal Screening Tool)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-score}\">MUST Score</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>effective</b>: 2025-03-15 10:00:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: 1 {score}</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-bmi-score}\">MUST BMI Score</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-weight-loss-score}\">MUST Weight Loss Score</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-acute-disease-score}\">MUST Acute Disease Score</span></p><p><b>value</b>: 0</p></blockquote></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:status [ fhir:v "final"] ; # 
-  fhir:category ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
-       ] ;
-       fhir:code [ fhir:v "survey" ]
-     ] )
-  ] ) ; # 
-  fhir:code [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-       ] ;
-       fhir:code [ fhir:v "must-score" ] ;
-       fhir:display [ fhir:v "MUST Score" ]
-     ] )
-  ] ; # 
-  fhir:subject [
-     fhir:l <https://opennursingcoreig.com/Patient/patient-example-jane> ;
-     fhir:reference [ fhir:v "Patient/patient-example-jane" ]
-  ] ; # 
-  fhir:effective [
-     a fhir:DateTime ;
-     fhir:v "2025-03-15T10:00:00Z"^^xsd:dateTime
-  ] ; # 
-  fhir:performer ( [
-     fhir:l <https://opennursingcoreig.com/Practitioner/practitioner-example> ;
-     fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
-  ] ) ; # 
-  fhir:value [
-     a fhir:Quantity ;
-     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
-     fhir:unit [ fhir:v "{score}" ]
-  ] ; # 
-  fhir:component ( [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-         ] ;
-         fhir:code [ fhir:v "must-bmi-score" ] ;
-         fhir:display [ fhir:v "MUST BMI Score" ]
-       ] )
-     ] ;
-     fhir:value [
-       a fhir:Quantity ;
-       fhir:value [ fhir:v "0"^^xsd:decimal ]
+  fhir:Resource.id [ fhir:value "example-must-score"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-must-score" ;
+       fhir:index 0 ;
+       fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-must-score>
      ]
-  ] [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-         ] ;
-         fhir:code [ fhir:v "must-weight-loss-score" ] ;
-         fhir:display [ fhir:v "MUST Weight Loss Score" ]
-       ] )
-     ] ;
-     fhir:value [
-       a fhir:Quantity ;
-       fhir:value [ fhir:v "1"^^xsd:decimal ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-must-score</b></p><a name=\"example-must-score\"> </a><a name=\"hcexample-must-score\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-must-score.html\">MUST Score (Malnutrition Universal Screening Tool)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-score}\">MUST Score</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>effective</b>: 2025-03-15 10:00:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: 1 {score}</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-bmi-score}\">MUST BMI Score</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-weight-loss-score}\">MUST Weight Loss Score</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes must-acute-disease-score}\">MUST Acute Disease Score</span></p><p><b>value</b>: 0</p></blockquote></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "survey" ]
      ]
-  ] [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-         ] ;
-         fhir:code [ fhir:v "must-acute-disease-score" ] ;
-         fhir:display [ fhir:v "MUST Acute Disease Score" ]
-       ] )
-     ] ;
-     fhir:value [
-       a fhir:Quantity ;
-       fhir:value [ fhir:v "0"^^xsd:decimal ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+       fhir:Coding.code [ fhir:value "must-score" ] ;
+       fhir:Coding.display [ fhir:value "MUST Score" ]
      ]
-  ] ) . # 
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://opennursingcoreig.com/Patient/patient-example-jane> ;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-jane" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2025-03-15T10:00:00Z"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://opennursingcoreig.com/Practitioner/practitioner-example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/practitioner-example" ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "{score}" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+         fhir:Coding.code [ fhir:value "must-bmi-score" ] ;
+         fhir:Coding.display [ fhir:value "MUST BMI Score" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+         fhir:Coding.code [ fhir:value "must-weight-loss-score" ] ;
+         fhir:Coding.display [ fhir:value "MUST Weight Loss Score" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+         fhir:Coding.code [ fhir:value "must-acute-disease-score" ] ;
+         fhir:Coding.display [ fhir:value "MUST Acute Disease Score" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/Observation/example-must-score.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

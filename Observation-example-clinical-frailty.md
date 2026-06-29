@@ -36,51 +36,37 @@ Mildly Frail - slowing up, needs help with high order IADLs
   "resourceType" : "Observation",
   "id" : "example-clinical-frailty",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "cfs-score"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "cfs-score"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "cfs-5",
-        "display" : "Mildly Frail"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "cfs-5",
+      "display" : "Mildly Frail"
+    }]
   },
-  "note" : [
-    {
-      "text" : "Mildly Frail - slowing up, needs help with high order IADLs"
-    }
-  ]
+  "note" : [{
+    "text" : "Mildly Frail - slowing up, needs help with high order IADLs"
+  }]
 }
 
 ```

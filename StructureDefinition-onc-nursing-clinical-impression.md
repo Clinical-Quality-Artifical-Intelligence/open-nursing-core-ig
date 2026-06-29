@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-clinical-impression | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCNursingClinicalImpression |
+| Active as of 2026-06-29 | *Computable Name*:ONCNursingClinicalImpression |
 
  
 Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* This Profile is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nursing-clinical-impression)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-nursing-clinical-impression.json)
 
 ### Formal Views of Profile Content
 
@@ -41,152 +41,132 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-clinical
   "name" : "ONCNursingClinicalImpression",
   "title" : "ONC Nursing Clinical Impression",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "ClinicalImpression",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "ClinicalImpression",
-        "path" : "ClinicalImpression"
-      },
-      {
-        "id" : "ClinicalImpression.status",
-        "path" : "ClinicalImpression.status",
-        "mustSupport" : true
-      },
-      {
-        "id" : "ClinicalImpression.code",
-        "path" : "ClinicalImpression.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://snomed.info/sct",
-              "code" : "225358003",
-              "display" : "Nursing assessment"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "ClinicalImpression.subject",
-        "path" : "ClinicalImpression.subject",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
-          }
-        ]
-      },
-      {
-        "id" : "ClinicalImpression.encounter",
-        "path" : "ClinicalImpression.encounter",
-        "mustSupport" : true
-      },
-      {
-        "id" : "ClinicalImpression.effective[x]",
-        "path" : "ClinicalImpression.effective[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "ClinicalImpression.effective[x]:effectiveDateTime",
-        "path" : "ClinicalImpression.effective[x]",
-        "sliceName" : "effectiveDateTime",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "dateTime"
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "ClinicalImpression.assessor",
-        "path" : "ClinicalImpression.assessor",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner"]
-          }
-        ]
-      },
-      {
-        "id" : "ClinicalImpression.problem",
-        "path" : "ClinicalImpression.problem",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition"]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "ClinicalImpression.summary",
-        "path" : "ClinicalImpression.summary",
-        "mustSupport" : true
-      },
-      {
-        "id" : "ClinicalImpression.prognosisCodeableConcept",
-        "path" : "ClinicalImpression.prognosisCodeableConcept",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-prognosis-vs"
-        }
-      },
-      {
-        "id" : "ClinicalImpression.supportingInfo",
-        "path" : "ClinicalImpression.supportingInfo",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"
-            ]
-          }
-        ],
-        "mustSupport" : true
+    "element" : [{
+      "id" : "ClinicalImpression",
+      "path" : "ClinicalImpression"
+    },
+    {
+      "id" : "ClinicalImpression.status",
+      "path" : "ClinicalImpression.status",
+      "mustSupport" : true
+    },
+    {
+      "id" : "ClinicalImpression.code",
+      "path" : "ClinicalImpression.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "225358003",
+          "display" : "Nursing assessment"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "ClinicalImpression.subject",
+      "path" : "ClinicalImpression.subject",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }]
+    },
+    {
+      "id" : "ClinicalImpression.encounter",
+      "path" : "ClinicalImpression.encounter",
+      "mustSupport" : true
+    },
+    {
+      "id" : "ClinicalImpression.effective[x]",
+      "path" : "ClinicalImpression.effective[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "ClinicalImpression.effective[x]:effectiveDateTime",
+      "path" : "ClinicalImpression.effective[x]",
+      "sliceName" : "effectiveDateTime",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "ClinicalImpression.assessor",
+      "path" : "ClinicalImpression.assessor",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner"]
+      }]
+    },
+    {
+      "id" : "ClinicalImpression.problem",
+      "path" : "ClinicalImpression.problem",
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "ClinicalImpression.summary",
+      "path" : "ClinicalImpression.summary",
+      "mustSupport" : true
+    },
+    {
+      "id" : "ClinicalImpression.prognosisCodeableConcept",
+      "path" : "ClinicalImpression.prognosisCodeableConcept",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-prognosis-vs"
+      }
+    },
+    {
+      "id" : "ClinicalImpression.supportingInfo",
+      "path" : "ClinicalImpression.supportingInfo",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"]
+      }],
+      "mustSupport" : true
+    }]
   }
 }
 

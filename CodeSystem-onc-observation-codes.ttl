@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,569 +7,707 @@
 
 <https://opennursingcoreig.com/CodeSystem/onc-observation-codes> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "onc-observation-codes"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onc-observation-codes</b></p><a name=\"onc-observation-codes\"> </a><a name=\"hconc-observation-codes\"> </a><p>This  code system <code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mst-score<a name=\"onc-observation-codes-mst-score\"> </a></td><td>Monk Skin Tone Score</td><td>Assessment of skin tone using the Monk Skin Tone Scale</td></tr><tr><td style=\"white-space:nowrap\">waterlow-score<a name=\"onc-observation-codes-waterlow-score\"> </a></td><td>Waterlow Score</td><td>Total score for Waterlow pressure ulcer risk assessment</td></tr><tr><td style=\"white-space:nowrap\">must-score<a name=\"onc-observation-codes-must-score\"> </a></td><td>MUST Score</td><td>Malnutrition Universal Screening Tool total score</td></tr><tr><td style=\"white-space:nowrap\">must-bmi-score<a name=\"onc-observation-codes-must-bmi-score\"> </a></td><td>MUST BMI Score</td><td>Malnutrition Universal Screening Tool BMI score</td></tr><tr><td style=\"white-space:nowrap\">must-weight-loss-score<a name=\"onc-observation-codes-must-weight-loss-score\"> </a></td><td>MUST Weight Loss Score</td><td>Malnutrition Universal Screening Tool weight loss score</td></tr><tr><td style=\"white-space:nowrap\">must-acute-disease-score<a name=\"onc-observation-codes-must-acute-disease-score\"> </a></td><td>MUST Acute Disease Score</td><td>Malnutrition Universal Screening Tool acute disease effect score</td></tr><tr><td style=\"white-space:nowrap\">braden-total-score<a name=\"onc-observation-codes-braden-total-score\"> </a></td><td>Braden Total Score</td><td>Braden scale total score</td></tr><tr><td style=\"white-space:nowrap\">braden-sensory<a name=\"onc-observation-codes-braden-sensory\"> </a></td><td>Braden Sensory Perception</td><td>Sensory perception Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-moisture<a name=\"onc-observation-codes-braden-moisture\"> </a></td><td>Braden Moisture</td><td>Moisture Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-activity<a name=\"onc-observation-codes-braden-activity\"> </a></td><td>Braden Activity</td><td>Activity Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-mobility<a name=\"onc-observation-codes-braden-mobility\"> </a></td><td>Braden Mobility</td><td>Mobility Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-nutrition<a name=\"onc-observation-codes-braden-nutrition\"> </a></td><td>Braden Nutrition</td><td>Nutrition Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-friction<a name=\"onc-observation-codes-braden-friction\"> </a></td><td>Braden Friction/Shear</td><td>Friction and shear Braden scale</td></tr><tr><td style=\"white-space:nowrap\">barthel-score<a name=\"onc-observation-codes-barthel-score\"> </a></td><td>Barthel Index Score</td><td>Total score for Barthel Index assessment</td></tr><tr><td style=\"white-space:nowrap\">news2-score<a name=\"onc-observation-codes-news2-score\"> </a></td><td>NEWS2 Score</td><td>National Early Warning Score 2 Total Score</td></tr><tr><td style=\"white-space:nowrap\">news2-subscore<a name=\"onc-observation-codes-news2-subscore\"> </a></td><td>NEWS2 Sub-score</td><td>Sub-score for NEWS2 parameter</td></tr><tr><td style=\"white-space:nowrap\">wound-stage<a name=\"onc-observation-codes-wound-stage\"> </a></td><td>Wound Stage</td><td>Stage of the wound</td></tr><tr><td style=\"white-space:nowrap\">stage-1<a name=\"onc-observation-codes-stage-1\"> </a></td><td>Stage 1</td><td>Stage 1 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">stage-2<a name=\"onc-observation-codes-stage-2\"> </a></td><td>Stage 2</td><td>Stage 2 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">stage-3<a name=\"onc-observation-codes-stage-3\"> </a></td><td>Stage 3</td><td>Stage 3 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">stage-4<a name=\"onc-observation-codes-stage-4\"> </a></td><td>Stage 4</td><td>Stage 4 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">unstageable<a name=\"onc-observation-codes-unstageable\"> </a></td><td>Unstageable</td><td>Unstageable pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">deep-tissue<a name=\"onc-observation-codes-deep-tissue\"> </a></td><td>Deep Tissue Injury</td><td>Deep tissue injury</td></tr><tr><td style=\"white-space:nowrap\">risk-falls<a name=\"onc-observation-codes-risk-falls\"> </a></td><td>Risk of Falls</td><td>Risk of falls diagnosis</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-1<a name=\"onc-observation-codes-fitzpatrick-1\"> </a></td><td>Type I</td><td>Pale white; always burns, never tans</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-2<a name=\"onc-observation-codes-fitzpatrick-2\"> </a></td><td>Type II</td><td>White; usually burns, tans with difficulty</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-3<a name=\"onc-observation-codes-fitzpatrick-3\"> </a></td><td>Type III</td><td>Cream white; sometimes mild burn, gradually tans</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-4<a name=\"onc-observation-codes-fitzpatrick-4\"> </a></td><td>Type IV</td><td>Moderate brown; rarely burns, tans with ease</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-5<a name=\"onc-observation-codes-fitzpatrick-5\"> </a></td><td>Type V</td><td>Dark brown; very rarely burns, tans very easily</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-6<a name=\"onc-observation-codes-fitzpatrick-6\"> </a></td><td>Type VI</td><td>Deeply pigmented dark brown to black; never burns, tans very easily</td></tr><tr><td style=\"white-space:nowrap\">what-matters<a name=\"onc-observation-codes-what-matters\"> </a></td><td>What Matters to Me</td><td>Patient-identified priorities and non-clinical goals</td></tr><tr><td style=\"white-space:nowrap\">patient-story<a name=\"onc-observation-codes-patient-story\"> </a></td><td>Patient Story</td><td>Narrative summary of patient background, preferences, and autobiography</td></tr><tr><td style=\"white-space:nowrap\">relational-engagement<a name=\"onc-observation-codes-relational-engagement\"> </a></td><td>Relational Engagement Score</td><td>Assessment of the quality of nurse-patient engagement (1-5)</td></tr><tr><td style=\"white-space:nowrap\">cfs-score<a name=\"onc-observation-codes-cfs-score\"> </a></td><td>Clinical Frailty Scale Score</td><td>Total score for Rockwood Clinical Frailty Scale</td></tr><tr><td style=\"white-space:nowrap\">cfs-1<a name=\"onc-observation-codes-cfs-1\"> </a></td><td>Very Fit</td><td>Robus, active, energetic and motivated</td></tr><tr><td style=\"white-space:nowrap\">cfs-2<a name=\"onc-observation-codes-cfs-2\"> </a></td><td>Well</td><td>No active disease symptoms but less fit than category 1</td></tr><tr><td style=\"white-space:nowrap\">cfs-3<a name=\"onc-observation-codes-cfs-3\"> </a></td><td>Managing Well</td><td>Medical problems are well controlled, but not regularly active</td></tr><tr><td style=\"white-space:nowrap\">cfs-4<a name=\"onc-observation-codes-cfs-4\"> </a></td><td>Vulnerable</td><td>Not dependent for daily help, but symptoms limit activities</td></tr><tr><td style=\"white-space:nowrap\">cfs-5<a name=\"onc-observation-codes-cfs-5\"> </a></td><td>Mildly Frail</td><td>Need help with high order IADLs (finances, transportation, heavy housework)</td></tr><tr><td style=\"white-space:nowrap\">cfs-6<a name=\"onc-observation-codes-cfs-6\"> </a></td><td>Moderately Frail</td><td>Need help with all outside activities and some housekeeping</td></tr><tr><td style=\"white-space:nowrap\">cfs-7<a name=\"onc-observation-codes-cfs-7\"> </a></td><td>Severely Frail</td><td>Completely dependent for personal care</td></tr><tr><td style=\"white-space:nowrap\">cfs-8<a name=\"onc-observation-codes-cfs-8\"> </a></td><td>Very Severely Frail</td><td>Completely dependent, approaching end of life</td></tr><tr><td style=\"white-space:nowrap\">cfs-9<a name=\"onc-observation-codes-cfs-9\"> </a></td><td>Terminally Ill</td><td>Approaching the end of life (life expectancy &lt;6 months)</td></tr><tr><td style=\"white-space:nowrap\">4at-score<a name=\"onc-observation-codes-4at-score\"> </a></td><td>4AT Delirium Score</td><td>Total score for 4AT assessment</td></tr><tr><td style=\"white-space:nowrap\">4at-alertness<a name=\"onc-observation-codes-4at-alertness\"> </a></td><td>Alertness</td><td>4AT Item 1: Alertness</td></tr><tr><td style=\"white-space:nowrap\">4at-amt4<a name=\"onc-observation-codes-4at-amt4\"> </a></td><td>AMT4 Score</td><td>4AT Item 2: Abbreviated Mental Test 4</td></tr><tr><td style=\"white-space:nowrap\">4at-attention<a name=\"onc-observation-codes-4at-attention\"> </a></td><td>Attention</td><td>4AT Item 3: Attention (Months Backwards)</td></tr><tr><td style=\"white-space:nowrap\">4at-acute-change<a name=\"onc-observation-codes-4at-acute-change\"> </a></td><td>Acute Change</td><td>4AT Item 4: Acute Change or Fluctuating Course</td></tr><tr><td style=\"white-space:nowrap\">reasonable-adjustment<a name=\"onc-observation-codes-reasonable-adjustment\"> </a></td><td>Reasonable Adjustment</td><td>Requirement for adjustment to care delivery (Equality Act)</td></tr><tr><td style=\"white-space:nowrap\">mca-assessment<a name=\"onc-observation-codes-mca-assessment\"> </a></td><td>Mental Capacity Assessment</td><td>Assessment of capacity to make a specific decision</td></tr><tr><td style=\"white-space:nowrap\">capacity-present<a name=\"onc-observation-codes-capacity-present\"> </a></td><td>Capacity Present</td><td>Patient has capacity for this decision</td></tr><tr><td style=\"white-space:nowrap\">capacity-absent<a name=\"onc-observation-codes-capacity-absent\"> </a></td><td>Capacity Absent</td><td>Patient lacks capacity for this decision</td></tr><tr><td style=\"white-space:nowrap\">best-interest<a name=\"onc-observation-codes-best-interest\"> </a></td><td>Best Interest Decision</td><td>Decision made in patient's best interest</td></tr><tr><td style=\"white-space:nowrap\">bristol-score<a name=\"onc-observation-codes-bristol-score\"> </a></td><td>Bristol Stool Score</td><td>Bristol Stool Form Scale Score (1-7)</td></tr><tr><td style=\"white-space:nowrap\">bristol-1<a name=\"onc-observation-codes-bristol-1\"> </a></td><td>Type 1</td><td>Separate hard lumps, like nuts (hard to pass)</td></tr><tr><td style=\"white-space:nowrap\">bristol-2<a name=\"onc-observation-codes-bristol-2\"> </a></td><td>Type 2</td><td>Sausage-shaped but lumpy</td></tr><tr><td style=\"white-space:nowrap\">bristol-3<a name=\"onc-observation-codes-bristol-3\"> </a></td><td>Type 3</td><td>Like a sausage but with cracks on its surface</td></tr><tr><td style=\"white-space:nowrap\">bristol-4<a name=\"onc-observation-codes-bristol-4\"> </a></td><td>Type 4</td><td>Like a sausage or snake, smooth and soft</td></tr><tr><td style=\"white-space:nowrap\">bristol-5<a name=\"onc-observation-codes-bristol-5\"> </a></td><td>Type 5</td><td>Soft blobs with clear-cut edges (passed easily)</td></tr><tr><td style=\"white-space:nowrap\">bristol-6<a name=\"onc-observation-codes-bristol-6\"> </a></td><td>Type 6</td><td>Fluffy pieces with ragged edges, a mushy stool</td></tr><tr><td style=\"white-space:nowrap\">bristol-7<a name=\"onc-observation-codes-bristol-7\"> </a></td><td>Type 7</td><td>Watery, no solid pieces. Entirely liquid</td></tr><tr><td style=\"white-space:nowrap\">adpie-a<a name=\"onc-observation-codes-adpie-a\"> </a></td><td>Assessment</td><td>Assessment phase of the nursing process</td></tr><tr><td style=\"white-space:nowrap\">adpie-d<a name=\"onc-observation-codes-adpie-d\"> </a></td><td>Diagnosis</td><td>Diagnosis phase of the nursing process</td></tr><tr><td style=\"white-space:nowrap\">adpie-p<a name=\"onc-observation-codes-adpie-p\"> </a></td><td>Planning</td><td>Planning phase of the nursing process</td></tr><tr><td style=\"white-space:nowrap\">adpie-i<a name=\"onc-observation-codes-adpie-i\"> </a></td><td>Implementation</td><td>Implementation phase of the nursing process</td></tr><tr><td style=\"white-space:nowrap\">adpie-e<a name=\"onc-observation-codes-adpie-e\"> </a></td><td>Evaluation</td><td>Evaluation phase of the nursing process</td></tr><tr><td style=\"white-space:nowrap\">empathy-1<a name=\"onc-observation-codes-empathy-1\"> </a></td><td>Low Empathy</td><td>Task-focused interaction with minimal person-centred engagement.</td></tr><tr><td style=\"white-space:nowrap\">empathy-2<a name=\"onc-observation-codes-empathy-2\"> </a></td><td>Basic Empathy</td><td>Professional interaction with patient identity acknowledged.</td></tr><tr><td style=\"white-space:nowrap\">empathy-3<a name=\"onc-observation-codes-empathy-3\"> </a></td><td>Moderate Empathy</td><td>Active relational engagement with shared decision making.</td></tr><tr><td style=\"white-space:nowrap\">empathy-4<a name=\"onc-observation-codes-empathy-4\"> </a></td><td>High Empathy</td><td>Authentic partnership with deep understanding of patient experience.</td></tr><tr><td style=\"white-space:nowrap\">empathy-5<a name=\"onc-observation-codes-empathy-5\"> </a></td><td>Relational Excellence</td><td>Flourishing partnership with total alignment on 'What Matters to Me'.</td></tr><tr><td style=\"white-space:nowrap\">empathy-index<a name=\"onc-observation-codes-empathy-index\"> </a></td><td>ONC Empathy Index</td><td>Formal assessment of the depth of therapeutic empathy</td></tr><tr><td style=\"white-space:nowrap\">abbey-score<a name=\"onc-observation-codes-abbey-score\"> </a></td><td>Abbey Pain Scale Score</td><td>Total Abbey Pain Scale Score (0-100+ but usually 0-18+)</td></tr><tr><td style=\"white-space:nowrap\">abbey-vocalization<a name=\"onc-observation-codes-abbey-vocalization\"> </a></td><td>Vocalization</td><td>Whimpering, groaning, crying</td></tr><tr><td style=\"white-space:nowrap\">abbey-facial-expression<a name=\"onc-observation-codes-abbey-facial-expression\"> </a></td><td>Facial Expression</td><td>Looking tense, frowning, grimacing, looking frightened</td></tr><tr><td style=\"white-space:nowrap\">abbey-body-language<a name=\"onc-observation-codes-abbey-body-language\"> </a></td><td>Body Language</td><td>Fidgeting, rocking, guarding part of body, withdrawn</td></tr><tr><td style=\"white-space:nowrap\">abbey-behavioral-change<a name=\"onc-observation-codes-abbey-behavioral-change\"> </a></td><td>Behavioral Change</td><td>Increased confusion, refusing to eat, alteration in usual pattern</td></tr><tr><td style=\"white-space:nowrap\">abbey-psychological-change<a name=\"onc-observation-codes-abbey-psychological-change\"> </a></td><td>Psychological Change</td><td>Temperature, pulse, blood pressure changes, perspiration, pallor</td></tr><tr><td style=\"white-space:nowrap\">abbey-physical-changes<a name=\"onc-observation-codes-abbey-physical-changes\"> </a></td><td>Physical Changes</td><td>Skin tears, pressure areas, arthritis, contractures, previous injuries</td></tr><tr><td style=\"white-space:nowrap\">fluid-input-total<a name=\"onc-observation-codes-fluid-input-total\"> </a></td><td>Total Fluid Input</td><td>Total fluid input over specified period (e.g. 24h)</td></tr><tr><td style=\"white-space:nowrap\">fluid-output-total<a name=\"onc-observation-codes-fluid-output-total\"> </a></td><td>Total Fluid Output</td><td>Total fluid output over specified period (e.g. 24h)</td></tr><tr><td style=\"white-space:nowrap\">fluid-balance<a name=\"onc-observation-codes-fluid-balance\"> </a></td><td>Fluid Balance</td><td>Total Input minus Total Output</td></tr><tr><td style=\"white-space:nowrap\">urine-output<a name=\"onc-observation-codes-urine-output\"> </a></td><td>Urine Output</td><td>Volume of urine passed</td></tr><tr><td style=\"white-space:nowrap\">abc-chart<a name=\"onc-observation-codes-abc-chart\"> </a></td><td>ABC Chart</td><td>Antecedent-Behaviour-Consequence Chart for PBS</td></tr><tr><td style=\"white-space:nowrap\">abc-antecedent<a name=\"onc-observation-codes-abc-antecedent\"> </a></td><td>Antecedent</td><td>What happened immediately before the behaviour (triggers)</td></tr><tr><td style=\"white-space:nowrap\">abc-behaviour<a name=\"onc-observation-codes-abc-behaviour\"> </a></td><td>Behaviour</td><td>Description of the behaviour itself (observable actions)</td></tr><tr><td style=\"white-space:nowrap\">abc-consequence<a name=\"onc-observation-codes-abc-consequence\"> </a></td><td>Consequence</td><td>What happened immediately after (response/outcome)</td></tr><tr><td style=\"white-space:nowrap\">abc-function<a name=\"onc-observation-codes-abc-function\"> </a></td><td>Function of Behaviour</td><td>Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)</td></tr><tr><td style=\"white-space:nowrap\">abc-duration<a name=\"onc-observation-codes-abc-duration\"> </a></td><td>Duration</td><td>Duration of the episode</td></tr><tr><td style=\"white-space:nowrap\">abc-intensity<a name=\"onc-observation-codes-abc-intensity\"> </a></td><td>Intensity</td><td>Intensity of the behaviour (1-10)</td></tr><tr><td style=\"white-space:nowrap\">oral-health-score<a name=\"onc-observation-codes-oral-health-score\"> </a></td><td>Oral Health Score</td><td>Total Oral Health Assessment Score</td></tr><tr><td style=\"white-space:nowrap\">oral-lips<a name=\"onc-observation-codes-oral-lips\"> </a></td><td>Lips</td><td>Condition of lips (Pink/Moist vs Dry/Cracked)</td></tr><tr><td style=\"white-space:nowrap\">oral-tongue<a name=\"onc-observation-codes-oral-tongue\"> </a></td><td>Tongue</td><td>Condition of tongue (Pink/Moist vs Coated/Red)</td></tr><tr><td style=\"white-space:nowrap\">oral-gums<a name=\"onc-observation-codes-oral-gums\"> </a></td><td>Gums</td><td>Condition of gums (Pink/Firm vs Bleeding/Receding)</td></tr><tr><td style=\"white-space:nowrap\">oral-teeth<a name=\"onc-observation-codes-oral-teeth\"> </a></td><td>Teeth/Dentures</td><td>Condition of teeth or dentures (Clean/Intact vs Decayed/Broken/Loose)</td></tr><tr><td style=\"white-space:nowrap\">oral-saliva<a name=\"onc-observation-codes-oral-saliva\"> </a></td><td>Saliva</td><td>Saliva quality (Moist/Watery vs Thick/Sticky/Absent)</td></tr><tr><td style=\"white-space:nowrap\">seizure-record<a name=\"onc-observation-codes-seizure-record\"> </a></td><td>Seizure Record</td><td>Record of a seizure event</td></tr><tr><td style=\"white-space:nowrap\">seizure-type<a name=\"onc-observation-codes-seizure-type\"> </a></td><td>Seizure Type</td><td>Type of seizure (Tonic-Clonic, Absence, Focal, etc)</td></tr><tr><td style=\"white-space:nowrap\">seizure-duration<a name=\"onc-observation-codes-seizure-duration\"> </a></td><td>Seizure Duration</td><td>Duration of the active seizure phase</td></tr><tr><td style=\"white-space:nowrap\">seizure-recovery<a name=\"onc-observation-codes-seizure-recovery\"> </a></td><td>Recovery Phase</td><td>Duration/Description of post-ictal recovery</td></tr><tr><td style=\"white-space:nowrap\">seizure-trigger<a name=\"onc-observation-codes-seizure-trigger\"> </a></td><td>Trigger</td><td>Suspected trigger for the seizure</td></tr><tr><td style=\"white-space:nowrap\">sleep-record<a name=\"onc-observation-codes-sleep-record\"> </a></td><td>Sleep Record</td><td>Record of a sleep period</td></tr><tr><td style=\"white-space:nowrap\">sleep-quality<a name=\"onc-observation-codes-sleep-quality\"> </a></td><td>Sleep Quality</td><td>Subjective or observed quality of sleep</td></tr><tr><td style=\"white-space:nowrap\">sleep-hours<a name=\"onc-observation-codes-sleep-hours\"> </a></td><td>Hours Slept</td><td>Total hours of sleep achieved</td></tr><tr><td style=\"white-space:nowrap\">sleep-disturbances<a name=\"onc-observation-codes-sleep-disturbances\"> </a></td><td>Disturbances</td><td>Number or description of distinct awakenings</td></tr><tr><td style=\"white-space:nowrap\">urinalysis-panel<a name=\"onc-observation-codes-urinalysis-panel\"> </a></td><td>Urinalysis Panel</td><td>Urine Dipstick Test Panel</td></tr><tr><td style=\"white-space:nowrap\">ua-leukocytes<a name=\"onc-observation-codes-ua-leukocytes\"> </a></td><td>Leukocytes</td><td>Leukocytes (WBCs) in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-nitrites<a name=\"onc-observation-codes-ua-nitrites\"> </a></td><td>Nitrites</td><td>Nitrites in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-protein<a name=\"onc-observation-codes-ua-protein\"> </a></td><td>Protein</td><td>Protein in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-blood<a name=\"onc-observation-codes-ua-blood\"> </a></td><td>Blood</td><td>Blood (Hemoglobin) in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-glucose<a name=\"onc-observation-codes-ua-glucose\"> </a></td><td>Glucose</td><td>Glucose in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-ketones<a name=\"onc-observation-codes-ua-ketones\"> </a></td><td>Ketones</td><td>Ketones in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-ph<a name=\"onc-observation-codes-ua-ph\"> </a></td><td>pH</td><td>Urine pH Level</td></tr><tr><td style=\"white-space:nowrap\">ua-sg<a name=\"onc-observation-codes-ua-sg\"> </a></td><td>Specific Gravity</td><td>Urine Specific Gravity</td></tr><tr><td style=\"white-space:nowrap\">mca-present<a name=\"onc-observation-codes-mca-present\"> </a></td><td>Capacity Present</td><td>Patient has capacity for this decision</td></tr><tr><td style=\"white-space:nowrap\">4at-change-no<a name=\"onc-observation-codes-4at-change-no\"> </a></td><td>No Acute Change</td><td>No indication of acute change or fluctuating course</td></tr><tr><td style=\"white-space:nowrap\">4at-amt4-1error<a name=\"onc-observation-codes-4at-amt4-1error\"> </a></td><td>1 Error</td><td>1 error in AMT4 test</td></tr><tr><td style=\"white-space:nowrap\">4at-attention-gt7<a name=\"onc-observation-codes-4at-attention-gt7\"> </a></td><td>Months Backwards &lt; 7 months</td><td>Less than 7 months correctly recited backwards</td></tr><tr><td style=\"white-space:nowrap\">4at-alert-normal<a name=\"onc-observation-codes-4at-alert-normal\"> </a></td><td>Normal Alertness</td><td>Patient is fully alert</td></tr><tr><td style=\"white-space:nowrap\">continence-assessment<a name=\"onc-observation-codes-continence-assessment\"> </a></td><td>Continence Assessment</td><td>Assessment of bladder and bowel control</td></tr><tr><td style=\"white-space:nowrap\">bladder-assessment<a name=\"onc-observation-codes-bladder-assessment\"> </a></td><td>Bladder Assessment</td><td>Detailed assessment of bladder function</td></tr><tr><td style=\"white-space:nowrap\">bowel-assessment<a name=\"onc-observation-codes-bowel-assessment\"> </a></td><td>Bowel Assessment</td><td>Detailed assessment of bowel function</td></tr><tr><td style=\"white-space:nowrap\">catheter-care<a name=\"onc-observation-codes-catheter-care\"> </a></td><td>Catheter Care Interaction</td><td>Nursing interaction related to catheter care</td></tr><tr><td style=\"white-space:nowrap\">oral-intake<a name=\"onc-observation-codes-oral-intake\"> </a></td><td>Oral Intake Assessment</td><td>Assessment of food and fluid intake capability</td></tr><tr><td style=\"white-space:nowrap\">swallowing<a name=\"onc-observation-codes-swallowing\"> </a></td><td>Swallowing Assessment</td><td>Assessment of swallowing ability (dysphagia risk)</td></tr><tr><td style=\"white-space:nowrap\">dietary-requirements<a name=\"onc-observation-codes-dietary-requirements\"> </a></td><td>Dietary Requirements</td><td>Specific dietary needs or restrictions</td></tr><tr><td style=\"white-space:nowrap\">mobility<a name=\"onc-observation-codes-mobility\"> </a></td><td>Mobility Assessment</td><td>Assessment of physical mobility and transfer ability</td></tr><tr><td style=\"white-space:nowrap\">device-use<a name=\"onc-observation-codes-device-use\"> </a></td><td>Device/Aid Usage</td><td>Observation of device or mobility aid usage</td></tr><tr><td style=\"white-space:nowrap\">hygiene-needs<a name=\"onc-observation-codes-hygiene-needs\"> </a></td><td>Personal Hygiene Needs</td><td>Assessment of assistance required for hygiene</td></tr><tr><td style=\"white-space:nowrap\">oral-care<a name=\"onc-observation-codes-oral-care\"> </a></td><td>Oral Care Needs</td><td>Assessment of oral health and care requirements</td></tr><tr><td style=\"white-space:nowrap\">medication-ability<a name=\"onc-observation-codes-medication-ability\"> </a></td><td>Medication Management Ability</td><td>Ability to manage own medications</td></tr><tr><td style=\"white-space:nowrap\">medication-self-admin<a name=\"onc-observation-codes-medication-self-admin\"> </a></td><td>Medication Self-Administration</td><td>Observation of self-administration technique</td></tr><tr><td style=\"white-space:nowrap\">dressing-assessment<a name=\"onc-observation-codes-dressing-assessment\"> </a></td><td>Dressing Assessment</td><td>Assessment of ability to dress and undress</td></tr><tr><td style=\"white-space:nowrap\">skin-assessment<a name=\"onc-observation-codes-skin-assessment\"> </a></td><td>Skin Assessment</td><td>Detailed assessment of skin condition and integrity</td></tr><tr><td style=\"white-space:nowrap\">nursing-needs<a name=\"onc-observation-codes-nursing-needs\"> </a></td><td>Nursing Care Needs</td><td>Identified nursing care needs</td></tr><tr><td style=\"white-space:nowrap\">nursing-strengths<a name=\"onc-observation-codes-nursing-strengths\"> </a></td><td>Nursing Strengths</td><td>Identified patient strengths and capabilities</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-     fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-  ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
-  fhir:name [ fhir:v "ONCObservationCodes"] ; # 
-  fhir:title [ fhir:v "ONC Observation Codes"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-27T09:30:37+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
-  fhir:description [ fhir:v "Custom observation codes for Open Nursing Core"] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "136"^^xsd:nonNegativeInteger] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "mst-score" ] ;
-     fhir:display [ fhir:v "Monk Skin Tone Score" ] ;
-     fhir:definition [ fhir:v "Assessment of skin tone using the Monk Skin Tone Scale" ]
-  ] [
-     fhir:code [ fhir:v "waterlow-score" ] ;
-     fhir:display [ fhir:v "Waterlow Score" ] ;
-     fhir:definition [ fhir:v "Total score for Waterlow pressure ulcer risk assessment" ]
-  ] [
-     fhir:code [ fhir:v "must-score" ] ;
-     fhir:display [ fhir:v "MUST Score" ] ;
-     fhir:definition [ fhir:v "Malnutrition Universal Screening Tool total score" ]
-  ] [
-     fhir:code [ fhir:v "must-bmi-score" ] ;
-     fhir:display [ fhir:v "MUST BMI Score" ] ;
-     fhir:definition [ fhir:v "Malnutrition Universal Screening Tool BMI score" ]
-  ] [
-     fhir:code [ fhir:v "must-weight-loss-score" ] ;
-     fhir:display [ fhir:v "MUST Weight Loss Score" ] ;
-     fhir:definition [ fhir:v "Malnutrition Universal Screening Tool weight loss score" ]
-  ] [
-     fhir:code [ fhir:v "must-acute-disease-score" ] ;
-     fhir:display [ fhir:v "MUST Acute Disease Score" ] ;
-     fhir:definition [ fhir:v "Malnutrition Universal Screening Tool acute disease effect score" ]
-  ] [
-     fhir:code [ fhir:v "braden-total-score" ] ;
-     fhir:display [ fhir:v "Braden Total Score" ] ;
-     fhir:definition [ fhir:v "Braden scale total score" ]
-  ] [
-     fhir:code [ fhir:v "braden-sensory" ] ;
-     fhir:display [ fhir:v "Braden Sensory Perception" ] ;
-     fhir:definition [ fhir:v "Sensory perception Braden scale" ]
-  ] [
-     fhir:code [ fhir:v "braden-moisture" ] ;
-     fhir:display [ fhir:v "Braden Moisture" ] ;
-     fhir:definition [ fhir:v "Moisture Braden scale" ]
-  ] [
-     fhir:code [ fhir:v "braden-activity" ] ;
-     fhir:display [ fhir:v "Braden Activity" ] ;
-     fhir:definition [ fhir:v "Activity Braden scale" ]
-  ] [
-     fhir:code [ fhir:v "braden-mobility" ] ;
-     fhir:display [ fhir:v "Braden Mobility" ] ;
-     fhir:definition [ fhir:v "Mobility Braden scale" ]
-  ] [
-     fhir:code [ fhir:v "braden-nutrition" ] ;
-     fhir:display [ fhir:v "Braden Nutrition" ] ;
-     fhir:definition [ fhir:v "Nutrition Braden scale" ]
-  ] [
-     fhir:code [ fhir:v "braden-friction" ] ;
-     fhir:display [ fhir:v "Braden Friction/Shear" ] ;
-     fhir:definition [ fhir:v "Friction and shear Braden scale" ]
-  ] [
-     fhir:code [ fhir:v "barthel-score" ] ;
-     fhir:display [ fhir:v "Barthel Index Score" ] ;
-     fhir:definition [ fhir:v "Total score for Barthel Index assessment" ]
-  ] [
-     fhir:code [ fhir:v "news2-score" ] ;
-     fhir:display [ fhir:v "NEWS2 Score" ] ;
-     fhir:definition [ fhir:v "National Early Warning Score 2 Total Score" ]
-  ] [
-     fhir:code [ fhir:v "news2-subscore" ] ;
-     fhir:display [ fhir:v "NEWS2 Sub-score" ] ;
-     fhir:definition [ fhir:v "Sub-score for NEWS2 parameter" ]
-  ] [
-     fhir:code [ fhir:v "wound-stage" ] ;
-     fhir:display [ fhir:v "Wound Stage" ] ;
-     fhir:definition [ fhir:v "Stage of the wound" ]
-  ] [
-     fhir:code [ fhir:v "stage-1" ] ;
-     fhir:display [ fhir:v "Stage 1" ] ;
-     fhir:definition [ fhir:v "Stage 1 pressure ulcer" ]
-  ] [
-     fhir:code [ fhir:v "stage-2" ] ;
-     fhir:display [ fhir:v "Stage 2" ] ;
-     fhir:definition [ fhir:v "Stage 2 pressure ulcer" ]
-  ] [
-     fhir:code [ fhir:v "stage-3" ] ;
-     fhir:display [ fhir:v "Stage 3" ] ;
-     fhir:definition [ fhir:v "Stage 3 pressure ulcer" ]
-  ] [
-     fhir:code [ fhir:v "stage-4" ] ;
-     fhir:display [ fhir:v "Stage 4" ] ;
-     fhir:definition [ fhir:v "Stage 4 pressure ulcer" ]
-  ] [
-     fhir:code [ fhir:v "unstageable" ] ;
-     fhir:display [ fhir:v "Unstageable" ] ;
-     fhir:definition [ fhir:v "Unstageable pressure ulcer" ]
-  ] [
-     fhir:code [ fhir:v "deep-tissue" ] ;
-     fhir:display [ fhir:v "Deep Tissue Injury" ] ;
-     fhir:definition [ fhir:v "Deep tissue injury" ]
-  ] [
-     fhir:code [ fhir:v "risk-falls" ] ;
-     fhir:display [ fhir:v "Risk of Falls" ] ;
-     fhir:definition [ fhir:v "Risk of falls diagnosis" ]
-  ] [
-     fhir:code [ fhir:v "fitzpatrick-1" ] ;
-     fhir:display [ fhir:v "Type I" ] ;
-     fhir:definition [ fhir:v "Pale white; always burns, never tans" ]
-  ] [
-     fhir:code [ fhir:v "fitzpatrick-2" ] ;
-     fhir:display [ fhir:v "Type II" ] ;
-     fhir:definition [ fhir:v "White; usually burns, tans with difficulty" ]
-  ] [
-     fhir:code [ fhir:v "fitzpatrick-3" ] ;
-     fhir:display [ fhir:v "Type III" ] ;
-     fhir:definition [ fhir:v "Cream white; sometimes mild burn, gradually tans" ]
-  ] [
-     fhir:code [ fhir:v "fitzpatrick-4" ] ;
-     fhir:display [ fhir:v "Type IV" ] ;
-     fhir:definition [ fhir:v "Moderate brown; rarely burns, tans with ease" ]
-  ] [
-     fhir:code [ fhir:v "fitzpatrick-5" ] ;
-     fhir:display [ fhir:v "Type V" ] ;
-     fhir:definition [ fhir:v "Dark brown; very rarely burns, tans very easily" ]
-  ] [
-     fhir:code [ fhir:v "fitzpatrick-6" ] ;
-     fhir:display [ fhir:v "Type VI" ] ;
-     fhir:definition [ fhir:v "Deeply pigmented dark brown to black; never burns, tans very easily" ]
-  ] [
-     fhir:code [ fhir:v "what-matters" ] ;
-     fhir:display [ fhir:v "What Matters to Me" ] ;
-     fhir:definition [ fhir:v "Patient-identified priorities and non-clinical goals" ]
-  ] [
-     fhir:code [ fhir:v "patient-story" ] ;
-     fhir:display [ fhir:v "Patient Story" ] ;
-     fhir:definition [ fhir:v "Narrative summary of patient background, preferences, and autobiography" ]
-  ] [
-     fhir:code [ fhir:v "relational-engagement" ] ;
-     fhir:display [ fhir:v "Relational Engagement Score" ] ;
-     fhir:definition [ fhir:v "Assessment of the quality of nurse-patient engagement (1-5)" ]
-  ] [
-     fhir:code [ fhir:v "cfs-score" ] ;
-     fhir:display [ fhir:v "Clinical Frailty Scale Score" ] ;
-     fhir:definition [ fhir:v "Total score for Rockwood Clinical Frailty Scale" ]
-  ] [
-     fhir:code [ fhir:v "cfs-1" ] ;
-     fhir:display [ fhir:v "Very Fit" ] ;
-     fhir:definition [ fhir:v "Robus, active, energetic and motivated" ]
-  ] [
-     fhir:code [ fhir:v "cfs-2" ] ;
-     fhir:display [ fhir:v "Well" ] ;
-     fhir:definition [ fhir:v "No active disease symptoms but less fit than category 1" ]
-  ] [
-     fhir:code [ fhir:v "cfs-3" ] ;
-     fhir:display [ fhir:v "Managing Well" ] ;
-     fhir:definition [ fhir:v "Medical problems are well controlled, but not regularly active" ]
-  ] [
-     fhir:code [ fhir:v "cfs-4" ] ;
-     fhir:display [ fhir:v "Vulnerable" ] ;
-     fhir:definition [ fhir:v "Not dependent for daily help, but symptoms limit activities" ]
-  ] [
-     fhir:code [ fhir:v "cfs-5" ] ;
-     fhir:display [ fhir:v "Mildly Frail" ] ;
-     fhir:definition [ fhir:v "Need help with high order IADLs (finances, transportation, heavy housework)" ]
-  ] [
-     fhir:code [ fhir:v "cfs-6" ] ;
-     fhir:display [ fhir:v "Moderately Frail" ] ;
-     fhir:definition [ fhir:v "Need help with all outside activities and some housekeeping" ]
-  ] [
-     fhir:code [ fhir:v "cfs-7" ] ;
-     fhir:display [ fhir:v "Severely Frail" ] ;
-     fhir:definition [ fhir:v "Completely dependent for personal care" ]
-  ] [
-     fhir:code [ fhir:v "cfs-8" ] ;
-     fhir:display [ fhir:v "Very Severely Frail" ] ;
-     fhir:definition [ fhir:v "Completely dependent, approaching end of life" ]
-  ] [
-     fhir:code [ fhir:v "cfs-9" ] ;
-     fhir:display [ fhir:v "Terminally Ill" ] ;
-     fhir:definition [ fhir:v "Approaching the end of life (life expectancy <6 months)" ]
-  ] [
-     fhir:code [ fhir:v "4at-score" ] ;
-     fhir:display [ fhir:v "4AT Delirium Score" ] ;
-     fhir:definition [ fhir:v "Total score for 4AT assessment" ]
-  ] [
-     fhir:code [ fhir:v "4at-alertness" ] ;
-     fhir:display [ fhir:v "Alertness" ] ;
-     fhir:definition [ fhir:v "4AT Item 1: Alertness" ]
-  ] [
-     fhir:code [ fhir:v "4at-amt4" ] ;
-     fhir:display [ fhir:v "AMT4 Score" ] ;
-     fhir:definition [ fhir:v "4AT Item 2: Abbreviated Mental Test 4" ]
-  ] [
-     fhir:code [ fhir:v "4at-attention" ] ;
-     fhir:display [ fhir:v "Attention" ] ;
-     fhir:definition [ fhir:v "4AT Item 3: Attention (Months Backwards)" ]
-  ] [
-     fhir:code [ fhir:v "4at-acute-change" ] ;
-     fhir:display [ fhir:v "Acute Change" ] ;
-     fhir:definition [ fhir:v "4AT Item 4: Acute Change or Fluctuating Course" ]
-  ] [
-     fhir:code [ fhir:v "reasonable-adjustment" ] ;
-     fhir:display [ fhir:v "Reasonable Adjustment" ] ;
-     fhir:definition [ fhir:v "Requirement for adjustment to care delivery (Equality Act)" ]
-  ] [
-     fhir:code [ fhir:v "mca-assessment" ] ;
-     fhir:display [ fhir:v "Mental Capacity Assessment" ] ;
-     fhir:definition [ fhir:v "Assessment of capacity to make a specific decision" ]
-  ] [
-     fhir:code [ fhir:v "capacity-present" ] ;
-     fhir:display [ fhir:v "Capacity Present" ] ;
-     fhir:definition [ fhir:v "Patient has capacity for this decision" ]
-  ] [
-     fhir:code [ fhir:v "capacity-absent" ] ;
-     fhir:display [ fhir:v "Capacity Absent" ] ;
-     fhir:definition [ fhir:v "Patient lacks capacity for this decision" ]
-  ] [
-     fhir:code [ fhir:v "best-interest" ] ;
-     fhir:display [ fhir:v "Best Interest Decision" ] ;
-     fhir:definition [ fhir:v "Decision made in patient's best interest" ]
-  ] [
-     fhir:code [ fhir:v "bristol-score" ] ;
-     fhir:display [ fhir:v "Bristol Stool Score" ] ;
-     fhir:definition [ fhir:v "Bristol Stool Form Scale Score (1-7)" ]
-  ] [
-     fhir:code [ fhir:v "bristol-1" ] ;
-     fhir:display [ fhir:v "Type 1" ] ;
-     fhir:definition [ fhir:v "Separate hard lumps, like nuts (hard to pass)" ]
-  ] [
-     fhir:code [ fhir:v "bristol-2" ] ;
-     fhir:display [ fhir:v "Type 2" ] ;
-     fhir:definition [ fhir:v "Sausage-shaped but lumpy" ]
-  ] [
-     fhir:code [ fhir:v "bristol-3" ] ;
-     fhir:display [ fhir:v "Type 3" ] ;
-     fhir:definition [ fhir:v "Like a sausage but with cracks on its surface" ]
-  ] [
-     fhir:code [ fhir:v "bristol-4" ] ;
-     fhir:display [ fhir:v "Type 4" ] ;
-     fhir:definition [ fhir:v "Like a sausage or snake, smooth and soft" ]
-  ] [
-     fhir:code [ fhir:v "bristol-5" ] ;
-     fhir:display [ fhir:v "Type 5" ] ;
-     fhir:definition [ fhir:v "Soft blobs with clear-cut edges (passed easily)" ]
-  ] [
-     fhir:code [ fhir:v "bristol-6" ] ;
-     fhir:display [ fhir:v "Type 6" ] ;
-     fhir:definition [ fhir:v "Fluffy pieces with ragged edges, a mushy stool" ]
-  ] [
-     fhir:code [ fhir:v "bristol-7" ] ;
-     fhir:display [ fhir:v "Type 7" ] ;
-     fhir:definition [ fhir:v "Watery, no solid pieces. Entirely liquid" ]
-  ] [
-     fhir:code [ fhir:v "adpie-a" ] ;
-     fhir:display [ fhir:v "Assessment" ] ;
-     fhir:definition [ fhir:v "Assessment phase of the nursing process" ]
-  ] [
-     fhir:code [ fhir:v "adpie-d" ] ;
-     fhir:display [ fhir:v "Diagnosis" ] ;
-     fhir:definition [ fhir:v "Diagnosis phase of the nursing process" ]
-  ] [
-     fhir:code [ fhir:v "adpie-p" ] ;
-     fhir:display [ fhir:v "Planning" ] ;
-     fhir:definition [ fhir:v "Planning phase of the nursing process" ]
-  ] [
-     fhir:code [ fhir:v "adpie-i" ] ;
-     fhir:display [ fhir:v "Implementation" ] ;
-     fhir:definition [ fhir:v "Implementation phase of the nursing process" ]
-  ] [
-     fhir:code [ fhir:v "adpie-e" ] ;
-     fhir:display [ fhir:v "Evaluation" ] ;
-     fhir:definition [ fhir:v "Evaluation phase of the nursing process" ]
-  ] [
-     fhir:code [ fhir:v "empathy-1" ] ;
-     fhir:display [ fhir:v "Low Empathy" ] ;
-     fhir:definition [ fhir:v "Task-focused interaction with minimal person-centred engagement." ]
-  ] [
-     fhir:code [ fhir:v "empathy-2" ] ;
-     fhir:display [ fhir:v "Basic Empathy" ] ;
-     fhir:definition [ fhir:v "Professional interaction with patient identity acknowledged." ]
-  ] [
-     fhir:code [ fhir:v "empathy-3" ] ;
-     fhir:display [ fhir:v "Moderate Empathy" ] ;
-     fhir:definition [ fhir:v "Active relational engagement with shared decision making." ]
-  ] [
-     fhir:code [ fhir:v "empathy-4" ] ;
-     fhir:display [ fhir:v "High Empathy" ] ;
-     fhir:definition [ fhir:v "Authentic partnership with deep understanding of patient experience." ]
-  ] [
-     fhir:code [ fhir:v "empathy-5" ] ;
-     fhir:display [ fhir:v "Relational Excellence" ] ;
-     fhir:definition [ fhir:v "Flourishing partnership with total alignment on 'What Matters to Me'." ]
-  ] [
-     fhir:code [ fhir:v "empathy-index" ] ;
-     fhir:display [ fhir:v "ONC Empathy Index" ] ;
-     fhir:definition [ fhir:v "Formal assessment of the depth of therapeutic empathy" ]
-  ] [
-     fhir:code [ fhir:v "abbey-score" ] ;
-     fhir:display [ fhir:v "Abbey Pain Scale Score" ] ;
-     fhir:definition [ fhir:v "Total Abbey Pain Scale Score (0-100+ but usually 0-18+)" ]
-  ] [
-     fhir:code [ fhir:v "abbey-vocalization" ] ;
-     fhir:display [ fhir:v "Vocalization" ] ;
-     fhir:definition [ fhir:v "Whimpering, groaning, crying" ]
-  ] [
-     fhir:code [ fhir:v "abbey-facial-expression" ] ;
-     fhir:display [ fhir:v "Facial Expression" ] ;
-     fhir:definition [ fhir:v "Looking tense, frowning, grimacing, looking frightened" ]
-  ] [
-     fhir:code [ fhir:v "abbey-body-language" ] ;
-     fhir:display [ fhir:v "Body Language" ] ;
-     fhir:definition [ fhir:v "Fidgeting, rocking, guarding part of body, withdrawn" ]
-  ] [
-     fhir:code [ fhir:v "abbey-behavioral-change" ] ;
-     fhir:display [ fhir:v "Behavioral Change" ] ;
-     fhir:definition [ fhir:v "Increased confusion, refusing to eat, alteration in usual pattern" ]
-  ] [
-     fhir:code [ fhir:v "abbey-psychological-change" ] ;
-     fhir:display [ fhir:v "Psychological Change" ] ;
-     fhir:definition [ fhir:v "Temperature, pulse, blood pressure changes, perspiration, pallor" ]
-  ] [
-     fhir:code [ fhir:v "abbey-physical-changes" ] ;
-     fhir:display [ fhir:v "Physical Changes" ] ;
-     fhir:definition [ fhir:v "Skin tears, pressure areas, arthritis, contractures, previous injuries" ]
-  ] [
-     fhir:code [ fhir:v "fluid-input-total" ] ;
-     fhir:display [ fhir:v "Total Fluid Input" ] ;
-     fhir:definition [ fhir:v "Total fluid input over specified period (e.g. 24h)" ]
-  ] [
-     fhir:code [ fhir:v "fluid-output-total" ] ;
-     fhir:display [ fhir:v "Total Fluid Output" ] ;
-     fhir:definition [ fhir:v "Total fluid output over specified period (e.g. 24h)" ]
-  ] [
-     fhir:code [ fhir:v "fluid-balance" ] ;
-     fhir:display [ fhir:v "Fluid Balance" ] ;
-     fhir:definition [ fhir:v "Total Input minus Total Output" ]
-  ] [
-     fhir:code [ fhir:v "urine-output" ] ;
-     fhir:display [ fhir:v "Urine Output" ] ;
-     fhir:definition [ fhir:v "Volume of urine passed" ]
-  ] [
-     fhir:code [ fhir:v "abc-chart" ] ;
-     fhir:display [ fhir:v "ABC Chart" ] ;
-     fhir:definition [ fhir:v "Antecedent-Behaviour-Consequence Chart for PBS" ]
-  ] [
-     fhir:code [ fhir:v "abc-antecedent" ] ;
-     fhir:display [ fhir:v "Antecedent" ] ;
-     fhir:definition [ fhir:v "What happened immediately before the behaviour (triggers)" ]
-  ] [
-     fhir:code [ fhir:v "abc-behaviour" ] ;
-     fhir:display [ fhir:v "Behaviour" ] ;
-     fhir:definition [ fhir:v "Description of the behaviour itself (observable actions)" ]
-  ] [
-     fhir:code [ fhir:v "abc-consequence" ] ;
-     fhir:display [ fhir:v "Consequence" ] ;
-     fhir:definition [ fhir:v "What happened immediately after (response/outcome)" ]
-  ] [
-     fhir:code [ fhir:v "abc-function" ] ;
-     fhir:display [ fhir:v "Function of Behaviour" ] ;
-     fhir:definition [ fhir:v "Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)" ]
-  ] [
-     fhir:code [ fhir:v "abc-duration" ] ;
-     fhir:display [ fhir:v "Duration" ] ;
-     fhir:definition [ fhir:v "Duration of the episode" ]
-  ] [
-     fhir:code [ fhir:v "abc-intensity" ] ;
-     fhir:display [ fhir:v "Intensity" ] ;
-     fhir:definition [ fhir:v "Intensity of the behaviour (1-10)" ]
-  ] [
-     fhir:code [ fhir:v "oral-health-score" ] ;
-     fhir:display [ fhir:v "Oral Health Score" ] ;
-     fhir:definition [ fhir:v "Total Oral Health Assessment Score" ]
-  ] [
-     fhir:code [ fhir:v "oral-lips" ] ;
-     fhir:display [ fhir:v "Lips" ] ;
-     fhir:definition [ fhir:v "Condition of lips (Pink/Moist vs Dry/Cracked)" ]
-  ] [
-     fhir:code [ fhir:v "oral-tongue" ] ;
-     fhir:display [ fhir:v "Tongue" ] ;
-     fhir:definition [ fhir:v "Condition of tongue (Pink/Moist vs Coated/Red)" ]
-  ] [
-     fhir:code [ fhir:v "oral-gums" ] ;
-     fhir:display [ fhir:v "Gums" ] ;
-     fhir:definition [ fhir:v "Condition of gums (Pink/Firm vs Bleeding/Receding)" ]
-  ] [
-     fhir:code [ fhir:v "oral-teeth" ] ;
-     fhir:display [ fhir:v "Teeth/Dentures" ] ;
-     fhir:definition [ fhir:v "Condition of teeth or dentures (Clean/Intact vs Decayed/Broken/Loose)" ]
-  ] [
-     fhir:code [ fhir:v "oral-saliva" ] ;
-     fhir:display [ fhir:v "Saliva" ] ;
-     fhir:definition [ fhir:v "Saliva quality (Moist/Watery vs Thick/Sticky/Absent)" ]
-  ] [
-     fhir:code [ fhir:v "seizure-record" ] ;
-     fhir:display [ fhir:v "Seizure Record" ] ;
-     fhir:definition [ fhir:v "Record of a seizure event" ]
-  ] [
-     fhir:code [ fhir:v "seizure-type" ] ;
-     fhir:display [ fhir:v "Seizure Type" ] ;
-     fhir:definition [ fhir:v "Type of seizure (Tonic-Clonic, Absence, Focal, etc)" ]
-  ] [
-     fhir:code [ fhir:v "seizure-duration" ] ;
-     fhir:display [ fhir:v "Seizure Duration" ] ;
-     fhir:definition [ fhir:v "Duration of the active seizure phase" ]
-  ] [
-     fhir:code [ fhir:v "seizure-recovery" ] ;
-     fhir:display [ fhir:v "Recovery Phase" ] ;
-     fhir:definition [ fhir:v "Duration/Description of post-ictal recovery" ]
-  ] [
-     fhir:code [ fhir:v "seizure-trigger" ] ;
-     fhir:display [ fhir:v "Trigger" ] ;
-     fhir:definition [ fhir:v "Suspected trigger for the seizure" ]
-  ] [
-     fhir:code [ fhir:v "sleep-record" ] ;
-     fhir:display [ fhir:v "Sleep Record" ] ;
-     fhir:definition [ fhir:v "Record of a sleep period" ]
-  ] [
-     fhir:code [ fhir:v "sleep-quality" ] ;
-     fhir:display [ fhir:v "Sleep Quality" ] ;
-     fhir:definition [ fhir:v "Subjective or observed quality of sleep" ]
-  ] [
-     fhir:code [ fhir:v "sleep-hours" ] ;
-     fhir:display [ fhir:v "Hours Slept" ] ;
-     fhir:definition [ fhir:v "Total hours of sleep achieved" ]
-  ] [
-     fhir:code [ fhir:v "sleep-disturbances" ] ;
-     fhir:display [ fhir:v "Disturbances" ] ;
-     fhir:definition [ fhir:v "Number or description of distinct awakenings" ]
-  ] [
-     fhir:code [ fhir:v "urinalysis-panel" ] ;
-     fhir:display [ fhir:v "Urinalysis Panel" ] ;
-     fhir:definition [ fhir:v "Urine Dipstick Test Panel" ]
-  ] [
-     fhir:code [ fhir:v "ua-leukocytes" ] ;
-     fhir:display [ fhir:v "Leukocytes" ] ;
-     fhir:definition [ fhir:v "Leukocytes (WBCs) in urine" ]
-  ] [
-     fhir:code [ fhir:v "ua-nitrites" ] ;
-     fhir:display [ fhir:v "Nitrites" ] ;
-     fhir:definition [ fhir:v "Nitrites in urine" ]
-  ] [
-     fhir:code [ fhir:v "ua-protein" ] ;
-     fhir:display [ fhir:v "Protein" ] ;
-     fhir:definition [ fhir:v "Protein in urine" ]
-  ] [
-     fhir:code [ fhir:v "ua-blood" ] ;
-     fhir:display [ fhir:v "Blood" ] ;
-     fhir:definition [ fhir:v "Blood (Hemoglobin) in urine" ]
-  ] [
-     fhir:code [ fhir:v "ua-glucose" ] ;
-     fhir:display [ fhir:v "Glucose" ] ;
-     fhir:definition [ fhir:v "Glucose in urine" ]
-  ] [
-     fhir:code [ fhir:v "ua-ketones" ] ;
-     fhir:display [ fhir:v "Ketones" ] ;
-     fhir:definition [ fhir:v "Ketones in urine" ]
-  ] [
-     fhir:code [ fhir:v "ua-ph" ] ;
-     fhir:display [ fhir:v "pH" ] ;
-     fhir:definition [ fhir:v "Urine pH Level" ]
-  ] [
-     fhir:code [ fhir:v "ua-sg" ] ;
-     fhir:display [ fhir:v "Specific Gravity" ] ;
-     fhir:definition [ fhir:v "Urine Specific Gravity" ]
-  ] [
-     fhir:code [ fhir:v "mca-present" ] ;
-     fhir:display [ fhir:v "Capacity Present" ] ;
-     fhir:definition [ fhir:v "Patient has capacity for this decision" ]
-  ] [
-     fhir:code [ fhir:v "4at-change-no" ] ;
-     fhir:display [ fhir:v "No Acute Change" ] ;
-     fhir:definition [ fhir:v "No indication of acute change or fluctuating course" ]
-  ] [
-     fhir:code [ fhir:v "4at-amt4-1error" ] ;
-     fhir:display [ fhir:v "1 Error" ] ;
-     fhir:definition [ fhir:v "1 error in AMT4 test" ]
-  ] [
-     fhir:code [ fhir:v "4at-attention-gt7" ] ;
-     fhir:display [ fhir:v "Months Backwards < 7 months" ] ;
-     fhir:definition [ fhir:v "Less than 7 months correctly recited backwards" ]
-  ] [
-     fhir:code [ fhir:v "4at-alert-normal" ] ;
-     fhir:display [ fhir:v "Normal Alertness" ] ;
-     fhir:definition [ fhir:v "Patient is fully alert" ]
-  ] [
-     fhir:code [ fhir:v "continence-assessment" ] ;
-     fhir:display [ fhir:v "Continence Assessment" ] ;
-     fhir:definition [ fhir:v "Assessment of bladder and bowel control" ]
-  ] [
-     fhir:code [ fhir:v "bladder-assessment" ] ;
-     fhir:display [ fhir:v "Bladder Assessment" ] ;
-     fhir:definition [ fhir:v "Detailed assessment of bladder function" ]
-  ] [
-     fhir:code [ fhir:v "bowel-assessment" ] ;
-     fhir:display [ fhir:v "Bowel Assessment" ] ;
-     fhir:definition [ fhir:v "Detailed assessment of bowel function" ]
-  ] [
-     fhir:code [ fhir:v "catheter-care" ] ;
-     fhir:display [ fhir:v "Catheter Care Interaction" ] ;
-     fhir:definition [ fhir:v "Nursing interaction related to catheter care" ]
-  ] [
-     fhir:code [ fhir:v "oral-intake" ] ;
-     fhir:display [ fhir:v "Oral Intake Assessment" ] ;
-     fhir:definition [ fhir:v "Assessment of food and fluid intake capability" ]
-  ] [
-     fhir:code [ fhir:v "swallowing" ] ;
-     fhir:display [ fhir:v "Swallowing Assessment" ] ;
-     fhir:definition [ fhir:v "Assessment of swallowing ability (dysphagia risk)" ]
-  ] [
-     fhir:code [ fhir:v "dietary-requirements" ] ;
-     fhir:display [ fhir:v "Dietary Requirements" ] ;
-     fhir:definition [ fhir:v "Specific dietary needs or restrictions" ]
-  ] [
-     fhir:code [ fhir:v "mobility" ] ;
-     fhir:display [ fhir:v "Mobility Assessment" ] ;
-     fhir:definition [ fhir:v "Assessment of physical mobility and transfer ability" ]
-  ] [
-     fhir:code [ fhir:v "device-use" ] ;
-     fhir:display [ fhir:v "Device/Aid Usage" ] ;
-     fhir:definition [ fhir:v "Observation of device or mobility aid usage" ]
-  ] [
-     fhir:code [ fhir:v "hygiene-needs" ] ;
-     fhir:display [ fhir:v "Personal Hygiene Needs" ] ;
-     fhir:definition [ fhir:v "Assessment of assistance required for hygiene" ]
-  ] [
-     fhir:code [ fhir:v "oral-care" ] ;
-     fhir:display [ fhir:v "Oral Care Needs" ] ;
-     fhir:definition [ fhir:v "Assessment of oral health and care requirements" ]
-  ] [
-     fhir:code [ fhir:v "medication-ability" ] ;
-     fhir:display [ fhir:v "Medication Management Ability" ] ;
-     fhir:definition [ fhir:v "Ability to manage own medications" ]
-  ] [
-     fhir:code [ fhir:v "medication-self-admin" ] ;
-     fhir:display [ fhir:v "Medication Self-Administration" ] ;
-     fhir:definition [ fhir:v "Observation of self-administration technique" ]
-  ] [
-     fhir:code [ fhir:v "dressing-assessment" ] ;
-     fhir:display [ fhir:v "Dressing Assessment" ] ;
-     fhir:definition [ fhir:v "Assessment of ability to dress and undress" ]
-  ] [
-     fhir:code [ fhir:v "skin-assessment" ] ;
-     fhir:display [ fhir:v "Skin Assessment" ] ;
-     fhir:definition [ fhir:v "Detailed assessment of skin condition and integrity" ]
-  ] [
-     fhir:code [ fhir:v "nursing-needs" ] ;
-     fhir:display [ fhir:v "Nursing Care Needs" ] ;
-     fhir:definition [ fhir:v "Identified nursing care needs" ]
-  ] [
-     fhir:code [ fhir:v "nursing-strengths" ] ;
-     fhir:display [ fhir:v "Nursing Strengths" ] ;
-     fhir:definition [ fhir:v "Identified patient strengths and capabilities" ]
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "onc-observation-codes"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onc-observation-codes</b></p><a name=\"onc-observation-codes\"> </a><a name=\"hconc-observation-codes\"> </a><p>This  code system <code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mst-score<a name=\"onc-observation-codes-mst-score\"> </a></td><td>Monk Skin Tone Score</td><td>Assessment of skin tone using the Monk Skin Tone Scale</td></tr><tr><td style=\"white-space:nowrap\">waterlow-score<a name=\"onc-observation-codes-waterlow-score\"> </a></td><td>Waterlow Score</td><td>Total score for Waterlow pressure ulcer risk assessment</td></tr><tr><td style=\"white-space:nowrap\">must-score<a name=\"onc-observation-codes-must-score\"> </a></td><td>MUST Score</td><td>Malnutrition Universal Screening Tool total score</td></tr><tr><td style=\"white-space:nowrap\">must-bmi-score<a name=\"onc-observation-codes-must-bmi-score\"> </a></td><td>MUST BMI Score</td><td>Malnutrition Universal Screening Tool BMI score</td></tr><tr><td style=\"white-space:nowrap\">must-weight-loss-score<a name=\"onc-observation-codes-must-weight-loss-score\"> </a></td><td>MUST Weight Loss Score</td><td>Malnutrition Universal Screening Tool weight loss score</td></tr><tr><td style=\"white-space:nowrap\">must-acute-disease-score<a name=\"onc-observation-codes-must-acute-disease-score\"> </a></td><td>MUST Acute Disease Score</td><td>Malnutrition Universal Screening Tool acute disease effect score</td></tr><tr><td style=\"white-space:nowrap\">braden-total-score<a name=\"onc-observation-codes-braden-total-score\"> </a></td><td>Braden Total Score</td><td>Braden scale total score</td></tr><tr><td style=\"white-space:nowrap\">braden-sensory<a name=\"onc-observation-codes-braden-sensory\"> </a></td><td>Braden Sensory Perception</td><td>Sensory perception Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-moisture<a name=\"onc-observation-codes-braden-moisture\"> </a></td><td>Braden Moisture</td><td>Moisture Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-activity<a name=\"onc-observation-codes-braden-activity\"> </a></td><td>Braden Activity</td><td>Activity Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-mobility<a name=\"onc-observation-codes-braden-mobility\"> </a></td><td>Braden Mobility</td><td>Mobility Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-nutrition<a name=\"onc-observation-codes-braden-nutrition\"> </a></td><td>Braden Nutrition</td><td>Nutrition Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-friction<a name=\"onc-observation-codes-braden-friction\"> </a></td><td>Braden Friction/Shear</td><td>Friction and shear Braden scale</td></tr><tr><td style=\"white-space:nowrap\">barthel-score<a name=\"onc-observation-codes-barthel-score\"> </a></td><td>Barthel Index Score</td><td>Total score for Barthel Index assessment</td></tr><tr><td style=\"white-space:nowrap\">news2-score<a name=\"onc-observation-codes-news2-score\"> </a></td><td>NEWS2 Score</td><td>National Early Warning Score 2 Total Score</td></tr><tr><td style=\"white-space:nowrap\">news2-subscore<a name=\"onc-observation-codes-news2-subscore\"> </a></td><td>NEWS2 Sub-score</td><td>Sub-score for NEWS2 parameter</td></tr><tr><td style=\"white-space:nowrap\">wound-stage<a name=\"onc-observation-codes-wound-stage\"> </a></td><td>Wound Stage</td><td>Stage of the wound</td></tr><tr><td style=\"white-space:nowrap\">stage-1<a name=\"onc-observation-codes-stage-1\"> </a></td><td>Stage 1</td><td>Stage 1 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">stage-2<a name=\"onc-observation-codes-stage-2\"> </a></td><td>Stage 2</td><td>Stage 2 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">stage-3<a name=\"onc-observation-codes-stage-3\"> </a></td><td>Stage 3</td><td>Stage 3 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">stage-4<a name=\"onc-observation-codes-stage-4\"> </a></td><td>Stage 4</td><td>Stage 4 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">unstageable<a name=\"onc-observation-codes-unstageable\"> </a></td><td>Unstageable</td><td>Unstageable pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">deep-tissue<a name=\"onc-observation-codes-deep-tissue\"> </a></td><td>Deep Tissue Injury</td><td>Deep tissue injury</td></tr><tr><td style=\"white-space:nowrap\">risk-falls<a name=\"onc-observation-codes-risk-falls\"> </a></td><td>Risk of Falls</td><td>Risk of falls diagnosis</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-1<a name=\"onc-observation-codes-fitzpatrick-1\"> </a></td><td>Type I</td><td>Pale white; always burns, never tans</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-2<a name=\"onc-observation-codes-fitzpatrick-2\"> </a></td><td>Type II</td><td>White; usually burns, tans with difficulty</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-3<a name=\"onc-observation-codes-fitzpatrick-3\"> </a></td><td>Type III</td><td>Cream white; sometimes mild burn, gradually tans</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-4<a name=\"onc-observation-codes-fitzpatrick-4\"> </a></td><td>Type IV</td><td>Moderate brown; rarely burns, tans with ease</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-5<a name=\"onc-observation-codes-fitzpatrick-5\"> </a></td><td>Type V</td><td>Dark brown; very rarely burns, tans very easily</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-6<a name=\"onc-observation-codes-fitzpatrick-6\"> </a></td><td>Type VI</td><td>Deeply pigmented dark brown to black; never burns, tans very easily</td></tr><tr><td style=\"white-space:nowrap\">what-matters<a name=\"onc-observation-codes-what-matters\"> </a></td><td>What Matters to Me</td><td>Patient-identified priorities and non-clinical goals</td></tr><tr><td style=\"white-space:nowrap\">patient-story<a name=\"onc-observation-codes-patient-story\"> </a></td><td>Patient Story</td><td>Narrative summary of patient background, preferences, and autobiography</td></tr><tr><td style=\"white-space:nowrap\">relational-engagement<a name=\"onc-observation-codes-relational-engagement\"> </a></td><td>Relational Engagement Score</td><td>Assessment of the quality of nurse-patient engagement (1-5)</td></tr><tr><td style=\"white-space:nowrap\">cfs-score<a name=\"onc-observation-codes-cfs-score\"> </a></td><td>Clinical Frailty Scale Score</td><td>Total score for Rockwood Clinical Frailty Scale</td></tr><tr><td style=\"white-space:nowrap\">cfs-1<a name=\"onc-observation-codes-cfs-1\"> </a></td><td>Very Fit</td><td>Robus, active, energetic and motivated</td></tr><tr><td style=\"white-space:nowrap\">cfs-2<a name=\"onc-observation-codes-cfs-2\"> </a></td><td>Well</td><td>No active disease symptoms but less fit than category 1</td></tr><tr><td style=\"white-space:nowrap\">cfs-3<a name=\"onc-observation-codes-cfs-3\"> </a></td><td>Managing Well</td><td>Medical problems are well controlled, but not regularly active</td></tr><tr><td style=\"white-space:nowrap\">cfs-4<a name=\"onc-observation-codes-cfs-4\"> </a></td><td>Vulnerable</td><td>Not dependent for daily help, but symptoms limit activities</td></tr><tr><td style=\"white-space:nowrap\">cfs-5<a name=\"onc-observation-codes-cfs-5\"> </a></td><td>Mildly Frail</td><td>Need help with high order IADLs (finances, transportation, heavy housework)</td></tr><tr><td style=\"white-space:nowrap\">cfs-6<a name=\"onc-observation-codes-cfs-6\"> </a></td><td>Moderately Frail</td><td>Need help with all outside activities and some housekeeping</td></tr><tr><td style=\"white-space:nowrap\">cfs-7<a name=\"onc-observation-codes-cfs-7\"> </a></td><td>Severely Frail</td><td>Completely dependent for personal care</td></tr><tr><td style=\"white-space:nowrap\">cfs-8<a name=\"onc-observation-codes-cfs-8\"> </a></td><td>Very Severely Frail</td><td>Completely dependent, approaching end of life</td></tr><tr><td style=\"white-space:nowrap\">cfs-9<a name=\"onc-observation-codes-cfs-9\"> </a></td><td>Terminally Ill</td><td>Approaching the end of life (life expectancy &lt;6 months)</td></tr><tr><td style=\"white-space:nowrap\">4at-score<a name=\"onc-observation-codes-4at-score\"> </a></td><td>4AT Delirium Score</td><td>Total score for 4AT assessment</td></tr><tr><td style=\"white-space:nowrap\">4at-alertness<a name=\"onc-observation-codes-4at-alertness\"> </a></td><td>Alertness</td><td>4AT Item 1: Alertness</td></tr><tr><td style=\"white-space:nowrap\">4at-amt4<a name=\"onc-observation-codes-4at-amt4\"> </a></td><td>AMT4 Score</td><td>4AT Item 2: Abbreviated Mental Test 4</td></tr><tr><td style=\"white-space:nowrap\">4at-attention<a name=\"onc-observation-codes-4at-attention\"> </a></td><td>Attention</td><td>4AT Item 3: Attention (Months Backwards)</td></tr><tr><td style=\"white-space:nowrap\">4at-acute-change<a name=\"onc-observation-codes-4at-acute-change\"> </a></td><td>Acute Change</td><td>4AT Item 4: Acute Change or Fluctuating Course</td></tr><tr><td style=\"white-space:nowrap\">reasonable-adjustment<a name=\"onc-observation-codes-reasonable-adjustment\"> </a></td><td>Reasonable Adjustment</td><td>Requirement for adjustment to care delivery (Equality Act)</td></tr><tr><td style=\"white-space:nowrap\">mca-assessment<a name=\"onc-observation-codes-mca-assessment\"> </a></td><td>Mental Capacity Assessment</td><td>Assessment of capacity to make a specific decision</td></tr><tr><td style=\"white-space:nowrap\">capacity-present<a name=\"onc-observation-codes-capacity-present\"> </a></td><td>Capacity Present</td><td>Patient has capacity for this decision</td></tr><tr><td style=\"white-space:nowrap\">capacity-absent<a name=\"onc-observation-codes-capacity-absent\"> </a></td><td>Capacity Absent</td><td>Patient lacks capacity for this decision</td></tr><tr><td style=\"white-space:nowrap\">best-interest<a name=\"onc-observation-codes-best-interest\"> </a></td><td>Best Interest Decision</td><td>Decision made in patient's best interest</td></tr><tr><td style=\"white-space:nowrap\">bristol-score<a name=\"onc-observation-codes-bristol-score\"> </a></td><td>Bristol Stool Score</td><td>Bristol Stool Form Scale Score (1-7)</td></tr><tr><td style=\"white-space:nowrap\">bristol-1<a name=\"onc-observation-codes-bristol-1\"> </a></td><td>Type 1</td><td>Separate hard lumps, like nuts (hard to pass)</td></tr><tr><td style=\"white-space:nowrap\">bristol-2<a name=\"onc-observation-codes-bristol-2\"> </a></td><td>Type 2</td><td>Sausage-shaped but lumpy</td></tr><tr><td style=\"white-space:nowrap\">bristol-3<a name=\"onc-observation-codes-bristol-3\"> </a></td><td>Type 3</td><td>Like a sausage but with cracks on its surface</td></tr><tr><td style=\"white-space:nowrap\">bristol-4<a name=\"onc-observation-codes-bristol-4\"> </a></td><td>Type 4</td><td>Like a sausage or snake, smooth and soft</td></tr><tr><td style=\"white-space:nowrap\">bristol-5<a name=\"onc-observation-codes-bristol-5\"> </a></td><td>Type 5</td><td>Soft blobs with clear-cut edges (passed easily)</td></tr><tr><td style=\"white-space:nowrap\">bristol-6<a name=\"onc-observation-codes-bristol-6\"> </a></td><td>Type 6</td><td>Fluffy pieces with ragged edges, a mushy stool</td></tr><tr><td style=\"white-space:nowrap\">bristol-7<a name=\"onc-observation-codes-bristol-7\"> </a></td><td>Type 7</td><td>Watery, no solid pieces. Entirely liquid</td></tr><tr><td style=\"white-space:nowrap\">adpie-a<a name=\"onc-observation-codes-adpie-a\"> </a></td><td>Assessment</td><td>Assessment phase of the nursing process</td></tr><tr><td style=\"white-space:nowrap\">adpie-d<a name=\"onc-observation-codes-adpie-d\"> </a></td><td>Diagnosis</td><td>Diagnosis phase of the nursing process</td></tr><tr><td style=\"white-space:nowrap\">adpie-p<a name=\"onc-observation-codes-adpie-p\"> </a></td><td>Planning</td><td>Planning phase of the nursing process</td></tr><tr><td style=\"white-space:nowrap\">adpie-i<a name=\"onc-observation-codes-adpie-i\"> </a></td><td>Implementation</td><td>Implementation phase of the nursing process</td></tr><tr><td style=\"white-space:nowrap\">adpie-e<a name=\"onc-observation-codes-adpie-e\"> </a></td><td>Evaluation</td><td>Evaluation phase of the nursing process</td></tr><tr><td style=\"white-space:nowrap\">empathy-1<a name=\"onc-observation-codes-empathy-1\"> </a></td><td>Low Empathy</td><td>Task-focused interaction with minimal person-centred engagement.</td></tr><tr><td style=\"white-space:nowrap\">empathy-2<a name=\"onc-observation-codes-empathy-2\"> </a></td><td>Basic Empathy</td><td>Professional interaction with patient identity acknowledged.</td></tr><tr><td style=\"white-space:nowrap\">empathy-3<a name=\"onc-observation-codes-empathy-3\"> </a></td><td>Moderate Empathy</td><td>Active relational engagement with shared decision making.</td></tr><tr><td style=\"white-space:nowrap\">empathy-4<a name=\"onc-observation-codes-empathy-4\"> </a></td><td>High Empathy</td><td>Authentic partnership with deep understanding of patient experience.</td></tr><tr><td style=\"white-space:nowrap\">empathy-5<a name=\"onc-observation-codes-empathy-5\"> </a></td><td>Relational Excellence</td><td>Flourishing partnership with total alignment on 'What Matters to Me'.</td></tr><tr><td style=\"white-space:nowrap\">empathy-index<a name=\"onc-observation-codes-empathy-index\"> </a></td><td>ONC Empathy Index</td><td>Formal assessment of the depth of therapeutic empathy</td></tr><tr><td style=\"white-space:nowrap\">abbey-score<a name=\"onc-observation-codes-abbey-score\"> </a></td><td>Abbey Pain Scale Score</td><td>Total Abbey Pain Scale Score (0-100+ but usually 0-18+)</td></tr><tr><td style=\"white-space:nowrap\">abbey-vocalization<a name=\"onc-observation-codes-abbey-vocalization\"> </a></td><td>Vocalization</td><td>Whimpering, groaning, crying</td></tr><tr><td style=\"white-space:nowrap\">abbey-facial-expression<a name=\"onc-observation-codes-abbey-facial-expression\"> </a></td><td>Facial Expression</td><td>Looking tense, frowning, grimacing, looking frightened</td></tr><tr><td style=\"white-space:nowrap\">abbey-body-language<a name=\"onc-observation-codes-abbey-body-language\"> </a></td><td>Body Language</td><td>Fidgeting, rocking, guarding part of body, withdrawn</td></tr><tr><td style=\"white-space:nowrap\">abbey-behavioral-change<a name=\"onc-observation-codes-abbey-behavioral-change\"> </a></td><td>Behavioral Change</td><td>Increased confusion, refusing to eat, alteration in usual pattern</td></tr><tr><td style=\"white-space:nowrap\">abbey-psychological-change<a name=\"onc-observation-codes-abbey-psychological-change\"> </a></td><td>Psychological Change</td><td>Temperature, pulse, blood pressure changes, perspiration, pallor</td></tr><tr><td style=\"white-space:nowrap\">abbey-physical-changes<a name=\"onc-observation-codes-abbey-physical-changes\"> </a></td><td>Physical Changes</td><td>Skin tears, pressure areas, arthritis, contractures, previous injuries</td></tr><tr><td style=\"white-space:nowrap\">fluid-input-total<a name=\"onc-observation-codes-fluid-input-total\"> </a></td><td>Total Fluid Input</td><td>Total fluid input over specified period (e.g. 24h)</td></tr><tr><td style=\"white-space:nowrap\">fluid-output-total<a name=\"onc-observation-codes-fluid-output-total\"> </a></td><td>Total Fluid Output</td><td>Total fluid output over specified period (e.g. 24h)</td></tr><tr><td style=\"white-space:nowrap\">fluid-balance<a name=\"onc-observation-codes-fluid-balance\"> </a></td><td>Fluid Balance</td><td>Total Input minus Total Output</td></tr><tr><td style=\"white-space:nowrap\">urine-output<a name=\"onc-observation-codes-urine-output\"> </a></td><td>Urine Output</td><td>Volume of urine passed</td></tr><tr><td style=\"white-space:nowrap\">abc-chart<a name=\"onc-observation-codes-abc-chart\"> </a></td><td>ABC Chart</td><td>Antecedent-Behaviour-Consequence Chart for PBS</td></tr><tr><td style=\"white-space:nowrap\">abc-antecedent<a name=\"onc-observation-codes-abc-antecedent\"> </a></td><td>Antecedent</td><td>What happened immediately before the behaviour (triggers)</td></tr><tr><td style=\"white-space:nowrap\">abc-behaviour<a name=\"onc-observation-codes-abc-behaviour\"> </a></td><td>Behaviour</td><td>Description of the behaviour itself (observable actions)</td></tr><tr><td style=\"white-space:nowrap\">abc-consequence<a name=\"onc-observation-codes-abc-consequence\"> </a></td><td>Consequence</td><td>What happened immediately after (response/outcome)</td></tr><tr><td style=\"white-space:nowrap\">abc-function<a name=\"onc-observation-codes-abc-function\"> </a></td><td>Function of Behaviour</td><td>Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)</td></tr><tr><td style=\"white-space:nowrap\">abc-duration<a name=\"onc-observation-codes-abc-duration\"> </a></td><td>Duration</td><td>Duration of the episode</td></tr><tr><td style=\"white-space:nowrap\">abc-intensity<a name=\"onc-observation-codes-abc-intensity\"> </a></td><td>Intensity</td><td>Intensity of the behaviour (1-10)</td></tr><tr><td style=\"white-space:nowrap\">oral-health-score<a name=\"onc-observation-codes-oral-health-score\"> </a></td><td>Oral Health Score</td><td>Total Oral Health Assessment Score</td></tr><tr><td style=\"white-space:nowrap\">oral-lips<a name=\"onc-observation-codes-oral-lips\"> </a></td><td>Lips</td><td>Condition of lips (Pink/Moist vs Dry/Cracked)</td></tr><tr><td style=\"white-space:nowrap\">oral-tongue<a name=\"onc-observation-codes-oral-tongue\"> </a></td><td>Tongue</td><td>Condition of tongue (Pink/Moist vs Coated/Red)</td></tr><tr><td style=\"white-space:nowrap\">oral-gums<a name=\"onc-observation-codes-oral-gums\"> </a></td><td>Gums</td><td>Condition of gums (Pink/Firm vs Bleeding/Receding)</td></tr><tr><td style=\"white-space:nowrap\">oral-teeth<a name=\"onc-observation-codes-oral-teeth\"> </a></td><td>Teeth/Dentures</td><td>Condition of teeth or dentures (Clean/Intact vs Decayed/Broken/Loose)</td></tr><tr><td style=\"white-space:nowrap\">oral-saliva<a name=\"onc-observation-codes-oral-saliva\"> </a></td><td>Saliva</td><td>Saliva quality (Moist/Watery vs Thick/Sticky/Absent)</td></tr><tr><td style=\"white-space:nowrap\">seizure-record<a name=\"onc-observation-codes-seizure-record\"> </a></td><td>Seizure Record</td><td>Record of a seizure event</td></tr><tr><td style=\"white-space:nowrap\">seizure-type<a name=\"onc-observation-codes-seizure-type\"> </a></td><td>Seizure Type</td><td>Type of seizure (Tonic-Clonic, Absence, Focal, etc)</td></tr><tr><td style=\"white-space:nowrap\">seizure-duration<a name=\"onc-observation-codes-seizure-duration\"> </a></td><td>Seizure Duration</td><td>Duration of the active seizure phase</td></tr><tr><td style=\"white-space:nowrap\">seizure-recovery<a name=\"onc-observation-codes-seizure-recovery\"> </a></td><td>Recovery Phase</td><td>Duration/Description of post-ictal recovery</td></tr><tr><td style=\"white-space:nowrap\">seizure-trigger<a name=\"onc-observation-codes-seizure-trigger\"> </a></td><td>Trigger</td><td>Suspected trigger for the seizure</td></tr><tr><td style=\"white-space:nowrap\">sleep-record<a name=\"onc-observation-codes-sleep-record\"> </a></td><td>Sleep Record</td><td>Record of a sleep period</td></tr><tr><td style=\"white-space:nowrap\">sleep-quality<a name=\"onc-observation-codes-sleep-quality\"> </a></td><td>Sleep Quality</td><td>Subjective or observed quality of sleep</td></tr><tr><td style=\"white-space:nowrap\">sleep-hours<a name=\"onc-observation-codes-sleep-hours\"> </a></td><td>Hours Slept</td><td>Total hours of sleep achieved</td></tr><tr><td style=\"white-space:nowrap\">sleep-disturbances<a name=\"onc-observation-codes-sleep-disturbances\"> </a></td><td>Disturbances</td><td>Number or description of distinct awakenings</td></tr><tr><td style=\"white-space:nowrap\">urinalysis-panel<a name=\"onc-observation-codes-urinalysis-panel\"> </a></td><td>Urinalysis Panel</td><td>Urine Dipstick Test Panel</td></tr><tr><td style=\"white-space:nowrap\">ua-leukocytes<a name=\"onc-observation-codes-ua-leukocytes\"> </a></td><td>Leukocytes</td><td>Leukocytes (WBCs) in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-nitrites<a name=\"onc-observation-codes-ua-nitrites\"> </a></td><td>Nitrites</td><td>Nitrites in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-protein<a name=\"onc-observation-codes-ua-protein\"> </a></td><td>Protein</td><td>Protein in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-blood<a name=\"onc-observation-codes-ua-blood\"> </a></td><td>Blood</td><td>Blood (Hemoglobin) in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-glucose<a name=\"onc-observation-codes-ua-glucose\"> </a></td><td>Glucose</td><td>Glucose in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-ketones<a name=\"onc-observation-codes-ua-ketones\"> </a></td><td>Ketones</td><td>Ketones in urine</td></tr><tr><td style=\"white-space:nowrap\">ua-ph<a name=\"onc-observation-codes-ua-ph\"> </a></td><td>pH</td><td>Urine pH Level</td></tr><tr><td style=\"white-space:nowrap\">ua-sg<a name=\"onc-observation-codes-ua-sg\"> </a></td><td>Specific Gravity</td><td>Urine Specific Gravity</td></tr><tr><td style=\"white-space:nowrap\">mca-present<a name=\"onc-observation-codes-mca-present\"> </a></td><td>Capacity Present</td><td>Patient has capacity for this decision</td></tr><tr><td style=\"white-space:nowrap\">4at-change-no<a name=\"onc-observation-codes-4at-change-no\"> </a></td><td>No Acute Change</td><td>No indication of acute change or fluctuating course</td></tr><tr><td style=\"white-space:nowrap\">4at-amt4-1error<a name=\"onc-observation-codes-4at-amt4-1error\"> </a></td><td>1 Error</td><td>1 error in AMT4 test</td></tr><tr><td style=\"white-space:nowrap\">4at-attention-gt7<a name=\"onc-observation-codes-4at-attention-gt7\"> </a></td><td>Months Backwards &lt; 7 months</td><td>Less than 7 months correctly recited backwards</td></tr><tr><td style=\"white-space:nowrap\">4at-alert-normal<a name=\"onc-observation-codes-4at-alert-normal\"> </a></td><td>Normal Alertness</td><td>Patient is fully alert</td></tr><tr><td style=\"white-space:nowrap\">continence-assessment<a name=\"onc-observation-codes-continence-assessment\"> </a></td><td>Continence Assessment</td><td>Assessment of bladder and bowel control</td></tr><tr><td style=\"white-space:nowrap\">bladder-assessment<a name=\"onc-observation-codes-bladder-assessment\"> </a></td><td>Bladder Assessment</td><td>Detailed assessment of bladder function</td></tr><tr><td style=\"white-space:nowrap\">bowel-assessment<a name=\"onc-observation-codes-bowel-assessment\"> </a></td><td>Bowel Assessment</td><td>Detailed assessment of bowel function</td></tr><tr><td style=\"white-space:nowrap\">catheter-care<a name=\"onc-observation-codes-catheter-care\"> </a></td><td>Catheter Care Interaction</td><td>Nursing interaction related to catheter care</td></tr><tr><td style=\"white-space:nowrap\">oral-intake<a name=\"onc-observation-codes-oral-intake\"> </a></td><td>Oral Intake Assessment</td><td>Assessment of food and fluid intake capability</td></tr><tr><td style=\"white-space:nowrap\">swallowing<a name=\"onc-observation-codes-swallowing\"> </a></td><td>Swallowing Assessment</td><td>Assessment of swallowing ability (dysphagia risk)</td></tr><tr><td style=\"white-space:nowrap\">dietary-requirements<a name=\"onc-observation-codes-dietary-requirements\"> </a></td><td>Dietary Requirements</td><td>Specific dietary needs or restrictions</td></tr><tr><td style=\"white-space:nowrap\">mobility<a name=\"onc-observation-codes-mobility\"> </a></td><td>Mobility Assessment</td><td>Assessment of physical mobility and transfer ability</td></tr><tr><td style=\"white-space:nowrap\">device-use<a name=\"onc-observation-codes-device-use\"> </a></td><td>Device/Aid Usage</td><td>Observation of device or mobility aid usage</td></tr><tr><td style=\"white-space:nowrap\">hygiene-needs<a name=\"onc-observation-codes-hygiene-needs\"> </a></td><td>Personal Hygiene Needs</td><td>Assessment of assistance required for hygiene</td></tr><tr><td style=\"white-space:nowrap\">oral-care<a name=\"onc-observation-codes-oral-care\"> </a></td><td>Oral Care Needs</td><td>Assessment of oral health and care requirements</td></tr><tr><td style=\"white-space:nowrap\">medication-ability<a name=\"onc-observation-codes-medication-ability\"> </a></td><td>Medication Management Ability</td><td>Ability to manage own medications</td></tr><tr><td style=\"white-space:nowrap\">medication-self-admin<a name=\"onc-observation-codes-medication-self-admin\"> </a></td><td>Medication Self-Administration</td><td>Observation of self-administration technique</td></tr><tr><td style=\"white-space:nowrap\">dressing-assessment<a name=\"onc-observation-codes-dressing-assessment\"> </a></td><td>Dressing Assessment</td><td>Assessment of ability to dress and undress</td></tr><tr><td style=\"white-space:nowrap\">skin-assessment<a name=\"onc-observation-codes-skin-assessment\"> </a></td><td>Skin Assessment</td><td>Detailed assessment of skin condition and integrity</td></tr><tr><td style=\"white-space:nowrap\">nursing-needs<a name=\"onc-observation-codes-nursing-needs\"> </a></td><td>Nursing Care Needs</td><td>Identified nursing care needs</td></tr><tr><td style=\"white-space:nowrap\">nursing-strengths<a name=\"onc-observation-codes-nursing-strengths\"> </a></td><td>Nursing Strengths</td><td>Identified patient strengths and capabilities</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "ONCObservationCodes"] ;
+  fhir:CodeSystem.title [ fhir:value "ONC Observation Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-29T21:13:26+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "The Open Nursing Community"] ;
+  fhir:CodeSystem.description [ fhir:value "Custom observation codes for Open Nursing Core"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "136"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mst-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Monk Skin Tone Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment of skin tone using the Monk Skin Tone Scale" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "waterlow-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Waterlow Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total score for Waterlow pressure ulcer risk assessment" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "must-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MUST Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Malnutrition Universal Screening Tool total score" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "must-bmi-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MUST BMI Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Malnutrition Universal Screening Tool BMI score" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "must-weight-loss-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MUST Weight Loss Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Malnutrition Universal Screening Tool weight loss score" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "must-acute-disease-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MUST Acute Disease Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Malnutrition Universal Screening Tool acute disease effect score" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "braden-total-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Braden Total Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Braden scale total score" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "braden-sensory" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Braden Sensory Perception" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sensory perception Braden scale" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "braden-moisture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Braden Moisture" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Moisture Braden scale" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "braden-activity" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Braden Activity" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity Braden scale" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "braden-mobility" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Braden Mobility" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mobility Braden scale" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "braden-nutrition" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Braden Nutrition" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Nutrition Braden scale" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "braden-friction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Braden Friction/Shear" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Friction and shear Braden scale" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barthel-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Barthel Index Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total score for Barthel Index assessment" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "news2-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NEWS2 Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "National Early Warning Score 2 Total Score" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "news2-subscore" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NEWS2 Sub-score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sub-score for NEWS2 parameter" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "wound-stage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wound Stage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stage of the wound" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stage-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stage 1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stage 1 pressure ulcer" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stage-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stage 2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stage 2 pressure ulcer" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stage-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stage 3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stage 3 pressure ulcer" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stage-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stage 4" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stage 4 pressure ulcer" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "unstageable" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unstageable" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Unstageable pressure ulcer" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "deep-tissue" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Deep Tissue Injury" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Deep tissue injury" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "risk-falls" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Risk of Falls" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Risk of falls diagnosis" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fitzpatrick-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type I" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Pale white; always burns, never tans" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fitzpatrick-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type II" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "White; usually burns, tans with difficulty" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fitzpatrick-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type III" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cream white; sometimes mild burn, gradually tans" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fitzpatrick-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type IV" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Moderate brown; rarely burns, tans with ease" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fitzpatrick-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type V" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dark brown; very rarely burns, tans very easily" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fitzpatrick-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type VI" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Deeply pigmented dark brown to black; never burns, tans very easily" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "what-matters" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "What Matters to Me" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient-identified priorities and non-clinical goals" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patient-story" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Story" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Narrative summary of patient background, preferences, and autobiography" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "relational-engagement" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Relational Engagement Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment of the quality of nurse-patient engagement (1-5)" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cfs-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Clinical Frailty Scale Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total score for Rockwood Clinical Frailty Scale" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cfs-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Very Fit" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Robus, active, energetic and motivated" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cfs-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Well" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "No active disease symptoms but less fit than category 1" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cfs-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Managing Well" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medical problems are well controlled, but not regularly active" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cfs-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vulnerable" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Not dependent for daily help, but symptoms limit activities" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cfs-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mildly Frail" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Need help with high order IADLs (finances, transportation, heavy housework)" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cfs-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Moderately Frail" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Need help with all outside activities and some housekeeping" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cfs-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Severely Frail" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Completely dependent for personal care" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cfs-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Very Severely Frail" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Completely dependent, approaching end of life" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cfs-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Terminally Ill" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Approaching the end of life (life expectancy <6 months)" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4at-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "4AT Delirium Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total score for 4AT assessment" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4at-alertness" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alertness" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "4AT Item 1: Alertness" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4at-amt4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AMT4 Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "4AT Item 2: Abbreviated Mental Test 4" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4at-attention" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Attention" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "4AT Item 3: Attention (Months Backwards)" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4at-acute-change" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Acute Change" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "4AT Item 4: Acute Change or Fluctuating Course" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reasonable-adjustment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reasonable Adjustment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Requirement for adjustment to care delivery (Equality Act)" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mca-assessment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mental Capacity Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment of capacity to make a specific decision" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "capacity-present" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Capacity Present" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient has capacity for this decision" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "capacity-absent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Capacity Absent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient lacks capacity for this decision" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "best-interest" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Best Interest Decision" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Decision made in patient's best interest" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bristol-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bristol Stool Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bristol Stool Form Scale Score (1-7)" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bristol-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type 1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Separate hard lumps, like nuts (hard to pass)" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bristol-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type 2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sausage-shaped but lumpy" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bristol-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type 3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Like a sausage but with cracks on its surface" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bristol-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type 4" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Like a sausage or snake, smooth and soft" ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bristol-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type 5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Soft blobs with clear-cut edges (passed easily)" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bristol-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type 6" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fluffy pieces with ragged edges, a mushy stool" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bristol-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type 7" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Watery, no solid pieces. Entirely liquid" ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adpie-a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment phase of the nursing process" ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adpie-d" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diagnosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Diagnosis phase of the nursing process" ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adpie-p" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Planning" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Planning phase of the nursing process" ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adpie-i" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Implementation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Implementation phase of the nursing process" ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adpie-e" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Evaluation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Evaluation phase of the nursing process" ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "empathy-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Low Empathy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Task-focused interaction with minimal person-centred engagement." ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "empathy-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Basic Empathy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Professional interaction with patient identity acknowledged." ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "empathy-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Moderate Empathy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Active relational engagement with shared decision making." ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "empathy-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "High Empathy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Authentic partnership with deep understanding of patient experience." ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "empathy-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Relational Excellence" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Flourishing partnership with total alignment on 'What Matters to Me'." ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "empathy-index" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ONC Empathy Index" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Formal assessment of the depth of therapeutic empathy" ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abbey-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abbey Pain Scale Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total Abbey Pain Scale Score (0-100+ but usually 0-18+)" ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abbey-vocalization" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vocalization" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Whimpering, groaning, crying" ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abbey-facial-expression" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Facial Expression" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Looking tense, frowning, grimacing, looking frightened" ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abbey-body-language" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Body Language" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fidgeting, rocking, guarding part of body, withdrawn" ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abbey-behavioral-change" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Behavioral Change" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Increased confusion, refusing to eat, alteration in usual pattern" ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abbey-psychological-change" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Psychological Change" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Temperature, pulse, blood pressure changes, perspiration, pallor" ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abbey-physical-changes" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physical Changes" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Skin tears, pressure areas, arthritis, contractures, previous injuries" ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fluid-input-total" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Total Fluid Input" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total fluid input over specified period (e.g. 24h)" ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fluid-output-total" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Total Fluid Output" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total fluid output over specified period (e.g. 24h)" ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fluid-balance" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fluid Balance" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total Input minus Total Output" ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "urine-output" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urine Output" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Volume of urine passed" ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abc-chart" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC Chart" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Antecedent-Behaviour-Consequence Chart for PBS" ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abc-antecedent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antecedent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "What happened immediately before the behaviour (triggers)" ]
+  ], [
+     fhir:index 85 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abc-behaviour" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Behaviour" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Description of the behaviour itself (observable actions)" ]
+  ], [
+     fhir:index 86 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abc-consequence" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Consequence" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "What happened immediately after (response/outcome)" ]
+  ], [
+     fhir:index 87 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abc-function" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Function of Behaviour" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)" ]
+  ], [
+     fhir:index 88 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abc-duration" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Duration" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Duration of the episode" ]
+  ], [
+     fhir:index 89 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abc-intensity" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intensity of the behaviour (1-10)" ]
+  ], [
+     fhir:index 90 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oral-health-score" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oral Health Score" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total Oral Health Assessment Score" ]
+  ], [
+     fhir:index 91 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oral-lips" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lips" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Condition of lips (Pink/Moist vs Dry/Cracked)" ]
+  ], [
+     fhir:index 92 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oral-tongue" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tongue" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Condition of tongue (Pink/Moist vs Coated/Red)" ]
+  ], [
+     fhir:index 93 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oral-gums" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gums" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Condition of gums (Pink/Firm vs Bleeding/Receding)" ]
+  ], [
+     fhir:index 94 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oral-teeth" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Teeth/Dentures" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Condition of teeth or dentures (Clean/Intact vs Decayed/Broken/Loose)" ]
+  ], [
+     fhir:index 95 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oral-saliva" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Saliva" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Saliva quality (Moist/Watery vs Thick/Sticky/Absent)" ]
+  ], [
+     fhir:index 96 ;
+     fhir:CodeSystem.concept.code [ fhir:value "seizure-record" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Seizure Record" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Record of a seizure event" ]
+  ], [
+     fhir:index 97 ;
+     fhir:CodeSystem.concept.code [ fhir:value "seizure-type" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Seizure Type" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type of seizure (Tonic-Clonic, Absence, Focal, etc)" ]
+  ], [
+     fhir:index 98 ;
+     fhir:CodeSystem.concept.code [ fhir:value "seizure-duration" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Seizure Duration" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Duration of the active seizure phase" ]
+  ], [
+     fhir:index 99 ;
+     fhir:CodeSystem.concept.code [ fhir:value "seizure-recovery" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Recovery Phase" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Duration/Description of post-ictal recovery" ]
+  ], [
+     fhir:index 100 ;
+     fhir:CodeSystem.concept.code [ fhir:value "seizure-trigger" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trigger" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Suspected trigger for the seizure" ]
+  ], [
+     fhir:index 101 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sleep-record" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sleep Record" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Record of a sleep period" ]
+  ], [
+     fhir:index 102 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sleep-quality" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sleep Quality" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Subjective or observed quality of sleep" ]
+  ], [
+     fhir:index 103 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sleep-hours" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hours Slept" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total hours of sleep achieved" ]
+  ], [
+     fhir:index 104 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sleep-disturbances" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Disturbances" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Number or description of distinct awakenings" ]
+  ], [
+     fhir:index 105 ;
+     fhir:CodeSystem.concept.code [ fhir:value "urinalysis-panel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urinalysis Panel" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Urine Dipstick Test Panel" ]
+  ], [
+     fhir:index 106 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ua-leukocytes" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leukocytes" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Leukocytes (WBCs) in urine" ]
+  ], [
+     fhir:index 107 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ua-nitrites" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nitrites" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Nitrites in urine" ]
+  ], [
+     fhir:index 108 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ua-protein" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Protein" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Protein in urine" ]
+  ], [
+     fhir:index 109 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ua-blood" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blood" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood (Hemoglobin) in urine" ]
+  ], [
+     fhir:index 110 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ua-glucose" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Glucose" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Glucose in urine" ]
+  ], [
+     fhir:index 111 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ua-ketones" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ketones" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ketones in urine" ]
+  ], [
+     fhir:index 112 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ua-ph" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "pH" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Urine pH Level" ]
+  ], [
+     fhir:index 113 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ua-sg" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Specific Gravity" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Urine Specific Gravity" ]
+  ], [
+     fhir:index 114 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mca-present" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Capacity Present" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient has capacity for this decision" ]
+  ], [
+     fhir:index 115 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4at-change-no" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No Acute Change" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "No indication of acute change or fluctuating course" ]
+  ], [
+     fhir:index 116 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4at-amt4-1error" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1 Error" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1 error in AMT4 test" ]
+  ], [
+     fhir:index 117 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4at-attention-gt7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Months Backwards < 7 months" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Less than 7 months correctly recited backwards" ]
+  ], [
+     fhir:index 118 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4at-alert-normal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Normal Alertness" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient is fully alert" ]
+  ], [
+     fhir:index 119 ;
+     fhir:CodeSystem.concept.code [ fhir:value "continence-assessment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Continence Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment of bladder and bowel control" ]
+  ], [
+     fhir:index 120 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bladder-assessment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bladder Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Detailed assessment of bladder function" ]
+  ], [
+     fhir:index 121 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bowel-assessment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bowel Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Detailed assessment of bowel function" ]
+  ], [
+     fhir:index 122 ;
+     fhir:CodeSystem.concept.code [ fhir:value "catheter-care" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Catheter Care Interaction" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Nursing interaction related to catheter care" ]
+  ], [
+     fhir:index 123 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oral-intake" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oral Intake Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment of food and fluid intake capability" ]
+  ], [
+     fhir:index 124 ;
+     fhir:CodeSystem.concept.code [ fhir:value "swallowing" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swallowing Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment of swallowing ability (dysphagia risk)" ]
+  ], [
+     fhir:index 125 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dietary-requirements" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dietary Requirements" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Specific dietary needs or restrictions" ]
+  ], [
+     fhir:index 126 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mobility" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mobility Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment of physical mobility and transfer ability" ]
+  ], [
+     fhir:index 127 ;
+     fhir:CodeSystem.concept.code [ fhir:value "device-use" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Device/Aid Usage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Observation of device or mobility aid usage" ]
+  ], [
+     fhir:index 128 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hygiene-needs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Personal Hygiene Needs" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment of assistance required for hygiene" ]
+  ], [
+     fhir:index 129 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oral-care" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oral Care Needs" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment of oral health and care requirements" ]
+  ], [
+     fhir:index 130 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medication-ability" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medication Management Ability" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ability to manage own medications" ]
+  ], [
+     fhir:index 131 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medication-self-admin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medication Self-Administration" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Observation of self-administration technique" ]
+  ], [
+     fhir:index 132 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dressing-assessment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dressing Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Assessment of ability to dress and undress" ]
+  ], [
+     fhir:index 133 ;
+     fhir:CodeSystem.concept.code [ fhir:value "skin-assessment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Skin Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Detailed assessment of skin condition and integrity" ]
+  ], [
+     fhir:index 134 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nursing-needs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nursing Care Needs" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identified nursing care needs" ]
+  ], [
+     fhir:index 135 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nursing-strengths" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nursing Strengths" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identified patient strengths and capabilities" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/CodeSystem/onc-observation-codes.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCMonkSkinToneObservation |
+| Active as of 2026-06-29 | *Computable Name*:ONCMonkSkinToneObservation |
 
  
 Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations. 
@@ -19,7 +19,7 @@ Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale 
 * Refer to this Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) and [Waterlow Score](StructureDefinition-onc-waterlow-score.md)
 * Examples for this Profile: [Observation/example-monk-skin-tone](Observation-example-monk-skin-tone.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-monk-skintone-observation)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-monk-skintone-observation.json)
 
 ### Formal Views of Profile Content
 
@@ -42,80 +42,72 @@ Other representations of profile: [CSV](StructureDefinition-onc-monk-skintone-ob
   "name" : "ONCMonkSkinToneObservation",
   "title" : "Monk Skin Tone Observation",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "mst-score",
-              "display" : "Monk Skin Tone Score"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs"
-        }
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "mst-score",
+          "display" : "Monk Skin Tone Score"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs"
+      }
+    }]
   }
 }
 

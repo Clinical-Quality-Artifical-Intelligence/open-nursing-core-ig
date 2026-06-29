@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCWaterlowScore |
+| Active as of 2026-06-29 | *Computable Name*:ONCWaterlowScore |
 
  
 Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk. 
@@ -18,7 +18,7 @@ Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicat
 
 * Examples for this Profile: [Observation/example-waterlow-score](Observation-example-waterlow-score.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-waterlow-score)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-waterlow-score.json)
 
 ### Formal Views of Profile Content
 
@@ -41,155 +41,137 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
   "name" : "ONCWaterlowScore",
   "title" : "Waterlow Score",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation",
-        "constraint" : [
-          {
-            "key" : "onc-equity-gate-1",
-            "severity" : "error",
-            "human" : "Clinical safety rule: Skin observations (pressure ulcers, wounds) MUST include a Skin Tone assessment to ensure equitable care thresholds.",
-            "expression" : "hasMember.resolve().code.coding.where(code = '66555-4' or code = 'mst-score').exists()",
-            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
-          }
-        ]
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation",
+      "constraint" : [{
+        "key" : "onc-equity-gate-1",
+        "severity" : "error",
+        "human" : "Clinical safety rule: Skin observations (pressure ulcers, wounds) MUST include a Skin Tone assessment to ensure equitable care thresholds.",
+        "expression" : "hasMember.resolve().code.coding.where(code = '66555-4' or code = 'mst-score').exists()",
+        "source" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
+      }]
+    },
+    {
+      "id" : "Observation.status",
+      "path" : "Observation.status",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "waterlow-score",
+          "display" : "Waterlow Score"
+        }]
       },
-      {
-        "id" : "Observation.status",
-        "path" : "Observation.status",
-        "mustSupport" : true
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "short" : "Waterlow total score (0-64+, higher = higher risk)",
+      "min" : 1,
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.value[x].value",
+      "path" : "Observation.value[x].value",
+      "constraint" : [{
+        "key" : "waterlow-range",
+        "severity" : "error",
+        "human" : "Waterlow score must be 0 or greater",
+        "expression" : "$this >= 0",
+        "source" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
+      }]
+    },
+    {
+      "id" : "Observation.value[x].unit",
+      "path" : "Observation.value[x].unit",
+      "patternString" : "{score}"
+    },
+    {
+      "id" : "Observation.value[x].system",
+      "path" : "Observation.value[x].system",
+      "patternUri" : "http://unitsofmeasure.org"
+    },
+    {
+      "id" : "Observation.hasMember",
+      "path" : "Observation.hasMember",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "resolve().code"
+        }],
+        "rules" : "open"
       },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "waterlow-score",
-              "display" : "Waterlow Score"
-            }
-          ]
-        },
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "short" : "Waterlow total score (0-64+, higher = higher risk)",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x].value",
-        "path" : "Observation.value[x].value",
-        "constraint" : [
-          {
-            "key" : "waterlow-range",
-            "severity" : "error",
-            "human" : "Waterlow score must be 0 or greater",
-            "expression" : "$this >= 0",
-            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x].unit",
-        "path" : "Observation.value[x].unit",
-        "patternString" : "{score}"
-      },
-      {
-        "id" : "Observation.value[x].system",
-        "path" : "Observation.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      },
-      {
-        "id" : "Observation.hasMember",
-        "path" : "Observation.hasMember",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "pattern",
-              "path" : "resolve().code"
-            }
-          ],
-          "rules" : "open"
-        },
-        "min" : 1,
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.hasMember:skinTone",
-        "path" : "Observation.hasMember",
-        "sliceName" : "skinTone",
-        "short" : "Mandatory Skin Tone Context (Equity Gate)",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation",
-              "https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component",
-        "path" : "Observation.component",
-        "short" : "Risk factor components (build, skin type, age, continence, mobility, appetite, special risks)",
-        "mustSupport" : true
-      }
-    ]
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.hasMember:skinTone",
+      "path" : "Observation.hasMember",
+      "sliceName" : "skinTone",
+      "short" : "Mandatory Skin Tone Context (Equity Gate)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation",
+        "https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component",
+      "path" : "Observation.component",
+      "short" : "Risk factor components (build, skin type, age, continence, mobility, appetite, special risks)",
+      "mustSupport" : true
+    }]
   }
 }
 

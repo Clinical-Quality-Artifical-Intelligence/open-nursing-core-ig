@@ -164,7 +164,7 @@
         
           Active
           
-            as of 2026-01-27
+            as of 2026-06-29
           
         
       </td>
@@ -183,66 +183,80 @@
   <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix sct: &lt;http://snomed.info/id/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:PlanDefinition ;
+&lt;http://hl7.org/fhir/PlanDefinition/news2-escalation-plan&gt; a fhir:PlanDefinition ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#PlanDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;news2-escalation-plan&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/domainresource.html#PlanDefinition.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n&lt;div&gt;\n    &lt;table class=\&quot;grid dict\&quot;&gt;\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Id: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;news2-escalation-plan&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Url: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;&lt;a href=\&quot;PlanDefinition-news2-escalation-plan.html\&quot;&gt;NEWS2 Escalation Protocol&lt;/a&gt;&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Version: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;1.0.0&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Title: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;NEWS2 Escalation Protocol&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Type: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;\n                \n                    \n                        \n                        &lt;p style=\&quot;margin-bottom: 5px;\&quot;&gt;\n                            &lt;b&gt;system: &lt;/b&gt; &lt;span&gt;&lt;a href=\&quot;http://terminology.hl7.org/7.0.1/CodeSystem-plan-definition-type.html\&quot;&gt;http://terminology.hl7.org/CodeSystem/plan-definition-type&lt;/a&gt;&lt;/span&gt;\n                        &lt;/p&gt;\n                        \n                        \n                        &lt;p style=\&quot;margin-bottom: 5px;\&quot;&gt;\n                            &lt;b&gt;code: &lt;/b&gt; &lt;span&gt;clinical-protocol&lt;/span&gt;\n                        &lt;/p&gt;\n                        \n                        \n                    \n                \n                \n            &lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Date: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;2026-01-27 09:30:37+0000&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Publisher: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;The Open Nursing Community&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Libraries: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;\n                &lt;table class=\&quot;grid-dict\&quot;&gt;\n                    \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;a href=\&quot;Library-onc-news2-cql.html\&quot;&gt;ONC NEWS2 Auto-Calculation Logic&lt;/a&gt;&lt;/td&gt;\n                    &lt;/tr&gt;\n                    \n                &lt;/table&gt;\n            &lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Actions: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;\n                &lt;table class=\&quot;grid-dict\&quot;&gt;\n                    \n                    &lt;tr&gt;\n                        &lt;td&gt;\n                            \n                            &lt;b&gt; High Clinical Risk - Emergency Response:&lt;/b&gt; NEWS2 Score of 7 or more indicates high clinical risk. Urgent response required.\n                            \n                            &lt;br/&gt;\n                            \n                            &lt;b&gt;When:&lt;/b&gt;\n                            \n                            &lt;i&gt;Named Event:&lt;/i&gt; news2-score-calculated\n                            &lt;br/&gt;\n                            \n                            \n                            \n                            &lt;b&gt;If:&lt;/b&gt;\n                            \n                            &lt;i&gt;Applicability:&lt;/i&gt;\n                            \n                            &lt;i&gt;(Clinical Risk Category = 'High')&lt;/i&gt;\n                            &lt;br/&gt;\n                            \n                            \n                            \n                            \n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                    \n                &lt;/table&gt;\n            &lt;/td&gt;\n        &lt;/tr&gt;\n        \n    &lt;/table&gt;\n&lt;/div&gt;\n&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.url">fhir:url</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://opennursingcore.org/PlanDefinition/news2-escalation&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://opennursingcore.org/PlanDefinition/news2-escalation&gt;
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;NEWS2_Escalation_Protocol&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;NEWS2 Escalation Protocol&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.type">fhir:type</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/plan-definition-type&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/plan-definition-type&gt;       ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;clinical-protocol&quot; ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-01-27T09:30:37+00:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;The Open Nursing Community&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.library">fhir:library</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://opennursingcore.org/Library/ONC-NEWS2-CQL&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:l</a> &lt;http://opennursingcore.org/Library/ONC-NEWS2-CQL&gt;
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">fhir:action</a> ( [
-<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;High Clinical Risk - Emergency Response&quot; ] ;
-<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;NEWS2 Score of 7 or more indicates high clinical risk. Urgent response required.&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a sct:225365006 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://snomed.info/sct&gt;         ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;225365006&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Care plan&quot; ]       ] )     ] ) ;
-    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.trigger">fhir:trigger</a> [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition#TriggerDefinition.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;named-event&quot; ] ;
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition#TriggerDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;news2-score-calculated&quot; ]     ] ) ;
-    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.condition">fhir:condition</a> [
-<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.condition.kind">fhir:kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;applicability&quot; ] ;
-<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.condition.expression">fhir:expression</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;text/cql&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Clinical Risk Category = 'High'&quot; ]       ]     ] ) ;
-    ( <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.dynamicValue">fhir:dynamicValue</a> [
-<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.dynamicValue.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;description&quot; ] ;
-<a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.dynamicValue.expression">fhir:expression</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;text/cql&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;'URGENT: NEWS2 Score is ' + ToString(\&quot;NEWS2 Total Score\&quot;) + '. Immediate medical review required.'&quot; ]       ]     ] )
-  ] ) . # 
+  <a href="http://hl7.org/fhir/R4/resource.html#PlanDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;news2-escalation-plan&quot;] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#PlanDefinition.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ] ;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n&lt;div&gt;\n    &lt;table class=\&quot;grid dict\&quot;&gt;\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Id: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;news2-escalation-plan&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Url: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;&lt;a href=\&quot;PlanDefinition-news2-escalation-plan.html\&quot;&gt;NEWS2 Escalation Protocol&lt;/a&gt;&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Version: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;1.0.0&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Title: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;NEWS2 Escalation Protocol&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Type: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;\n                \n                    \n                        \n                        &lt;p style=\&quot;margin-bottom: 5px;\&quot;&gt;\n                            &lt;b&gt;system: &lt;/b&gt; &lt;span&gt;&lt;a href=\&quot;http://terminology.hl7.org/7.2.0/CodeSystem-plan-definition-type.html\&quot;&gt;http://terminology.hl7.org/CodeSystem/plan-definition-type&lt;/a&gt;&lt;/span&gt;\n                        &lt;/p&gt;\n                        \n                        \n                        &lt;p style=\&quot;margin-bottom: 5px;\&quot;&gt;\n                            &lt;b&gt;code: &lt;/b&gt; &lt;span&gt;clinical-protocol&lt;/span&gt;\n                        &lt;/p&gt;\n                        \n                        \n                    \n                \n                \n            &lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Date: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;2026-06-29 21:13:26+0000&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Publisher: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;The Open Nursing Community&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Libraries: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;\n                &lt;table class=\&quot;grid-dict\&quot;&gt;\n                    \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;a href=\&quot;Library-onc-news2-cql.html\&quot;&gt;ONC NEWS2 Auto-Calculation Logic&lt;/a&gt;&lt;/td&gt;\n                    &lt;/tr&gt;\n                    \n                &lt;/table&gt;\n            &lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Actions: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;\n                &lt;table class=\&quot;grid-dict\&quot;&gt;\n                    \n                    &lt;tr&gt;\n                        &lt;td&gt;\n                            \n                            &lt;b&gt; High Clinical Risk - Emergency Response:&lt;/b&gt; NEWS2 Score of 7 or more indicates high clinical risk. Urgent response required.\n                            \n                            &lt;br/&gt;\n                            \n                            &lt;b&gt;When:&lt;/b&gt;\n                            \n                            &lt;i&gt;Named Event:&lt;/i&gt; news2-score-calculated\n                            &lt;br/&gt;\n                            \n                            \n                            \n                            &lt;b&gt;If:&lt;/b&gt;\n                            \n                            &lt;i&gt;Applicability:&lt;/i&gt;\n                            \n                            &lt;i&gt;(Clinical Risk Category = 'High')&lt;/i&gt;\n                            &lt;br/&gt;\n                            \n                            \n                            \n                            \n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                    \n                &lt;/table&gt;\n            &lt;/td&gt;\n        &lt;/tr&gt;\n        \n    &lt;/table&gt;\n&lt;/div&gt;\n&lt;/div&gt;&quot;
+  ] ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.url">fhir:PlanDefinition.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://opennursingcore.org/PlanDefinition/news2-escalation&quot;] ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.version">fhir:PlanDefinition.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;] ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.name">fhir:PlanDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;NEWS2_Escalation_Protocol&quot;] ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.title">fhir:PlanDefinition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;NEWS2 Escalation Protocol&quot;] ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.type">fhir:PlanDefinition.type</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/plan-definition-type&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;clinical-protocol&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.status">fhir:PlanDefinition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.date">fhir:PlanDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-06-29T21:13:26+00:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.publisher">fhir:PlanDefinition.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;The Open Nursing Community&quot;] ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.library">fhir:PlanDefinition.library</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://opennursingcore.org/Library/ONC-NEWS2-CQL&quot; ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://opennursingcore.org/Library/ONC-NEWS2-CQL&gt;
+  ] ;
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">fhir:PlanDefinition.action</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">fhir:PlanDefinition.action.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;High Clinical Risk - Emergency Response&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.description">fhir:PlanDefinition.action.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;NEWS2 Score of 7 or more indicates high clinical risk. Urgent response required.&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.code">fhir:PlanDefinition.action.code</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         a sct:225365006 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;225365006&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Care plan&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.trigger">fhir:PlanDefinition.action.trigger</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition#TriggerDefinition.type">fhir:TriggerDefinition.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;named-event&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition#TriggerDefinition.name">fhir:TriggerDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;news2-score-calculated&quot; ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.condition">fhir:PlanDefinition.action.condition</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.condition.kind">fhir:PlanDefinition.action.condition.kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;applicability&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.condition.expression">fhir:PlanDefinition.action.condition.expression</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:Expression.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;text/cql&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:Expression.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Clinical Risk Category = 'High'&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.dynamicValue">fhir:PlanDefinition.action.dynamicValue</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.dynamicValue.path">fhir:PlanDefinition.action.dynamicValue.path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;description&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.dynamicValue.expression">fhir:PlanDefinition.action.dynamicValue.expression</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:Expression.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;text/cql&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:Expression.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;'URGENT: NEWS2 Score is ' + ToString(\&quot;NEWS2 Total Score\&quot;) + '. Immediate medical review required.'&quot; ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/PlanDefinition/news2-escalation-plan.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/PlanDefinition/news2-escalation-plan.ttl&gt; .
 
 </code></pre>
 
@@ -269,7 +283,7 @@ a sct:225365006 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 27, 2026 09:30+0000">2026-01-27</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2026 21:13+0000">2026-06-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

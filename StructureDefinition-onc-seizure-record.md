@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-seizure-record | *Version*:1.0.0 |
-| Draft as of 2026-01-27 | *Computable Name*:ONCSeizureRecord |
+| Draft as of 2026-06-29 | *Computable Name*:ONCSeizureRecord |
 
  
 Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns. 
@@ -18,7 +18,7 @@ Record of a specific seizure event, including type, duration, triggers, and reco
 
 * Examples for this Profile: [Observation/example-seizure-record](Observation-example-seizure-record.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-seizure-record)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-seizure-record.json)
 
 ### Formal Views of Profile Content
 
@@ -41,235 +41,207 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
   "name" : "ONCSeizureRecord",
   "title" : "Seizure Record",
   "status" : "draft",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
-        "id" : "Observation.category",
-        "path" : "Observation.category",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-              "code" : "exam"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "seizure-record"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "short" : "Description of the event",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component",
-        "path" : "Observation.component",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "pattern",
-              "path" : "code"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        },
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:type",
-        "path" : "Observation.component",
-        "sliceName" : "type",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:type.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "seizure-type"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:type.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:duration",
-        "path" : "Observation.component",
-        "sliceName" : "duration",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:duration.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "seizure-duration"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:duration.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:duration.value[x].unit",
-        "path" : "Observation.component.value[x].unit",
-        "patternString" : "min"
-      },
-      {
-        "id" : "Observation.component:duration.value[x].system",
-        "path" : "Observation.component.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      },
-      {
-        "id" : "Observation.component:duration.value[x].code",
-        "path" : "Observation.component.value[x].code",
-        "patternCode" : "min"
-      },
-      {
-        "id" : "Observation.component:recovery",
-        "path" : "Observation.component",
-        "sliceName" : "recovery",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:recovery.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "seizure-recovery"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:recovery.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:trigger",
-        "path" : "Observation.component",
-        "sliceName" : "trigger",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:trigger.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "seizure-trigger"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:trigger.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.category",
+      "path" : "Observation.category",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "exam"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "seizure-record"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "short" : "Description of the event",
+      "min" : 1,
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Observation.component",
+      "path" : "Observation.component",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "code"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:type",
+      "path" : "Observation.component",
+      "sliceName" : "type",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:type.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "seizure-type"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:type.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Observation.component:duration",
+      "path" : "Observation.component",
+      "sliceName" : "duration",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:duration.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "seizure-duration"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:duration.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.component:duration.value[x].unit",
+      "path" : "Observation.component.value[x].unit",
+      "patternString" : "min"
+    },
+    {
+      "id" : "Observation.component:duration.value[x].system",
+      "path" : "Observation.component.value[x].system",
+      "patternUri" : "http://unitsofmeasure.org"
+    },
+    {
+      "id" : "Observation.component:duration.value[x].code",
+      "path" : "Observation.component.value[x].code",
+      "patternCode" : "min"
+    },
+    {
+      "id" : "Observation.component:recovery",
+      "path" : "Observation.component",
+      "sliceName" : "recovery",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:recovery.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "seizure-recovery"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:recovery.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Observation.component:trigger",
+      "path" : "Observation.component",
+      "sliceName" : "trigger",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:trigger.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "seizure-trigger"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:trigger.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
   }
 }
 

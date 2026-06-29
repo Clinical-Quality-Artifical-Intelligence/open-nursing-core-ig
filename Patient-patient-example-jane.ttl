@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,39 +7,44 @@
 
 <https://opennursingcoreig.com/Patient/patient-example-jane> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "patient-example-jane"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"^^xsd:anyURI ;
-       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-example-jane</b></p><a name=\"patient-example-jane\"> </a><a name=\"hcpatient-example-jane\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-nhs-patient.html\">ONC NHS Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Doe  Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"An extension to record the ethnic category of a patient, as per UK Core standards.\"><a href=\"StructureDefinition-UKCore-Extension-EthnicCategory.html\">UK Core Ethnic Category</a></td><td colspan=\"3\"><span title=\"Codes:{https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory A}\">British, Mixed British</span></td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [
-       fhir:v "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory"^^xsd:anyURI ;
-       fhir:l <https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory>
-     ] ;
-     fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory"^^xsd:anyURI ;
-           fhir:l <https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory>
-         ] ;
-         fhir:code [ fhir:v "A" ] ;
-         fhir:display [ fhir:v "British, Mixed British" ]
-       ] )
+  fhir:Resource.id [ fhir:value "patient-example-jane"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient" ;
+       fhir:index 0 ;
+       fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient>
      ]
-  ] ) ; # 
-  fhir:name ( [
-     fhir:family [ fhir:v "Doe" ] ;
-     fhir:given ( [ fhir:v "Jane" ] )
-  ] ) ; # 
-  fhir:gender [ fhir:v "female"] . # 
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-example-jane</b></p><a name=\"patient-example-jane\"> </a><a name=\"hcpatient-example-jane\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-nhs-patient.html\">ONC NHS Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Doe  Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"An extension to record the ethnic category of a patient, as per UK Core standards.\"><a href=\"StructureDefinition-UKCore-Extension-EthnicCategory.html\">UK Core Ethnic Category</a></td><td colspan=\"3\"><span title=\"Codes:{https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory A}\">British, Mixed British</span></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory" ] ;
+         fhir:Coding.code [ fhir:value "A" ] ;
+         fhir:Coding.display [ fhir:value "British, Mixed British" ]
+       ]
+     ]
+  ] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.family [ fhir:value "Doe" ] ;
+     fhir:HumanName.given [
+       fhir:value "Jane" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/Patient/patient-example-jane.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

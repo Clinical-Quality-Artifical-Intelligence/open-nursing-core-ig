@@ -37,87 +37,69 @@ Profile: [MUST Score (Malnutrition Universal Screening Tool)](StructureDefinitio
   "resourceType" : "Observation",
   "id" : "example-must-score",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-must-score"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-must-score"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "must-score",
-        "display" : "MUST Score"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "must-score",
+      "display" : "MUST Score"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueQuantity" : {
     "value" : 1,
     "unit" : "{score}"
   },
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "must-bmi-score",
-            "display" : "MUST BMI Score"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 0
-      }
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "must-bmi-score",
+        "display" : "MUST BMI Score"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "must-weight-loss-score",
-            "display" : "MUST Weight Loss Score"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 1
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "must-acute-disease-score",
-            "display" : "MUST Acute Disease Score"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 0
-      }
+    "valueQuantity" : {
+      "value" : 0
     }
-  ]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "must-weight-loss-score",
+        "display" : "MUST Weight Loss Score"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 1
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "must-acute-disease-score",
+        "display" : "MUST Acute Disease Score"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0
+    }
+  }]
 }
 
 ```

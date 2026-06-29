@@ -1,77 +1,75 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://snomed.info/sct",
-      "version" : null,
-      "status" : "active",
-      "name" : "SNOMED_CT",
-      "title" : "SNOMED CT (all versions)",
-      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
-      "oids" : ["2.16.840.1.113883.6.96"],
-      "uses" : {
-      },
-      "ValueSet-inspired-oxygen-vs.html" : "Inspired Oxygen Value Set",
-      "ValueSet-housing-status-vs.html" : "Housing Status Value Set",
-      "ValueSet-onc-4at-attention-vs.html" : "4AT Attention Value Set",
-      "http://hl7.org/fhir/R4/valueset-consistency-type.html" : "Fluid Consistency Type Codes",
-      "ValueSet-onc-news2-score-vs.html" : "NEWS2 Score Categories Value Set",
-      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
-      "ValueSet-acvpu-vs.html" : "ACVPU Value Set",
-      "ValueSet-goal-evaluation-valueset.html" : "Goal Evaluation Value Set",
-      "ValueSet-onc-pain-score-vs.html" : "Pain Score Value Set",
-      "ValueSet-onc-4at-amt4-vs.html" : "4AT AMT4 Value Set",
-      "ValueSet-onc-goal-target-measure-vs.html" : "Goal Target Measure ValueSet",
-      "ValueSet-onc-prognosis-vs.html" : "Nursing Prognosis ValueSet",
-      "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
-      "ValueSet-nursing-intervention-valueset.html" : "Nursing Intervention Value Set",
-      "ValueSet-onc-4at-acute-change-vs.html" : "4AT Acute Change Value Set",
-      "ValueSet-onc-relational-outcomes-vs.html" : "ONC Relational Care Outcomes"
+  "codeSystems" : [{
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ONCMonkScale",
-      "title" : "Monk Skin Tone Scale CodeSystem",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-onc-monk-scale-vs.html" : "Monk Skin Tone Scale ValueSet",
-      "ValueSet-onc-skin-tone-vs.html" : "Skin Tone Value Set"
+    "ValueSet-onc-prognosis-vs.html" : "Nursing Prognosis ValueSet",
+    "ValueSet-onc-relational-outcomes-vs.html" : "ONC Relational Care Outcomes",
+    "ValueSet-onc-news2-score-vs.html" : "NEWS2 Score Categories Value Set",
+    "ValueSet-onc-pain-score-vs.html" : "Pain Score Value Set",
+    "ValueSet-onc-4at-amt4-vs.html" : "4AT AMT4 Value Set",
+    "ValueSet-onc-goal-target-measure-vs.html" : "Goal Target Measure ValueSet",
+    "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
+    "ValueSet-acvpu-vs.html" : "ACVPU Value Set",
+    "ValueSet-housing-status-vs.html" : "Housing Status Value Set",
+    "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
+    "ValueSet-onc-4at-attention-vs.html" : "4AT Attention Value Set",
+    "ValueSet-inspired-oxygen-vs.html" : "Inspired Oxygen Value Set",
+    "ValueSet-nursing-intervention-valueset.html" : "Nursing Intervention Value Set",
+    "ValueSet-onc-4at-acute-change-vs.html" : "4AT Acute Change Value Set",
+    "http://hl7.org/fhir/R4/valueset-consistency-type.html" : "Fluid Consistency Type Codes",
+    "ValueSet-goal-evaluation-valueset.html" : "Goal Evaluation Value Set"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCMonkScale",
+    "title" : "Monk Skin Tone Scale CodeSystem",
+    "description" : "",
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ONCObservationCodes",
-      "title" : "ONC Observation Codes",
-      "description" : "Custom observation codes for Open Nursing Core",
-      "uses" : {
-      },
-      "ValueSet-news2-subscore-code-vs.html" : "NEWS2 Sub-Score Codes",
-      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
-      "ValueSet-onc-empathy-index-vs.html" : "ONC Empathy & Relational Engagement Index",
-      "ValueSet-news2-code-vs.html" : "NEWS2 Code Value Set",
-      "ValueSet-wound-stage-vs.html" : "Wound Stage Value Set",
-      "ValueSet-onc-adpie-vs.html" : "ADPIE Nursing Process Phases",
-      "ValueSet-onc-pain-score-vs.html" : "Pain Score Value Set",
-      "ConceptMap-onc-to-nanda.html" : "Mapping ONC Relational Concepts to NANDA-I",
-      "ValueSet-onc-skin-tone-vs.html" : "Skin Tone Value Set",
-      "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
-      "ValueSet-onc-pbs-function-vs.html" : "PBS Behaviour Function ValueSet",
-      "ValueSet-onc-cfs-vs.html" : "Clinical Frailty Scale Value Set",
-      "ValueSet-onc-mca-vs.html" : "Mental Capacity Finding Value Set"
+    "ValueSet-onc-skin-tone-vs.html" : "Skin Tone Value Set",
+    "ValueSet-onc-monk-scale-vs.html" : "Monk Skin Tone Scale ValueSet"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCObservationCodes",
+    "title" : "ONC Observation Codes",
+    "description" : "Custom observation codes for Open Nursing Core",
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ONCProblemType",
-      "title" : "Problem Type CodeSystem",
-      "description" : "Code system for categorizing types of nursing problems",
-      "uses" : {
-      },
-      "ValueSet-problem-category-valueset.html" : "Problem Category Value Set"
-    }
-  ]
+    "ConceptMap-onc-to-nanda.html" : "Mapping ONC Relational Concepts to NANDA-I",
+    "ValueSet-onc-mca-vs.html" : "Mental Capacity Finding Value Set",
+    "ValueSet-onc-pain-score-vs.html" : "Pain Score Value Set",
+    "ValueSet-wound-stage-vs.html" : "Wound Stage Value Set",
+    "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
+    "ValueSet-onc-empathy-index-vs.html" : "ONC Empathy & Relational Engagement Index",
+    "ValueSet-onc-skin-tone-vs.html" : "Skin Tone Value Set",
+    "ValueSet-news2-code-vs.html" : "NEWS2 Code Value Set",
+    "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
+    "ValueSet-onc-pbs-function-vs.html" : "PBS Behaviour Function ValueSet",
+    "ValueSet-onc-cfs-vs.html" : "Clinical Frailty Scale Value Set",
+    "ValueSet-onc-adpie-vs.html" : "ADPIE Nursing Process Phases",
+    "ValueSet-news2-subscore-code-vs.html" : "NEWS2 Sub-Score Codes"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCProblemType",
+    "title" : "Problem Type CodeSystem",
+    "description" : "Code system for categorizing types of nursing problems",
+    "uses" : {
+    },
+    "ValueSet-problem-category-valueset.html" : "Problem Category Value Set"
+  }]
 }

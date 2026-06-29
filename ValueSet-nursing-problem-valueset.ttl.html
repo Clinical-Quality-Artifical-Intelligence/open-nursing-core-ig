@@ -164,7 +164,7 @@
         
           Active
           
-            as of 2026-01-27
+            as of 2026-06-29
           
         
       </td>
@@ -183,50 +183,60 @@
   <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:ValueSet ;
+&lt;http://hl7.org/fhir/ValueSet/nursing-problem-valueset&gt; a fhir:ValueSet ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;nursing-problem-valueset&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet nursing-problem-valueset&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;nursing-problem-valueset\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcnursing-problem-valueset\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/129839007\&quot;&gt;129839007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At risk for falls&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/300893006\&quot;&gt;300893006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nutritional finding&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/22253000\&quot;&gt;22253000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pain&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-onc-observation-codes.html\&quot;&gt;&lt;code&gt;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version ?1.0.0&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-onc-observation-codes.html#onc-observation-codes-risk-falls\&quot;&gt;risk-falls&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Risk of falls&lt;/td&gt;&lt;td&gt;Risk of falls diagnosis&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:url</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://opennursingcoreig.com/ValueSet/nursing-problem-valueset&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://opennursingcoreig.com/ValueSet/nursing-problem-valueset&gt;
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;NursingProblemValueSet&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Nursing Problem Value Set&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-01-27T09:30:37+00:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;The Open Nursing Community&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Value set for nursing problems and diagnoses&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:compose</a> [
-    ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:include</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://snomed.info/sct&gt;       ] ;
-      ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:concept</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;129839007&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;At risk for falls&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;300893006&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Nutritional finding&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;22253000&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pain&quot; ]       ] )     ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&gt;       ] ;
-      ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:concept</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;risk-falls&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Risk of falls&quot; ]       ] )     ] )
-  ] . # 
+  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;nursing-problem-valueset&quot;] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ] ;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet nursing-problem-valueset&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;nursing-problem-valueset\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcnursing-problem-valueset\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/129839007\&quot;&gt;129839007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At risk for falls&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/300893006\&quot;&gt;300893006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nutritional finding&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/22253000\&quot;&gt;22253000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pain&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-onc-observation-codes.html\&quot;&gt;&lt;code&gt;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version ?1.0.0&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-onc-observation-codes.html#onc-observation-codes-risk-falls\&quot;&gt;risk-falls&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Risk of falls&lt;/td&gt;&lt;td&gt;Risk of falls diagnosis&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  ] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://opennursingcoreig.com/ValueSet/nursing-problem-valueset&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;NursingProblemValueSet&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Nursing Problem Value Set&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">fhir:ValueSet.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-06-29T21:13:26+00:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;The Open Nursing Community&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Value set for nursing problems and diagnoses&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
+     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;129839007&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;At risk for falls&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;300893006&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Nutritional finding&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;22253000&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pain&quot; ]
+       ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;risk-falls&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Risk of falls&quot; ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/ValueSet/nursing-problem-valueset.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/ValueSet/nursing-problem-valueset.ttl&gt; .
 
 </code></pre>
 
@@ -253,7 +263,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 27, 2026 09:30+0000">2026-01-27</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2026 21:13+0000">2026-06-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

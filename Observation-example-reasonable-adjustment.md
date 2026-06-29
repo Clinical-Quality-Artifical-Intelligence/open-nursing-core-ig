@@ -29,37 +29,27 @@ Profile: [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.m
   "resourceType" : "Observation",
   "id" : "example-reasonable-adjustment",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "reasonable-adjustment"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "reasonable-adjustment"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueString" : "Requires large print documents (Font size 16+)."
 }
 

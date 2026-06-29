@@ -29,37 +29,27 @@ Profile: [Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.md)
   "resourceType" : "Observation",
   "id" : "example-bristol-stool",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "bristol-score"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "bristol-score"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueQuantity" : {
     "value" : 4,
     "unit" : "{score}"

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-4at-acute-change-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:AcuteChangeVS |
+| Active as of 2026-06-29 | *Computable Name*:AcuteChangeVS |
 
  
 Scoring for Acute Change or Fluctuating Course 
@@ -50,25 +50,21 @@ Scoring for Acute Change or Fluctuating Course
   "name" : "AcuteChangeVS",
   "title" : "4AT Acute Change Value Set",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Scoring for Acute Change or Fluctuating Course",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "521000176101",
+        "display" : "No"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "521000176101",
-            "display" : "No"
-          },
-          {
-            "code" : "531000176103",
-            "display" : "Yes"
-          }
-        ]
-      }
-    ]
+        "code" : "531000176103",
+        "display" : "Yes"
+      }]
+    }]
   }
 }
 

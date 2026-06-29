@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-patient-story | *Version*:1.0.0 |
-| Draft as of 2026-01-27 | *Computable Name*:ONCPatientStory |
+| Draft as of 2026-06-29 | *Computable Name*:ONCPatientStory |
 
  
 A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'. 
@@ -18,7 +18,7 @@ A narrative summary of the patient's background, biography, preferences, and per
 
 * Examples for this Profile: [Observation/example-patient-story](Observation-example-patient-story.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-patient-story)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-patient-story.json)
 
 ### Formal Views of Profile Content
 
@@ -41,90 +41,80 @@ Other representations of profile: [CSV](StructureDefinition-onc-patient-story.cs
   "name" : "ONCPatientStory",
   "title" : "Patient Story",
   "status" : "draft",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
-        "id" : "Observation.category",
-        "path" : "Observation.category",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-              "code" : "social-history"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "patient-story"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "short" : "Narrative story of the patient",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ],
-        "mustSupport" : true
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.category",
+      "path" : "Observation.category",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "patient-story"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "short" : "Narrative story of the patient",
+      "min" : 1,
+      "type" : [{
+        "code" : "string"
+      }],
+      "mustSupport" : true
+    }]
   }
 }
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCEmpathyIndexVS |
+| Active as of 2026-06-29 | *Computable Name*:ONCEmpathyIndexVS |
 
  
 A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome. 
@@ -53,37 +53,33 @@ A clinical scale measuring the depth of therapeutic empathy in nurse-patient int
   "name" : "ONCEmpathyIndexVS",
   "title" : "ONC Empathy & Relational Engagement Index",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "concept" : [{
+        "code" : "empathy-1",
+        "display" : "Low Empathy: Task-focused interaction with minimal person-centred engagement."
+      },
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "concept" : [
-          {
-            "code" : "empathy-1",
-            "display" : "Low Empathy: Task-focused interaction with minimal person-centred engagement."
-          },
-          {
-            "code" : "empathy-2",
-            "display" : "Basic Empathy: Professional interaction with patient identity acknowledged."
-          },
-          {
-            "code" : "empathy-3",
-            "display" : "Moderate Empathy: Active relational engagement with shared decision making."
-          },
-          {
-            "code" : "empathy-4",
-            "display" : "High Empathy: Authentic partnership with deep understanding of patient experience."
-          },
-          {
-            "code" : "empathy-5",
-            "display" : "Relational Excellence: Flourishing partnership with total alignment on 'What Matters to Me'."
-          }
-        ]
-      }
-    ]
+        "code" : "empathy-2",
+        "display" : "Basic Empathy: Professional interaction with patient identity acknowledged."
+      },
+      {
+        "code" : "empathy-3",
+        "display" : "Moderate Empathy: Active relational engagement with shared decision making."
+      },
+      {
+        "code" : "empathy-4",
+        "display" : "High Empathy: Authentic partnership with deep understanding of patient experience."
+      },
+      {
+        "code" : "empathy-5",
+        "display" : "Relational Excellence: Flourishing partnership with total alignment on 'What Matters to Me'."
+      }]
+    }]
   }
 }
 

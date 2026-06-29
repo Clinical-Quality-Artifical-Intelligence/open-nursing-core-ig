@@ -31,39 +31,29 @@ Profile: [Continence Assessment](StructureDefinition-onc-continence-assessment.m
   "resourceType" : "Observation",
   "id" : "example-continence-assessment",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "417476007",
-        "display" : "Bowel continence assessment"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "417476007",
+      "display" : "Bowel continence assessment"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueCodeableConcept" : {
     "text" : "Occasional urinary incontinence"
   }

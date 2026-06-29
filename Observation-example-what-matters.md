@@ -36,43 +36,31 @@ This is her primary motivation for physiotherapy.
   "resourceType" : "Observation",
   "id" : "example-what-matters",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-what-matters"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-what-matters"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "social-history"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "social-history"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "what-matters"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "what-matters"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueString" : "Being able to walk her dog (Buster) daily.",
-  "note" : [
-    {
-      "text" : "This is her primary motivation for physiotherapy."
-    }
-  ]
+  "note" : [{
+    "text" : "This is her primary motivation for physiotherapy."
+  }]
 }
 
 ```

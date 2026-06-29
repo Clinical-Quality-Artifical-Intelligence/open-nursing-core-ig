@@ -31,39 +31,29 @@ Profile: [Oxygen Saturation](StructureDefinition-onc-oxygen-saturation.md)
   "resourceType" : "Observation",
   "id" : "example-oxygen-saturation",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "59408-5",
-        "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "59408-5",
+      "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueQuantity" : {
     "value" : 94,
     "unit" : "%"

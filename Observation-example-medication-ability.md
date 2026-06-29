@@ -31,39 +31,29 @@ Profile: [Medication Management Ability](StructureDefinition-onc-medication-abil
   "resourceType" : "Observation",
   "id" : "example-medication-ability",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-medication-ability"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-medication-ability"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "285033005",
-        "display" : "Manage medication"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "285033005",
+      "display" : "Manage medication"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueCodeableConcept" : {
     "text" : "Able to manage own medications with dosette box"
   }

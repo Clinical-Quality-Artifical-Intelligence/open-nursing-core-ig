@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:UKCoreEthnicCategory |
+| Active as of 2026-06-29 | *Computable Name*:UKCoreEthnicCategory |
 
 An extension to record the ethnic category of a patient, as per UK Core standards.
 
@@ -22,7 +22,7 @@ An extension to record the ethnic category of a patient, as per UK Core standard
 * Use this Extension: [ONC NHS Patient](StructureDefinition-onc-nhs-patient.md)
 * Examples for this Extension: [Patient/patient-example-jane](Patient-patient-example-jane.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/UKCore-Extension-EthnicCategory)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-UKCore-Extension-EthnicCategory.json)
 
 ### Formal Views of Extension Content
 
@@ -47,57 +47,49 @@ Other representations of profile: [CSV](StructureDefinition-UKCore-Extension-Eth
   "name" : "UKCoreEthnicCategory",
   "title" : "UK Core Ethnic Category",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "An extension to record the ethnic category of a patient, as per UK Core standards.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Patient"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Patient"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "UK Core Ethnic Category",
-        "definition" : "An extension to record the ethnic category of a patient, as per UK Core standards."
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "UK Core Ethnic Category",
+      "definition" : "An extension to record the ethnic category of a patient, as per UK Core standards."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    }]
   }
 }
 

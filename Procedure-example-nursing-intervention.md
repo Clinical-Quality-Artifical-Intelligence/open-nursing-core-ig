@@ -32,38 +32,30 @@ Profile: [ONC Nursing Intervention](StructureDefinition-onc-nursing-intervention
   "resourceType" : "Procedure",
   "id" : "example-nursing-intervention",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"]
   },
-  "extension" : [
-    {
-      "url" : "https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference",
-      "valueReference" : {
-        "reference" : "Goal/example-patient-goal"
-      }
+  "extension" : [{
+    "url" : "https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference",
+    "valueReference" : {
+      "reference" : "Goal/example-patient-goal"
     }
-  ],
+  }],
   "status" : "completed",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "71388002",
-        "display" : "Procedure"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "71388002",
+      "display" : "Procedure"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "performer" : [
-    {
-      "actor" : {
-        "reference" : "Practitioner/practitioner-example"
-      }
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/practitioner-example"
     }
-  ]
+  }]
 }
 
 ```

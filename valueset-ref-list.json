@@ -1,356 +1,330 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/consistency-type",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "FluidConsistencyTypeCodes",
-      "title" : "Fluid Consistency Type Codes",
-      "description" : "FluidConsistencyType :  Codes used to represent the consistency of fluids and liquids provided to the patient. This value set includes concepts from [SNOMED CT](http://snomed.info/sct)(US Extension) where concept is a 435681000124103  (Dietary liquid consistency diet (regime/therapy)). It is provided as a suggestive example.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.389"],
-      "sources" : ["2.16.840.1.113883.4.642.3.389"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-continence-assessment.html" : "Continence Assessment"
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/consistency-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FluidConsistencyTypeCodes",
+    "title" : "Fluid Consistency Type Codes",
+    "description" : "FluidConsistencyType :  Codes used to represent the consistency of fluids and liquids provided to the patient. This value set includes concepts from [SNOMED CT](http://snomed.info/sct)(US Extension) where concept is a 435681000124103  (Dietary liquid consistency diet (regime/therapy)). It is provided as a suggestive example.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.389"],
+    "sources" : ["2.16.840.1.113883.4.642.3.389"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/acvpu-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ACVPUValueSet",
-      "title" : "ACVPU Value Set",
-      "description" : "ACVPU consciousness level codes",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-acvpu.html" : "ACVPU Consciousness Level"
+    "StructureDefinition-onc-continence-assessment.html" : "Continence Assessment"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/acvpu-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ACVPUValueSet",
+    "title" : "ACVPU Value Set",
+    "description" : "ACVPU consciousness level codes",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "GoalEvaluationValueSet",
-      "title" : "Goal Evaluation Value Set",
-      "description" : "Value set for evaluating patient goal outcomes",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-goal-evaluation.html" : "ONC Goal Evaluation"
+    "StructureDefinition-onc-acvpu.html" : "ACVPU Consciousness Level"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "GoalEvaluationValueSet",
+    "title" : "Goal Evaluation Value Set",
+    "description" : "Value set for evaluating patient goal outcomes",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/housing-status-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "HousingStatusVS",
-      "title" : "Housing Status Value Set",
-      "description" : "Value set for patient housing status",
-      "systems" : ["http://snomed.info/sct"]
+    "StructureDefinition-onc-goal-evaluation.html" : "ONC Goal Evaluation"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/housing-status-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "HousingStatusVS",
+    "title" : "Housing Status Value Set",
+    "description" : "Value set for patient housing status",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/inspired-oxygen-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "InspiredOxygenValueSet",
+    "title" : "Inspired Oxygen Value Set",
+    "description" : "Codes for inspired oxygen status",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/inspired-oxygen-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "InspiredOxygenValueSet",
-      "title" : "Inspired Oxygen Value Set",
-      "description" : "Codes for inspired oxygen status",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-inspired-oxygen.html" : "Inspired Oxygen"
+    "StructureDefinition-onc-inspired-oxygen.html" : "Inspired Oxygen"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/news2-code-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "NEWS2CodeValueSet",
+    "title" : "NEWS2 Code Value Set",
+    "description" : "LOINC and SNOMED codes for NEWS2",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"]
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/news2-subscore-code-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "NEWS2SubscoreCodeValueSet",
+    "title" : "NEWS2 Sub-Score Codes",
+    "description" : "SNOMED codes for NEWS2 sub-scores",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"]
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "NursingInterventionValueSet",
+    "title" : "Nursing Intervention Value Set",
+    "description" : "Value set for nursing interventions",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/news2-code-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "NEWS2CodeValueSet",
-      "title" : "NEWS2 Code Value Set",
-      "description" : "LOINC and SNOMED codes for NEWS2",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ]
+    "StructureDefinition-onc-nursing-intervention.html" : "ONC Nursing Intervention"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/nursing-problem-valueset",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "NursingProblemValueSet",
+    "title" : "Nursing Problem Value Set",
+    "description" : "Value set for nursing problems and diagnoses",
+    "systems" : ["http://snomed.info/sct",
+    "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/news2-subscore-code-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "NEWS2SubscoreCodeValueSet",
-      "title" : "NEWS2 Sub-Score Codes",
-      "description" : "SNOMED codes for NEWS2 sub-scores",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ]
+    "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-4at-acute-change-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "AcuteChangeVS",
+    "title" : "4AT Acute Change Value Set",
+    "description" : "Scoring for Acute Change or Fluctuating Course",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "NursingInterventionValueSet",
-      "title" : "Nursing Intervention Value Set",
-      "description" : "Value set for nursing interventions",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-nursing-intervention.html" : "ONC Nursing Intervention"
+    "StructureDefinition-onc-4at-delirium.html" : "4AT Delirium Assessment"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-4at-alertness-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "AlertnessVS",
+    "title" : "4AT Alertness Value Set",
+    "description" : "Scoring options for 4AT Alertness",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+    "http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/nursing-problem-valueset",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "NursingProblemValueSet",
-      "title" : "Nursing Problem Value Set",
-      "description" : "Value set for nursing problems and diagnoses",
-      "systems" : [
-        "http://snomed.info/sct",
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem"
+    "StructureDefinition-onc-4at-delirium.html" : "4AT Delirium Assessment"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-4at-amt4-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "AMT4VS",
+    "title" : "4AT AMT4 Value Set",
+    "description" : "Scoring options for AMT4 (Age, DOB, Place, Year)",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-4at-acute-change-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "AcuteChangeVS",
-      "title" : "4AT Acute Change Value Set",
-      "description" : "Scoring for Acute Change or Fluctuating Course",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-4at-delirium.html" : "4AT Delirium Assessment"
+    "StructureDefinition-onc-4at-delirium.html" : "4AT Delirium Assessment"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-4at-attention-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "AttentionVS",
+    "title" : "4AT Attention Value Set",
+    "description" : "Scoring for Months Backwards test",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-4at-alertness-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "AlertnessVS",
-      "title" : "4AT Alertness Value Set",
-      "description" : "Scoring options for 4AT Alertness",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "http://snomed.info/sct"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-onc-4at-delirium.html" : "4AT Delirium Assessment"
+    "StructureDefinition-onc-4at-delirium.html" : "4AT Delirium Assessment"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-adpie-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCADPIEVS",
+    "title" : "ADPIE Nursing Process Phases",
+    "description" : "The five phases of the professional nursing process.",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-4at-amt4-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "AMT4VS",
-      "title" : "4AT AMT4 Value Set",
-      "description" : "Scoring options for AMT4 (Age, DOB, Place, Year)",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-4at-delirium.html" : "4AT Delirium Assessment"
+    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-cfs-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ClinicalFrailtyScaleVS",
+    "title" : "Clinical Frailty Scale Value Set",
+    "description" : "Codes for Rockwood Clinical Frailty Scale (1-9)",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-4at-attention-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "AttentionVS",
-      "title" : "4AT Attention Value Set",
-      "description" : "Scoring for Months Backwards test",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-4at-delirium.html" : "4AT Delirium Assessment"
+    "StructureDefinition-onc-clinical-frailty-scale.html" : "Clinical Frailty Scale (CFS)"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCEmpathyIndexVS",
+    "title" : "ONC Empathy & Relational Engagement Index",
+    "description" : "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome.",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-adpie-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ONCADPIEVS",
-      "title" : "ADPIE Nursing Process Phases",
-      "description" : "The five phases of the professional nursing process.",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+    "StructureDefinition-onc-mobility-assessment.html" : "Mobility Assessment",
+    "StructureDefinition-onc-oral-care-assessment.html" : "Oral Care Needs Assessment",
+    "StructureDefinition-onc-hygiene-assessment.html" : "Personal Hygiene Needs Assessment",
+    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCGoalTargetMeasureVS",
+    "title" : "Goal Target Measure ValueSet",
+    "description" : "Codes used for goal target measures",
+    "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-cfs-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ClinicalFrailtyScaleVS",
-      "title" : "Clinical Frailty Scale Value Set",
-      "description" : "Codes for Rockwood Clinical Frailty Scale (1-9)",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-onc-clinical-frailty-scale.html" : "Clinical Frailty Scale (CFS)"
+    "StructureDefinition-onc-nursing-goal.html" : "ONC Nursing Goal"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-mca-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "MentalCapacityVS",
+    "title" : "Mental Capacity Finding Value Set",
+    "description" : "Codes indicating presence or absence of capacity",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ONCEmpathyIndexVS",
-      "title" : "ONC Empathy & Relational Engagement Index",
-      "description" : "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome.",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-onc-mobility-assessment.html" : "Mobility Assessment",
-      "StructureDefinition-onc-oral-care-assessment.html" : "Oral Care Needs Assessment",
-      "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model",
-      "StructureDefinition-onc-hygiene-assessment.html" : "Personal Hygiene Needs Assessment"
+    "StructureDefinition-onc-mental-capacity.html" : "Mental Capacity Assessment"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCMonkScaleVS",
+    "title" : "Monk Skin Tone Scale ValueSet",
+    "description" : "",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-monk-scale"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ONCGoalTargetMeasureVS",
-      "title" : "Goal Target Measure ValueSet",
-      "description" : "Codes used for goal target measures",
-      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-nursing-goal.html" : "ONC Nursing Goal"
+    "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-news2-score-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "NEWS2ScoreVS",
+    "title" : "NEWS2 Score Categories Value Set",
+    "description" : "NEWS2 total score categories.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-pain-score-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "PainScoreVS",
+    "title" : "Pain Score Value Set",
+    "description" : "Standard 0-10 or Abbey Pain Scale score",
+    "systems" : ["http://snomed.info/sct",
+    "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"]
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-pbs-function-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "PBSFunctionVS",
+    "title" : "PBS Behaviour Function ValueSet",
+    "description" : "Common functions of behaviour (SEAT)",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-mca-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "MentalCapacityVS",
-      "title" : "Mental Capacity Finding Value Set",
-      "description" : "Codes indicating presence or absence of capacity",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-onc-mental-capacity.html" : "Mental Capacity Assessment"
+    "StructureDefinition-onc-abc-chart.html" : "PBS ABC Chart"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-prognosis-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCPrognosisVS",
+    "title" : "Nursing Prognosis ValueSet",
+    "description" : "Prognosis codes for clinical impression",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ONCMonkScaleVS",
-      "title" : "Monk Skin Tone Scale ValueSet",
-      "description" : "",
-      "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-monk-scale"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+    "StructureDefinition-onc-nursing-clinical-impression.html" : "ONC Nursing Clinical Impression"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCRelationalOutcomesVS",
+    "title" : "ONC Relational Care Outcomes",
+    "description" : "Captures the measurable outcomes of relational and empathic nursing care.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "SkinToneVS",
+    "title" : "Skin Tone Value Set",
+    "description" : "Monk and Fitzpatrick scales for equitable skin assessment.",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+    "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-news2-score-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "NEWS2ScoreVS",
-      "title" : "NEWS2 Score Categories Value Set",
-      "description" : "NEWS2 total score categories.",
-      "systems" : ["http://snomed.info/sct"]
+    "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "PainAssessmentCodeValueSet",
+    "title" : "Pain Assessment Code Value Set",
+    "description" : "LOINC codes for pain severity assessment",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-pain-score-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "PainScoreVS",
-      "title" : "Pain Score Value Set",
-      "description" : "Standard 0-10 or Abbey Pain Scale score",
-      "systems" : [
-        "http://snomed.info/sct",
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ]
+    "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/problem-category-valueset",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ProblemCategoryValueSet",
+    "title" : "Problem Category Value Set",
+    "description" : "Value set for categorizing nursing problems",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-problem-type"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-pbs-function-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "PBSFunctionVS",
-      "title" : "PBS Behaviour Function ValueSet",
-      "description" : "Common functions of behaviour (SEAT)",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-onc-abc-chart.html" : "PBS ABC Chart"
+    "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem"
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/wound-stage-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "WoundStageValueSet",
+    "title" : "Wound Stage Value Set",
+    "description" : "",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
+    "uses" : {
     },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-prognosis-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ONCPrognosisVS",
-      "title" : "Nursing Prognosis ValueSet",
-      "description" : "Prognosis codes for clinical impression",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-nursing-clinical-impression.html" : "ONC Nursing Clinical Impression"
-    },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ONCRelationalOutcomesVS",
-      "title" : "ONC Relational Care Outcomes",
-      "description" : "Captures the measurable outcomes of relational and empathic nursing care.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "SkinToneVS",
-      "title" : "Skin Tone Value Set",
-      "description" : "Monk and Fitzpatrick scales for equitable skin assessment.",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
-      "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
-    },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "PainAssessmentCodeValueSet",
-      "title" : "Pain Assessment Code Value Set",
-      "description" : "LOINC codes for pain severity assessment",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)"
-    },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/problem-category-valueset",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ProblemCategoryValueSet",
-      "title" : "Problem Category Value Set",
-      "description" : "Value set for categorizing nursing problems",
-      "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-problem-type"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem"
-    },
-    {
-      "url" : "https://opennursingcoreig.com/ValueSet/wound-stage-vs",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "WoundStageValueSet",
-      "title" : "Wound Stage Value Set",
-      "description" : "",
-      "systems" : [
-        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment"
-    }
-  ]
+    "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment"
+  }]
 }

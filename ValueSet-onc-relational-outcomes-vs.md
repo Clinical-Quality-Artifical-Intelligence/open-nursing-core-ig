@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCRelationalOutcomesVS |
+| Active as of 2026-06-29 | *Computable Name*:ONCRelationalOutcomesVS |
 
  
 Captures the measurable outcomes of relational and empathic nursing care. 
@@ -50,29 +50,25 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "ONCRelationalOutcomesVS",
   "title" : "ONC Relational Care Outcomes",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Captures the measurable outcomes of relational and empathic nursing care.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "161096001",
+        "display" : "Patient feels respected"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "161096001",
-            "display" : "Patient feels respected"
-          },
-          {
-            "code" : "307823004",
-            "display" : "Patient feels heard"
-          },
-          {
-            "code" : "428131006",
-            "display" : "Therapeutic relationship established"
-          }
-        ]
-      }
-    ]
+        "code" : "307823004",
+        "display" : "Patient feels heard"
+      },
+      {
+        "code" : "428131006",
+        "display" : "Therapeutic relationship established"
+      }]
+    }]
   }
 }
 

@@ -31,47 +31,35 @@ Profile: [ACVPU Consciousness Level](StructureDefinition-onc-acvpu.md)
   "resourceType" : "Observation",
   "id" : "example-acvpu",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-acvpu"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-acvpu"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1104441000000107",
-        "display" : "ACVPU (Alert Confusion Voice Pain Unresponsive) scale score"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1104441000000107",
+      "display" : "ACVPU (Alert Confusion Voice Pain Unresponsive) scale score"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "248234008",
-        "display" : "Mentally alert"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "248234008",
+      "display" : "Mentally alert"
+    }]
   }
 }
 

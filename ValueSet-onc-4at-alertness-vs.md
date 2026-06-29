@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-4at-alertness-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:AlertnessVS |
+| Active as of 2026-06-29 | *Computable Name*:AlertnessVS |
 
  
 Scoring options for 4AT Alertness 
@@ -50,34 +50,28 @@ Scoring options for 4AT Alertness
   "name" : "AlertnessVS",
   "title" : "4AT Alertness Value Set",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Scoring options for 4AT Alertness",
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "concept" : [
-          {
-            "code" : "4at-alertness",
-            "display" : "Normal (fully alert, not agitated)"
-          }
-        ]
+    "include" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "concept" : [{
+        "code" : "4at-alertness",
+        "display" : "Normal (fully alert, not agitated)"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "17621005",
+        "display" : "Normal"
       },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "17621005",
-            "display" : "Normal"
-          },
-          {
-            "code" : "263654008",
-            "display" : "Abnormal"
-          }
-        ]
-      }
-    ]
+        "code" : "263654008",
+        "display" : "Abnormal"
+      }]
+    }]
   }
 }
 

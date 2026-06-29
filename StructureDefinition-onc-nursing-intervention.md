@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCNursingIntervention |
+| Active as of 2026-06-29 | *Computable Name*:ONCNursingIntervention |
 
  
 Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase. 
@@ -18,7 +18,7 @@ Nursing intervention performed to achieve patient goals. Part of ADPIE Implement
 
 * Examples for this Profile: [Procedure/example-nursing-intervention](Procedure-example-nursing-intervention.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nursing-intervention)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-nursing-intervention.json)
 
 ### Formal Views of Profile Content
 
@@ -41,90 +41,80 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-interven
   "name" : "ONCNursingIntervention",
   "title" : "ONC Nursing Intervention",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Procedure",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Procedure",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Procedure",
-        "path" : "Procedure"
-      },
-      {
-        "id" : "Procedure.extension",
-        "path" : "Procedure.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Procedure.extension:interventionGoal",
-        "path" : "Procedure.extension",
-        "sliceName" : "interventionGoal",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "Procedure.status",
-        "path" : "Procedure.status",
-        "patternCode" : "completed",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Procedure.code",
-        "path" : "Procedure.code",
-        "min" : 1,
-        "mustSupport" : true,
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset"
-        }
+    "element" : [{
+      "id" : "Procedure",
+      "path" : "Procedure"
+    },
+    {
+      "id" : "Procedure.extension",
+      "path" : "Procedure.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Procedure.extension:interventionGoal",
+      "path" : "Procedure.extension",
+      "sliceName" : "interventionGoal",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.status",
+      "path" : "Procedure.status",
+      "patternCode" : "completed",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code",
+      "path" : "Procedure.code",
+      "min" : 1,
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset"
+      }
+    }]
   }
 }
 

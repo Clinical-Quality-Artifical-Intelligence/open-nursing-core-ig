@@ -3,12 +3,12 @@
 ## Pages
 
 * [Home](index.md)
-* [Clinical Safety](safety.md)
-* [Security & Privacy](security.md)
 * [Relational Ai (AI Model)](relation-ai.md)
 * [Artifacts Summary](artifacts.md)
-* [Terminology](terminology.md)
 * [Published Versions](history.md)
+* [Terminology](terminology.md)
+* [Clinical Safety](safety.md)
+* [Security & Privacy](security.md)
 
 ## Resources
 

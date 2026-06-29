@@ -34,33 +34,25 @@ Patient explicitly stated desire to continue buttoning own shirt if given enough
   "resourceType" : "Observation",
   "id" : "ExampleNursingStrength-Motivation",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"]
   },
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "nursing-strengths"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "nursing-strengths"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-patient"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/example-nurse"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/example-nurse"
+  }],
   "valueString" : "Highly motivated to maintain independence in upper body dressing.",
-  "note" : [
-    {
-      "text" : "Patient explicitly stated desire to continue buttoning own shirt if given enough time."
-    }
-  ]
+  "note" : [{
+    "text" : "Patient explicitly stated desire to continue buttoning own shirt if given enough time."
+  }]
 }
 
 ```

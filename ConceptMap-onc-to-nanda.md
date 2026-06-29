@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ConceptMap/onc-to-nanda | *Version*:1.0.0 |
-| Draft as of 2026-01-27 | *Computable Name*:ONCToNandaMapping |
+| Draft as of 2026-06-29 | *Computable Name*:ONCToNandaMapping |
 
  
 Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. 
@@ -27,49 +27,39 @@ Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.
   "name" : "ONCToNandaMapping",
   "title" : "Mapping ONC Relational Concepts to NANDA-I",
   "status" : "draft",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.",
   "sourceCanonical" : "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs",
   "targetCanonical" : "http://terminology.hl7.org/CodeSystem/nanda-i",
-  "group" : [
+  "group" : [{
+    "source" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+    "target" : "http://terminology.hl7.org/CodeSystem/nanda-i",
+    "element" : [{
+      "code" : "patient-story",
+      "target" : [{
+        "code" : "00053",
+        "display" : "Social Isolation",
+        "equivalence" : "relatedto"
+      }]
+    },
     {
-      "source" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-      "target" : "http://terminology.hl7.org/CodeSystem/nanda-i",
-      "element" : [
-        {
-          "code" : "patient-story",
-          "target" : [
-            {
-              "code" : "00053",
-              "display" : "Social Isolation",
-              "equivalence" : "relatedto"
-            }
-          ]
-        },
-        {
-          "code" : "relational-engagement",
-          "target" : [
-            {
-              "code" : "00054",
-              "display" : "Risk for Loneliness",
-              "equivalence" : "relatedto"
-            }
-          ]
-        },
-        {
-          "code" : "skintone-observation",
-          "target" : [
-            {
-              "code" : "399912005",
-              "display" : "Wound Assessment",
-              "equivalence" : "specializes"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+      "code" : "relational-engagement",
+      "target" : [{
+        "code" : "00054",
+        "display" : "Risk for Loneliness",
+        "equivalence" : "relatedto"
+      }]
+    },
+    {
+      "code" : "skintone-observation",
+      "target" : [{
+        "code" : "399912005",
+        "display" : "Wound Assessment",
+        "equivalence" : "specializes"
+      }]
+    }]
+  }]
 }
 
 ```

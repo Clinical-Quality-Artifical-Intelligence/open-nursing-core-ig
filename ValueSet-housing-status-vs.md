@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/housing-status-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:HousingStatusVS |
+| Active as of 2026-06-29 | *Computable Name*:HousingStatusVS |
 
  
 Value set for patient housing status 
@@ -51,25 +51,21 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Housing Status Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for patient housing status",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "266935003",
+        "display" : "Housing lack"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "266935003",
-            "display" : "Housing lack"
-          },
-          {
-            "code" : "224224003",
-            "display" : "Lives in staffed home"
-          }
-        ]
-      }
-    ]
+        "code" : "224224003",
+        "display" : "Lives in staffed home"
+      }]
+    }]
   }
 }
 

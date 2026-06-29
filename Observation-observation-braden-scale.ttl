@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,186 +7,157 @@
 
 <https://opennursingcoreig.com/Observation/observation-braden-scale> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "observation-braden-scale"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"^^xsd:anyURI ;
-       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-braden-scale</b></p><a name=\"observation-braden-scale\"> </a><a name=\"hcobservation-braden-scale\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-braden-scale-assessment.html\">Braden Scale Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-total-score}\">Braden Total Score</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: 18 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p><p><b>hasMember</b>: <a href=\"Observation-observation-skin-tone.html\">Observation Skin type [Fitzpatrick Classification Scale]</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-sensory}\">Braden Sensory Perception</span></p><p><b>value</b>: 3 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-moisture}\">Braden Moisture</span></p><p><b>value</b>: 4 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-activity}\">Braden Activity</span></p><p><b>value</b>: 2 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-mobility}\">Braden Mobility</span></p><p><b>value</b>: 3 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-nutrition}\">Braden Nutrition</span></p><p><b>value</b>: 3 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-friction}\">Braden Friction/Shear</span></p><p><b>value</b>: 3 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:status [ fhir:v "final"] ; # 
-  fhir:category ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
-       ] ;
-       fhir:code [ fhir:v "survey" ]
-     ] )
-  ] ) ; # 
-  fhir:code [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-       ] ;
-       fhir:code [ fhir:v "braden-total-score" ] ;
-       fhir:display [ fhir:v "Braden Total Score" ]
-     ] )
-  ] ; # 
-  fhir:subject [
-     fhir:l <https://opennursingcoreig.com/Patient/patient-example-jane> ;
-     fhir:reference [ fhir:v "Patient/patient-example-jane" ]
-  ] ; # 
-  fhir:performer ( [
-     fhir:l <https://opennursingcoreig.com/Practitioner/practitioner-example> ;
-     fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
-  ] ) ; # 
-  fhir:value [
-     a fhir:Quantity ;
-     fhir:value [ fhir:v "18"^^xsd:decimal ] ;
-     fhir:unit [ fhir:v "{score}" ] ;
-     fhir:system [
-       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-       fhir:l <http://unitsofmeasure.org>
-     ] ;
-     fhir:code [ fhir:v "1" ]
-  ] ; # 
-  fhir:hasMember ( [
-     fhir:l <https://opennursingcoreig.com/Observation/observation-skin-tone> ;
-     fhir:reference [ fhir:v "Observation/observation-skin-tone" ]
-  ] ) ; # 
-  fhir:component ( [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-         ] ;
-         fhir:code [ fhir:v "braden-sensory" ] ;
-         fhir:display [ fhir:v "Braden Sensory Perception" ]
-       ] )
-     ] ;
-     fhir:value [
-       a fhir:Quantity ;
-       fhir:value [ fhir:v "3"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "{score}" ] ;
-       fhir:system [
-         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-         fhir:l <http://unitsofmeasure.org>
-       ] ;
-       fhir:code [ fhir:v "1" ]
+  fhir:Resource.id [ fhir:value "observation-braden-scale"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment" ;
+       fhir:index 0 ;
+       fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment>
      ]
-  ] [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-         ] ;
-         fhir:code [ fhir:v "braden-moisture" ] ;
-         fhir:display [ fhir:v "Braden Moisture" ]
-       ] )
-     ] ;
-     fhir:value [
-       a fhir:Quantity ;
-       fhir:value [ fhir:v "4"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "{score}" ] ;
-       fhir:system [
-         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-         fhir:l <http://unitsofmeasure.org>
-       ] ;
-       fhir:code [ fhir:v "1" ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-braden-scale</b></p><a name=\"observation-braden-scale\"> </a><a name=\"hcobservation-braden-scale\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-braden-scale-assessment.html\">Braden Scale Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-total-score}\">Braden Total Score</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: 18 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p><p><b>hasMember</b>: <a href=\"Observation-observation-skin-tone.html\">Observation Skin type [Fitzpatrick Classification Scale]</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-sensory}\">Braden Sensory Perception</span></p><p><b>value</b>: 3 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-moisture}\">Braden Moisture</span></p><p><b>value</b>: 4 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-activity}\">Braden Activity</span></p><p><b>value</b>: 2 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-mobility}\">Braden Mobility</span></p><p><b>value</b>: 3 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-nutrition}\">Braden Nutrition</span></p><p><b>value</b>: 3 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes braden-friction}\">Braden Friction/Shear</span></p><p><b>value</b>: 3 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "survey" ]
      ]
-  ] [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-         ] ;
-         fhir:code [ fhir:v "braden-activity" ] ;
-         fhir:display [ fhir:v "Braden Activity" ]
-       ] )
-     ] ;
-     fhir:value [
-       a fhir:Quantity ;
-       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "{score}" ] ;
-       fhir:system [
-         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-         fhir:l <http://unitsofmeasure.org>
-       ] ;
-       fhir:code [ fhir:v "1" ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+       fhir:Coding.code [ fhir:value "braden-total-score" ] ;
+       fhir:Coding.display [ fhir:value "Braden Total Score" ]
      ]
-  ] [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-         ] ;
-         fhir:code [ fhir:v "braden-mobility" ] ;
-         fhir:display [ fhir:v "Braden Mobility" ]
-       ] )
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://opennursingcoreig.com/Patient/patient-example-jane> ;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-jane" ]
+  ] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://opennursingcoreig.com/Practitioner/practitioner-example> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/practitioner-example" ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "18"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "{score}" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "1" ]
+  ] ;
+  fhir:Observation.hasMember [
+     fhir:index 0 ;
+     fhir:link <https://opennursingcoreig.com/Observation/observation-skin-tone> ;
+     fhir:Reference.reference [ fhir:value "Observation/observation-skin-tone" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+         fhir:Coding.code [ fhir:value "braden-sensory" ] ;
+         fhir:Coding.display [ fhir:value "Braden Sensory Perception" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Quantity ;
-       fhir:value [ fhir:v "3"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "{score}" ] ;
-       fhir:system [
-         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-         fhir:l <http://unitsofmeasure.org>
-       ] ;
-       fhir:code [ fhir:v "1" ]
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "{score}" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "1" ]
      ]
-  ] [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-         ] ;
-         fhir:code [ fhir:v "braden-nutrition" ] ;
-         fhir:display [ fhir:v "Braden Nutrition" ]
-       ] )
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+         fhir:Coding.code [ fhir:value "braden-moisture" ] ;
+         fhir:Coding.display [ fhir:value "Braden Moisture" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Quantity ;
-       fhir:value [ fhir:v "3"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "{score}" ] ;
-       fhir:system [
-         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-         fhir:l <http://unitsofmeasure.org>
-       ] ;
-       fhir:code [ fhir:v "1" ]
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "4"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "{score}" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "1" ]
      ]
-  ] [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-         ] ;
-         fhir:code [ fhir:v "braden-friction" ] ;
-         fhir:display [ fhir:v "Braden Friction/Shear" ]
-       ] )
+  ], [
+     fhir:index 2 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+         fhir:Coding.code [ fhir:value "braden-activity" ] ;
+         fhir:Coding.display [ fhir:value "Braden Activity" ]
+       ]
      ] ;
-     fhir:value [
-       a fhir:Quantity ;
-       fhir:value [ fhir:v "3"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "{score}" ] ;
-       fhir:system [
-         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-         fhir:l <http://unitsofmeasure.org>
-       ] ;
-       fhir:code [ fhir:v "1" ]
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "{score}" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "1" ]
      ]
-  ] ) . # 
+  ], [
+     fhir:index 3 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+         fhir:Coding.code [ fhir:value "braden-mobility" ] ;
+         fhir:Coding.display [ fhir:value "Braden Mobility" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "{score}" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "1" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+         fhir:Coding.code [ fhir:value "braden-nutrition" ] ;
+         fhir:Coding.display [ fhir:value "Braden Nutrition" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "{score}" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "1" ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+         fhir:Coding.code [ fhir:value "braden-friction" ] ;
+         fhir:Coding.display [ fhir:value "Braden Friction/Shear" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "{score}" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "1" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/Observation/observation-braden-scale.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

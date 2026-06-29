@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,47 +7,52 @@
 
 <https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "goal-evaluation-valueset"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet goal-evaluation-valueset</b></p><a name=\"goal-evaluation-valueset\"> </a><a name=\"hcgoal-evaluation-valueset\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/385652002\">385652002</a></td><td>Objective achieved</td></tr><tr><td><a href=\"http://snomed.info/id/385651009\">385651009</a></td><td>Objective not achieved</td></tr><tr><td><a href=\"http://snomed.info/id/255609007\">255609007</a></td><td>Partial achievement</td></tr><tr><td><a href=\"http://snomed.info/id/723510000\">723510000</a></td><td>Sustained improvement</td></tr><tr><td><a href=\"http://snomed.info/id/260388008\">260388008</a></td><td>Worsening</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset"^^xsd:anyURI ;
-     fhir:l <https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset>
-  ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
-  fhir:name [ fhir:v "GoalEvaluationValueSet"] ; # 
-  fhir:title [ fhir:v "Goal Evaluation Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-01-27T09:30:37+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
-  fhir:description [ fhir:v "Value set for evaluating patient goal outcomes"] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [
-         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-         fhir:l <http://snomed.info/sct>
-       ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "385652002" ] ;
-         fhir:display [ fhir:v "Objective achieved" ]
-       ] [
-         fhir:code [ fhir:v "385651009" ] ;
-         fhir:display [ fhir:v "Objective not achieved" ]
-       ] [
-         fhir:code [ fhir:v "255609007" ] ;
-         fhir:display [ fhir:v "Partial achievement" ]
-       ] [
-         fhir:code [ fhir:v "723510000" ] ;
-         fhir:display [ fhir:v "Sustained improvement" ]
-       ] [
-         fhir:code [ fhir:v "260388008" ] ;
-         fhir:display [ fhir:v "Worsening" ]
-       ] )
-     ] )
-  ] . # 
+  fhir:Resource.id [ fhir:value "goal-evaluation-valueset"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet goal-evaluation-valueset</b></p><a name=\"goal-evaluation-valueset\"> </a><a name=\"hcgoal-evaluation-valueset\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/385652002\">385652002</a></td><td>Objective achieved</td></tr><tr><td><a href=\"http://snomed.info/id/385651009\">385651009</a></td><td>Objective not achieved</td></tr><tr><td><a href=\"http://snomed.info/id/255609007\">255609007</a></td><td>Partial achievement</td></tr><tr><td><a href=\"http://snomed.info/id/723510000\">723510000</a></td><td>Sustained improvement</td></tr><tr><td><a href=\"http://snomed.info/id/260388008\">260388008</a></td><td>Worsening</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "GoalEvaluationValueSet"] ;
+  fhir:ValueSet.title [ fhir:value "Goal Evaluation Value Set"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-29T21:13:26+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "The Open Nursing Community"] ;
+  fhir:ValueSet.description [ fhir:value "Value set for evaluating patient goal outcomes"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "385652002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Objective achieved" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "385651009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Objective not achieved" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255609007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Partial achievement" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "723510000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sustained improvement" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260388008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Worsening" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

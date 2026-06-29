@@ -33,71 +33,55 @@ Profile: [Fluid Balance](StructureDefinition-onc-fluid-balance.md)
   "resourceType" : "Observation",
   "id" : "example-fluid-balance",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "fluid-balance"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "fluid-balance"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueQuantity" : {
     "value" : 500,
     "unit" : "mL"
   },
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "fluid-input-total"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 2000,
-        "unit" : "mL"
-      }
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "fluid-input-total"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "fluid-output-total"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 1500,
-        "unit" : "mL"
-      }
+    "valueQuantity" : {
+      "value" : 2000,
+      "unit" : "mL"
     }
-  ]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "fluid-output-total"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 1500,
+      "unit" : "mL"
+    }
+  }]
 }
 
 ```

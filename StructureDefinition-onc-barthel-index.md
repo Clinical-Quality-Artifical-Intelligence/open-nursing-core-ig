@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-barthel-index | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCBarthelIndex |
+| Active as of 2026-06-29 | *Computable Name*:ONCBarthelIndex |
 
  
 Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* This Profile is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-barthel-index)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-barthel-index.json)
 
 ### Formal Views of Profile Content
 
@@ -41,107 +41,97 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
   "name" : "ONCBarthelIndex",
   "title" : "Barthel Index",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.status",
+      "path" : "Observation.status",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "barthel-score",
+          "display" : "Barthel Index Score"
+        }]
       },
-      {
-        "id" : "Observation.status",
-        "path" : "Observation.status",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "barthel-score",
-              "display" : "Barthel Index Score"
-            }
-          ]
-        },
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "short" : "Barthel Index total (0-100)",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x].value",
-        "path" : "Observation.value[x].value",
-        "constraint" : [
-          {
-            "key" : "barthel-range",
-            "severity" : "error",
-            "human" : "Barthel Index must be between 0 and 100",
-            "expression" : "$this >= 0 and $this <= 100",
-            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-barthel-index"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x].unit",
-        "path" : "Observation.value[x].unit",
-        "patternString" : "{score}"
-      },
-      {
-        "id" : "Observation.value[x].system",
-        "path" : "Observation.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      }
-    ]
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "short" : "Barthel Index total (0-100)",
+      "min" : 1,
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.value[x].value",
+      "path" : "Observation.value[x].value",
+      "constraint" : [{
+        "key" : "barthel-range",
+        "severity" : "error",
+        "human" : "Barthel Index must be between 0 and 100",
+        "expression" : "$this >= 0 and $this <= 100",
+        "source" : "https://opennursingcoreig.com/StructureDefinition/onc-barthel-index"
+      }]
+    },
+    {
+      "id" : "Observation.value[x].unit",
+      "path" : "Observation.value[x].unit",
+      "patternString" : "{score}"
+    },
+    {
+      "id" : "Observation.value[x].system",
+      "path" : "Observation.value[x].system",
+      "patternUri" : "http://unitsofmeasure.org"
+    }]
   }
 }
 

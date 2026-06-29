@@ -37,119 +37,91 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
   "resourceType" : "Observation",
   "id" : "example-4at-delirium",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "4at-score"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "4at-score"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueQuantity" : {
     "value" : 5,
     "unit" : "{score}"
   },
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "4at-alertness"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "4at-alert-normal",
-            "display" : "Normal"
-          }
-        ]
-      }
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "4at-alertness"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "4at-amt4"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "4at-amt4-1error",
-            "display" : "1 Error"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "4at-attention"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "4at-attention-gt7",
-            "display" : "Months backwards < 7 months correct"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "4at-acute-change"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "4at-change-no",
-            "display" : "No"
-          }
-        ]
-      }
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "4at-alert-normal",
+        "display" : "Normal"
+      }]
     }
-  ]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "4at-amt4"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "4at-amt4-1error",
+        "display" : "1 Error"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "4at-attention"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "4at-attention-gt7",
+        "display" : "Months backwards < 7 months correct"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "4at-acute-change"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "4at-change-no",
+        "display" : "No"
+      }]
+    }
+  }]
 }
 
 ```

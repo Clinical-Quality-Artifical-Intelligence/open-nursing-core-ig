@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart | *Version*:1.0.0 |
-| Draft as of 2026-01-27 | *Computable Name*:ONCBristolStoolChart |
+| Draft as of 2026-06-29 | *Computable Name*:ONCBristolStoolChart |
 
  
 Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment. 
@@ -18,7 +18,7 @@ Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standar
 
 * Examples for this Profile: [Observation/example-bristol-stool](Observation-example-bristol-stool.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-bristol-stool-chart)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-bristol-stool-chart.json)
 
 ### Formal Views of Profile Content
 
@@ -41,118 +41,106 @@ Other representations of profile: [CSV](StructureDefinition-onc-bristol-stool-ch
   "name" : "ONCBristolStoolChart",
   "title" : "Bristol Stool Chart",
   "status" : "draft",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
-        "id" : "Observation.category",
-        "path" : "Observation.category",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-              "code" : "exam"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "bristol-score"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "short" : "Bristol Stool Type (1-7)",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x].value",
-        "path" : "Observation.value[x].value",
-        "constraint" : [
-          {
-            "key" : "bristol-range",
-            "severity" : "error",
-            "human" : "Bristol score must be between 1 and 7",
-            "expression" : "$this >= 1 and $this <= 7",
-            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x].unit",
-        "path" : "Observation.value[x].unit",
-        "patternString" : "{score}"
-      },
-      {
-        "id" : "Observation.value[x].system",
-        "path" : "Observation.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      },
-      {
-        "id" : "Observation.note",
-        "path" : "Observation.note",
-        "short" : "Additional notes (e.g., colour, amount)",
-        "mustSupport" : true
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.category",
+      "path" : "Observation.category",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "exam"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "bristol-score"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "short" : "Bristol Stool Type (1-7)",
+      "min" : 1,
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.value[x].value",
+      "path" : "Observation.value[x].value",
+      "constraint" : [{
+        "key" : "bristol-range",
+        "severity" : "error",
+        "human" : "Bristol score must be between 1 and 7",
+        "expression" : "$this >= 1 and $this <= 7",
+        "source" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
+      }]
+    },
+    {
+      "id" : "Observation.value[x].unit",
+      "path" : "Observation.value[x].unit",
+      "patternString" : "{score}"
+    },
+    {
+      "id" : "Observation.value[x].system",
+      "path" : "Observation.value[x].system",
+      "patternUri" : "http://unitsofmeasure.org"
+    },
+    {
+      "id" : "Observation.note",
+      "path" : "Observation.note",
+      "short" : "Additional notes (e.g., colour, amount)",
+      "mustSupport" : true
+    }]
   }
 }
 

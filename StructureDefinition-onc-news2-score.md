@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-news2-score | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCNEWS2Score |
+| Active as of 2026-06-29 | *Computable Name*:ONCNEWS2Score |
 
  
 National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1. 
@@ -18,7 +18,7 @@ National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Ful
 
 * Examples for this Profile: [Observation/example-news2-score](Observation-example-news2-score.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-news2-score)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-news2-score.json)
 
 ### Formal Views of Profile Content
 
@@ -41,108 +41,98 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-score.csv)
   "name" : "ONCNEWS2Score",
   "title" : "NEWS2 Score",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.status",
+      "path" : "Observation.status",
+      "patternCode" : "final",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "news2-score",
+          "display" : "NEWS2 Score"
+        }]
       },
-      {
-        "id" : "Observation.status",
-        "path" : "Observation.status",
-        "patternCode" : "final",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "news2-score",
-              "display" : "NEWS2 Score"
-            }
-          ]
-        },
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "short" : "NEWS2 total score (0-20)",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x].value",
-        "path" : "Observation.value[x].value",
-        "constraint" : [
-          {
-            "key" : "news2-range",
-            "severity" : "error",
-            "human" : "NEWS2 score must be between 0 and 20",
-            "expression" : "$this >= 0 and $this <= 20",
-            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-news2-score"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x].unit",
-        "path" : "Observation.value[x].unit",
-        "patternString" : "{score}"
-      },
-      {
-        "id" : "Observation.value[x].system",
-        "path" : "Observation.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      }
-    ]
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "short" : "NEWS2 total score (0-20)",
+      "min" : 1,
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.value[x].value",
+      "path" : "Observation.value[x].value",
+      "constraint" : [{
+        "key" : "news2-range",
+        "severity" : "error",
+        "human" : "NEWS2 score must be between 0 and 20",
+        "expression" : "$this >= 0 and $this <= 20",
+        "source" : "https://opennursingcoreig.com/StructureDefinition/onc-news2-score"
+      }]
+    },
+    {
+      "id" : "Observation.value[x].unit",
+      "path" : "Observation.value[x].unit",
+      "patternString" : "{score}"
+    },
+    {
+      "id" : "Observation.value[x].system",
+      "path" : "Observation.value[x].system",
+      "patternUri" : "http://unitsofmeasure.org"
+    }]
   }
 }
 

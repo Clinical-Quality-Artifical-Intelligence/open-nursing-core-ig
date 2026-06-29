@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCGoalEvaluation |
+| Active as of 2026-06-29 | *Computable Name*:ONCGoalEvaluation |
 
  
 Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop. 
@@ -19,7 +19,7 @@ Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE lo
 * Refer to this Profile: [ONC Nursing Clinical Impression](StructureDefinition-onc-nursing-clinical-impression.md)
 * Examples for this Profile: [Observation/example-goal-evaluation](Observation-example-goal-evaluation.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-goal-evaluation)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-goal-evaluation.json)
 
 ### Formal Views of Profile Content
 
@@ -42,157 +42,135 @@ Other representations of profile: [CSV](StructureDefinition-onc-goal-evaluation.
   "name" : "ONCGoalEvaluation",
   "title" : "ONC Goal Evaluation",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
-        "id" : "Observation.extension",
-        "path" : "Observation.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Observation.extension:goalReference",
-        "path" : "Observation.extension",
-        "sliceName" : "goalReference",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://opennursingcoreig.com/StructureDefinition/observation-goal-reference"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.status",
-        "path" : "Observation.status",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://snomed.info/sct",
-              "code" : "390906007",
-              "display" : "Follow-up assessment"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.subject",
-        "path" : "Observation.subject",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
-          }
-        ]
-      },
-      {
-        "id" : "Observation.focus",
-        "path" : "Observation.focus",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset"
-        }
-      },
-      {
-        "id" : "Observation.note",
-        "path" : "Observation.note",
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.derivedFrom",
-        "path" : "Observation.derivedFrom",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation"]
-          }
-        ],
-        "mustSupport" : true
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.extension",
+      "path" : "Observation.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Observation.extension:goalReference",
+      "path" : "Observation.extension",
+      "sliceName" : "goalReference",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://opennursingcoreig.com/StructureDefinition/observation-goal-reference"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.status",
+      "path" : "Observation.status",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "390906007",
+          "display" : "Follow-up assessment"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.subject",
+      "path" : "Observation.subject",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }]
+    },
+    {
+      "id" : "Observation.focus",
+      "path" : "Observation.focus",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset"
+      }
+    },
+    {
+      "id" : "Observation.note",
+      "path" : "Observation.note",
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.derivedFrom",
+      "path" : "Observation.derivedFrom",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation"]
+      }],
+      "mustSupport" : true
+    }]
   }
 }
 

@@ -31,39 +31,29 @@ Profile: [Heart Rate](StructureDefinition-onc-heart-rate.md)
   "resourceType" : "Observation",
   "id" : "example-heart-rate",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-heart-rate"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-heart-rate"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "8867-4",
-        "display" : "Heart rate"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8867-4",
+      "display" : "Heart rate"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueQuantity" : {
     "value" : 95,
     "unit" : "/min"

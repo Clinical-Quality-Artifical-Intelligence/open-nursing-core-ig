@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/CodeSystem/onc-monk-scale | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCMonkScale |
+| Active as of 2026-06-29 | *Computable Name*:ONCMonkScale |
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -29,52 +29,50 @@
   "name" : "ONCMonkScale",
   "title" : "Monk Skin Tone Scale CodeSystem",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "content" : "complete",
   "count" : 10,
-  "concept" : [
-    {
-      "code" : "A",
-      "display" : "Light Skin"
-    },
-    {
-      "code" : "B",
-      "display" : "Light-Medium Skin"
-    },
-    {
-      "code" : "C",
-      "display" : "Medium Skin"
-    },
-    {
-      "code" : "D",
-      "display" : "Medium-Dark Skin"
-    },
-    {
-      "code" : "E",
-      "display" : "Dark Skin"
-    },
-    {
-      "code" : "F",
-      "display" : "Deep Dark Skin"
-    },
-    {
-      "code" : "G",
-      "display" : "Very Dark Skin"
-    },
-    {
-      "code" : "H",
-      "display" : "Deepest Dark Skin"
-    },
-    {
-      "code" : "I",
-      "display" : "Ultra Dark Skin"
-    },
-    {
-      "code" : "J",
-      "display" : "Black Skin"
-    }
-  ]
+  "concept" : [{
+    "code" : "A",
+    "display" : "Light Skin"
+  },
+  {
+    "code" : "B",
+    "display" : "Light-Medium Skin"
+  },
+  {
+    "code" : "C",
+    "display" : "Medium Skin"
+  },
+  {
+    "code" : "D",
+    "display" : "Medium-Dark Skin"
+  },
+  {
+    "code" : "E",
+    "display" : "Dark Skin"
+  },
+  {
+    "code" : "F",
+    "display" : "Deep Dark Skin"
+  },
+  {
+    "code" : "G",
+    "display" : "Very Dark Skin"
+  },
+  {
+    "code" : "H",
+    "display" : "Deepest Dark Skin"
+  },
+  {
+    "code" : "I",
+    "display" : "Ultra Dark Skin"
+  },
+  {
+    "code" : "J",
+    "display" : "Black Skin"
+  }]
 }
 
 ```

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/nursing-problem-valueset | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:NursingProblemValueSet |
+| Active as of 2026-06-29 | *Computable Name*:NursingProblemValueSet |
 
  
 Value set for nursing problems and diagnoses 
@@ -51,38 +51,32 @@ Value set for nursing problems and diagnoses
   "title" : "Nursing Problem Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for nursing problems and diagnoses",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "129839007",
-            "display" : "At risk for falls"
-          },
-          {
-            "code" : "300893006",
-            "display" : "Nutritional finding"
-          },
-          {
-            "code" : "22253000",
-            "display" : "Pain"
-          }
-        ]
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "129839007",
+        "display" : "At risk for falls"
       },
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "concept" : [
-          {
-            "code" : "risk-falls",
-            "display" : "Risk of falls"
-          }
-        ]
-      }
-    ]
+        "code" : "300893006",
+        "display" : "Nutritional finding"
+      },
+      {
+        "code" : "22253000",
+        "display" : "Pain"
+      }]
+    },
+    {
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "concept" : [{
+        "code" : "risk-falls",
+        "display" : "Risk of falls"
+      }]
+    }]
   }
 }
 

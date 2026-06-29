@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,41 +7,40 @@
 
 <https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "onc-skin-tone-vs"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-skin-tone-vs</b></p><a name=\"onc-skin-tone-vs\"> </a><a name=\"hconc-skin-tone-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-onc-monk-scale.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span></li><li>Include codes from<a href=\"CodeSystem-onc-observation-codes.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where code  is-a <a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-1\">fitzpatrick-1</a></li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs"^^xsd:anyURI ;
-     fhir:l <https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs>
-  ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
-  fhir:name [ fhir:v "SkinToneVS"] ; # 
-  fhir:title [ fhir:v "Skin Tone Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-01-27T09:30:37+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
-  fhir:description [ fhir:v "Monk and Fitzpatrick scales for equitable skin assessment."] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [
-         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-monk-scale"^^xsd:anyURI ;
-         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-monk-scale>
+  fhir:Resource.id [ fhir:value "onc-skin-tone-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-skin-tone-vs</b></p><a name=\"onc-skin-tone-vs\"> </a><a name=\"hconc-skin-tone-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-onc-monk-scale.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span></li><li>Include codes from<a href=\"CodeSystem-onc-observation-codes.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where code  is-a <a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-1\">fitzpatrick-1</a></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "SkinToneVS"] ;
+  fhir:ValueSet.title [ fhir:value "Skin Tone Value Set"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-29T21:13:26+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "The Open Nursing Community"] ;
+  fhir:ValueSet.description [ fhir:value "Monk and Fitzpatrick scales for equitable skin assessment."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-monk-scale" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "fitzpatrick-1" ]
        ]
-     ] [
-       fhir:system [
-         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "fitzpatrick-1" ]
-       ] )
-     ] )
-  ] . # 
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

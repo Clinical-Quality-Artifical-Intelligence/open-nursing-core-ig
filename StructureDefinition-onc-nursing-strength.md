@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCNursingStrength |
+| Active as of 2026-06-29 | *Computable Name*:ONCNursingStrength |
 
  
 A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models. 
@@ -18,7 +18,7 @@ A structured representation of a patient's strength or capability. Explicitly re
 
 * Examples for this Profile: [Observation/ExampleNursingStrength-Motivation](Observation-ExampleNursingStrength-Motivation.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nursing-strength)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-nursing-strength.json)
 
 ### Formal Views of Profile Content
 
@@ -41,98 +41,88 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-strength
   "name" : "ONCNursingStrength",
   "title" : "ONC Nursing Strength",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
-        "id" : "Observation.status",
-        "path" : "Observation.status",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-              "code" : "nursing-strengths"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.subject",
-        "path" : "Observation.subject",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.note",
-        "path" : "Observation.note",
-        "mustSupport" : true
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.status",
+      "path" : "Observation.status",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+          "code" : "nursing-strengths"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Observation.subject",
+      "path" : "Observation.subject",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }]
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Observation.note",
+      "path" : "Observation.note",
+      "mustSupport" : true
+    }]
   }
 }
 

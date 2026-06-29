@@ -41,66 +41,54 @@ Profile: [NEWS2 Score](StructureDefinition-onc-news2-score.md)
   "resourceType" : "Observation",
   "id" : "example-news2-score",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-news2-score"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-news2-score"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "news2-score",
-        "display" : "NEWS2 Score"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "news2-score",
+      "display" : "NEWS2 Score"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueQuantity" : {
     "value" : 5,
     "unit" : "{score}"
   },
-  "hasMember" : [
-    {
-      "reference" : "Observation/example-respiration-rate"
-    },
-    {
-      "reference" : "Observation/example-oxygen-saturation"
-    },
-    {
-      "reference" : "Observation/example-inspired-oxygen"
-    },
-    {
-      "reference" : "Observation/example-blood-pressure"
-    },
-    {
-      "reference" : "Observation/example-heart-rate"
-    },
-    {
-      "reference" : "Observation/example-acvpu"
-    },
-    {
-      "reference" : "Observation/example-temperature"
-    }
-  ]
+  "hasMember" : [{
+    "reference" : "Observation/example-respiration-rate"
+  },
+  {
+    "reference" : "Observation/example-oxygen-saturation"
+  },
+  {
+    "reference" : "Observation/example-inspired-oxygen"
+  },
+  {
+    "reference" : "Observation/example-blood-pressure"
+  },
+  {
+    "reference" : "Observation/example-heart-rate"
+  },
+  {
+    "reference" : "Observation/example-acvpu"
+  },
+  {
+    "reference" : "Observation/example-temperature"
+  }]
 }
 
 ```

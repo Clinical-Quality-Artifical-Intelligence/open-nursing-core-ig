@@ -29,38 +29,28 @@ Profile: [Dressing and Undressing Assessment](StructureDefinition-onc-dressing-a
   "resourceType" : "Observation",
   "id" : "ExampleDressingAssessment",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-dressing-assessment"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-dressing-assessment"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "165235000",
-        "display" : "Ability to dress"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "165235000",
+      "display" : "Ability to dress"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-patient"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/example-nurse"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/example-nurse"
+  }],
   "valueCodeableConcept" : {
     "text" : "Requires assistance with lower body dressing"
   }

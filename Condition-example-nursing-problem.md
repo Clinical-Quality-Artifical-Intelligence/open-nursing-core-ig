@@ -25,38 +25,28 @@ Profile: [Nursing Problem](StructureDefinition-onc-nursing-problem.md)
   "resourceType" : "Condition",
   "id" : "example-nursing-problem",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"]
   },
   "clinicalStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code" : "active",
-        "display" : "Active"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
   },
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type",
-          "code" : "nursing-diagnosis",
-          "display" : "Nursing Diagnosis"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type",
+      "code" : "nursing-diagnosis",
+      "display" : "Nursing Diagnosis"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "risk-falls",
-        "display" : "Risk of falls"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "risk-falls",
+      "display" : "Risk of falls"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"

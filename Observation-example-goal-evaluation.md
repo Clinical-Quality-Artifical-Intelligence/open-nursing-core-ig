@@ -31,51 +31,37 @@ Profile: [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
   "resourceType" : "Observation",
   "id" : "example-goal-evaluation",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "390906007",
-        "display" : "Follow-up assessment"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "390906007",
+      "display" : "Follow-up assessment"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "focus" : [
-    {
-      "reference" : "Goal/example-patient-goal"
-    }
-  ],
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "focus" : [{
+    "reference" : "Goal/example-patient-goal"
+  }],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "385652002",
-        "display" : "Objective achieved"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "385652002",
+      "display" : "Objective achieved"
+    }]
   }
 }
 

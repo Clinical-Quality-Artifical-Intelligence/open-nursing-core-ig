@@ -25,30 +25,22 @@ Jane Doe Female, DoB Unknown
   "resourceType" : "Patient",
   "id" : "patient-example-jane",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"]
   },
-  "extension" : [
-    {
-      "url" : "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory",
-            "code" : "A",
-            "display" : "British, Mixed British"
-          }
-        ]
-      }
+  "extension" : [{
+    "url" : "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory",
+        "code" : "A",
+        "display" : "British, Mixed British"
+      }]
     }
-  ],
-  "name" : [
-    {
-      "family" : "Doe",
-      "given" : ["Jane"]
-    }
-  ],
+  }],
+  "name" : [{
+    "family" : "Doe",
+    "given" : ["Jane"]
+  }],
   "gender" : "female"
 }
 

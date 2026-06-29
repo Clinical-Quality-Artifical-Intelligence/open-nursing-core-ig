@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCNHSPatient |
+| Active as of 2026-06-29 | *Computable Name*:ONCNHSPatient |
 
  
 A patient profile for use in NHS nursing contexts with ethnic category extension. 
@@ -18,7 +18,7 @@ A patient profile for use in NHS nursing contexts with ethnic category extension
 
 * Examples for this Profile: [Patient/patient-example-jane](Patient-patient-example-jane.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nhs-patient)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-nhs-patient.json)
 
 ### Formal Views of Profile Content
 
@@ -41,79 +41,69 @@ Other representations of profile: [CSV](StructureDefinition-onc-nhs-patient.csv)
   "name" : "ONCNHSPatient",
   "title" : "ONC NHS Patient",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A patient profile for use in NHS nursing contexts with ethnic category extension.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "cda",
-      "uri" : "http://hl7.org/v3/cda",
-      "name" : "CDA (R2)"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "loinc",
-      "uri" : "http://loinc.org",
-      "name" : "LOINC code for the element"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "cda",
+    "uri" : "http://hl7.org/v3/cda",
+    "name" : "CDA (R2)"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "loinc",
+    "uri" : "http://loinc.org",
+    "name" : "LOINC code for the element"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Patient",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Patient",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Patient",
-        "path" : "Patient"
-      },
-      {
-        "id" : "Patient.extension",
-        "path" : "Patient.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Patient.extension:ethnicCategory",
-        "path" : "Patient.extension",
-        "sliceName" : "ethnicCategory",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory"
-            ]
-          }
-        ],
-        "mustSupport" : true
+    "element" : [{
+      "id" : "Patient",
+      "path" : "Patient"
+    },
+    {
+      "id" : "Patient.extension",
+      "path" : "Patient.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Patient.extension:ethnicCategory",
+      "path" : "Patient.extension",
+      "sliceName" : "ethnicCategory",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory"]
+      }],
+      "mustSupport" : true
+    }]
   }
 }
 

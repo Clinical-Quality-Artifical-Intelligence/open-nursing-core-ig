@@ -31,38 +31,28 @@ Profile: [Skin Integrity Assessment](StructureDefinition-onc-skin-assessment.md)
   "resourceType" : "Observation",
   "id" : "ExampleSkinAssessment",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "711041003",
-        "display" : "Assessment of skin integrity"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "711041003",
+      "display" : "Assessment of skin integrity"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-patient"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/example-nurse"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/example-nurse"
+  }],
   "valueCodeableConcept" : {
     "text" : "Dry, papery skin with no breaks"
   },

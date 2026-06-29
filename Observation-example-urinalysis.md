@@ -37,87 +37,67 @@ Profile: [Urinalysis](StructureDefinition-onc-urinalysis.md)
   "resourceType" : "Observation",
   "id" : "example-urinalysis",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "urinalysis-panel"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "urinalysis-panel"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueString" : "Suggestive of UTI",
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "ua-leukocytes"
-          }
-        ]
-      },
-      "valueString" : "++"
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "ua-leukocytes"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "ua-nitrites"
-          }
-        ]
-      },
-      "valueString" : "Positive"
+    "valueString" : "++"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "ua-nitrites"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "ua-blood"
-          }
-        ]
-      },
-      "valueString" : "Negative"
+    "valueString" : "Positive"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "ua-blood"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "ua-ph"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 6,
-        "unit" : "{pH}"
-      }
+    "valueString" : "Negative"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "ua-ph"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 6,
+      "unit" : "{pH}"
     }
-  ]
+  }]
 }
 
 ```

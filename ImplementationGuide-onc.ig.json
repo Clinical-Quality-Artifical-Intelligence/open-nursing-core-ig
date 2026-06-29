@@ -10,7 +10,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready.",
   "packageId" : "onc.ig",
@@ -24,7 +24,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.0.1"
+    "version" : "7.2.0"
   },
   {
     "id" : "hl7ext",
@@ -34,7 +34,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0"
   }],
   "definition" : {
     "extension" : [{
@@ -314,7 +314,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{

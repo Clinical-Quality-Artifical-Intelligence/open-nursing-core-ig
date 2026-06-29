@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-pain-score-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:PainScoreVS |
+| Active as of 2026-06-29 | *Computable Name*:PainScoreVS |
 
  
 Standard 0-10 or Abbey Pain Scale score 
@@ -51,35 +51,29 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Pain Score Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Standard 0-10 or Abbey Pain Scale score",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "260385009",
-            "display" : "Negative"
-          },
-          {
-            "code" : "225330006",
-            "display" : "Pain score"
-          }
-        ]
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "260385009",
+        "display" : "Negative"
       },
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "filter" : [
-          {
-            "property" : "code",
-            "op" : "is-a",
-            "value" : "abbey-score"
-          }
-        ]
-      }
-    ]
+        "code" : "225330006",
+        "display" : "Pain score"
+      }]
+    },
+    {
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "filter" : [{
+        "property" : "code",
+        "op" : "is-a",
+        "value" : "abbey-score"
+      }]
+    }]
   }
 }
 

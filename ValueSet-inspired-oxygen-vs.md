@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/inspired-oxygen-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:InspiredOxygenValueSet |
+| Active as of 2026-06-29 | *Computable Name*:InspiredOxygenValueSet |
 
  
 Codes for inspired oxygen status 
@@ -50,25 +50,21 @@ Codes for inspired oxygen status
   "name" : "InspiredOxygenValueSet",
   "title" : "Inspired Oxygen Value Set",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Codes for inspired oxygen status",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "722742002",
+        "display" : "Breathing room air"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "722742002",
-            "display" : "Breathing room air"
-          },
-          {
-            "code" : "371825009",
-            "display" : "Patient on oxygen"
-          }
-        ]
-      }
-    ]
+        "code" : "371825009",
+        "display" : "Patient on oxygen"
+      }]
+    }]
   }
 }
 

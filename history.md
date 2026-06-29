@@ -41,5 +41,5 @@ This is the first public release of the Open Nursing Core IG, featuring:
 
 -------
 
-**For questions or feedback, please open an issue on the [GitHub repository](https://github.com/ClinyQAi/open-nursing-core-ig).**
+**For questions or feedback, please open an issue on the [GitHub repository](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig).**
 

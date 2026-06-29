@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/wound-stage-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:WoundStageValueSet |
+| Active as of 2026-06-29 | *Computable Name*:WoundStageValueSet |
 
  **References** 
 
@@ -47,34 +47,30 @@
   "name" : "WoundStageValueSet",
   "title" : "Wound Stage Value Set",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "concept" : [{
+        "code" : "stage-1"
+      },
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "concept" : [
-          {
-            "code" : "stage-1"
-          },
-          {
-            "code" : "stage-2"
-          },
-          {
-            "code" : "stage-3"
-          },
-          {
-            "code" : "stage-4"
-          },
-          {
-            "code" : "unstageable"
-          },
-          {
-            "code" : "deep-tissue"
-          }
-        ]
-      }
-    ]
+        "code" : "stage-2"
+      },
+      {
+        "code" : "stage-3"
+      },
+      {
+        "code" : "stage-4"
+      },
+      {
+        "code" : "unstageable"
+      },
+      {
+        "code" : "deep-tissue"
+      }]
+    }]
   }
 }
 

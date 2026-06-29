@@ -33,48 +33,36 @@ Profile: [Waterlow Score](StructureDefinition-onc-waterlow-score.md)
   "resourceType" : "Observation",
   "id" : "example-waterlow-score",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "waterlow-score",
-        "display" : "Waterlow Score"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "waterlow-score",
+      "display" : "Waterlow Score"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueQuantity" : {
     "value" : 12,
     "unit" : "{score}"
   },
-  "hasMember" : [
-    {
-      "reference" : "Observation/observation-skin-tone"
-    }
-  ]
+  "hasMember" : [{
+    "reference" : "Observation/observation-skin-tone"
+  }]
 }
 
 ```

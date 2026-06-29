@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:SkinToneVS |
+| Active as of 2026-06-29 | *Computable Name*:SkinToneVS |
 
  
 Monk and Fitzpatrick scales for equitable skin assessment. 
@@ -52,25 +52,21 @@ Monk and Fitzpatrick scales for equitable skin assessment.
   "title" : "Skin Tone Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Monk and Fitzpatrick scales for equitable skin assessment.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale"
-      },
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "filter" : [
-          {
-            "property" : "code",
-            "op" : "is-a",
-            "value" : "fitzpatrick-1"
-          }
-        ]
-      }
-    ]
+    "include" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale"
+    },
+    {
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "filter" : [{
+        "property" : "code",
+        "op" : "is-a",
+        "value" : "fitzpatrick-1"
+      }]
+    }]
   }
 }
 

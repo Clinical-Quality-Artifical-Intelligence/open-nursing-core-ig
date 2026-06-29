@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:PainAssessmentCodeValueSet |
+| Active as of 2026-06-29 | *Computable Name*:PainAssessmentCodeValueSet |
 
  
 LOINC codes for pain severity assessment 
@@ -50,25 +50,21 @@ LOINC codes for pain severity assessment
   "name" : "PainAssessmentCodeValueSet",
   "title" : "Pain Assessment Code Value Set",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "LOINC codes for pain severity assessment",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "72514-3",
+        "display" : "Pain severity - 0-10 verbal numeric rating"
+      },
       {
-        "system" : "http://loinc.org",
-        "concept" : [
-          {
-            "code" : "72514-3",
-            "display" : "Pain severity - 0-10 verbal numeric rating"
-          },
-          {
-            "code" : "38208-5",
-            "display" : "Pain severity - Reported"
-          }
-        ]
-      }
-    ]
+        "code" : "38208-5",
+        "display" : "Pain severity - Reported"
+      }]
+    }]
   }
 }
 

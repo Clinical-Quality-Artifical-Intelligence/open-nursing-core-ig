@@ -16,11 +16,9 @@
 {
   "resourceType" : "Practitioner",
   "id" : "practitioner-example",
-  "name" : [
-    {
-      "family" : "Nightingale"
-    }
-  ]
+  "name" : [{
+    "family" : "Nightingale"
+  }]
 }
 
 ```

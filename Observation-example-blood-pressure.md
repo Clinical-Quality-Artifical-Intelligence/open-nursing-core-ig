@@ -33,71 +33,55 @@ Profile: [Blood Pressure](StructureDefinition-onc-blood-pressure.md)
   "resourceType" : "Observation",
   "id" : "example-blood-pressure",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "85354-9",
-        "display" : "Blood pressure panel with all children optional"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "85354-9",
+      "display" : "Blood pressure panel with all children optional"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "http://loinc.org",
-            "code" : "8480-6",
-            "display" : "Systolic blood pressure"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 110,
-        "unit" : "mm[Hg]"
-      }
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8480-6",
+        "display" : "Systolic blood pressure"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "http://loinc.org",
-            "code" : "8462-4",
-            "display" : "Diastolic blood pressure"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 70,
-        "unit" : "mm[Hg]"
-      }
+    "valueQuantity" : {
+      "value" : 110,
+      "unit" : "mm[Hg]"
     }
-  ]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8462-4",
+        "display" : "Diastolic blood pressure"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 70,
+      "unit" : "mm[Hg]"
+    }
+  }]
 }
 
 ```

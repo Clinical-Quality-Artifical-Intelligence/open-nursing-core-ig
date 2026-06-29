@@ -35,76 +35,58 @@ Profile: [Seizure Record](StructureDefinition-onc-seizure-record.md)
   "resourceType" : "Observation",
   "id" : "example-seizure-record",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "seizure-record"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "seizure-record"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueString" : "Tonic-clonic seizure lasting 2 mins",
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "seizure-type"
-          }
-        ]
-      },
-      "valueString" : "Tonic-Clonic"
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "seizure-type"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "seizure-duration"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 2,
-        "unit" : "min"
-      }
+    "valueString" : "Tonic-Clonic"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "seizure-duration"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "seizure-recovery"
-          }
-        ]
-      },
-      "valueString" : "Sleepy for 30 mins post-ictal"
+    "valueQuantity" : {
+      "value" : 2,
+      "unit" : "min"
     }
-  ]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "seizure-recovery"
+      }]
+    },
+    "valueString" : "Sleepy for 30 mins post-ictal"
+  }]
 }
 
 ```

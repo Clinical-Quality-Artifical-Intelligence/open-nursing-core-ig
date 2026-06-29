@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-news2-score-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:NEWS2ScoreVS |
+| Active as of 2026-06-29 | *Computable Name*:NEWS2ScoreVS |
 
  
 NEWS2 total score categories. 
@@ -51,29 +51,25 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "NEWS2 Score Categories Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "NEWS2 total score categories.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "50601000000100",
+        "display" : "National Early Warning Score 2 low risk"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "50601000000100",
-            "display" : "National Early Warning Score 2 low risk"
-          },
-          {
-            "code" : "50602000000101",
-            "display" : "National Early Warning Score 2 medium risk"
-          },
-          {
-            "code" : "50604000000104",
-            "display" : "National Early Warning Score 2 high risk"
-          }
-        ]
-      }
-    ]
+        "code" : "50602000000101",
+        "display" : "National Early Warning Score 2 medium risk"
+      },
+      {
+        "code" : "50604000000104",
+        "display" : "National Early Warning Score 2 high risk"
+      }]
+    }]
   }
 }
 

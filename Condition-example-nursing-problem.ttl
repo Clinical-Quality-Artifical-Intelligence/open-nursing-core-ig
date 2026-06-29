@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,51 +7,52 @@
 
 <https://opennursingcoreig.com/Condition/example-nursing-problem> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "example-nursing-problem"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"^^xsd:anyURI ;
-       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition example-nursing-problem</b></p><a name=\"example-nursing-problem\"> </a><a name=\"hcexample-nursing-problem\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-nursing-problem.html\">Nursing Problem</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-problem-type nursing-diagnosis}\">Nursing Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes risk-falls}\">Risk of falls</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:clinicalStatus [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/condition-clinical>
-       ] ;
-       fhir:code [ fhir:v "active" ] ;
-       fhir:display [ fhir:v "Active" ]
-     ] )
-  ] ; # 
-  fhir:category ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-problem-type"^^xsd:anyURI ;
-         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-problem-type>
-       ] ;
-       fhir:code [ fhir:v "nursing-diagnosis" ] ;
-       fhir:display [ fhir:v "Nursing Diagnosis" ]
-     ] )
-  ] ) ; # 
-  fhir:code [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-       ] ;
-       fhir:code [ fhir:v "risk-falls" ] ;
-       fhir:display [ fhir:v "Risk of falls" ]
-     ] )
-  ] ; # 
-  fhir:subject [
-     fhir:l <https://opennursingcoreig.com/Patient/patient-example-jane> ;
-     fhir:reference [ fhir:v "Patient/patient-example-jane" ]
-  ] . # 
+  fhir:Resource.id [ fhir:value "example-nursing-problem"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem" ;
+       fhir:index 0 ;
+       fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition example-nursing-problem</b></p><a name=\"example-nursing-problem\"> </a><a name=\"hcexample-nursing-problem\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-nursing-problem.html\">Nursing Problem</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-problem-type nursing-diagnosis}\">Nursing Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes risk-falls}\">Risk of falls</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p></div>"
+  ] ;
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ] ;
+       fhir:Coding.code [ fhir:value "active" ] ;
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ] ;
+  fhir:Condition.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-problem-type" ] ;
+       fhir:Coding.code [ fhir:value "nursing-diagnosis" ] ;
+       fhir:Coding.display [ fhir:value "Nursing Diagnosis" ]
+     ]
+  ] ;
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+       fhir:Coding.code [ fhir:value "risk-falls" ] ;
+       fhir:Coding.display [ fhir:value "Risk of falls" ]
+     ]
+  ] ;
+  fhir:Condition.subject [
+     fhir:link <https://opennursingcoreig.com/Patient/patient-example-jane> ;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-jane" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/Condition/example-nursing-problem.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCGoalTargetMeasureVS |
+| Active as of 2026-06-29 | *Computable Name*:ONCGoalTargetMeasureVS |
 
  
 Codes used for goal target measures 
@@ -50,30 +50,24 @@ Codes used for goal target measures
   "name" : "ONCGoalTargetMeasureVS",
   "title" : "Goal Target Measure ValueSet",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Codes used for goal target measures",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://loinc.org",
-        "concept" : [
-          {
-            "code" : "59408-5",
-            "display" : "Oxygen saturation"
-          }
-        ]
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "225358003",
-            "display" : "Wound care"
-          }
-        ]
-      }
-    ]
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "59408-5",
+        "display" : "Oxygen saturation"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "225358003",
+        "display" : "Wound care"
+      }]
+    }]
   }
 }
 

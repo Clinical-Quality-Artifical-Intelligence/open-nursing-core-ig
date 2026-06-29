@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCNursingProblem |
+| Active as of 2026-06-29 | *Computable Name*:ONCNursingProblem |
 
  
 Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase. 
@@ -19,7 +19,7 @@ Nursing diagnosis or problem identified during assessment. Represents clinical j
 * Refer to this Profile: [ONC Nursing Goal](StructureDefinition-onc-nursing-goal.md)
 * Examples for this Profile: [Condition/example-nursing-problem](Condition-example-nursing-problem.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nursing-problem)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-nursing-problem.json)
 
 ### Formal Views of Profile Content
 
@@ -42,81 +42,77 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-problem.
   "name" : "ONCNursingProblem",
   "title" : "Nursing Problem",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Condition",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Condition",
-        "path" : "Condition"
-      },
-      {
-        "id" : "Condition.clinicalStatus",
-        "path" : "Condition.clinicalStatus",
-        "min" : 1,
-        "mustSupport" : true
-      },
-      {
-        "id" : "Condition.category",
-        "path" : "Condition.category",
-        "min" : 1,
-        "max" : "1",
-        "mustSupport" : true,
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://opennursingcoreig.com/ValueSet/problem-category-valueset"
-        }
-      },
-      {
-        "id" : "Condition.code",
-        "path" : "Condition.code",
-        "min" : 1,
-        "mustSupport" : true,
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://opennursingcoreig.com/ValueSet/nursing-problem-valueset"
-        }
+    "element" : [{
+      "id" : "Condition",
+      "path" : "Condition"
+    },
+    {
+      "id" : "Condition.clinicalStatus",
+      "path" : "Condition.clinicalStatus",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Condition.category",
+      "path" : "Condition.category",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://opennursingcoreig.com/ValueSet/problem-category-valueset"
       }
-    ]
+    },
+    {
+      "id" : "Condition.code",
+      "path" : "Condition.code",
+      "min" : 1,
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://opennursingcoreig.com/ValueSet/nursing-problem-valueset"
+      }
+    }]
   }
 }
 

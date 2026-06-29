@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:NursingInterventionValueSet |
+| Active as of 2026-06-29 | *Computable Name*:NursingInterventionValueSet |
 
  
 Value set for nursing interventions 
@@ -51,29 +51,25 @@ Value set for nursing interventions
   "title" : "Nursing Intervention Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for nursing interventions",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "71388002",
+        "display" : "Procedure"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "71388002",
-            "display" : "Procedure"
-          },
-          {
-            "code" : "225358003",
-            "display" : "Wound care"
-          },
-          {
-            "code" : "386373004",
-            "display" : "Nutrition therapy"
-          }
-        ]
-      }
-    ]
+        "code" : "225358003",
+        "display" : "Wound care"
+      },
+      {
+        "code" : "386373004",
+        "display" : "Nutrition therapy"
+      }]
+    }]
   }
 }
 

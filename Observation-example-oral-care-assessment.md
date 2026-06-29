@@ -38,63 +38,47 @@ Profile: [Oral Care Needs Assessment](StructureDefinition-onc-oral-care-assessme
   "resourceType" : "Observation",
   "id" : "example-oral-care-assessment",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "30175009",
-        "display" : "Initial oral examination"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "30175009",
+      "display" : "Initial oral examination"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueCodeableConcept" : {
     "text" : "Requires assistance with denture cleaning"
   },
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "empathy-index"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-            "code" : "empathy-3",
-            "display" : "Moderate Empathy"
-          }
-        ]
-      }
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "empathy-index"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+        "code" : "empathy-3",
+        "display" : "Moderate Empathy"
+      }]
     }
-  ]
+  }]
 }
 
 ```

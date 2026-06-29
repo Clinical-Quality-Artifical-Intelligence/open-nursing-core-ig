@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-equity-marker | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCEquityMarker |
+| Active as of 2026-06-29 | *Computable Name*:ONCEquityMarker |
 
 A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware).
 
@@ -19,9 +19,9 @@ A technical extension applied to observations that have passed the Mandatory Equ
 
 **Usages:**
 
-* This Extension is not used by any profiles in this Implementation Guide
+* This Extension is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-equity-marker)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-equity-marker.json)
 
 ### Formal Views of Extension Content
 
@@ -46,57 +46,49 @@ Other representations of profile: [CSV](StructureDefinition-onc-equity-marker.cs
   "name" : "ONCEquityMarker",
   "title" : "ONC Equity Marker",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware).",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Element"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Element"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "ONC Equity Marker",
-        "definition" : "A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware)."
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://opennursingcoreig.com/StructureDefinition/onc-equity-marker"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "boolean"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "ONC Equity Marker",
+      "definition" : "A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware)."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://opennursingcoreig.com/StructureDefinition/onc-equity-marker"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "boolean"
+      }]
+    }]
   }
 }
 

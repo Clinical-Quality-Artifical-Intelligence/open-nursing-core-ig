@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/CodeSystem/onc-problem-type | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCProblemType |
+| Active as of 2026-06-29 | *Computable Name*:ONCProblemType |
 
  
 Code system for categorizing types of nursing problems 
@@ -32,29 +32,27 @@ Code system for categorizing types of nursing problems
   "title" : "Problem Type CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Code system for categorizing types of nursing problems",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 3,
-  "concept" : [
-    {
-      "code" : "nursing-diagnosis",
-      "display" : "Nursing Diagnosis",
-      "definition" : "A clinical judgment about individual, family, or community responses to actual or potential health problems"
-    },
-    {
-      "code" : "risk-diagnosis",
-      "display" : "Risk Diagnosis",
-      "definition" : "A clinical judgment about an individual's vulnerability to developing an undesirable health condition"
-    },
-    {
-      "code" : "health-promotion",
-      "display" : "Health Promotion Diagnosis",
-      "definition" : "A clinical judgment about motivation to increase wellbeing"
-    }
-  ]
+  "concept" : [{
+    "code" : "nursing-diagnosis",
+    "display" : "Nursing Diagnosis",
+    "definition" : "A clinical judgment about individual, family, or community responses to actual or potential health problems"
+  },
+  {
+    "code" : "risk-diagnosis",
+    "display" : "Risk Diagnosis",
+    "definition" : "A clinical judgment about an individual's vulnerability to developing an undesirable health condition"
+  },
+  {
+    "code" : "health-promotion",
+    "display" : "Health Promotion Diagnosis",
+    "definition" : "A clinical judgment about motivation to increase wellbeing"
+  }]
 }
 
 ```

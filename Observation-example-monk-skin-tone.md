@@ -31,47 +31,35 @@ Profile: [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-obse
   "resourceType" : "Observation",
   "id" : "example-monk-skin-tone",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "code" : "mst-score",
-        "display" : "Monk Skin Tone Score"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "mst-score",
+      "display" : "Monk Skin Tone Score"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
-        "code" : "C",
-        "display" : "Medium Skin"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+      "code" : "C",
+      "display" : "Medium Skin"
+    }]
   }
 }
 

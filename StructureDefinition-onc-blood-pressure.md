@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCBloodPressure |
+| Active as of 2026-06-29 | *Computable Name*:ONCBloodPressure |
 
  
 Blood pressure observation for NEWS2 (systolic BP used for scoring) 
@@ -18,7 +18,7 @@ Blood pressure observation for NEWS2 (systolic BP used for scoring)
 
 * Examples for this Profile: [Observation/example-blood-pressure](Observation-example-blood-pressure.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-blood-pressure)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-blood-pressure.json)
 
 ### Formal Views of Profile Content
 
@@ -41,163 +41,147 @@ Other representations of profile: [CSV](StructureDefinition-onc-blood-pressure.c
   "name" : "ONCBloodPressure",
   "title" : "Blood Pressure",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Blood pressure observation for NEWS2 (systolic BP used for scoring)",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://loinc.org",
-              "code" : "85354-9",
-              "display" : "Blood pressure panel with all children optional"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component",
-        "path" : "Observation.component",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "pattern",
-              "path" : "code"
-            }
-          ],
-          "rules" : "open"
-        },
-        "min" : 2,
-        "max" : "2",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:systolic",
-        "path" : "Observation.component",
-        "sliceName" : "systolic",
-        "min" : 1,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:systolic.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://loinc.org",
-              "code" : "8480-6",
-              "display" : "Systolic blood pressure"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:systolic.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:systolic.value[x].unit",
-        "path" : "Observation.component.value[x].unit",
-        "patternString" : "mm[Hg]"
-      },
-      {
-        "id" : "Observation.component:systolic.value[x].system",
-        "path" : "Observation.component.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      },
-      {
-        "id" : "Observation.component:diastolic",
-        "path" : "Observation.component",
-        "sliceName" : "diastolic",
-        "min" : 1,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:diastolic.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://loinc.org",
-              "code" : "8462-4",
-              "display" : "Diastolic blood pressure"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:diastolic.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:diastolic.value[x].unit",
-        "path" : "Observation.component.value[x].unit",
-        "patternString" : "mm[Hg]"
-      },
-      {
-        "id" : "Observation.component:diastolic.value[x].system",
-        "path" : "Observation.component.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "85354-9",
+          "display" : "Blood pressure panel with all children optional"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Observation.component",
+      "path" : "Observation.component",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "code"
+        }],
+        "rules" : "open"
+      },
+      "min" : 2,
+      "max" : "2",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:systolic",
+      "path" : "Observation.component",
+      "sliceName" : "systolic",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:systolic.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8480-6",
+          "display" : "Systolic blood pressure"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:systolic.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.component:systolic.value[x].unit",
+      "path" : "Observation.component.value[x].unit",
+      "patternString" : "mm[Hg]"
+    },
+    {
+      "id" : "Observation.component:systolic.value[x].system",
+      "path" : "Observation.component.value[x].system",
+      "patternUri" : "http://unitsofmeasure.org"
+    },
+    {
+      "id" : "Observation.component:diastolic",
+      "path" : "Observation.component",
+      "sliceName" : "diastolic",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:diastolic.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8462-4",
+          "display" : "Diastolic blood pressure"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:diastolic.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.component:diastolic.value[x].unit",
+      "path" : "Observation.component.value[x].unit",
+      "patternString" : "mm[Hg]"
+    },
+    {
+      "id" : "Observation.component:diastolic.value[x].system",
+      "path" : "Observation.component.value[x].system",
+      "patternUri" : "http://unitsofmeasure.org"
+    }]
   }
 }
 

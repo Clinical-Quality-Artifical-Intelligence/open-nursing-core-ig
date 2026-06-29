@@ -31,39 +31,29 @@ Profile: [Body Temperature](StructureDefinition-onc-body-temperature.md)
   "resourceType" : "Observation",
   "id" : "example-temperature",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-body-temperature"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-body-temperature"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "8310-5",
-        "display" : "Body temperature"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8310-5",
+      "display" : "Body temperature"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueQuantity" : {
     "value" : 38.1,
     "unit" : "Cel"

@@ -31,39 +31,29 @@ Profile: [Respiration Rate](StructureDefinition-onc-respiration-rate.md)
   "resourceType" : "Observation",
   "id" : "example-respiration-rate",
   "meta" : {
-    "profile" : [
-      "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate"
-    ]
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "9279-1",
-        "display" : "Respiratory rate"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "9279-1",
+      "display" : "Respiratory rate"
+    }]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
   "effectiveDateTime" : "2025-03-15T10:00:00Z",
-  "performer" : [
-    {
-      "reference" : "Practitioner/practitioner-example"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
   "valueQuantity" : {
     "value" : 22,
     "unit" : "/min"

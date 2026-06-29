@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:GoalEvaluationValueSet |
+| Active as of 2026-06-29 | *Computable Name*:GoalEvaluationValueSet |
 
  
 Value set for evaluating patient goal outcomes 
@@ -51,37 +51,33 @@ Value set for evaluating patient goal outcomes
   "title" : "Goal Evaluation Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for evaluating patient goal outcomes",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "385652002",
+        "display" : "Objective achieved"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "385652002",
-            "display" : "Objective achieved"
-          },
-          {
-            "code" : "385651009",
-            "display" : "Objective not achieved"
-          },
-          {
-            "code" : "255609007",
-            "display" : "Partial achievement"
-          },
-          {
-            "code" : "723510000",
-            "display" : "Sustained improvement"
-          },
-          {
-            "code" : "260388008",
-            "display" : "Worsening"
-          }
-        ]
-      }
-    ]
+        "code" : "385651009",
+        "display" : "Objective not achieved"
+      },
+      {
+        "code" : "255609007",
+        "display" : "Partial achievement"
+      },
+      {
+        "code" : "723510000",
+        "display" : "Sustained improvement"
+      },
+      {
+        "code" : "260388008",
+        "display" : "Worsening"
+      }]
+    }]
   }
 }
 

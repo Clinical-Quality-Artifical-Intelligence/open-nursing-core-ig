@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-cfs-vs | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ClinicalFrailtyScaleVS |
+| Active as of 2026-06-29 | *Computable Name*:ClinicalFrailtyScaleVS |
 
  
 Codes for Rockwood Clinical Frailty Scale (1-9) 
@@ -50,44 +50,40 @@ Codes for Rockwood Clinical Frailty Scale (1-9)
   "name" : "ClinicalFrailtyScaleVS",
   "title" : "Clinical Frailty Scale Value Set",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Codes for Rockwood Clinical Frailty Scale (1-9)",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "concept" : [{
+        "code" : "cfs-1"
+      },
       {
-        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-        "concept" : [
-          {
-            "code" : "cfs-1"
-          },
-          {
-            "code" : "cfs-2"
-          },
-          {
-            "code" : "cfs-3"
-          },
-          {
-            "code" : "cfs-4"
-          },
-          {
-            "code" : "cfs-5"
-          },
-          {
-            "code" : "cfs-6"
-          },
-          {
-            "code" : "cfs-7"
-          },
-          {
-            "code" : "cfs-8"
-          },
-          {
-            "code" : "cfs-9"
-          }
-        ]
-      }
-    ]
+        "code" : "cfs-2"
+      },
+      {
+        "code" : "cfs-3"
+      },
+      {
+        "code" : "cfs-4"
+      },
+      {
+        "code" : "cfs-5"
+      },
+      {
+        "code" : "cfs-6"
+      },
+      {
+        "code" : "cfs-7"
+      },
+      {
+        "code" : "cfs-8"
+      },
+      {
+        "code" : "cfs-9"
+      }]
+    }]
   }
 }
 

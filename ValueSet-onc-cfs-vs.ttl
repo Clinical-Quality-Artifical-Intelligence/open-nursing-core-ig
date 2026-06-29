@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,49 +7,58 @@
 
 <https://opennursingcoreig.com/ValueSet/onc-cfs-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "onc-cfs-vs"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-cfs-vs</b></p><a name=\"onc-cfs-vs\"> </a><a name=\"hconc-cfs-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-onc-observation-codes.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-1\">cfs-1</a></td><td style=\"color: #cccccc\">Very Fit</td><td>Robus, active, energetic and motivated</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-2\">cfs-2</a></td><td style=\"color: #cccccc\">Well</td><td>No active disease symptoms but less fit than category 1</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-3\">cfs-3</a></td><td style=\"color: #cccccc\">Managing Well</td><td>Medical problems are well controlled, but not regularly active</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-4\">cfs-4</a></td><td style=\"color: #cccccc\">Vulnerable</td><td>Not dependent for daily help, but symptoms limit activities</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-5\">cfs-5</a></td><td style=\"color: #cccccc\">Mildly Frail</td><td>Need help with high order IADLs (finances, transportation, heavy housework)</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-6\">cfs-6</a></td><td style=\"color: #cccccc\">Moderately Frail</td><td>Need help with all outside activities and some housekeeping</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-7\">cfs-7</a></td><td style=\"color: #cccccc\">Severely Frail</td><td>Completely dependent for personal care</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-8\">cfs-8</a></td><td style=\"color: #cccccc\">Very Severely Frail</td><td>Completely dependent, approaching end of life</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-9\">cfs-9</a></td><td style=\"color: #cccccc\">Terminally Ill</td><td>Approaching the end of life (life expectancy &lt;6 months)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "https://opennursingcoreig.com/ValueSet/onc-cfs-vs"^^xsd:anyURI ;
-     fhir:l <https://opennursingcoreig.com/ValueSet/onc-cfs-vs>
-  ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
-  fhir:name [ fhir:v "ClinicalFrailtyScaleVS"] ; # 
-  fhir:title [ fhir:v "Clinical Frailty Scale Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-27T09:30:37+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
-  fhir:description [ fhir:v "Codes for Rockwood Clinical Frailty Scale (1-9)"] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [
-         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
-       ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "cfs-1" ]
-       ] [
-         fhir:code [ fhir:v "cfs-2" ]
-       ] [
-         fhir:code [ fhir:v "cfs-3" ]
-       ] [
-         fhir:code [ fhir:v "cfs-4" ]
-       ] [
-         fhir:code [ fhir:v "cfs-5" ]
-       ] [
-         fhir:code [ fhir:v "cfs-6" ]
-       ] [
-         fhir:code [ fhir:v "cfs-7" ]
-       ] [
-         fhir:code [ fhir:v "cfs-8" ]
-       ] [
-         fhir:code [ fhir:v "cfs-9" ]
-       ] )
-     ] )
-  ] . # 
+  fhir:Resource.id [ fhir:value "onc-cfs-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-cfs-vs</b></p><a name=\"onc-cfs-vs\"> </a><a name=\"hconc-cfs-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-onc-observation-codes.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-1\">cfs-1</a></td><td style=\"color: #cccccc\">Very Fit</td><td>Robus, active, energetic and motivated</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-2\">cfs-2</a></td><td style=\"color: #cccccc\">Well</td><td>No active disease symptoms but less fit than category 1</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-3\">cfs-3</a></td><td style=\"color: #cccccc\">Managing Well</td><td>Medical problems are well controlled, but not regularly active</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-4\">cfs-4</a></td><td style=\"color: #cccccc\">Vulnerable</td><td>Not dependent for daily help, but symptoms limit activities</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-5\">cfs-5</a></td><td style=\"color: #cccccc\">Mildly Frail</td><td>Need help with high order IADLs (finances, transportation, heavy housework)</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-6\">cfs-6</a></td><td style=\"color: #cccccc\">Moderately Frail</td><td>Need help with all outside activities and some housekeeping</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-7\">cfs-7</a></td><td style=\"color: #cccccc\">Severely Frail</td><td>Completely dependent for personal care</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-8\">cfs-8</a></td><td style=\"color: #cccccc\">Very Severely Frail</td><td>Completely dependent, approaching end of life</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-cfs-9\">cfs-9</a></td><td style=\"color: #cccccc\">Terminally Ill</td><td>Approaching the end of life (life expectancy &lt;6 months)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://opennursingcoreig.com/ValueSet/onc-cfs-vs"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "ClinicalFrailtyScaleVS"] ;
+  fhir:ValueSet.title [ fhir:value "Clinical Frailty Scale Value Set"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-29T21:13:26+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "The Open Nursing Community"] ;
+  fhir:ValueSet.description [ fhir:value "Codes for Rockwood Clinical Frailty Scale (1-9)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cfs-1" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cfs-2" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cfs-3" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cfs-4" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cfs-5" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cfs-6" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cfs-7" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cfs-8" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cfs-9" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/ValueSet/onc-cfs-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mmse | *Version*:1.0.0 |
-| Active as of 2026-01-27 | *Computable Name*:ONCMMSE |
+| Active as of 2026-06-29 | *Computable Name*:ONCMMSE |
 
  
 Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* This Profile is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-mmse)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-mmse.json)
 
 ### Formal Views of Profile Content
 
@@ -41,107 +41,97 @@ Other representations of profile: [CSV](StructureDefinition-onc-mmse.csv), [Exce
   "name" : "ONCMMSE",
   "title" : "Mini Mental State Examination (MMSE)",
   "status" : "active",
-  "date" : "2026-01-27T09:30:37+00:00",
+  "date" : "2026-06-29T21:13:26+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.status",
+      "path" : "Observation.status",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "72106-8",
+          "display" : "Total score [MMSE]"
+        }]
       },
-      {
-        "id" : "Observation.status",
-        "path" : "Observation.status",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.code",
-        "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://loinc.org",
-              "code" : "72106-8",
-              "display" : "Total score [MMSE]"
-            }
-          ]
-        },
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "short" : "MMSE total score (0-30)",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x].value",
-        "path" : "Observation.value[x].value",
-        "constraint" : [
-          {
-            "key" : "mmse-range",
-            "severity" : "error",
-            "human" : "MMSE score must be between 0 and 30",
-            "expression" : "$this >= 0 and $this <= 30",
-            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-mmse"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x].unit",
-        "path" : "Observation.value[x].unit",
-        "patternString" : "{score}"
-      },
-      {
-        "id" : "Observation.value[x].system",
-        "path" : "Observation.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      }
-    ]
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "short" : "MMSE total score (0-30)",
+      "min" : 1,
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.value[x].value",
+      "path" : "Observation.value[x].value",
+      "constraint" : [{
+        "key" : "mmse-range",
+        "severity" : "error",
+        "human" : "MMSE score must be between 0 and 30",
+        "expression" : "$this >= 0 and $this <= 30",
+        "source" : "https://opennursingcoreig.com/StructureDefinition/onc-mmse"
+      }]
+    },
+    {
+      "id" : "Observation.value[x].unit",
+      "path" : "Observation.value[x].unit",
+      "patternString" : "{score}"
+    },
+    {
+      "id" : "Observation.value[x].system",
+      "path" : "Observation.value[x].system",
+      "patternUri" : "http://unitsofmeasure.org"
+    }]
   }
 }
 
