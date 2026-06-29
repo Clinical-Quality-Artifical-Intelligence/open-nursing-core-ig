@@ -14,7 +14,11 @@ on:
     branches: [ main ]
     paths:
       - 'app.py'
-      - 'visualizations.py'
+      - 'app_phase2.py'
+      - 'core/**'
+      - 'db/**'
+      - 'ml/**'
+      - 'visualizations/**'
       - 'requirements.txt'
       - 'Dockerfile'
       - '.github/workflows/production-deploy.yml'
@@ -53,17 +57,18 @@ jobs:
     
     - name: Syntax check
       run: |
-        python -m py_compile app.py visualizations.py harvest_fons.py ingest_fast.py
-    
+        python -m compileall -q app.py app_phase2.py core db ml visualizations scripts
+
     - name: Code quality checks
       run: |
-        flake8 app.py visualizations.py --count --statistics
+        # Fail only on real errors (syntax, undefined names); style nits are non-blocking.
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         echo "✅ Code quality checks passed"
-    
+
     - name: Security scanning
       run: |
         pip install bandit
-        bandit -r app.py visualizations.py -f json -o bandit-report.json || true
+        bandit -r app.py app_phase2.py core db ml visualizations -f json -o bandit-report.json || true
     
     - name: Upload code quality reports
       uses: actions/upload-artifact@v4

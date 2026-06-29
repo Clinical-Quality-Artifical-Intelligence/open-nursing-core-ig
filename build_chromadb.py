@@ -1,14 +1,15 @@
 import os
 import shutil
-from pypdf import PdfReader
+from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
 # --- CONFIGURATION ---
 DATA_FOLDER = "fons_knowledge_base" # Your 378 PDFs
 DB_OUTPUT_FOLDER = "chroma_db_fons"
-# Using basic default embeddings that work with Python 3.14
+# Local sentence-transformers model (matches build_chromadb_simple.py)
+EMBEDDING_MODEL_ID = "sentence-transformers/all-MiniLM-L6-v2"
 
 def build_the_brain():
     print(f"🧠 Building ChromaDB from {DATA_FOLDER}...")
