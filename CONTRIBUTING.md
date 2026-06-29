@@ -32,7 +32,7 @@ npm install -g fsh-sushi
 
 ### Build Locally
 ```bash
-git clone https://github.com/ClinyQAi/open-nursing-core-ig.git
+git clone https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig.git
 cd open-nursing-core-ig
 sushi .
 ```
@@ -86,7 +86,7 @@ By contributing, you agree that your contributions will be licensed under the MI
 
 ## 📬 Questions?
 
-- Open an [Issue](https://github.com/ClinyQAi/open-nursing-core-ig/issues)
-- Review existing [Discussions](https://github.com/ClinyQAi/open-nursing-core-ig/discussions)
+- Open an [Issue](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues)
+- Review existing [Discussions](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/discussions)
 
 Thank you for helping advance nursing informatics! 🩺

@@ -21,7 +21,7 @@ if ! command -v gh &> /dev/null; then
   echo "  Then run this script again: bash github-secrets-setup.sh"
   echo ""
   echo "OPTION 2: Add secrets manually on GitHub"
-  echo "  Go to: https://github.com/ClinyQAi/open-nursing-core-ig/settings/secrets/actions"
+  echo "  Go to: https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/settings/secrets/actions"
   echo "  Click 'New repository secret' and add each secret below:"
   echo ""
   
@@ -72,7 +72,7 @@ if ! gh auth status &>/dev/null; then
   echo ""
 fi
 
-REPO="ClinyQAi/open-nursing-core-ig"
+REPO="Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig"
 
 echo "Adding secrets to $REPO..."
 echo ""
@@ -106,7 +106,7 @@ echo "✅ Secrets added successfully!"
 echo "=========================================="
 echo ""
 echo "Next steps:"
-echo "1. Go to: https://github.com/ClinyQAi/open-nursing-core-ig/actions"
+echo "1. Go to: https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/actions"
 echo "2. Click on 'Deploy to Azure' workflow"
 echo "3. Click 'Run workflow'"
 echo "4. Wait 5-10 minutes for deployment to complete"

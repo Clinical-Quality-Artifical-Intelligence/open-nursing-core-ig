@@ -86,7 +86,7 @@ pip (Python package manager)
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/ClinyQAi/open-nursing-core-ig.git
+git clone https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig.git
 cd open-nursing-core-ig
 ```
 
@@ -367,8 +367,8 @@ After Phase 1 completion, consider:
 
 ## 📞 Support & Contributing
 
-- **Issues:** https://github.com/ClinyQAi/open-nursing-core-ig/issues
-- **Discussions:** https://github.com/ClinyQAi/open-nursing-core-ig/discussions
+- **Issues:** https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues
+- **Discussions:** https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/discussions
 - **Documentation:** See FEATURES.md for detailed feature documentation
 
 ## 📄 License

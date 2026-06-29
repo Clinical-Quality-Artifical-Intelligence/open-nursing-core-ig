@@ -2,8 +2,14 @@
 # Run this in Google Colab (with GPU runtime enabled)
 # ============================================================
 
-# 1. Install Dependencies
-!pip install -q transformers accelerate bitsandbytes peft
+# 1. Install Dependencies (run this line in a Colab/Jupyter cell):
+#     !pip install -q transformers accelerate bitsandbytes peft
+import subprocess, sys
+subprocess.run(
+    [sys.executable, "-m", "pip", "install", "-q",
+     "transformers", "accelerate", "bitsandbytes", "peft"],
+    check=True,
+)
 
 # 2. Login to Hugging Face (MedGemma is gated)
 from huggingface_hub import login

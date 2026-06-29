@@ -32,10 +32,10 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ClinyQAi/open-nursing-core-ig.git"
+        "url": "https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig.git"
     },
     "bugs": {
-        "url": "https://github.com/ClinyQAi/open-nursing-core-ig/issues"
+        "url": "https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues"
     },
     "homepage": "https://opennursingcoreig.com",
     "publishConfig": {

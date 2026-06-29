@@ -236,15 +236,9 @@ def add_user(username: str, password_hash: str, role: str, email: Optional[str] 
                  
             logger.info(f"User created: {mask_identifier(username, 'user')} (ID: {mask_identifier(str(user_id), 'id')})")
             return user_id
-        except Exception as e:  # Catch IntegrityError equivalent
-            logger.warning(
-                "User creation failed (possible duplicate or constraint violation).",
-                exc_info=True,
-            )
-            raise  # Re-raise for controller handling if needed
-        except Exception as e: # Catch IntegrityError equivalent
+        except Exception as e:  # Catch IntegrityError equivalent (duplicate/constraint)
             log_exception_safe(logger, "User creation failed", e, level="warning")
-            raise # Re-raise for controller handling if needed
+            raise  # Re-raise for controller handling if needed
 
 def get_user(username: str) -> Optional[Dict[str, Any]]:
     """Get user by username."""

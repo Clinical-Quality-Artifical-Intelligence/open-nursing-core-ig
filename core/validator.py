@@ -5,8 +5,18 @@ Contains authentication, RAG setup, and common validation routines.
 import os
 import shutil
 import hashlib
+import hmac
+import json
 import logging
+import threading
 from typing import Optional, List, Dict, Any, Union
+
+try:
+    import bcrypt
+    BCRYPT_AVAILABLE = True
+except ImportError:
+    bcrypt = None
+    BCRYPT_AVAILABLE = False
 
 import streamlit as st
 try:
@@ -41,9 +51,58 @@ except ImportError:
 
 logger = logging.getLogger(__name__)
 
+# Serialises access to the JSON chat-history fallback. Streamlit handles each
+# session on its own thread, so concurrent read-modify-write of the shared file
+# would otherwise corrupt it or lose messages.
+_chat_file_lock = threading.Lock()
+
 def hash_password(password: str) -> str:
-    """Hash a password using SHA-256."""
-    return hashlib.sha256(password.encode()).hexdigest()
+    """
+    Hash a password using bcrypt (salted, adaptive work factor).
+
+    bcrypt generates a unique salt per hash, so two calls with the same
+    password yield different hashes. Use :func:`verify_password` to check a
+    candidate password against a stored hash.
+    """
+    if not BCRYPT_AVAILABLE:
+        raise RuntimeError(
+            "bcrypt is required for password hashing. "
+            "Install it with `pip install bcrypt`."
+        )
+    return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
+
+
+def verify_password(password: str, stored_hash: str) -> bool:
+    """
+    Verify a candidate password against a stored hash in constant time.
+
+    Supports modern bcrypt hashes (prefix ``$2``) and, for backward
+    compatibility with databases seeded before the bcrypt migration, legacy
+    unsalted SHA-256 hex digests. Legacy verifications are logged so operators
+    can re-hash affected accounts.
+    """
+    if not password or not stored_hash:
+        return False
+
+    if stored_hash.startswith("$2"):
+        if not BCRYPT_AVAILABLE:
+            logger.error("bcrypt unavailable - cannot verify bcrypt hash")
+            return False
+        try:
+            return bcrypt.checkpw(password.encode("utf-8"), stored_hash.encode("utf-8"))
+        except ValueError:
+            logger.warning("Malformed bcrypt hash encountered during verification")
+            return False
+
+    # Legacy unsalted SHA-256 fallback (deprecated) - constant-time compare.
+    legacy = hashlib.sha256(password.encode("utf-8")).hexdigest()
+    if hmac.compare_digest(legacy, stored_hash):
+        logger.warning(
+            "Authenticated user via legacy SHA-256 hash; "
+            "this account should be re-hashed with bcrypt."
+        )
+        return True
+    return False
 
 def get_default_users() -> Dict[str, Dict[str, str]]:
     """Return default users from settings (in-memory)."""
@@ -76,8 +135,7 @@ def authenticate_user(username: str, password: str) -> Optional[str]:
         try:
             user = get_user(username)
             if user:
-                password_hash = hash_password(password)
-                if user["password_hash"] == password_hash and user["is_active"]:
+                if user["is_active"] and verify_password(password, user["password_hash"]):
                     logger.info(f"User authenticated from database: {username}")
                     update_last_login(user["id"])
                     return user["role"]
@@ -97,7 +155,9 @@ def authenticate_user(username: str, password: str) -> Optional[str]:
     # 2. Fallback to Default Users
     defaults = get_default_users()
     if username in defaults:
-        if defaults[username]["password"] == password:
+        # Constant-time comparison to avoid timing side-channels on the
+        # in-memory fallback credentials.
+        if hmac.compare_digest(defaults[username]["password"], password):
             logger.info(f"User authenticated from defaults: {username}")
             return defaults[username]["role"]
         else:
@@ -160,22 +220,21 @@ def save_chat_message(username: str, role: str, content: str, chat_history_file:
             from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Failed to save to database", e, level="warning")
 
-    # 2. Fallback to JSON
+    # 2. Fallback to JSON (lock the full read-modify-write to stay thread-safe)
     try:
-        history_data = {}
-        if os.path.exists(chat_history_file):
-            import json
-            with open(chat_history_file, "r") as f:
-                history_data = json.load(f)
+        with _chat_file_lock:
+            history_data = {}
+            if os.path.exists(chat_history_file):
+                with open(chat_history_file, "r") as f:
+                    history_data = json.load(f)
 
-        if username not in history_data:
-            history_data[username] = []
+            if username not in history_data:
+                history_data[username] = []
 
-        history_data[username].append({"role": role, "content": content})
+            history_data[username].append({"role": role, "content": content})
 
-        import json
-        with open(chat_history_file, "w") as f:
-            json.dump(history_data, f, indent=2)
+            with open(chat_history_file, "w") as f:
+                json.dump(history_data, f, indent=2)
         return True
     except Exception as e:
         from core.safe_logging import log_exception_safe
@@ -200,11 +259,11 @@ def load_chat_history(username: str, chat_history_file: str = ".chat_history.jso
 
     # 2. Fallback to JSON
     try:
-        import json
-        if os.path.exists(chat_history_file):
-            with open(chat_history_file, "r") as f:
-                history_data = json.load(f)
-                return history_data.get(username, [])
+        with _chat_file_lock:
+            if os.path.exists(chat_history_file):
+                with open(chat_history_file, "r") as f:
+                    history_data = json.load(f)
+                    return history_data.get(username, [])
     except Exception as e:
         from core.safe_logging import log_exception_safe
         log_exception_safe(logger, "Failed to load chat history from file", e, level="warning")

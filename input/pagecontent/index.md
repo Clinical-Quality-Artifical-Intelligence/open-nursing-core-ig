@@ -53,7 +53,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
 
 1. **Browse Artifacts**: See the [Artifacts Page](artifacts.html) for all JSON definitions.
 2. **Download Package**: `npm install @clinyqai/open-nursing-core-ig`
-3. **Contribute**: Visit [GitHub](https://github.com/ClinyQAi/open-nursing-core-ig).
+3. **Contribute**: Visit [GitHub](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig).
 
 ---
 *Built with ❤️ by the Open Nursing Community*

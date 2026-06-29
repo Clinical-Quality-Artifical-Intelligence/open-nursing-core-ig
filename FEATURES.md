@@ -158,4 +158,4 @@ Chat history is stored in `.chat_history.json`:
 ## 📞 Support
 
 For issues, questions, or feature requests, please open an issue on GitHub:
-https://github.com/ClinyQAi/open-nursing-core-ig/issues
+https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues
