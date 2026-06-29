@@ -47,6 +47,8 @@ venv/
 ENV/
 env/
 .venv/
+.venv*/
+*venv*/
 
 # IDE
 .idea/
@@ -61,6 +63,15 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+# macOS AppleDouble metadata (created on non-APFS volumes)
+._*
+
+# Databases & local app state (may contain user data / PII)
+*.db
+*.sqlite
+*.sqlite3
+nursing_validator.db
+.chat_history.json
 
 # Streamlit
 .streamlit/secrets.toml
