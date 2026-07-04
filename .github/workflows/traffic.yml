@@ -1,0 +1,79 @@
+name: Repository Traffic
+
+# GitHub only retains clone/view stats for 14 days and does not expose them
+# publicly. This workflow snapshots the Traffic API weekly and commits a rolling
+# history to traffic/, plus shields.io endpoint badges for the README.
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'   # Every Monday 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: traffic
+  cancel-in-progress: false
+
+jobs:
+  traffic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Snapshot and merge traffic stats
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const dir = 'traffic';
+            fs.mkdirSync(dir, { recursive: true });
+            const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
+
+            // Merge the latest 14-day window into a deduplicated rolling CSV.
+            async function merge(kind, method) {
+              let rows = [];
+              try {
+                const res = await github.rest.repos[method]({ owner, repo, per: 'day' });
+                rows = res.data[kind] || [];
+              } catch (e) {
+                core.warning(`Could not fetch ${kind}: ${e.message}`);
+              }
+              const file = `${dir}/${kind}.csv`;
+              const map = new Map();
+              if (fs.existsSync(file)) {
+                for (const line of fs.readFileSync(file, 'utf8').trim().split('\n').slice(1)) {
+                  const [d, c, u] = line.split(',');
+                  if (d) map.set(d, [Number(c), Number(u)]);
+                }
+              }
+              for (const r of rows) map.set(r.timestamp.slice(0, 10), [r.count, r.uniques]);
+              const dates = [...map.keys()].sort();
+              let out = 'date,count,uniques\n', totalC = 0, totalU = 0;
+              for (const d of dates) {
+                const [c, u] = map.get(d);
+                out += `${d},${c},${u}\n`;
+                totalC += c; totalU += u;
+              }
+              fs.writeFileSync(file, out);
+              return { totalC, totalU };
+            }
+
+            const clones = await merge('clones', 'getClones');
+            const views = await merge('views', 'getViews');
+
+            const badge = (label, message) =>
+              JSON.stringify({ schemaVersion: 1, label, message: String(message), color: '005EB8' });
+            fs.writeFileSync(`${dir}/clones-badge.json`,
+              badge('clones (total)', `${clones.totalC} · ${clones.totalU} unique`));
+            fs.writeFileSync(`${dir}/views-badge.json`,
+              badge('views (total)', `${views.totalC} · ${views.totalU} unique`));
+
+      - name: Commit updated stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add traffic
+          git diff --staged --quiet || git commit -m "chore(traffic): update clone/view stats [skip ci]"
+          git push
