@@ -39,7 +39,7 @@ To support semantic interoperability, ONC concepts are mapped to international s
 
 - **[ONC → NANDA-I](ConceptMap-onc-to-nanda.html)** — aligns ONC relational and clinical findings with formal NANDA-I nursing diagnoses (for example, mapping a Patient Story narrative indicating isolation to the NANDA-I *Social Isolation* diagnosis).
 
-> **Note for implementers.** NANDA-I is a proprietary, licensed terminology. The concept map currently uses a placeholder canonical URL for the NANDA-I code system; organisations using NANDA-I must ensure they hold the appropriate licence and should substitute the official system URI when one is adopted.
+> **⚠️ Note for implementers — not production-ready.** NANDA-I is a proprietary, licensed terminology. The concept map currently targets an explicit **local placeholder canonical** (`nanda-i-PLACEHOLDER`), not an official NANDA-I or HL7 THO system — the example codes it maps to (e.g. `#00053`, `#00054`) illustrate the intended mapping shape only and have not been verified against a current, licensed NANDA-I release. Organisations using NANDA-I **MUST** hold the appropriate licence and **MUST** substitute the official system URI before relying on this map clinically. Progress is tracked in [issue #123](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/123).
 
 ## Implementer requirements
 

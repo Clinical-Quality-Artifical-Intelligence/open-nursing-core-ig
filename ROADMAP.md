@@ -19,12 +19,14 @@
 - [x] Core ADPIE logical model
 - [x] NEWS2 full profile with CQL decision support
 - [x] MUST, Abbey Pain Scale, Bristol, GCS, MMSE, Frailty, Delirium
-- [x] Equity module (Fitzpatrick I–VI skin tone documentation)
+- [x] Equity module — **Monk Skin Tone Scale (A–J, primary)** + Fitzpatrick I–VI (secondary/legacy compatibility)
 - [x] PRSB Standards alignment profiles
 - [x] NEWS2 → escalation `PlanDefinition`
 - [x] Safety constraint: skin tone required before pressure ulcer staging
 - [x] Multilingual README (8 languages)
 - [x] UN/UNICC mirror at opensource.unicc.org
+
+See [STANDARDS_ROADMAP.md](STANDARDS_ROADMAP.md) for the path to formal standards balloting and endorsement — this IG is a **pre-ballot, trial-use community release**, not yet a balloted HL7 standard.
 
 ---
 
@@ -32,25 +34,8 @@
 
 > **Status:** Active development · [Track on GitHub](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues)
 
-### 🎯 Monk Skin Tone Scale archetype
-**Priority:** High · **Lead:** Kumbi Kariwo · **Help wanted:** Clinical review + openEHR mapping
-**Priority:** High · **Help wanted:** Clinical review + openEHR mapping
-
-The Fitzpatrick scale was designed for UV photoreactivity, not inclusive skin tone classification.
-The [Monk Skin Tone Scale](https://skintone.google) (10-point, open-source) is increasingly adopted
-in clinical AI and dermatology. We are:
-
-- [ ] Drafting FHIR extension for Monk Skin Tone (10-point)
-- [ ] Submitting archetype proposal to openEHR CKM
-- [ ] Updating equity safety constraint to accept both Fitzpatrick and Monk
-
-> 🤝 **Looking for:** nurses with skin assessment expertise, openEHR archetype authors, dermatology informaticians
-
----
-
 ### ⚖️ Equity-driven safety constraints (extended)
 **Priority:** High · **Lead:** Kumbi Kariwo · **Help wanted:** Clinical evidence review
-**Priority:** High · **Help wanted:** Clinical evidence review
 
 - [ ] Extend CQL safety rules to cover wound assessment (beyond pressure ulcers)
 - [ ] Add skin tone documentation constraint to falls risk assessment
@@ -123,7 +108,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
 **Project co-leads:** Kumbi Kariwo (Health Inequalities & AI Equity) · Lincoln (FHIR IG & Nurse Citizen Developer)
 
-*This roadmap is a living document. Last updated: March 2026.*
+*This roadmap is a living document. Last updated: July 2026.*
 *To suggest changes, [open a discussion](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/discussions).*
 
 </div>
