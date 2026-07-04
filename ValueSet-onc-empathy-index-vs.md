@@ -53,7 +53,7 @@ A clinical scale measuring the depth of therapeutic empathy in nurse-patient int
   "name" : "ONCEmpathyIndexVS",
   "title" : "ONC Empathy & Relational Engagement Index",
   "status" : "active",
-  "date" : "2026-07-04T08:39:09+00:00",
+  "date" : "2026-07-04T09:17:49+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome.",
   "compose" : {

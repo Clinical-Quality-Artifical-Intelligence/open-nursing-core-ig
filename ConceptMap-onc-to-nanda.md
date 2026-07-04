@@ -12,7 +12,7 @@
 | Draft as of 2026-07-04 | *Computable Name*:ONCToNandaMapping |
 
  
-Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. 
+Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below. 
 
 
 
@@ -27,14 +27,14 @@ Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.
   "name" : "ONCToNandaMapping",
   "title" : "Mapping ONC Relational Concepts to NANDA-I",
   "status" : "draft",
-  "date" : "2026-07-04T08:39:09+00:00",
+  "date" : "2026-07-04T09:17:49+00:00",
   "publisher" : "The Open Nursing Community",
-  "description" : "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.",
+  "description" : "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below.",
   "sourceCanonical" : "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs",
-  "targetCanonical" : "http://terminology.hl7.org/CodeSystem/nanda-i",
+  "targetCanonical" : "https://opennursingcoreig.com/CodeSystem/nanda-i-PLACEHOLDER",
   "group" : [{
     "source" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
-    "target" : "http://terminology.hl7.org/CodeSystem/nanda-i",
+    "target" : "https://opennursingcoreig.com/CodeSystem/nanda-i-PLACEHOLDER",
     "element" : [{
       "code" : "patient-story",
       "target" : [{

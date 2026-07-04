@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCNursingAssessment"] ;
   fhir:StructureDefinition.title [ fhir:value "Open Nursing Core Assessment"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-04T08:39:09+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-04T09:17:49+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

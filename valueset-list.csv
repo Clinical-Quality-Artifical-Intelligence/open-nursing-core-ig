@@ -22,7 +22,7 @@ https://opennursingcoreig.com/ValueSet/onc-pain-score-vs,1.0.0,active,,PainScore
 https://opennursingcoreig.com/ValueSet/onc-pbs-function-vs,1.0.0,active,,PBSFunctionVS,PBS Behaviour Function ValueSet,"Common functions of behaviour (SEAT)",,"Internal"
 https://opennursingcoreig.com/ValueSet/onc-prognosis-vs,1.0.0,active,,ONCPrognosisVS,Nursing Prognosis ValueSet,"Prognosis codes for clinical impression",,"SCT"
 https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs,1.0.0,active,,ONCRelationalOutcomesVS,ONC Relational Care Outcomes,"Captures the measurable outcomes of relational and empathic nursing care.",,"SCT"
-https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs,1.0.0,active,,SkinToneVS,Skin Tone Value Set,"Monk and Fitzpatrick scales for equitable skin assessment.",,"Internal"
+https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs,1.0.0,active,,SkinToneVS,Skin Tone Value Set,"Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems.",,"Internal"
 https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs,1.0.0,active,,PainAssessmentCodeValueSet,Pain Assessment Code Value Set,"LOINC codes for pain severity assessment",,"LOINC"
 https://opennursingcoreig.com/ValueSet/problem-category-valueset,1.0.0,active,,ProblemCategoryValueSet,Problem Category Value Set,"Value set for categorizing nursing problems",,"Internal"
 https://opennursingcoreig.com/ValueSet/wound-stage-vs,1.0.0,active,,WoundStageValueSet,Wound Stage Value Set,"",,"Internal"

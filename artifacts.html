@@ -692,10 +692,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onc-skintone-observation.html"
-                  title="StructureDefinition/onc-skintone-observation">Skin Tone Observation</a>
+                  title="StructureDefinition/onc-skintone-observation">Skin Tone Observation (Fitzpatrick -- secondary/legacy)</a>
             </td>
             <td>
-<p>Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).</p>
+<p>Observation of patient skin tone using the Fitzpatrick skin type classification. Fitzpatrick was designed to describe UV photosensitivity, not clinical skin tone, and compresses the darker end of the range into few categories. This profile is RETAINED FOR BACKWARD COMPATIBILITY with systems that already record Fitzpatrick phototypes; it is secondary to, and SHOULD NOT be used in place of, the Monk Skin Tone Scale (see ONCMonkSkinToneObservation), which is this IG's primary and recommended skin-tone vocabulary.</p>
 </td>
          </tr>
          <tr>
@@ -1036,7 +1036,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="ValueSet-onc-skin-tone-vs.html" title="ValueSet/onc-skin-tone-vs">Skin Tone Value Set</a>
             </td>
             <td>
-<p>Monk and Fitzpatrick scales for equitable skin assessment.</p>
+<p>Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems.</p>
 </td>
          </tr>
          <tr>
@@ -1094,7 +1094,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="ConceptMap-onc-to-nanda.html" title="ConceptMap/onc-to-nanda">Mapping ONC Relational Concepts to NANDA-I</a>
             </td>
             <td>
-<p>Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.</p>
+<p>Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below.</p>
 </td>
          </tr>
       </tbody>
@@ -1555,7 +1555,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jul 4, 2026 08:39+0000">2026-07-04</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jul 4, 2026 09:17+0000">2026-07-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

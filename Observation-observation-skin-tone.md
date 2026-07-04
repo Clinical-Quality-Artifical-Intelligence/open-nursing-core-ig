@@ -6,7 +6,7 @@
 
 ## Example Observation: observation-skin-tone
 
-Profile: [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md)
+Profile: [Skin Tone Observation (Fitzpatrick -- secondary/legacy)](StructureDefinition-onc-skintone-observation.md)
 
 **status**: Final
 

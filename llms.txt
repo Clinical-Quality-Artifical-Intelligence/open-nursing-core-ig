@@ -109,7 +109,7 @@
 * [Respiration Rate](StructureDefinition-onc-respiration-rate.md)
 * [Seizure Record](StructureDefinition-onc-seizure-record.md)
 * [Skin Integrity Assessment](StructureDefinition-onc-skin-assessment.md)
-* [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md)
+* [Skin Tone Observation (Fitzpatrick -- secondary/legacy)](StructureDefinition-onc-skintone-observation.md)
 * [Sleep Pattern](StructureDefinition-onc-sleep-pattern.md)
 * [Swallowing Assessment](StructureDefinition-onc-swallowing-assessment.md)
 * [Urinalysis](StructureDefinition-onc-urinalysis.md)

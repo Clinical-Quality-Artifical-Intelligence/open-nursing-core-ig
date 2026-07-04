@@ -184,10 +184,10 @@
     "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
     "uses" : {
     },
-    "StructureDefinition-onc-oral-care-assessment.html" : "Oral Care Needs Assessment",
-    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model",
     "StructureDefinition-onc-hygiene-assessment.html" : "Personal Hygiene Needs Assessment",
-    "StructureDefinition-onc-mobility-assessment.html" : "Mobility Assessment"
+    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model",
+    "StructureDefinition-onc-mobility-assessment.html" : "Mobility Assessment",
+    "StructureDefinition-onc-oral-care-assessment.html" : "Oral Care Needs Assessment"
   },
   {
     "url" : "https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs",
@@ -283,13 +283,13 @@
     "status" : "active",
     "name" : "SkinToneVS",
     "title" : "Skin Tone Value Set",
-    "description" : "Monk and Fitzpatrick scales for equitable skin assessment.",
+    "description" : "Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems.",
     "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
     "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
     "uses" : {
     },
     "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model",
-    "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+    "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation (Fitzpatrick -- secondary/legacy)"
   },
   {
     "url" : "https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs",

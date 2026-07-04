@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="onc.ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide onc.ig</b></p><a name="onc.ig"> </a><a name="hconc.ig"> </a><h2>OpenNursingCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://opennursingcoreig.com/ImplementationGuide/onc.ig</pre><div><p>Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide onc.ig</b></p><a name="onc.ig"> </a><a name="hconc.ig"> </a><h2>OpenNursingCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://opennursingcoreig.com/ImplementationGuide/onc.ig</pre><div><p>Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md.</p>
 </div></div>
   </text>
   <url value="https://opennursingcoreig.com/ImplementationGuide/onc.ig"/>
@@ -11,9 +11,9 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2026-07-04T08:39:09+00:00"/>
+  <date value="2026-07-04T09:17:49+00:00"/>
   <publisher value="The Open Nursing Community"/>
-  <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready."/>
+  <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
   <fhirVersion value="4.0.1"/>
@@ -1242,7 +1242,7 @@
         <reference value="ConceptMap/onc-to-nanda"/>
       </reference>
       <name value="Mapping ONC Relational Concepts to NANDA-I"/>
-      <description value="Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses."/>
+      <description value="Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1894,8 +1894,8 @@
       <reference>
         <reference value="StructureDefinition/onc-skintone-observation"/>
       </reference>
-      <name value="Skin Tone Observation"/>
-      <description value="Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis)."/>
+      <name value="Skin Tone Observation (Fitzpatrick -- secondary/legacy)"/>
+      <description value="Observation of patient skin tone using the Fitzpatrick skin type classification. Fitzpatrick was designed to describe UV photosensitivity, not clinical skin tone, and compresses the darker end of the range into few categories. This profile is RETAINED FOR BACKWARD COMPATIBILITY with systems that already record Fitzpatrick phototypes; it is secondary to, and SHOULD NOT be used in place of, the Monk Skin Tone Scale (see ONCMonkSkinToneObservation), which is this IG's primary and recommended skin-tone vocabulary."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1906,7 +1906,7 @@
         <reference value="ValueSet/onc-skin-tone-vs"/>
       </reference>
       <name value="Skin Tone Value Set"/>
-      <description value="Monk and Fitzpatrick scales for equitable skin assessment."/>
+      <description value="Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

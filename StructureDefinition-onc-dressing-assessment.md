@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-dressing-assessm
   "name" : "ONCDressingAssessment",
   "title" : "Dressing and Undressing Assessment",
   "status" : "active",
-  "date" : "2026-07-04T08:39:09+00:00",
+  "date" : "2026-07-04T09:17:49+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of assistance required for dressing and undressing, as per PRSB Personal Hygiene section.",
   "fhirVersion" : "4.0.1",

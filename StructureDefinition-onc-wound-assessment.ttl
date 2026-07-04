@@ -18,7 +18,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCWoundAssessment"] ;
   fhir:StructureDefinition.title [ fhir:value "Wound Assessment"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-04T08:39:09+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-04T09:17:49+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Comprehensive wound assessment including staging and dimensions"] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

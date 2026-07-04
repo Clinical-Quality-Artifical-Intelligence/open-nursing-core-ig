@@ -12,6 +12,8 @@
 
 # Open Nursing Core FHIR Implementation Guide
 
+> **⚠️ Standards status: Trial Use — Pre-Ballot Community Release.** This IG has **not** undergone formal HL7 standards balloting or independent clinical/peer review. Its `active`/`release` labels reflect development maturity within this project, not endorsement by HL7 International, PRSB, or any other standards body. It is a specification, not a deployed product, and does not by itself discharge an implementing organisation's clinical-safety (DCB0129/DCB0160) or information-governance obligations. See the [Standards & Governance Roadmap](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/blob/main/STANDARDS_ROADMAP.md) for the path toward formal review and balloting.
+
 The **Open Nursing Core FHIR Implementation Guide (ONC-IG)** provides a foundational set of standardised, nurse-led data models for the NHS and comparable health systems. It is built on **HL7 FHIR R4 (4.0.1)** and organised around the complete nursing process — **Assessment, Diagnosis, Planning, Implementation and Evaluation (ADPIE)** — rather than a purely pathology-driven medical model.
 
 The IG is grounded in United Kingdom nursing and information standards, in particular the **Professional Record Standards Body (PRSB)** Nursing Care Needs standard, the **NANDA International (NANDA-I)** diagnostic taxonomy, and the person-centred practice principles of the **Foundation of Nursing Studies (FONS)**.
@@ -114,9 +116,9 @@ Instruments for learning disability, mental health and older-person care.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-07-04T08:39:09+00:00",
+  "date" : "2026-07-04T09:17:49+00:00",
   "publisher" : "The Open Nursing Community",
-  "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready.",
+  "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md.",
   "packageId" : "onc.ig",
   "license" : "MIT",
   "fhirVersion" : ["4.0.1"],
@@ -1577,7 +1579,7 @@ Instruments for learning disability, mental health and older-person care.
         "reference" : "ConceptMap/onc-to-nanda"
       },
       "name" : "Mapping ONC Relational Concepts to NANDA-I",
-      "description" : "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.",
+      "description" : "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below.",
       "exampleBoolean" : false
     },
     {
@@ -2289,8 +2291,8 @@ Instruments for learning disability, mental health and older-person care.
       "reference" : {
         "reference" : "StructureDefinition/onc-skintone-observation"
       },
-      "name" : "Skin Tone Observation",
-      "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
+      "name" : "Skin Tone Observation (Fitzpatrick -- secondary/legacy)",
+      "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Fitzpatrick was designed to describe UV photosensitivity, not clinical skin tone, and compresses the darker end of the range into few categories. This profile is RETAINED FOR BACKWARD COMPATIBILITY with systems that already record Fitzpatrick phototypes; it is secondary to, and SHOULD NOT be used in place of, the Monk Skin Tone Scale (see ONCMonkSkinToneObservation), which is this IG's primary and recommended skin-tone vocabulary.",
       "exampleBoolean" : false
     },
     {
@@ -2302,7 +2304,7 @@ Instruments for learning disability, mental health and older-person care.
         "reference" : "ValueSet/onc-skin-tone-vs"
       },
       "name" : "Skin Tone Value Set",
-      "description" : "Monk and Fitzpatrick scales for equitable skin assessment.",
+      "description" : "Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems.",
       "exampleBoolean" : false
     },
     {

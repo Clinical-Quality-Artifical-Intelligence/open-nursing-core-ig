@@ -1,10 +1,10 @@
-# Skin Tone Observation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Skin Tone Observation (Fitzpatrick -- secondary/legacy) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Skin Tone Observation**
+* **Skin Tone Observation (Fitzpatrick -- secondary/legacy)**
 
-## Resource Profile: Skin Tone Observation 
+## Resource Profile: Skin Tone Observation (Fitzpatrick -- secondary/legacy) 
 
 | | |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | Active as of 2026-07-04 | *Computable Name*:ONCSkinToneObservation |
 
  
-Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis). 
+Observation of patient skin tone using the Fitzpatrick skin type classification. Fitzpatrick was designed to describe UV photosensitivity, not clinical skin tone, and compresses the darker end of the range into few categories. This profile is RETAINED FOR BACKWARD COMPATIBILITY with systems that already record Fitzpatrick phototypes; it is secondary to, and SHOULD NOT be used in place of, the Monk Skin Tone Scale (see ONCMonkSkinToneObservation), which is this IG's primary and recommended skin-tone vocabulary. 
 
 **Usages:**
 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-skintone-observa
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation",
   "version" : "1.0.0",
   "name" : "ONCSkinToneObservation",
-  "title" : "Skin Tone Observation",
+  "title" : "Skin Tone Observation (Fitzpatrick -- secondary/legacy)",
   "status" : "active",
-  "date" : "2026-07-04T08:39:09+00:00",
+  "date" : "2026-07-04T09:17:49+00:00",
   "publisher" : "The Open Nursing Community",
-  "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
+  "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Fitzpatrick was designed to describe UV photosensitivity, not clinical skin tone, and compresses the darker end of the range into few categories. This profile is RETAINED FOR BACKWARD COMPATIBILITY with systems that already record Fitzpatrick phototypes; it is secondary to, and SHOULD NOT be used in place of, the Monk Skin Tone Scale (see ONCMonkSkinToneObservation), which is this IG's primary and recommended skin-tone vocabulary.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

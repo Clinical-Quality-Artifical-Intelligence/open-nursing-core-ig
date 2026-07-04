@@ -89,7 +89,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Respiration Rate](StructureDefinition-onc-respiration-rate.md) | Respiration rate observation for NEWS2 |
 | [Seizure Record](StructureDefinition-onc-seizure-record.md) | Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns. |
 | [Skin Integrity Assessment](StructureDefinition-onc-skin-assessment.md) | Detailed assessment of skin condition (e.g., intact, dry, broken), separate from pressure ulcer risk. |
-| [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) | Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis). |
+| [Skin Tone Observation (Fitzpatrick -- secondary/legacy)](StructureDefinition-onc-skintone-observation.md) | Observation of patient skin tone using the Fitzpatrick skin type classification. Fitzpatrick was designed to describe UV photosensitivity, not clinical skin tone, and compresses the darker end of the range into few categories. This profile is RETAINED FOR BACKWARD COMPATIBILITY with systems that already record Fitzpatrick phototypes; it is secondary to, and SHOULD NOT be used in place of, the Monk Skin Tone Scale (see ONCMonkSkinToneObservation), which is this IG's primary and recommended skin-tone vocabulary. |
 | [Sleep Pattern](StructureDefinition-onc-sleep-pattern.md) | Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing. |
 | [Swallowing Assessment](StructureDefinition-onc-swallowing-assessment.md) | Screening for dysphagia and swallowing difficulties. |
 | [Urinalysis](StructureDefinition-onc-urinalysis.md) | Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health. |
@@ -140,7 +140,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Pain Assessment Code Value Set](ValueSet-pain-assessment-code-vs.md) | LOINC codes for pain severity assessment |
 | [Pain Score Value Set](ValueSet-onc-pain-score-vs.md) | Standard 0-10 or Abbey Pain Scale score |
 | [Problem Category Value Set](ValueSet-problem-category-valueset.md) | Value set for categorizing nursing problems |
-| [Skin Tone Value Set](ValueSet-onc-skin-tone-vs.md) | Monk and Fitzpatrick scales for equitable skin assessment. |
+| [Skin Tone Value Set](ValueSet-onc-skin-tone-vs.md) | Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems. |
 | [Wound Stage Value Set](ValueSet-wound-stage-vs.md) |  |
 
 ### Terminology: Code Systems 
@@ -159,7 +159,7 @@ These define transformations to convert between codes by systems conforming with
 
 | | |
 | :--- | :--- |
-| [Mapping ONC Relational Concepts to NANDA-I](ConceptMap-onc-to-nanda.md) | Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. |
+| [Mapping ONC Relational Concepts to NANDA-I](ConceptMap-onc-to-nanda.md) | Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below. |
 
 ### Example: Example Instances 
 

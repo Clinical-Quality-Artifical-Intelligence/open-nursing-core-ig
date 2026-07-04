@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-care-
   "name" : "ONCRelationalCareModel",
   "title" : "Relational Care Logical Model",
   "status" : "active",
-  "date" : "2026-07-04T08:39:09+00:00",
+  "date" : "2026-07-04T09:17:49+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR.",
   "fhirVersion" : "4.0.1",
@@ -97,8 +97,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-care-
     {
       "id" : "onc-relational-care-logical.skinToneEquity",
       "path" : "onc-relational-care-logical.skinToneEquity",
-      "short" : "The patient's skin tone classification (Fitzpatrick or Monk) used to guide clinical assessment.",
-      "definition" : "The patient's skin tone classification (Fitzpatrick or Monk) used to guide clinical assessment.",
+      "short" : "The patient's skin tone classification (Monk primary, Fitzpatrick secondary/legacy) used to guide clinical assessment.",
+      "definition" : "The patient's skin tone classification (Monk primary, Fitzpatrick secondary/legacy) used to guide clinical assessment.",
       "min" : 1,
       "max" : "1",
       "type" : [{

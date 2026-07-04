@@ -50,7 +50,7 @@ The five phases of the professional nursing process.
   "name" : "ONCADPIEVS",
   "title" : "ADPIE Nursing Process Phases",
   "status" : "active",
-  "date" : "2026-07-04T08:39:09+00:00",
+  "date" : "2026-07-04T09:17:49+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "The five phases of the professional nursing process.",
   "compose" : {

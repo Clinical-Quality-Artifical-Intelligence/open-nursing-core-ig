@@ -12,12 +12,12 @@
 | Active as of 2026-07-04 | *Computable Name*:SkinToneVS |
 
  
-Monk and Fitzpatrick scales for equitable skin assessment. 
+Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems. 
 
  **References** 
 
 * [Relational Care Logical Model](StructureDefinition-onc-relational-care-logical.md)
-* [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md)
+* [Skin Tone Observation (Fitzpatrick -- secondary/legacy)](StructureDefinition-onc-skintone-observation.md)
 
 ### Logical Definition (CLD)
 
@@ -52,9 +52,9 @@ Monk and Fitzpatrick scales for equitable skin assessment.
   "title" : "Skin Tone Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-04T08:39:09+00:00",
+  "date" : "2026-07-04T09:17:49+00:00",
   "publisher" : "The Open Nursing Community",
-  "description" : "Monk and Fitzpatrick scales for equitable skin assessment.",
+  "description" : "Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems.",
   "compose" : {
     "include" : [{
       "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale"

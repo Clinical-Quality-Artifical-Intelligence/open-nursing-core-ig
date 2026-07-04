@@ -88,7 +88,7 @@
       },
       {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation",
-        "title": "Skin Tone Observation"
+        "title": "Skin Tone Observation (Fitzpatrick -- secondary/legacy)"
       },
       {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern",
