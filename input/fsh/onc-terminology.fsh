@@ -42,7 +42,7 @@ Description: "Value set for categorizing nursing problems"
 ValueSet: SkinToneVS
 Id: onc-skin-tone-vs
 Title: "Skin Tone Value Set"
-Description: "Monk and Fitzpatrick scales for equitable skin assessment."
+Description: "Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems."
 * ^experimental = false
 * include codes from system ONCMonkScale
 * include codes from system ONCObservationCodes where code is-a #fitzpatrick-1

@@ -1,5 +1,7 @@
 # Open Nursing Core FHIR Implementation Guide
 
+> **⚠️ Standards status: Trial Use — Pre-Ballot Community Release.** This IG has **not** undergone formal HL7 standards balloting or independent clinical/peer review. Its `active`/`release` labels reflect development maturity within this project, not endorsement by HL7 International, PRSB, or any other standards body. It is a specification, not a deployed product, and does not by itself discharge an implementing organisation's clinical-safety (DCB0129/DCB0160) or information-governance obligations. See the [Standards & Governance Roadmap](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/blob/main/STANDARDS_ROADMAP.md) for the path toward formal review and balloting.
+
 The **Open Nursing Core FHIR Implementation Guide (ONC-IG)** provides a foundational set of standardised, nurse-led data models for the NHS and comparable health systems. It is built on **HL7 FHIR R4 (4.0.1)** and organised around the complete nursing process — **Assessment, Diagnosis, Planning, Implementation and Evaluation (ADPIE)** — rather than a purely pathology-driven medical model.
 
 The IG is grounded in United Kingdom nursing and information standards, in particular the **Professional Record Standards Body (PRSB)** Nursing Care Needs standard, the **NANDA International (NANDA-I)** diagnostic taxonomy, and the person-centred practice principles of the **Foundation of Nursing Studies (FONS)**.

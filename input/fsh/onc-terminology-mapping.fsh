@@ -10,13 +10,19 @@ Usage: #definition
 * name = "ONCToNandaMapping"
 * title = "Mapping ONC Relational Concepts to NANDA-I"
 * status = #draft
-* description = "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses."
+* description = "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below."
 * sourceCanonical = "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs"
-* targetCanonical = "http://terminology.hl7.org/CodeSystem/nanda-i" // Placeholder URL
+// NANDA-I is a proprietary, licensed terminology (NANDA International / Thieme) with no
+// public FHIR terminology-server canonical this project controls or can point to. The URL
+// below is an explicit LOCAL PLACEHOLDER under our own canonical -- it does NOT resolve to
+// an official NANDA-I or HL7 THO CodeSystem. Do not treat #00053 / #00054 below as verified
+// current NANDA-I codes; they illustrate the intended mapping shape only.
+// Tracking: https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/123
+* targetCanonical = "https://opennursingcoreig.com/CodeSystem/nanda-i-PLACEHOLDER"
 
-// Example Mapping
+// Example Mapping (illustrative only -- see placeholder note above)
 * group[0].source = "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
-* group[0].target = "http://terminology.hl7.org/CodeSystem/nanda-i"
+* group[0].target = "https://opennursingcoreig.com/CodeSystem/nanda-i-PLACEHOLDER"
 
 // Map: Patient Story narrative mentioning isolation -> NANDA Social Isolation
 * group[0].element[0].code = #patient-story

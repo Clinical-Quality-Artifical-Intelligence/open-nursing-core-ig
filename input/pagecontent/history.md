@@ -6,9 +6,9 @@ This page lists all published versions of the Open Nursing Core Implementation G
 
 | Version | Status | Date | Description |
 |---------|--------|------|-------------|
-| **1.0.0** | Active (Release) | 2025 | First production release — foundational nursing-process, safety and equity profiles |
+| **1.0.0** | Active (Release) | 2025 | First community release — foundational nursing-process, safety and equity profiles |
 
-The version, status and release label above are taken from the IG's authoritative configuration (`sushi-config.yaml`): version `1.0.0`, status `active`, release label `release`.
+The version, status and release label above are taken from the IG's authoritative configuration (`sushi-config.yaml`): version `1.0.0`, status `active`, release label `release`. **These FHIR conformance codes describe this project's own development lifecycle, not endorsement by HL7 International or any other standards body** — the IG has not yet been submitted to formal standards balloting. See [STANDARDS_ROADMAP.md](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/blob/main/STANDARDS_ROADMAP.md) for the path toward formal review.
 
 ## Build information
 

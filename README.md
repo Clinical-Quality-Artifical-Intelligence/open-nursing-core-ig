@@ -34,6 +34,10 @@
 
 ---
 
+> **⚠️ Standards status: Trial Use — Pre-Ballot Community Release.** ONC-IG has not undergone formal HL7 standards balloting or independent clinical/peer review. Version and status labels reflect this project's own development lifecycle, not external endorsement. It is a specification, not a deployed product — implementers remain responsible for their own DCB0129/DCB0160 clinical safety case. See [STANDARDS_ROADMAP.md](STANDARDS_ROADMAP.md) for the path toward formal review.
+
+---
+
 ## Contents
 
 - [What is the Open Nursing Core?](#-what-is-the-open-nursing-core)
@@ -43,6 +47,7 @@
 - [Quick start](#️-quick-start)
 - [Repository map](#-repository-map)
 - [Project leadership](#-project-leadership)
+- [Standards & governance](#-standards--governance)
 - [Contributing & security](#-contributing--security)
 - [Repository traffic](#-repository-traffic)
 - [Citation](#-citation)
@@ -145,6 +150,18 @@ streamlit run app_phase2.py
 | **Lincoln** | Nurse Citizen Developer · FHIR IG Lead · Practice Educator, NMC Registered |
 
 ONC-IG is a nurse-led initiative — clinical leadership by nurses, for nurses — built on open standards and hosted by the [United Nations (UNICC)](https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig).
+
+---
+
+## 🧭 Standards & governance
+
+ONC-IG is a **trial-use, pre-ballot community release** — see the callout at the top of this page. [STANDARDS_ROADMAP.md](STANDARDS_ROADMAP.md) sets out the concrete path toward formal review and endorsement, including:
+
+- Immediate, loud "trial use" labelling across the IG so nothing is mistaken for a balloted standard
+- Engagement with the **Professional Record Standards Body (PRSB)** formal assurance process, since the IG already grounds itself in the PRSB Nursing Care Needs standard
+- Participation in an **HL7 FHIR Connectathon** to gather implementer feedback ahead of any ballot submission
+- Identifying an **HL7 Work Group sponsor** (e.g. Patient Care WG) as a precondition for a formal Standard for Trial Use (STU) ballot
+- Resolving the **NANDA-I licensing/terminology-canonical** gap tracked in [issue #123](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/123)
 
 ---
 

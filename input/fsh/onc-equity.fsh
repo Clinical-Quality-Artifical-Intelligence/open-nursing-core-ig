@@ -19,8 +19,8 @@ Description: "A patient profile for use in NHS nursing contexts with ethnic cate
 Profile: ONCSkinToneObservation
 Parent: ONCNursingAssessment
 Id: onc-skintone-observation
-Title: "Skin Tone Observation"
-Description: "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis)."
+Title: "Skin Tone Observation (Fitzpatrick -- secondary/legacy)"
+Description: "Observation of patient skin tone using the Fitzpatrick skin type classification. Fitzpatrick was designed to describe UV photosensitivity, not clinical skin tone, and compresses the darker end of the range into few categories. This profile is RETAINED FOR BACKWARD COMPATIBILITY with systems that already record Fitzpatrick phototypes; it is secondary to, and SHOULD NOT be used in place of, the Monk Skin Tone Scale (see ONCMonkSkinToneObservation), which is this IG's primary and recommended skin-tone vocabulary."
 * code = $LNC#66555-4
 * value[x] only CodeableConcept
 * valueCodeableConcept from SkinToneVS (required)
