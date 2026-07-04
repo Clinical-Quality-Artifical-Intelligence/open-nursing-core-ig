@@ -1,0 +1,46 @@
+name: PR Validation
+
+# Gate for pull requests: proves the FHIR IG still builds and the Python
+# sources are syntactically sound before a change can be merged. Runs with
+# least-privilege (read-only) permissions and never has access to secrets that
+# could be exfiltrated by untrusted PR code.
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-validation-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  fhir-build:
+    name: FHIR (SUSHI) build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+      - name: Build FHIR resources
+        run: sushi .
+
+  python-quality:
+    name: Python quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Syntax check
+        run: python -m compileall -q app.py app_phase2.py core db ml visualizations scripts
+      - name: Lint (blocking errors only)
+        run: |
+          pip install flake8
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics

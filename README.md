@@ -1,115 +1,172 @@
-
 <div align="center">
 
 ![Open Nursing Core Banner](assets/onc_project_banner.png)
 
 # 🌍 Open Nursing Core (ONC)
+
 ### Standards-Aware AI Engine for Nurse-Led Clinical Intelligence
 
+**An open, FHIR-based data foundation for nursing documentation, clinical reasoning, safety and equity — built by nurses, in the open.**
+
+<!-- Project -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Hugging Face Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing)
 [![Standard: FHIR R4](https://img.shields.io/badge/Standard-FHIR%20R4-firebrick)](http://hl7.org/fhir/R4/)
 [![Alignment: PRSB](https://img.shields.io/badge/Alignment-PRSB-green)](https://theprsb.org/)
-[![Build Status](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/actions/workflows/docs.yml/badge.svg)](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/actions/workflows/docs.yml)
-[![IG Status](https://img.shields.io/website?url=https%3A%2F%2Fopennursingcoreig.com&label=IG%20Status)](https://opennursingcoreig.com)
+[![Hugging Face Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing)
 
-[**Deutsch**](README.de.md) | [**Español**](README.es.md) | [**Français**](README.fr.md) | [**日本語**](README.ja.md) | [**한국어**](README.kr.md) | [**Português**](README.pt.md) | [**Русский**](README.ru.md) | [**中文**](README.zh.md)
+<!-- Status -->
+[![Build & Publish IG](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/actions/workflows/docs.yml/badge.svg)](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/actions/workflows/docs.yml)
+[![CodeQL](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/actions/workflows/codeql.yml/badge.svg)](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/actions/workflows/codeql.yml)
+[![IG Status](https://img.shields.io/website?url=https%3A%2F%2Fopennursingcoreig.com&label=live%20IG)](https://opennursingcoreig.com)
 
----
+<!-- Community & traffic -->
+[![Stars](https://img.shields.io/github/stars/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig?style=flat&logo=github)](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/stargazers)
+[![Clones](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FClinical-Quality-Artifical-Intelligence%2Fopen-nursing-core-ig%2Fmain%2Ftraffic%2Fclones-badge.json)](traffic/)
+[![Views](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FClinical-Quality-Artifical-Intelligence%2Fopen-nursing-core-ig%2Fmain%2Ftraffic%2Fviews-badge.json)](traffic/)
+
+[**Deutsch**](README.de.md) · [**Español**](README.es.md) · [**Français**](README.fr.md) · [**日本語**](README.ja.md) · [**한국어**](README.kr.md) · [**Português**](README.pt.md) · [**Русский**](README.ru.md) · [**中文**](README.zh.md)
+
+**[📖 Read the Implementation Guide](https://opennursingcoreig.com)** ·
+**[🚀 Try the Live Demo](https://huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing)** ·
+**[🤝 Contribute](CONTRIBUTING.md)**
+
 </div>
 
-## 📖 View the Implementation Guide
-**[👉 Click here to view the full Open Nursing Core FHIR Implementation Guide](https://opennursingcoreig.com)**
-*Contains all FHIR profiles, extensions, and terminology.*
+---
+
+## Contents
+
+- [What is the Open Nursing Core?](#-what-is-the-open-nursing-core)
+- [Why it matters](#-why-it-matters)
+- [Key features](#-key-features)
+- [Architecture](#️-architecture)
+- [Quick start](#️-quick-start)
+- [Repository map](#-repository-map)
+- [Project leadership](#-project-leadership)
+- [Contributing & security](#-contributing--security)
+- [Repository traffic](#-repository-traffic)
+- [Citation](#-citation)
+- [License](#-license)
+
+---
 
 ## 🌟 What is the Open Nursing Core?
-**Open Nursing Core (ONC)** is an open-source platform and standards-aware AI engine for **nurse-led clinical intelligence**. It combines healthcare standards, clinical reasoning, and deployable tools to support safe, person-centred nursing practice. ONC is designed to deliver:
-- **🫀 Clinical Safety**: Validated against "Safety Gates" (e.g., Waterlow, NEWS2).
-- **💚 Relational Care**: Prioritizes empathetic and person-centred language.
-- **🛡️ Evidence-Based**: Grounded in PRSB Standards and FONS nursing literature.
 
-## 🚀 Key Features
+**Open Nursing Core (ONC)** is an open-source platform and standards-aware AI engine for **nurse-led clinical intelligence**. It combines healthcare standards, clinical reasoning and deployable tools to support safe, person-centred nursing practice.
+
+It is organised around the complete nursing process — **A**ssessment, **D**iagnosis, **P**lanning, **I**mplementation, **E**valuation (**ADPIE**) — rather than a purely pathology-driven medical model, and is grounded in **PRSB** documentation standards, the **NANDA-I** taxonomy and **FONS** person-centred practice principles.
+
+| Pillar | What it means |
+|--------|---------------|
+| 🫀 **Clinical safety** | Validated "safety gate" instruments (NEWS2, Braden, Waterlow, MUST…) with computable escalation logic. |
+| 💚 **Relational care** | First-class "What Matters to Me" and patient-story data, and empathetic, person-centred language. |
+| 🛡️ **Equitable by design** | Leads with the Monk Skin Tone Scale and structured reasonable-adjustment records (Equality Act 2010). |
+| 🔗 **Interoperable** | HL7 FHIR R4 profiles with SNOMED CT / LOINC bindings, ready for real EHRs. |
+
+The current release ships **60 profiles, 27 value sets, 3 code systems, 4 extensions, 1 logical model and 49 worked examples**.
+
+---
+
+## 🎯 Why it matters
+
+Too much nursing knowledge — assessment, risk, escalation, safeguarding, the person-centred detail — stays trapped in free text and disconnected systems that cannot understand what nursing contributes. That is at once a **documentation**, **interoperability**, **data-quality**, **patient-safety** and **nursing-visibility** problem. ONC exists to make nursing knowledge **visible, reusable, structured and clinically meaningful**.
+
+---
+
+## 🚀 Key features
 
 ### 🩺 1. Advanced Clinical Assistant
-A specialized LLM fine-tuned on British Nursing Standards to draft high-quality care plans.
-- **Input**: "Write a care plan for Mrs. Singh, 78, with dementia."
-- **Output**: A structured ADPIE plan that is empathetic and clinically safe.
+A specialised LLM fine-tuned on British nursing standards to draft high-quality care plans.
+- **Input:** "Write a care plan for Mrs. Singh, 78, with dementia."
+- **Output:** a structured ADPIE plan that is empathetic and clinically safe.
 
 ### 🏥 2. Virtual Multi-Disciplinary Team (MDT)
-A streamlined AI synthesis tool that simulates a specialist discussion to provide a holistic care summary:
-- **🩹 Tissue Viability**: Assessment prompts for skin integrity & equity (Fitzpatrick tones).
-- **💚 Relational Care**: Prompts for dignity and respect.
-- **🛡️ Patient Safety**: Validates against safety protocols.
+An AI synthesis tool that simulates a specialist discussion for a holistic care summary — tissue viability (skin integrity & equity), relational care (dignity & respect) and patient safety (protocol validation).
 
 ### 🧠 3. Clinical Semantic Audit
-Performs a deep audit of documentation against the **ONC Relational Care Logical Model** and suggests formal **NANDA-I** mappings.
+A deep audit of documentation against the **ONC Relational Care Logical Model**, suggesting formal **NANDA-I** mappings.
 
 ---
 
-## 🏗️ Open Nursing Core Architecture
+## 🏗️ Architecture
 
-### 1. Standards Layer
-- **FHIR R4**
-- **PRSB documentation standards**
-- **NANDA nursing diagnoses**
-- **NHS clinical frameworks**
-
-### 2. Intelligence Layer
-- **Care plan generation**
-- **Clinical documentation audit**
-- **Evidence retrieval**
-- **MDT reasoning agents**
-
-### 3. Application Layer
-- **Nursing education tools**
-- **Clinical audit tools**
-- **Simulation environments**
-- **Specialist apps**
-
-### 4. Deployment Layer
-- **Docker**
-- **Hugging Face**
-- **Cloud platforms**
+| Layer | Components |
+|-------|-----------|
+| **Standards** | FHIR R4 · PRSB documentation standards · NANDA-I diagnoses · NHS clinical frameworks |
+| **Intelligence** | Care-plan generation · documentation audit · evidence retrieval · MDT reasoning agents |
+| **Application** | Nursing education · clinical audit · simulation · specialist apps |
+| **Deployment** | Docker · Hugging Face · cloud platforms |
 
 ---
 
-## 🛠️ Quick Start
+## 🛠️ Quick start
 
-### Try the Live Demo
-👉 [**Launch the App on Hugging Face**](https://huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing)
+### View the standard
+The full Implementation Guide — every profile, extension and terminology — is published at **[opennursingcoreig.com](https://opennursingcoreig.com)**.
 
-### Run Locally
+### Try the AI demo
+👉 **[Launch the app on Hugging Face](https://huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing)**
+
+### Build the IG locally
+Requires [Node.js](https://nodejs.org/) and [SUSHI](https://fshschool.org/docs/sushi/) (`npm install -g fsh-sushi`).
 ```bash
 git clone https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig.git
-cd open-nursing-core-ig/hf_space
+cd open-nursing-core-ig
+sushi .          # compile the FSH profiles to FHIR resources
+```
+
+### Run the clinical app
+```bash
+cd open-nursing-core-ig
 pip install -r requirements.txt
-python app.py
+streamlit run app_phase2.py
 ```
 
 ---
 
-## 👥 Project Leadership
+## 📂 Repository map
+
+| Path | Contents |
+|------|----------|
+| `input/fsh/` | FHIR Shorthand (FSH) profile, extension and terminology sources |
+| `input/pagecontent/` | Narrative IG pages (ADPIE, safety, equity, security, terminology…) |
+| `core/`, `db/`, `ml/` | The clinical application (auth, database, ML analytics) |
+| `app_phase2.py` | Streamlit application entry point |
+| `hf_space/` | Hugging Face Space (model demo) |
+| `.github/workflows/` | CI: IG publish, PR validation, CodeQL, traffic tracking |
+
+---
+
+## 👥 Project leadership
 
 | Name | Role |
 |------|------|
 | **Kumbi Kariwo** | Health Inequalities & AI Equity Lead · Co-lead (Monk Skin Tone & Equity profiles) |
 | **Lincoln** | Nurse Citizen Developer · FHIR IG Lead · Practice Educator, NMC Registered |
 
-ONC-IG is a nurse-led initiative. Clinical leadership by nurses, for nurses —
-built on open standards and hosted by the [United Nations (UNICC)](https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig).
+ONC-IG is a nurse-led initiative — clinical leadership by nurses, for nurses — built on open standards and hosted by the [United Nations (UNICC)](https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig).
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing & security
 
-We welcome contributions from nurses, developers, clinical informaticians, and researchers.
-See [ROADMAP.md](ROADMAP.md) for current priorities and [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
+We welcome contributions from nurses, developers, clinical informaticians and researchers. Start with [CONTRIBUTING.md](CONTRIBUTING.md) and the current priorities in [ROADMAP.md](ROADMAP.md).
 
-**Quick links:**
+**Quick links**
 - 🩺 [Report a clinical error](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/new?template=clinical-review.yml)
 - 🧬 [Propose a new FHIR profile](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/new?template=fhir-profile-suggestion.yml)
 - 🏛️ [openEHR archetype alignment](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/new?template=archetype-openehr.yml)
 - 💬 [Join the discussion](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/discussions)
+
+**How pull requests are protected.** Every PR is automatically validated (SUSHI build + Python checks), scanned for vulnerabilities with **CodeQL**, and requires review from a [code owner](.github/CODEOWNERS) before it can merge to `main`. Dependencies are monitored by **Dependabot**, and secrets are blocked by **push protection**. See [SECURITY.md](SECURITY.md) to report a vulnerability.
+
+---
+
+## 📈 Repository traffic
+
+Clone and view counts are snapshotted weekly (GitHub only keeps 14 days) and stored in [`traffic/`](traffic/) with the badges shown at the top of this page. See [traffic/README.md](traffic/README.md) for the full history and CSVs.
+
+---
 
 ## 📑 Citation
 
@@ -126,7 +183,16 @@ If you use ONC-IG in research or clinical systems, please cite:
 }
 ```
 
-Alternatively, use the **"Cite this repository"** button in the GitHub sidebar.
+Or use the **"Cite this repository"** button in the GitHub sidebar ([CITATION.cff](CITATION.cff)).
 
 ---
-**Powered by [NurseCitizenDeveloper](https://huggingface.co/NurseCitizenDeveloper)** | *Together, we code care.*
+
+## ⚖️ License
+
+Released under the [MIT License](LICENSE).
+
+<div align="center">
+
+**Powered by [NurseCitizenDeveloper](https://huggingface.co/NurseCitizenDeveloper)** · *Together, we code care.*
+
+</div>

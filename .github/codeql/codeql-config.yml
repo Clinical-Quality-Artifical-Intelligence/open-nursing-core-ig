@@ -1,7 +1,7 @@
 # CodeQL Configuration
 # Excludes generated files and third-party dependencies from scanning
 
-name: \"CodeQL Config\"
+name: "CodeQL Config"
 
 paths-ignore:
   # Generated FHIR IG files
