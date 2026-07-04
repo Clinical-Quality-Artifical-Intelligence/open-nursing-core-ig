@@ -16,13 +16,17 @@ releaseLabel: release
 pages:
   index.md:
     title: Home
-  relation-ai.md:
-    title: Relational Ai (AI Model)
+  adpie.md:
+    title: The ADPIE Nursing Process
   safety.md:
     title: Clinical Safety
+  equity.md:
+    title: Health Equity & Inclusion
   security.md:
     title: Security & Privacy
   terminology.md:
     title: Terminology
+  relation-ai.md:
+    title: Relational Ai (AI Model)
   history.md:
     title: Published Versions

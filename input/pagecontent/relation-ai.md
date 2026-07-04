@@ -55,7 +55,7 @@ The Open Nursing Core project aims to build upon rigorous clinical modeling (lik
 We have standardized the measurement of empathy. Documentation is no longer just "data"—it is scored on its **therapeutic depth (1-5)** helping nurses reflect on the quality of their engagement.
 
 ### 2. Mandatory Equity Invariants (The Fairness Gate)
-Unlike static models, our IG includes **executable safety rules**. A wound assessment cannot be validated unless it accounts for the patient's specific skin tone (Fitzpatrick/Monk scale), ensuring no patient is overlooked due to biased clinical thresholds.
+Unlike static models, our IG includes **executable safety rules**. A wound assessment cannot be validated unless it accounts for the patient's specific skin tone, recorded primarily on the [Monk Skin Tone Scale](equity.html) (with Fitzpatrick retained for backward compatibility), ensuring no patient is overlooked due to biased clinical thresholds.
 
 ### 3. Real-Time Semantic Audits
 The **Relational AI** performs a **Super-Gold Audit** on every note, identifying NANDA-I diagnoses and validating the note against our Relational Care Logical Model in real-time.
