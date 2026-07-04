@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -78,6 +78,16 @@
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <menu xmlns="http://hl7.org/fhir/tools/website">
   <menu name="Home" url="index.html"/>
+  <menu name="Nursing Process">
+    <menu name="ADPIE Overview" url="adpie.html"/>
+    <menu name="Clinical Safety" url="safety.html"/>
+    <menu name="Health Equity" url="equity.html"/>
+  </menu>
+  <menu name="Standards">
+    <menu name="Terminology" url="terminology.html"/>
+    <menu name="Security &amp; Privacy" url="security.html"/>
+    <menu name="Relational AI" url="relation-ai.html"/>
+  </menu>
   <menu name="Artifacts" url="artifacts.html"/>
   <menu name="Downloads" url="downloads.html"/>
   <menu name="History" url="history.html"/>
@@ -130,32 +140,76 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#security--privacy" id="markdown-toc-security--privacy">Security &amp; Privacy</a>    <ul>
+      <li><a href="#legal-and-regulatory-framework" id="markdown-toc-legal-and-regulatory-framework">Legal and regulatory framework</a></li>
+      <li><a href="#nhs-information-governance" id="markdown-toc-nhs-information-governance">NHS information governance</a></li>
+      <li><a href="#technical-controls" id="markdown-toc-technical-controls">Technical controls</a>        <ul>
+          <li><a href="#access-control" id="markdown-toc-access-control">Access control</a></li>
+          <li><a href="#data-in-transit-and-at-rest" id="markdown-toc-data-in-transit-and-at-rest">Data in transit and at rest</a></li>
+          <li><a href="#secondary-use-and-de-identification" id="markdown-toc-secondary-use-and-de-identification">Secondary use and de-identification</a></li>
+        </ul>
+      </li>
+      <li><a href="#patient-dignity-and-visibility" id="markdown-toc-patient-dignity-and-visibility">Patient dignity and visibility</a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
-<h1 id="security-and-privacy">Security and Privacy</h1>
+<h1 id="security--privacy">Security &amp; Privacy</h1>
 
-<p>Compliance with data protection regulations is mandatory for all implementations of the Open Nursing Core IG.</p>
+<p>Nursing records contain some of the most sensitive personal data an organisation holds. Every implementation of the Open Nursing Core IG must protect that data throughout its lifecycle. This page sets out the governance framework and the technical controls expected of conformant systems, with particular reference to the United Kingdom and NHS context.</p>
 
-<h2 id="data-protection">Data Protection</h2>
-<p>Implementations <strong>MUST</strong> adhere to local data protection laws:</p>
+<h2 id="legal-and-regulatory-framework">Legal and regulatory framework</h2>
+
+<p>Implementations <strong>MUST</strong> comply with the data protection law applicable in their jurisdiction:</p>
+
 <ul>
-  <li><strong>UK</strong>: UK GDPR &amp; Data Protection Act 2018.</li>
-  <li><strong>EU</strong>: GDPR.</li>
-  <li><strong>USA</strong>: HIPAA.</li>
+  <li><strong>United Kingdom</strong> — the <strong>UK GDPR</strong> and the <strong>Data Protection Act 2018</strong>. Health data is "special category" personal data and requires an Article 9 lawful basis in addition to an Article 6 basis.</li>
+  <li><strong>European Union</strong> — the GDPR.</li>
+  <li><strong>United States</strong> — HIPAA, where applicable.</li>
 </ul>
 
-<h2 id="patient-safety--identification">Patient Safety &amp; Identification</h2>
+<h2 id="nhs-information-governance">NHS information governance</h2>
+
+<p>Organisations operating within the NHS in England <strong>MUST</strong> additionally satisfy national information-governance requirements:</p>
+
 <ul>
-  <li><strong>Anonymization</strong>: When exchanging data for secondary uses (research, analytics), patient identifiers <strong>MUST</strong> be removed or pseudonymized.</li>
-  <li><strong>Encryption</strong>: All data in transit <strong>MUST</strong> use TLS 1.2 or higher. Data at rest <strong>SHOULD</strong> be encrypted.</li>
+  <li><strong>Data Security and Protection Toolkit (DSPT)</strong> — the mandatory annual self-assessment against the National Data Guardian's ten data-security standards. Completion of the DSPT is a precondition for connecting to national systems.</li>
+  <li><strong>The Caldicott Principles</strong> — the eight principles governing the use of confidential patient information, including that access is on a strict need-to-know basis and that the duty to share information for care can be as important as the duty to protect confidentiality.</li>
+  <li><strong>National Data Opt-Out</strong> — patients' choices about the use of their confidential information for purposes beyond their direct care must be respected.</li>
 </ul>
 
-<h2 id="access-control">Access Control</h2>
+<p>Each organisation should have a nominated <strong>Caldicott Guardian</strong> and a <strong>Data Protection Officer</strong>.</p>
+
+<h2 id="technical-controls">Technical controls</h2>
+
+<h3 id="access-control">Access control</h3>
 <ul>
-  <li><strong>Role-Based Access (RBAC)</strong>: Only authorized clinical staff should access full patient records.</li>
-  <li><strong>Audit Trails</strong>: All access to patient data <strong>MUST</strong> be logged.</li>
+  <li><strong>Role-based access control (RBAC)</strong> — access to patient records <strong>MUST</strong> be limited to authorised staff with a legitimate care relationship.</li>
+  <li><strong>Audit trails</strong> — all access to, and modification of, patient data <strong>MUST</strong> be logged in a tamper-evident audit record, and those logs must be retained and reviewable.</li>
 </ul>
+
+<h3 id="data-in-transit-and-at-rest">Data in transit and at rest</h3>
+<ul>
+  <li><strong>Encryption in transit</strong> — all exchange of patient data <strong>MUST</strong> use TLS 1.2 or higher.</li>
+  <li><strong>Encryption at rest</strong> — stored patient data <strong>SHOULD</strong> be encrypted.</li>
+</ul>
+
+<h3 id="secondary-use-and-de-identification">Secondary use and de-identification</h3>
+<ul>
+  <li>When data is used for research, service evaluation or analytics, direct identifiers <strong>MUST</strong> be removed or pseudonymised, and the minimum necessary data used.</li>
+  <li>Re-identification risk must be assessed before any onward sharing.</li>
+</ul>
+
+<h2 id="patient-dignity-and-visibility">Patient dignity and visibility</h2>
+
+<p>Protecting data is not only a technical duty. The equity and relational features of this IG — reasonable adjustments, "What Matters to Me", ethnicity and skin-tone records — carry information that, handled carelessly, could expose a person to discrimination or distress. Access to these fields <strong>SHOULD</strong> be governed with the same rigour as any other sensitive record, and their purpose is always to <em>improve</em> the person's care, never to label them.</p>
+
+<hr />
+
+<p><em>This page describes governance expectations for implementers; it is not legal advice. Each organisation is responsible for its own Data Protection Impact Assessment and information-governance sign-off.</em></p>
 
 
 
@@ -176,7 +230,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2026 21:13+0000">2026-06-29</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jul 4, 2026 08:39+0000">2026-07-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

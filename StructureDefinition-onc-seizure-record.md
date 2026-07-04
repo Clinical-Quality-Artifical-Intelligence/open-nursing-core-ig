@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-seizure-record | *Version*:1.0.0 |
-| Draft as of 2026-06-29 | *Computable Name*:ONCSeizureRecord |
+| Draft as of 2026-07-04 | *Computable Name*:ONCSeizureRecord |
 
  
 Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
   "name" : "ONCSeizureRecord",
   "title" : "Seizure Record",
   "status" : "draft",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
   "fhirVersion" : "4.0.1",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://opennursingcore.org/PlanDefinition/news2-escalation | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:NEWS2_Escalation_Protocol |
+| Active as of 2026-07-04 | *Computable Name*:NEWS2_Escalation_Protocol |
 
 * **Actions: **: **Url: **
   * : [NEWS2 Escalation Protocol](PlanDefinition-news2-escalation-plan.md)
@@ -18,7 +18,7 @@
 * **Actions: **: **Title: **
   * : NEWS2 Escalation Protocol
 * **Actions: **: **Date: **
-  * : 2026-06-29 21:13:26+0000
+  * : 2026-07-04 08:39:09+0000
 * **Actions: **: **Publisher: **
   * : The Open Nursing Community
 * **Actions: **: **Libraries: **
@@ -47,7 +47,7 @@
     }]
   },
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "library" : ["http://opennursingcore.org/Library/ONC-NEWS2-CQL"],
   "action" : [{

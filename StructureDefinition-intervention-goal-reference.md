@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:InterventionGoalReference |
+| Active as of 2026-07-04 | *Computable Name*:InterventionGoalReference |
 
 Extension to link nursing interventions to the patient goals they are intended to achieve.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-intervention-goal-re
   "name" : "InterventionGoalReference",
   "title" : "Intervention Goal Reference",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve.",
   "fhirVersion" : "4.0.1",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-pbs-function-vs | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:PBSFunctionVS |
+| Active as of 2026-07-04 | *Computable Name*:PBSFunctionVS |
 
  
 Common functions of behaviour (SEAT) 
@@ -50,7 +50,7 @@ Common functions of behaviour (SEAT)
   "name" : "PBSFunctionVS",
   "title" : "PBS Behaviour Function ValueSet",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Common functions of behaviour (SEAT)",
   "compose" : {

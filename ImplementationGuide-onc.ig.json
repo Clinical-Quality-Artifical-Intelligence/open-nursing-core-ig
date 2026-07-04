@@ -10,7 +10,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready.",
   "packageId" : "onc.ig",
@@ -2316,10 +2316,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "relation-ai.html"
+          "valueUrl" : "adpie.html"
         }],
-        "nameUrl" : "relation-ai.html",
-        "title" : "Relational Ai (AI Model)",
+        "nameUrl" : "adpie.html",
+        "title" : "The ADPIE Nursing Process",
         "generation" : "markdown"
       },
       {
@@ -2329,6 +2329,15 @@
         }],
         "nameUrl" : "safety.html",
         "title" : "Clinical Safety",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "equity.html"
+        }],
+        "nameUrl" : "equity.html",
+        "title" : "Health Equity & Inclusion",
         "generation" : "markdown"
       },
       {
@@ -2347,6 +2356,15 @@
         }],
         "nameUrl" : "terminology.html",
         "title" : "Terminology",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "relation-ai.html"
+        }],
+        "nameUrl" : "relation-ai.html",
+        "title" : "Relational Ai (AI Model)",
         "generation" : "markdown"
       },
       {

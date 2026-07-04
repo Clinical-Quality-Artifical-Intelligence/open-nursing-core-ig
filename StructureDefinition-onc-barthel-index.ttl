@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCBarthelIndex"] ;
   fhir:StructureDefinition.title [ fhir:value "Barthel Index"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-06-29T21:13:26+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-04T08:39:09+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

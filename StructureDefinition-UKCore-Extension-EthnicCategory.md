@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:UKCoreEthnicCategory |
+| Active as of 2026-07-04 | *Computable Name*:UKCoreEthnicCategory |
 
 An extension to record the ethnic category of a patient, as per UK Core standards.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-UKCore-Extension-Eth
   "name" : "UKCoreEthnicCategory",
   "title" : "UK Core Ethnic Category",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "An extension to record the ethnic category of a patient, as per UK Core standards.",
   "fhirVersion" : "4.0.1",

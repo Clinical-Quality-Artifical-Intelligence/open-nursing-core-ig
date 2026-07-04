@@ -7,37 +7,41 @@
 
 # Directory of Published Versions
 
-This page provides a list of all published versions of the Open Nursing Core Implementation Guide.
+This page lists all published versions of the Open Nursing Core Implementation Guide.
 
-## Current Version
+## Current version
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| **0.1.0** | Draft | 2026-01-03 | Initial Beta Release - The "Super-Gold" Standard |
+| **1.0.0** | Active (Release) | 2025 | First production release — foundational nursing-process, safety and equity profiles |
 
-## Build Information
+The version, status and release label above are taken from the IG's authoritative configuration (`sushi-config.yaml`): version `1.0.0`, status `active`, release label `release`.
+
+## Build information
 
 * **Package ID:** `onc.ig`
 * **Canonical URL:** [https://opennursingcoreig.com](https://opennursingcoreig.com)
 * **FHIR Version:** R4 (4.0.1)
+* **Licence:** MIT
 
-## Continuous Integration Build
+## Continuous integration build
 
-The latest development build is always available at the main site URL. This represents the most current work-in-progress.
+The latest development build is always available at the canonical site URL and represents the most current work in progress. Formal releases are tagged in the [GitHub repository](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig).
 
-## Version History
+## Version history
 
-### 0.1.0 (Initial Beta Release)
+### 1.0.0 — First production release
 
-**Released: January 2026**
+This release provides the foundational Open Nursing Core profile set:
 
-This is the first public release of the Open Nursing Core IG, featuring:
-
-* **56 Profiles** covering the complete nursing process (ADPIE)
-* **Equity Safety Gates** - Mandatory skin tone documentation for wound assessments
-* **Empathy Index** - Standardized measurement of therapeutic engagement (1-5 scale)
-* **NEWS2 Clinical Logic** - Computable CQL for early warning scores
-* **Relational AI Integration** - FONS-trained AI model for person-centred documentation
+* **60 profiles** covering the full nursing process (ADPIE), from assessment instruments through diagnosis, planning, intervention and evaluation
+* **27 value sets**, **3 code systems** (Monk Skin Tone Scale, ONC Observation Codes, Problem Type) and **4 extensions**
+* **1 logical model** — the Relational Care model
+* **49 worked examples** demonstrating conformant instances
+* **Equity fairness gate** — skin-tone documentation on the Monk Skin Tone Scale for wound and pressure-area assessment
+* **Reasonable-adjustment logging** aligned with the Equality Act 2010
+* **NEWS2 clinical logic** — computable CQL (including SpO2 Scale 2) with an escalation PlanDefinition
+* **Relational AI integration** — a FONS-trained language model for person-centred documentation
 
 -------
 

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OpenNursingCoreIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-06-29T21:13:26+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-04T08:39:09+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:ImplementationGuide.description [ fhir:value "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready."] ;
   fhir:ImplementationGuide.packageId [ fhir:value "onc.ig"] ;
@@ -2824,10 +2824,10 @@
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "relation-ai.html" ]
+           fhir:Extension.valueUrl [ fhir:value "adpie.html" ]
          ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "relation-ai.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Relational Ai (AI Model)" ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "adpie.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "The ADPIE Nursing Process" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 2 ;
@@ -2844,13 +2844,23 @@
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "equity.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "equity.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Health Equity & Inclusion" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
            fhir:Extension.valueUrl [ fhir:value "security.html" ]
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Security & Privacy" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 4 ;
+         fhir:index 5 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -2860,7 +2870,17 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 5 ;
+         fhir:index 6 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "relation-ai.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "relation-ai.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Relational Ai (AI Model)" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 7 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;

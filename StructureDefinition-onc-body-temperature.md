@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-body-temperature | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:ONCBodyTemperature |
+| Active as of 2026-07-04 | *Computable Name*:ONCBodyTemperature |
 
  
 Body temperature observation for NEWS2 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-body-temperature
   "name" : "ONCBodyTemperature",
   "title" : "Body Temperature",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Body temperature observation for NEWS2",
   "fhirVersion" : "4.0.1",

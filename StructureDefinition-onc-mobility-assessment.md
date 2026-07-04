@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:ONCMobilityAssessment |
+| Active as of 2026-07-04 | *Computable Name*:ONCMobilityAssessment |
 
  
 Assessment of capability to move and limitations. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessm
   "name" : "ONCMobilityAssessment",
   "title" : "Mobility Assessment",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of capability to move and limitations.",
   "fhirVersion" : "4.0.1",

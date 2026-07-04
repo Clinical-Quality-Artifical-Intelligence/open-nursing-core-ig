@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-pain-score-vs | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:PainScoreVS |
+| Active as of 2026-07-04 | *Computable Name*:PainScoreVS |
 
  
 Standard 0-10 or Abbey Pain Scale score 
@@ -51,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Pain Score Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Standard 0-10 or Abbey Pain Scale score",
   "compose" : {

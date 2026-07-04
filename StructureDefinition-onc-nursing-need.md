@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-need | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:ONCNursingNeed |
+| Active as of 2026-07-04 | *Computable Name*:ONCNursingNeed |
 
  
 A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-need.csv
   "name" : "ONCNursingNeed",
   "title" : "ONC Nursing Need",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model.",
   "fhirVersion" : "4.0.1",

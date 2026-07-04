@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-catheter-care | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:ONCCatheterCare |
+| Active as of 2026-07-04 | *Computable Name*:ONCCatheterCare |
 
  
 Documentation of catheter site care and status. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-catheter-care.cs
   "name" : "ONCCatheterCare",
   "title" : "Catheter Care",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Documentation of catheter site care and status.",
   "fhirVersion" : "4.0.1",

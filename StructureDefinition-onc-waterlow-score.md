@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:ONCWaterlowScore |
+| Active as of 2026-07-04 | *Computable Name*:ONCWaterlowScore |
 
  
 Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
   "name" : "ONCWaterlowScore",
   "title" : "Waterlow Score",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.",
   "fhirVersion" : "4.0.1",

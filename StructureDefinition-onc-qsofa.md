@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-qsofa | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:ONCqSOFA |
+| Active as of 2026-07-04 | *Computable Name*:ONCqSOFA |
 
  
 Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-qsofa.csv), [Exc
   "name" : "ONCqSOFA",
   "title" : "qSOFA (Quick SOFA)",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3.",
   "fhirVersion" : "4.0.1",

@@ -69,7 +69,7 @@ We have standardized the measurement of empathy. Documentation is no longer just
 
 ### 2. Mandatory Equity Invariants (The Fairness Gate)
 
-Unlike static models, our IG includes **executable safety rules**. A wound assessment cannot be validated unless it accounts for the patient's specific skin tone (Fitzpatrick/Monk scale), ensuring no patient is overlooked due to biased clinical thresholds.
+Unlike static models, our IG includes **executable safety rules**. A wound assessment cannot be validated unless it accounts for the patient's specific skin tone, recorded primarily on the [Monk Skin Tone Scale](equity.md) (with Fitzpatrick retained for backward compatibility), ensuring no patient is overlooked due to biased clinical thresholds.
 
 ### 3. Real-Time Semantic Audits
 

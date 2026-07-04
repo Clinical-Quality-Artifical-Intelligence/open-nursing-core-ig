@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-mca-vs | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:MentalCapacityVS |
+| Active as of 2026-07-04 | *Computable Name*:MentalCapacityVS |
 
  
 Codes indicating presence or absence of capacity 
@@ -50,7 +50,7 @@ Codes indicating presence or absence of capacity
   "name" : "MentalCapacityVS",
   "title" : "Mental Capacity Finding Value Set",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Codes indicating presence or absence of capacity",
   "compose" : {

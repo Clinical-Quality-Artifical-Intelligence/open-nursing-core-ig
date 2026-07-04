@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:ONCNursingGoal |
+| Active as of 2026-07-04 | *Computable Name*:ONCNursingGoal |
 
  
 Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-goal.csv
   "name" : "ONCNursingGoal",
   "title" : "ONC Nursing Goal",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes.",
   "fhirVersion" : "4.0.1",

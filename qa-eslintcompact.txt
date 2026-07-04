@@ -57,7 +57,7 @@ Generic: line 0, col 0, Error - The link 'Practitioner/example-nurse' for "Pract
 Generic: line 0, col 0, Error - The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - The link 'https://opennursingcoreig.com' for "https://opennursingcoreig.com" is a canonical link and is therefore unsafe with regard to versions (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'StructureDefinition-onc-patient-goal.html' for "OncPatientGoal" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'PlanDefinition-news2-escalation.html' for "NEWS2 Escalation PlanDefinition" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-clinical-impression | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:ONCNursingClinicalImpression |
+| Active as of 2026-07-04 | *Computable Name*:ONCNursingClinicalImpression |
 
  
 Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-clinical
   "name" : "ONCNursingClinicalImpression",
   "title" : "ONC Nursing Clinical Impression",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations.",
   "fhirVersion" : "4.0.1",

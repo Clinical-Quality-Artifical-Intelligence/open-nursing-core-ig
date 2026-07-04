@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-dressing-assessment | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:ONCDressingAssessment |
+| Active as of 2026-07-04 | *Computable Name*:ONCDressingAssessment |
 
  
 Assessment of assistance required for dressing and undressing, as per PRSB Personal Hygiene section. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-dressing-assessm
   "name" : "ONCDressingAssessment",
   "title" : "Dressing and Undressing Assessment",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of assistance required for dressing and undressing, as per PRSB Personal Hygiene section.",
   "fhirVersion" : "4.0.1",

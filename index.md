@@ -8,77 +8,98 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ImplementationGuide/onc.ig | *Version*:1.0.0 |
-| Active as of 2026-06-29 | *Computable Name*:OpenNursingCoreIG |
+| Active as of 2026-07-04 | *Computable Name*:OpenNursingCoreIG |
 
 # Open Nursing Core FHIR Implementation Guide
 
-Welcome to the **Open Nursing Core FHIR Implementation Guide (ONC-IG)**.
+The **Open Nursing Core FHIR Implementation Guide (ONC-IG)** provides a foundational set of standardised, nurse-led data models for the NHS and comparable health systems. It is built on **HL7 FHIR R4 (4.0.1)** and organised around the complete nursing process — **Assessment, Diagnosis, Planning, Implementation and Evaluation (ADPIE)** — rather than a purely pathology-driven medical model.
 
-This IG provides **Standardized Nursing Data Models** for the NHS and beyond, focusing on the complete nursing process (ADPIE) and specialized care needs.
+The IG is grounded in United Kingdom nursing and information standards, in particular the **Professional Record Standards Body (PRSB)** Nursing Care Needs standard, the **NANDA International (NANDA-I)** diagnostic taxonomy, and the person-centred practice principles of the **Foundation of Nursing Studies (FONS)**.
 
-## 🌟 Core Philosophy
+## Purpose and scope
 
-* **Holistic**: Covers physical, mental, and social needs.
-* **Relational**: Captures "What Matters to Me" and patient stories.
-* **Equitable**: Includes Safe Skin Tone (Monk Scale) and Reasonable Adjustments.
+This guide defines the structured data required to record nursing care in an interoperable, equitable and safety-aware manner. It is intended for use by NHS digital teams, electronic health record (EHR) suppliers, clinical safety officers, and nurse informaticians who need a shared vocabulary for the fundamentals of nursing.
+
+The current release defines **60 profiles**, **27 value sets**, **3 code systems**, **4 extensions**, **1 logical model** (the Relational Care model) and **49 worked examples**. See the [Published Versions](history.md) page for the full release record.
+
+## Core principles
+
+* **Process-led** — every profile maps to a phase of the [ADPIE nursing process](adpie.md), making the **reasoning** of care computable, not only its outcomes.
+* **Person-centred** — captures "[What Matters to Me](StructureDefinition-onc-what-matters.md)" and the [Patient Story](StructureDefinition-onc-patient-story.md) alongside clinical measurement, in line with FONS values-based practice.
+* **Equitable by design** — leads with the [Monk Skin Tone Scale](equity.md) for skin assessment and records [Reasonable Adjustments](StructureDefinition-onc-reasonable-adjustment.md) under the Equality Act 2010. See the [Health Equity & Inclusion](equity.md) page.
+* **Safety-aware** — validated instruments such as [NEWS2](StructureDefinition-onc-news2-score.md) and pressure-ulcer risk scores act as clinical [safety gates](safety.md).
+
+## Profile library
+
+The profile library is organised below by function. For the full navigable list of every artifact, see the [Artifacts](artifacts.md) index.
+
+### 1. Nursing process core
+
+Base profiles that carry the ADPIE spine.
+
+* [ONC Nursing Assessment](StructureDefinition-onc-nursing-assessment.md) — the base observation for all assessment instruments
+* [ONC Nursing Problem](StructureDefinition-onc-nursing-problem.md) — nursing diagnosis (Condition)
+* [ONC Nursing Need](StructureDefinition-onc-nursing-need.md) and [ONC Nursing Strength](StructureDefinition-onc-nursing-strength.md) — PRSB needs-and-strengths framing
+* [ONC Nursing Goal](StructureDefinition-onc-nursing-goal.md) — planned outcomes
+* [ONC Nursing Intervention](StructureDefinition-onc-nursing-intervention.md) — delivered care
+* [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) and [ONC Nursing Clinical Impression](StructureDefinition-onc-nursing-clinical-impression.md) — evaluation
+
+### 2. Clinical safety and deterioration
+
+Validated risk instruments used as safety gates. See the [Clinical Safety](safety.md) page.
+
+* [NEWS2](StructureDefinition-onc-news2-score.md) — National Early Warning Score 2 (deterioration)
+* [Braden Scale](StructureDefinition-onc-braden-scale-assessment.md) and [Waterlow Score](StructureDefinition-onc-waterlow-score.md) — pressure-ulcer risk
+* [MUST](StructureDefinition-onc-must-score.md) — malnutrition screening
+* [4AT Delirium Screen](StructureDefinition-onc-4at-delirium.md), [Morse Fall Scale](StructureDefinition-onc-morse-fall-scale.md), [qSOFA](StructureDefinition-onc-qsofa.md)
+
+### 3. Relational and inclusive care
+
+Capturing the person behind the patient. See [Health Equity & Inclusion](equity.md).
+
+* [What Matters To Me](StructureDefinition-onc-what-matters.md) and [Patient Story](StructureDefinition-onc-patient-story.md)
+* [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md) — 10-point equitable skin assessment (A–J)
+* [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) — Fitzpatrick classification (secondary)
+* [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.md) — Equality Act 2010
+* [Mental Capacity Assessment](StructureDefinition-onc-mental-capacity.md) — Mental Capacity Act 2005
+
+### 4. Fundamental care
+
+The essentials of daily nursing.
+
+* [Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.md) — elimination
+* [Fluid Balance](StructureDefinition-onc-fluid-balance.md) — hydration
+* [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md) — non-verbal pain
+* [Oral Health](StructureDefinition-onc-oral-health.md) and [Sleep Pattern](StructureDefinition-onc-sleep-pattern.md)
+
+### 5. Specialist and mental health
+
+Instruments for learning disability, mental health and older-person care.
+
+* [ABC Chart](StructureDefinition-onc-abc-chart.md) — Positive Behaviour Support
+* [Seizure Record](StructureDefinition-onc-seizure-record.md) — epilepsy
+* [Clinical Frailty Scale](StructureDefinition-onc-clinical-frailty-scale.md) and [Glasgow Coma Scale](StructureDefinition-onc-glasgow-coma-scale.md)
+* [MMSE](StructureDefinition-onc-mmse.md), [Urinalysis](StructureDefinition-onc-urinalysis.md)
+
+## Guidance pages
+
+* [The ADPIE Nursing Process](adpie.md) — how the IG is structured around clinical reasoning
+* [Clinical Safety](safety.md) — safety gates, escalation and the DCB0129/0160 context
+* [Health Equity & Inclusion](equity.md) — Monk Skin Tone Scale and reasonable adjustments
+* [Security & Privacy](security.md) — UK GDPR, DSPT and Caldicott
+* [Terminology](terminology.md) — SNOMED CT, LOINC and the ONC code systems
+* [Relational AI](relation-ai.md) — the FONS-aligned language model
+* [Published Versions](history.md) — release history
+
+## Getting started
+
+1. **Browse the artifacts**— every profile, extension, value set and example is listed on the[Artifacts](artifacts.md)page.
+1. **Read the process guide**— start with[ADPIE](adpie.md)to understand how the profiles fit together.
+1. **Contribute**— the IG is open source under the MIT licence. Issues and pull requests are welcome on[GitHub](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig).
 
 -------
 
-## 📚 Profile Library
-
-### 1. Foundation & Safety 🛡️
-
-Base profiles for standard nursing operations.
-
-* [OncNursingAssessment](StructureDefinition-onc-nursing-assessment.md)
-* [OncNursingProblem](StructureDefinition-onc-nursing-problem.md) (Diagnosis)
-* [OncPatientGoal](StructureDefinition-onc-patient-goal.md)
-* [OncNursingIntervention](StructureDefinition-onc-nursing-intervention.md)
-* [Braden Scale](StructureDefinition-onc-braden-scale-assessment.md) (Pressure Ulcer Risk)
-* [Waterlow Score](StructureDefinition-onc-waterlow-score.md)
-* [NEWS2](StructureDefinition-onc-news2-score.md) (Deterioration)
-
-### 2. Relational & Inclusive Care ❤️
-
-Capturing the person behind the patient.
-
-* [What Matters To Me](StructureDefinition-onc-what-matters.md)
-* [Patient Story](StructureDefinition-onc-patient-story.md)
-* [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.md) (Equality Act)
-* [Mental Capacity Assessment](StructureDefinition-onc-mental-capacity.md)
-* [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) (Monk/Fitzpatrick)
-
-### 3. Fundamental Care 💧
-
-The essentials of daily nursing care.
-
-* [Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.md) (Elimination)
-* [Fluid Balance](StructureDefinition-onc-fluid-balance.md) (Hydration)
-* [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md) (Non-verbal pain)
-* [Oral Health](StructureDefinition-onc-oral-health.md)
-* [Sleep Pattern](StructureDefinition-onc-sleep-pattern.md)
-
-### 4. Specialized & Mental Health 🧠
-
-Tools for Learning Disabilities, Mental Health, and Geriatrics.
-
-* [ABC Chart](StructureDefinition-onc-abc-chart.md) (Positive Behaviour Support)
-* [Seizure Record](StructureDefinition-onc-seizure-record.md) (Epilepsy)
-* [Clinical Frailty Scale](StructureDefinition-onc-clinical-frailty-scale.md)
-* [4AT Delirium Screen](StructureDefinition-onc-4at-delirium.md)
-* [Urinalysis](StructureDefinition-onc-urinalysis.md)
-
--------
-
-## 🚀 Getting Started
-
-1. **Browse Artifacts**: See the[Artifacts Page](artifacts.md)for all JSON definitions.
-1. **Download Package**:`npm install @clinyqai/open-nursing-core-ig`
-1. **Contribute**: Visit[GitHub](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig).
-
--------
-
-**Built with ❤️ by the Open Nursing Community**
+**The Open Nursing Core is maintained by the Open Nursing Community. This guide is a technical specification and does not replace professional clinical judgement; all clinical documentation must be verified by a registered nurse.**
 
 
 
@@ -93,7 +114,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-06-29T21:13:26+00:00",
+  "date" : "2026-07-04T08:39:09+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready.",
   "packageId" : "onc.ig",
@@ -2399,10 +2420,10 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "relation-ai.html"
+          "valueUrl" : "adpie.html"
         }],
-        "nameUrl" : "relation-ai.html",
-        "title" : "Relational Ai (AI Model)",
+        "nameUrl" : "adpie.html",
+        "title" : "The ADPIE Nursing Process",
         "generation" : "markdown"
       },
       {
@@ -2412,6 +2433,15 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         }],
         "nameUrl" : "safety.html",
         "title" : "Clinical Safety",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "equity.html"
+        }],
+        "nameUrl" : "equity.html",
+        "title" : "Health Equity & Inclusion",
         "generation" : "markdown"
       },
       {
@@ -2430,6 +2460,15 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         }],
         "nameUrl" : "terminology.html",
         "title" : "Terminology",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "relation-ai.html"
+        }],
+        "nameUrl" : "relation-ai.html",
+        "title" : "Relational Ai (AI Model)",
         "generation" : "markdown"
       },
       {
