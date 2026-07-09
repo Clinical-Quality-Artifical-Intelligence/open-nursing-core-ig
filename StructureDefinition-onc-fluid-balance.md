@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-fluid-balance.cs
   "name" : "ONCFluidBalance",
   "title" : "Fluid Balance",
   "status" : "draft",
-  "date" : "2026-07-09T22:05:12+00:00",
+  "date" : "2026-07-09T22:28:17+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring.",
   "fhirVersion" : "4.0.1",

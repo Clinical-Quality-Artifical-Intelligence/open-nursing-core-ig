@@ -50,7 +50,7 @@ Codes for Rockwood Clinical Frailty Scale (1-9)
   "name" : "ClinicalFrailtyScaleVS",
   "title" : "Clinical Frailty Scale Value Set",
   "status" : "active",
-  "date" : "2026-07-09T22:05:12+00:00",
+  "date" : "2026-07-09T22:28:17+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Codes for Rockwood Clinical Frailty Scale (1-9)",
   "compose" : {
