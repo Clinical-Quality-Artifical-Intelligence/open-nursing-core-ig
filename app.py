@@ -5,7 +5,11 @@ from datetime import datetime
 import streamlit as st
 
 from langchain_openai import AzureOpenAI
-from langchain.chains import RetrievalQA
+try:
+    from langchain.chains import RetrievalQA  # langchain 0.x
+except ImportError:
+    # langchain 1.x moved the legacy chains to langchain-classic
+    from langchain_classic.chains import RetrievalQA
 
 # Core Imports
 from core.settings import settings

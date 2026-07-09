@@ -23,7 +23,11 @@ try:
     from langchain_openai import AzureOpenAI
     from langchain_openai import AzureOpenAIEmbeddings
     from langchain_chroma import Chroma
-    from langchain.chains import RetrievalQA
+    try:
+        from langchain.chains import RetrievalQA  # langchain 0.x
+    except ImportError:
+        # langchain 1.x moved the legacy chains to langchain-classic
+        from langchain_classic.chains import RetrievalQA
     AI_AVAILABLE = True
 except ImportError:
     AI_AVAILABLE = False
