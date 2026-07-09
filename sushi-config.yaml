@@ -26,6 +26,8 @@ pages:
     title: Security & Privacy
   terminology.md:
     title: Terminology
+  questionnaires.md:
+    title: Structured Data Capture
   relation-ai.md:
     title: Relational Ai (AI Model)
   history.md:

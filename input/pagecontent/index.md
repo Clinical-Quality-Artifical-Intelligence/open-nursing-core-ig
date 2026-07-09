@@ -78,6 +78,7 @@ Instruments for learning disability, mental health and older-person care.
 - [Health Equity & Inclusion](equity.html) — Monk Skin Tone Scale and reasonable adjustments
 - [Security & Privacy](security.html) — UK GDPR, DSPT and Caldicott
 - [Terminology](terminology.html) — SNOMED CT, LOINC and the ONC code systems
+- [Structured Data Capture](questionnaires.html) — SDC Questionnaires for offline-first capture (Open Health Stack compatible)
 - [Relational AI](relation-ai.html) — the FONS-aligned language model
 - [Published Versions](history.html) — release history
 

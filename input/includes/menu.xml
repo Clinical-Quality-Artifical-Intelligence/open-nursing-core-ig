@@ -7,6 +7,7 @@
   </menu>
   <menu name="Standards">
     <menu name="Terminology" url="terminology.html"/>
+    <menu name="Structured Data Capture" url="questionnaires.html"/>
     <menu name="Security &amp; Privacy" url="security.html"/>
     <menu name="Relational AI" url="relation-ai.html"/>
   </menu>
