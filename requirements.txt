@@ -24,7 +24,7 @@ bcrypt>=4.1,<5.0
 # --- Retrieval-Augmented Generation / LLM (optional features) ---------------
 # Imported lazily; the app degrades gracefully if these are absent, but they
 # are required for the Clinical Assistant and semantic search to function.
-langchain>=0.2,<0.4
+langchain>=1.3.12,<1.4
 langchain-openai>=0.1,<0.3
 langchain-community>=0.2,<0.4
 langchain-chroma>=0.1,<0.3
