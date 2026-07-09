@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-relational-observation | *Version*:1.0.0 |
-| Draft as of 2026-07-04 | *Computable Name*:ONCRelationalObservation |
+| Draft as of 2026-07-09 | *Computable Name*:ONCRelationalObservation |
 
  
 Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-obser
   "name" : "ONCRelationalObservation",
   "title" : "Relational Engagement Score",
   "status" : "draft",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care.",
   "fhirVersion" : "4.0.1",

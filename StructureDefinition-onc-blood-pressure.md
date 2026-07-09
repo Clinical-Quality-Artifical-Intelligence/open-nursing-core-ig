@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:ONCBloodPressure |
+| Active as of 2026-07-09 | *Computable Name*:ONCBloodPressure |
 
  
 Blood pressure observation for NEWS2 (systolic BP used for scoring) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-blood-pressure.c
   "name" : "ONCBloodPressure",
   "title" : "Blood Pressure",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Blood pressure observation for NEWS2 (systolic BP used for scoring)",
   "fhirVersion" : "4.0.1",

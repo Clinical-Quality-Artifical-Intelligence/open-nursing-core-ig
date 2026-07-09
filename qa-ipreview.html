@@ -152,7 +152,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2025+ The Open Nursing Community.  Package onc.ig#1.0.0 based on FHIR 4.0.1. Generated 2026-07-04
+          IG &copy; 2025+ The Open Nursing Community.  Package onc.ig#1.0.0 based on FHIR 4.0.1. Generated 2026-07-09
           
           
                       Links: Table of Contents |
@@ -991,6 +991,19 @@ For questions or feedback, please open an issue on the           <a href="https:
           <strong>⚠️ Evidence-standard note.</strong>
  These scores come from an internal, LLM-judge-based evaluation (GPT-4o, GPT-5, Gemini 3 Pro rating model outputs), not an independent clinical validation, usability study, or peer review. They should be read as promising early internal results, not as evidence with the same standing as the FHIR profile conformance testing described elsewhere in this IG. The "Empathy Index" and relational-AI claims below are similarly pre-validation and are explicitly out of scope for any standards-balloting submission of the FHIR profiles themselves — see           <a href="https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/blob/main/STANDARDS_ROADMAP.md">STANDARDS_ROADMAP.md</a>
 .
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="security.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/ohs-foundation/fhir-gateway">github.com</a>
+        </td>
+        <td>
+          <strong>Implementation option.</strong>
+ For FHIR-native deployments, the Open Health Stack Software Foundation's open-source           <a href="https://github.com/ohs-foundation/fhir-gateway">FHIR Gateway</a>
+ provides a proxy layer for enforcing access-control policies in front of a FHIR store — one route to meeting the RBAC requirement above without building policy enforcement from scratch. This reference is informative, not a conformance requirement.
         </td>
       </tr>
       <tr>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart | *Version*:1.0.0 |
-| Draft as of 2026-07-04 | *Computable Name*:ONCBristolStoolChart |
+| Draft as of 2026-07-09 | *Computable Name*:ONCBristolStoolChart |
 
  
 Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-bristol-stool-ch
   "name" : "ONCBristolStoolChart",
   "title" : "Bristol Stool Chart",
   "status" : "draft",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment.",
   "fhirVersion" : "4.0.1",

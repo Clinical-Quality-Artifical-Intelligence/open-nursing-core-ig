@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/news2-subscore-code-vs | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:NEWS2SubscoreCodeValueSet |
+| Active as of 2026-07-09 | *Computable Name*:NEWS2SubscoreCodeValueSet |
 
  
 SNOMED codes for NEWS2 sub-scores 
@@ -50,7 +50,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "NEWS2SubscoreCodeValueSet",
   "title" : "NEWS2 Sub-Score Codes",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "SNOMED codes for NEWS2 sub-scores",
   "compose" : {

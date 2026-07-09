@@ -34,6 +34,8 @@ Each organisation should have a nominated **Caldicott Guardian** and a **Data Pr
 * **Role-based access control (RBAC)** — access to patient records **MUST** be limited to authorised staff with a legitimate care relationship.
 * **Audit trails** — all access to, and modification of, patient data **MUST** be logged in a tamper-evident audit record, and those logs must be retained and reviewable.
 
+> **Implementation option.** For FHIR-native deployments, the Open Health Stack Software Foundation's open-source [FHIR Gateway](https://github.com/ohs-foundation/fhir-gateway) provides a proxy layer for enforcing access-control policies in front of a FHIR store — one route to meeting the RBAC requirement above without building policy enforcement from scratch. This reference is informative, not a conformance requirement.
+
 ### Data in transit and at rest
 
 * **Encryption in transit** — all exchange of patient data **MUST** use TLS 1.2 or higher.

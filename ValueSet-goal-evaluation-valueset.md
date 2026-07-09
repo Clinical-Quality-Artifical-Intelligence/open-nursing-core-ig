@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:GoalEvaluationValueSet |
+| Active as of 2026-07-09 | *Computable Name*:GoalEvaluationValueSet |
 
  
 Value set for evaluating patient goal outcomes 
@@ -51,7 +51,7 @@ Value set for evaluating patient goal outcomes
   "title" : "Goal Evaluation Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for evaluating patient goal outcomes",
   "compose" : {

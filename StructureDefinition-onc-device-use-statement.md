@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:ONCDeviceUseStatement |
+| Active as of 2026-07-09 | *Computable Name*:ONCDeviceUseStatement |
 
  
 Documentation of mobility aids or other devices used by the patient. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-device-use-state
   "name" : "ONCDeviceUseStatement",
   "title" : "Device Use Statement",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Documentation of mobility aids or other devices used by the patient.",
   "fhirVersion" : "4.0.1",

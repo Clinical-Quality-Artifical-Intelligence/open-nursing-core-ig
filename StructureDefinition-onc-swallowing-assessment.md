@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:ONCSwallowingAssessment |
+| Active as of 2026-07-09 | *Computable Name*:ONCSwallowingAssessment |
 
  
 Screening for dysphagia and swallowing difficulties. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-swallowing-asses
   "name" : "ONCSwallowingAssessment",
   "title" : "Swallowing Assessment",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Screening for dysphagia and swallowing difficulties.",
   "fhirVersion" : "4.0.1",

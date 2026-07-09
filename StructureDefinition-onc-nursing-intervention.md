@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:ONCNursingIntervention |
+| Active as of 2026-07-09 | *Computable Name*:ONCNursingIntervention |
 
  
 Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-interven
   "name" : "ONCNursingIntervention",
   "title" : "ONC Nursing Intervention",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.",
   "fhirVersion" : "4.0.1",

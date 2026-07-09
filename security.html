@@ -191,6 +191,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Audit trails</strong> — all access to, and modification of, patient data <strong>MUST</strong> be logged in a tamper-evident audit record, and those logs must be retained and reviewable.</li>
 </ul>
 
+<blockquote>
+  <p><strong>Implementation option.</strong> For FHIR-native deployments, the Open Health Stack Software Foundation's open-source <a href="https://github.com/ohs-foundation/fhir-gateway">FHIR Gateway</a> provides a proxy layer for enforcing access-control policies in front of a FHIR store — one route to meeting the RBAC requirement above without building policy enforcement from scratch. This reference is informative, not a conformance requirement.</p>
+</blockquote>
+
 <h3 id="data-in-transit-and-at-rest">Data in transit and at rest</h3>
 <ul>
   <li><strong>Encryption in transit</strong> — all exchange of patient data <strong>MUST</strong> use TLS 1.2 or higher.</li>
@@ -230,7 +234,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jul 4, 2026 09:17+0000">2026-07-04</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 9, 2026 21:51+0000">2026-07-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

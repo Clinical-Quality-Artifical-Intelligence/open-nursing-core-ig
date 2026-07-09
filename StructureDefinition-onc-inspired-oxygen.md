@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:ONCInspiredOxygen |
+| Active as of 2026-07-09 | *Computable Name*:ONCInspiredOxygen |
 
  
 Inspired oxygen observation for NEWS2 (air vs supplemental oxygen) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-inspired-oxygen.
   "name" : "ONCInspiredOxygen",
   "title" : "Inspired Oxygen",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)",
   "fhirVersion" : "4.0.1",

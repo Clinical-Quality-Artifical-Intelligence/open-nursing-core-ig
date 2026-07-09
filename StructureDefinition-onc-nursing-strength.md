@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:ONCNursingStrength |
+| Active as of 2026-07-09 | *Computable Name*:ONCNursingStrength |
 
  
 A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-strength
   "name" : "ONCNursingStrength",
   "title" : "ONC Nursing Strength",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models.",
   "fhirVersion" : "4.0.1",

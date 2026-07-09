@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:ONCGoalEvaluation |
+| Active as of 2026-07-09 | *Computable Name*:ONCGoalEvaluation |
 
  
 Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-goal-evaluation.
   "name" : "ONCGoalEvaluation",
   "title" : "ONC Goal Evaluation",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.",
   "fhirVersion" : "4.0.1",

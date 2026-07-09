@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2026-07-04T09:17:49+00:00"/>
+  <date value="2026-07-09T21:51:52+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md."/>
   <packageId value="onc.ig"/>

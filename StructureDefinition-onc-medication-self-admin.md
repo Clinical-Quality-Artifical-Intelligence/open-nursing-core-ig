@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:ONCMedicationSelfAdmin |
+| Active as of 2026-07-09 | *Computable Name*:ONCMedicationSelfAdmin |
 
  
 Observation of the patient performing self-administration. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-medication-self-
   "name" : "ONCMedicationSelfAdmin",
   "title" : "Medication Self-Administration Observation",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of the patient performing self-administration.",
   "fhirVersion" : "4.0.1",

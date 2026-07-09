@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:ONCNursingProblem |
+| Active as of 2026-07-09 | *Computable Name*:ONCNursingProblem |
 
  
 Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-problem.
   "name" : "ONCNursingProblem",
   "title" : "Nursing Problem",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.",
   "fhirVersion" : "4.0.1",

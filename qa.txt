@@ -3,7 +3,7 @@ OpenNursingCoreIG : Validation Results
 
 err = 87, warn = 170, info = 194
 IG Publisher Version: 2.2.10
-Generated Sat Jul 04 09:20:47 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://opennursingcoreig.com)
+Generated Thu Jul 09 21:54:58 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://opennursingcoreig.com)
  Build Errors : 9 / 52 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 4 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 0 / 3 / 2

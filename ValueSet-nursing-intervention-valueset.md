@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:NursingInterventionValueSet |
+| Active as of 2026-07-09 | *Computable Name*:NursingInterventionValueSet |
 
  
 Value set for nursing interventions 
@@ -51,7 +51,7 @@ Value set for nursing interventions
   "title" : "Nursing Intervention Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for nursing interventions",
   "compose" : {

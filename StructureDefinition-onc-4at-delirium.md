@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium | *Version*:1.0.0 |
-| Draft as of 2026-07-04 | *Computable Name*:ONC4ATDelirium |
+| Draft as of 2026-07-09 | *Computable Name*:ONC4ATDelirium |
 
  
 Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
   "name" : "ONC4ATDelirium",
   "title" : "4AT Delirium Assessment",
   "status" : "draft",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium.",
   "fhirVersion" : "4.0.1",

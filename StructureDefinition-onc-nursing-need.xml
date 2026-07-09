@@ -23,7 +23,7 @@
   <name value="ONCNursingNeed"/>
   <title value="ONC Nursing Need"/>
   <status value="active"/>
-  <date value="2026-07-04T09:17:49+00:00"/>
+  <date value="2026-07-09T21:51:52+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model."/>
   <fhirVersion value="4.0.1"/>

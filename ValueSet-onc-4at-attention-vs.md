@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-4at-attention-vs | *Version*:1.0.0 |
-| Active as of 2026-07-04 | *Computable Name*:AttentionVS |
+| Active as of 2026-07-09 | *Computable Name*:AttentionVS |
 
  
 Scoring for Months Backwards test 
@@ -50,7 +50,7 @@ Scoring for Months Backwards test
   "name" : "AttentionVS",
   "title" : "4AT Attention Value Set",
   "status" : "active",
-  "date" : "2026-07-04T09:17:49+00:00",
+  "date" : "2026-07-09T21:51:52+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Scoring for Months Backwards test",
   "compose" : {
