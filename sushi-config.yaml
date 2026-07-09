@@ -7,7 +7,7 @@ version: 1.0.0
 fhirVersion: 4.0.1
 publisher:
   name: The Open Nursing Community
-description: "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 - Production Ready."
+description: "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md."
 license: MIT
 copyrightYear: 2025+
 releaseLabel: release
@@ -26,6 +26,8 @@ pages:
     title: Security & Privacy
   terminology.md:
     title: Terminology
+  questionnaires.md:
+    title: Structured Data Capture
   relation-ai.md:
     title: Relational Ai (AI Model)
   history.md:

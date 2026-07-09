@@ -43,6 +43,8 @@ The model was evaluated using a rigorous multi-judge system (GPT-4o, GPT-5, Gemi
 | **Person-Centredness** | **7.6/10** | Strong performance in respectful language |
 | **Equity (Skin Tone)** | **8.0/10** | **Best-in-class performance** |
 
+> **⚠️ Evidence-standard note.** These scores come from an internal, LLM-judge-based evaluation (GPT-4o, GPT-5, Gemini 3 Pro rating model outputs), not an independent clinical validation, usability study, or peer review. They should be read as promising early internal results, not as evidence with the same standing as the FHIR profile conformance testing described elsewhere in this IG. The "Empathy Index" and relational-AI claims below are similarly pre-validation and are explicitly out of scope for any standards-balloting submission of the FHIR profiles themselves — see [STANDARDS_ROADMAP.md](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/blob/main/STANDARDS_ROADMAP.md).
+
 ## Integration with FHIR
 This AI model is designed to work alongside the FHIR profiles defined in this IG.
 *   **Input:** Structured data from `Patient`, `Observation` (e.g., Skin Tone), and `Condition` resources.

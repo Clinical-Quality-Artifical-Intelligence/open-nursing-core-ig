@@ -41,7 +41,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -71,7 +71,7 @@ jobs:
         bandit -r app.py app_phase2.py core db ml visualizations -f json -o bandit-report.json || true
     
     - name: Upload code quality reports
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: code-quality-reports
         path: bandit-report.json
@@ -85,7 +85,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
@@ -99,7 +99,7 @@ jobs:
     
     - name: Extract metadata
       id: meta
-      uses: docker/metadata-action@v4
+      uses: docker/metadata-action@v6
       with:
         images: ghcr.io/${{ github.repository }}
         tags: |
@@ -129,7 +129,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     
     - name: Azure Login
       uses: azure/login@v1
@@ -176,7 +176,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -194,7 +194,7 @@ jobs:
       continue-on-error: true
     
     - name: Upload test results
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: integration-test-results
         path: test-results/
@@ -212,7 +212,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     
     - name: Azure Login
       uses: azure/login@v1

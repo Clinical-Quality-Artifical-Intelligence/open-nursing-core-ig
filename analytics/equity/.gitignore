@@ -1,0 +1,6 @@
+# Regenerable demo inputs and intermediate views (run the two scripts).
+data/
+# Re-include our results dir (the root .gitignore excludes any 'output/'
+# as an IG build artifact), but keep the parquet intermediates out.
+!output/
+output/parquet/
