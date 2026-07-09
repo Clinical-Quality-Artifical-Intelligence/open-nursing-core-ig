@@ -30,9 +30,9 @@ An implementation guide that looks production-ready but hasn't been balloted or 
 
 ---
 
-## Two parallel tracks
+## Parallel tracks
 
-Formal endorsement for a nursing-process FHIR IG realistically runs on two tracks that can proceed **in parallel**, not in sequence — they have different sponsors, timelines and scope.
+Formal endorsement for a nursing-process FHIR IG realistically runs on multiple tracks that can proceed **in parallel**, not in sequence — they have different sponsors, timelines and scope.
 
 ### Track A — PRSB formal assurance (UK-specific, more tractable near-term)
 
@@ -56,9 +56,24 @@ HL7 balloting is the recognised route to a globally-portable FHIR standard, but 
 
 Realistically, Track B is a **multi-year** undertaking requiring sustained Work Group engagement — it should not block Track A or continued open development in the meantime.
 
----
+### Track C — WHO / Open Health Stack ecosystem alignment (global reach + implementation evidence)
 
-## Dependencies that block full readiness regardless of track
+In July 2026 the **Open Health Stack Software Foundation (OHS-SF)** was established under the **Linux Foundation** (transferring Google's Open Health Stack, originally launched with WHO in 2023), and **WHO formally joined** to align the stack with WHO norms and its machine-readable **SMART Guidelines** ([smart.who.int](https://smart.who.int)). The foundation is community-governed with **no financial barrier to governance participation**, and is organised into three pillars: *FHIR Foundations* (offline-first FHIR SDKs), a *Reference Toolkit*, and an *AI Commons* for safe health AI.
+
+This matters to ONC-IG for two reasons:
+
+1. **It directly addresses our single-jurisdiction limitation.** The current standards base (PRSB, NEWS2, Equality Act 2010, UK GDPR) is UK-centric — flagged as Limitation #6 in the accompanying paper. Aligning with WHO SMART Guidelines authoring conventions and the OHS toolchain is the concrete route to global applicability, and nursing-process content is currently a **gap** in the SMART Guidelines / OHS content ecosystem that ONC is well placed to fill.
+2. **It generates the real-world implementation evidence Track B requires.** HL7 expects an IG to have been implemented beyond its authors before balloting; OHS deployments (Ministries of Health, NGOs, startups across Sub-Saharan Africa and South Asia) are exactly that evidence base.
+
+Concrete work items:
+
+- [ ] **SDC Questionnaire representations** of core assessments (NEWS2, Monk Skin Tone, Braden, Waterlow, MUST, What Matters To Me) so they render in the OHS data-capture libraries ([android-fhir](https://github.com/ohs-foundation/android-fhir), [kotlin-fhir-data-capture](https://github.com/ohs-foundation/kotlin-fhir-data-capture)) — tracked in [issue #125](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/125)
+- [ ] Align our CQL/PlanDefinition layer (NEWS2 scoring + escalation) with **WHO SMART Guidelines** L3 authoring conventions so ONC content is consumable alongside WHO-quality-assured content
+- [ ] **Equity analytics example** using [fhir-data-pipes](https://github.com/ohs-foundation/fhir-data-pipes) (FHIR → Parquet → dashboard): pressure-ulcer detection timeliness stratified by Monk skin tone — operationalising the IG's "make inequity visible" claim
+- [ ] Reference [fhir-gateway](https://github.com/ohs-foundation/fhir-gateway) on the Security & Privacy page as an open-source implementation option for the RBAC/audit conformance requirements
+- [ ] Evaluate **ICD-11 mappings** for settings without a national SNOMED CT licence (SNOMED is licensed per-country; ICD-11 is free), so the IG degrades gracefully outside SNOMED member states
+- [ ] Engage the **AI Commons** pillar for the Relational AI work — its safe-AI evaluation frameworks are a route to independent evaluation of the model claims currently flagged as internal-only (Limitation #7)
+- [ ] Join the OHS **FHIR Foundations working group**; present ONC-IG at a monthly community call; propose nursing-process content as a foundation topic
 
 - **NANDA-I licensing and terminology canonical.** The `onc-to-nanda` ConceptMap currently targets an explicit local placeholder (see `input/fsh/onc-terminology-mapping.fsh`) because NANDA-I is a proprietary, licensed terminology with no public FHIR canonical this project controls. Tracked in [issue #123](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/123). Any ballot or PRSB submission touching the diagnosis phase should either resolve this first or explicitly scope it out.
 - **Independent clinical/peer review.** Separate from formal balloting, the clinical-safety and equity design claims in the accompanying academic paper are motivated by cited literature, not by a clinical pilot or usability study of this IG itself. A simulated or live nursing-documentation study (ADPIE-structured vs. conventional) is identified as future work in that paper and would materially strengthen either track's submission.
@@ -70,8 +85,8 @@ Realistically, Track B is a **multi-year** undertaking requiring sustained Work 
 | Phase | Timeframe | Actions |
 |-------|-----------|---------|
 | **Now** | Immediate | Trial-use disclaimers live across IG, README, history page ✅ · Open NANDA-I tracking issue ✅ · Fitzpatrick/Monk primary-vs-secondary language reconciled across FSH and docs ✅ |
-| **Near-term** | 0–3 months | Contact PRSB to scope assurance requirements (Track A) · Identify and submit a Connectathon track (Track B, step 2) · Recruit clinical reference group volunteers |
-| **Medium-term** | 3–12 months | PRSB clinical review cycle · Approach Patient Care WG for PSS sponsorship (Track B, steps 1–3) · Resolve NANDA-I licensing (issue #123) |
+| **Near-term** | 0–3 months | Contact PRSB to scope assurance requirements (Track A) · Identify and submit a Connectathon track (Track B, step 2) · Recruit clinical reference group volunteers · Join OHS Foundation Discord/mailing list and present ONC at a monthly community call (Track C) |
+| **Medium-term** | 3–12 months | PRSB clinical review cycle · Approach Patient Care WG for PSS sponsorship (Track B, steps 1–3) · Resolve NANDA-I licensing (issue #123) · SDC Questionnaires for core assessments (issue #125) and fhir-data-pipes equity-analytics example (Track C) · Global Digital Health Forum, Bangkok, December 2026 |
 | **Longer-term** | 12+ months | HL7 STU ballot submission and reconciliation · Usability/documentation-completeness study · Normative ballot once implementation evidence exists |
 
 ---
@@ -85,6 +100,8 @@ Realistically, Track B is a **multi-year** undertaking requiring sustained Work 
 | **FHIR implementer** | Volunteer to build against the IG at a Connectathon |
 | **NANDA-I licence holder or terminology specialist** | Comment on [issue #123](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/123) |
 | **Nursing researcher** | Help design the documentation-completeness/usability study identified as future work |
+| **Android/Kotlin developer or SDC author** | Build the OHS-compatible Questionnaires — [issue #125](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/125) |
+| **Global-health implementer (MoH / NGO / startup)** | Pilot ONC nursing assessments in an [Open Health Stack](https://ohs.foundation) deployment and tell us what breaks |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for general contribution guidelines and [ROADMAP.md](ROADMAP.md) for the feature/profile roadmap (this document covers standards governance only).
 

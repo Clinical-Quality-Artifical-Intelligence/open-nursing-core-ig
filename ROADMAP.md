@@ -34,6 +34,21 @@ See [STANDARDS_ROADMAP.md](STANDARDS_ROADMAP.md) for the path to formal standard
 
 > **Status:** Active development · [Track on GitHub](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues)
 
+### 🌍 Open Health Stack / WHO ecosystem alignment
+**Priority:** High · **Help wanted:** Android/Kotlin developers, SDC Questionnaire authors, global-health implementers
+
+The [Open Health Stack Software Foundation](https://ohs.foundation) (Linux Foundation, July 2026 — with WHO as a member) provides the offline-first FHIR toolchain used by Ministries of Health and NGOs across Sub-Saharan Africa and South Asia. Making ONC assessments consumable by that stack takes nursing-process content global — and nursing content is currently a gap in that ecosystem.
+
+- [ ] SDC `Questionnaire` representations of core assessments (NEWS2, Monk Skin Tone, Braden, Waterlow, MUST) — [issue #125](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/125)
+- [ ] Demo: render one ONC assessment offline in the [Android FHIR SDK](https://github.com/ohs-foundation/android-fhir)
+- [ ] Equity analytics example with [fhir-data-pipes](https://github.com/ohs-foundation/fhir-data-pipes) (pressure-ulcer detection timeliness by Monk skin tone)
+- [ ] Align NEWS2 CQL/PlanDefinition with [WHO SMART Guidelines](https://smart.who.int) authoring conventions
+- [ ] ICD-11 mappings for settings without a national SNOMED CT licence
+
+> 🤝 **Looking for:** Kotlin/Android developers, FHIR SDC authors, community nurses in LMIC settings — see [STANDARDS_ROADMAP.md](STANDARDS_ROADMAP.md) Track C for the full plan
+
+---
+
 ### ⚖️ Equity-driven safety constraints (extended)
 **Priority:** High · **Lead:** Kumbi Kariwo · **Help wanted:** Clinical evidence review
 
