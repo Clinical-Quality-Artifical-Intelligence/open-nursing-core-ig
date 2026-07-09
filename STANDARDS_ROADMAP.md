@@ -67,9 +67,9 @@ This matters to ONC-IG for two reasons:
 
 Concrete work items:
 
-- [ ] **SDC Questionnaire representations** of core assessments (NEWS2, Monk Skin Tone, Braden, Waterlow, MUST, What Matters To Me) so they render in the OHS data-capture libraries ([android-fhir](https://github.com/ohs-foundation/android-fhir), [kotlin-fhir-data-capture](https://github.com/ohs-foundation/kotlin-fhir-data-capture)) — tracked in [issue #125](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/125)
+- [x] **SDC Questionnaire representations** of core assessments (NEWS2, Monk Skin Tone, Braden, Waterlow, MUST, Person-Centred Care) for the OHS data-capture libraries ([android-fhir](https://github.com/ohs-foundation/android-fhir), [kotlin-fhir-data-capture](https://github.com/ohs-foundation/kotlin-fhir-data-capture)) — merged; end-to-end rendering demo still open in [issue #125](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/125)
 - [ ] Align our CQL/PlanDefinition layer (NEWS2 scoring + escalation) with **WHO SMART Guidelines** L3 authoring conventions so ONC content is consumable alongside WHO-quality-assured content
-- [ ] **Equity analytics example** using [fhir-data-pipes](https://github.com/ohs-foundation/fhir-data-pipes) (FHIR → Parquet → dashboard): pressure-ulcer detection timeliness stratified by Monk skin tone — operationalising the IG's "make inequity visible" claim
+- [x] **Equity analytics example** ([analytics/equity/](analytics/equity/)): FHIR → Parquet → pressure-ulcer late-detection rate stratified by Monk skin tone, with the production path documented via [fhir-data-pipes](https://github.com/ohs-foundation/fhir-data-pipes) — operationalising the IG's "make inequity visible" claim
 - [ ] Reference [fhir-gateway](https://github.com/ohs-foundation/fhir-gateway) on the Security & Privacy page as an open-source implementation option for the RBAC/audit conformance requirements
 - [ ] Evaluate **ICD-11 mappings** for settings without a national SNOMED CT licence (SNOMED is licensed per-country; ICD-11 is free), so the IG degrades gracefully outside SNOMED member states
 - [ ] Engage the **AI Commons** pillar for the Relational AI work — its safe-AI evaluation frameworks are a route to independent evaluation of the model claims currently flagged as internal-only (Limitation #7)

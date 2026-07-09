@@ -39,9 +39,9 @@ See [STANDARDS_ROADMAP.md](STANDARDS_ROADMAP.md) for the path to formal standard
 
 The [Open Health Stack Software Foundation](https://ohs.foundation) (Linux Foundation, July 2026 — with WHO as a member) provides the offline-first FHIR toolchain used by Ministries of Health and NGOs across Sub-Saharan Africa and South Asia. Making ONC assessments consumable by that stack takes nursing-process content global — and nursing content is currently a gap in that ecosystem.
 
-- [ ] SDC `Questionnaire` representations of core assessments (NEWS2, Monk Skin Tone, Braden, Waterlow, MUST) — [issue #125](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/125)
+- [x] SDC `Questionnaire` representations of core assessments (NEWS2, Monk Skin Tone, Braden, Waterlow, MUST, Person-Centred Care) — [issue #125](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/issues/125) (rendering demo in the Android SDK still open)
 - [ ] Demo: render one ONC assessment offline in the [Android FHIR SDK](https://github.com/ohs-foundation/android-fhir)
-- [ ] Equity analytics example with [fhir-data-pipes](https://github.com/ohs-foundation/fhir-data-pipes) (pressure-ulcer detection timeliness by Monk skin tone)
+- [x] Equity analytics example ([analytics/equity/](analytics/equity/)) — FHIR → Parquet → late-detection rate by Monk band; production path via [fhir-data-pipes](https://github.com/ohs-foundation/fhir-data-pipes)
 - [ ] Align NEWS2 CQL/PlanDefinition with [WHO SMART Guidelines](https://smart.who.int) authoring conventions
 - [ ] ICD-11 mappings for settings without a national SNOMED CT licence
 
