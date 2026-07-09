@@ -31,6 +31,19 @@ These define data models that represent the domain covered by this implementatio
 | :--- | :--- |
 | [Relational Care Logical Model](StructureDefinition-onc-relational-care-logical.md) | A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR. |
 
+### Structures: Questionnaires 
+
+These define forms used by systems conforming to this implementation guide to capture or expose data to end users.
+
+| | |
+| :--- | :--- |
+| [Braden Scale Capture Form](Questionnaire-onc-braden-questionnaire.md) | SDC questionnaire for the Braden pressure-ulcer risk assessment: six subscales, total score, and a mandatory Monk Skin Tone item (the equity fairness gate is embedded at the capture layer). Coded items extract to Observations using the ONC Braden component codes; assembling them into the single component-based ONCBradenScaleAssessment Observation (including hasMember[skinTone]) is the capturing app's responsibility. |
+| [MUST Capture Form](Questionnaire-onc-must-questionnaire.md) | SDC questionnaire for the Malnutrition Universal Screening Tool: three step scores and the total. Coded items extract to Observations using the ONC MUST component codes; assembling them into the single component-based ONCMUSTScore Observation is the capturing app's responsibility. |
+| [Monk Skin Tone Capture Form](Questionnaire-onc-monk-skintone-questionnaire.md) | SDC questionnaire capturing the patient's skin tone on the 10-point Monk Skin Tone Scale (A–J). Extracts to an Observation conforming to ONCMonkSkinToneObservation. This record is the required input to the IG's equity fairness gate for wound and pressure-area assessment. |
+| [NEWS2 Capture Form](Questionnaire-onc-news2-questionnaire.md) | SDC questionnaire for capturing the NEWS2 physiological parameter set and total score. Coded items extract to Observations conforming to the ONC NEWS2 and vital-sign profiles. Scoring and escalation logic is computable via the ONC_NEWS2_Logic CQL library and the news2-escalation PlanDefinition. |
+| [Person-Centred Care Capture Form](Questionnaire-onc-person-centred-questionnaire.md) | SDC questionnaire capturing 'What Matters to Me' and reasonable adjustments (Equality Act 2010) as structured, retrievable records. Items extract to Observations conforming to ONCWhatMattersToMe and ONCReasonableAdjustment. |
+| [Waterlow Score Capture Form](Questionnaire-onc-waterlow-questionnaire.md) | SDC questionnaire for the Waterlow pressure-ulcer risk assessment total score, with a mandatory Monk Skin Tone item (equity fairness gate embedded at the capture layer). The total extracts to an Observation using the ONC Waterlow code; linking the skin-tone Observation via hasMember[skinTone] is the capturing app's responsibility. |
+
 ### Structures: Resource Profiles 
 
 These define constraints on FHIR resources for systems conforming to this implementation guide.

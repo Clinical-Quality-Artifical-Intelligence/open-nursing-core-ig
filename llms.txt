@@ -3,6 +3,7 @@
 ## Pages
 
 * [Home](index.md)
+* [Structured Data Capture](questionnaires.md)
 * [Relational Ai (AI Model)](relation-ai.md)
 * [The ADPIE Nursing Process](adpie.md)
 * [Artifacts Summary](artifacts.md)
@@ -139,6 +140,15 @@
 ### PlanDefinitions
 
 * [NEWS2 Escalation Protocol](PlanDefinition-news2-escalation-plan.md)
+
+### Questionnaires
+
+* [Braden Scale (Pressure Ulcer Risk)](Questionnaire-onc-braden-questionnaire.md)
+* [Monk Skin Tone Scale (A–J)](Questionnaire-onc-monk-skintone-questionnaire.md)
+* [MUST (Malnutrition Universal Screening Tool)](Questionnaire-onc-must-questionnaire.md)
+* [NEWS2 (National Early Warning Score 2)](Questionnaire-onc-news2-questionnaire.md)
+* [Person-Centred Care (What Matters to Me & Reasonable Adjustments)](Questionnaire-onc-person-centred-questionnaire.md)
+* [Waterlow Score (Pressure Ulcer Risk)](Questionnaire-onc-waterlow-questionnaire.md)
 
 ### Examples
 

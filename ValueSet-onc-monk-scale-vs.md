@@ -14,6 +14,9 @@
  **References** 
 
 * [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md)
+* [Braden Scale (Pressure Ulcer Risk)](Questionnaire-onc-braden-questionnaire.md)
+* [Monk Skin Tone Scale (A–J)](Questionnaire-onc-monk-skintone-questionnaire.md)
+* [Waterlow Score (Pressure Ulcer Risk)](Questionnaire-onc-waterlow-questionnaire.md)
 
 ### Logical Definition (CLD)
 
@@ -47,7 +50,7 @@
   "name" : "ONCMonkScaleVS",
   "title" : "Monk Skin Tone Scale ValueSet",
   "status" : "active",
-  "date" : "2026-07-09T21:51:52+00:00",
+  "date" : "2026-07-09T22:02:23+00:00",
   "publisher" : "The Open Nursing Community",
   "compose" : {
     "include" : [{

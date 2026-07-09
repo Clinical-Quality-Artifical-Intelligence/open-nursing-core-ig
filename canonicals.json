@@ -48,6 +48,48 @@
   "name" : "OpenNursingCoreIG"
 },
 {
+  "id" : "onc-braden-questionnaire",
+  "type" : "Questionnaire",
+  "url" : "https://opennursingcoreig.com/Questionnaire/onc-braden-questionnaire",
+  "version" : "1.0.0",
+  "name" : "ONCBradenQuestionnaire"
+},
+{
+  "id" : "onc-monk-skintone-questionnaire",
+  "type" : "Questionnaire",
+  "url" : "https://opennursingcoreig.com/Questionnaire/onc-monk-skintone-questionnaire",
+  "version" : "1.0.0",
+  "name" : "ONCMonkSkinToneQuestionnaire"
+},
+{
+  "id" : "onc-must-questionnaire",
+  "type" : "Questionnaire",
+  "url" : "https://opennursingcoreig.com/Questionnaire/onc-must-questionnaire",
+  "version" : "1.0.0",
+  "name" : "ONCMUSTQuestionnaire"
+},
+{
+  "id" : "onc-news2-questionnaire",
+  "type" : "Questionnaire",
+  "url" : "https://opennursingcoreig.com/Questionnaire/onc-news2-questionnaire",
+  "version" : "1.0.0",
+  "name" : "ONCNEWS2Questionnaire"
+},
+{
+  "id" : "onc-person-centred-questionnaire",
+  "type" : "Questionnaire",
+  "url" : "https://opennursingcoreig.com/Questionnaire/onc-person-centred-questionnaire",
+  "version" : "1.0.0",
+  "name" : "ONCPersonCentredQuestionnaire"
+},
+{
+  "id" : "onc-waterlow-questionnaire",
+  "type" : "Questionnaire",
+  "url" : "https://opennursingcoreig.com/Questionnaire/onc-waterlow-questionnaire",
+  "version" : "1.0.0",
+  "name" : "ONCWaterlowQuestionnaire"
+},
+{
   "id" : "UKCore-Extension-EthnicCategory",
   "type" : "StructureDefinition",
   "url" : "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory",

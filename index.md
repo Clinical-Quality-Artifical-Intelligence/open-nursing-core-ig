@@ -90,6 +90,7 @@ Instruments for learning disability, mental health and older-person care.
 * [Health Equity & Inclusion](equity.md) — Monk Skin Tone Scale and reasonable adjustments
 * [Security & Privacy](security.md) — UK GDPR, DSPT and Caldicott
 * [Terminology](terminology.md) — SNOMED CT, LOINC and the ONC code systems
+* [Structured Data Capture](questionnaires.md) — SDC Questionnaires for offline-first capture (Open Health Stack compatible)
 * [Relational AI](relation-ai.md) — the FONS-aligned language model
 * [Published Versions](history.md) — release history
 
@@ -116,7 +117,7 @@ Instruments for learning disability, mental health and older-person care.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-07-09T21:51:52+00:00",
+  "date" : "2026-07-09T22:02:23+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md.",
   "packageId" : "onc.ig",
@@ -875,6 +876,18 @@ Instruments for learning disability, mental health and older-person care.
       },
       "name" : "Braden Scale Assessment",
       "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/onc-braden-questionnaire"
+      },
+      "name" : "Braden Scale Capture Form",
+      "description" : "SDC questionnaire for the Braden pressure-ulcer risk assessment: six subscales, total score, and a mandatory Monk Skin Tone item (the equity fairness gate is embedded at the capture layer). Coded items extract to Observations using the ONC Braden component codes; assembling them into the single component-based ONCBradenScaleAssessment Observation (including hasMember[skinTone]) is the capturing app's responsibility.",
       "exampleBoolean" : false
     },
     {
@@ -1657,6 +1670,18 @@ Instruments for learning disability, mental health and older-person care.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/onc-monk-skintone-questionnaire"
+      },
+      "name" : "Monk Skin Tone Capture Form",
+      "description" : "SDC questionnaire capturing the patient's skin tone on the 10-point Monk Skin Tone Scale (A–J). Extracts to an Observation conforming to ONCMonkSkinToneObservation. This record is the required input to the IG's equity fairness gate for wound and pressure-area assessment.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1703,6 +1728,18 @@ Instruments for learning disability, mental health and older-person care.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/onc-must-questionnaire"
+      },
+      "name" : "MUST Capture Form",
+      "description" : "SDC questionnaire for the Malnutrition Universal Screening Tool: three step scores and the total. Coded items extract to Observations using the ONC MUST component codes; assembling them into the single component-based ONCMUSTScore Observation is the capturing app's responsibility.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1710,6 +1747,18 @@ Instruments for learning disability, mental health and older-person care.
       },
       "name" : "MUST Score (Malnutrition Universal Screening Tool)",
       "description" : "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/onc-news2-questionnaire"
+      },
+      "name" : "NEWS2 Capture Form",
+      "description" : "SDC questionnaire for capturing the NEWS2 physiological parameter set and total score. Coded items extract to Observations conforming to the ONC NEWS2 and vital-sign profiles. Scoring and escalation logic is computable via the ONC_NEWS2_Logic CQL library and the news2-escalation PlanDefinition.",
       "exampleBoolean" : false
     },
     {
@@ -2155,6 +2204,18 @@ Instruments for learning disability, mental health and older-person care.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/onc-person-centred-questionnaire"
+      },
+      "name" : "Person-Centred Care Capture Form",
+      "description" : "SDC questionnaire capturing 'What Matters to Me' and reasonable adjustments (Equality Act 2010) as structured, retrievable records. Items extract to Observations conforming to ONCWhatMattersToMe and ONCReasonableAdjustment.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2370,6 +2431,18 @@ Instruments for learning disability, mental health and older-person care.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/onc-waterlow-questionnaire"
+      },
+      "name" : "Waterlow Score Capture Form",
+      "description" : "SDC questionnaire for the Waterlow pressure-ulcer risk assessment total score, with a mandatory Monk Skin Tone item (equity fairness gate embedded at the capture layer). The total extracts to an Observation using the ONC Waterlow code; linking the skin-tone Observation via hasMember[skinTone] is the capturing app's responsibility.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2462,6 +2535,15 @@ Instruments for learning disability, mental health and older-person care.
         }],
         "nameUrl" : "terminology.html",
         "title" : "Terminology",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "questionnaires.html"
+        }],
+        "nameUrl" : "questionnaires.html",
+        "title" : "Structured Data Capture",
         "generation" : "markdown"
       },
       {

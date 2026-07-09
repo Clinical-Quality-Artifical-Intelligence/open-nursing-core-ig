@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCOralHealth"] ;
   fhir:StructureDefinition.title [ fhir:value "Oral Health Assessment"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-09T21:51:52+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-09T22:02:23+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

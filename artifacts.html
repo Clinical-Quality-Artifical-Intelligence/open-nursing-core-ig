@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"9"}
-    h3,h4,h5,h6{--heading-prefix:"9.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -85,6 +85,7 @@
   </menu>
   <menu name="Standards">
     <menu name="Terminology" url="terminology.html"/>
+    <menu name="Structured Data Capture" url="questionnaires.html"/>
     <menu name="Security &amp; Privacy" url="security.html"/>
     <menu name="Relational AI" url="relation-ai.html"/>
   </menu>
@@ -145,22 +146,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#3">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#4">Structures: Resource Profiles</a>
+         <a href="#4">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#5">Structures: Extension Definitions</a>
+         <a href="#5">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#6">Terminology: Value Sets</a>
+         <a href="#6">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#7">Terminology: Code Systems</a>
+         <a href="#7">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#8">Terminology: Concept Maps</a>
+         <a href="#8">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#9">Example: Example Instances</a>
+         <a href="#9">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#10">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -216,6 +220,68 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="4"> </a>
+   <h3>Structures: Questionnaires </h3>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-onc-braden-questionnaire.html"
+                  title="Questionnaire/onc-braden-questionnaire">Braden Scale Capture Form</a>
+            </td>
+            <td>
+<p>SDC questionnaire for the Braden pressure-ulcer risk assessment: six subscales, total score, and a mandatory Monk Skin Tone item (the equity fairness gate is embedded at the capture layer). Coded items extract to Observations using the ONC Braden component codes; assembling them into the single component-based ONCBradenScaleAssessment Observation (including hasMember[skinTone]) is the capturing app's responsibility.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-onc-must-questionnaire.html"
+                  title="Questionnaire/onc-must-questionnaire">MUST Capture Form</a>
+            </td>
+            <td>
+<p>SDC questionnaire for the Malnutrition Universal Screening Tool: three step scores and the total. Coded items extract to Observations using the ONC MUST component codes; assembling them into the single component-based ONCMUSTScore Observation is the capturing app's responsibility.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-onc-monk-skintone-questionnaire.html"
+                  title="Questionnaire/onc-monk-skintone-questionnaire">Monk Skin Tone Capture Form</a>
+            </td>
+            <td>
+<p>SDC questionnaire capturing the patient's skin tone on the 10-point Monk Skin Tone Scale (A–J). Extracts to an Observation conforming to ONCMonkSkinToneObservation. This record is the required input to the IG's equity fairness gate for wound and pressure-area assessment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-onc-news2-questionnaire.html"
+                  title="Questionnaire/onc-news2-questionnaire">NEWS2 Capture Form</a>
+            </td>
+            <td>
+<p>SDC questionnaire for capturing the NEWS2 physiological parameter set and total score. Coded items extract to Observations conforming to the ONC NEWS2 and vital-sign profiles. Scoring and escalation logic is computable via the ONC_NEWS2_Logic CQL library and the news2-escalation PlanDefinition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-onc-person-centred-questionnaire.html"
+                  title="Questionnaire/onc-person-centred-questionnaire">Person-Centred Care Capture Form</a>
+            </td>
+            <td>
+<p>SDC questionnaire capturing 'What Matters to Me' and reasonable adjustments (Equality Act 2010) as structured, retrievable records. Items extract to Observations conforming to ONCWhatMattersToMe and ONCReasonableAdjustment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-onc-waterlow-questionnaire.html"
+                  title="Questionnaire/onc-waterlow-questionnaire">Waterlow Score Capture Form</a>
+            </td>
+            <td>
+<p>SDC questionnaire for the Waterlow pressure-ulcer risk assessment total score, with a mandatory Monk Skin Tone item (equity fairness gate embedded at the capture layer). The total extracts to an Observation using the ONC Waterlow code; linking the skin-tone Observation via hasMember[skinTone] is the capturing app's responsibility.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -763,7 +829,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -807,7 +873,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1049,7 +1115,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1083,7 +1149,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="8"> </a>
+   <a name="9"> </a>
    <h3>Terminology: Concept Maps </h3>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
 <table class="grid">
@@ -1099,7 +1165,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="9"> </a>
+   <a name="10"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -1555,7 +1621,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 9, 2026 21:51+0000">2026-07-09</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="">The Open Nursing Community</a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 9, 2026 22:02+0000">2026-07-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

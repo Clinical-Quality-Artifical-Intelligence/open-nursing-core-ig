@@ -18,7 +18,7 @@
   fhir:ValueSet.title [ fhir:value "Skin Tone Value Set"] ;
   fhir:ValueSet.status [ fhir:value "active"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-07-09T21:51:52+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-09T22:02:23+00:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:ValueSet.description [ fhir:value "Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems."] ;
   fhir:ValueSet.compose [

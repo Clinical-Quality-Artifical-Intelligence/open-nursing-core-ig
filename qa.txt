@@ -1,9 +1,9 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 87, warn = 170, info = 194
+err = 100, warn = 170, info = 200
 IG Publisher Version: 2.2.10
-Generated Thu Jul 09 21:54:58 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://opennursingcoreig.com)
+Generated Thu Jul 09 22:05:39 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://opennursingcoreig.com)
  Build Errors : 9 / 52 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 4 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 0 / 3 / 2
@@ -58,6 +58,12 @@ Generated Thu Jul 09 21:54:58 UTC 2026. FHIR version 4.0.1 for onc.ig#1.0.0 (can
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Patient-patient-example-jane : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Practitioner-practitioner-example : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Procedure-example-nursing-intervention : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-braden-questionnaire : 3 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-monk-skintone-questionnaire : 2 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-must-questionnaire : 2 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-news2-questionnaire : 2 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-person-centred-questionnaire : 2 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-waterlow-questionnaire : 2 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-intervention-goal-reference : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-observation-goal-reference : 0 / 2 / 2
@@ -202,15 +208,15 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observation-skin-tone.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient-example-jane.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/practitioner-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Condition-ExampleNursingNeed-Dressing.html#/html/body/div/div/div/div/div/div/p/a at Line 177, column 873: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 177, column 730: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 177, column 816: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
-ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 177, column 653: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 177, column 739: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
-ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 177, column 721: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 177, column 807: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
-WARNING: history.html#/html/body/div/div/div/div/div/ul/li/a at Line 177, column 40: The link 'https://opennursingcoreig.com' for "https://opennursingcoreig.com" is a canonical link and is therefore unsafe with regard to versions
-ERROR: safety.html#/html/body/div/div/div/div/div/p/strong/a at Line 188, column 448: The link 'PlanDefinition-news2-escalation.html' for "NEWS2 Escalation PlanDefinition" cannot be resolved
+ERROR: Condition-ExampleNursingNeed-Dressing.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 873: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
+ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 730: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
+ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 816: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
+ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 653: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
+ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 739: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
+ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 721: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
+ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 807: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
+WARNING: history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 40: The link 'https://opennursingcoreig.com' for "https://opennursingcoreig.com" is a canonical link and is therefore unsafe with regard to versions
+ERROR: safety.html#/html/body/div/div/div/div/div/p/strong/a at Line 189, column 448: The link 'PlanDefinition-news2-escalation.html' for "NEWS2 Escalation PlanDefinition" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -368,6 +374,31 @@ WARNING: Observation/observation-skin-tone: Observation: Best Practice Recommend
 WARNING: Patient/patient-example-jane: Patient.extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory' could not be found, so the code cannot be validated
 == fsh-generated/resources/Practitioner-practitioner-example.json ==
 == fsh-generated/resources/Procedure-example-nursing-intervention.json ==
+== fsh-generated/resources/Questionnaire-onc-braden-questionnaire.json ==
+ERROR: Questionnaire/onc-braden-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
+ERROR: Questionnaire/onc-braden-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
+ERROR: Questionnaire/onc-braden-questionnaire: Questionnaire.item[6].extension[0].value.ofType(Coding).display: Wrong Display Name '{score}' for http://unitsofmeasure.org#1. Valid display is one of 2 choices: '1' (en) or '1' (en) (for the language(s) 'en-US')
+INFORMATION: Resource: The resource Questionnaire/onc-braden-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Questionnaire-onc-monk-skintone-questionnaire.json ==
+ERROR: Questionnaire/onc-monk-skintone-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
+ERROR: Questionnaire/onc-monk-skintone-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
+INFORMATION: Resource: The resource Questionnaire/onc-monk-skintone-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Questionnaire-onc-must-questionnaire.json ==
+ERROR: Questionnaire/onc-must-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
+ERROR: Questionnaire/onc-must-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
+INFORMATION: Resource: The resource Questionnaire/onc-must-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Questionnaire-onc-news2-questionnaire.json ==
+ERROR: Questionnaire/onc-news2-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
+ERROR: Questionnaire/onc-news2-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
+INFORMATION: Resource: The resource Questionnaire/onc-news2-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Questionnaire-onc-person-centred-questionnaire.json ==
+ERROR: Questionnaire/onc-person-centred-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
+ERROR: Questionnaire/onc-person-centred-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
+INFORMATION: Resource: The resource Questionnaire/onc-person-centred-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Questionnaire-onc-waterlow-questionnaire.json ==
+ERROR: Questionnaire/onc-waterlow-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
+ERROR: Questionnaire/onc-waterlow-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
+INFORMATION: Resource: The resource Questionnaire/onc-waterlow-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory.json ==
 INFORMATION: Resource: The resource StructureDefinition/UKCore-Extension-EthnicCategory could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-intervention-goal-reference.json ==

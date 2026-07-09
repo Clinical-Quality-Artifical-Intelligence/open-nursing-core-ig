@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCRelationalCareModel"] ;
   fhir:StructureDefinition.title [ fhir:value "Relational Care Logical Model"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-09T21:51:52+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-09T22:02:23+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

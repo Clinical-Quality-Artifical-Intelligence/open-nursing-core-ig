@@ -172,6 +172,15 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/maxValue": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/minValue": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-unit": [
+      "Questionnaire.item"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -199,6 +208,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract": [
+      "Questionnaire"
     ],
     "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory": [
       "Patient"
