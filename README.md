@@ -21,8 +21,8 @@
 
 <!-- Community & traffic -->
 [![Stars](https://img.shields.io/github/stars/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig?style=flat&logo=github)](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/stargazers)
-[![Clones](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FClinical-Quality-Artifical-Intelligence%2Fopen-nursing-core-ig%2Fmain%2Ftraffic%2Fclones-badge.json)](traffic/)
-[![Views](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FClinical-Quality-Artifical-Intelligence%2Fopen-nursing-core-ig%2Fmain%2Ftraffic%2Fviews-badge.json)](traffic/)
+[![Clones](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FClinical-Quality-Artifical-Intelligence%2Fopen-nursing-core-ig%2Ftraffic-data%2Ftraffic%2Fclones-badge.json)](traffic/)
+[![Views](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FClinical-Quality-Artifical-Intelligence%2Fopen-nursing-core-ig%2Ftraffic-data%2Ftraffic%2Fviews-badge.json)](traffic/)
 
 [**Deutsch**](README.de.md) · [**Español**](README.es.md) · [**Français**](README.fr.md) · [**日本語**](README.ja.md) · [**한국어**](README.kr.md) · [**Português**](README.pt.md) · [**Русский**](README.ru.md) · [**中文**](README.zh.md)
 

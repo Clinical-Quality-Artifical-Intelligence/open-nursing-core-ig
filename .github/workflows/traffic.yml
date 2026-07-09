@@ -1,8 +1,16 @@
 name: Repository Traffic
 
 # GitHub only retains clone/view stats for 14 days and does not expose them
-# publicly. This workflow snapshots the Traffic API weekly and commits a rolling
-# history to traffic/, plus shields.io endpoint badges for the README.
+# publicly. This workflow snapshots the Traffic API weekly and commits a
+# rolling history plus shields.io endpoint badges to the dedicated
+# `traffic-data` branch (main is protected and requires PRs, so stats are
+# never committed there).
+#
+# REQUIRED SECRET: `TRAFFIC_PAT` — the Traffic API is not accessible to the
+# default Actions GITHUB_TOKEN ("Resource not accessible by integration").
+# Create a fine-grained PAT for this repository with "Administration: read"
+# permission (or a classic PAT with `repo` scope) and add it as an Actions
+# secret named TRAFFIC_PAT.
 
 on:
   schedule:
@@ -21,31 +29,47 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Switch to traffic-data branch
+        run: |
+          if git ls-remote --exit-code --heads origin traffic-data >/dev/null 2>&1; then
+            git checkout traffic-data
+          else
+            git checkout -b traffic-data
+          fi
+          mkdir -p traffic
 
       - name: Snapshot and merge traffic stats
         uses: actions/github-script@v7
         with:
+          github-token: ${{ secrets.TRAFFIC_PAT || github.token }}
           script: |
             const fs = require('fs');
             const dir = 'traffic';
             fs.mkdirSync(dir, { recursive: true });
             const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
 
+            let anySuccess = false;
+
             // Merge the latest 14-day window into a deduplicated rolling CSV.
             async function merge(kind, method) {
-              let rows = [];
+              let rows = null;
               try {
                 const res = await github.rest.repos[method]({ owner, repo, per: 'day' });
                 rows = res.data[kind] || [];
+                anySuccess = true;
               } catch (e) {
                 core.warning(`Could not fetch ${kind}: ${e.message}`);
+                return null;
               }
               const file = `${dir}/${kind}.csv`;
               const map = new Map();
               if (fs.existsSync(file)) {
                 for (const line of fs.readFileSync(file, 'utf8').trim().split('\n').slice(1)) {
                   const [d, c, u] = line.split(',');
-                  if (d) map.set(d, [Number(c), Number(u)]);
+                  if (d && d !== 'date') map.set(d, [Number(c), Number(u)]);
                 }
               }
               for (const r of rows) map.set(r.timestamp.slice(0, 10), [r.count, r.uniques]);
@@ -63,17 +87,27 @@ jobs:
             const clones = await merge('clones', 'getClones');
             const views = await merge('views', 'getViews');
 
+            if (!anySuccess) {
+              core.setFailed(
+                'Traffic API not accessible with the provided token. Add a TRAFFIC_PAT ' +
+                'Actions secret: a fine-grained PAT for this repository with ' +
+                '"Administration: read" permission (or a classic PAT with repo scope). ' +
+                'No data was written, so existing history is untouched.'
+              );
+              return;
+            }
+
             const badge = (label, message) =>
               JSON.stringify({ schemaVersion: 1, label, message: String(message), color: '005EB8' });
-            fs.writeFileSync(`${dir}/clones-badge.json`,
+            if (clones) fs.writeFileSync(`${dir}/clones-badge.json`,
               badge('clones (total)', `${clones.totalC} · ${clones.totalU} unique`));
-            fs.writeFileSync(`${dir}/views-badge.json`,
+            if (views) fs.writeFileSync(`${dir}/views-badge.json`,
               badge('views (total)', `${views.totalC} · ${views.totalU} unique`));
 
-      - name: Commit updated stats
+      - name: Commit updated stats to traffic-data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add traffic
           git diff --staged --quiet || git commit -m "chore(traffic): update clone/view stats [skip ci]"
-          git push
+          git push origin traffic-data
