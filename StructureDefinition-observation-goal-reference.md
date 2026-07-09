@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
   "name" : "ObservationGoalReference",
   "title" : "Observation Goal Reference",
   "status" : "active",
-  "date" : "2026-07-09T22:02:23+00:00",
+  "date" : "2026-07-09T22:05:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Extension to link goal evaluation observations to the patient goals being evaluated.",
   "fhirVersion" : "4.0.1",

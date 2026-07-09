@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-inspired-oxygen.
   "name" : "ONCInspiredOxygen",
   "title" : "Inspired Oxygen",
   "status" : "active",
-  "date" : "2026-07-09T22:02:23+00:00",
+  "date" : "2026-07-09T22:05:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)",
   "fhirVersion" : "4.0.1",

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-medication-abili
   "name" : "ONCMedicationAbility",
   "title" : "Medication Management Ability",
   "status" : "active",
-  "date" : "2026-07-09T22:02:23+00:00",
+  "date" : "2026-07-09T22:05:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of the patient's ability to manage their own medication.",
   "fhirVersion" : "4.0.1",

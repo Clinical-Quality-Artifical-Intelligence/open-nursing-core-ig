@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCPainAssessment"] ;
   fhir:StructureDefinition.title [ fhir:value "Pain Assessment (NRS 0-10)"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-09T22:02:23+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-09T22:05:12+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Pain severity assessment using the Numeric Rating Scale (0-10)"] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

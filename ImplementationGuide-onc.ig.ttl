@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OpenNursingCoreIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-09T22:02:23+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-09T22:05:12+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:ImplementationGuide.description [ fhir:value "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md."] ;
   fhir:ImplementationGuide.packageId [ fhir:value "onc.ig"] ;

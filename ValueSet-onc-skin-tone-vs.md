@@ -52,7 +52,7 @@ Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recom
   "title" : "Skin Tone Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-09T22:02:23+00:00",
+  "date" : "2026-07-09T22:05:12+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems.",
   "compose" : {

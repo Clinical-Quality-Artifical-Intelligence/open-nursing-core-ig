@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCWhatMattersToMe"] ;
   fhir:StructureDefinition.title [ fhir:value "What Matters to Me"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-09T22:02:23+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-09T22:05:12+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
