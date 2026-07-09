@@ -8,6 +8,7 @@ permissions:
   pull-requests: read  # For PR checks
   actions: read        # For workflow artifacts
   issues: write        # For commenting on issues
+  packages: write      # For pushing the image to GHCR
 
 on:
   push:
