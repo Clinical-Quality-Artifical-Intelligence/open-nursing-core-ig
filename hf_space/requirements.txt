@@ -1,5 +1,11 @@
 # Relational AI 4 Nursing - Hugging Face Space Requirements
-gradio>=6.20.0
+#
+# IMPORTANT: Do NOT add gradio here. For gradio-SDK Spaces, Hugging Face
+# installs gradio[oauth]==<sdk_version from README.md front-matter> itself;
+# a second gradio pin in this file makes the build fail with
+# ResolutionImpossible (this is exactly what broke the Space build when
+# Dependabot added gradio>=6 here).
+huggingface_hub>=0.30
 torch>=2.13.0
 transformers>=5.13.0
 accelerate>=1.14.0
