@@ -24,6 +24,12 @@ updates:
       # in hf_space/README.md front-matter (sdk_version); adding a second pin
       # here breaks the Space build with ResolutionImpossible.
       - dependency-name: gradio
+      # The whole hf_space stack is era-locked to gradio SDK 4.44 (see the
+      # header comment in hf_space/requirements.txt): hub 1.x removed
+      # HfFolder (gradio 4.44 imports it) and transformers 5.x requires
+      # hub 1.x. Major bumps here break the Space build/boot every time.
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   # npm package manifest (FHIR IG package)
   - package-ecosystem: npm
