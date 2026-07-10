@@ -25,7 +25,7 @@ if os.getenv("HF_TOKEN"):
 # ============================================
 MODEL_ID = "NurseCitizenDeveloper/nursing-llama-3-8b-fons"
 BASE_LLAMA = "NousResearch/Meta-Llama-3-8B"
-# Serverless fallback used on CPU hardware. The FONS PEFT adapter is usually
+# Serverless fallback used on CPU hardware. The fine-tuned PEFT adapter is usually
 # not deployable serverlessly, so default to a capable hosted instruct model;
 # override with the INFERENCE_MODEL variable in Space settings.
 # NOTE: meta-llama models are licence-gated - if the HF_TOKEN account has not
@@ -47,9 +47,13 @@ ALPACA_TEMPLATE = """Below is an instruction that describes a task, paired with 
 """
 
 SYSTEM_HINT = (
-    "You are an expert clinical nursing assistant grounded in FONS "
-    "person-centred practice principles. Be empathetic, dignified and "
-    "clinically accurate. This is decision support, not clinical judgement."
+    "You are an expert clinical nursing assistant that applies the "
+    "Person-centred Practice Framework (McCormack & McCance). Your knowledge "
+    "base draws on openly published practice-development literature from the "
+    "International Practice Development Journal "
+    "(https://www.fons.org/library/journal/). Be empathetic, dignified and "
+    "clinically accurate. This is decision support, not clinical judgement - "
+    "a registered nurse remains responsible for all clinical decisions."
 )
 
 # ============================================
@@ -72,7 +76,7 @@ if torch.cuda.is_available():
         quantization_config=BitsAndBytesConfig(load_in_8bit=True),
         trust_remote_code=True,
     )
-    print(f"🧩 Applying FONS adapter: {MODEL_ID}")
+    print(f"🧩 Applying person-centred adapter: {MODEL_ID}")
     from peft import PeftModel
     model = PeftModel.from_pretrained(model, MODEL_ID)
     if tokenizer.pad_token is None:
@@ -191,7 +195,7 @@ def generate_response(instruction: str, context: str, max_tokens: int = 256, tem
 # Restored basic chat interface (No Memory)
 def chat_interface(message: str, history: list):
     """Simple chat interface handler."""
-    context = "You are an expert clinical nursing assistant. Provide empathetic, person-centred, and clinically accurate responses based on FONS principles."
+    context = SYSTEM_HINT
     for response in generate_response(message, context):
         yield response
 
@@ -257,19 +261,19 @@ header_html = """
 <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #005eb8 0%, #003d7a 100%); border-radius: 10px; margin-bottom: 20px;">
     <h1 style="color: white; margin: 0; font-size: 2.5em;">🤖 Relational AI 4 Nursing</h1>
     <p style="color: #e8edee; margin-top: 10px; font-size: 1.1em;">
-        The first open-source LLM fine-tuned on FONS literature for person-centred, equitable clinical documentation.
+        The first open-source LLM fine-tuned on International Practice Development Journal literature for person-centred, equitable clinical documentation.
     </p>
     <div style="margin-top: 15px;">
         <span style="background: #4c9aff; color: white; padding: 5px 15px; border-radius: 20px; margin: 0 5px; font-size: 0.9em;">🎯 Equity Score: 8/10</span>
         <span style="background: #7c3aed; color: white; padding: 5px 15px; border-radius: 20px; margin: 0 5px; font-size: 0.9em;">💬 Person-Centred: 7.6/10</span>
-        <span style="background: #059669; color: white; padding: 5px 15px; border-radius: 20px; margin: 0 5px; font-size: 0.9em;">✅ FONS Aligned</span>
+        <span style="background: #059669; color: white; padding: 5px 15px; border-radius: 20px; margin: 0 5px; font-size: 0.9em;">✅ Person-Centred Framework</span>
     </div>
 </div>
 """
 
 BACKEND_LABEL = {
-    "local": f"fine-tuned FONS model, local GPU (`{MODEL_ID}`)",
-    "serverless": f"serverless Inference API (`{INFERENCE_MODEL}`) — the FONS fine-tune runs when GPU hardware is enabled",
+    "local": f"person-centred fine-tuned model, local GPU (`{MODEL_ID}`)",
+    "serverless": f"serverless Inference API (`{INFERENCE_MODEL}`) — the person-centred fine-tune runs when GPU hardware is enabled",
     "demo": "demo mode — generation disabled (no GPU and no HF_TOKEN)",
 }[BACKEND]
 
@@ -287,7 +291,7 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                     "What are the key principles of person-centred care?",
                     "How should I document a patient's refusal of medication?",
                     "Explain the importance of relational care in nursing.",
-                    "What is the FONS approach to practice development?",
+                    "What is person-centred practice development?",
                 ],
                 retry_btn=None,
                 undo_btn=None,
