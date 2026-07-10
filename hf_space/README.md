@@ -22,7 +22,7 @@ short_description: Person-centred nursing documentation assistant
 
 # 🤖 Relational AI 4 Nursing
 
-**The first open-source LLM fine-tuned on Foundation of Nursing Studies (FONS) literature for person-centred, equitable clinical documentation.**
+**The first open-source LLM fine-tuned on openly published [International Practice Development Journal](https://www.fons.org/library/journal/) literature, applying the Person-centred Practice Framework for equitable clinical documentation.**
 
 ## Features
 
@@ -53,6 +53,6 @@ This Space uses [NurseCitizenDeveloper/nursing-llama-3-8b-fons](https://huggingf
 
 ## License
 
-CC BY-NC 3.0 (Non-Commercial) - Fine-tuned on FONS/IPDJ open-access literature.
+CC BY-NC 3.0 (Non-Commercial) - Fine-tuned on open-access International Practice Development Journal (IPDJ) literature (https://www.fons.org/library/journal/). This project is independent and not endorsed by the Foundation of Nursing Studies.
 
 > ⚠️ **Disclaimer:** This tool is for research and educational purposes only. All clinical documentation must be verified by a registered nurse.
