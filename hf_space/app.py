@@ -28,7 +28,11 @@ BASE_LLAMA = "NousResearch/Meta-Llama-3-8B"
 # Serverless fallback used on CPU hardware. The FONS PEFT adapter is usually
 # not deployable serverlessly, so default to a capable hosted instruct model;
 # override with the INFERENCE_MODEL variable in Space settings.
+# NOTE: meta-llama models are licence-gated - if the HF_TOKEN account has not
+# accepted the Meta licence, providers reject it, so an ungated fallback is
+# tried automatically.
 INFERENCE_MODEL = os.getenv("INFERENCE_MODEL", "meta-llama/Llama-3.1-8B-Instruct")
+FALLBACK_MODEL = "Qwen/Qwen2.5-7B-Instruct"  # ungated, widely provider-served
 
 # Alpaca prompt format (used during training)
 ALPACA_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
@@ -125,24 +129,56 @@ def generate_response(instruction: str, context: str, max_tokens: int = 256, tem
             {"role": "system", "content": SYSTEM_HINT},
             {"role": "user", "content": f"{instruction}\n\n{context}".strip()},
         ]
-        try:
-            partial_response = ""
-            for chunk in _client.chat_completion(
-                model=INFERENCE_MODEL,
-                messages=messages,
-                max_tokens=max_tokens,
-                temperature=temperature,
-                stream=True,
-            ):
-                delta = chunk.choices[0].delta.content or ""
-                partial_response += delta
-                yield partial_response
-        except Exception as e:  # provider cold-start, quota, or model offline
-            yield (
-                "⚠️ Serverless inference is currently unavailable "
-                f"({type(e).__name__}). Please try again shortly, or run the "
-                f"open model locally: https://huggingface.co/{MODEL_ID}"
-            )
+        candidates = [INFERENCE_MODEL]
+        if FALLBACK_MODEL != INFERENCE_MODEL:
+            candidates.append(FALLBACK_MODEL)
+        last_err = None
+        for mdl in candidates:
+            # Attempt 1: streaming. Some providers interleave role-only or
+            # usage chunks with an empty choices list - skip those instead of
+            # crashing on chunk.choices[0] (the IndexError seen in the wild).
+            try:
+                partial_response = ""
+                for chunk in _client.chat_completion(
+                    model=mdl,
+                    messages=messages,
+                    max_tokens=max_tokens,
+                    temperature=temperature,
+                    stream=True,
+                ):
+                    if not getattr(chunk, "choices", None):
+                        continue
+                    delta = chunk.choices[0].delta.content or ""
+                    if delta:
+                        partial_response += delta
+                        yield partial_response
+                if partial_response:
+                    return
+                raise RuntimeError("stream produced no content")
+            except Exception as e:
+                last_err = e
+            # Attempt 2: non-streaming (some provider routes only support this)
+            try:
+                resp = _client.chat_completion(
+                    model=mdl,
+                    messages=messages,
+                    max_tokens=max_tokens,
+                    temperature=temperature,
+                )
+                if getattr(resp, "choices", None) and resp.choices[0].message.content:
+                    yield resp.choices[0].message.content
+                    return
+                raise RuntimeError("empty completion")
+            except Exception as e:
+                last_err = e
+                continue  # try the next candidate model
+        detail = f"{type(last_err).__name__}: {str(last_err)[:200]}" if last_err else "unknown"
+        yield (
+            "⚠️ Serverless inference is currently unavailable "
+            f"({detail}). Tried: {', '.join(candidates)}. Please try again "
+            "shortly, or run the open model locally: "
+            f"https://huggingface.co/{MODEL_ID}"
+        )
 
     else:
         yield DEMO_MESSAGE
