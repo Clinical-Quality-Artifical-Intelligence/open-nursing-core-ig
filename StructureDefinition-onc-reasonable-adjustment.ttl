@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCReasonableAdjustment"] ;
   fhir:StructureDefinition.title [ fhir:value "Reasonable Adjustment"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-09T22:28:17+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-10T11:01:35+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print')."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

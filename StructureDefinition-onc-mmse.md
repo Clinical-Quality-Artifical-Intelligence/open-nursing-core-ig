@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mmse | *Version*:1.0.0 |
-| Active as of 2026-07-09 | *Computable Name*:ONCMMSE |
+| Active as of 2026-07-10 | *Computable Name*:ONCMMSE |
 
  
 Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mmse.csv), [Exce
   "name" : "ONCMMSE",
   "title" : "Mini Mental State Examination (MMSE)",
   "status" : "active",
-  "date" : "2026-07-09T22:28:17+00:00",
+  "date" : "2026-07-10T11:01:35+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30.",
   "fhirVersion" : "4.0.1",

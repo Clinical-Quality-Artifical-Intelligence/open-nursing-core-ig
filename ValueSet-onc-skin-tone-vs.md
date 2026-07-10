@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs | *Version*:1.0.0 |
-| Active as of 2026-07-09 | *Computable Name*:SkinToneVS |
+| Active as of 2026-07-10 | *Computable Name*:SkinToneVS |
 
  
 Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems. 
@@ -52,7 +52,7 @@ Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recom
   "title" : "Skin Tone Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-09T22:28:17+00:00",
+  "date" : "2026-07-10T11:01:35+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems.",
   "compose" : {

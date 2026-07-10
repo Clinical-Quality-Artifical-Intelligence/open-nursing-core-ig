@@ -10,7 +10,7 @@
   "name" : "ONCMedicationAbility",
   "title" : "Medication Management Ability",
   "status" : "active",
-  "date" : "2026-07-09T22:28:17+00:00",
+  "date" : "2026-07-10T11:01:35+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of the patient's ability to manage their own medication.",
   "fhirVersion" : "4.0.1",

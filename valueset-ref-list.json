@@ -224,8 +224,8 @@
     "uses" : {
     },
     "Questionnaire-onc-braden-questionnaire.html" : "Braden Scale (Pressure Ulcer Risk)",
-    "Questionnaire-onc-waterlow-questionnaire.html" : "Waterlow Score (Pressure Ulcer Risk)",
     "Questionnaire-onc-monk-skintone-questionnaire.html" : "Monk Skin Tone Scale (A–J)",
+    "Questionnaire-onc-waterlow-questionnaire.html" : "Waterlow Score (Pressure Ulcer Risk)",
     "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
   },
   {

@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCFluidBalance"] ;
   fhir:StructureDefinition.title [ fhir:value "Fluid Balance"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-09T22:28:17+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-10T11:01:35+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

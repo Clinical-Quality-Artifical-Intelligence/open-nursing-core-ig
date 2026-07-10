@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-adpie-vs | *Version*:1.0.0 |
-| Active as of 2026-07-09 | *Computable Name*:ONCADPIEVS |
+| Active as of 2026-07-10 | *Computable Name*:ONCADPIEVS |
 
  
 The five phases of the professional nursing process. 
@@ -50,7 +50,7 @@ The five phases of the professional nursing process.
   "name" : "ONCADPIEVS",
   "title" : "ADPIE Nursing Process Phases",
   "status" : "active",
-  "date" : "2026-07-09T22:28:17+00:00",
+  "date" : "2026-07-10T11:01:35+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "The five phases of the professional nursing process.",
   "compose" : {

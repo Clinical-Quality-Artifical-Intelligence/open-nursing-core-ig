@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment | *Version*:1.0.0 |
-| Active as of 2026-07-09 | *Computable Name*:ONCBladderAssessment |
+| Active as of 2026-07-10 | *Computable Name*:ONCBladderAssessment |
 
  
 Detailed assessment of bladder function, including voiding patterns. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-bladder-assessme
   "name" : "ONCBladderAssessment",
   "title" : "Bladder Assessment",
   "status" : "active",
-  "date" : "2026-07-09T22:28:17+00:00",
+  "date" : "2026-07-10T11:01:35+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Detailed assessment of bladder function, including voiding patterns.",
   "fhirVersion" : "4.0.1",

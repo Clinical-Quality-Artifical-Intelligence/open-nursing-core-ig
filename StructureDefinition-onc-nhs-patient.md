@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient | *Version*:1.0.0 |
-| Active as of 2026-07-09 | *Computable Name*:ONCNHSPatient |
+| Active as of 2026-07-10 | *Computable Name*:ONCNHSPatient |
 
  
 A patient profile for use in NHS nursing contexts with ethnic category extension. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nhs-patient.csv)
   "name" : "ONCNHSPatient",
   "title" : "ONC NHS Patient",
   "status" : "active",
-  "date" : "2026-07-09T22:28:17+00:00",
+  "date" : "2026-07-10T11:01:35+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A patient profile for use in NHS nursing contexts with ethnic category extension.",
   "fhirVersion" : "4.0.1",

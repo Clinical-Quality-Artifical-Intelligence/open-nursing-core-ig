@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs | *Version*:1.0.0 |
-| Active as of 2026-07-09 | *Computable Name*:ONCMonkScaleVS |
+| Active as of 2026-07-10 | *Computable Name*:ONCMonkScaleVS |
 
  **References** 
 
@@ -50,7 +50,7 @@
   "name" : "ONCMonkScaleVS",
   "title" : "Monk Skin Tone Scale ValueSet",
   "status" : "active",
-  "date" : "2026-07-09T22:28:17+00:00",
+  "date" : "2026-07-10T11:01:35+00:00",
   "publisher" : "The Open Nursing Community",
   "compose" : {
     "include" : [{

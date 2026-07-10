@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment | *Version*:1.0.0 |
-| Active as of 2026-07-09 | *Computable Name*:ONCWoundAssessment |
+| Active as of 2026-07-10 | *Computable Name*:ONCWoundAssessment |
 
  
 Comprehensive wound assessment including staging and dimensions 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-wound-assessment
   "name" : "ONCWoundAssessment",
   "title" : "Wound Assessment",
   "status" : "active",
-  "date" : "2026-07-09T22:28:17+00:00",
+  "date" : "2026-07-10T11:01:35+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Comprehensive wound assessment including staging and dimensions",
   "fhirVersion" : "4.0.1",

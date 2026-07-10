@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/Questionnaire/onc-waterlow-questionnaire | *Version*:1.0.0 |
-| Draft as of 2026-07-09 | *Computable Name*:ONCWaterlowQuestionnaire |
+| Draft as of 2026-07-10 | *Computable Name*:ONCWaterlowQuestionnaire |
 
  
 SDC questionnaire for the Waterlow pressure-ulcer risk assessment total score, with a mandatory Monk Skin Tone item (equity fairness gate embedded at the capture layer). The total extracts to an Observation using the ONC Waterlow code; linking the skin-tone Observation via hasMember[skinTone] is the capturing app's responsibility. 
@@ -32,7 +32,7 @@ SDC questionnaire for the Waterlow pressure-ulcer risk assessment total score, w
   "title" : "Waterlow Score (Pressure Ulcer Risk)",
   "status" : "draft",
   "subjectType" : ["Patient"],
-  "date" : "2026-07-09T22:28:17+00:00",
+  "date" : "2026-07-10T11:01:35+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "SDC questionnaire for the Waterlow pressure-ulcer risk assessment total score, with a mandatory Monk Skin Tone item (equity fairness gate embedded at the capture layer). The total extracts to an Observation using the ONC Waterlow code; linking the skin-tone Observation via hasMember[skinTone] is the capturing app's responsibility.",
   "item" : [{
