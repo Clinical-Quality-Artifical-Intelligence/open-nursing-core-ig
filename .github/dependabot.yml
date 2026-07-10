@@ -19,6 +19,11 @@ updates:
     labels:
       - dependencies
       - python
+    ignore:
+      # gradio is installed by the Space runtime at the exact version pinned
+      # in hf_space/README.md front-matter (sdk_version); adding a second pin
+      # here breaks the Space build with ResolutionImpossible.
+      - dependency-name: gradio
 
   # npm package manifest (FHIR IG package)
   - package-ecosystem: npm

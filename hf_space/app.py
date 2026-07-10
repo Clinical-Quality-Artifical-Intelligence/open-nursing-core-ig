@@ -1,13 +1,19 @@
 """
 Relational AI 4 Nursing - Hugging Face Spaces Demo
 Fine-tuned Llama-3-8B for person-centred nursing documentation.
+
+Hardware-adaptive backend so the Space can run on FREE CPU hardware:
+- GPU available  -> load the fine-tuned model locally (8-bit + PEFT adapter)
+- CPU only       -> route generation to the HF serverless Inference API
+                    (needs the HF_TOKEN Space secret; model overridable via
+                    the INFERENCE_MODEL Space variable)
+- neither works  -> clearly-labelled demo mode instead of a crash
 """
 import gradio as gr
 import torch
 import os
-from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer
 from threading import Thread
-from huggingface_hub import login
+from huggingface_hub import login, InferenceClient
 from mdt_orchestrator import MDTOrchestrator
 
 # Login to Hugging Face (Requires HF_TOKEN secret in Space settings)
@@ -18,6 +24,11 @@ if os.getenv("HF_TOKEN"):
 # MODEL CONFIGURATION
 # ============================================
 MODEL_ID = "NurseCitizenDeveloper/nursing-llama-3-8b-fons"
+BASE_LLAMA = "NousResearch/Meta-Llama-3-8B"
+# Serverless fallback used on CPU hardware. The FONS PEFT adapter is usually
+# not deployable serverlessly, so default to a capable hosted instruct model;
+# override with the INFERENCE_MODEL variable in Space settings.
+INFERENCE_MODEL = os.getenv("INFERENCE_MODEL", "meta-llama/Llama-3.1-8B-Instruct")
 
 # Alpaca prompt format (used during training)
 ALPACA_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
@@ -31,68 +42,110 @@ ALPACA_TEMPLATE = """Below is an instruction that describes a task, paired with 
 ### Response:
 """
 
-# ============================================
-# LOAD MODEL (PEFT / Adapter Compatible)
-# ============================================
-# ============================================
-# LOAD MODEL (PEFT / Adapter Compatible)
-# ============================================
-# 8-bit quantization for efficiency on L4 GPU
-LLAMA_ID = "NurseCitizenDeveloper/nursing-llama-3-8b-fons"
-BASE_LLAMA = "NousResearch/Meta-Llama-3-8B"
-
-print(f"🔄 Loading Llama-3 Base: {BASE_LLAMA}")
-
-tokenizer = AutoTokenizer.from_pretrained(LLAMA_ID)
-model = AutoModelForCausalLM.from_pretrained(
-    BASE_LLAMA,
-    device_map="auto",
-    load_in_8bit=True,
-    trust_remote_code=True,
+SYSTEM_HINT = (
+    "You are an expert clinical nursing assistant grounded in FONS "
+    "person-centred practice principles. Be empathetic, dignified and "
+    "clinically accurate. This is decision support, not clinical judgement."
 )
 
-print(f"🧩 Applying Llama adapter: {LLAMA_ID}")
-from peft import PeftModel
-model = PeftModel.from_pretrained(model, LLAMA_ID)
+# ============================================
+# BACKEND SELECTION (GPU-local vs serverless)
+# ============================================
+BACKEND = "demo"
+model = None
+tokenizer = None
+_client = None
 
-# Fix pad token to prevent CUDA crashes
-if tokenizer.pad_token is None:
-    tokenizer.pad_token = tokenizer.eos_token
-    tokenizer.pad_token_id = tokenizer.eos_token_id
+if torch.cuda.is_available():
+    # ---- GPU path: load the fine-tuned model locally (8-bit + adapter) ----
+    from transformers import (AutoModelForCausalLM, AutoTokenizer,
+                              BitsAndBytesConfig, TextIteratorStreamer)
+    print(f"🔄 GPU detected - loading Llama-3 base: {BASE_LLAMA}")
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
+    model = AutoModelForCausalLM.from_pretrained(
+        BASE_LLAMA,
+        device_map="auto",
+        quantization_config=BitsAndBytesConfig(load_in_8bit=True),
+        trust_remote_code=True,
+    )
+    print(f"🧩 Applying FONS adapter: {MODEL_ID}")
+    from peft import PeftModel
+    model = PeftModel.from_pretrained(model, MODEL_ID)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+    BACKEND = "local"
+    print("✅ Fine-tuned model loaded (local GPU backend)")
+elif os.getenv("HF_TOKEN"):
+    # ---- CPU path: serverless Inference API ----
+    _client = InferenceClient(token=os.getenv("HF_TOKEN"))
+    BACKEND = "serverless"
+    print(f"🌐 No GPU - using serverless Inference API ({INFERENCE_MODEL})")
+else:
+    print("⚠️ No GPU and no HF_TOKEN - running in demo mode (no generation)")
 
-print("✅ Model Loaded Successfully!")
+DEMO_MESSAGE = (
+    "**Demo mode.** This Space is running on free CPU hardware without an "
+    "`HF_TOKEN` secret, so live generation is disabled.\n\n"
+    "To enable responses: add an `HF_TOKEN` secret in the Space settings "
+    "(serverless inference), or upgrade the hardware to GPU to run the "
+    f"fine-tuned model `{MODEL_ID}` locally.\n\n"
+    "The model itself is openly available: "
+    f"https://huggingface.co/{MODEL_ID}"
+)
 
 # ============================================
-# GENERATION FUNCTION
+# GENERATION FUNCTION (same contract for every tab)
 # ============================================
 def generate_response(instruction: str, context: str, max_tokens: int = 256, temperature: float = 0.7):
-    """Generate a response using the fine-tuned model."""
-    prompt = ALPACA_TEMPLATE.format(instruction=instruction, context=context)
-    
-    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-    
-    # Streaming setup
-    streamer = TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
-    
-    generation_kwargs = dict(
-        **inputs,
-        max_new_tokens=max_tokens,
-        do_sample=True,
-        temperature=temperature,
-        top_p=0.9,
-        repetition_penalty=1.2,
-        streamer=streamer,
-    )
-    
-    # Run generation in a thread for streaming
-    thread = Thread(target=model.generate, kwargs=generation_kwargs)
-    thread.start()
-    
-    # Yield tokens as they arrive
-    partial_response = ""
-    for new_text in streamer:
-        partial_response += new_text
-        yield partial_response
+    """Stream a response from whichever backend is active."""
+    if BACKEND == "local":
+        prompt = ALPACA_TEMPLATE.format(instruction=instruction, context=context)
+        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        from transformers import TextIteratorStreamer
+        streamer = TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
+        generation_kwargs = dict(
+            **inputs,
+            max_new_tokens=max_tokens,
+            do_sample=True,
+            temperature=temperature,
+            top_p=0.9,
+            repetition_penalty=1.2,
+            streamer=streamer,
+        )
+        thread = Thread(target=model.generate, kwargs=generation_kwargs)
+        thread.start()
+        partial_response = ""
+        for new_text in streamer:
+            partial_response += new_text
+            yield partial_response
+
+    elif BACKEND == "serverless":
+        messages = [
+            {"role": "system", "content": SYSTEM_HINT},
+            {"role": "user", "content": f"{instruction}\n\n{context}".strip()},
+        ]
+        try:
+            partial_response = ""
+            for chunk in _client.chat_completion(
+                model=INFERENCE_MODEL,
+                messages=messages,
+                max_tokens=max_tokens,
+                temperature=temperature,
+                stream=True,
+            ):
+                delta = chunk.choices[0].delta.content or ""
+                partial_response += delta
+                yield partial_response
+        except Exception as e:  # provider cold-start, quota, or model offline
+            yield (
+                "⚠️ Serverless inference is currently unavailable "
+                f"({type(e).__name__}). Please try again shortly, or run the "
+                f"open model locally: https://huggingface.co/{MODEL_ID}"
+            )
+
+    else:
+        yield DEMO_MESSAGE
 
 
 
@@ -178,9 +231,16 @@ header_html = """
 </div>
 """
 
+BACKEND_LABEL = {
+    "local": f"fine-tuned FONS model, local GPU (`{MODEL_ID}`)",
+    "serverless": f"serverless Inference API (`{INFERENCE_MODEL}`) — the FONS fine-tune runs when GPU hardware is enabled",
+    "demo": "demo mode — generation disabled (no GPU and no HF_TOKEN)",
+}[BACKEND]
+
 with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
     gr.HTML(header_html)
-    
+    gr.Markdown(f"> **Active backend:** {BACKEND_LABEL}")
+
     with gr.Tabs():
         # Tab 1: Chat Interface
         with gr.TabItem("💬 Chat Assistant"):
