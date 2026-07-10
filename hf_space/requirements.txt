@@ -8,7 +8,7 @@
 # Verified with pip's resolver (py3.11): this set solves; hub>=1 or
 # transformers>=5 makes it ResolutionImpossible or crashes at import.
 # Dependabot is configured to ignore semver-major updates in this directory.
-huggingface_hub>=0.30,<1.0
+huggingface_hub>=1.23.0,<2.0
 # Backport of the stdlib audioop module removed in Python 3.13 (PEP 594);
 # gradio 4.x -> pydub needs it. No-op on the pinned 3.11 runtime, protective
 # if the python_version pin is ever lifted.
