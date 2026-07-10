@@ -6,6 +6,10 @@
 # ResolutionImpossible (this is exactly what broke the Space build when
 # Dependabot added gradio>=6 here).
 huggingface_hub>=0.30
+# Backport of the stdlib audioop module removed in Python 3.13 (PEP 594);
+# gradio 4.x -> pydub needs it. No-op on the pinned 3.11 runtime, protective
+# if the python_version pin is ever lifted.
+audioop-lts>=0.2.1; python_version >= "3.13"
 torch>=2.13.0
 transformers>=5.13.0
 accelerate>=1.14.0
