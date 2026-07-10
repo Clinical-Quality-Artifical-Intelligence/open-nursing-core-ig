@@ -29,4 +29,4 @@ torch>=2.4
 transformers>=4.45,<5
 accelerate>=0.30
 bitsandbytes>=0.43
-peft>=0.10.0
+peft>=0.19.1
