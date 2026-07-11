@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONC4ATDelirium"] ;
   fhir:StructureDefinition.title [ fhir:value "4AT Delirium Assessment"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:47:20+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-11T18:02:47+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

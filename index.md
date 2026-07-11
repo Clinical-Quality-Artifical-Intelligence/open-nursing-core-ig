@@ -16,7 +16,7 @@
 
 The **Open Nursing Core FHIR Implementation Guide (ONC-IG)** provides a foundational set of standardised, nurse-led data models for the NHS and comparable health systems. It is built on **HL7 FHIR R4 (4.0.1)** and organised around the complete nursing process — **Assessment, Diagnosis, Planning, Implementation and Evaluation (ADPIE)** — rather than a purely pathology-driven medical model.
 
-The IG is grounded in United Kingdom nursing and information standards, in particular the **Professional Record Standards Body (PRSB)** Nursing Care Needs standard, the **NANDA International (NANDA-I)** diagnostic taxonomy, and the person-centred practice principles of the **Foundation of Nursing Studies (FONS)**.
+The IG is informed by United Kingdom nursing and information standards, in particular the **Professional Record Standards Body (PRSB)** Nursing Care Needs standard, the **NANDA International (NANDA-I)** diagnostic taxonomy, and open-access literature on person-centredness and practice development from the [International Practice Development Journal (IPDJ)](https://www.fons.org/library/journal/).
 
 ## Purpose and scope
 
@@ -27,7 +27,7 @@ The current release defines **60 profiles**, **27 value sets**, **3 code systems
 ## Core principles
 
 * **Process-led** — every profile maps to a phase of the [ADPIE nursing process](adpie.md), making the **reasoning** of care computable, not only its outcomes.
-* **Person-centred** — captures "[What Matters to Me](StructureDefinition-onc-what-matters.md)" and the [Patient Story](StructureDefinition-onc-patient-story.md) alongside clinical measurement, in line with FONS values-based practice.
+* **Person-centred** — captures "[What Matters to Me](StructureDefinition-onc-what-matters.md)" and the [Patient Story](StructureDefinition-onc-patient-story.md) alongside clinical measurement, informed by IPDJ literature on person-centred practice.
 * **Equitable by design** — leads with the [Monk Skin Tone Scale](equity.md) for skin assessment and records [Reasonable Adjustments](StructureDefinition-onc-reasonable-adjustment.md) under the Equality Act 2010. See the [Health Equity & Inclusion](equity.md) page.
 * **Safety-aware** — validated instruments such as [NEWS2](StructureDefinition-onc-news2-score.md) and pressure-ulcer risk scores act as clinical [safety gates](safety.md).
 
@@ -91,7 +91,7 @@ Instruments for learning disability, mental health and older-person care.
 * [Security & Privacy](security.md) — UK GDPR, DSPT and Caldicott
 * [Terminology](terminology.md) — SNOMED CT, LOINC and the ONC code systems
 * [Structured Data Capture](questionnaires.md) — SDC Questionnaires for offline-first capture (Open Health Stack compatible)
-* [Relational AI](relation-ai.md) — the FONS-aligned language model
+* [Relational AI](relation-ai.md) — a research language model trained on open-access IPDJ materials
 * [Published Versions](history.md) — release history
 
 ## Getting started
@@ -157,7 +157,7 @@ This publication includes IP covered under the following statements.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-07-11T14:47:20+00:00",
+  "date" : "2026-07-11T18:02:47+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md.",
   "packageId" : "onc.ig",

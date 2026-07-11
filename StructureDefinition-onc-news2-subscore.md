@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-subscore.c
   "name" : "ONCNEWS2Subscore",
   "title" : "NEWS2 Sub-Score",
   "status" : "active",
-  "date" : "2026-07-11T14:47:20+00:00",
+  "date" : "2026-07-11T18:02:47+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.",
   "fhirVersion" : "4.0.1",

@@ -32,7 +32,7 @@ SDC questionnaire for the Braden pressure-ulcer risk assessment: six subscales, 
   "title" : "Braden Scale (Pressure Ulcer Risk)",
   "status" : "draft",
   "subjectType" : ["Patient"],
-  "date" : "2026-07-11T14:47:20+00:00",
+  "date" : "2026-07-11T18:02:47+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "SDC questionnaire for the Braden pressure-ulcer risk assessment: six subscales, total score, and a mandatory Monk Skin Tone item (the equity fairness gate is embedded at the capture layer). Coded items extract to Observations using the ONC Braden component codes; assembling them into the single component-based ONCBradenScaleAssessment Observation (including hasMember[skinTone]) is the capturing app's responsibility.",
   "item" : [{

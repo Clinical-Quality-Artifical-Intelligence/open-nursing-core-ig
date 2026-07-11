@@ -51,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Pain Score Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-11T14:47:20+00:00",
+  "date" : "2026-07-11T18:02:47+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Standard 0-10 or Abbey Pain Scale score",
   "compose" : {
