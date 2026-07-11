@@ -60,6 +60,7 @@ jobs:
       run: |
         java -jar input-cache/publisher.jar -ig .
         cp publication/package-list.json output/package-list.json
+        cp publication/package-feed.xml output/package-feed.xml
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
