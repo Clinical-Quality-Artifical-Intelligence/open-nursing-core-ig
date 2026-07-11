@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale | *Version*:1.0.0 |
-| Draft as of 2026-07-10 | *Computable Name*:ONCClinicalFrailtyScale |
+| Draft as of 2026-07-11 | *Computable Name*:ONCClinicalFrailtyScale |
 
  
 Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-clinical-frailty
   "name" : "ONCClinicalFrailtyScale",
   "title" : "Clinical Frailty Scale (CFS)",
   "status" : "draft",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status.",
   "fhirVersion" : "4.0.1",

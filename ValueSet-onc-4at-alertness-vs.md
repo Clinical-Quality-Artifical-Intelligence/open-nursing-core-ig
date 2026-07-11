@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-4at-alertness-vs | *Version*:1.0.0 |
-| Active as of 2026-07-10 | *Computable Name*:AlertnessVS |
+| Active as of 2026-07-11 | *Computable Name*:AlertnessVS |
 
  
 Scoring options for 4AT Alertness 
@@ -50,7 +50,7 @@ Scoring options for 4AT Alertness
   "name" : "AlertnessVS",
   "title" : "4AT Alertness Value Set",
   "status" : "active",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Scoring options for 4AT Alertness",
   "compose" : {

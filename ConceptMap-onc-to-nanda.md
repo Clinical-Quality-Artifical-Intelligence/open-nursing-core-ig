@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ConceptMap/onc-to-nanda | *Version*:1.0.0 |
-| Draft as of 2026-07-10 | *Computable Name*:ONCToNandaMapping |
+| Draft as of 2026-07-11 | *Computable Name*:ONCToNandaMapping |
 
  
 Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below. 
@@ -27,7 +27,7 @@ Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODU
   "name" : "ONCToNandaMapping",
   "title" : "Mapping ONC Relational Concepts to NANDA-I",
   "status" : "draft",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below.",
   "sourceCanonical" : "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs",

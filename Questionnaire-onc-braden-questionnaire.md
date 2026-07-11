@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/Questionnaire/onc-braden-questionnaire | *Version*:1.0.0 |
-| Draft as of 2026-07-10 | *Computable Name*:ONCBradenQuestionnaire |
+| Draft as of 2026-07-11 | *Computable Name*:ONCBradenQuestionnaire |
 
  
 SDC questionnaire for the Braden pressure-ulcer risk assessment: six subscales, total score, and a mandatory Monk Skin Tone item (the equity fairness gate is embedded at the capture layer). Coded items extract to Observations using the ONC Braden component codes; assembling them into the single component-based ONCBradenScaleAssessment Observation (including hasMember[skinTone]) is the capturing app's responsibility. 
@@ -32,7 +32,7 @@ SDC questionnaire for the Braden pressure-ulcer risk assessment: six subscales, 
   "title" : "Braden Scale (Pressure Ulcer Risk)",
   "status" : "draft",
   "subjectType" : ["Patient"],
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "SDC questionnaire for the Braden pressure-ulcer risk assessment: six subscales, total score, and a mandatory Monk Skin Tone item (the equity fairness gate is embedded at the capture layer). Coded items extract to Observations using the ONC Braden component codes; assembling them into the single component-based ONCBradenScaleAssessment Observation (including hasMember[skinTone]) is the capturing app's responsibility.",
   "item" : [{
@@ -234,7 +234,76 @@ SDC questionnaire for the Braden pressure-ulcer risk assessment: six subscales, 
     "text" : "Monk Skin Tone Scale rating (required — equity fairness gate: pressure-area assessment is incomplete without the patient's skin tone)",
     "type" : "choice",
     "required" : true,
-    "answerValueSet" : "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs"
+    "answerOption" : [{
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "A",
+        "display" : "Light Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "B",
+        "display" : "Light-Medium Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "C",
+        "display" : "Medium Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "D",
+        "display" : "Medium-Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "E",
+        "display" : "Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "F",
+        "display" : "Deep Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "G",
+        "display" : "Very Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "H",
+        "display" : "Deepest Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "I",
+        "display" : "Ultra Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "J",
+        "display" : "Black Skin"
+      }
+    }]
   },
   {
     "linkId" : "braden-banding",

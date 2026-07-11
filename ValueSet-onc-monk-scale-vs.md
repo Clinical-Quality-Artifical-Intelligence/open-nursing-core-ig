@@ -9,14 +9,11 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs | *Version*:1.0.0 |
-| Active as of 2026-07-10 | *Computable Name*:ONCMonkScaleVS |
+| Active as of 2026-07-11 | *Computable Name*:ONCMonkScaleVS |
 
  **References** 
 
 * [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md)
-* [Braden Scale (Pressure Ulcer Risk)](Questionnaire-onc-braden-questionnaire.md)
-* [Monk Skin Tone Scale (A–J)](Questionnaire-onc-monk-skintone-questionnaire.md)
-* [Waterlow Score (Pressure Ulcer Risk)](Questionnaire-onc-waterlow-questionnaire.md)
 
 ### Logical Definition (CLD)
 
@@ -50,7 +47,7 @@
   "name" : "ONCMonkScaleVS",
   "title" : "Monk Skin Tone Scale ValueSet",
   "status" : "active",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "compose" : {
     "include" : [{

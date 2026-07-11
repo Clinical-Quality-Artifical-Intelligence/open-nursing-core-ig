@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-heart-rate | *Version*:1.0.0 |
-| Active as of 2026-07-10 | *Computable Name*:ONCHeartRate |
+| Active as of 2026-07-11 | *Computable Name*:ONCHeartRate |
 
  
 Heart rate (pulse) observation for NEWS2 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-heart-rate.csv),
   "name" : "ONCHeartRate",
   "title" : "Heart Rate",
   "status" : "active",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Heart rate (pulse) observation for NEWS2",
   "fhirVersion" : "4.0.1",

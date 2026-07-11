@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-must-score | *Version*:1.0.0 |
-| Active as of 2026-07-10 | *Computable Name*:ONCMUSTScore |
+| Active as of 2026-07-11 | *Computable Name*:ONCMUSTScore |
 
  
 Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
   "name" : "ONCMUSTScore",
   "title" : "MUST Score (Malnutrition Universal Screening Tool)",
   "status" : "active",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening.",
   "fhirVersion" : "4.0.1",

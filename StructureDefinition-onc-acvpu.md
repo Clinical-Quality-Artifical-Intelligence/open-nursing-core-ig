@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-acvpu | *Version*:1.0.0 |
-| Active as of 2026-07-10 | *Computable Name*:ONCACVPU |
+| Active as of 2026-07-11 | *Computable Name*:ONCACVPU |
 
  
 ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-acvpu.csv), [Exc
   "name" : "ONCACVPU",
   "title" : "ACVPU Consciousness Level",
   "status" : "active",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)",
   "fhirVersion" : "4.0.1",

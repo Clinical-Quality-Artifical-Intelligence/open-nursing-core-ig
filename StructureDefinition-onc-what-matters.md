@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-what-matters | *Version*:1.0.0 |
-| Draft as of 2026-07-10 | *Computable Name*:ONCWhatMattersToMe |
+| Draft as of 2026-07-11 | *Computable Name*:ONCWhatMattersToMe |
 
  
 Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-what-matters.csv
   "name" : "ONCWhatMattersToMe",
   "title" : "What Matters to Me",
   "status" : "draft",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care.",
   "fhirVersion" : "4.0.1",

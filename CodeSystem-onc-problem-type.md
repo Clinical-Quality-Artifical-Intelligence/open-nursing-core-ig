@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/CodeSystem/onc-problem-type | *Version*:1.0.0 |
-| Active as of 2026-07-10 | *Computable Name*:ONCProblemType |
+| Active as of 2026-07-11 | *Computable Name*:ONCProblemType |
 
  
 Code system for categorizing types of nursing problems 
@@ -32,7 +32,7 @@ Code system for categorizing types of nursing problems
   "title" : "Problem Type CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Code system for categorizing types of nursing problems",
   "caseSensitive" : true,

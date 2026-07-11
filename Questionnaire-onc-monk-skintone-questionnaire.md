@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/Questionnaire/onc-monk-skintone-questionnaire | *Version*:1.0.0 |
-| Draft as of 2026-07-10 | *Computable Name*:ONCMonkSkinToneQuestionnaire |
+| Draft as of 2026-07-11 | *Computable Name*:ONCMonkSkinToneQuestionnaire |
 
  
 SDC questionnaire capturing the patient's skin tone on the 10-point Monk Skin Tone Scale (A–J). Extracts to an Observation conforming to ONCMonkSkinToneObservation. This record is the required input to the IG's equity fairness gate for wound and pressure-area assessment. 
@@ -32,7 +32,7 @@ SDC questionnaire capturing the patient's skin tone on the 10-point Monk Skin To
   "title" : "Monk Skin Tone Scale (A–J)",
   "status" : "draft",
   "subjectType" : ["Patient"],
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "SDC questionnaire capturing the patient's skin tone on the 10-point Monk Skin Tone Scale (A–J). Extracts to an Observation conforming to ONCMonkSkinToneObservation. This record is the required input to the IG's equity fairness gate for wound and pressure-area assessment.",
   "item" : [{
@@ -50,7 +50,76 @@ SDC questionnaire capturing the patient's skin tone on the 10-point Monk Skin To
     "text" : "Monk Skin Tone Scale rating",
     "type" : "choice",
     "required" : true,
-    "answerValueSet" : "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs"
+    "answerOption" : [{
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "A",
+        "display" : "Light Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "B",
+        "display" : "Light-Medium Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "C",
+        "display" : "Medium Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "D",
+        "display" : "Medium-Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "E",
+        "display" : "Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "F",
+        "display" : "Deep Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "G",
+        "display" : "Very Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "H",
+        "display" : "Deepest Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "I",
+        "display" : "Ultra Dark Skin"
+      }
+    },
+    {
+      "valueCoding" : {
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
+        "code" : "J",
+        "display" : "Black Skin"
+      }
+    }]
   }]
 }
 

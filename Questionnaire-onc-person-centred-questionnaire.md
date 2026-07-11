@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/Questionnaire/onc-person-centred-questionnaire | *Version*:1.0.0 |
-| Draft as of 2026-07-10 | *Computable Name*:ONCPersonCentredQuestionnaire |
+| Draft as of 2026-07-11 | *Computable Name*:ONCPersonCentredQuestionnaire |
 
  
 SDC questionnaire capturing 'What Matters to Me' and reasonable adjustments (Equality Act 2010) as structured, retrievable records. Items extract to Observations conforming to ONCWhatMattersToMe and ONCReasonableAdjustment. 
@@ -32,7 +32,7 @@ SDC questionnaire capturing 'What Matters to Me' and reasonable adjustments (Equ
   "title" : "Person-Centred Care (What Matters to Me & Reasonable Adjustments)",
   "status" : "draft",
   "subjectType" : ["Patient"],
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "SDC questionnaire capturing 'What Matters to Me' and reasonable adjustments (Equality Act 2010) as structured, retrievable records. Items extract to Observations conforming to ONCWhatMattersToMe and ONCReasonableAdjustment.",
   "item" : [{

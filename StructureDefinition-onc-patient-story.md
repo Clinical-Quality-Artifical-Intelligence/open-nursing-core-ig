@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-patient-story | *Version*:1.0.0 |
-| Draft as of 2026-07-10 | *Computable Name*:ONCPatientStory |
+| Draft as of 2026-07-11 | *Computable Name*:ONCPatientStory |
 
  
 A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-patient-story.cs
   "name" : "ONCPatientStory",
   "title" : "Patient Story",
   "status" : "draft",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'.",
   "fhirVersion" : "4.0.1",

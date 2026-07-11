@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance | *Version*:1.0.0 |
-| Draft as of 2026-07-10 | *Computable Name*:ONCFluidBalance |
+| Draft as of 2026-07-11 | *Computable Name*:ONCFluidBalance |
 
  
 Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-fluid-balance.cs
   "name" : "ONCFluidBalance",
   "title" : "Fluid Balance",
   "status" : "draft",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring.",
   "fhirVersion" : "4.0.1",

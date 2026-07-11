@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/acvpu-vs | *Version*:1.0.0 |
-| Active as of 2026-07-10 | *Computable Name*:ACVPUValueSet |
+| Active as of 2026-07-11 | *Computable Name*:ACVPUValueSet |
 
  
 ACVPU consciousness level codes 
@@ -50,7 +50,7 @@ ACVPU consciousness level codes
   "name" : "ACVPUValueSet",
   "title" : "ACVPU Value Set",
   "status" : "active",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "ACVPU consciousness level codes",
   "compose" : {

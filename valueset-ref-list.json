@@ -184,10 +184,10 @@
     "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
     "uses" : {
     },
+    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model",
     "StructureDefinition-onc-oral-care-assessment.html" : "Oral Care Needs Assessment",
-    "StructureDefinition-onc-hygiene-assessment.html" : "Personal Hygiene Needs Assessment",
     "StructureDefinition-onc-mobility-assessment.html" : "Mobility Assessment",
-    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+    "StructureDefinition-onc-hygiene-assessment.html" : "Personal Hygiene Needs Assessment"
   },
   {
     "url" : "https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs",
@@ -223,9 +223,6 @@
     "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-monk-scale"],
     "uses" : {
     },
-    "Questionnaire-onc-braden-questionnaire.html" : "Braden Scale (Pressure Ulcer Risk)",
-    "Questionnaire-onc-monk-skintone-questionnaire.html" : "Monk Skin Tone Scale (A–J)",
-    "Questionnaire-onc-waterlow-questionnaire.html" : "Waterlow Score (Pressure Ulcer Risk)",
     "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
   },
   {
@@ -291,8 +288,8 @@
     "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
     "uses" : {
     },
-    "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation (Fitzpatrick -- secondary/legacy)",
-    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model",
+    "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation (Fitzpatrick -- secondary/legacy)"
   },
   {
     "url" : "https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/wound-stage-vs | *Version*:1.0.0 |
-| Active as of 2026-07-10 | *Computable Name*:WoundStageValueSet |
+| Active as of 2026-07-11 | *Computable Name*:WoundStageValueSet |
 
  **References** 
 
@@ -47,7 +47,7 @@
   "name" : "WoundStageValueSet",
   "title" : "Wound Stage Value Set",
   "status" : "active",
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "compose" : {
     "include" : [{

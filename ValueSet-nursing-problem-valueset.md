@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/nursing-problem-valueset | *Version*:1.0.0 |
-| Active as of 2026-07-10 | *Computable Name*:NursingProblemValueSet |
+| Active as of 2026-07-11 | *Computable Name*:NursingProblemValueSet |
 
  
 Value set for nursing problems and diagnoses 
@@ -51,7 +51,7 @@ Value set for nursing problems and diagnoses
   "title" : "Nursing Problem Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-10T11:01:35+00:00",
+  "date" : "2026-07-11T09:35:24+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for nursing problems and diagnoses",
   "compose" : {
