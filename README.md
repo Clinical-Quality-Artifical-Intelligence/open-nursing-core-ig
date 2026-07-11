@@ -137,6 +137,7 @@ streamlit run app_phase2.py
 | `input/pagecontent/` | Narrative IG pages (ADPIE, safety, equity, security, terminology…) |
 | `core/`, `db/`, `ml/` | The clinical application (auth, database, ML analytics) |
 | `analytics/equity/` | Equity analytics pipeline — pressure-ulcer detection timeliness by Monk skin tone |
+| `okf/` | Agent-readable knowledge bundle ([Open Knowledge Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf)) generated from the IG |
 | `app_phase2.py` | Streamlit application entry point |
 | `hf_space/` | Hugging Face Space (model demo) |
 | `.github/workflows/` | CI: IG publish, PR validation, CodeQL, traffic tracking |
