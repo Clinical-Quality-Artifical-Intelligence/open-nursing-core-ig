@@ -22,11 +22,13 @@ class Settings(BaseSettings):
     LOG_FILE: str = Field(default="/tmp/nursing_validator.log")
 
     # Security / Users
-    # IMPORTANT: In production, these must be set via env vars.
-    # Default values are provided for development convenience only.
-    ADMIN_PASSWORD: str = Field(default="change_me_admin")
-    NURSE_PASSWORD: str = Field(default="change_me_nurse")
-    CLINICIAN_PASSWORD: str = Field(default="change_me_clinician")
+    # Optional bootstrap credentials. No credentials are supplied by the
+    # application. Production deployments must use a database/identity
+    # provider and explicitly configure any one-time bootstrap accounts.
+    ADMIN_PASSWORD: Optional[str] = Field(default=None)
+    NURSE_PASSWORD: Optional[str] = Field(default=None)
+    CLINICIAN_PASSWORD: Optional[str] = Field(default=None)
+    ALLOW_IN_MEMORY_AUTH: bool = Field(default=False)
 
     # Database
     USE_DATABASE: bool = Field(default=True)
@@ -38,7 +40,7 @@ class Settings(BaseSettings):
     DB_PORT: str = Field(default="5432")
     DB_NAME: str = Field(default="nursing_validator")
     DB_USER: str = Field(default="nursing_admin")
-    DB_PASSWORD: str = Field(default="nursing_password")
+    DB_PASSWORD: Optional[str] = Field(default=None)
     DB_POOL_MIN: int = Field(default=2)
     DB_POOL_MAX: int = Field(default=20)
 
@@ -61,15 +63,28 @@ class Settings(BaseSettings):
         return self.APP_ENV.lower() == "production"
 
     def check_security(self):
-        """Warn if using default insecure passwords."""
-        defaults = ["change_me_admin", "change_me_nurse", "change_me_clinician"]
-        if self.ADMIN_PASSWORD in defaults or \
-           self.NURSE_PASSWORD in defaults or \
-           self.CLINICIAN_PASSWORD in defaults:
-            logger.warning(
-                "SECURITY WARNING: Default passwords are in use. "
-                "Set ADMIN_PASSWORD, NURSE_PASSWORD, and CLINICIAN_PASSWORD in .env."
-            )
+        """Reject insecure production configuration and warn in development."""
+        configured = [
+            self.ADMIN_PASSWORD,
+            self.NURSE_PASSWORD,
+            self.CLINICIAN_PASSWORD,
+        ]
+        placeholders = {
+            "change_me_admin", "change_me_nurse", "change_me_clinician",
+            "change_me_admin_secure", "change_me_nurse_secure",
+            "change_me_clinician_secure", "admin" + "2025", "nurse" + "2025",
+            "clinician" + "2025",
+        }
+        insecure = any(value in placeholders for value in configured if value)
+        if self.is_production():
+            if self.ALLOW_IN_MEMORY_AUTH:
+                raise ValueError("ALLOW_IN_MEMORY_AUTH must be false in production")
+            if insecure:
+                raise ValueError("Placeholder user credentials are forbidden in production")
+            if self.DB_TYPE == "postgres" and not self.DB_PASSWORD:
+                raise ValueError("DB_PASSWORD is required for production PostgreSQL")
+        elif insecure:
+            logger.warning("Placeholder credentials detected; do not use this configuration clinically")
 
 # Create a global instance
 settings = Settings()

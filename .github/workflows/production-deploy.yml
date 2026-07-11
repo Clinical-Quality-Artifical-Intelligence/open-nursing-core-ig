@@ -1,28 +1,11 @@
-name: Production CI/CD Pipeline
+name: Research Demonstration Deployment
 
 # Explicit permissions required since default is now read-only
 permissions:
-  contents: write      # For pushing to gh-pages branch
-  pages: write         # For GitHub Pages deployment
-  id-token: write      # For OIDC authentication
-  pull-requests: read  # For PR checks
-  actions: read        # For workflow artifacts
-  issues: write        # For commenting on issues
-  packages: write      # For pushing the image to GHCR
+  contents: read
+  packages: write
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - 'app.py'
-      - 'app_phase2.py'
-      - 'core/**'
-      - 'db/**'
-      - 'ml/**'
-      - 'visualizations/**'
-      - 'requirements.txt'
-      - 'Dockerfile'
-      - '.github/workflows/production-deploy.yml'
   workflow_dispatch:
     inputs:
       environment:
@@ -59,6 +42,9 @@ jobs:
     - name: Syntax check
       run: |
         python -m compileall -q app.py app_phase2.py core db ml visualizations scripts
+
+    - name: Security regression tests
+      run: python -m pytest -q tests
 
     - name: Code quality checks
       run: |
@@ -191,8 +177,7 @@ jobs:
     
     - name: Test API endpoints
       run: |
-        python -m pytest tests/ -v || echo "Tests completed with warnings"
-      continue-on-error: true
+        python -m pytest tests/ -v
     
     - name: Upload test results
       uses: actions/upload-artifact@v7

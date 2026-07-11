@@ -44,3 +44,14 @@ jobs:
         run: |
           pip install flake8
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+      - name: Clinical-readiness regression tests
+        run: |
+          pip install pytest pydantic pydantic-settings bcrypt
+          pytest -q tests
+      - name: Reject published demonstration credentials
+        run: |
+          banned='(admin|nurse|clinician)''2025'
+          if git grep -nE "$banned" -- '*.md' '*.ps1' '*.sh' '*.yml' '*.yaml' '.env.example' ':!docs/**' ':!template/**'; then
+            echo 'Published demonstration credential detected'
+            exit 1
+          fi
