@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-skintone-observa
   "name" : "ONCSkinToneObservation",
   "title" : "Skin Tone Observation (Fitzpatrick -- secondary/legacy)",
   "status" : "active",
-  "date" : "2026-07-11T14:32:04+00:00",
+  "date" : "2026-07-11T14:47:20+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Fitzpatrick was designed to describe UV photosensitivity, not clinical skin tone, and compresses the darker end of the range into few categories. This profile is RETAINED FOR BACKWARD COMPATIBILITY with systems that already record Fitzpatrick phototypes; it is secondary to, and SHOULD NOT be used in place of, the Monk Skin Tone Scale (see ONCMonkSkinToneObservation), which is this IG's primary and recommended skin-tone vocabulary.",
   "fhirVersion" : "4.0.1",

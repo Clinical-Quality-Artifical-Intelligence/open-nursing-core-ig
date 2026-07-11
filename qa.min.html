@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OpenNursingCoreIG</h1>
- <p>Generated Sat Jul 11 14:35:38 UTC 2026, FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = <a href="https://opennursingcoreig.com">https://opennursingcoreig.com</a> (<a href="https://opennursingcoreig.com/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Sat Jul 11 14:50:40 UTC 2026, FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = <a href="https://opennursingcoreig.com">https://opennursingcoreig.com</a> (<a href="https://opennursingcoreig.com/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.2.10</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = onc.ig, Canonical = https://opennursingcoreig.com</td></tr>
@@ -593,7 +593,7 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><b>Observation&#8203;.value&#8203;.ofType(CodeableConcept) (l37&#8203;/c4)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Skin Tone Value Set' (https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0), and a coding from this value set is required) (codes = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#fitzpatrick-2)</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l33">log</a>, or see <a href="#vmi296" onClick="document.getElementById('vmi296').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span><div id="vmi296" style="display:none"><br/><pre>0ms tx-op
 0ms https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0: Analysing https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0 for validation purposes
 0ms https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest
-0ms https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0: Prepare include[0]: "(https://opennursingcoreig.com/CodeSystem/onc-monk-scale)"
+1ms https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0: Prepare include[0]: "(https://opennursingcoreig.com/CodeSystem/onc-monk-scale)"
 1ms https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0: CodeSystem found: "https://opennursingcoreig.com/CodeSystem/onc-monk-scale|1.0.0"
 1ms https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0: Prepare include[1]: "(https://opennursingcoreig.com/CodeSystem/onc-observation-codes)(codeis-afitzpatrick-1)"
 1ms https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0: CodeSystem found: "https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"
@@ -629,7 +629,7 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire&#8203;.item[6]&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c26917)</b></td><td><b>error</b></td><td><b>Wrong Display Name '{score}' for http://unitsofmeasure.org#1. Valid display is one of 2 choices: '1' (en) or '1' (en) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l10">log</a>, or see <a href="#vmi298" onClick="document.getElementById('vmi298').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi298" style="display:none"><br/><pre>0ms tx-op
 0ms http://unitsofmeasure.org/vs|2.2: Validate "[http://unitsofmeasure.org#1 ("{score}")]"
-1ms http://unitsofmeasure.org/vs|2.2: Check "http://unitsofmeasure.org#1"
+0ms http://unitsofmeasure.org/vs|2.2: Check "http://unitsofmeasure.org#1"
 1ms http://unitsofmeasure.org/vs|2.2: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org|2.2
 1ms http://unitsofmeasure.org/vs|2.2: check code in (http://unitsofmeasure.org) at Coding
 1ms http://unitsofmeasure.org/vs|2.2: Code "1" found in http://unitsofmeasure.org|2.2</pre></div></td><td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  FHIR package feed for the Open Nursing Core IG.
+
+  This RSS 2.0 feed is what the HL7 FHIR package registry crawler reads to
+  publish onc.ig on packages.fhir.org (so FHIR tooling and Open Health Stack
+  builds can resolve `onc.ig` as a dependency). It is copied to the site root
+  by the docs.yml workflow. Add a new <item> for every published release,
+  newest first, and keep <lastBuildDate>/<pubDate> as valid RFC-822 dates.
+
+  Registration (one-time): add this feed URL to package-feeds.json and an IG
+  entry to fhir-ig-list.json in the HL7 FHIR/ig-registry repository.
+-->
+<rss version="2.0" xmlns:fhir="http://hl7.org/fhir/feed">
+  <channel>
+    <title>Open Nursing Core FHIR Implementation Guide - Package Feed</title>
+    <link>https://opennursingcoreig.com</link>
+    <description>Published FHIR R4 packages for the Open Nursing Core Implementation Guide (onc.ig): nurse-led profiles for the ADPIE nursing process, clinical-safety instruments, and equity (Monk Skin Tone) modules.</description>
+    <language>en</language>
+    <pubDate>Fri, 11 Jul 2026 00:00:00 GMT</pubDate>
+    <lastBuildDate>Fri, 11 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <generator>Open Nursing Core</generator>
+    <fhir:canonical>https://opennursingcoreig.com</fhir:canonical>
+    <item>
+      <title>onc.ig#1.0.0</title>
+      <description>Open Nursing Core FHIR Implementation Guide, release 1.0.0 (Trial Use, pre-ballot community release). FHIR R4 (4.0.1).</description>
+      <link>https://opennursingcoreig.com/package.tgz</link>
+      <guid isPermaLink="false">onc.ig#1.0.0</guid>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">The Open Nursing Community</dc:creator>
+      <fhir:version>1.0.0</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 11 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

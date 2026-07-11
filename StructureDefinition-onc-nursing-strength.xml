@@ -21,7 +21,7 @@
   <name value="ONCNursingStrength"/>
   <title value="ONC Nursing Strength"/>
   <status value="active"/>
-  <date value="2026-07-11T14:32:04+00:00"/>
+  <date value="2026-07-11T14:47:20+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models."/>
   <fhirVersion value="4.0.1"/>

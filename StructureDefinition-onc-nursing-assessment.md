@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
   "status" : "active",
-  "date" : "2026-07-11T14:32:04+00:00",
+  "date" : "2026-07-11T14:47:20+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations.",
   "fhirVersion" : "4.0.1",

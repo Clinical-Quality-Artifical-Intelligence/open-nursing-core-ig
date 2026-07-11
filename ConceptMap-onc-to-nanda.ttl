@@ -17,7 +17,7 @@
   fhir:ConceptMap.name [ fhir:value "ONCToNandaMapping"] ;
   fhir:ConceptMap.title [ fhir:value "Mapping ONC Relational Concepts to NANDA-I"] ;
   fhir:ConceptMap.status [ fhir:value "draft"] ;
-  fhir:ConceptMap.date [ fhir:value "2026-07-11T14:32:04+00:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.date [ fhir:value "2026-07-11T14:47:20+00:00"^^xsd:dateTime] ;
   fhir:ConceptMap.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:ConceptMap.description [ fhir:value "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below."] ;
   fhir:ConceptMap.sourceCanonical [

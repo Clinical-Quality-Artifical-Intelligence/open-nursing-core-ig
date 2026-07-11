@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-medication-self-
   "name" : "ONCMedicationSelfAdmin",
   "title" : "Medication Self-Administration Observation",
   "status" : "active",
-  "date" : "2026-07-11T14:32:04+00:00",
+  "date" : "2026-07-11T14:47:20+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of the patient performing self-administration.",
   "fhirVersion" : "4.0.1",
