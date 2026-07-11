@@ -6,6 +6,14 @@
 // libraries (android-fhir Structured Data Capture, kotlin-fhir-data-capture)
 // and any other SDC-conformant renderer. Tracked in GitHub issue #125.
 //
+// Renderer note: Monk Skin Tone choice items inline their ten answerOptions
+// rather than referencing answerValueSet. Canonical ValueSet URLs are not
+// resolvable over plain HTTP from the GitHub Pages site (verified with the
+// NLM LHC-Forms viewer), and offline-first renderers (android-fhir) cannot
+// fetch them either - inline options render everywhere with no terminology
+// server. The ValueSet binding on the target profile still governs
+// extraction conformance.
+//
 // Extraction approach: OBSERVATION-BASED extraction (SDC
 // sdc-questionnaire-observationExtract). Every item that carries an
 // item.code extracts to an Observation with that code; items without a code
@@ -181,7 +189,16 @@ Description: "SDC questionnaire capturing the patient's skin tone on the 10-poin
 * item[1].type = #choice
 * item[1].required = true
 * item[1].code = ONCObservationCodes#mst-score "Monk Skin Tone Score"
-* item[1].answerValueSet = Canonical(ONCMonkScaleVS)
+* item[1].answerOption[0].valueCoding = ONCMonkScale#A "Light Skin"
+* item[1].answerOption[1].valueCoding = ONCMonkScale#B "Light-Medium Skin"
+* item[1].answerOption[2].valueCoding = ONCMonkScale#C "Medium Skin"
+* item[1].answerOption[3].valueCoding = ONCMonkScale#D "Medium-Dark Skin"
+* item[1].answerOption[4].valueCoding = ONCMonkScale#E "Dark Skin"
+* item[1].answerOption[5].valueCoding = ONCMonkScale#F "Deep Dark Skin"
+* item[1].answerOption[6].valueCoding = ONCMonkScale#G "Very Dark Skin"
+* item[1].answerOption[7].valueCoding = ONCMonkScale#H "Deepest Dark Skin"
+* item[1].answerOption[8].valueCoding = ONCMonkScale#I "Ultra Dark Skin"
+* item[1].answerOption[9].valueCoding = ONCMonkScale#J "Black Skin"
 
 // -----------------------------------------------------------------------------
 // 3. Braden Scale (pressure ulcer risk) - with embedded equity gate
@@ -288,7 +305,16 @@ Description: "SDC questionnaire for the Braden pressure-ulcer risk assessment: s
 * item[7].type = #choice
 * item[7].required = true
 * item[7].code = ONCObservationCodes#mst-score "Monk Skin Tone Score"
-* item[7].answerValueSet = Canonical(ONCMonkScaleVS)
+* item[7].answerOption[0].valueCoding = ONCMonkScale#A "Light Skin"
+* item[7].answerOption[1].valueCoding = ONCMonkScale#B "Light-Medium Skin"
+* item[7].answerOption[2].valueCoding = ONCMonkScale#C "Medium Skin"
+* item[7].answerOption[3].valueCoding = ONCMonkScale#D "Medium-Dark Skin"
+* item[7].answerOption[4].valueCoding = ONCMonkScale#E "Dark Skin"
+* item[7].answerOption[5].valueCoding = ONCMonkScale#F "Deep Dark Skin"
+* item[7].answerOption[6].valueCoding = ONCMonkScale#G "Very Dark Skin"
+* item[7].answerOption[7].valueCoding = ONCMonkScale#H "Deepest Dark Skin"
+* item[7].answerOption[8].valueCoding = ONCMonkScale#I "Ultra Dark Skin"
+* item[7].answerOption[9].valueCoding = ONCMonkScale#J "Black Skin"
 
 * item[8].linkId = "braden-banding"
 * item[8].type = #display
@@ -332,7 +358,16 @@ Description: "SDC questionnaire for the Waterlow pressure-ulcer risk assessment 
 * item[2].type = #choice
 * item[2].required = true
 * item[2].code = ONCObservationCodes#mst-score "Monk Skin Tone Score"
-* item[2].answerValueSet = Canonical(ONCMonkScaleVS)
+* item[2].answerOption[0].valueCoding = ONCMonkScale#A "Light Skin"
+* item[2].answerOption[1].valueCoding = ONCMonkScale#B "Light-Medium Skin"
+* item[2].answerOption[2].valueCoding = ONCMonkScale#C "Medium Skin"
+* item[2].answerOption[3].valueCoding = ONCMonkScale#D "Medium-Dark Skin"
+* item[2].answerOption[4].valueCoding = ONCMonkScale#E "Dark Skin"
+* item[2].answerOption[5].valueCoding = ONCMonkScale#F "Deep Dark Skin"
+* item[2].answerOption[6].valueCoding = ONCMonkScale#G "Very Dark Skin"
+* item[2].answerOption[7].valueCoding = ONCMonkScale#H "Deepest Dark Skin"
+* item[2].answerOption[8].valueCoding = ONCMonkScale#I "Ultra Dark Skin"
+* item[2].answerOption[9].valueCoding = ONCMonkScale#J "Black Skin"
 
 * item[3].linkId = "waterlow-banding"
 * item[3].type = #display
