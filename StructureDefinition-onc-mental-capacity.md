@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
   "name" : "ONCMentalCapacity",
   "title" : "Mental Capacity Assessment",
   "status" : "draft",
-  "date" : "2026-07-11T09:35:24+00:00",
+  "date" : "2026-07-11T09:46:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.",
   "fhirVersion" : "4.0.1",
@@ -84,16 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
     "element" : [{
       "id" : "Observation",
       "path" : "Observation"
-    },
-    {
-      "id" : "Observation.category",
-      "path" : "Observation.category",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
-        }]
-      }
     },
     {
       "id" : "Observation.code",

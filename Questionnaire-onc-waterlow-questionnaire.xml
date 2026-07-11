@@ -19,7 +19,7 @@
   <title value="Waterlow Score (Pressure Ulcer Risk)"/>
   <status value="draft"/>
   <subjectType value="Patient"/>
-  <date value="2026-07-11T09:35:24+00:00"/>
+  <date value="2026-07-11T09:46:48+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="SDC questionnaire for the Waterlow pressure-ulcer risk assessment total score, with a mandatory Monk Skin Tone item (equity fairness gate embedded at the capture layer). The total extracts to an Observation using the ONC Waterlow code; linking the skin-tone Observation via hasMember[skinTone] is the capturing app's responsibility."/>
   <item>

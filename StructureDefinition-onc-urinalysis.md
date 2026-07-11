@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
   "name" : "ONCUrinalysis",
   "title" : "Urinalysis",
   "status" : "draft",
-  "date" : "2026-07-11T09:35:24+00:00",
+  "date" : "2026-07-11T09:46:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health.",
   "fhirVersion" : "4.0.1",
@@ -84,16 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
     "element" : [{
       "id" : "Observation",
       "path" : "Observation"
-    },
-    {
-      "id" : "Observation.category",
-      "path" : "Observation.category",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
-        }]
-      }
     },
     {
       "id" : "Observation.code",

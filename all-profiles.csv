@@ -469,12 +469,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-abbey-pain-scale","Observation.category","Observation.category","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""exam""/>
-  </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
 ","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-abbey-pain-scale","Observation.category:nursing","Observation.category","nursing","","",1,1,"Y","","","CodeableConcept {[]} {[]}
@@ -925,12 +920,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-abc-chart","Observation.category","Observation.category","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""exam""/>
-  </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
 ","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-abc-chart","Observation.category:nursing","Observation.category","nursing","","",1,1,"Y","","","CodeableConcept {[]} {[]}
@@ -3141,12 +3131,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-bristol-stool-chart","Observation.category","Observation.category","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""exam""/>
-  </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
 ","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-bristol-stool-chart","Observation.category:nursing","Observation.category","nursing","","",1,1,"Y","","","CodeableConcept {[]} {[]}
@@ -4422,12 +4407,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-fluid-balance","Observation.category","Observation.category","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""exam""/>
-  </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
 ","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-fluid-balance","Observation.category:nursing","Observation.category","nursing","","",1,1,"Y","","","CodeableConcept {[]} {[]}
@@ -6491,12 +6471,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-mental-capacity","Observation.category","Observation.category","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""exam""/>
-  </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
 ","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-mental-capacity","Observation.category:nursing","Observation.category","nursing","","",1,1,"Y","","","CodeableConcept {[]} {[]}
@@ -9861,12 +9836,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-oral-health","Observation.category","Observation.category","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""exam""/>
-  </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
 ","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-oral-health","Observation.category:nursing","Observation.category","nursing","","",1,1,"Y","","","CodeableConcept {[]} {[]}
@@ -11931,12 +11901,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-seizure-record","Observation.category","Observation.category","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""exam""/>
-  </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
 ","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-seizure-record","Observation.category:nursing","Observation.category","nursing","","",1,1,"Y","","","CodeableConcept {[]} {[]}
@@ -12696,12 +12661,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-sleep-pattern","Observation.category","Observation.category","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""exam""/>
-  </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
 ","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-sleep-pattern","Observation.category:nursing","Observation.category","nursing","","",1,1,"Y","","","CodeableConcept {[]} {[]}
@@ -13229,12 +13189,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-urinalysis","Observation.category","Observation.category","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""exam""/>
-  </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","","pattern:$this}
 ","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-urinalysis","Observation.category:nursing","Observation.category","nursing","","",1,1,"Y","","","CodeableConcept {[]} {[]}

@@ -10,7 +10,7 @@
   "name" : "ONCNursingStrength",
   "title" : "ONC Nursing Strength",
   "status" : "active",
-  "date" : "2026-07-11T09:35:24+00:00",
+  "date" : "2026-07-11T09:46:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models.",
   "fhirVersion" : "4.0.1",

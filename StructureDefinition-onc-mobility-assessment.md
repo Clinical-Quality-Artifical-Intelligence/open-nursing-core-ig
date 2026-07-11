@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessm
   "name" : "ONCMobilityAssessment",
   "title" : "Mobility Assessment",
   "status" : "active",
-  "date" : "2026-07-11T09:35:24+00:00",
+  "date" : "2026-07-11T09:46:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of capability to move and limitations.",
   "fhirVersion" : "4.0.1",

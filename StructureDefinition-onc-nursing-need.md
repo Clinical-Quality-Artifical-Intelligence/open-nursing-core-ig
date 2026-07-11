@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-need.csv
   "name" : "ONCNursingNeed",
   "title" : "ONC Nursing Need",
   "status" : "active",
-  "date" : "2026-07-11T09:35:24+00:00",
+  "date" : "2026-07-11T09:46:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model.",
   "fhirVersion" : "4.0.1",

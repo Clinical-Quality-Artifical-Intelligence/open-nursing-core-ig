@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
   "name" : "ONCAbbeyPainScale",
   "title" : "Abbey Pain Scale",
   "status" : "draft",
-  "date" : "2026-07-11T09:35:24+00:00",
+  "date" : "2026-07-11T09:46:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Pain assessment for people with dementia or who cannot verbalise. Assesses 6 parameters: Vocalization, Facial Expression, Body Language, Behavioral Change, Physiological Change, Physical Changes. Total score determines pain severity (0-2 No pain, 3-7 Mild, 8-13 Moderate, 14+ Severe).",
   "fhirVersion" : "4.0.1",
@@ -84,16 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
     "element" : [{
       "id" : "Observation",
       "path" : "Observation"
-    },
-    {
-      "id" : "Observation.category",
-      "path" : "Observation.category",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
-        }]
-      }
     },
     {
       "id" : "Observation.code",

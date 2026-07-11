@@ -50,7 +50,7 @@ Scoring options for 4AT Alertness
   "name" : "AlertnessVS",
   "title" : "4AT Alertness Value Set",
   "status" : "active",
-  "date" : "2026-07-11T09:35:24+00:00",
+  "date" : "2026-07-11T09:46:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Scoring options for 4AT Alertness",
   "compose" : {

@@ -15,7 +15,7 @@
   "title" : "Monk Skin Tone Scale (A–J)",
   "status" : "draft",
   "subjectType" : ["Patient"],
-  "date" : "2026-07-11T09:35:24+00:00",
+  "date" : "2026-07-11T09:46:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "SDC questionnaire capturing the patient's skin tone on the 10-point Monk Skin Tone Scale (A–J). Extracts to an Observation conforming to ONCMonkSkinToneObservation. This record is the required input to the IG's equity fairness gate for wound and pressure-area assessment.",
   "item" : [{

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-sleep-pattern.cs
   "name" : "ONCSleepPattern",
   "title" : "Sleep Pattern",
   "status" : "draft",
-  "date" : "2026-07-11T09:35:24+00:00",
+  "date" : "2026-07-11T09:46:48+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing.",
   "fhirVersion" : "4.0.1",
@@ -84,16 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-onc-sleep-pattern.cs
     "element" : [{
       "id" : "Observation",
       "path" : "Observation"
-    },
-    {
-      "id" : "Observation.category",
-      "path" : "Observation.category",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
-        }]
-      }
     },
     {
       "id" : "Observation.code",
