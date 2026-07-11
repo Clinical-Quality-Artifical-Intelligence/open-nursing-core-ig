@@ -125,7 +125,7 @@ def _hash_user_password(password: str) -> str:
 
 
 def _seed_default_users():
-    """Seed default users into database if they don't exist."""
+    """Seed only explicitly configured bootstrap users."""
     if not DB_AVAILABLE:
         return
 
@@ -138,6 +138,8 @@ def _seed_default_users():
     }
 
     for username, (password, role) in users_to_seed.items():
+        if not password:
+            continue
         try:
             user = get_user(username)
             if user is None:

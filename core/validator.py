@@ -109,20 +109,18 @@ def verify_password(password: str, stored_hash: str) -> bool:
     return False
 
 def get_default_users() -> Dict[str, Dict[str, str]]:
-    """Return default users from settings (in-memory)."""
+    """Return explicitly configured development users, when enabled."""
+    if settings.is_production() or not settings.ALLOW_IN_MEMORY_AUTH:
+        return {}
+    candidates = {
+        "admin": (settings.ADMIN_PASSWORD, "admin"),
+        "nurse": (settings.NURSE_PASSWORD, "nurse"),
+        "clinician": (settings.CLINICIAN_PASSWORD, "clinician"),
+    }
     return {
-        "admin": {
-            "password": settings.ADMIN_PASSWORD,
-            "role": "admin"
-        },
-        "nurse": {
-            "password": settings.NURSE_PASSWORD,
-            "role": "nurse"
-        },
-        "clinician": {
-            "password": settings.CLINICIAN_PASSWORD,
-            "role": "clinician"
-        },
+        username: {"password": password, "role": role}
+        for username, (password, role) in candidates.items()
+        if password
     }
 
 def authenticate_user(username: str, password: str) -> Optional[str]:
@@ -152,16 +150,16 @@ def authenticate_user(username: str, password: str) -> Optional[str]:
         except Exception as e:
             from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Database authentication error", e)
-            # Fall through to defaults if DB fails (optional behavior, strictly speaking should fail closed,
-            # but legacy app.py allowed fallback. For security, maybe we should stop here if DB is configured.)
-            # However, prompt implies 'Phase 2' supports fallback. I will keep fallback logic but log it.
+            # A configured database is the authority. Never turn a database
+            # outage into an authentication bypass.
+            return None
 
     # 2. Fallback to Default Users
     defaults = get_default_users()
     if username in defaults:
         # Constant-time comparison to avoid timing side-channels on the
         # in-memory fallback credentials.
-        if hmac.compare_digest(defaults[username]["password"], password):
+        if hmac.compare_digest(str(defaults[username]["password"]), password):
             logger.info(f"User authenticated from defaults: {username}")
             return defaults[username]["role"]
         else:

@@ -9,11 +9,13 @@
 
 ### 1. Hardcoded Credentials — ✅ RESOLVED
 **File:** `app.py`, `app_phase2.py`, `core/validator.py`
-**Description:** Admin/Nurse/Clinician passwords were previously hardcoded.
+**Description:** Admin/Nurse/Clinician demonstration passwords were previously hardcoded.
 **Current state:** Credentials now come from environment variables via
 `core/settings.py` (`ADMIN_PASSWORD`, `NURSE_PASSWORD`, `CLINICIAN_PASSWORD`)
-with insecure-default warnings (`Settings.check_security`). Passwords are
-hashed with **bcrypt** and verified in constant time (`core/validator.py`).
+with production configuration enforcement (`Settings.check_security`). There
+are now no built-in credentials, production rejects in-memory authentication,
+and database failures fail closed. Passwords are hashed with **bcrypt** and
+verified in constant time (`core/validator.py`).
 
 ### 2. Insecure Docker Deployment (Phase 1 vs Phase 2) — ✅ RESOLVED
 **File:** `Dockerfile`

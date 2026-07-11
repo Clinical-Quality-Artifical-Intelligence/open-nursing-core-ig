@@ -96,12 +96,9 @@ def login_page():
             else:
                 st.error("Invalid username or password")
 
-        st.markdown("---")
-        st.markdown(
-            "**Demo Credentials:**\n"
-            "- Username: `nurse` | Check .env\n"
-            "- Username: `clinician` | Check .env\n"
-            "- Username: `admin` | Check .env"
+        st.caption(
+            "No credentials are built into this application. Use an account "
+            "provisioned by the configured identity store."
         )
 
 

@@ -132,9 +132,8 @@ Write-Host ""
 Write-Host "Access your application at:" -ForegroundColor Green
 Write-Host "  http://$($FQDN):8501" -ForegroundColor Cyan
 Write-Host ""
-Write-Host "Login credentials:" -ForegroundColor Green
-Write-Host "  Username: admin" -ForegroundColor Cyan
-Write-Host "  Password: admin2025" -ForegroundColor Cyan
+Write-Host "No login credentials are built into the application." -ForegroundColor Green
+Write-Host "Provision users through the configured database or identity provider." -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Monitor deployment:" -ForegroundColor Green
 Write-Host "  az container logs --resource-group $RESOURCE_GROUP --name $APP_NAME" -ForegroundColor Cyan

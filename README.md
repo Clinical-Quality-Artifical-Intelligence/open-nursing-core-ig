@@ -4,7 +4,7 @@
 
 # 🌍 Open Nursing Core (ONC)
 
-### Standards-Aware AI Engine for Nurse-Led Clinical Intelligence
+### Trial-Use FHIR Foundation for Structured Nursing Information
 
 **An open, FHIR-based data foundation for nursing documentation, clinical reasoning, safety and equity — built by nurses, in the open.**
 
@@ -34,7 +34,7 @@
 
 ---
 
-> **⚠️ Standards status: Trial Use — Pre-Ballot Community Release.** ONC-IG has not undergone formal HL7 standards balloting or independent clinical/peer review. Version and status labels reflect this project's own development lifecycle, not external endorsement. It is a specification, not a deployed product — implementers remain responsible for their own DCB0129/DCB0160 clinical safety case. See [STANDARDS_ROADMAP.md](STANDARDS_ROADMAP.md) for the path toward formal review.
+> **⚠️ Standards status: Trial Use — Pre-Ballot Community Release.** ONC-IG has not undergone formal HL7 standards balloting or independent clinical/peer review. Version and status labels reflect this project's own development lifecycle, not external endorsement. It is a specification, not a deployed product — implementers remain responsible for their own DCB0129/DCB0160 clinical safety case. The included applications and AI features are research prototypes for synthetic or appropriately de-identified data, not clinical decision systems. Read [PRODUCT_BOUNDARIES.md](PRODUCT_BOUNDARIES.md), [CLINICAL_SAFETY.md](CLINICAL_SAFETY.md) and [STANDARDS_ROADMAP.md](STANDARDS_ROADMAP.md).
 
 ---
 
@@ -78,18 +78,21 @@ Too much nursing knowledge — assessment, risk, escalation, safeguarding, the p
 
 ---
 
-## 🚀 Key features
+## 🚀 Experimental application demonstrations
+
+The following demonstrations are not part of the normative FHIR specification
+and have not been approved for clinical deployment.
 
 ### 🩺 1. Advanced Clinical Assistant
-A specialised LLM fine-tuned on British nursing standards to draft high-quality care plans.
+A research LLM demonstration that can draft candidate care-plan text for qualified human review.
 - **Input:** "Write a care plan for Mrs. Singh, 78, with dementia."
 - **Output:** a structured ADPIE plan that is empathetic and clinically safe.
 
 ### 🏥 2. Virtual Multi-Disciplinary Team (MDT)
-An AI synthesis tool that simulates a specialist discussion for a holistic care summary — tissue viability (skin integrity & equity), relational care (dignity & respect) and patient safety (protocol validation).
+An AI synthesis demonstration that simulates several perspectives for research and education. It is not a real MDT review and must not be represented as one.
 
 ### 🧠 3. Clinical Semantic Audit
-A deep audit of documentation against the **ONC Relational Care Logical Model**, suggesting formal **NANDA-I** mappings.
+A research audit of synthetic or de-identified documentation against the **ONC Relational Care Logical Model**. NANDA-I mappings remain subject to licensing and verification.
 
 ---
 
@@ -120,7 +123,7 @@ cd open-nursing-core-ig
 sushi .          # compile the FSH profiles to FHIR resources
 ```
 
-### Run the clinical app
+### Run the research demonstration
 ```bash
 cd open-nursing-core-ig
 pip install -r requirements.txt
@@ -135,7 +138,7 @@ streamlit run app_phase2.py
 |------|----------|
 | `input/fsh/` | FHIR Shorthand (FSH) profile, extension and terminology sources |
 | `input/pagecontent/` | Narrative IG pages (ADPIE, safety, equity, security, terminology…) |
-| `core/`, `db/`, `ml/` | The clinical application (auth, database, ML analytics) |
+| `core/`, `db/`, `ml/` | Experimental application components (auth, database, ML analytics) |
 | `analytics/equity/` | Equity analytics pipeline — pressure-ulcer detection timeliness by Monk skin tone |
 | `okf/` | Agent-readable knowledge bundle ([Open Knowledge Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf)) generated from the IG |
 | `app_phase2.py` | Streamlit application entry point |

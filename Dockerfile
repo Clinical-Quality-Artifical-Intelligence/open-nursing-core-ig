@@ -1,4 +1,5 @@
-# Production-Grade Dockerfile for NHS Nursing Validator Phase 3
+# Reproducible container for the Open Nursing research demonstration.
+# This image does not by itself satisfy clinical-production controls.
 FROM python:3.11-slim
 
 WORKDIR /app
