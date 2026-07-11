@@ -1,0 +1,56 @@
+name: Mirror main to UNICC GitLab
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mirror-unicc-main
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    name: Push GitHub main to UNICC
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out complete history
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Verify mirror credentials are configured
+        env:
+          UNICC_USERNAME: ${{ secrets.UNICC_GITLAB_USERNAME }}
+          UNICC_TOKEN: ${{ secrets.UNICC_GITLAB_TOKEN }}
+        run: |
+          if [ -z "$UNICC_USERNAME" ] || [ -z "$UNICC_TOKEN" ]; then
+            echo "UNICC_GITLAB_USERNAME and UNICC_GITLAB_TOKEN must be configured as GitHub Actions secrets."
+            exit 1
+          fi
+
+      - name: Verify UNICC can be updated without rewriting history
+        run: |
+          git fetch --no-tags \
+            https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig.git \
+            main:refs/remotes/unicc/main
+          if ! git merge-base --is-ancestor refs/remotes/unicc/main HEAD; then
+            echo "UNICC main has commits that are not present on GitHub main."
+            echo "Mirror stopped to prevent history loss; reconcile the branches manually."
+            exit 1
+          fi
+
+      - name: Push to UNICC
+        env:
+          UNICC_USERNAME: ${{ secrets.UNICC_GITLAB_USERNAME }}
+          UNICC_TOKEN: ${{ secrets.UNICC_GITLAB_TOKEN }}
+        run: |
+          AUTH=$(printf '%s:%s' "$UNICC_USERNAME" "$UNICC_TOKEN" | base64 | tr -d '\n')
+          echo "::add-mask::$AUTH"
+          git -c http.extraHeader="Authorization: Basic $AUTH" push \
+            https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig.git \
+            HEAD:main

@@ -156,6 +156,9 @@ streamlit run app_phase2.py
 
 ONC-IG is a nurse-led initiative — clinical leadership by nurses, for nurses — built on open standards and hosted by the [United Nations (UNICC)](https://opensource.unicc.org/nursecitizendeveloper/open-nursing-core-ig).
 
+GitHub `main` is the source of truth and is synchronised to the UNICC GitLab
+repository using the guarded process described in [MIRRORING.md](MIRRORING.md).
+
 ---
 
 ## 🧭 Standards & governance
