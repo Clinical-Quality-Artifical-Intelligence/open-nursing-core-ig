@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCMonkSkinToneObservation"] ;
   fhir:StructureDefinition.title [ fhir:value "Monk Skin Tone Observation"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:02:42+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:17:07+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

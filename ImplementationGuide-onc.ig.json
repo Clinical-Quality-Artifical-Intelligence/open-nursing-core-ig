@@ -10,7 +10,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-07-11T14:02:42+00:00",
+  "date" : "2026-07-11T14:17:07+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md.",
   "packageId" : "onc.ig",
@@ -35,6 +35,12 @@
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_sdc",
+    "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+    "packageId" : "hl7.fhir.uv.sdc",
+    "version" : "3.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -894,6 +900,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/example-nurse"
+      },
+      "name" : "Example Nurse",
+      "description" : "Synthetic registered nurse referenced by the worked examples. Not a real person.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Condition"
       }],
       "reference" : {
@@ -914,6 +932,18 @@
       "name" : "Example Nursing Strength: Motivation",
       "description" : "Demonstration of the ONCNursingStrength profile.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/example-patient"
+      },
+      "name" : "Example Patient",
+      "description" : "Synthetic patient referenced by the worked examples. Not a real person.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -960,6 +990,7 @@
         "reference" : "Observation/example-abc-chart"
       },
       "name" : "example-abc-chart",
+      "description" : "Worked example: abc chart (ONCABCChart). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"
     },
     {
@@ -971,6 +1002,7 @@
         "reference" : "Observation/example-acvpu"
       },
       "name" : "example-acvpu",
+      "description" : "Worked example: acvpu (ONCACVPU). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-acvpu"
     },
     {
@@ -982,6 +1014,7 @@
         "reference" : "Observation/example-bladder-assessment"
       },
       "name" : "example-bladder-assessment",
+      "description" : "Worked example: bladder assessment (ONCBladderAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment"
     },
     {
@@ -993,6 +1026,7 @@
         "reference" : "Observation/example-blood-pressure"
       },
       "name" : "example-blood-pressure",
+      "description" : "Worked example: blood pressure (ONCBloodPressure). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure"
     },
     {
@@ -1004,6 +1038,7 @@
         "reference" : "Observation/example-bowel-assessment"
       },
       "name" : "example-bowel-assessment",
+      "description" : "Worked example: bowel assessment (ONCBowelAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment"
     },
     {
@@ -1015,6 +1050,7 @@
         "reference" : "Observation/example-bristol-stool"
       },
       "name" : "example-bristol-stool",
+      "description" : "Worked example: bristol stool (ONCBristolStoolChart). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
     },
     {
@@ -1026,6 +1062,7 @@
         "reference" : "Observation/example-catheter-care"
       },
       "name" : "example-catheter-care",
+      "description" : "Worked example: catheter care (ONCCatheterCare). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-catheter-care"
     },
     {
@@ -1037,6 +1074,7 @@
         "reference" : "Observation/example-clinical-frailty"
       },
       "name" : "example-clinical-frailty",
+      "description" : "Worked example: clinical frailty (ONCClinicalFrailtyScale). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"
     },
     {
@@ -1048,6 +1086,7 @@
         "reference" : "Observation/example-continence-assessment"
       },
       "name" : "example-continence-assessment",
+      "description" : "Worked example: continence assessment (ONCContinenceAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment"
     },
     {
@@ -1059,6 +1098,7 @@
         "reference" : "Observation/example-dietary-requirements"
       },
       "name" : "example-dietary-requirements",
+      "description" : "Worked example: dietary requirements (ONCDietaryRequirements). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements"
     },
     {
@@ -1070,6 +1110,7 @@
         "reference" : "Observation/example-fluid-balance"
       },
       "name" : "example-fluid-balance",
+      "description" : "Worked example: fluid balance (ONCFluidBalance). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"
     },
     {
@@ -1081,6 +1122,7 @@
         "reference" : "Observation/example-goal-evaluation"
       },
       "name" : "example-goal-evaluation",
+      "description" : "Worked example: goal evaluation (ONCGoalEvaluation). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"
     },
     {
@@ -1092,6 +1134,7 @@
         "reference" : "Observation/example-heart-rate"
       },
       "name" : "example-heart-rate",
+      "description" : "Worked example: heart rate (ONCHeartRate). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-heart-rate"
     },
     {
@@ -1103,6 +1146,7 @@
         "reference" : "Observation/example-hygiene-assessment"
       },
       "name" : "example-hygiene-assessment",
+      "description" : "Worked example: hygiene assessment (ONCHygieneAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment"
     },
     {
@@ -1114,6 +1158,7 @@
         "reference" : "Observation/example-inspired-oxygen"
       },
       "name" : "example-inspired-oxygen",
+      "description" : "Worked example: inspired oxygen (ONCInspiredOxygen). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen"
     },
     {
@@ -1125,6 +1170,7 @@
         "reference" : "Observation/example-medication-ability"
       },
       "name" : "example-medication-ability",
+      "description" : "Worked example: medication ability (ONCMedicationAbility). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-medication-ability"
     },
     {
@@ -1136,6 +1182,7 @@
         "reference" : "Observation/example-medication-self-admin"
       },
       "name" : "example-medication-self-admin",
+      "description" : "Worked example: medication self admin (ONCMedicationSelfAdmin). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin"
     },
     {
@@ -1147,6 +1194,7 @@
         "reference" : "Observation/example-mental-capacity"
       },
       "name" : "example-mental-capacity",
+      "description" : "Worked example: mental capacity (ONCMentalCapacity). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"
     },
     {
@@ -1158,6 +1206,7 @@
         "reference" : "Observation/example-mobility-assessment"
       },
       "name" : "example-mobility-assessment",
+      "description" : "Worked example: mobility assessment (ONCMobilityAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment"
     },
     {
@@ -1169,6 +1218,7 @@
         "reference" : "Observation/example-monk-skin-tone"
       },
       "name" : "example-monk-skin-tone",
+      "description" : "Worked example: monk skin tone (ONCMonkSkinToneObservation). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"
     },
     {
@@ -1180,6 +1230,7 @@
         "reference" : "Observation/example-must-score"
       },
       "name" : "example-must-score",
+      "description" : "Worked example: must score (ONCMUSTScore). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-must-score"
     },
     {
@@ -1191,6 +1242,7 @@
         "reference" : "Observation/example-news2-score"
       },
       "name" : "example-news2-score",
+      "description" : "Worked example: news2 score (ONCNEWS2Score). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-news2-score"
     },
     {
@@ -1202,6 +1254,7 @@
         "reference" : "Procedure/example-nursing-intervention"
       },
       "name" : "example-nursing-intervention",
+      "description" : "Worked example: nursing intervention (ONCNursingIntervention). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"
     },
     {
@@ -1213,6 +1266,7 @@
         "reference" : "Condition/example-nursing-problem"
       },
       "name" : "example-nursing-problem",
+      "description" : "Worked example: nursing problem (ONCNursingProblem). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"
     },
     {
@@ -1224,6 +1278,7 @@
         "reference" : "Observation/example-oral-care-assessment"
       },
       "name" : "example-oral-care-assessment",
+      "description" : "Worked example: oral care assessment (ONCOralCareAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment"
     },
     {
@@ -1235,6 +1290,7 @@
         "reference" : "Observation/example-oral-health"
       },
       "name" : "example-oral-health",
+      "description" : "Worked example: oral health (ONCOralHealth). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-health"
     },
     {
@@ -1246,6 +1302,7 @@
         "reference" : "Observation/example-oral-intake"
       },
       "name" : "example-oral-intake",
+      "description" : "Worked example: oral intake (ONCOralIntakeAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment"
     },
     {
@@ -1257,6 +1314,7 @@
         "reference" : "Observation/example-oxygen-saturation"
       },
       "name" : "example-oxygen-saturation",
+      "description" : "Worked example: oxygen saturation (ONCOxygenSaturation). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation"
     },
     {
@@ -1268,7 +1326,7 @@
         "reference" : "Goal/example-patient-goal"
       },
       "name" : "example-patient-goal",
-      "description" : "Patient will remain free from falls.",
+      "description" : "Worked example: patient goal (ONCNursingGoal). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
     },
     {
@@ -1280,6 +1338,7 @@
         "reference" : "Observation/example-patient-story"
       },
       "name" : "example-patient-story",
+      "description" : "Worked example: patient story (ONCPatientStory). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-patient-story"
     },
     {
@@ -1291,6 +1350,7 @@
         "reference" : "Observation/example-reasonable-adjustment"
       },
       "name" : "example-reasonable-adjustment",
+      "description" : "Worked example: reasonable adjustment (ONCReasonableAdjustment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"
     },
     {
@@ -1302,6 +1362,7 @@
         "reference" : "Observation/example-respiration-rate"
       },
       "name" : "example-respiration-rate",
+      "description" : "Worked example: respiration rate (ONCRespirationRate). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate"
     },
     {
@@ -1313,6 +1374,7 @@
         "reference" : "Observation/example-seizure-record"
       },
       "name" : "example-seizure-record",
+      "description" : "Worked example: seizure record (ONCSeizureRecord). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"
     },
     {
@@ -1324,6 +1386,7 @@
         "reference" : "Observation/example-swallowing-assessment"
       },
       "name" : "example-swallowing-assessment",
+      "description" : "Worked example: swallowing assessment (ONCSwallowingAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment"
     },
     {
@@ -1335,6 +1398,7 @@
         "reference" : "Observation/example-temperature"
       },
       "name" : "example-temperature",
+      "description" : "Worked example: temperature (ONCBodyTemperature). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-body-temperature"
     },
     {
@@ -1346,6 +1410,7 @@
         "reference" : "Observation/example-urinalysis"
       },
       "name" : "example-urinalysis",
+      "description" : "Worked example: urinalysis (ONCUrinalysis). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"
     },
     {
@@ -1357,6 +1422,7 @@
         "reference" : "Observation/example-waterlow-score"
       },
       "name" : "example-waterlow-score",
+      "description" : "Worked example: waterlow score (ONCWaterlowScore). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
     },
     {
@@ -1368,6 +1434,7 @@
         "reference" : "Observation/example-what-matters"
       },
       "name" : "example-what-matters",
+      "description" : "Worked example: what matters (ONCWhatMattersToMe). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-what-matters"
     },
     {
@@ -1799,6 +1866,7 @@
         "reference" : "Observation/observation-braden-scale"
       },
       "name" : "observation-braden-scale",
+      "description" : "Worked example: observation braden scale (ONCBradenScaleAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"
     },
     {
@@ -1810,6 +1878,7 @@
         "reference" : "Observation/observation-skin-tone"
       },
       "name" : "observation-skin-tone",
+      "description" : "Worked example: observation skin tone (ONCSkinToneObservation). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation"
     },
     {
@@ -2085,6 +2154,7 @@
         "reference" : "Patient/patient-example-jane"
       },
       "name" : "patient-example-jane",
+      "description" : "Worked example: patient example jane (ONCNHSPatient). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"
     },
     {
@@ -2144,6 +2214,7 @@
         "reference" : "Practitioner/practitioner-example"
       },
       "name" : "practitioner-example",
+      "description" : "Worked example: practitioner example (Practitioner). Synthetic data - not a real person.",
       "exampleBoolean" : true
     },
     {

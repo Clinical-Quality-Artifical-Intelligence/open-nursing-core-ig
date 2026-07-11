@@ -198,6 +198,8 @@
 * [example-what-matters (Observation)](Observation-example-what-matters.md)
 * [observation-braden-scale (Observation)](Observation-observation-braden-scale.md)
 * [observation-skin-tone (Observation)](Observation-observation-skin-tone.md)
+* [example-patient (Patient)](Patient-example-patient.md)
 * [patient-example-jane (Patient)](Patient-patient-example-jane.md)
+* [example-nurse (Practitioner)](Practitioner-example-nurse.md)
 * [practitioner-example (Practitioner)](Practitioner-practitioner-example.md)
 * [example-nursing-intervention (Procedure)](Procedure-example-nursing-intervention.md)

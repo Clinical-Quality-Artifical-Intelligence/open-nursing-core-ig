@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="example-nurse"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner example-nurse</b></p><a name="example-nurse"> </a><a name="hcexample-nurse"> </a><p><b>name</b>: Alex Nurse </p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Registered Nurse (NMC)</span></td></tr></table></div>
+  </text>
+  <name>
+    <family value="Nurse"/>
+    <given value="Alex"/>
+  </name>
+  <qualification>
+    <code>
+      <text value="Registered Nurse (NMC)"/>
+    </code>
+  </qualification>
+</Practitioner>

@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2026-07-11T14:02:42+00:00"/>
+  <date value="2026-07-11T14:17:07+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md."/>
   <packageId value="onc.ig"/>
@@ -32,6 +32,11 @@
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_sdc">
+    <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
+    <packageId value="hl7.fhir.uv.sdc"/>
+    <version value="3.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -714,6 +719,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/example-nurse"/>
+      </reference>
+      <name value="Example Nurse"/>
+      <description value="Synthetic registered nurse referenced by the worked examples. Not a real person."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -733,6 +749,17 @@
       <name value="Example Nursing Strength: Motivation"/>
       <description value="Demonstration of the ONCNursingStrength profile."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example-patient"/>
+      </reference>
+      <name value="Example Patient"/>
+      <description value="Synthetic patient referenced by the worked examples. Not a real person."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -775,6 +802,7 @@
         <reference value="Observation/example-abc-chart"/>
       </reference>
       <name value="example-abc-chart"/>
+      <description value="Worked example: abc chart (ONCABCChart). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"/>
     </resource>
     <resource>
@@ -785,6 +813,7 @@
         <reference value="Observation/example-acvpu"/>
       </reference>
       <name value="example-acvpu"/>
+      <description value="Worked example: acvpu (ONCACVPU). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-acvpu"/>
     </resource>
     <resource>
@@ -795,6 +824,7 @@
         <reference value="Observation/example-bladder-assessment"/>
       </reference>
       <name value="example-bladder-assessment"/>
+      <description value="Worked example: bladder assessment (ONCBladderAssessment). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment"/>
     </resource>
     <resource>
@@ -805,6 +835,7 @@
         <reference value="Observation/example-blood-pressure"/>
       </reference>
       <name value="example-blood-pressure"/>
+      <description value="Worked example: blood pressure (ONCBloodPressure). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure"/>
     </resource>
     <resource>
@@ -815,6 +846,7 @@
         <reference value="Observation/example-bowel-assessment"/>
       </reference>
       <name value="example-bowel-assessment"/>
+      <description value="Worked example: bowel assessment (ONCBowelAssessment). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment"/>
     </resource>
     <resource>
@@ -825,6 +857,7 @@
         <reference value="Observation/example-bristol-stool"/>
       </reference>
       <name value="example-bristol-stool"/>
+      <description value="Worked example: bristol stool (ONCBristolStoolChart). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"/>
     </resource>
     <resource>
@@ -835,6 +868,7 @@
         <reference value="Observation/example-catheter-care"/>
       </reference>
       <name value="example-catheter-care"/>
+      <description value="Worked example: catheter care (ONCCatheterCare). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-catheter-care"/>
     </resource>
     <resource>
@@ -845,6 +879,7 @@
         <reference value="Observation/example-clinical-frailty"/>
       </reference>
       <name value="example-clinical-frailty"/>
+      <description value="Worked example: clinical frailty (ONCClinicalFrailtyScale). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"/>
     </resource>
     <resource>
@@ -855,6 +890,7 @@
         <reference value="Observation/example-continence-assessment"/>
       </reference>
       <name value="example-continence-assessment"/>
+      <description value="Worked example: continence assessment (ONCContinenceAssessment). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment"/>
     </resource>
     <resource>
@@ -865,6 +901,7 @@
         <reference value="Observation/example-dietary-requirements"/>
       </reference>
       <name value="example-dietary-requirements"/>
+      <description value="Worked example: dietary requirements (ONCDietaryRequirements). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements"/>
     </resource>
     <resource>
@@ -875,6 +912,7 @@
         <reference value="Observation/example-fluid-balance"/>
       </reference>
       <name value="example-fluid-balance"/>
+      <description value="Worked example: fluid balance (ONCFluidBalance). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"/>
     </resource>
     <resource>
@@ -885,6 +923,7 @@
         <reference value="Observation/example-goal-evaluation"/>
       </reference>
       <name value="example-goal-evaluation"/>
+      <description value="Worked example: goal evaluation (ONCGoalEvaluation). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"/>
     </resource>
     <resource>
@@ -895,6 +934,7 @@
         <reference value="Observation/example-heart-rate"/>
       </reference>
       <name value="example-heart-rate"/>
+      <description value="Worked example: heart rate (ONCHeartRate). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-heart-rate"/>
     </resource>
     <resource>
@@ -905,6 +945,7 @@
         <reference value="Observation/example-hygiene-assessment"/>
       </reference>
       <name value="example-hygiene-assessment"/>
+      <description value="Worked example: hygiene assessment (ONCHygieneAssessment). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment"/>
     </resource>
     <resource>
@@ -915,6 +956,7 @@
         <reference value="Observation/example-inspired-oxygen"/>
       </reference>
       <name value="example-inspired-oxygen"/>
+      <description value="Worked example: inspired oxygen (ONCInspiredOxygen). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen"/>
     </resource>
     <resource>
@@ -925,6 +967,7 @@
         <reference value="Observation/example-medication-ability"/>
       </reference>
       <name value="example-medication-ability"/>
+      <description value="Worked example: medication ability (ONCMedicationAbility). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-medication-ability"/>
     </resource>
     <resource>
@@ -935,6 +978,7 @@
         <reference value="Observation/example-medication-self-admin"/>
       </reference>
       <name value="example-medication-self-admin"/>
+      <description value="Worked example: medication self admin (ONCMedicationSelfAdmin). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin"/>
     </resource>
     <resource>
@@ -945,6 +989,7 @@
         <reference value="Observation/example-mental-capacity"/>
       </reference>
       <name value="example-mental-capacity"/>
+      <description value="Worked example: mental capacity (ONCMentalCapacity). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"/>
     </resource>
     <resource>
@@ -955,6 +1000,7 @@
         <reference value="Observation/example-mobility-assessment"/>
       </reference>
       <name value="example-mobility-assessment"/>
+      <description value="Worked example: mobility assessment (ONCMobilityAssessment). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment"/>
     </resource>
     <resource>
@@ -965,6 +1011,7 @@
         <reference value="Observation/example-monk-skin-tone"/>
       </reference>
       <name value="example-monk-skin-tone"/>
+      <description value="Worked example: monk skin tone (ONCMonkSkinToneObservation). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"/>
     </resource>
     <resource>
@@ -975,6 +1022,7 @@
         <reference value="Observation/example-must-score"/>
       </reference>
       <name value="example-must-score"/>
+      <description value="Worked example: must score (ONCMUSTScore). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-must-score"/>
     </resource>
     <resource>
@@ -985,6 +1033,7 @@
         <reference value="Observation/example-news2-score"/>
       </reference>
       <name value="example-news2-score"/>
+      <description value="Worked example: news2 score (ONCNEWS2Score). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-news2-score"/>
     </resource>
     <resource>
@@ -995,6 +1044,7 @@
         <reference value="Procedure/example-nursing-intervention"/>
       </reference>
       <name value="example-nursing-intervention"/>
+      <description value="Worked example: nursing intervention (ONCNursingIntervention). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"/>
     </resource>
     <resource>
@@ -1005,6 +1055,7 @@
         <reference value="Condition/example-nursing-problem"/>
       </reference>
       <name value="example-nursing-problem"/>
+      <description value="Worked example: nursing problem (ONCNursingProblem). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"/>
     </resource>
     <resource>
@@ -1015,6 +1066,7 @@
         <reference value="Observation/example-oral-care-assessment"/>
       </reference>
       <name value="example-oral-care-assessment"/>
+      <description value="Worked example: oral care assessment (ONCOralCareAssessment). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment"/>
     </resource>
     <resource>
@@ -1025,6 +1077,7 @@
         <reference value="Observation/example-oral-health"/>
       </reference>
       <name value="example-oral-health"/>
+      <description value="Worked example: oral health (ONCOralHealth). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-oral-health"/>
     </resource>
     <resource>
@@ -1035,6 +1088,7 @@
         <reference value="Observation/example-oral-intake"/>
       </reference>
       <name value="example-oral-intake"/>
+      <description value="Worked example: oral intake (ONCOralIntakeAssessment). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment"/>
     </resource>
     <resource>
@@ -1045,6 +1099,7 @@
         <reference value="Observation/example-oxygen-saturation"/>
       </reference>
       <name value="example-oxygen-saturation"/>
+      <description value="Worked example: oxygen saturation (ONCOxygenSaturation). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation"/>
     </resource>
     <resource>
@@ -1055,7 +1110,7 @@
         <reference value="Goal/example-patient-goal"/>
       </reference>
       <name value="example-patient-goal"/>
-      <description value="Patient will remain free from falls."/>
+      <description value="Worked example: patient goal (ONCNursingGoal). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"/>
     </resource>
     <resource>
@@ -1066,6 +1121,7 @@
         <reference value="Observation/example-patient-story"/>
       </reference>
       <name value="example-patient-story"/>
+      <description value="Worked example: patient story (ONCPatientStory). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-patient-story"/>
     </resource>
     <resource>
@@ -1076,6 +1132,7 @@
         <reference value="Observation/example-reasonable-adjustment"/>
       </reference>
       <name value="example-reasonable-adjustment"/>
+      <description value="Worked example: reasonable adjustment (ONCReasonableAdjustment). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"/>
     </resource>
     <resource>
@@ -1086,6 +1143,7 @@
         <reference value="Observation/example-respiration-rate"/>
       </reference>
       <name value="example-respiration-rate"/>
+      <description value="Worked example: respiration rate (ONCRespirationRate). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate"/>
     </resource>
     <resource>
@@ -1096,6 +1154,7 @@
         <reference value="Observation/example-seizure-record"/>
       </reference>
       <name value="example-seizure-record"/>
+      <description value="Worked example: seizure record (ONCSeizureRecord). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"/>
     </resource>
     <resource>
@@ -1106,6 +1165,7 @@
         <reference value="Observation/example-swallowing-assessment"/>
       </reference>
       <name value="example-swallowing-assessment"/>
+      <description value="Worked example: swallowing assessment (ONCSwallowingAssessment). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment"/>
     </resource>
     <resource>
@@ -1116,6 +1176,7 @@
         <reference value="Observation/example-temperature"/>
       </reference>
       <name value="example-temperature"/>
+      <description value="Worked example: temperature (ONCBodyTemperature). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-body-temperature"/>
     </resource>
     <resource>
@@ -1126,6 +1187,7 @@
         <reference value="Observation/example-urinalysis"/>
       </reference>
       <name value="example-urinalysis"/>
+      <description value="Worked example: urinalysis (ONCUrinalysis). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"/>
     </resource>
     <resource>
@@ -1136,6 +1198,7 @@
         <reference value="Observation/example-waterlow-score"/>
       </reference>
       <name value="example-waterlow-score"/>
+      <description value="Worked example: waterlow score (ONCWaterlowScore). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"/>
     </resource>
     <resource>
@@ -1146,6 +1209,7 @@
         <reference value="Observation/example-what-matters"/>
       </reference>
       <name value="example-what-matters"/>
+      <description value="Worked example: what matters (ONCWhatMattersToMe). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-what-matters"/>
     </resource>
     <resource>
@@ -1541,6 +1605,7 @@
         <reference value="Observation/observation-braden-scale"/>
       </reference>
       <name value="observation-braden-scale"/>
+      <description value="Worked example: observation braden scale (ONCBradenScaleAssessment). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"/>
     </resource>
     <resource>
@@ -1551,6 +1616,7 @@
         <reference value="Observation/observation-skin-tone"/>
       </reference>
       <name value="observation-skin-tone"/>
+      <description value="Worked example: observation skin tone (ONCSkinToneObservation). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation"/>
     </resource>
     <resource>
@@ -1803,6 +1869,7 @@
         <reference value="Patient/patient-example-jane"/>
       </reference>
       <name value="patient-example-jane"/>
+      <description value="Worked example: patient example jane (ONCNHSPatient). Synthetic data - not a real person."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"/>
     </resource>
     <resource>
@@ -1857,6 +1924,7 @@
         <reference value="Practitioner/practitioner-example"/>
       </reference>
       <name value="practitioner-example"/>
+      <description value="Worked example: practitioner example (Practitioner). Synthetic data - not a real person."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

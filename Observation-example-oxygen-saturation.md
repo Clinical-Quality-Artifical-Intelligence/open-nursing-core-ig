@@ -20,7 +20,7 @@ Profile: [Oxygen Saturation](StructureDefinition-onc-oxygen-saturation.md)
 
 **performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
-**value**: 94 %
+**value**: 94 % (Details: UCUM code% = '%')
 
 
 
@@ -56,7 +56,9 @@ Profile: [Oxygen Saturation](StructureDefinition-onc-oxygen-saturation.md)
   }],
   "valueQuantity" : {
     "value" : 94,
-    "unit" : "%"
+    "unit" : "%",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "%"
   }
 }
 

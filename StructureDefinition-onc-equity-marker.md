@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-equity-marker.cs
   "name" : "ONCEquityMarker",
   "title" : "ONC Equity Marker",
   "status" : "active",
-  "date" : "2026-07-11T14:02:42+00:00",
+  "date" : "2026-07-11T14:17:07+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware).",
   "fhirVersion" : "4.0.1",

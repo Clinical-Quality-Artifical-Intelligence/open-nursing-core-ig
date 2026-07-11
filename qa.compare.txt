@@ -1,21 +1,21 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 90, warn = 65, info = 189
+err = 55, warn = 24, info = 189
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingcoreig.com)
- Build Errors : 8 / 42 / 0
+ Build Errors : 1 / 1 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ConceptMap-onc-to-nanda : 0 / 3 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-ExampleNursingNeed-Dressing : 2 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-ExampleNursingNeed-Dressing : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-example-nursing-problem : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Goal-example-patient-goal : 2 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ImplementationGuide-onc.ig : 0 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleDressingAssessment : 4 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleNursingStrength-Motivation : 4 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleSkinAssessment : 4 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ImplementationGuide-onc.ig : 0 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleDressingAssessment : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleNursingStrength-Motivation : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleSkinAssessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-4at-delirium : 7 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-abbey-pain : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-abc-chart : 0 / 0 / 1
@@ -30,7 +30,7 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-dietary-requirements : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-fluid-balance : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-goal-evaluation : 1 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-heart-rate : 3 / 0 / 3
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-heart-rate : 1 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-hygiene-assessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-inspired-oxygen : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-medication-ability : 1 / 0 / 1
@@ -43,27 +43,29 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-care-assessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-health : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-intake : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oxygen-saturation : 4 / 0 / 3
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oxygen-saturation : 2 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-patient-story : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-reasonable-adjustment : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-respiration-rate : 3 / 0 / 3
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-respiration-rate : 1 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-seizure-record : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-swallowing-assessment : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-temperature : 3 / 0 / 3
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-temperature : 1 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-urinalysis : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-waterlow-score : 1 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-what-matters : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-braden-scale : 1 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-skin-tone : 2 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-skin-tone : 1 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Patient-example-patient : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Patient-patient-example-jane : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Practitioner-example-nurse : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Practitioner-practitioner-example : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Procedure-example-nursing-intervention : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-braden-questionnaire : 3 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-monk-skintone-questionnaire : 2 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-must-questionnaire : 2 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-news2-questionnaire : 2 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-person-centred-questionnaire : 2 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-waterlow-questionnaire : 2 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-braden-questionnaire : 1 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-monk-skintone-questionnaire : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-must-questionnaire : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-news2-questionnaire : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-person-centred-questionnaire : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-waterlow-questionnaire : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-ONCRelationalCareModel : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-intervention-goal-reference : 0 / 1 / 2
@@ -157,58 +159,10 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-pain-assessment-code-vs : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-problem-category-valueset : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-wound-stage-vs : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/Library-onc-news2-cql : 2 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/Library-onc-news2-cql : 2 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/PlanDefinition-news2-escalation : 3 / 1 / 2
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-abc-chart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-acvpu.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-bladder-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-blood-pressure.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-bowel-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-bristol-stool.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-catheter-care.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-clinical-frailty.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-continence-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-dietary-requirements.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-fluid-balance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-goal-evaluation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-heart-rate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-hygiene-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-inspired-oxygen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-medication-ability.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-medication-self-admin.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-mental-capacity.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-mobility-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-monk-skin-tone.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-must-score.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-news2-score.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/example-nursing-intervention.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/example-nursing-problem.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-oral-care-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-oral-health.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-oral-intake.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-oxygen-saturation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-patient-story.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-reasonable-adjustment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-respiration-rate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-seizure-record.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-swallowing-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-temperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-urinalysis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-waterlow-score.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-what-matters.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observation-braden-scale.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observation-skin-tone.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient-example-jane.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/practitioner-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Condition-ExampleNursingNeed-Dressing.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 873: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 730: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 865: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
-ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 653: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 788: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
-ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 721: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 856: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
 WARNING: history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 40: The link 'https://opennursingcoreig.com' for "https://opennursingcoreig.com" is a canonical link and is therefore unsafe with regard to versions
 ERROR: safety.html#/html/body/div/div/div/div/div/p/strong/a at Line 189, column 448: The link 'PlanDefinition-news2-escalation.html' for "NEWS2 Escalation PlanDefinition" cannot be resolved
 == fsh-generated/resources/CodeSystem-onc-monk-scale.json ==
@@ -219,29 +173,16 @@ WARNING: ConceptMap/onc-to-nanda: ConceptMap.group[0].target: No definition coul
 WARNING: ConceptMap/onc-to-nanda: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
 INFORMATION: Resource: The resource ConceptMap/onc-to-nanda could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Condition-ExampleNursingNeed-Dressing.json ==
-ERROR: Condition/ExampleNursingNeed-Dressing: Condition.subject: Unable to resolve resource with reference 'Patient/example-patient'
-ERROR: Condition.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
 == fsh-generated/resources/Condition-example-nursing-problem.json ==
 == fsh-generated/resources/Goal-example-patient-goal.json ==
 ERROR: Goal/example-patient-goal: Goal.target[0].measure.coding[0].display: Wrong Display Name 'Functional status' for http://loinc.org#88020-3. Valid display is one of 3 choices: 'Functional capacity NYHA' (en-US), 'Functional capacity NYHA' (en-US) or 'Functional capacity NYHA' (en-US) (for the language(s) 'en-US')
 ERROR: Goal/example-patient-goal: Goal.target[0].detail.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Objective achieved' for http://snomed.info/sct#385652002. Valid display is one of 2 choices: 'Started (qualifier value)' (en) or 'Started' (en) (for the language(s) 'en-US')
 == fsh-generated/resources/ImplementationGuide-onc.ig.json ==
+WARNING: ImplementationGuide/onc.ig: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.uv.sdc#3.0.0 released on 2022-03-08, but the most recent appropriate version is 4.0.0. This reference is getting old and the more recent version should be considered
 INFORMATION: Resource: The resource ImplementationGuide/onc.ig could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Observation-ExampleDressingAssessment.json ==
-ERROR: Observation/ExampleDressingAssessment: Observation.subject: Unable to resolve resource with reference 'Patient/example-patient'
-ERROR: Observation/ExampleDressingAssessment: Observation.performer[0]: Unable to resolve resource with reference 'Practitioner/example-nurse'
-ERROR: Observation.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
-ERROR: Observation.text.div: Hyperlink 'Practitioner/example-nurse' at 'div/p/a' for 'Practitioner/example-nurse' does not resolve
 == fsh-generated/resources/Observation-ExampleNursingStrength-Motivation.json ==
-ERROR: Observation/ExampleNursingStrength-Motivation: Observation.subject: Unable to resolve resource with reference 'Patient/example-patient'
-ERROR: Observation/ExampleNursingStrength-Motivation: Observation.performer[0]: Unable to resolve resource with reference 'Practitioner/example-nurse'
-ERROR: Observation.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
-ERROR: Observation.text.div: Hyperlink 'Practitioner/example-nurse' at 'div/p/a' for 'Practitioner/example-nurse' does not resolve
 == fsh-generated/resources/Observation-ExampleSkinAssessment.json ==
-ERROR: Observation/ExampleSkinAssessment: Observation.subject: Unable to resolve resource with reference 'Patient/example-patient'
-ERROR: Observation/ExampleSkinAssessment: Observation.performer[0]: Unable to resolve resource with reference 'Practitioner/example-nurse'
-ERROR: Observation.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
-ERROR: Observation.text.div: Hyperlink 'Practitioner/example-nurse' at 'div/p/a' for 'Practitioner/example-nurse' does not resolve
 == fsh-generated/resources/Observation-example-4at-delirium.json ==
 ERROR: Observation/example-4at-delirium: Observation.component[0].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Normal' for https://opennursingcoreig.com/CodeSystem/onc-observation-codes#4at-alert-normal. Valid display is 'Normal Alertness' (for the language(s) 'en-US')
 ERROR: Observation/example-4at-delirium: Observation.component[0].value.ofType(CodeableConcept): None of the codings provided are in the value set '4AT Alertness Value Set' (https://opennursingcoreig.com/ValueSet/onc-4at-alertness-vs|1.0.0), and a coding from this value set is required) (codes = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#4at-alert-normal)
@@ -273,8 +214,6 @@ ERROR: Observation/example-goal-evaluation: Observation.code.coding[0].display: 
 == fsh-generated/resources/Observation-example-heart-rate.json ==
 INFORMATION: Observation/example-heart-rate: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/example-heart-rate: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1). Note that other slices are allowed in addition to this required slice
-ERROR: Observation/example-heart-rate: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1)
-ERROR: Observation/example-heart-rate: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1)
 == fsh-generated/resources/Observation-example-hygiene-assessment.json ==
 == fsh-generated/resources/Observation-example-inspired-oxygen.json ==
 == fsh-generated/resources/Observation-example-medication-ability.json ==
@@ -293,22 +232,16 @@ ERROR: Observation/example-mental-capacity: Observation.value.ofType(CodeableCon
 INFORMATION: Observation/example-oxygen-saturation: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/example-oxygen-saturation: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1). Note that other slices are allowed in addition to this required slice
 ERROR: Observation/example-oxygen-saturation: Observation.code: OxygenSatCode: magic LOINC code 2708-6 required, but not found (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1). Note that other Observation codes are allowed in addition to this required magic code
-ERROR: Observation/example-oxygen-saturation: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
-ERROR: Observation/example-oxygen-saturation: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 == fsh-generated/resources/Observation-example-patient-story.json ==
 == fsh-generated/resources/Observation-example-reasonable-adjustment.json ==
 == fsh-generated/resources/Observation-example-respiration-rate.json ==
 INFORMATION: Observation/example-respiration-rate: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/example-respiration-rate: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1). Note that other slices are allowed in addition to this required slice
-ERROR: Observation/example-respiration-rate: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1)
-ERROR: Observation/example-respiration-rate: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1)
 == fsh-generated/resources/Observation-example-seizure-record.json ==
 == fsh-generated/resources/Observation-example-swallowing-assessment.json ==
 == fsh-generated/resources/Observation-example-temperature.json ==
 INFORMATION: Observation/example-temperature: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/example-temperature: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1). Note that other slices are allowed in addition to this required slice
-ERROR: Observation/example-temperature: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
-ERROR: Observation/example-temperature: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated/resources/Observation-example-urinalysis.json ==
 == fsh-generated/resources/Observation-example-waterlow-score.json ==
 ERROR: Observation/example-waterlow-score: Observation.hasMember[0]: Slicing cannot be evaluated: Invalid use of resolve() in discriminator - 2 possible target type profiles on Observation.hasMember:skinTone (can only be one) (@char 1)
@@ -318,36 +251,25 @@ INFORMATION: Observation/example-waterlow-score: Observation: Observation.hasMem
 ERROR: Observation/observation-braden-scale: Observation.hasMember[0]: Slicing cannot be evaluated: Invalid use of resolve() in discriminator - 2 possible target type profiles on Observation.hasMember:skinTone (can only be one) (@char 1)
 INFORMATION: Observation/observation-braden-scale: Observation: Observation.hasMember:skinTone: Found 0 matches, but unable to check minimum required (Observation.hasMember) due to lack of slicing validation (from https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment|1.0.0)
 == fsh-generated/resources/Observation-observation-skin-tone.json ==
-ERROR: Observation/observation-skin-tone: Observation.value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type II' for http://snomed.info/sct#403154004. Valid display is one of 3 choices: 'Millipede burn (disorder)' (en), 'Millipede burn' (en) or 'Millipede burns' (en) (for the language(s) 'en-US')
-ERROR: Observation/observation-skin-tone: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Skin Tone Value Set' (https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#403154004)
+ERROR: Observation/observation-skin-tone: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Skin Tone Value Set' (https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0), and a coding from this value set is required) (codes = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#fitzpatrick-2)
+== fsh-generated/resources/Patient-example-patient.json ==
 == fsh-generated/resources/Patient-patient-example-jane.json ==
 WARNING: Patient/patient-example-jane: Patient.extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory' could not be found, so the code cannot be validated
+== fsh-generated/resources/Practitioner-example-nurse.json ==
 == fsh-generated/resources/Practitioner-practitioner-example.json ==
 == fsh-generated/resources/Procedure-example-nursing-intervention.json ==
 == fsh-generated/resources/Questionnaire-onc-braden-questionnaire.json ==
-ERROR: Questionnaire/onc-braden-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
-ERROR: Questionnaire/onc-braden-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
 ERROR: Questionnaire/onc-braden-questionnaire: Questionnaire.item[6].extension[0].value.ofType(Coding).display: Wrong Display Name '{score}' for http://unitsofmeasure.org#1. Valid display is one of 2 choices: '1' (en) or '1' (en) (for the language(s) 'en-US')
 INFORMATION: Resource: The resource Questionnaire/onc-braden-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-onc-monk-skintone-questionnaire.json ==
-ERROR: Questionnaire/onc-monk-skintone-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
-ERROR: Questionnaire/onc-monk-skintone-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
 INFORMATION: Resource: The resource Questionnaire/onc-monk-skintone-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-onc-must-questionnaire.json ==
-ERROR: Questionnaire/onc-must-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
-ERROR: Questionnaire/onc-must-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
 INFORMATION: Resource: The resource Questionnaire/onc-must-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-onc-news2-questionnaire.json ==
-ERROR: Questionnaire/onc-news2-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
-ERROR: Questionnaire/onc-news2-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
 INFORMATION: Resource: The resource Questionnaire/onc-news2-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-onc-person-centred-questionnaire.json ==
-ERROR: Questionnaire/onc-person-centred-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
-ERROR: Questionnaire/onc-person-centred-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
 INFORMATION: Resource: The resource Questionnaire/onc-person-centred-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-onc-waterlow-questionnaire.json ==
-ERROR: Questionnaire/onc-waterlow-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
-ERROR: Questionnaire/onc-waterlow-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
 INFORMATION: Resource: The resource Questionnaire/onc-waterlow-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-ONCRelationalCareModel.json ==
 INFORMATION: Resource: The resource StructureDefinition/ONCRelationalCareModel could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
@@ -659,7 +581,6 @@ INFORMATION: ValueSet/pain-assessment-code-vs: ValueSet.compose.include[0].conce
 == fsh-generated/resources/ValueSet-wound-stage-vs.json ==
 == input/resources/Library-onc-news2-cql.json ==
 ERROR: Library.where(url = 'http://opennursingcore.org/Library/ONC-NEWS2-CQL'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/Library-onc-news2-cql.json - the canonical URL (https://opennursingcoreig.com/Library/onc-news2-cql) does not match the URL (http://opennursingcore.org/Library/ONC-NEWS2-CQL). Use the special-url parameter if you really mean for it not to match
-WARNING: Library/onc-news2-cql: Library.content[0].url: No definition could be found for URL value 'input/cql/ONC_NEWS2_Logic.cql'
 INFORMATION: Resource: The resource Library/onc-news2-cql could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/Library-onc-news2-cql: URL Mismatch https://opennursingcoreig.com/Library/onc-news2-cql vs http://opennursingcore.org/Library/ONC-NEWS2-CQL
 == input/resources/PlanDefinition-news2-escalation.json ==

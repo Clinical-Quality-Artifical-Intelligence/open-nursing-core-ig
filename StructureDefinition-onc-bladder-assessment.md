@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-bladder-assessme
   "name" : "ONCBladderAssessment",
   "title" : "Bladder Assessment",
   "status" : "active",
-  "date" : "2026-07-11T14:02:42+00:00",
+  "date" : "2026-07-11T14:17:07+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Detailed assessment of bladder function, including voiding patterns.",
   "fhirVersion" : "4.0.1",

@@ -20,7 +20,7 @@ Profile: [Heart Rate](StructureDefinition-onc-heart-rate.md)
 
 **performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
-**value**: 95 /min
+**value**: 95 /min (Details: UCUM code/min = '/min')
 
 
 
@@ -56,7 +56,9 @@ Profile: [Heart Rate](StructureDefinition-onc-heart-rate.md)
   }],
   "valueQuantity" : {
     "value" : 95,
-    "unit" : "/min"
+    "unit" : "/min",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "/min"
   }
 }
 

@@ -18,7 +18,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCGlasgowComaScale"] ;
   fhir:StructureDefinition.title [ fhir:value "Glasgow Coma Scale"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:02:42+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:17:07+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6)."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

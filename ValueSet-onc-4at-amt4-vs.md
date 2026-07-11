@@ -51,7 +51,7 @@ Scoring options for AMT4 (Age, DOB, Place, Year)
   "title" : "4AT AMT4 Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-11T14:02:42+00:00",
+  "date" : "2026-07-11T14:17:07+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Scoring options for AMT4 (Age, DOB, Place, Year)",
   "compose" : {

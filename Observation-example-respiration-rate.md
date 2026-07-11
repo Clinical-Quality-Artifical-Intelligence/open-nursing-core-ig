@@ -20,7 +20,7 @@ Profile: [Respiration Rate](StructureDefinition-onc-respiration-rate.md)
 
 **performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
-**value**: 22 /min
+**value**: 22 /min (Details: UCUM code/min = '/min')
 
 
 
@@ -56,7 +56,9 @@ Profile: [Respiration Rate](StructureDefinition-onc-respiration-rate.md)
   }],
   "valueQuantity" : {
     "value" : 22,
-    "unit" : "/min"
+    "unit" : "/min",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "/min"
   }
 }
 

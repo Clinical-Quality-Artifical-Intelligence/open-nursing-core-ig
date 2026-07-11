@@ -185,9 +185,9 @@
     "uses" : {
     },
     "StructureDefinition-onc-mobility-assessment.html" : "Mobility Assessment",
-    "StructureDefinition-onc-hygiene-assessment.html" : "Personal Hygiene Needs Assessment",
+    "StructureDefinition-onc-oral-care-assessment.html" : "Oral Care Needs Assessment",
     "StructureDefinition-ONCRelationalCareModel.html" : "Relational Care Logical Model",
-    "StructureDefinition-onc-oral-care-assessment.html" : "Oral Care Needs Assessment"
+    "StructureDefinition-onc-hygiene-assessment.html" : "Personal Hygiene Needs Assessment"
   },
   {
     "url" : "https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs",
@@ -300,8 +300,8 @@
     "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
     "uses" : {
     },
-    "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation (Fitzpatrick -- secondary/legacy)",
-    "StructureDefinition-ONCRelationalCareModel.html" : "Relational Care Logical Model"
+    "StructureDefinition-ONCRelationalCareModel.html" : "Relational Care Logical Model",
+    "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation (Fitzpatrick -- secondary/legacy)"
   },
   {
     "url" : "https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs",

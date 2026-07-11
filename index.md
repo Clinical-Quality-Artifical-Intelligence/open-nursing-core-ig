@@ -106,6 +106,7 @@ This IG builds on the following specifications and terminologies:
 
 
 
+
 ### Cross-version analysis
 
 This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (onc.ig.r4)](package.r4.tgz) and [R4B (onc.ig.r4b)](package.r4b.tgz) are available.
@@ -125,7 +126,7 @@ This publication includes IP covered under the following statements.
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [ACVPUValueSet](ValueSet-acvpu-vs.md), [AMT4VS](ValueSet-onc-4at-amt4-vs.md)... Show 58 more, [AcuteChangeVS](ValueSet-onc-4at-acute-change-vs.md), [AlertnessVS](ValueSet-onc-4at-alertness-vs.md), [AttentionVS](ValueSet-onc-4at-attention-vs.md), [Goal/example-patient-goal](Goal-example-patient-goal.md), [GoalEvaluationValueSet](ValueSet-goal-evaluation-valueset.md), [HousingStatusVS](ValueSet-housing-status-vs.md), [InspiredOxygenValueSet](ValueSet-inspired-oxygen-vs.md), [NEWS2ScoreVS](ValueSet-onc-news2-score-vs.md), [NEWS2_Escalation_Protocol](PlanDefinition-news2-escalation-plan.md), [NursingInterventionValueSet](ValueSet-nursing-intervention-valueset.md), [NursingProblemValueSet](ValueSet-nursing-problem-valueset.md), [ONC4ATDelirium](StructureDefinition-onc-4at-delirium.md), [ONCACVPU](StructureDefinition-onc-acvpu.md), [ONCBladderAssessment](StructureDefinition-onc-bladder-assessment.md), [ONCBowelAssessment](StructureDefinition-onc-bowel-assessment.md), [ONCCatheterCare](StructureDefinition-onc-catheter-care.md), [ONCContinenceAssessment](StructureDefinition-onc-continence-assessment.md), [ONCDietaryRequirements](StructureDefinition-onc-dietary-requirements.md), [ONCDressingAssessment](StructureDefinition-onc-dressing-assessment.md), [ONCGoalEvaluation](StructureDefinition-onc-goal-evaluation.md), [ONCGoalTargetMeasureVS](ValueSet-onc-goal-target-measure-vs.md), [ONCHygieneAssessment](StructureDefinition-onc-hygiene-assessment.md), [ONCInspiredOxygen](StructureDefinition-onc-inspired-oxygen.md), [ONCMedicationAbility](StructureDefinition-onc-medication-ability.md), [ONCMedicationSelfAdmin](StructureDefinition-onc-medication-self-admin.md), [ONCMobilityAssessment](StructureDefinition-onc-mobility-assessment.md), [ONCNEWS2Questionnaire](Questionnaire-onc-news2-questionnaire.md), [ONCNursingClinicalImpression](StructureDefinition-onc-nursing-clinical-impression.md), [ONCNursingGoal](StructureDefinition-onc-nursing-goal.md), [ONCNursingIntervention](StructureDefinition-onc-nursing-intervention.md), [ONCNursingProblem](StructureDefinition-onc-nursing-problem.md), [ONCOralCareAssessment](StructureDefinition-onc-oral-care-assessment.md), [ONCOralIntakeAssessment](StructureDefinition-onc-oral-intake-assessment.md), [ONCPrognosisVS](ValueSet-onc-prognosis-vs.md), [ONCRelationalOutcomesVS](ValueSet-onc-relational-outcomes-vs.md), [ONCSkinAssessment](StructureDefinition-onc-skin-assessment.md), [ONCSwallowingAssessment](StructureDefinition-onc-swallowing-assessment.md), [ONCWoundAssessment](StructureDefinition-onc-wound-assessment.md), [Observation/ExampleDressingAssessment](Observation-ExampleDressingAssessment.md), [Observation/ExampleSkinAssessment](Observation-ExampleSkinAssessment.md), [Observation/example-acvpu](Observation-example-acvpu.md), [Observation/example-bladder-assessment](Observation-example-bladder-assessment.md), [Observation/example-bowel-assessment](Observation-example-bowel-assessment.md), [Observation/example-catheter-care](Observation-example-catheter-care.md), [Observation/example-continence-assessment](Observation-example-continence-assessment.md), [Observation/example-dietary-requirements](Observation-example-dietary-requirements.md), [Observation/example-goal-evaluation](Observation-example-goal-evaluation.md), [Observation/example-hygiene-assessment](Observation-example-hygiene-assessment.md), [Observation/example-inspired-oxygen](Observation-example-inspired-oxygen.md), [Observation/example-medication-ability](Observation-example-medication-ability.md), [Observation/example-medication-self-admin](Observation-example-medication-self-admin.md), [Observation/example-mobility-assessment](Observation-example-mobility-assessment.md), [Observation/example-oral-care-assessment](Observation-example-oral-care-assessment.md), [Observation/example-oral-intake](Observation-example-oral-intake.md), [Observation/example-swallowing-assessment](Observation-example-swallowing-assessment.md), [Observation/observation-skin-tone](Observation-observation-skin-tone.md), [PainScoreVS](ValueSet-onc-pain-score-vs.md) and [Procedure/example-nursing-intervention](Procedure-example-nursing-intervention.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [ACVPUValueSet](ValueSet-acvpu-vs.md), [AMT4VS](ValueSet-onc-4at-amt4-vs.md)... Show 57 more, [AcuteChangeVS](ValueSet-onc-4at-acute-change-vs.md), [AlertnessVS](ValueSet-onc-4at-alertness-vs.md), [AttentionVS](ValueSet-onc-4at-attention-vs.md), [Goal/example-patient-goal](Goal-example-patient-goal.md), [GoalEvaluationValueSet](ValueSet-goal-evaluation-valueset.md), [HousingStatusVS](ValueSet-housing-status-vs.md), [InspiredOxygenValueSet](ValueSet-inspired-oxygen-vs.md), [NEWS2ScoreVS](ValueSet-onc-news2-score-vs.md), [NEWS2_Escalation_Protocol](PlanDefinition-news2-escalation-plan.md), [NursingInterventionValueSet](ValueSet-nursing-intervention-valueset.md), [NursingProblemValueSet](ValueSet-nursing-problem-valueset.md), [ONC4ATDelirium](StructureDefinition-onc-4at-delirium.md), [ONCACVPU](StructureDefinition-onc-acvpu.md), [ONCBladderAssessment](StructureDefinition-onc-bladder-assessment.md), [ONCBowelAssessment](StructureDefinition-onc-bowel-assessment.md), [ONCCatheterCare](StructureDefinition-onc-catheter-care.md), [ONCContinenceAssessment](StructureDefinition-onc-continence-assessment.md), [ONCDietaryRequirements](StructureDefinition-onc-dietary-requirements.md), [ONCDressingAssessment](StructureDefinition-onc-dressing-assessment.md), [ONCGoalEvaluation](StructureDefinition-onc-goal-evaluation.md), [ONCGoalTargetMeasureVS](ValueSet-onc-goal-target-measure-vs.md), [ONCHygieneAssessment](StructureDefinition-onc-hygiene-assessment.md), [ONCInspiredOxygen](StructureDefinition-onc-inspired-oxygen.md), [ONCMedicationAbility](StructureDefinition-onc-medication-ability.md), [ONCMedicationSelfAdmin](StructureDefinition-onc-medication-self-admin.md), [ONCMobilityAssessment](StructureDefinition-onc-mobility-assessment.md), [ONCNEWS2Questionnaire](Questionnaire-onc-news2-questionnaire.md), [ONCNursingClinicalImpression](StructureDefinition-onc-nursing-clinical-impression.md), [ONCNursingGoal](StructureDefinition-onc-nursing-goal.md), [ONCNursingIntervention](StructureDefinition-onc-nursing-intervention.md), [ONCNursingProblem](StructureDefinition-onc-nursing-problem.md), [ONCOralCareAssessment](StructureDefinition-onc-oral-care-assessment.md), [ONCOralIntakeAssessment](StructureDefinition-onc-oral-intake-assessment.md), [ONCPrognosisVS](ValueSet-onc-prognosis-vs.md), [ONCRelationalOutcomesVS](ValueSet-onc-relational-outcomes-vs.md), [ONCSkinAssessment](StructureDefinition-onc-skin-assessment.md), [ONCSwallowingAssessment](StructureDefinition-onc-swallowing-assessment.md), [ONCWoundAssessment](StructureDefinition-onc-wound-assessment.md), [Observation/ExampleDressingAssessment](Observation-ExampleDressingAssessment.md), [Observation/ExampleSkinAssessment](Observation-ExampleSkinAssessment.md), [Observation/example-acvpu](Observation-example-acvpu.md), [Observation/example-bladder-assessment](Observation-example-bladder-assessment.md), [Observation/example-bowel-assessment](Observation-example-bowel-assessment.md), [Observation/example-catheter-care](Observation-example-catheter-care.md), [Observation/example-continence-assessment](Observation-example-continence-assessment.md), [Observation/example-dietary-requirements](Observation-example-dietary-requirements.md), [Observation/example-goal-evaluation](Observation-example-goal-evaluation.md), [Observation/example-hygiene-assessment](Observation-example-hygiene-assessment.md), [Observation/example-inspired-oxygen](Observation-example-inspired-oxygen.md), [Observation/example-medication-ability](Observation-example-medication-ability.md), [Observation/example-medication-self-admin](Observation-example-medication-self-admin.md), [Observation/example-mobility-assessment](Observation-example-mobility-assessment.md), [Observation/example-oral-care-assessment](Observation-example-oral-care-assessment.md), [Observation/example-oral-intake](Observation-example-oral-intake.md), [Observation/example-swallowing-assessment](Observation-example-swallowing-assessment.md), [PainScoreVS](ValueSet-onc-pain-score-vs.md) and [Procedure/example-nursing-intervention](Procedure-example-nursing-intervention.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
@@ -156,7 +157,7 @@ This publication includes IP covered under the following statements.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-07-11T14:02:42+00:00",
+  "date" : "2026-07-11T14:17:07+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md.",
   "packageId" : "onc.ig",
@@ -181,6 +182,12 @@ This publication includes IP covered under the following statements.
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_sdc",
+    "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+    "packageId" : "hl7.fhir.uv.sdc",
+    "version" : "3.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -1040,6 +1047,18 @@ This publication includes IP covered under the following statements.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/example-nurse"
+      },
+      "name" : "Example Nurse",
+      "description" : "Synthetic registered nurse referenced by the worked examples. Not a real person.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Condition"
       }],
       "reference" : {
@@ -1060,6 +1079,18 @@ This publication includes IP covered under the following statements.
       "name" : "Example Nursing Strength: Motivation",
       "description" : "Demonstration of the ONCNursingStrength profile.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/example-patient"
+      },
+      "name" : "Example Patient",
+      "description" : "Synthetic patient referenced by the worked examples. Not a real person.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1106,6 +1137,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-abc-chart"
       },
       "name" : "example-abc-chart",
+      "description" : "Worked example: abc chart (ONCABCChart). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"
     },
     {
@@ -1117,6 +1149,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-acvpu"
       },
       "name" : "example-acvpu",
+      "description" : "Worked example: acvpu (ONCACVPU). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-acvpu"
     },
     {
@@ -1128,6 +1161,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-bladder-assessment"
       },
       "name" : "example-bladder-assessment",
+      "description" : "Worked example: bladder assessment (ONCBladderAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment"
     },
     {
@@ -1139,6 +1173,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-blood-pressure"
       },
       "name" : "example-blood-pressure",
+      "description" : "Worked example: blood pressure (ONCBloodPressure). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure"
     },
     {
@@ -1150,6 +1185,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-bowel-assessment"
       },
       "name" : "example-bowel-assessment",
+      "description" : "Worked example: bowel assessment (ONCBowelAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment"
     },
     {
@@ -1161,6 +1197,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-bristol-stool"
       },
       "name" : "example-bristol-stool",
+      "description" : "Worked example: bristol stool (ONCBristolStoolChart). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
     },
     {
@@ -1172,6 +1209,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-catheter-care"
       },
       "name" : "example-catheter-care",
+      "description" : "Worked example: catheter care (ONCCatheterCare). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-catheter-care"
     },
     {
@@ -1183,6 +1221,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-clinical-frailty"
       },
       "name" : "example-clinical-frailty",
+      "description" : "Worked example: clinical frailty (ONCClinicalFrailtyScale). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"
     },
     {
@@ -1194,6 +1233,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-continence-assessment"
       },
       "name" : "example-continence-assessment",
+      "description" : "Worked example: continence assessment (ONCContinenceAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment"
     },
     {
@@ -1205,6 +1245,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-dietary-requirements"
       },
       "name" : "example-dietary-requirements",
+      "description" : "Worked example: dietary requirements (ONCDietaryRequirements). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements"
     },
     {
@@ -1216,6 +1257,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-fluid-balance"
       },
       "name" : "example-fluid-balance",
+      "description" : "Worked example: fluid balance (ONCFluidBalance). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"
     },
     {
@@ -1227,6 +1269,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-goal-evaluation"
       },
       "name" : "example-goal-evaluation",
+      "description" : "Worked example: goal evaluation (ONCGoalEvaluation). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"
     },
     {
@@ -1238,6 +1281,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-heart-rate"
       },
       "name" : "example-heart-rate",
+      "description" : "Worked example: heart rate (ONCHeartRate). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-heart-rate"
     },
     {
@@ -1249,6 +1293,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-hygiene-assessment"
       },
       "name" : "example-hygiene-assessment",
+      "description" : "Worked example: hygiene assessment (ONCHygieneAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment"
     },
     {
@@ -1260,6 +1305,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-inspired-oxygen"
       },
       "name" : "example-inspired-oxygen",
+      "description" : "Worked example: inspired oxygen (ONCInspiredOxygen). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen"
     },
     {
@@ -1271,6 +1317,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-medication-ability"
       },
       "name" : "example-medication-ability",
+      "description" : "Worked example: medication ability (ONCMedicationAbility). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-medication-ability"
     },
     {
@@ -1282,6 +1329,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-medication-self-admin"
       },
       "name" : "example-medication-self-admin",
+      "description" : "Worked example: medication self admin (ONCMedicationSelfAdmin). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin"
     },
     {
@@ -1293,6 +1341,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-mental-capacity"
       },
       "name" : "example-mental-capacity",
+      "description" : "Worked example: mental capacity (ONCMentalCapacity). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"
     },
     {
@@ -1304,6 +1353,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-mobility-assessment"
       },
       "name" : "example-mobility-assessment",
+      "description" : "Worked example: mobility assessment (ONCMobilityAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment"
     },
     {
@@ -1315,6 +1365,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-monk-skin-tone"
       },
       "name" : "example-monk-skin-tone",
+      "description" : "Worked example: monk skin tone (ONCMonkSkinToneObservation). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"
     },
     {
@@ -1326,6 +1377,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-must-score"
       },
       "name" : "example-must-score",
+      "description" : "Worked example: must score (ONCMUSTScore). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-must-score"
     },
     {
@@ -1337,6 +1389,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-news2-score"
       },
       "name" : "example-news2-score",
+      "description" : "Worked example: news2 score (ONCNEWS2Score). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-news2-score"
     },
     {
@@ -1348,6 +1401,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Procedure/example-nursing-intervention"
       },
       "name" : "example-nursing-intervention",
+      "description" : "Worked example: nursing intervention (ONCNursingIntervention). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"
     },
     {
@@ -1359,6 +1413,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Condition/example-nursing-problem"
       },
       "name" : "example-nursing-problem",
+      "description" : "Worked example: nursing problem (ONCNursingProblem). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"
     },
     {
@@ -1370,6 +1425,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-oral-care-assessment"
       },
       "name" : "example-oral-care-assessment",
+      "description" : "Worked example: oral care assessment (ONCOralCareAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment"
     },
     {
@@ -1381,6 +1437,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-oral-health"
       },
       "name" : "example-oral-health",
+      "description" : "Worked example: oral health (ONCOralHealth). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-health"
     },
     {
@@ -1392,6 +1449,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-oral-intake"
       },
       "name" : "example-oral-intake",
+      "description" : "Worked example: oral intake (ONCOralIntakeAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment"
     },
     {
@@ -1403,6 +1461,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-oxygen-saturation"
       },
       "name" : "example-oxygen-saturation",
+      "description" : "Worked example: oxygen saturation (ONCOxygenSaturation). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation"
     },
     {
@@ -1414,7 +1473,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Goal/example-patient-goal"
       },
       "name" : "example-patient-goal",
-      "description" : "Patient will remain free from falls.",
+      "description" : "Worked example: patient goal (ONCNursingGoal). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
     },
     {
@@ -1426,6 +1485,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-patient-story"
       },
       "name" : "example-patient-story",
+      "description" : "Worked example: patient story (ONCPatientStory). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-patient-story"
     },
     {
@@ -1437,6 +1497,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-reasonable-adjustment"
       },
       "name" : "example-reasonable-adjustment",
+      "description" : "Worked example: reasonable adjustment (ONCReasonableAdjustment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"
     },
     {
@@ -1448,6 +1509,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-respiration-rate"
       },
       "name" : "example-respiration-rate",
+      "description" : "Worked example: respiration rate (ONCRespirationRate). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate"
     },
     {
@@ -1459,6 +1521,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-seizure-record"
       },
       "name" : "example-seizure-record",
+      "description" : "Worked example: seizure record (ONCSeizureRecord). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"
     },
     {
@@ -1470,6 +1533,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-swallowing-assessment"
       },
       "name" : "example-swallowing-assessment",
+      "description" : "Worked example: swallowing assessment (ONCSwallowingAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment"
     },
     {
@@ -1481,6 +1545,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-temperature"
       },
       "name" : "example-temperature",
+      "description" : "Worked example: temperature (ONCBodyTemperature). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-body-temperature"
     },
     {
@@ -1492,6 +1557,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-urinalysis"
       },
       "name" : "example-urinalysis",
+      "description" : "Worked example: urinalysis (ONCUrinalysis). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"
     },
     {
@@ -1503,6 +1569,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-waterlow-score"
       },
       "name" : "example-waterlow-score",
+      "description" : "Worked example: waterlow score (ONCWaterlowScore). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
     },
     {
@@ -1514,6 +1581,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/example-what-matters"
       },
       "name" : "example-what-matters",
+      "description" : "Worked example: what matters (ONCWhatMattersToMe). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-what-matters"
     },
     {
@@ -1945,6 +2013,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/observation-braden-scale"
       },
       "name" : "observation-braden-scale",
+      "description" : "Worked example: observation braden scale (ONCBradenScaleAssessment). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"
     },
     {
@@ -1956,6 +2025,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Observation/observation-skin-tone"
       },
       "name" : "observation-skin-tone",
+      "description" : "Worked example: observation skin tone (ONCSkinToneObservation). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation"
     },
     {
@@ -2231,6 +2301,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Patient/patient-example-jane"
       },
       "name" : "patient-example-jane",
+      "description" : "Worked example: patient example jane (ONCNHSPatient). Synthetic data - not a real person.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"
     },
     {
@@ -2290,6 +2361,7 @@ This publication includes IP covered under the following statements.
         "reference" : "Practitioner/practitioner-example"
       },
       "name" : "practitioner-example",
+      "description" : "Worked example: practitioner example (Practitioner). Synthetic data - not a real person.",
       "exampleBoolean" : true
     },
     {

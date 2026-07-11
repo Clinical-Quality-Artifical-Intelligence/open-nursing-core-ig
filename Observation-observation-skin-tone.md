@@ -20,7 +20,7 @@ Profile: [Skin Tone Observation (Fitzpatrick -- secondary/legacy)](StructureDefi
 
 **performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
-**value**: Fitzpatrick skin type II
+**value**: Type II
 
 
 
@@ -55,9 +55,9 @@ Profile: [Skin Tone Observation (Fitzpatrick -- secondary/legacy)](StructureDefi
   }],
   "valueCodeableConcept" : {
     "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "403154004",
-      "display" : "Fitzpatrick skin type II"
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "code" : "fitzpatrick-2",
+      "display" : "Type II"
     }]
   }
 }

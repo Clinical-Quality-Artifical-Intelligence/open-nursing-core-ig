@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCMUSTScore"] ;
   fhir:StructureDefinition.title [ fhir:value "MUST Score (Malnutrition Universal Screening Tool)"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:02:42+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:17:07+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

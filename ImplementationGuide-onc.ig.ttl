@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OpenNursingCoreIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-11T14:02:42+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-11T14:17:07+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:ImplementationGuide.description [ fhir:value "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md."] ;
   fhir:ImplementationGuide.packageId [ fhir:value "onc.ig"] ;
@@ -54,6 +54,15 @@
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.3.0" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_sdc" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc" ;
+       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.sdc" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.0.0" ]
   ] ;
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -1019,6 +1028,20 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://opennursingcoreig.com/Practitioner/example-nurse> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/example-nurse" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Nurse" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Synthetic registered nurse referenced by the worked examples. Not a real person." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1032,7 +1055,7 @@
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-nursing-need>
        ]
      ], [
-       fhir:index 26 ;
+       fhir:index 27 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1049,7 +1072,21 @@
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength>
        ]
      ], [
-       fhir:index 27 ;
+       fhir:index 28 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://opennursingcoreig.com/Patient/example-patient> ;
+         fhir:Reference.reference [ fhir:value "Patient/example-patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Synthetic patient referenced by the worked examples. Not a real person." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 29 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1066,7 +1103,7 @@
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment>
        ]
      ], [
-       fhir:index 28 ;
+       fhir:index 30 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1083,7 +1120,7 @@
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium>
        ]
      ], [
-       fhir:index 29 ;
+       fhir:index 31 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1100,7 +1137,7 @@
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale>
        ]
      ], [
-       fhir:index 30 ;
+       fhir:index 32 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1111,12 +1148,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-abc-chart" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-abc-chart" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: abc chart (ONCABCChart). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-abc-chart>
        ]
      ], [
-       fhir:index 31 ;
+       fhir:index 33 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1127,12 +1165,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-acvpu" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-acvpu" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: acvpu (ONCACVPU). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-acvpu" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-acvpu>
        ]
      ], [
-       fhir:index 32 ;
+       fhir:index 34 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1143,12 +1182,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-bladder-assessment" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-bladder-assessment" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: bladder assessment (ONCBladderAssessment). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment>
        ]
      ], [
-       fhir:index 33 ;
+       fhir:index 35 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1159,12 +1199,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-blood-pressure" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-blood-pressure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: blood pressure (ONCBloodPressure). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure>
        ]
      ], [
-       fhir:index 34 ;
+       fhir:index 36 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1175,12 +1216,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-bowel-assessment" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-bowel-assessment" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: bowel assessment (ONCBowelAssessment). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment>
        ]
      ], [
-       fhir:index 35 ;
+       fhir:index 37 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1191,12 +1233,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-bristol-stool" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-bristol-stool" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: bristol stool (ONCBristolStoolChart). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart>
        ]
      ], [
-       fhir:index 36 ;
+       fhir:index 38 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1207,12 +1250,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-catheter-care" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-catheter-care" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: catheter care (ONCCatheterCare). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-catheter-care" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-catheter-care>
        ]
      ], [
-       fhir:index 37 ;
+       fhir:index 39 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1223,12 +1267,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-clinical-frailty" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-clinical-frailty" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: clinical frailty (ONCClinicalFrailtyScale). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale>
        ]
      ], [
-       fhir:index 38 ;
+       fhir:index 40 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1239,12 +1284,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-continence-assessment" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-continence-assessment" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: continence assessment (ONCContinenceAssessment). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment>
        ]
      ], [
-       fhir:index 39 ;
+       fhir:index 41 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1255,12 +1301,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-dietary-requirements" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-dietary-requirements" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: dietary requirements (ONCDietaryRequirements). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements>
        ]
      ], [
-       fhir:index 40 ;
+       fhir:index 42 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1271,12 +1318,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-fluid-balance" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-fluid-balance" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: fluid balance (ONCFluidBalance). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance>
        ]
      ], [
-       fhir:index 41 ;
+       fhir:index 43 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1287,12 +1335,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-goal-evaluation" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-goal-evaluation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: goal evaluation (ONCGoalEvaluation). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation>
        ]
      ], [
-       fhir:index 42 ;
+       fhir:index 44 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1303,12 +1352,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-heart-rate" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-heart-rate" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: heart rate (ONCHeartRate). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-heart-rate" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-heart-rate>
        ]
      ], [
-       fhir:index 43 ;
+       fhir:index 45 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1319,12 +1369,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-hygiene-assessment" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-hygiene-assessment" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: hygiene assessment (ONCHygieneAssessment). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment>
        ]
      ], [
-       fhir:index 44 ;
+       fhir:index 46 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1335,12 +1386,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-inspired-oxygen" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-inspired-oxygen" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: inspired oxygen (ONCInspiredOxygen). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen>
        ]
      ], [
-       fhir:index 45 ;
+       fhir:index 47 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1351,12 +1403,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-medication-ability" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-medication-ability" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: medication ability (ONCMedicationAbility). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-medication-ability" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-medication-ability>
        ]
      ], [
-       fhir:index 46 ;
+       fhir:index 48 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1367,12 +1420,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-medication-self-admin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-medication-self-admin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: medication self admin (ONCMedicationSelfAdmin). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin>
        ]
      ], [
-       fhir:index 47 ;
+       fhir:index 49 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1383,12 +1437,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-mental-capacity" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-mental-capacity" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: mental capacity (ONCMentalCapacity). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity>
        ]
      ], [
-       fhir:index 48 ;
+       fhir:index 50 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1399,12 +1454,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-mobility-assessment" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-mobility-assessment" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: mobility assessment (ONCMobilityAssessment). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment>
        ]
      ], [
-       fhir:index 49 ;
+       fhir:index 51 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1415,12 +1471,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-monk-skin-tone" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-monk-skin-tone" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: monk skin tone (ONCMonkSkinToneObservation). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation>
        ]
      ], [
-       fhir:index 50 ;
+       fhir:index 52 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1431,12 +1488,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-must-score" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-must-score" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: must score (ONCMUSTScore). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-must-score" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-must-score>
        ]
      ], [
-       fhir:index 51 ;
+       fhir:index 53 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1447,12 +1505,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-news2-score" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-news2-score" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: news2 score (ONCNEWS2Score). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-news2-score" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-news2-score>
        ]
      ], [
-       fhir:index 52 ;
+       fhir:index 54 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1463,12 +1522,13 @@
          fhir:Reference.reference [ fhir:value "Procedure/example-nursing-intervention" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-nursing-intervention" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: nursing intervention (ONCNursingIntervention). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention>
        ]
      ], [
-       fhir:index 53 ;
+       fhir:index 55 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1479,12 +1539,13 @@
          fhir:Reference.reference [ fhir:value "Condition/example-nursing-problem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-nursing-problem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: nursing problem (ONCNursingProblem). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem>
        ]
      ], [
-       fhir:index 54 ;
+       fhir:index 56 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1495,12 +1556,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-oral-care-assessment" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-oral-care-assessment" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: oral care assessment (ONCOralCareAssessment). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment>
        ]
      ], [
-       fhir:index 55 ;
+       fhir:index 57 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1511,12 +1573,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-oral-health" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-oral-health" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: oral health (ONCOralHealth). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-oral-health" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-oral-health>
        ]
      ], [
-       fhir:index 56 ;
+       fhir:index 58 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1527,12 +1590,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-oral-intake" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-oral-intake" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: oral intake (ONCOralIntakeAssessment). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment>
        ]
      ], [
-       fhir:index 57 ;
+       fhir:index 59 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1543,12 +1607,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-oxygen-saturation" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-oxygen-saturation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: oxygen saturation (ONCOxygenSaturation). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation>
        ]
      ], [
-       fhir:index 58 ;
+       fhir:index 60 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1559,13 +1624,13 @@
          fhir:Reference.reference [ fhir:value "Goal/example-patient-goal" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-patient-goal" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient will remain free from falls." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: patient goal (ONCNursingGoal). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal>
        ]
      ], [
-       fhir:index 59 ;
+       fhir:index 61 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1576,12 +1641,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-patient-story" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-patient-story" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: patient story (ONCPatientStory). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-patient-story" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-patient-story>
        ]
      ], [
-       fhir:index 60 ;
+       fhir:index 62 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1592,12 +1658,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-reasonable-adjustment" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-reasonable-adjustment" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: reasonable adjustment (ONCReasonableAdjustment). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment>
        ]
      ], [
-       fhir:index 61 ;
+       fhir:index 63 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1608,12 +1675,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-respiration-rate" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-respiration-rate" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: respiration rate (ONCRespirationRate). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate>
        ]
      ], [
-       fhir:index 62 ;
+       fhir:index 64 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1624,12 +1692,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-seizure-record" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-seizure-record" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: seizure record (ONCSeizureRecord). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-seizure-record>
        ]
      ], [
-       fhir:index 63 ;
+       fhir:index 65 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1640,12 +1709,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-swallowing-assessment" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-swallowing-assessment" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: swallowing assessment (ONCSwallowingAssessment). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment>
        ]
      ], [
-       fhir:index 64 ;
+       fhir:index 66 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1656,12 +1726,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-temperature" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-temperature" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: temperature (ONCBodyTemperature). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-body-temperature" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-body-temperature>
        ]
      ], [
-       fhir:index 65 ;
+       fhir:index 67 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1672,12 +1743,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-urinalysis" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-urinalysis" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: urinalysis (ONCUrinalysis). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-urinalysis>
        ]
      ], [
-       fhir:index 66 ;
+       fhir:index 68 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1688,12 +1760,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-waterlow-score" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-waterlow-score" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: waterlow score (ONCWaterlowScore). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score>
        ]
      ], [
-       fhir:index 67 ;
+       fhir:index 69 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1704,12 +1777,13 @@
          fhir:Reference.reference [ fhir:value "Observation/example-what-matters" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-what-matters" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: what matters (ONCWhatMattersToMe). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-what-matters" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-what-matters>
        ]
      ], [
-       fhir:index 68 ;
+       fhir:index 70 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1723,7 +1797,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 69 ;
+       fhir:index 71 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1737,7 +1811,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 70 ;
+       fhir:index 72 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1751,7 +1825,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for evaluating patient goal outcomes" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 71 ;
+       fhir:index 73 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1765,7 +1839,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used for goal target measures" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 72 ;
+       fhir:index 74 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1779,7 +1853,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Heart rate (pulse) observation for NEWS2" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 73 ;
+       fhir:index 75 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1793,7 +1867,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for patient housing status" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 74 ;
+       fhir:index 76 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1807,7 +1881,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 75 ;
+       fhir:index 77 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1821,7 +1895,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for inspired oxygen status" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 76 ;
+       fhir:index 78 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1835,7 +1909,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension to link nursing interventions to the patient goals they are intended to achieve." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 77 ;
+       fhir:index 79 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1849,7 +1923,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. NOT PRODUCTION-READY: see the placeholder-canonical note below." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 78 ;
+       fhir:index 80 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1863,7 +1937,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assessment of the patient's ability to manage their own medication." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 79 ;
+       fhir:index 81 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1877,7 +1951,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation of the patient performing self-administration." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 80 ;
+       fhir:index 82 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1891,7 +1965,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 81 ;
+       fhir:index 83 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1905,7 +1979,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating presence or absence of capacity" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 82 ;
+       fhir:index 84 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1919,7 +1993,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 83 ;
+       fhir:index 85 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1933,7 +2007,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assessment of capability to move and limitations." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 84 ;
+       fhir:index 86 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1947,7 +2021,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SDC questionnaire capturing the patient's skin tone on the 10-point Monk Skin Tone Scale (A–J). Extracts to an Observation conforming to ONCMonkSkinToneObservation. This record is the required input to the IG's equity fairness gate for wound and pressure-area assessment." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 85 ;
+       fhir:index 87 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1961,7 +2035,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 86 ;
+       fhir:index 88 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1975,7 +2049,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 87 ;
+       fhir:index 89 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1989,7 +2063,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet for ONCMonkScaleVS used by the Open Nursing Core IG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 88 ;
+       fhir:index 90 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2003,7 +2077,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 89 ;
+       fhir:index 91 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2017,7 +2091,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SDC questionnaire for the Malnutrition Universal Screening Tool: three step scores and the total. Coded items extract to Observations using the ONC MUST component codes; assembling them into the single component-based ONCMUSTScore Observation is the capturing app's responsibility." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 90 ;
+       fhir:index 92 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2031,7 +2105,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 91 ;
+       fhir:index 93 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2045,7 +2119,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SDC questionnaire for capturing the NEWS2 physiological parameter set and total score. Coded items extract to Observations conforming to the ONC NEWS2 and vital-sign profiles. Scoring and escalation logic is computable via the ONC_NEWS2_Logic CQL library and the news2-escalation PlanDefinition." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 92 ;
+       fhir:index 94 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2059,7 +2133,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC and SNOMED codes for NEWS2" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 93 ;
+       fhir:index 95 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2073,7 +2147,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Computable escalation protocol for NEWS2 results, encoding the RCP response bands: 0-4 routine monitoring; 3 in any single parameter registered-nurse review; 5-6 urgent review by a clinician competent in acute illness; 7+ emergency response." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 94 ;
+       fhir:index 96 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2087,7 +2161,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 95 ;
+       fhir:index 97 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2101,7 +2175,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NEWS2 total score categories." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 96 ;
+       fhir:index 98 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2115,7 +2189,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 97 ;
+       fhir:index 99 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2129,7 +2203,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED codes for NEWS2 sub-scores" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 98 ;
+       fhir:index 100 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2143,7 +2217,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for nursing interventions" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 99 ;
+       fhir:index 101 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2157,7 +2231,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 100 ;
+       fhir:index 102 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2171,7 +2245,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for nursing problems and diagnoses" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 101 ;
+       fhir:index 103 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2185,7 +2259,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Prognosis codes for clinical impression" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 102 ;
+       fhir:index 104 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2199,7 +2273,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension to link goal evaluation observations to the patient goals being evaluated." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 103 ;
+       fhir:index 105 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2210,12 +2284,13 @@
          fhir:Reference.reference [ fhir:value "Observation/observation-braden-scale" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-braden-scale" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: observation braden scale (ONCBradenScaleAssessment). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment>
        ]
      ], [
-       fhir:index 104 ;
+       fhir:index 106 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2226,12 +2301,13 @@
          fhir:Reference.reference [ fhir:value "Observation/observation-skin-tone" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-skin-tone" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: observation skin tone (ONCSkinToneObservation). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation>
        ]
      ], [
-       fhir:index 105 ;
+       fhir:index 107 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2245,7 +2321,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 106 ;
+       fhir:index 108 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2259,7 +2335,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 107 ;
+       fhir:index 109 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2273,7 +2349,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 108 ;
+       fhir:index 110 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2287,7 +2363,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 109 ;
+       fhir:index 111 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2301,7 +2377,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A patient profile for use in NHS nursing contexts with ethnic category extension." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 110 ;
+       fhir:index 112 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2315,7 +2391,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 111 ;
+       fhir:index 113 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2329,7 +2405,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 112 ;
+       fhir:index 114 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2343,7 +2419,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 113 ;
+       fhir:index 115 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2357,7 +2433,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A structured representation of a nursing care need as defined by the PRSB standard. Maps to the 'Needs' section of the information model." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 114 ;
+       fhir:index 116 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2371,7 +2447,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 115 ;
+       fhir:index 117 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2385,7 +2461,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Custom observation codes for Open Nursing Core" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 116 ;
+       fhir:index 118 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2399,7 +2475,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Captures the measurable outcomes of relational and empathic nursing care." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 117 ;
+       fhir:index 119 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2413,7 +2489,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The relational-care findings that the onc-to-nanda ConceptMap maps to formal nursing diagnoses." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 118 ;
+       fhir:index 120 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2427,7 +2503,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 119 ;
+       fhir:index 121 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2441,7 +2517,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assessment of mouth care needs and oral health." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 120 ;
+       fhir:index 122 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2455,7 +2531,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 121 ;
+       fhir:index 123 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2469,7 +2545,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assessment of ability to take food and fluids orally." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 122 ;
+       fhir:index 124 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2483,7 +2559,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Oxygen saturation (SpO2) observation for NEWS2" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 123 ;
+       fhir:index 125 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2497,7 +2573,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pain severity assessment using the Numeric Rating Scale (0-10)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 124 ;
+       fhir:index 126 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2511,7 +2587,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC codes for pain severity assessment" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 125 ;
+       fhir:index 127 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2525,7 +2601,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Standard 0-10 or Abbey Pain Scale score" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 126 ;
+       fhir:index 128 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2539,7 +2615,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 127 ;
+       fhir:index 129 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2550,12 +2626,13 @@
          fhir:Reference.reference [ fhir:value "Patient/patient-example-jane" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-example-jane" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: patient example jane (ONCNHSPatient). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient" ;
          fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient>
        ]
      ], [
-       fhir:index 128 ;
+       fhir:index 130 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2569,7 +2646,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 129 ;
+       fhir:index 131 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2583,7 +2660,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Common functions of behaviour (SEAT)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 130 ;
+       fhir:index 132 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2597,7 +2674,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SDC questionnaire capturing 'What Matters to Me' and reasonable adjustments (Equality Act 2010) as structured, retrievable records. Items extract to Observations conforming to ONCWhatMattersToMe and ONCReasonableAdjustment." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 131 ;
+       fhir:index 133 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2611,7 +2688,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assessment of assistance required for personal hygiene." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 132 ;
+       fhir:index 134 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2622,9 +2699,10 @@
          fhir:Reference.reference [ fhir:value "Practitioner/practitioner-example" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Worked example: practitioner example (Practitioner). Synthetic data - not a real person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 133 ;
+       fhir:index 135 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2638,7 +2716,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for categorizing nursing problems" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 134 ;
+       fhir:index 136 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2652,7 +2730,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code system for categorizing types of nursing problems" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 135 ;
+       fhir:index 137 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2666,7 +2744,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 136 ;
+       fhir:index 138 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2680,7 +2758,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print')." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 137 ;
+       fhir:index 139 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2694,7 +2772,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 138 ;
+       fhir:index 140 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2708,7 +2786,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 139 ;
+       fhir:index 141 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2722,7 +2800,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Respiration rate observation for NEWS2" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 140 ;
+       fhir:index 142 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2736,7 +2814,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 141 ;
+       fhir:index 143 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2750,7 +2828,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Detailed assessment of skin condition (e.g., intact, dry, broken), separate from pressure ulcer risk." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 142 ;
+       fhir:index 144 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2764,7 +2842,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation of patient skin tone using the Fitzpatrick skin type classification. Fitzpatrick was designed to describe UV photosensitivity, not clinical skin tone, and compresses the darker end of the range into few categories. This profile is RETAINED FOR BACKWARD COMPATIBILITY with systems that already record Fitzpatrick phototypes; it is secondary to, and SHOULD NOT be used in place of, the Monk Skin Tone Scale (see ONCMonkSkinToneObservation), which is this IG's primary and recommended skin-tone vocabulary." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 143 ;
+       fhir:index 145 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2778,7 +2856,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 144 ;
+       fhir:index 146 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2792,7 +2870,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 145 ;
+       fhir:index 147 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2806,7 +2884,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Screening for dysphagia and swallowing difficulties." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 146 ;
+       fhir:index 148 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2820,7 +2898,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An extension to record the ethnic category of a patient, as per UK Core standards." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 147 ;
+       fhir:index 149 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2834,7 +2912,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 148 ;
+       fhir:index 150 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2848,7 +2926,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 149 ;
+       fhir:index 151 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2862,7 +2940,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SDC questionnaire for the Waterlow pressure-ulcer risk assessment total score, with a mandatory Monk Skin Tone item (equity fairness gate embedded at the capture layer). The total extracts to an Observation using the ONC Waterlow code; linking the skin-tone Observation via hasMember[skinTone] is the capturing app's responsibility." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 150 ;
+       fhir:index 152 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2876,7 +2954,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 151 ;
+       fhir:index 153 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2890,7 +2968,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Comprehensive wound assessment including staging and dimensions" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 152 ;
+       fhir:index 154 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;

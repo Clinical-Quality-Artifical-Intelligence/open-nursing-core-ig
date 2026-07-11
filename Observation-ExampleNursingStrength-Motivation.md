@@ -12,11 +12,11 @@ Profile: [ONC Nursing Strength](StructureDefinition-onc-nursing-strength.md)
 
 **code**: Nursing Strengths
 
-**subject**: [Patient/example-patient](Patient/example-patient)
+**subject**: [Pat Example Female, DoB: 1948-05-20](Patient-example-patient.md)
 
 **effective**: 2026-01-15 10:00:00+0000
 
-**performer**: [Practitioner/example-nurse](Practitioner/example-nurse)
+**performer**: [Practitioner Alex Nurse ](Practitioner-example-nurse.md)
 
 **value**: Highly motivated to maintain independence in upper body dressing.
 

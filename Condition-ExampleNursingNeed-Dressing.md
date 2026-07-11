@@ -14,7 +14,7 @@ Profile: [ONC Nursing Need](StructureDefinition-onc-nursing-need.md)
 
 **code**: Nursing Care Needs
 
-**subject**: [Patient/example-patient](Patient/example-patient)
+**subject**: [Pat Example Female, DoB: 1948-05-20](Patient-example-patient.md)
 
 **note**: 
 

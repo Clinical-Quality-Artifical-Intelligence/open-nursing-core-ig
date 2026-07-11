@@ -20,7 +20,7 @@ Profile: [Body Temperature](StructureDefinition-onc-body-temperature.md)
 
 **performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
-**value**: 38.1 Cel
+**value**: 38.1 Cel (Details: UCUM codeCel = 'Cel')
 
 
 
@@ -56,7 +56,9 @@ Profile: [Body Temperature](StructureDefinition-onc-body-temperature.md)
   }],
   "valueQuantity" : {
     "value" : 38.1,
-    "unit" : "Cel"
+    "unit" : "Cel",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "Cel"
   }
 }
 

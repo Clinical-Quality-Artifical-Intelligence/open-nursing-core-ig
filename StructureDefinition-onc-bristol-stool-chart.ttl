@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCBristolStoolChart"] ;
   fhir:StructureDefinition.title [ fhir:value "Bristol Stool Chart"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:02:42+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:17:07+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
