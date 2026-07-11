@@ -4,7 +4,7 @@ title: "ONC Goal Evaluation"
 description: "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # ONC Goal Evaluation

@@ -4,7 +4,7 @@ title: "Observation Goal Reference"
 description: "Extension to link goal evaluation observations to the patient goals being evaluated."
 resource: "https://opennursingcoreig.com/StructureDefinition/observation-goal-reference"
 tags: [fhir, nursing, extension]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Observation Goal Reference

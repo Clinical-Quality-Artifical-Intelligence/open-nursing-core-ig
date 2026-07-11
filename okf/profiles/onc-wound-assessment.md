@@ -4,7 +4,7 @@ title: "Wound Assessment"
 description: "Comprehensive wound assessment including staging and dimensions"
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Wound Assessment

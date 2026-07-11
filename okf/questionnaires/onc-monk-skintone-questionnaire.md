@@ -4,7 +4,7 @@ title: "Monk Skin Tone Scale (A–J)"
 description: "SDC questionnaire capturing the patient's skin tone on the 10-point Monk Skin Tone Scale (A–J). Extracts to an Observation conforming to ONCMonkSkinToneObservation. This record is the required input to the IG's equity fairness gate for wound and pressure-area assessment."
 resource: "https://opennursingcoreig.com/Questionnaire/onc-monk-skintone-questionnaire"
 tags: [fhir, nursing, questionnaire]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Monk Skin Tone Scale (A–J)

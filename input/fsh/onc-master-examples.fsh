@@ -4,6 +4,7 @@
 Instance: patient-example-jane
 InstanceOf: ONCNHSPatient
 Usage: #example
+Description: "Worked example: patient example jane (ONCNHSPatient). Synthetic data - not a real person."
 * name.family = "Doe"
 * name.given = "Jane"
 * gender = #female
@@ -12,6 +13,7 @@ Usage: #example
 Instance: practitioner-example
 InstanceOf: Practitioner
 Usage: #example
+Description: "Worked example: practitioner example (Practitioner). Synthetic data - not a real person."
 * name.family = "Nightingale"
 
 // ==============================================================================
@@ -20,6 +22,7 @@ Usage: #example
 Instance: observation-skin-tone
 InstanceOf: ONCSkinToneObservation
 Usage: #example
+Description: "Worked example: observation skin tone (ONCSkinToneObservation). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -27,7 +30,7 @@ Usage: #example
 // FIX: Added the mandatory Nursing Category
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = http://loinc.org#66555-4
-* valueCodeableConcept = http://snomed.info/sct#403154004 "Fitzpatrick skin type II"
+* valueCodeableConcept = ONCObservationCodes#fitzpatrick-2 "Type II"
 
 // ==============================================================================
 // 3. SAFETY
@@ -35,6 +38,7 @@ Usage: #example
 Instance: observation-braden-scale
 InstanceOf: ONCBradenScaleAssessment
 Usage: #example
+Description: "Worked example: observation braden scale (ONCBradenScaleAssessment). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -83,6 +87,7 @@ Usage: #example
 Instance: example-nursing-problem
 InstanceOf: ONCNursingProblem
 Usage: #example
+Description: "Worked example: nursing problem (ONCNursingProblem). Synthetic data - not a real person."
 * subject = Reference(patient-example-jane)
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
 * category = https://opennursingcoreig.com/CodeSystem/onc-problem-type#nursing-diagnosis "Nursing Diagnosis"
@@ -91,6 +96,7 @@ Usage: #example
 Instance: example-patient-goal
 InstanceOf: ONCNursingGoal
 Usage: #example
+Description: "Worked example: patient goal (ONCNursingGoal). Synthetic data - not a real person."
 * lifecycleStatus = #active
 * subject = Reference(patient-example-jane)
 * description.text = "Patient will remain free from falls."
@@ -103,6 +109,7 @@ Usage: #example
 Instance: example-nursing-intervention
 InstanceOf: ONCNursingIntervention
 Usage: #example
+Description: "Worked example: nursing intervention (ONCNursingIntervention). Synthetic data - not a real person."
 * status = #completed
 * subject = Reference(patient-example-jane)
 * performer.actor = Reference(practitioner-example)
@@ -112,6 +119,7 @@ Usage: #example
 Instance: example-goal-evaluation
 InstanceOf: ONCGoalEvaluation
 Usage: #example
+Description: "Worked example: goal evaluation (ONCGoalEvaluation). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)

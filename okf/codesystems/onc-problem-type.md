@@ -4,7 +4,7 @@ title: "Problem Type CodeSystem"
 description: "Code system for categorizing types of nursing problems"
 resource: "https://opennursingcoreig.com/CodeSystem/onc-problem-type"
 tags: [fhir, nursing, codesystem]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Problem Type CodeSystem

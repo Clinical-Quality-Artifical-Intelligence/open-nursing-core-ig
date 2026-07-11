@@ -4,7 +4,7 @@ title: "Person-Centred Care (What Matters to Me & Reasonable Adjustments)"
 description: "SDC questionnaire capturing 'What Matters to Me' and reasonable adjustments (Equality Act 2010) as structured, retrievable records. Items extract to Observations conforming to ONCWhatMattersToMe and ONCReasonableAdjustment."
 resource: "https://opennursingcoreig.com/Questionnaire/onc-person-centred-questionnaire"
 tags: [fhir, nursing, questionnaire]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Person-Centred Care (What Matters to Me & Reasonable Adjustments)

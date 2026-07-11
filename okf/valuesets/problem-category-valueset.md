@@ -4,7 +4,7 @@ title: "Problem Category Value Set"
 description: "Value set for categorizing nursing problems"
 resource: "https://opennursingcoreig.com/ValueSet/problem-category-valueset"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Problem Category Value Set

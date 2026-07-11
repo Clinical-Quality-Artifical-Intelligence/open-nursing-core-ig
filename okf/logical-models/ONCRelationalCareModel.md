@@ -4,7 +4,7 @@ title: "Relational Care Logical Model"
 description: "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR."
 resource: "https://opennursingcoreig.com/StructureDefinition/ONCRelationalCareModel"
 tags: [fhir, nursing, logical-model]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Relational Care Logical Model

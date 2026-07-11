@@ -4,7 +4,7 @@ title: "Sleep Pattern"
 description: "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Sleep Pattern

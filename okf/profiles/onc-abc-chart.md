@@ -4,7 +4,7 @@ title: "PBS ABC Chart"
 description: "Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # PBS ABC Chart

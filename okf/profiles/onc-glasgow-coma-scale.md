@@ -4,7 +4,7 @@ title: "Glasgow Coma Scale"
 description: "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6)."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-glasgow-coma-scale"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Glasgow Coma Scale

@@ -4,7 +4,7 @@ title: "Seizure Record"
 description: "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Seizure Record

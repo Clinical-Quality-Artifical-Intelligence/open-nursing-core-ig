@@ -4,6 +4,7 @@
 Instance: example-what-matters
 InstanceOf: ONCWhatMattersToMe
 Usage: #example
+Description: "Worked example: what matters (ONCWhatMattersToMe). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -15,6 +16,7 @@ Usage: #example
 Instance: example-patient-story
 InstanceOf: ONCPatientStory
 Usage: #example
+Description: "Worked example: patient story (ONCPatientStory). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -28,6 +30,7 @@ Usage: #example
 Instance: example-clinical-frailty
 InstanceOf: ONCClinicalFrailtyScale
 Usage: #example
+Description: "Worked example: clinical frailty (ONCClinicalFrailtyScale). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -58,6 +61,7 @@ Usage: #example
 Instance: example-reasonable-adjustment
 InstanceOf: ONCReasonableAdjustment
 Usage: #example
+Description: "Worked example: reasonable adjustment (ONCReasonableAdjustment). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -68,6 +72,7 @@ Usage: #example
 Instance: example-mental-capacity
 InstanceOf: ONCMentalCapacity
 Usage: #example
+Description: "Worked example: mental capacity (ONCMentalCapacity). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -82,6 +87,7 @@ Usage: #example
 Instance: example-bristol-stool
 InstanceOf: ONCBristolStoolChart
 Usage: #example
+Description: "Worked example: bristol stool (ONCBristolStoolChart). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -111,6 +117,7 @@ Usage: #example
 Instance: example-fluid-balance
 InstanceOf: ONCFluidBalance
 Usage: #example
+Description: "Worked example: fluid balance (ONCFluidBalance). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -129,6 +136,7 @@ Usage: #example
 Instance: example-abc-chart
 InstanceOf: ONCABCChart
 Usage: #example
+Description: "Worked example: abc chart (ONCABCChart). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -143,6 +151,7 @@ Usage: #example
 Instance: example-oral-health
 InstanceOf: ONCOralHealth
 Usage: #example
+Description: "Worked example: oral health (ONCOralHealth). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -158,6 +167,7 @@ Usage: #example
 Instance: example-seizure-record
 InstanceOf: ONCSeizureRecord
 Usage: #example
+Description: "Worked example: seizure record (ONCSeizureRecord). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
@@ -172,6 +182,7 @@ Usage: #example
 Instance: example-urinalysis
 InstanceOf: ONCUrinalysis
 Usage: #example
+Description: "Worked example: urinalysis (ONCUrinalysis). Synthetic data - not a real person."
 * status = #final
 * effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)

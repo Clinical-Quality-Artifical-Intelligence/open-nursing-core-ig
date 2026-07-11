@@ -4,7 +4,7 @@ title: "Mini Mental State Examination (MMSE)"
 description: "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-mmse"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Mini Mental State Examination (MMSE)

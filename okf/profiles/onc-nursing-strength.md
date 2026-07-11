@@ -4,7 +4,7 @@ title: "ONC Nursing Strength"
 description: "A structured representation of a patient's strength or capability. Explicitly required by PRSB to move away from deficit-based models."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # ONC Nursing Strength

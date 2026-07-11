@@ -6,6 +6,26 @@
 // -----------------------------------------------------------------------------
 // 1. Framework: Needs & Strengths
 // -----------------------------------------------------------------------------
+// Shared reference targets for the worked examples
+Instance: example-patient
+InstanceOf: Patient
+Usage: #example
+Title: "Example Patient"
+Description: "Synthetic patient referenced by the worked examples. Not a real person."
+* name.family = "Example"
+* name.given = "Pat"
+* gender = #female
+* birthDate = "1948-05-20"
+
+Instance: example-nurse
+InstanceOf: Practitioner
+Usage: #example
+Title: "Example Nurse"
+Description: "Synthetic registered nurse referenced by the worked examples. Not a real person."
+* name.family = "Nurse"
+* name.given = "Alex"
+* qualification.code.text = "Registered Nurse (NMC)"
+
 Instance: ExampleNursingNeed-Dressing
 InstanceOf: ONCNursingNeed
 Usage: #example

@@ -4,7 +4,7 @@ title: "Bristol Stool Chart"
 description: "Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Bristol Stool Chart

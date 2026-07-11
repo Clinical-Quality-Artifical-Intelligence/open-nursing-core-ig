@@ -4,7 +4,7 @@ title: "Open Nursing Core IG"
 description: "Agent-readable knowledge bundle for the Open Nursing Core FHIR Implementation Guide (trial-use, pre-ballot community release)"
 resource: "https://opennursingcoreig.com"
 tags: [fhir, nursing, okf]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 

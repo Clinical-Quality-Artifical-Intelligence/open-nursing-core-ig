@@ -4,7 +4,7 @@ title: "4AT Attention Value Set"
 description: "Scoring for Months Backwards test"
 resource: "https://opennursingcoreig.com/ValueSet/onc-4at-attention-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # 4AT Attention Value Set

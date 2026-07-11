@@ -4,7 +4,7 @@ title: "Clinical Frailty Scale Value Set"
 description: "Codes for Rockwood Clinical Frailty Scale (1-9)"
 resource: "https://opennursingcoreig.com/ValueSet/onc-cfs-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Clinical Frailty Scale Value Set
