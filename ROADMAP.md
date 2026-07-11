@@ -44,6 +44,7 @@ The [Open Health Stack Software Foundation](https://ohs.foundation) (Linux Found
 - [x] Equity analytics example ([analytics/equity/](analytics/equity/)) — FHIR → Parquet → late-detection rate by Monk band; production path via [fhir-data-pipes](https://github.com/ohs-foundation/fhir-data-pipes)
 - [ ] Align NEWS2 CQL/PlanDefinition with [WHO SMART Guidelines](https://smart.who.int) authoring conventions
 - [ ] ICD-11 mappings for settings without a national SNOMED CT licence
+- [x] Agent-readable knowledge bundle ([okf/](okf/)) — Open Knowledge Format export of all IG artifacts + equity metric definitions (experimental; regenerate via `scripts/generate_okf_bundle.py`)
 
 > 🤝 **Looking for:** Kotlin/Android developers, FHIR SDC authors, community nurses in LMIC settings — see [STANDARDS_ROADMAP.md](STANDARDS_ROADMAP.md) Track C for the full plan
 
