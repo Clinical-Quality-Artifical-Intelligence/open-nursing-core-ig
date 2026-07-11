@@ -127,3 +127,4 @@ Description: "Worked example: goal evaluation (ONCGoalEvaluation). Synthetic dat
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueCodeableConcept = http://snomed.info/sct#385652002 "Objective achieved"
 * focus = Reference(example-patient-goal)
+* extension[ObservationGoalReference].valueReference = Reference(example-patient-goal)
