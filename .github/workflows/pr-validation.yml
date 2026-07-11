@@ -47,7 +47,7 @@ jobs:
       - name: Clinical-readiness regression tests
         run: |
           pip install pytest pydantic pydantic-settings bcrypt
-          pytest -q tests
+          python -m pytest -q tests
       - name: Reject published demonstration credentials
         run: |
           banned='(admin|nurse|clinician)''2025'
