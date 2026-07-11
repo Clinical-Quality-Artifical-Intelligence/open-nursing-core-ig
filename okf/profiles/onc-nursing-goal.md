@@ -4,7 +4,7 @@ title: "ONC Nursing Goal"
 description: "Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # ONC Nursing Goal

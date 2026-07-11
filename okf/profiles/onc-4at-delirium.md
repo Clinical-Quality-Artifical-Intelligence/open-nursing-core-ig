@@ -4,7 +4,7 @@ title: "4AT Delirium Assessment"
 description: "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # 4AT Delirium Assessment

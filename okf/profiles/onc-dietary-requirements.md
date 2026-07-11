@@ -4,7 +4,7 @@ title: "Dietary Requirements"
 description: "Documentation of specific dietary needs (e.g. textural modification, cultural)."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Dietary Requirements

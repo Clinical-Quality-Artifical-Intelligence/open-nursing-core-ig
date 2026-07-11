@@ -4,7 +4,7 @@ title: "4AT Acute Change Value Set"
 description: "Scoring for Acute Change or Fluctuating Course"
 resource: "https://opennursingcoreig.com/ValueSet/onc-4at-acute-change-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # 4AT Acute Change Value Set

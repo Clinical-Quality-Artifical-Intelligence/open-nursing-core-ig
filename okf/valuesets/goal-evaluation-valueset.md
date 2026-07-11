@@ -4,7 +4,7 @@ title: "Goal Evaluation Value Set"
 description: "Value set for evaluating patient goal outcomes"
 resource: "https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Goal Evaluation Value Set

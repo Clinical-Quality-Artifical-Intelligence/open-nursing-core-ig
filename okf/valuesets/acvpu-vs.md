@@ -4,7 +4,7 @@ title: "ACVPU Value Set"
 description: "ACVPU consciousness level codes"
 resource: "https://opennursingcoreig.com/ValueSet/acvpu-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # ACVPU Value Set

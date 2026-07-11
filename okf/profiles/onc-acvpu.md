@@ -4,7 +4,7 @@ title: "ACVPU Consciousness Level"
 description: "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)"
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-acvpu"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # ACVPU Consciousness Level

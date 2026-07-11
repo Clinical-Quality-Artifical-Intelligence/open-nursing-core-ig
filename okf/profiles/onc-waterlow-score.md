@@ -4,7 +4,7 @@ title: "Waterlow Score"
 description: "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Waterlow Score

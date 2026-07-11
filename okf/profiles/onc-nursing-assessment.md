@@ -4,7 +4,7 @@ title: "Open Nursing Core Assessment"
 description: "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Open Nursing Core Assessment

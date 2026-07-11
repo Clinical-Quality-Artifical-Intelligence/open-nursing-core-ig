@@ -4,7 +4,7 @@ title: "Pain Score Value Set"
 description: "Standard 0-10 or Abbey Pain Scale score"
 resource: "https://opennursingcoreig.com/ValueSet/onc-pain-score-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Pain Score Value Set

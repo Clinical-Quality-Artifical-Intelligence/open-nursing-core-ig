@@ -4,7 +4,7 @@ title: "Pain Assessment (NRS 0-10)"
 description: "Pain severity assessment using the Numeric Rating Scale (0-10)"
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-pain-assessment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Pain Assessment (NRS 0-10)

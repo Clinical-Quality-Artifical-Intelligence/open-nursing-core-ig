@@ -12,6 +12,12 @@ license: MIT
 copyrightYear: 2025+
 releaseLabel: release
 
+# SDC provides the sdc-questionnaire-observationExtract extension used by the
+# capture questionnaires; declaring it lets the IG Publisher resolve and
+# validate those extensions instead of flagging them unknown.
+dependencies:
+  hl7.fhir.uv.sdc: 3.0.0
+
 # Pages configuration
 pages:
   index.md:

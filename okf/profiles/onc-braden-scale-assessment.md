@@ -4,7 +4,7 @@ title: "Braden Scale Assessment"
 description: "A profile for the Braden Scale pressure ulcer risk assessment"
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Braden Scale Assessment

@@ -4,7 +4,7 @@ title: "Oral Health Assessment"
 description: "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-oral-health"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T13:58:05Z
+timestamp: 2026-07-11T14:13:20Z
 ---
 
 # Oral Health Assessment

@@ -9,6 +9,7 @@
 Instance: example-news2-score
 InstanceOf: ONCNEWS2Score
 Usage: #example
+Description: "Worked example: news2 score (ONCNEWS2Score). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -28,26 +29,33 @@ Usage: #example
 Instance: example-respiration-rate
 InstanceOf: ONCRespirationRate
 Usage: #example
+Description: "Worked example: respiration rate (ONCRespirationRate). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * effectiveDateTime = "2025-03-15T10:00:00Z"
 * valueQuantity.value = 22
 * valueQuantity.unit = "/min"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #"/min"
 
 Instance: example-oxygen-saturation
 InstanceOf: ONCOxygenSaturation
 Usage: #example
+Description: "Worked example: oxygen saturation (ONCOxygenSaturation). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * effectiveDateTime = "2025-03-15T10:00:00Z"
 * valueQuantity.value = 94
 * valueQuantity.unit = "%"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #"%"
 
 Instance: example-inspired-oxygen
 InstanceOf: ONCInspiredOxygen
 Usage: #example
+Description: "Worked example: inspired oxygen (ONCInspiredOxygen). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -57,6 +65,7 @@ Usage: #example
 Instance: example-blood-pressure
 InstanceOf: ONCBloodPressure
 Usage: #example
+Description: "Worked example: blood pressure (ONCBloodPressure). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -69,16 +78,20 @@ Usage: #example
 Instance: example-heart-rate
 InstanceOf: ONCHeartRate
 Usage: #example
+Description: "Worked example: heart rate (ONCHeartRate). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * effectiveDateTime = "2025-03-15T10:00:00Z"
 * valueQuantity.value = 95
 * valueQuantity.unit = "/min"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #"/min"
 
 Instance: example-acvpu
 InstanceOf: ONCACVPU
 Usage: #example
+Description: "Worked example: acvpu (ONCACVPU). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -88,12 +101,15 @@ Usage: #example
 Instance: example-temperature
 InstanceOf: ONCBodyTemperature
 Usage: #example
+Description: "Worked example: temperature (ONCBodyTemperature). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * effectiveDateTime = "2025-03-15T10:00:00Z"
 * valueQuantity.value = 38.1
 * valueQuantity.unit = "Cel"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #Cel
 
 // -----------------------------------------------------------------------------
 // Waterlow & MUST Examples
@@ -101,6 +117,7 @@ Usage: #example
 Instance: example-waterlow-score
 InstanceOf: ONCWaterlowScore
 Usage: #example
+Description: "Worked example: waterlow score (ONCWaterlowScore). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -113,6 +130,7 @@ Usage: #example
 Instance: example-must-score
 InstanceOf: ONCMUSTScore
 Usage: #example
+Description: "Worked example: must score (ONCMUSTScore). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -130,6 +148,7 @@ Usage: #example
 Instance: example-continence-assessment
 InstanceOf: ONCContinenceAssessment
 Usage: #example
+Description: "Worked example: continence assessment (ONCContinenceAssessment). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -140,6 +159,7 @@ Usage: #example
 Instance: example-bladder-assessment
 InstanceOf: ONCBladderAssessment
 Usage: #example
+Description: "Worked example: bladder assessment (ONCBladderAssessment). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -150,6 +170,7 @@ Usage: #example
 Instance: example-bowel-assessment
 InstanceOf: ONCBowelAssessment
 Usage: #example
+Description: "Worked example: bowel assessment (ONCBowelAssessment). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -160,6 +181,7 @@ Usage: #example
 Instance: example-catheter-care
 InstanceOf: ONCCatheterCare
 Usage: #example
+Description: "Worked example: catheter care (ONCCatheterCare). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -170,6 +192,7 @@ Usage: #example
 Instance: example-mobility-assessment
 InstanceOf: ONCMobilityAssessment
 Usage: #example
+Description: "Worked example: mobility assessment (ONCMobilityAssessment). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -181,6 +204,7 @@ Usage: #example
 Instance: example-oral-intake
 InstanceOf: ONCOralIntakeAssessment
 Usage: #example
+Description: "Worked example: oral intake (ONCOralIntakeAssessment). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -191,6 +215,7 @@ Usage: #example
 Instance: example-swallowing-assessment
 InstanceOf: ONCSwallowingAssessment
 Usage: #example
+Description: "Worked example: swallowing assessment (ONCSwallowingAssessment). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -201,6 +226,7 @@ Usage: #example
 Instance: example-dietary-requirements
 InstanceOf: ONCDietaryRequirements
 Usage: #example
+Description: "Worked example: dietary requirements (ONCDietaryRequirements). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -211,6 +237,7 @@ Usage: #example
 Instance: example-hygiene-assessment
 InstanceOf: ONCHygieneAssessment
 Usage: #example
+Description: "Worked example: hygiene assessment (ONCHygieneAssessment). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -222,6 +249,7 @@ Usage: #example
 Instance: example-oral-care-assessment
 InstanceOf: ONCOralCareAssessment
 Usage: #example
+Description: "Worked example: oral care assessment (ONCOralCareAssessment). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -233,6 +261,7 @@ Usage: #example
 Instance: example-medication-ability
 InstanceOf: ONCMedicationAbility
 Usage: #example
+Description: "Worked example: medication ability (ONCMedicationAbility). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -243,6 +272,7 @@ Usage: #example
 Instance: example-medication-self-admin
 InstanceOf: ONCMedicationSelfAdmin
 Usage: #example
+Description: "Worked example: medication self admin (ONCMedicationSelfAdmin). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
@@ -253,6 +283,7 @@ Usage: #example
 Instance: example-monk-skin-tone
 InstanceOf: ONCMonkSkinToneObservation
 Usage: #example
+Description: "Worked example: monk skin tone (ONCMonkSkinToneObservation). Synthetic data - not a real person."
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
