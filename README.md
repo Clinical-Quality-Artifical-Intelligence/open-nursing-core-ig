@@ -59,7 +59,7 @@
 
 **Open Nursing Core (ONC)** is an open-source platform and standards-aware AI engine for **nurse-led clinical intelligence**. It combines healthcare standards, clinical reasoning and deployable tools to support safe, person-centred nursing practice.
 
-It is organised around the complete nursing process — **A**ssessment, **D**iagnosis, **P**lanning, **I**mplementation, **E**valuation (**ADPIE**) — rather than a purely pathology-driven medical model, and is grounded in **PRSB** documentation standards, the **NANDA-I** taxonomy and **FONS** person-centred practice principles.
+It is organised around the complete nursing process — **A**ssessment, **D**iagnosis, **P**lanning, **I**mplementation, **E**valuation (**ADPIE**) — rather than a purely pathology-driven medical model, and is informed by **PRSB** documentation standards, the **NANDA-I** taxonomy and open-access person-centred practice literature from the [International Practice Development Journal (IPDJ)](https://www.fons.org/library/journal/).
 
 | Pillar | What it means |
 |--------|---------------|

@@ -34,7 +34,7 @@ This release provides the foundational Open Nursing Core profile set:
 - **Equity fairness gate** — skin-tone documentation on the Monk Skin Tone Scale for wound and pressure-area assessment
 - **Reasonable-adjustment logging** aligned with the Equality Act 2010
 - **NEWS2 clinical logic** — computable CQL (including SpO2 Scale 2) with an escalation PlanDefinition
-- **Relational AI integration** — a FONS-trained language model for person-centred documentation
+- **Relational AI integration** — a research language model trained on open-access IPDJ materials for person-centred documentation
 
 ---
 

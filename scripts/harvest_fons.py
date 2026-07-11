@@ -5,7 +5,7 @@ import time
 from urllib.parse import urljoin
 
 BASE_URL = "https://www.fons.org"
-START_URL = "https://www.fons.org/library/journal-ipdj-home"
+START_URL = "https://www.fons.org/library/journal/"
 OUTPUT_DIR = "fons_knowledge_base"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
