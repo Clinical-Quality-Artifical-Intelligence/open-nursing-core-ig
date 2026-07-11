@@ -9,7 +9,6 @@ Description: "Record of a specific seizure event, including type, duration, trig
 * ^url = "https://opennursingcoreig.com/StructureDefinition/onc-seizure-record"
 * ^version = "0.1.0"
 * ^status = #draft
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = ONCObservationCodes#seizure-record
 * value[x] only string
 * valueString 1..1 MS

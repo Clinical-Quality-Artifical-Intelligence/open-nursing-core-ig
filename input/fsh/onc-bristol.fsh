@@ -9,7 +9,6 @@ Description: "Assessment of stool form using the Bristol Stool Chart (Types 1-7)
 * ^url = "https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart"
 * ^version = "0.1.0"
 * ^status = #draft
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = ONCObservationCodes#bristol-score
 * value[x] only Quantity
 * valueQuantity 1..1 MS

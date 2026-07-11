@@ -9,7 +9,6 @@ Description: "Observation of sleep quality, duration, and disturbances. Sleep pa
 * ^url = "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern"
 * ^version = "0.1.0"
 * ^status = #draft
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = ONCObservationCodes#sleep-record
 * value[x] only string
 * valueString 1..1 MS
