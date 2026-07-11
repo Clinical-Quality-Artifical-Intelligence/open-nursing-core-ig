@@ -4,7 +4,7 @@ title: "NEWS2 Sub-Score"
 description: "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-news2-subscore"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # NEWS2 Sub-Score

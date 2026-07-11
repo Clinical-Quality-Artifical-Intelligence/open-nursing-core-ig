@@ -4,7 +4,7 @@ title: "Patient Story"
 description: "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-patient-story"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Patient Story

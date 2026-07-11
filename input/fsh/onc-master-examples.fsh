@@ -21,6 +21,7 @@ Instance: observation-skin-tone
 InstanceOf: ONCSkinToneObservation
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 // FIX: Added the mandatory Nursing Category
@@ -35,6 +36,7 @@ Instance: observation-braden-scale
 InstanceOf: ONCBradenScaleAssessment
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -111,6 +113,7 @@ Instance: example-goal-evaluation
 InstanceOf: ONCGoalEvaluation
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey

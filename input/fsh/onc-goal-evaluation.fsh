@@ -103,6 +103,7 @@ ValueSet: ONCGoalTargetMeasureVS
 Id: onc-goal-target-measure-vs
 Title: "Goal Target Measure ValueSet"
 Description: "Codes used for goal target measures"
+* ^experimental = false
 * include http://loinc.org#59408-5 "Oxygen saturation"
 * include http://snomed.info/sct#225358003 "Wound care"
 // Add more relevant target measures
@@ -111,6 +112,7 @@ ValueSet: ONCPrognosisVS
 Id: onc-prognosis-vs
 Title: "Nursing Prognosis ValueSet"
 Description: "Prognosis codes for clinical impression"
+* ^experimental = false
 * include http://snomed.info/sct#17621005 "Normal"
 * include http://snomed.info/sct#260388008 "Worsening"
 * include http://snomed.info/sct#385633008 "Improving"

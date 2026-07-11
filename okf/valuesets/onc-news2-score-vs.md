@@ -4,7 +4,7 @@ title: "NEWS2 Score Categories Value Set"
 description: "NEWS2 total score categories."
 resource: "https://opennursingcoreig.com/ValueSet/onc-news2-score-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # NEWS2 Score Categories Value Set

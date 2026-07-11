@@ -4,7 +4,7 @@ title: "ValueSets"
 description: "Index of ONC-IG ValueSets"
 resource: "https://opennursingcoreig.com/artifacts.html"
 tags: [fhir, nursing, index]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 
@@ -32,6 +32,7 @@ timestamp: 2026-07-11T09:01:38Z
 - [Pain Score Value Set](onc-pain-score-vs.md)
 - [PBS Behaviour Function ValueSet](onc-pbs-function-vs.md)
 - [Nursing Prognosis ValueSet](onc-prognosis-vs.md)
+- [ONC Relational Findings](onc-relational-findings-vs.md)
 - [ONC Relational Care Outcomes](onc-relational-outcomes-vs.md)
 - [Skin Tone Value Set](onc-skin-tone-vs.md)
 - [Pain Assessment Code Value Set](pain-assessment-code-vs.md)

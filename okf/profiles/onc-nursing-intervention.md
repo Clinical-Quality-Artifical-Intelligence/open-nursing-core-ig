@@ -4,7 +4,7 @@ title: "ONC Nursing Intervention"
 description: "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # ONC Nursing Intervention

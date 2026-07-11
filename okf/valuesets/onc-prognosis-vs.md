@@ -4,7 +4,7 @@ title: "Nursing Prognosis ValueSet"
 description: "Prognosis codes for clinical impression"
 resource: "https://opennursingcoreig.com/ValueSet/onc-prognosis-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Nursing Prognosis ValueSet

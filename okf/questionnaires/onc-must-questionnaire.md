@@ -4,7 +4,7 @@ title: "MUST (Malnutrition Universal Screening Tool)"
 description: "SDC questionnaire for the Malnutrition Universal Screening Tool: three step scores and the total. Coded items extract to Observations using the ONC MUST component codes; assembling them into the single component-based ONCMUSTScore Observation is the capturing app's responsibility."
 resource: "https://opennursingcoreig.com/Questionnaire/onc-must-questionnaire"
 tags: [fhir, nursing, questionnaire]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # MUST (Malnutrition Universal Screening Tool)

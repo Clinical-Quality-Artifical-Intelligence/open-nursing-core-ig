@@ -4,7 +4,7 @@ title: "Goal Target Measure ValueSet"
 description: "Codes used for goal target measures"
 resource: "https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Goal Target Measure ValueSet

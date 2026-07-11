@@ -4,7 +4,7 @@ title: "Inspired Oxygen Value Set"
 description: "Codes for inspired oxygen status"
 resource: "https://opennursingcoreig.com/ValueSet/inspired-oxygen-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Inspired Oxygen Value Set

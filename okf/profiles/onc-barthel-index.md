@@ -4,7 +4,7 @@ title: "Barthel Index"
 description: "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-barthel-index"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Barthel Index

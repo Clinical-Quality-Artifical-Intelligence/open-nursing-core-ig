@@ -4,7 +4,7 @@ title: "Oral Care Needs Assessment"
 description: "Assessment of mouth care needs and oral health."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Oral Care Needs Assessment

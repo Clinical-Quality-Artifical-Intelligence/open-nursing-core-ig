@@ -4,7 +4,7 @@ title: "Personal Hygiene Needs Assessment"
 description: "Assessment of assistance required for personal hygiene."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Personal Hygiene Needs Assessment

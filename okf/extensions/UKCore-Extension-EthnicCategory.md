@@ -4,7 +4,7 @@ title: "UK Core Ethnic Category"
 description: "An extension to record the ethnic category of a patient, as per UK Core standards."
 resource: "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory"
 tags: [fhir, nursing, extension]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # UK Core Ethnic Category

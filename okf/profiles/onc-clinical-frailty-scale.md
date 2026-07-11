@@ -4,7 +4,7 @@ title: "Clinical Frailty Scale (CFS)"
 description: "Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Clinical Frailty Scale (CFS)

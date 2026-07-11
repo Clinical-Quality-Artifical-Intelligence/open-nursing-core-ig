@@ -68,6 +68,7 @@ ValueSet: AlertnessVS
 Id: onc-4at-alertness-vs
 Title: "4AT Alertness Value Set"
 Description: "Scoring options for 4AT Alertness"
+* ^experimental = false
 * ONCObservationCodes#4at-alertness "Normal (fully alert, not agitated)" // Score 0
 // NOTE: For strict implementation, we need distinct codes for scoring 0 vs 4. 
 // Using simplified mapping: 
@@ -101,6 +102,7 @@ ValueSet: AMT4VS
 Id: onc-4at-amt4-vs
 Title: "4AT AMT4 Value Set"
 Description: "Scoring options for AMT4 (Age, DOB, Place, Year)"
+* ^experimental = false
 * http://snomed.info/sct#4851000147101 "No mistakes" // Score 0
 * http://snomed.info/sct#4861000147105 "1 mistake" // Score 1
 * http://snomed.info/sct#4871000147108 "2 or more mistakes/untestable" // Score 2
@@ -109,6 +111,7 @@ ValueSet: AttentionVS
 Id: onc-4at-attention-vs
 Title: "4AT Attention Value Set"
 Description: "Scoring for Months Backwards test"
+* ^experimental = false
 * http://snomed.info/sct#4851000147101 "Achieves 7 months or more correctly" // Score 0
 * http://snomed.info/sct#4861000147105 "Starts but scores <7 months / refuses" // Score 1
 * http://snomed.info/sct#4871000147108 "Untestable" // Score 2
@@ -117,5 +120,6 @@ ValueSet: AcuteChangeVS
 Id: onc-4at-acute-change-vs
 Title: "4AT Acute Change Value Set"
 Description: "Scoring for Acute Change or Fluctuating Course"
+* ^experimental = false
 * http://snomed.info/sct#521000176101 "No" // Score 0
 * http://snomed.info/sct#531000176103 "Yes" // Score 4

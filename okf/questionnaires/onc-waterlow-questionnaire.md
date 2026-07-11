@@ -4,7 +4,7 @@ title: "Waterlow Score (Pressure Ulcer Risk)"
 description: "SDC questionnaire for the Waterlow pressure-ulcer risk assessment total score, with a mandatory Monk Skin Tone item (equity fairness gate embedded at the capture layer). The total extracts to an Observation using the ONC Waterlow code; linking the skin-tone Observation via hasMember[skinTone] is the capturing app's responsibility."
 resource: "https://opennursingcoreig.com/Questionnaire/onc-waterlow-questionnaire"
 tags: [fhir, nursing, questionnaire]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Waterlow Score (Pressure Ulcer Risk)

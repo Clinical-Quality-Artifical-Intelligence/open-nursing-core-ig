@@ -28,6 +28,7 @@ ValueSet: PainAssessmentCodeValueSet
 Id: pain-assessment-code-vs
 Title: "Pain Assessment Code Value Set"
 Description: "LOINC codes for pain severity assessment"
+* ^experimental = false
 * http://loinc.org#72514-3 "Pain severity - 0-10 verbal numeric rating"
 * http://loinc.org#38208-5 "Pain severity - Reported"
 
@@ -79,6 +80,8 @@ Severity: #error
 ValueSet: WoundStageValueSet
 Id: wound-stage-vs
 Title: "Wound Stage Value Set"
+Description: "ValueSet for WoundStageValueSet used by the Open Nursing Core IG."
+* ^experimental = false
 * include ONCObservationCodes#stage-1
 * include ONCObservationCodes#stage-2
 * include ONCObservationCodes#stage-3

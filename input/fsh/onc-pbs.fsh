@@ -57,6 +57,7 @@ ValueSet: PBSFunctionVS
 Id: onc-pbs-function-vs
 Title: "PBS Behaviour Function ValueSet"
 Description: "Common functions of behaviour (SEAT)"
+* ^experimental = false
 * ONCObservationCodes#abc-function "Function of Behaviour" 
 // Note: In detailed implementation, this would contain codes for Sensory, Escape, Attention, Tangible.
 // For now, we allow the parent code or free text if CodeableConcept allows text.

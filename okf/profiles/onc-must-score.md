@@ -4,7 +4,7 @@ title: "MUST Score (Malnutrition Universal Screening Tool)"
 description: "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-must-score"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # MUST Score (Malnutrition Universal Screening Tool)

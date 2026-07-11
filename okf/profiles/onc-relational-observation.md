@@ -4,7 +4,7 @@ title: "Relational Engagement Score"
 description: "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Relational Engagement Score

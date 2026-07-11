@@ -4,7 +4,7 @@ title: "Open Nursing Core IG"
 description: "Agent-readable knowledge bundle for the Open Nursing Core FHIR Implementation Guide (trial-use, pre-ballot community release)"
 resource: "https://opennursingcoreig.com"
 tags: [fhir, nursing, okf]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 
@@ -19,5 +19,5 @@ Generated from the compiled IG (see `scripts/generate_okf_bundle.py`). Concepts 
 - [Logical Models](logical-models/index.md) (1)
 - [FHIR Profiles](profiles/index.md) (60)
 - [SDC Questionnaires](questionnaires/index.md) (6)
-- [ValueSets](valuesets/index.md) (27)
+- [ValueSets](valuesets/index.md) (28)
 - [Analytics Metrics](metrics/index.md) (hand-authored)

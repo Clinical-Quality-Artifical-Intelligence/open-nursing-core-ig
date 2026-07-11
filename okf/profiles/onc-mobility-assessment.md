@@ -4,7 +4,7 @@ title: "Mobility Assessment"
 description: "Assessment of capability to move and limitations."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Mobility Assessment

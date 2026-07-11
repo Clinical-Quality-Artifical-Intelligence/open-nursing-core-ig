@@ -4,7 +4,7 @@ title: "Skin Integrity Assessment"
 description: "Detailed assessment of skin condition (e.g., intact, dry, broken), separate from pressure ulcer risk."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Skin Integrity Assessment

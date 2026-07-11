@@ -1,15 +1,15 @@
 ---
 type: "FHIR CodeSystem"
 title: "Monk Skin Tone Scale CodeSystem"
-description: ""
+description: "The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment."
 resource: "https://opennursingcoreig.com/CodeSystem/onc-monk-scale"
 tags: [fhir, nursing, codesystem]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Monk Skin Tone Scale CodeSystem
 
-
+The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment.
 
 # Concepts (10)
 
