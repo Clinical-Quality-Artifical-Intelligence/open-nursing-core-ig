@@ -45,6 +45,7 @@
 * [Pain Score Value Set](ValueSet-onc-pain-score-vs.md)
 * [PBS Behaviour Function ValueSet](ValueSet-onc-pbs-function-vs.md)
 * [Nursing Prognosis ValueSet](ValueSet-onc-prognosis-vs.md)
+* [ONC Relational Findings](ValueSet-onc-relational-findings-vs.md)
 * [ONC Relational Care Outcomes](ValueSet-onc-relational-outcomes-vs.md)
 * [Skin Tone Value Set](ValueSet-onc-skin-tone-vs.md)
 * [Pain Assessment Code Value Set](ValueSet-pain-assessment-code-vs.md)
@@ -53,7 +54,7 @@
 
 ### Logicals
 
-* [Relational Care Logical Model](StructureDefinition-onc-relational-care-logical.md)
+* [Relational Care Logical Model](StructureDefinition-ONCRelationalCareModel.md)
 
 ### Resource Profiles
 

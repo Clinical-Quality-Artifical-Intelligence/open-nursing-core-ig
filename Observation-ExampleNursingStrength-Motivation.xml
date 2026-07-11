@@ -6,7 +6,7 @@
     <profile value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-strength"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ExampleNursingStrength-Motivation</b></p><a name="ExampleNursingStrength-Motivation"> </a><a name="hcExampleNursingStrength-Motivation"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-nursing-strength.html">ONC Nursing Strength</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes nursing-strengths}">Nursing Strengths</span></p><p><b>subject</b>: <a href="Patient/example-patient">Patient/example-patient</a></p><p><b>performer</b>: <a href="Practitioner/example-nurse">Practitioner/example-nurse</a></p><p><b>value</b>: Highly motivated to maintain independence in upper body dressing.</p><p><b>note</b>: </p><blockquote><div><p>Patient explicitly stated desire to continue buttoning own shirt if given enough time.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ExampleNursingStrength-Motivation</b></p><a name="ExampleNursingStrength-Motivation"> </a><a name="hcExampleNursingStrength-Motivation"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-nursing-strength.html">ONC Nursing Strength</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes nursing-strengths}">Nursing Strengths</span></p><p><b>subject</b>: <a href="Patient/example-patient">Patient/example-patient</a></p><p><b>effective</b>: 2026-01-15 10:00:00+0000</p><p><b>performer</b>: <a href="Practitioner/example-nurse">Practitioner/example-nurse</a></p><p><b>value</b>: Highly motivated to maintain independence in upper body dressing.</p><p><b>note</b>: </p><blockquote><div><p>Patient explicitly stated desire to continue buttoning own shirt if given enough time.</p>
 </div></blockquote></div>
   </text>
   <status value="final"/>
@@ -19,6 +19,7 @@
   <subject>
     <reference value="Patient/example-patient"/>
   </subject>
+  <effectiveDateTime value="2026-01-15T10:00:00Z"/>
   <performer>
     <reference value="Practitioner/example-nurse"/>
   </performer>

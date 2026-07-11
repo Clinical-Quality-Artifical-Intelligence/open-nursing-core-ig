@@ -10,7 +10,8 @@
   <name value="ClinicalFrailtyScaleVS"/>
   <title value="Clinical Frailty Scale Value Set"/>
   <status value="active"/>
-  <date value="2026-07-11T09:46:48+00:00"/>
+  <experimental value="false"/>
+  <date value="2026-07-11T14:02:42+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="Codes for Rockwood Clinical Frailty Scale (1-9)"/>
   <compose>

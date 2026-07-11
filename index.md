@@ -100,6 +100,45 @@ Instruments for learning disability, mental health and older-person care.
 1. **Read the process guide**— start with[ADPIE](adpie.md)to understand how the profiles fit together.
 1. **Contribute**— the IG is open source under the MIT licence. Issues and pull requests are welcome on[GitHub](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig).
 
+## Dependencies and intellectual property
+
+This IG builds on the following specifications and terminologies:
+
+
+
+### Cross-version analysis
+
+This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (onc.ig.r4)](package.r4.tgz) and [R4B (onc.ig.r4b)](package.r4b.tgz) are available.
+
+### Global profiles
+
+*There are no Global profiles defined*
+
+### Intellectual property statements
+
+This publication includes IP covered under the following statements.
+
+* This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
+
+* LOINC: [Goal/example-patient-goal](Goal-example-patient-goal.md), [ONCBloodPressure](StructureDefinition-onc-blood-pressure.md)... Show 22 more, [ONCBodyTemperature](StructureDefinition-onc-body-temperature.md), [ONCGlasgowComaScale](StructureDefinition-onc-glasgow-coma-scale.md), [ONCGoalTargetMeasureVS](ValueSet-onc-goal-target-measure-vs.md), [ONCHeartRate](StructureDefinition-onc-heart-rate.md), [ONCInspiredOxygen](StructureDefinition-onc-inspired-oxygen.md), [ONCMMSE](StructureDefinition-onc-mmse.md), [ONCMorseFallScale](StructureDefinition-onc-morse-fall-scale.md), [ONCNEWS2Questionnaire](Questionnaire-onc-news2-questionnaire.md), [ONCNursingGoal](StructureDefinition-onc-nursing-goal.md), [ONCOxygenSaturation](StructureDefinition-onc-oxygen-saturation.md), [ONCPainAssessment](StructureDefinition-onc-pain-assessment.md), [ONCRespirationRate](StructureDefinition-onc-respiration-rate.md), [ONCSkinToneObservation](StructureDefinition-onc-skintone-observation.md), [ONCqSOFA](StructureDefinition-onc-qsofa.md), [Observation/example-blood-pressure](Observation-example-blood-pressure.md), [Observation/example-heart-rate](Observation-example-heart-rate.md), [Observation/example-inspired-oxygen](Observation-example-inspired-oxygen.md), [Observation/example-oxygen-saturation](Observation-example-oxygen-saturation.md), [Observation/example-respiration-rate](Observation-example-respiration-rate.md), [Observation/example-temperature](Observation-example-temperature.md), [Observation/observation-skin-tone](Observation-observation-skin-tone.md) and [PainAssessmentCodeValueSet](ValueSet-pain-assessment-code-vs.md)
+
+
+* This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
+
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [ACVPUValueSet](ValueSet-acvpu-vs.md), [AMT4VS](ValueSet-onc-4at-amt4-vs.md)... Show 58 more, [AcuteChangeVS](ValueSet-onc-4at-acute-change-vs.md), [AlertnessVS](ValueSet-onc-4at-alertness-vs.md), [AttentionVS](ValueSet-onc-4at-attention-vs.md), [Goal/example-patient-goal](Goal-example-patient-goal.md), [GoalEvaluationValueSet](ValueSet-goal-evaluation-valueset.md), [HousingStatusVS](ValueSet-housing-status-vs.md), [InspiredOxygenValueSet](ValueSet-inspired-oxygen-vs.md), [NEWS2ScoreVS](ValueSet-onc-news2-score-vs.md), [NEWS2_Escalation_Protocol](PlanDefinition-news2-escalation-plan.md), [NursingInterventionValueSet](ValueSet-nursing-intervention-valueset.md), [NursingProblemValueSet](ValueSet-nursing-problem-valueset.md), [ONC4ATDelirium](StructureDefinition-onc-4at-delirium.md), [ONCACVPU](StructureDefinition-onc-acvpu.md), [ONCBladderAssessment](StructureDefinition-onc-bladder-assessment.md), [ONCBowelAssessment](StructureDefinition-onc-bowel-assessment.md), [ONCCatheterCare](StructureDefinition-onc-catheter-care.md), [ONCContinenceAssessment](StructureDefinition-onc-continence-assessment.md), [ONCDietaryRequirements](StructureDefinition-onc-dietary-requirements.md), [ONCDressingAssessment](StructureDefinition-onc-dressing-assessment.md), [ONCGoalEvaluation](StructureDefinition-onc-goal-evaluation.md), [ONCGoalTargetMeasureVS](ValueSet-onc-goal-target-measure-vs.md), [ONCHygieneAssessment](StructureDefinition-onc-hygiene-assessment.md), [ONCInspiredOxygen](StructureDefinition-onc-inspired-oxygen.md), [ONCMedicationAbility](StructureDefinition-onc-medication-ability.md), [ONCMedicationSelfAdmin](StructureDefinition-onc-medication-self-admin.md), [ONCMobilityAssessment](StructureDefinition-onc-mobility-assessment.md), [ONCNEWS2Questionnaire](Questionnaire-onc-news2-questionnaire.md), [ONCNursingClinicalImpression](StructureDefinition-onc-nursing-clinical-impression.md), [ONCNursingGoal](StructureDefinition-onc-nursing-goal.md), [ONCNursingIntervention](StructureDefinition-onc-nursing-intervention.md), [ONCNursingProblem](StructureDefinition-onc-nursing-problem.md), [ONCOralCareAssessment](StructureDefinition-onc-oral-care-assessment.md), [ONCOralIntakeAssessment](StructureDefinition-onc-oral-intake-assessment.md), [ONCPrognosisVS](ValueSet-onc-prognosis-vs.md), [ONCRelationalOutcomesVS](ValueSet-onc-relational-outcomes-vs.md), [ONCSkinAssessment](StructureDefinition-onc-skin-assessment.md), [ONCSwallowingAssessment](StructureDefinition-onc-swallowing-assessment.md), [ONCWoundAssessment](StructureDefinition-onc-wound-assessment.md), [Observation/ExampleDressingAssessment](Observation-ExampleDressingAssessment.md), [Observation/ExampleSkinAssessment](Observation-ExampleSkinAssessment.md), [Observation/example-acvpu](Observation-example-acvpu.md), [Observation/example-bladder-assessment](Observation-example-bladder-assessment.md), [Observation/example-bowel-assessment](Observation-example-bowel-assessment.md), [Observation/example-catheter-care](Observation-example-catheter-care.md), [Observation/example-continence-assessment](Observation-example-continence-assessment.md), [Observation/example-dietary-requirements](Observation-example-dietary-requirements.md), [Observation/example-goal-evaluation](Observation-example-goal-evaluation.md), [Observation/example-hygiene-assessment](Observation-example-hygiene-assessment.md), [Observation/example-inspired-oxygen](Observation-example-inspired-oxygen.md), [Observation/example-medication-ability](Observation-example-medication-ability.md), [Observation/example-medication-self-admin](Observation-example-medication-self-admin.md), [Observation/example-mobility-assessment](Observation-example-mobility-assessment.md), [Observation/example-oral-care-assessment](Observation-example-oral-care-assessment.md), [Observation/example-oral-intake](Observation-example-oral-intake.md), [Observation/example-swallowing-assessment](Observation-example-swallowing-assessment.md), [Observation/observation-skin-tone](Observation-observation-skin-tone.md), [PainScoreVS](ValueSet-onc-pain-score-vs.md) and [Procedure/example-nursing-intervention](Procedure-example-nursing-intervention.md)
+
+
+* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
+
+* [Condition Category Codes](http://terminology.hl7.org/7.2.0/CodeSystem-condition-category.html): [ONCNursingNeed](StructureDefinition-onc-nursing-need.md)
+* [Condition Clinical Status Codes](http://terminology.hl7.org/7.2.0/CodeSystem-condition-clinical.html): [Condition/ExampleNursingNeed-Dressing](Condition-ExampleNursingNeed-Dressing.md) and [Condition/example-nursing-problem](Condition-example-nursing-problem.md)
+* [ConditionVerificationStatus](http://terminology.hl7.org/7.2.0/CodeSystem-condition-ver-status.html): [Condition/ExampleNursingNeed-Dressing](Condition-ExampleNursingNeed-Dressing.md)
+* [Goal category](http://terminology.hl7.org/7.2.0/CodeSystem-goal-category.html): [ONCNursingGoal](StructureDefinition-onc-nursing-goal.md)
+* [LibraryType](http://terminology.hl7.org/7.2.0/CodeSystem-library-type.html): [ONC_NEWS2_Logic](Library-onc-news2-cql.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.2.0/CodeSystem-observation-category.html): [ONC4ATDelirium](StructureDefinition-onc-4at-delirium.md), [ONCABCChart](StructureDefinition-onc-abc-chart.md)... Show 90 more, [ONCACVPU](StructureDefinition-onc-acvpu.md), [ONCAbbeyPainScale](StructureDefinition-onc-abbey-pain-scale.md), [ONCBarthelIndex](StructureDefinition-onc-barthel-index.md), [ONCBladderAssessment](StructureDefinition-onc-bladder-assessment.md), [ONCBloodPressure](StructureDefinition-onc-blood-pressure.md), [ONCBodyTemperature](StructureDefinition-onc-body-temperature.md), [ONCBowelAssessment](StructureDefinition-onc-bowel-assessment.md), [ONCBradenScaleAssessment](StructureDefinition-onc-braden-scale-assessment.md), [ONCBristolStoolChart](StructureDefinition-onc-bristol-stool-chart.md), [ONCCatheterCare](StructureDefinition-onc-catheter-care.md), [ONCClinicalFrailtyScale](StructureDefinition-onc-clinical-frailty-scale.md), [ONCContinenceAssessment](StructureDefinition-onc-continence-assessment.md), [ONCDietaryRequirements](StructureDefinition-onc-dietary-requirements.md), [ONCDressingAssessment](StructureDefinition-onc-dressing-assessment.md), [ONCFluidBalance](StructureDefinition-onc-fluid-balance.md), [ONCGlasgowComaScale](StructureDefinition-onc-glasgow-coma-scale.md), [ONCHeartRate](StructureDefinition-onc-heart-rate.md), [ONCHygieneAssessment](StructureDefinition-onc-hygiene-assessment.md), [ONCInspiredOxygen](StructureDefinition-onc-inspired-oxygen.md), [ONCMMSE](StructureDefinition-onc-mmse.md), [ONCMUSTScore](StructureDefinition-onc-must-score.md), [ONCMedicationAbility](StructureDefinition-onc-medication-ability.md), [ONCMedicationSelfAdmin](StructureDefinition-onc-medication-self-admin.md), [ONCMentalCapacity](StructureDefinition-onc-mental-capacity.md), [ONCMobilityAssessment](StructureDefinition-onc-mobility-assessment.md), [ONCMonkSkinToneObservation](StructureDefinition-onc-monk-skintone-observation.md), [ONCMorseFallScale](StructureDefinition-onc-morse-fall-scale.md), [ONCNEWS2Score](StructureDefinition-onc-news2-score.md), [ONCNEWS2Subscore](StructureDefinition-onc-news2-subscore.md), [ONCNursingAssessment](StructureDefinition-onc-nursing-assessment.md), [ONCOralCareAssessment](StructureDefinition-onc-oral-care-assessment.md), [ONCOralHealth](StructureDefinition-onc-oral-health.md), [ONCOralIntakeAssessment](StructureDefinition-onc-oral-intake-assessment.md), [ONCOxygenSaturation](StructureDefinition-onc-oxygen-saturation.md), [ONCPainAssessment](StructureDefinition-onc-pain-assessment.md), [ONCPatientStory](StructureDefinition-onc-patient-story.md), [ONCReasonableAdjustment](StructureDefinition-onc-reasonable-adjustment.md), [ONCRelationalObservation](StructureDefinition-onc-relational-observation.md), [ONCRespirationRate](StructureDefinition-onc-respiration-rate.md), [ONCSeizureRecord](StructureDefinition-onc-seizure-record.md), [ONCSkinAssessment](StructureDefinition-onc-skin-assessment.md), [ONCSkinToneObservation](StructureDefinition-onc-skintone-observation.md), [ONCSleepPattern](StructureDefinition-onc-sleep-pattern.md), [ONCSwallowingAssessment](StructureDefinition-onc-swallowing-assessment.md), [ONCUrinalysis](StructureDefinition-onc-urinalysis.md), [ONCWaterlowScore](StructureDefinition-onc-waterlow-score.md), [ONCWhatMattersToMe](StructureDefinition-onc-what-matters.md), [ONCWoundAssessment](StructureDefinition-onc-wound-assessment.md), [ONCqSOFA](StructureDefinition-onc-qsofa.md), [Observation/ExampleDressingAssessment](Observation-ExampleDressingAssessment.md), [Observation/ExampleSkinAssessment](Observation-ExampleSkinAssessment.md), [Observation/example-4at-delirium](Observation-example-4at-delirium.md), [Observation/example-abbey-pain](Observation-example-abbey-pain.md), [Observation/example-abc-chart](Observation-example-abc-chart.md), [Observation/example-acvpu](Observation-example-acvpu.md), [Observation/example-bladder-assessment](Observation-example-bladder-assessment.md), [Observation/example-blood-pressure](Observation-example-blood-pressure.md), [Observation/example-bowel-assessment](Observation-example-bowel-assessment.md), [Observation/example-bristol-stool](Observation-example-bristol-stool.md), [Observation/example-catheter-care](Observation-example-catheter-care.md), [Observation/example-clinical-frailty](Observation-example-clinical-frailty.md), [Observation/example-continence-assessment](Observation-example-continence-assessment.md), [Observation/example-dietary-requirements](Observation-example-dietary-requirements.md), [Observation/example-fluid-balance](Observation-example-fluid-balance.md), [Observation/example-goal-evaluation](Observation-example-goal-evaluation.md), [Observation/example-heart-rate](Observation-example-heart-rate.md), [Observation/example-hygiene-assessment](Observation-example-hygiene-assessment.md), [Observation/example-inspired-oxygen](Observation-example-inspired-oxygen.md), [Observation/example-medication-ability](Observation-example-medication-ability.md), [Observation/example-medication-self-admin](Observation-example-medication-self-admin.md), [Observation/example-mental-capacity](Observation-example-mental-capacity.md), [Observation/example-mobility-assessment](Observation-example-mobility-assessment.md), [Observation/example-monk-skin-tone](Observation-example-monk-skin-tone.md), [Observation/example-must-score](Observation-example-must-score.md), [Observation/example-news2-score](Observation-example-news2-score.md), [Observation/example-oral-care-assessment](Observation-example-oral-care-assessment.md), [Observation/example-oral-health](Observation-example-oral-health.md), [Observation/example-oral-intake](Observation-example-oral-intake.md), [Observation/example-oxygen-saturation](Observation-example-oxygen-saturation.md), [Observation/example-patient-story](Observation-example-patient-story.md), [Observation/example-reasonable-adjustment](Observation-example-reasonable-adjustment.md), [Observation/example-respiration-rate](Observation-example-respiration-rate.md), [Observation/example-seizure-record](Observation-example-seizure-record.md), [Observation/example-swallowing-assessment](Observation-example-swallowing-assessment.md), [Observation/example-temperature](Observation-example-temperature.md), [Observation/example-urinalysis](Observation-example-urinalysis.md), [Observation/example-waterlow-score](Observation-example-waterlow-score.md), [Observation/example-what-matters](Observation-example-what-matters.md), [Observation/observation-braden-scale](Observation-observation-braden-scale.md) and [Observation/observation-skin-tone](Observation-observation-skin-tone.md)
+* [PlanDefinitionType](http://terminology.hl7.org/7.2.0/CodeSystem-plan-definition-type.html): [NEWS2_Escalation_Protocol](PlanDefinition-news2-escalation-plan.md)
+
+
 -------
 
 **The Open Nursing Core is maintained by the Open Nursing Community. This guide is a technical specification and does not replace professional clinical judgement; all clinical documentation must be verified by a registered nurse.**
@@ -117,7 +156,7 @@ Instruments for learning disability, mental health and older-person care.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md.",
   "packageId" : "onc.ig",
@@ -1043,6 +1082,7 @@ Instruments for learning disability, mental health and older-person care.
         "reference" : "Observation/example-4at-delirium"
       },
       "name" : "example-4at-delirium",
+      "description" : "Worked example of a 4AT delirium screen conforming to ONC4ATDelirium.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"
     },
     {
@@ -1054,6 +1094,7 @@ Instruments for learning disability, mental health and older-person care.
         "reference" : "Observation/example-abbey-pain"
       },
       "name" : "example-abbey-pain",
+      "description" : "Worked example of an Abbey Pain Scale assessment conforming to ONCAbbeyPainScale.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale"
     },
     {
@@ -1700,6 +1741,7 @@ Instruments for learning disability, mental health and older-person care.
         "reference" : "CodeSystem/onc-monk-scale"
       },
       "name" : "Monk Skin Tone Scale CodeSystem",
+      "description" : "The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment.",
       "exampleBoolean" : false
     },
     {
@@ -1711,6 +1753,7 @@ Instruments for learning disability, mental health and older-person care.
         "reference" : "ValueSet/onc-monk-scale-vs"
       },
       "name" : "Monk Skin Tone Scale ValueSet",
+      "description" : "ValueSet for ONCMonkScaleVS used by the Open Nursing Core IG.",
       "exampleBoolean" : false
     },
     {
@@ -1782,6 +1825,7 @@ Instruments for learning disability, mental health and older-person care.
         "reference" : "PlanDefinition/news2-escalation-plan"
       },
       "name" : "NEWS2 Escalation Protocol",
+      "description" : "Computable escalation protocol for NEWS2 results, encoding the RCP response bands: 0-4 routine monitoring; 3 in any single parameter registered-nurse review; 5-6 urgent review by a clinician competent in acute illness; 7+ emergency response.",
       "exampleBoolean" : false
     },
     {
@@ -2061,6 +2105,18 @@ Instruments for learning disability, mental health and older-person care.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/onc-relational-findings-vs"
+      },
+      "name" : "ONC Relational Findings",
+      "description" : "The relational-care findings that the onc-to-nanda ConceptMap maps to formal nursing diagnoses.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2290,7 +2346,7 @@ Instruments for learning disability, mental health and older-person care.
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/onc-relational-care-logical"
+        "reference" : "StructureDefinition/ONCRelationalCareModel"
       },
       "name" : "Relational Care Logical Model",
       "description" : "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR.",
@@ -2473,6 +2529,7 @@ Instruments for learning disability, mental health and older-person care.
         "reference" : "ValueSet/wound-stage-vs"
       },
       "name" : "Wound Stage Value Set",
+      "description" : "ValueSet for WoundStageValueSet used by the Open Nursing Core IG.",
       "exampleBoolean" : false
     }],
     "page" : {

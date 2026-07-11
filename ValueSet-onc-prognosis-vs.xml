@@ -10,7 +10,8 @@
   <name value="ONCPrognosisVS"/>
   <title value="Nursing Prognosis ValueSet"/>
   <status value="active"/>
-  <date value="2026-07-11T09:46:48+00:00"/>
+  <experimental value="false"/>
+  <date value="2026-07-11T14:02:42+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="Prognosis codes for clinical impression"/>
   <compose>

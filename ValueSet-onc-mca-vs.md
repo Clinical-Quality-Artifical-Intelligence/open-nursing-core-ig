@@ -50,7 +50,8 @@ Codes indicating presence or absence of capacity
   "name" : "MentalCapacityVS",
   "title" : "Mental Capacity Finding Value Set",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "experimental" : false,
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Codes indicating presence or absence of capacity",
   "compose" : {

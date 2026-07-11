@@ -32,7 +32,7 @@ SDC questionnaire for the Malnutrition Universal Screening Tool: three step scor
   "title" : "MUST (Malnutrition Universal Screening Tool)",
   "status" : "draft",
   "subjectType" : ["Patient"],
-  "date" : "2026-07-11T09:46:48+00:00",
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "SDC questionnaire for the Malnutrition Universal Screening Tool: three step scores and the total. Coded items extract to Observations using the ONC MUST component codes; assembling them into the single component-based ONCMUSTScore Observation is the capturing app's responsibility.",
   "item" : [{

@@ -5,7 +5,7 @@
     "status" : "active",
     "name" : "ONCMonkScale",
     "title" : "Monk Skin Tone Scale CodeSystem",
-    "description" : ""
+    "description" : "The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment."
   },
   {
     "url" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",

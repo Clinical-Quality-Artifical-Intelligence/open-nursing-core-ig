@@ -16,6 +16,8 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
+**effective**: 2026-01-15 10:00:00+0000
+
 **performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: 5 {score}
@@ -55,6 +57,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
+  "effectiveDateTime" : "2026-01-15T10:00:00Z",
   "performer" : [{
     "reference" : "Practitioner/practitioner-example"
   }],

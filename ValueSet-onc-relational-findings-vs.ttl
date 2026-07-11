@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "onc-relational-findings-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-relational-findings-vs</b></p><a name=\"onc-relational-findings-vs\"> </a><a name=\"hconc-relational-findings-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-onc-observation-codes.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b><a href=\"ConceptMap-onc-to-nanda.html\">Mapping ONC Relational Concepts to NANDA-I</a></b></td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-patient-story\">patient-story</a></td><td>Patient Story</td><td>Narrative summary of patient background, preferences, and autobiography</td><td><span title=\"RELATEDTO\">?</span>00053</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-relational-engagement\">relational-engagement</a></td><td>Relational Engagement Score</td><td>Assessment of the quality of nurse-patient engagement (1-5)</td><td><span title=\"RELATEDTO\">?</span>00054</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-mst-score\">mst-score</a></td><td>Monk Skin Tone Score</td><td>Assessment of skin tone using the Monk Skin Tone Scale</td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span>399912005</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "ONCRelationalFindingsVS"] ;
+  fhir:ValueSet.title [ fhir:value "ONC Relational Findings"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-11T14:02:42+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "The Open Nursing Community"] ;
+  fhir:ValueSet.description [ fhir:value "The relational-care findings that the onc-to-nanda ConceptMap maps to formal nursing diagnoses."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "patient-story" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient Story" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "relational-engagement" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Relational Engagement Score" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mst-score" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monk Skin Tone Score" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

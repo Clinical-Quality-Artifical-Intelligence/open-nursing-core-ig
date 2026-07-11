@@ -14,6 +14,8 @@ Profile: [ONC Nursing Strength](StructureDefinition-onc-nursing-strength.md)
 
 **subject**: [Patient/example-patient](Patient/example-patient)
 
+**effective**: 2026-01-15 10:00:00+0000
+
 **performer**: [Practitioner/example-nurse](Practitioner/example-nurse)
 
 **value**: Highly motivated to maintain independence in upper body dressing.
@@ -46,6 +48,7 @@ Patient explicitly stated desire to continue buttoning own shirt if given enough
   "subject" : {
     "reference" : "Patient/example-patient"
   },
+  "effectiveDateTime" : "2026-01-15T10:00:00Z",
   "performer" : [{
     "reference" : "Practitioner/example-nurse"
   }],

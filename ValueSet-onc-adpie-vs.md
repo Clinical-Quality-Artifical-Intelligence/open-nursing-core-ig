@@ -16,7 +16,7 @@ The five phases of the professional nursing process.
 
  **References** 
 
-* [Relational Care Logical Model](StructureDefinition-onc-relational-care-logical.md)
+* [Relational Care Logical Model](StructureDefinition-ONCRelationalCareModel.md)
 
 ### Logical Definition (CLD)
 
@@ -50,7 +50,8 @@ The five phases of the professional nursing process.
   "name" : "ONCADPIEVS",
   "title" : "ADPIE Nursing Process Phases",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "experimental" : false,
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "The five phases of the professional nursing process.",
   "compose" : {

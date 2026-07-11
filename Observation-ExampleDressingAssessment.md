@@ -16,6 +16,8 @@ Profile: [Dressing and Undressing Assessment](StructureDefinition-onc-dressing-a
 
 **subject**: [Patient/example-patient](Patient/example-patient)
 
+**effective**: 2026-01-15 10:00:00+0000
+
 **performer**: [Practitioner/example-nurse](Practitioner/example-nurse)
 
 **value**: Requires assistance with lower body dressing
@@ -48,6 +50,7 @@ Profile: [Dressing and Undressing Assessment](StructureDefinition-onc-dressing-a
   "subject" : {
     "reference" : "Patient/example-patient"
   },
+  "effectiveDateTime" : "2026-01-15T10:00:00Z",
   "performer" : [{
     "reference" : "Practitioner/example-nurse"
   }],

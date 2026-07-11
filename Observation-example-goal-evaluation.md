@@ -18,6 +18,8 @@ Profile: [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
 
 **focus**: [Goal: lifecycleStatus = active; description = ](Goal-example-patient-goal.md)
 
+**effective**: 2026-01-15 10:00:00+0000
+
 **performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Objective achieved
@@ -53,6 +55,7 @@ Profile: [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
   "focus" : [{
     "reference" : "Goal/example-patient-goal"
   }],
+  "effectiveDateTime" : "2026-01-15T10:00:00Z",
   "performer" : [{
     "reference" : "Practitioner/practitioner-example"
   }],

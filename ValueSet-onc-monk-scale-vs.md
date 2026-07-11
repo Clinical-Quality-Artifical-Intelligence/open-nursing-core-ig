@@ -11,6 +11,9 @@
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs | *Version*:1.0.0 |
 | Active as of 2026-07-11 | *Computable Name*:ONCMonkScaleVS |
 
+ 
+ValueSet for ONCMonkScaleVS used by the Open Nursing Core IG. 
+
  **References** 
 
 * [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md)
@@ -47,8 +50,10 @@
   "name" : "ONCMonkScaleVS",
   "title" : "Monk Skin Tone Scale ValueSet",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "experimental" : false,
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
+  "description" : "ValueSet for ONCMonkScaleVS used by the Open Nursing Core IG.",
   "compose" : {
     "include" : [{
       "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale"

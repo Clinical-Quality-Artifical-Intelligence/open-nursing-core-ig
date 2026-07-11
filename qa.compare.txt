@@ -1,60 +1,60 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 92, warn = 170, info = 191
+err = 90, warn = 65, info = 189
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingcoreig.com)
- Build Errors : 9 / 52 / 0
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 4 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 0 / 3 / 2
+ Build Errors : 8 / 42 / 0
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ConceptMap-onc-to-nanda : 1 / 4 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ConceptMap-onc-to-nanda : 0 / 3 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-ExampleNursingNeed-Dressing : 2 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-example-nursing-problem : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Goal-example-patient-goal : 2 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ImplementationGuide-onc.ig : 0 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleDressingAssessment : 4 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleNursingStrength-Motivation : 4 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleSkinAssessment : 4 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-4at-delirium : 7 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-abbey-pain : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-abc-chart : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleDressingAssessment : 4 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleNursingStrength-Motivation : 4 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-ExampleSkinAssessment : 4 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-4at-delirium : 7 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-abbey-pain : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-abc-chart : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-acvpu : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-bladder-assessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-blood-pressure : 5 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-bowel-assessment : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-bristol-stool : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-bristol-stool : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-catheter-care : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-clinical-frailty : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-clinical-frailty : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-continence-assessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-dietary-requirements : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-fluid-balance : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-goal-evaluation : 1 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-fluid-balance : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-goal-evaluation : 1 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-heart-rate : 3 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-hygiene-assessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-inspired-oxygen : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-medication-ability : 1 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-medication-self-admin : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-mental-capacity : 1 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-mental-capacity : 1 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-mobility-assessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-monk-skin-tone : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-must-score : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-news2-score : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-care-assessment : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-health : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-health : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oral-intake : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-oxygen-saturation : 4 / 0 / 3
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-patient-story : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-reasonable-adjustment : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-patient-story : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-reasonable-adjustment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-respiration-rate : 3 / 0 / 3
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-seizure-record : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-seizure-record : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-swallowing-assessment : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-temperature : 3 / 0 / 3
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-urinalysis : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-urinalysis : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-waterlow-score : 1 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-what-matters : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-braden-scale : 1 / 1 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-skin-tone : 2 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-what-matters : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-braden-scale : 1 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-skin-tone : 2 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Patient-patient-example-jane : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Practitioner-practitioner-example : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Procedure-example-nursing-intervention : 0 / 0 / 1
@@ -64,6 +64,7 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-news2-questionnaire : 2 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-person-centred-questionnaire : 2 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Questionnaire-onc-waterlow-questionnaire : 2 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-ONCRelationalCareModel : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-intervention-goal-reference : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-observation-goal-reference : 0 / 2 / 2
@@ -117,7 +118,6 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-story : 0 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-qsofa : 0 / 1 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-reasonable-adjustment : 0 / 0 / 3
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-relational-care-logical : 0 / 16 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-relational-observation : 0 / 1 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-respiration-rate : 0 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-seizure-record : 0 / 0 / 5
@@ -129,44 +129,38 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://opennursingc
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-waterlow-score : 0 / 0 / 5
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-what-matters : 0 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-wound-assessment : 0 / 3 / 5
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-acvpu-vs : 0 / 2 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-acvpu-vs : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-goal-evaluation-valueset : 1 / 1 / 5
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-housing-status-vs : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-inspired-oxygen-vs : 0 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-news2-code-vs : 0 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-news2-subscore-code-vs : 0 / 2 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-inspired-oxygen-vs : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-news2-code-vs : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-news2-subscore-code-vs : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-nursing-intervention-valueset : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-nursing-problem-valueset : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-acute-change-vs : 2 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-alertness-vs : 0 / 2 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-amt4-vs : 3 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-attention-vs : 3 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-adpie-vs : 0 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-cfs-vs : 0 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-empathy-index-vs : 0 / 2 / 6
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-goal-target-measure-vs : 0 / 2 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-mca-vs : 0 / 2 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-monk-scale-vs : 0 / 3 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-acute-change-vs : 2 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-alertness-vs : 0 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-amt4-vs : 3 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-attention-vs : 3 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-adpie-vs : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-cfs-vs : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-empathy-index-vs : 0 / 1 / 6
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-goal-target-measure-vs : 0 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-mca-vs : 0 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-monk-scale-vs : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-news2-score-vs : 3 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-pain-score-vs : 0 / 1 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-pbs-function-vs : 0 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-prognosis-vs : 1 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-relational-outcomes-vs : 3 / 2 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-pbs-function-vs : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-prognosis-vs : 1 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-relational-findings-vs : 0 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-relational-outcomes-vs : 3 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-skin-tone-vs : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-pain-assessment-code-vs : 0 / 2 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-pain-assessment-code-vs : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-problem-category-valueset : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-wound-stage-vs : 0 / 3 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-wound-stage-vs : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/Library-onc-news2-cql : 2 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/PlanDefinition-news2-escalation : 3 / 1 / 2
 </table>
 == n/a ==
-ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PlanDefinition/news2-escalation-plan.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/onc-monk-scale-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/wound-stage-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/onc-monk-scale.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-4at-delirium.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-abbey-pain.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-abc-chart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-acvpu.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-bladder-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -210,35 +204,18 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/practitioner-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Condition-ExampleNursingNeed-Dressing.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 873: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
 ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 730: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 816: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
+ERROR: Observation-ExampleDressingAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 865: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
 ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 653: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 739: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
+ERROR: Observation-ExampleNursingStrength-Motivation.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 788: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
 ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 721: The link 'Patient/example-patient' for "Patient/example-patient" cannot be resolved
-ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 807: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
+ERROR: Observation-ExampleSkinAssessment.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 856: The link 'Practitioner/example-nurse' for "Practitioner/example-nurse" cannot be resolved
 WARNING: history.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 40: The link 'https://opennursingcoreig.com' for "https://opennursingcoreig.com" is a canonical link and is therefore unsafe with regard to versions
 ERROR: safety.html#/html/body/div/div/div/div/div/p/strong/a at Line 189, column 448: The link 'PlanDefinition-news2-escalation.html' for "NEWS2 Escalation PlanDefinition" cannot be resolved
-WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-onc-monk-scale.json ==
-INFORMATION: CodeSystem/onc-monk-scale: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/onc-monk-scale: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/onc-monk-scale: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
-WARNING: CodeSystem/onc-monk-scale: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-WARNING: Resource: The resource CodeSystem/onc-monk-scale should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-onc-observation-codes.json ==
-INFORMATION: CodeSystem/onc-observation-codes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/onc-observation-codes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/onc-observation-codes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-WARNING: Resource: The resource CodeSystem/onc-observation-codes should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-onc-problem-type.json ==
-WARNING: Resource: The resource CodeSystem/onc-problem-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ConceptMap-onc-to-nanda.json ==
-WARNING: ConceptMap/onc-to-nanda: ConceptMap.source.ofType(canonical): A definition could not be found for Canonical URL 'https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs'
-WARNING: ConceptMap/onc-to-nanda: ConceptMap.target.ofType(canonical): A definition could not be found for Canonical URL 'https://opennursingcoreig.com/CodeSystem/nanda-i-PLACEHOLDER'
 WARNING: ConceptMap/onc-to-nanda: ConceptMap.group[0].target: No definition could be found for URL value 'https://opennursingcoreig.com/CodeSystem/nanda-i-PLACEHOLDER'
-ERROR: ConceptMap/onc-to-nanda: ConceptMap.group[0].element[2].code: The source code 'skintone-observation' is not valid in the code system https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0
 WARNING: ConceptMap/onc-to-nanda: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
 INFORMATION: Resource: The resource ConceptMap/onc-to-nanda could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Condition-ExampleNursingNeed-Dressing.json ==
@@ -253,19 +230,16 @@ INFORMATION: Resource: The resource ImplementationGuide/onc.ig could usefully ha
 == fsh-generated/resources/Observation-ExampleDressingAssessment.json ==
 ERROR: Observation/ExampleDressingAssessment: Observation.subject: Unable to resolve resource with reference 'Patient/example-patient'
 ERROR: Observation/ExampleDressingAssessment: Observation.performer[0]: Unable to resolve resource with reference 'Practitioner/example-nurse'
-WARNING: Observation/ExampleDressingAssessment: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Observation.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
 ERROR: Observation.text.div: Hyperlink 'Practitioner/example-nurse' at 'div/p/a' for 'Practitioner/example-nurse' does not resolve
 == fsh-generated/resources/Observation-ExampleNursingStrength-Motivation.json ==
 ERROR: Observation/ExampleNursingStrength-Motivation: Observation.subject: Unable to resolve resource with reference 'Patient/example-patient'
 ERROR: Observation/ExampleNursingStrength-Motivation: Observation.performer[0]: Unable to resolve resource with reference 'Practitioner/example-nurse'
-WARNING: Observation/ExampleNursingStrength-Motivation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Observation.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
 ERROR: Observation.text.div: Hyperlink 'Practitioner/example-nurse' at 'div/p/a' for 'Practitioner/example-nurse' does not resolve
 == fsh-generated/resources/Observation-ExampleSkinAssessment.json ==
 ERROR: Observation/ExampleSkinAssessment: Observation.subject: Unable to resolve resource with reference 'Patient/example-patient'
 ERROR: Observation/ExampleSkinAssessment: Observation.performer[0]: Unable to resolve resource with reference 'Practitioner/example-nurse'
-WARNING: Observation/ExampleSkinAssessment: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Observation.text.div: Hyperlink 'Patient/example-patient' at 'div/p/a' for 'Patient/example-patient' does not resolve
 ERROR: Observation.text.div: Hyperlink 'Practitioner/example-nurse' at 'div/p/a' for 'Practitioner/example-nurse' does not resolve
 == fsh-generated/resources/Observation-example-4at-delirium.json ==
@@ -276,11 +250,8 @@ ERROR: Observation/example-4at-delirium: Observation.component[2].value.ofType(C
 ERROR: Observation/example-4at-delirium: Observation.component[2].value.ofType(CodeableConcept): None of the codings provided are in the value set '4AT Attention Value Set' (https://opennursingcoreig.com/ValueSet/onc-4at-attention-vs|1.0.0), and a coding from this value set is required) (codes = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#4at-attention-gt7)
 ERROR: Observation/example-4at-delirium: Observation.component[3].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'No' for https://opennursingcoreig.com/CodeSystem/onc-observation-codes#4at-change-no. Valid display is 'No Acute Change' (for the language(s) 'en-US')
 ERROR: Observation/example-4at-delirium: Observation.component[3].value.ofType(CodeableConcept): None of the codings provided are in the value set '4AT Acute Change Value Set' (https://opennursingcoreig.com/ValueSet/onc-4at-acute-change-vs|1.0.0), and a coding from this value set is required) (codes = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#4at-change-no)
-WARNING: Observation/example-4at-delirium: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-abbey-pain.json ==
-WARNING: Observation/example-abbey-pain: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-abc-chart.json ==
-WARNING: Observation/example-abc-chart: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-acvpu.json ==
 == fsh-generated/resources/Observation-example-bladder-assessment.json ==
 == fsh-generated/resources/Observation-example-blood-pressure.json ==
@@ -292,17 +263,13 @@ ERROR: Observation/example-blood-pressure: Observation.component[1].value.ofType
 ERROR: Observation/example-blood-pressure: Observation.component[1].value.ofType(Quantity): Observation.component:DiastolicBP.value[x].code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
 == fsh-generated/resources/Observation-example-bowel-assessment.json ==
 == fsh-generated/resources/Observation-example-bristol-stool.json ==
-WARNING: Observation/example-bristol-stool: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-catheter-care.json ==
 == fsh-generated/resources/Observation-example-clinical-frailty.json ==
-WARNING: Observation/example-clinical-frailty: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-continence-assessment.json ==
 == fsh-generated/resources/Observation-example-dietary-requirements.json ==
 == fsh-generated/resources/Observation-example-fluid-balance.json ==
-WARNING: Observation/example-fluid-balance: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-goal-evaluation.json ==
 ERROR: Observation/example-goal-evaluation: Observation.code.coding[0].display: Wrong Display Name 'Follow-up assessment' for http://snomed.info/sct#390906007. Valid display is one of 2 choices: 'Follow-up encounter (procedure)' (en) or 'Follow-up encounter' (en) (for the language(s) 'en-US')
-WARNING: Observation/example-goal-evaluation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-heart-rate.json ==
 INFORMATION: Observation/example-heart-rate: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/example-heart-rate: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1). Note that other slices are allowed in addition to this required slice
@@ -315,14 +282,12 @@ ERROR: Observation/example-medication-ability: Observation.code.coding[0].displa
 == fsh-generated/resources/Observation-example-medication-self-admin.json ==
 == fsh-generated/resources/Observation-example-mental-capacity.json ==
 ERROR: Observation/example-mental-capacity: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Mental Capacity Finding Value Set' (https://opennursingcoreig.com/ValueSet/onc-mca-vs|1.0.0), and a coding from this value set is required) (codes = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#mca-present)
-WARNING: Observation/example-mental-capacity: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-mobility-assessment.json ==
 == fsh-generated/resources/Observation-example-monk-skin-tone.json ==
 == fsh-generated/resources/Observation-example-must-score.json ==
 == fsh-generated/resources/Observation-example-news2-score.json ==
 == fsh-generated/resources/Observation-example-oral-care-assessment.json ==
 == fsh-generated/resources/Observation-example-oral-health.json ==
-WARNING: Observation/example-oral-health: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-oral-intake.json ==
 == fsh-generated/resources/Observation-example-oxygen-saturation.json ==
 INFORMATION: Observation/example-oxygen-saturation: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -331,16 +296,13 @@ ERROR: Observation/example-oxygen-saturation: Observation.code: OxygenSatCode: m
 ERROR: Observation/example-oxygen-saturation: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 ERROR: Observation/example-oxygen-saturation: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 == fsh-generated/resources/Observation-example-patient-story.json ==
-WARNING: Observation/example-patient-story: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-reasonable-adjustment.json ==
-WARNING: Observation/example-reasonable-adjustment: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-respiration-rate.json ==
 INFORMATION: Observation/example-respiration-rate: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/example-respiration-rate: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1). Note that other slices are allowed in addition to this required slice
 ERROR: Observation/example-respiration-rate: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1)
 ERROR: Observation/example-respiration-rate: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1)
 == fsh-generated/resources/Observation-example-seizure-record.json ==
-WARNING: Observation/example-seizure-record: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-swallowing-assessment.json ==
 == fsh-generated/resources/Observation-example-temperature.json ==
 INFORMATION: Observation/example-temperature: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -348,20 +310,16 @@ ERROR: Observation/example-temperature: Observation: Slice 'Observation.category
 ERROR: Observation/example-temperature: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 ERROR: Observation/example-temperature: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated/resources/Observation-example-urinalysis.json ==
-WARNING: Observation/example-urinalysis: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-waterlow-score.json ==
 ERROR: Observation/example-waterlow-score: Observation.hasMember[0]: Slicing cannot be evaluated: Invalid use of resolve() in discriminator - 2 possible target type profiles on Observation.hasMember:skinTone (can only be one) (@char 1)
 INFORMATION: Observation/example-waterlow-score: Observation: Observation.hasMember:skinTone: Found 0 matches, but unable to check minimum required (Observation.hasMember) due to lack of slicing validation (from https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score|1.0.0)
 == fsh-generated/resources/Observation-example-what-matters.json ==
-WARNING: Observation/example-what-matters: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-observation-braden-scale.json ==
 ERROR: Observation/observation-braden-scale: Observation.hasMember[0]: Slicing cannot be evaluated: Invalid use of resolve() in discriminator - 2 possible target type profiles on Observation.hasMember:skinTone (can only be one) (@char 1)
 INFORMATION: Observation/observation-braden-scale: Observation: Observation.hasMember:skinTone: Found 0 matches, but unable to check minimum required (Observation.hasMember) due to lack of slicing validation (from https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment|1.0.0)
-WARNING: Observation/observation-braden-scale: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-observation-skin-tone.json ==
 ERROR: Observation/observation-skin-tone: Observation.value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type II' for http://snomed.info/sct#403154004. Valid display is one of 3 choices: 'Millipede burn (disorder)' (en), 'Millipede burn' (en) or 'Millipede burns' (en) (for the language(s) 'en-US')
 ERROR: Observation/observation-skin-tone: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Skin Tone Value Set' (https://opennursingcoreig.com/ValueSet/onc-skin-tone-vs|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#403154004)
-WARNING: Observation/observation-skin-tone: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Patient-patient-example-jane.json ==
 WARNING: Patient/patient-example-jane: Patient.extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory' could not be found, so the code cannot be validated
 == fsh-generated/resources/Practitioner-practitioner-example.json ==
@@ -391,6 +349,8 @@ INFORMATION: Resource: The resource Questionnaire/onc-person-centred-questionnai
 ERROR: Questionnaire/onc-waterlow-questionnaire: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
 ERROR: Questionnaire/onc-waterlow-questionnaire: Questionnaire.extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract'
 INFORMATION: Resource: The resource Questionnaire/onc-waterlow-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-ONCRelationalCareModel.json ==
+INFORMATION: Resource: The resource StructureDefinition/ONCRelationalCareModel could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory.json ==
 INFORMATION: Resource: The resource StructureDefinition/UKCore-Extension-EthnicCategory could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-intervention-goal-reference.json ==
@@ -593,24 +553,6 @@ WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/Structur
 == fsh-generated/resources/StructureDefinition-onc-reasonable-adjustment.json ==
 INFORMATION: StructureDefinition/onc-reasonable-adjustment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: Resource: The resource StructureDefinition/onc-reasonable-adjustment could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-onc-relational-care-logical.json ==
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/onc-relational-care-logical: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/onc-relational-care-logical could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-onc-relational-observation.json ==
 INFORMATION: StructureDefinition/onc-relational-observation: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: Resource: The resource StructureDefinition/onc-relational-observation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
@@ -652,118 +594,69 @@ INFORMATION: Resource: The resource StructureDefinition/onc-waterlow-score could
 INFORMATION: StructureDefinition/onc-what-matters: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: Resource: The resource StructureDefinition/onc-what-matters could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-onc-wound-assessment.json ==
-WARNING: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: The concept '399912005' has a status of inactive and its use should be reviewed
-WARNING: StructureDefinition/onc-wound-assessment: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: The concept '399912005' has a status of inactive and its use should be reviewed
 INFORMATION: StructureDefinition/onc-wound-assessment: StructureDefinition.differential.element[4].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[42].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: Resource: The resource StructureDefinition/onc-wound-assessment could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-acvpu-vs.json ==
-WARNING: ValueSet/acvpu-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/acvpu-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-goal-evaluation-valueset.json ==
 INFORMATION: ValueSet/goal-evaluation-valueset: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Objective achieved' for http://snomed.info/sct#385652002. Valid display is one of 2 choices: 'Started (qualifier value)' (en) or 'Started' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/goal-evaluation-valueset: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Objective not achieved' for http://snomed.info/sct#385651009. Valid display is one of 2 choices: 'In progress (qualifier value)' (en) or 'In progress' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/goal-evaluation-valueset: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'Partial achievement' for http://snomed.info/sct#255609007. Valid display is one of 3 choices: 'Partial' (en), 'Incomplete' (en) or 'Partial (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/goal-evaluation-valueset: ValueSet.compose.include[0].concept[3]: Wrong Display Name 'Sustained improvement' for http://snomed.info/sct#723510000. Valid display is one of 2 choices: 'Entered in error (qualifier value)' (en) or 'Entered in error' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 ERROR: ValueSet/goal-evaluation-valueset: ValueSet.compose.include[0].concept[4]: The code '260388008' is not valid in the system http://snomed.info/sct (Unknown code '260388008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-WARNING: Resource: The resource ValueSet/goal-evaluation-valueset should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-housing-status-vs.json ==
-WARNING: Resource: The resource ValueSet/housing-status-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-inspired-oxygen-vs.json ==
-WARNING: ValueSet/inspired-oxygen-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/inspired-oxygen-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-news2-code-vs.json ==
-WARNING: ValueSet/news2-code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/news2-code-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-news2-subscore-code-vs.json ==
-WARNING: ValueSet/news2-subscore-code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/news2-subscore-code-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-nursing-intervention-valueset.json ==
-WARNING: Resource: The resource ValueSet/nursing-intervention-valueset should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-nursing-problem-valueset.json ==
-WARNING: Resource: The resource ValueSet/nursing-problem-valueset should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-4at-acute-change-vs.json ==
 ERROR: ValueSet/onc-4at-acute-change-vs: ValueSet.compose.include[0].concept[0]: The code '521000176101' is not valid in the system http://snomed.info/sct (Unknown code '521000176101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 ERROR: ValueSet/onc-4at-acute-change-vs: ValueSet.compose.include[0].concept[1]: The code '531000176103' is not valid in the system http://snomed.info/sct (Unknown code '531000176103' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-WARNING: ValueSet/onc-4at-acute-change-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-4at-acute-change-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-4at-alertness-vs.json ==
 INFORMATION: ValueSet/onc-4at-alertness-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Normal (fully alert, not agitated)' for https://opennursingcoreig.com/CodeSystem/onc-observation-codes#4at-alertness. Valid display is 'Alertness' (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-WARNING: ValueSet/onc-4at-alertness-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-4at-alertness-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-4at-amt4-vs.json ==
 ERROR: ValueSet/onc-4at-amt4-vs: ValueSet.compose.include[0].concept[0]: The code '4851000147101' is not valid in the system http://snomed.info/sct (Unknown code '4851000147101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 ERROR: ValueSet/onc-4at-amt4-vs: ValueSet.compose.include[0].concept[1]: The code '4861000147105' is not valid in the system http://snomed.info/sct (Unknown code '4861000147105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 ERROR: ValueSet/onc-4at-amt4-vs: ValueSet.compose.include[0].concept[2]: The code '4871000147108' is not valid in the system http://snomed.info/sct (Unknown code '4871000147108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-WARNING: ValueSet/onc-4at-amt4-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-4at-amt4-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-4at-attention-vs.json ==
 ERROR: ValueSet/onc-4at-attention-vs: ValueSet.compose.include[0].concept[0]: The code '4851000147101' is not valid in the system http://snomed.info/sct (Unknown code '4851000147101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 ERROR: ValueSet/onc-4at-attention-vs: ValueSet.compose.include[0].concept[1]: The code '4861000147105' is not valid in the system http://snomed.info/sct (Unknown code '4861000147105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 ERROR: ValueSet/onc-4at-attention-vs: ValueSet.compose.include[0].concept[2]: The code '4871000147108' is not valid in the system http://snomed.info/sct (Unknown code '4871000147108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-WARNING: ValueSet/onc-4at-attention-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-4at-attention-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-adpie-vs.json ==
-WARNING: ValueSet/onc-adpie-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-adpie-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-cfs-vs.json ==
-WARNING: ValueSet/onc-cfs-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-cfs-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-empathy-index-vs.json ==
 INFORMATION: ValueSet/onc-empathy-index-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Low Empathy: Task-focused interaction with minimal person-centred engagement.' for https://opennursingcoreig.com/CodeSystem/onc-observation-codes#empathy-1. Valid display is 'Low Empathy' (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/onc-empathy-index-vs: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Basic Empathy: Professional interaction with patient identity acknowledged.' for https://opennursingcoreig.com/CodeSystem/onc-observation-codes#empathy-2. Valid display is 'Basic Empathy' (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/onc-empathy-index-vs: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'Moderate Empathy: Active relational engagement with shared decision making.' for https://opennursingcoreig.com/CodeSystem/onc-observation-codes#empathy-3. Valid display is 'Moderate Empathy' (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/onc-empathy-index-vs: ValueSet.compose.include[0].concept[3]: Wrong Display Name 'High Empathy: Authentic partnership with deep understanding of patient experience.' for https://opennursingcoreig.com/CodeSystem/onc-observation-codes#empathy-4. Valid display is 'High Empathy' (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/onc-empathy-index-vs: ValueSet.compose.include[0].concept[4]: Wrong Display Name 'Relational Excellence: Flourishing partnership with total alignment on 'What Matters to Me'.' for https://opennursingcoreig.com/CodeSystem/onc-observation-codes#empathy-5. Valid display is 'Relational Excellence' (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-WARNING: ValueSet/onc-empathy-index-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-empathy-index-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-goal-target-measure-vs.json ==
 INFORMATION: ValueSet/onc-goal-target-measure-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Oxygen saturation' for http://loinc.org#59408-5. Valid display is one of 3 choices: 'Oxygen saturation in Arterial blood by Pulse oximetry' (en-US), 'Oxygen saturation in Arterial blood by Pulse oximetry' (en-US) or 'SaO2 % BldA PulseOx' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-WARNING: ValueSet/onc-goal-target-measure-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-goal-target-measure-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-mca-vs.json ==
 INFORMATION: ValueSet/onc-mca-vs: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'Best Interest Decision Required' for https://opennursingcoreig.com/CodeSystem/onc-observation-codes#best-interest. Valid display is 'Best Interest Decision' (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-WARNING: ValueSet/onc-mca-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-mca-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-monk-scale-vs.json ==
-WARNING: ValueSet/onc-monk-scale-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/onc-monk-scale-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-monk-scale-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-news2-score-vs.json ==
 ERROR: ValueSet/onc-news2-score-vs: ValueSet.compose.include[0].concept[0]: The code '50601000000100' is not valid in the system http://snomed.info/sct (Unknown code '50601000000100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 ERROR: ValueSet/onc-news2-score-vs: ValueSet.compose.include[0].concept[1]: The code '50602000000101' is not valid in the system http://snomed.info/sct (Unknown code '50602000000101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 ERROR: ValueSet/onc-news2-score-vs: ValueSet.compose.include[0].concept[2]: The code '50604000000104' is not valid in the system http://snomed.info/sct (Unknown code '50604000000104' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-WARNING: Resource: The resource ValueSet/onc-news2-score-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-pain-score-vs.json ==
 INFORMATION: ValueSet/onc-pain-score-vs: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Pain score' for http://snomed.info/sct#225330006. Valid display is one of 2 choices: 'Client participation' (en) or 'Client participation (procedure)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-WARNING: Resource: The resource ValueSet/onc-pain-score-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-pbs-function-vs.json ==
-WARNING: ValueSet/onc-pbs-function-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-pbs-function-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-prognosis-vs.json ==
 ERROR: ValueSet/onc-prognosis-vs: ValueSet.compose.include[0].concept[1]: The code '260388008' is not valid in the system http://snomed.info/sct (Unknown code '260388008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-WARNING: ValueSet/onc-prognosis-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-prognosis-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ValueSet-onc-relational-findings-vs.json ==
 == fsh-generated/resources/ValueSet-onc-relational-outcomes-vs.json ==
 ERROR: ValueSet/onc-relational-outcomes-vs: ValueSet.compose.include[0].concept[0]: The code '161096001' is not valid in the system http://snomed.info/sct (Unknown code '161096001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 ERROR: ValueSet/onc-relational-outcomes-vs: ValueSet.compose.include[0].concept[1]: The code '307823004' is not valid in the system http://snomed.info/sct (Unknown code '307823004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 ERROR: ValueSet/onc-relational-outcomes-vs: ValueSet.compose.include[0].concept[2]: The code '428131006' is not valid in the system http://snomed.info/sct (Unknown code '428131006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-WARNING: ValueSet/onc-relational-outcomes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/onc-relational-outcomes-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-onc-skin-tone-vs.json ==
-WARNING: Resource: The resource ValueSet/onc-skin-tone-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-pain-assessment-code-vs.json ==
 INFORMATION: ValueSet/pain-assessment-code-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Pain severity - 0-10 verbal numeric rating' for http://loinc.org#72514-3. Valid display is one of 3 choices: 'Pain severity - 0-10 verbal numeric rating [Score] - Reported' (en-US), 'Pain severity - 0-10 verbal numeric rating [Score] - Reported' (en-US) or 'Pain severity 0-10 Scre Reported' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-WARNING: ValueSet/pain-assessment-code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/pain-assessment-code-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-problem-category-valueset.json ==
-WARNING: Resource: The resource ValueSet/problem-category-valueset should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-wound-stage-vs.json ==
-WARNING: ValueSet/wound-stage-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/wound-stage-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-WARNING: Resource: The resource ValueSet/wound-stage-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/resources/Library-onc-news2-cql.json ==
 ERROR: Library.where(url = 'http://opennursingcore.org/Library/ONC-NEWS2-CQL'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/input/resources/Library-onc-news2-cql.json - the canonical URL (https://opennursingcoreig.com/Library/onc-news2-cql) does not match the URL (http://opennursingcore.org/Library/ONC-NEWS2-CQL). Use the special-url parameter if you really mean for it not to match
 WARNING: Library/onc-news2-cql: Library.content[0].url: No definition could be found for URL value 'input/cql/ONC_NEWS2_Logic.cql'

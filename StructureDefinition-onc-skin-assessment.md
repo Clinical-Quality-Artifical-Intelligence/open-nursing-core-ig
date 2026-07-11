@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-skin-assessment.
   "name" : "ONCSkinAssessment",
   "title" : "Skin Integrity Assessment",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Detailed assessment of skin condition (e.g., intact, dry, broken), separate from pressure ulcer risk.",
   "fhirVersion" : "4.0.1",

@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2026-07-11T09:46:48+00:00"/>
+  <date value="2026-07-11T14:02:42+00:00"/>
   <publisher value="The Open Nursing Community"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md."/>
   <packageId value="onc.ig"/>
@@ -753,6 +753,7 @@
         <reference value="Observation/example-4at-delirium"/>
       </reference>
       <name value="example-4at-delirium"/>
+      <description value="Worked example of a 4AT delirium screen conforming to ONC4ATDelirium."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"/>
     </resource>
     <resource>
@@ -763,6 +764,7 @@
         <reference value="Observation/example-abbey-pain"/>
       </reference>
       <name value="example-abbey-pain"/>
+      <description value="Worked example of an Abbey Pain Scale assessment conforming to ONCAbbeyPainScale."/>
       <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale"/>
     </resource>
     <resource>
@@ -1352,6 +1354,7 @@
         <reference value="CodeSystem/onc-monk-scale"/>
       </reference>
       <name value="Monk Skin Tone Scale CodeSystem"/>
+      <description value="The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1362,6 +1365,7 @@
         <reference value="ValueSet/onc-monk-scale-vs"/>
       </reference>
       <name value="Monk Skin Tone Scale ValueSet"/>
+      <description value="ValueSet for ONCMonkScaleVS used by the Open Nursing Core IG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1427,6 +1431,7 @@
         <reference value="PlanDefinition/news2-escalation-plan"/>
       </reference>
       <name value="NEWS2 Escalation Protocol"/>
+      <description value="Computable escalation protocol for NEWS2 results, encoding the RCP response bands: 0-4 routine monitoring; 3 in any single parameter registered-nurse review; 5-6 urgent review by a clinician competent in acute illness; 7+ emergency response."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1682,6 +1687,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-relational-findings-vs"/>
+      </reference>
+      <name value="ONC Relational Findings"/>
+      <description value="The relational-care findings that the onc-to-nanda ConceptMap maps to formal nursing diagnoses."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1892,7 +1908,7 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/onc-relational-care-logical"/>
+        <reference value="StructureDefinition/ONCRelationalCareModel"/>
       </reference>
       <name value="Relational Care Logical Model"/>
       <description value="A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR."/>
@@ -2060,6 +2076,7 @@
         <reference value="ValueSet/wound-stage-vs"/>
       </reference>
       <name value="Wound Stage Value Set"/>
+      <description value="ValueSet for WoundStageValueSet used by the Open Nursing Core IG."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

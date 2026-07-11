@@ -16,6 +16,8 @@ Profile: [Skin Integrity Assessment](StructureDefinition-onc-skin-assessment.md)
 
 **subject**: [Patient/example-patient](Patient/example-patient)
 
+**effective**: 2026-01-15 10:00:00+0000
+
 **performer**: [Practitioner/example-nurse](Practitioner/example-nurse)
 
 **value**: Dry, papery skin with no breaks
@@ -50,6 +52,7 @@ Profile: [Skin Integrity Assessment](StructureDefinition-onc-skin-assessment.md)
   "subject" : {
     "reference" : "Patient/example-patient"
   },
+  "effectiveDateTime" : "2026-01-15T10:00:00Z",
   "performer" : [{
     "reference" : "Practitioner/example-nurse"
   }],

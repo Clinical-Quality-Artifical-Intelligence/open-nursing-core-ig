@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCAbbeyPainScale"] ;
   fhir:StructureDefinition.title [ fhir:value "Abbey Pain Scale"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-11T09:46:48+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:02:42+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Pain assessment for people with dementia or who cannot verbalise. Assesses 6 parameters: Vocalization, Facial Expression, Body Language, Behavioral Change, Physiological Change, Physical Changes. Total score determines pain severity (0-2 No pain, 3-7 Mild, 8-13 Moderate, 14+ Severe)."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

@@ -11,9 +11,9 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 
 These define workflows, rules, strategies, or protocols as part of content in this implementation guide.
 
-| |
-| :--- |
-| [NEWS2 Escalation Protocol](PlanDefinition-news2-escalation-plan.md) |
+| | |
+| :--- | :--- |
+| [NEWS2 Escalation Protocol](PlanDefinition-news2-escalation-plan.md) | Computable escalation protocol for NEWS2 results, encoding the RCP response bands: 0-4 routine monitoring; 3 in any single parameter registered-nurse review; 5-6 urgent review by a clinician competent in acute illness; 7+ emergency response. |
 
 ### Knowledge Artifacts: Libraries 
 
@@ -29,7 +29,7 @@ These define data models that represent the domain covered by this implementatio
 
 | | |
 | :--- | :--- |
-| [Relational Care Logical Model](StructureDefinition-onc-relational-care-logical.md) | A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR. |
+| [Relational Care Logical Model](StructureDefinition-ONCRelationalCareModel.md) | A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR. |
 
 ### Structures: Questionnaires 
 
@@ -140,7 +140,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Housing Status Value Set](ValueSet-housing-status-vs.md) | Value set for patient housing status |
 | [Inspired Oxygen Value Set](ValueSet-inspired-oxygen-vs.md) | Codes for inspired oxygen status |
 | [Mental Capacity Finding Value Set](ValueSet-onc-mca-vs.md) | Codes indicating presence or absence of capacity |
-| [Monk Skin Tone Scale ValueSet](ValueSet-onc-monk-scale-vs.md) |  |
+| [Monk Skin Tone Scale ValueSet](ValueSet-onc-monk-scale-vs.md) | ValueSet for ONCMonkScaleVS used by the Open Nursing Core IG. |
 | [NEWS2 Code Value Set](ValueSet-news2-code-vs.md) | LOINC and SNOMED codes for NEWS2 |
 | [NEWS2 Score Categories Value Set](ValueSet-onc-news2-score-vs.md) | NEWS2 total score categories. |
 | [NEWS2 Sub-Score Codes](ValueSet-news2-subscore-code-vs.md) | SNOMED codes for NEWS2 sub-scores |
@@ -149,12 +149,13 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Nursing Prognosis ValueSet](ValueSet-onc-prognosis-vs.md) | Prognosis codes for clinical impression |
 | [ONC Empathy & Relational Engagement Index](ValueSet-onc-empathy-index-vs.md) | A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome. |
 | [ONC Relational Care Outcomes](ValueSet-onc-relational-outcomes-vs.md) | Captures the measurable outcomes of relational and empathic nursing care. |
+| [ONC Relational Findings](ValueSet-onc-relational-findings-vs.md) | The relational-care findings that the onc-to-nanda ConceptMap maps to formal nursing diagnoses. |
 | [PBS Behaviour Function ValueSet](ValueSet-onc-pbs-function-vs.md) | Common functions of behaviour (SEAT) |
 | [Pain Assessment Code Value Set](ValueSet-pain-assessment-code-vs.md) | LOINC codes for pain severity assessment |
 | [Pain Score Value Set](ValueSet-onc-pain-score-vs.md) | Standard 0-10 or Abbey Pain Scale score |
 | [Problem Category Value Set](ValueSet-problem-category-valueset.md) | Value set for categorizing nursing problems |
 | [Skin Tone Value Set](ValueSet-onc-skin-tone-vs.md) | Skin tone scales for equitable skin assessment. Monk (A-J) is the primary, recommended scale; Fitzpatrick (I-VI) is retained only for backward compatibility with legacy systems. |
-| [Wound Stage Value Set](ValueSet-wound-stage-vs.md) |  |
+| [Wound Stage Value Set](ValueSet-wound-stage-vs.md) | ValueSet for WoundStageValueSet used by the Open Nursing Core IG. |
 
 ### Terminology: Code Systems 
 
@@ -162,7 +163,7 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
-| [Monk Skin Tone Scale CodeSystem](CodeSystem-onc-monk-scale.md) |  |
+| [Monk Skin Tone Scale CodeSystem](CodeSystem-onc-monk-scale.md) | The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment. |
 | [ONC Observation Codes](CodeSystem-onc-observation-codes.md) | Custom observation codes for Open Nursing Core |
 | [Problem Type CodeSystem](CodeSystem-onc-problem-type.md) | Code system for categorizing types of nursing problems |
 
@@ -184,8 +185,8 @@ These are example instances that show what data produced and consumed by systems
 | [Example Nursing Need: Dressing Difficulty](Condition-ExampleNursingNeed-Dressing.md) | Demonstration of the ONCNursingNeed profile. |
 | [Example Nursing Strength: Motivation](Observation-ExampleNursingStrength-Motivation.md) | Demonstration of the ONCNursingStrength profile. |
 | [Example Skin Assessment](Observation-ExampleSkinAssessment.md) | Demonstration of the ONCSkinAssessment profile for general skin integrity. |
-| [example-4at-delirium](Observation-example-4at-delirium.md) |  |
-| [example-abbey-pain](Observation-example-abbey-pain.md) |  |
+| [example-4at-delirium](Observation-example-4at-delirium.md) | Worked example of a 4AT delirium screen conforming to ONC4ATDelirium. |
+| [example-abbey-pain](Observation-example-abbey-pain.md) | Worked example of an Abbey Pain Scale assessment conforming to ONCAbbeyPainScale. |
 | [example-abc-chart](Observation-example-abc-chart.md) |  |
 | [example-acvpu](Observation-example-acvpu.md) |  |
 | [example-bladder-assessment](Observation-example-bladder-assessment.md) |  |

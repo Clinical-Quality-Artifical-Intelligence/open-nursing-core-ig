@@ -90,6 +90,13 @@
   "name" : "ONCWaterlowQuestionnaire"
 },
 {
+  "id" : "ONCRelationalCareModel",
+  "type" : "StructureDefinition",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/ONCRelationalCareModel",
+  "version" : "1.0.0",
+  "name" : "ONCRelationalCareModel"
+},
+{
   "id" : "UKCore-Extension-EthnicCategory",
   "type" : "StructureDefinition",
   "url" : "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory",
@@ -461,13 +468,6 @@
   "name" : "ONCReasonableAdjustment"
 },
 {
-  "id" : "onc-relational-care-logical",
-  "type" : "StructureDefinition",
-  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-care-logical",
-  "version" : "1.0.0",
-  "name" : "ONCRelationalCareModel"
-},
-{
   "id" : "onc-relational-observation",
   "type" : "StructureDefinition",
   "url" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation",
@@ -697,6 +697,13 @@
   "url" : "https://opennursingcoreig.com/ValueSet/onc-prognosis-vs",
   "version" : "1.0.0",
   "name" : "ONCPrognosisVS"
+},
+{
+  "id" : "onc-relational-findings-vs",
+  "type" : "ValueSet",
+  "url" : "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs",
+  "version" : "1.0.0",
+  "name" : "ONCRelationalFindingsVS"
 },
 {
   "id" : "onc-relational-outcomes-vs",

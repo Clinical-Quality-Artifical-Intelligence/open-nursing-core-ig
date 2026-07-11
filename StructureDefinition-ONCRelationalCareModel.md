@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-relational-care-logical | *Version*:1.0.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/ONCRelationalCareModel | *Version*:1.0.0 |
 | Active as of 2026-07-11 | *Computable Name*:ONCRelationalCareModel |
 
  
@@ -18,7 +18,7 @@ A vendor-neutral clinical model of the relational nursing assessment. Defines WH
 
 * This Logical Model is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-relational-care-logical.json)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-ONCRelationalCareModel.json)
 
 ### Formal Views of Profile Content
 
@@ -26,7 +26,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](StructureDefinition-onc-relational-care-logical.csv), [Excel](StructureDefinition-onc-relational-care-logical.xlsx) 
+Other representations of profile: [CSV](StructureDefinition-ONCRelationalCareModel.csv), [Excel](StructureDefinition-ONCRelationalCareModel.xlsx) 
 
 
 
@@ -35,31 +35,31 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-care-
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "onc-relational-care-logical",
-  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-care-logical",
+  "id" : "ONCRelationalCareModel",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/ONCRelationalCareModel",
   "version" : "1.0.0",
   "name" : "ONCRelationalCareModel",
   "title" : "Relational Care Logical Model",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
-  "type" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-care-logical",
+  "type" : "https://opennursingcoreig.com/StructureDefinition/ONCRelationalCareModel",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
-      "id" : "onc-relational-care-logical",
-      "path" : "onc-relational-care-logical",
+      "id" : "ONCRelationalCareModel",
+      "path" : "ONCRelationalCareModel",
       "short" : "Relational Care Logical Model",
       "definition" : "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR."
     },
     {
-      "id" : "onc-relational-care-logical.patientPreferences",
-      "path" : "onc-relational-care-logical.patientPreferences",
+      "id" : "ONCRelationalCareModel.patientPreferences",
+      "path" : "ONCRelationalCareModel.patientPreferences",
       "short" : "The patient's personal goals and what matters most to them today.",
       "definition" : "The patient's personal goals and what matters most to them today.",
       "min" : 1,
@@ -69,8 +69,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-care-
       }]
     },
     {
-      "id" : "onc-relational-care-logical.relationalEngagement",
-      "path" : "onc-relational-care-logical.relationalEngagement",
+      "id" : "ONCRelationalCareModel.relationalEngagement",
+      "path" : "ONCRelationalCareModel.relationalEngagement",
       "short" : "A score from 1-5 representing the depth of the therapeutic relationship.",
       "definition" : "A score from 1-5 representing the depth of the therapeutic relationship.",
       "min" : 1,
@@ -80,8 +80,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-care-
       }]
     },
     {
-      "id" : "onc-relational-care-logical.empathyIndex",
-      "path" : "onc-relational-care-logical.empathyIndex",
+      "id" : "ONCRelationalCareModel.empathyIndex",
+      "path" : "ONCRelationalCareModel.empathyIndex",
       "short" : "The ONC Empathy Index (1-5) measuring relational quality.",
       "definition" : "The ONC Empathy Index (1-5) measuring relational quality.",
       "min" : 1,
@@ -95,8 +95,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-care-
       }
     },
     {
-      "id" : "onc-relational-care-logical.skinToneEquity",
-      "path" : "onc-relational-care-logical.skinToneEquity",
+      "id" : "ONCRelationalCareModel.skinToneEquity",
+      "path" : "ONCRelationalCareModel.skinToneEquity",
       "short" : "The patient's skin tone classification (Monk primary, Fitzpatrick secondary/legacy) used to guide clinical assessment.",
       "definition" : "The patient's skin tone classification (Monk primary, Fitzpatrick secondary/legacy) used to guide clinical assessment.",
       "min" : 1,
@@ -110,8 +110,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-care-
       }
     },
     {
-      "id" : "onc-relational-care-logical.mandatoryEquityValidation",
-      "path" : "onc-relational-care-logical.mandatoryEquityValidation",
+      "id" : "ONCRelationalCareModel.mandatoryEquityValidation",
+      "path" : "ONCRelationalCareModel.mandatoryEquityValidation",
       "short" : "Technical flag ensuring the 'Fairness Gate' was passed.",
       "definition" : "Technical flag ensuring the 'Fairness Gate' was passed.",
       "min" : 1,
@@ -121,8 +121,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-care-
       }]
     },
     {
-      "id" : "onc-relational-care-logical.adpieStatus",
-      "path" : "onc-relational-care-logical.adpieStatus",
+      "id" : "ONCRelationalCareModel.adpieStatus",
+      "path" : "ONCRelationalCareModel.adpieStatus",
       "short" : "The current stage of the professional nursing process (Assessment, Diagnosis, Planning, Implementation, Evaluation).",
       "definition" : "The current stage of the professional nursing process (Assessment, Diagnosis, Planning, Implementation, Evaluation).",
       "min" : 1,
@@ -136,8 +136,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-care-
       }
     },
     {
-      "id" : "onc-relational-care-logical.clinicalNarrative",
-      "path" : "onc-relational-care-logical.clinicalNarrative",
+      "id" : "ONCRelationalCareModel.clinicalNarrative",
+      "path" : "ONCRelationalCareModel.clinicalNarrative",
       "short" : "The person-centred narrative describing the patient's experience.",
       "definition" : "The person-centred narrative describing the patient's experience.",
       "min" : 1,

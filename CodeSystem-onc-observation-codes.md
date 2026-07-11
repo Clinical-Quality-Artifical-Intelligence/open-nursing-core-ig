@@ -26,6 +26,7 @@ Custom observation codes for Open Nursing Core
 * [MentalCapacityVS](ValueSet-onc-mca-vs.md)
 * [PainScoreVS](ValueSet-onc-pain-score-vs.md)
 * [PBSFunctionVS](ValueSet-onc-pbs-function-vs.md)
+* [ONCRelationalFindingsVS](ValueSet-onc-relational-findings-vs.md)
 * [SkinToneVS](ValueSet-onc-skin-tone-vs.md)
 * [WoundStageValueSet](ValueSet-wound-stage-vs.md)
 
@@ -42,9 +43,11 @@ Custom observation codes for Open Nursing Core
   "name" : "ONCObservationCodes",
   "title" : "ONC Observation Codes",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "experimental" : false,
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Custom observation codes for Open Nursing Core",
+  "caseSensitive" : true,
   "content" : "complete",
   "count" : 136,
   "concept" : [{

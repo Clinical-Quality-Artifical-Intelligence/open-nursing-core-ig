@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7759d9f8-d357-4dcc-baed-15c1d3239452"/>
+  <id value="1022dfac-8464-4b27-9a90-f515f6962b21"/>
   <meta>
-    <lastUpdated value="2026-07-11T09:46:48.047+00:00"/>
+    <lastUpdated value="2026-07-11T14:02:42.627+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -146,10 +146,11 @@
         <name value="ACVPUValueSet"/>
         <title value="ACVPU Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ca7dfb55-b34e-4583-8ac1-85bab978f064"/>
-          <timestamp value="2026-07-11T09:48:24+00:00"/>
+          <identifier value="urn:uuid:13e9631d-0941-4c3c-a6aa-fbe098b00dbd"/>
+          <timestamp value="2026-07-11T14:04:05+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -326,10 +327,10 @@
         <title value="Goal Evaluation Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5d5a7aae-c96f-4bcb-97c4-039fcda828b2"/>
-          <timestamp value="2026-07-11T09:48:28+00:00"/>
+          <identifier value="urn:uuid:6eb5deb8-ef06-432a-9936-a0b9dd7ba40b"/>
+          <timestamp value="2026-07-11T14:04:08+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -461,10 +462,10 @@
         <title value="Housing Status Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:38cffe44-91ea-4152-ba02-6ec889d2c1d0"/>
-          <timestamp value="2026-07-11T09:48:34+00:00"/>
+          <identifier value="urn:uuid:e443019b-4444-42cb-b5de-b0caae430439"/>
+          <timestamp value="2026-07-11T14:04:13+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -585,10 +586,11 @@
         <name value="InspiredOxygenValueSet"/>
         <title value="Inspired Oxygen Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a032f7e7-4234-4049-8f8d-d4f345bda936"/>
-          <timestamp value="2026-07-11T09:48:28+00:00"/>
+          <identifier value="urn:uuid:84344d4d-aec7-4f29-aa71-c39a7c0fb9b0"/>
+          <timestamp value="2026-07-11T14:04:08+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -694,10 +696,11 @@
         <name value="NEWS2CodeValueSet"/>
         <title value="NEWS2 Code Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b6cb41af-86a1-4f00-b122-f0da399a403f"/>
-          <timestamp value="2026-07-11T09:48:34+00:00"/>
+          <identifier value="urn:uuid:2b202134-ed14-46e0-b647-15a34e66ee5b"/>
+          <timestamp value="2026-07-11T14:04:13+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -794,10 +797,11 @@
         <name value="NEWS2SubscoreCodeValueSet"/>
         <title value="NEWS2 Sub-Score Codes"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:524ea6cb-8d29-485f-8884-e38df9c01f69"/>
-          <timestamp value="2026-07-11T09:48:34+00:00"/>
+          <identifier value="urn:uuid:3dac0777-c075-442e-b547-72524a8b4e37"/>
+          <timestamp value="2026-07-11T14:04:13+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -930,10 +934,10 @@
         <title value="Nursing Intervention Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0902bf5e-f6f8-40a6-9ade-ba404dde4b05"/>
-          <timestamp value="2026-07-11T09:48:34+00:00"/>
+          <identifier value="urn:uuid:52290d55-af42-4f15-b1fa-137634c81e2e"/>
+          <timestamp value="2026-07-11T14:04:13+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1118,10 +1122,10 @@
         <title value="Nursing Problem Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e883ce48-a47a-41b6-bc06-b857b27ccf25"/>
-          <timestamp value="2026-07-11T09:48:31+00:00"/>
+          <identifier value="urn:uuid:65f9c234-a749-4118-b8e9-13072a14e835"/>
+          <timestamp value="2026-07-11T14:04:10+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1216,10 +1220,11 @@
         <name value="AcuteChangeVS"/>
         <title value="4AT Acute Change Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b2dc6189-3369-4c48-b80b-69f00f9c8652"/>
-          <timestamp value="2026-07-11T09:48:23+00:00"/>
+          <identifier value="urn:uuid:0bfa794b-8788-4374-8a2b-5a9894891ab8"/>
+          <timestamp value="2026-07-11T14:04:04+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1367,10 +1372,11 @@
         <name value="AlertnessVS"/>
         <title value="4AT Alertness Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:696e0378-f239-4a1e-b715-9f2d8b5c286e"/>
-          <timestamp value="2026-07-11T09:48:23+00:00"/>
+          <identifier value="urn:uuid:d3c9e0a2-6707-47bb-a5dc-546839078aaf"/>
+          <timestamp value="2026-07-11T14:04:04+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1464,10 +1470,11 @@
         <name value="AMT4VS"/>
         <title value="4AT AMT4 Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:878aba29-a724-48c8-a154-98c0f689126d"/>
-          <timestamp value="2026-07-11T09:48:23+00:00"/>
+          <identifier value="urn:uuid:e550422c-353b-4890-8857-77ed6ac48aea"/>
+          <timestamp value="2026-07-11T14:04:04+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1538,10 +1545,11 @@
         <name value="AttentionVS"/>
         <title value="4AT Attention Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:63665649-0108-473e-8e3c-db52fa0c0da2"/>
-          <timestamp value="2026-07-11T09:48:23+00:00"/>
+          <identifier value="urn:uuid:4309778b-d472-488e-a934-77bf7f80cbc8"/>
+          <timestamp value="2026-07-11T14:04:04+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1721,10 +1729,11 @@
         <name value="ONCADPIEVS"/>
         <title value="ADPIE Nursing Process Phases"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:dc5957cf-aa80-41a3-a6a1-201b80193a8b"/>
-          <timestamp value="2026-07-11T09:48:34+00:00"/>
+          <identifier value="urn:uuid:5b8416e9-1fcc-4494-88d0-306f963543ec"/>
+          <timestamp value="2026-07-11T14:04:14+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2009,10 +2018,11 @@
         <name value="ClinicalFrailtyScaleVS"/>
         <title value="Clinical Frailty Scale Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:feaa3dd8-76e3-456a-9a22-b5e7bd8fa8df"/>
-          <timestamp value="2026-07-11T09:48:26+00:00"/>
+          <identifier value="urn:uuid:85361793-850f-4930-9076-815a1feb34ff"/>
+          <timestamp value="2026-07-11T14:04:07+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -2233,10 +2243,11 @@
         <name value="ONCEmpathyIndexVS"/>
         <title value="ONC Empathy &amp; Relational Engagement Index"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1d0db983-81b7-49bb-bebc-e166418122d5"/>
-          <timestamp value="2026-07-11T09:48:28+00:00"/>
+          <identifier value="urn:uuid:4b9aa096-9c00-4f1c-a6c7-bd6533e11a39"/>
+          <timestamp value="2026-07-11T14:04:08+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2378,10 +2389,11 @@
         <name value="ONCGoalTargetMeasureVS"/>
         <title value="Goal Target Measure ValueSet"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:07f2865b-453e-4ff4-a2bc-be31d41babf7"/>
-          <timestamp value="2026-07-11T09:48:35+00:00"/>
+          <identifier value="urn:uuid:90d9eccc-fc73-4f77-bc33-69fc7a6c9088"/>
+          <timestamp value="2026-07-11T14:04:14+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2537,10 +2549,11 @@
         <name value="MentalCapacityVS"/>
         <title value="Mental Capacity Finding Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4d2a0df8-364c-408c-b7c2-f00d2c6e2e69"/>
-          <timestamp value="2026-07-11T09:48:29+00:00"/>
+          <identifier value="urn:uuid:a7131a9a-9448-41ff-9b17-f6f1a55db33c"/>
+          <timestamp value="2026-07-11T14:04:09+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2823,10 +2836,11 @@
         <name value="ONCMonkScaleVS"/>
         <title value="Monk Skin Tone Scale ValueSet"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:56b37647-d075-4a32-bcf4-35647d08c325"/>
-          <timestamp value="2026-07-11T09:48:29+00:00"/>
+          <identifier value="urn:uuid:1370e26a-725e-43d1-8854-fb93c576a69c"/>
+          <timestamp value="2026-07-11T14:04:09+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -2944,10 +2958,10 @@
         <title value="NEWS2 Score Categories Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:71ec795c-cab1-42b1-ad2b-36c30563e8de"/>
-          <timestamp value="2026-07-11T09:48:35+00:00"/>
+          <identifier value="urn:uuid:ac97af81-6080-435d-a6f6-759689d03b17"/>
+          <timestamp value="2026-07-11T14:04:14+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -3100,10 +3114,10 @@
         <title value="Pain Score Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3f8744a7-6495-4781-aa2d-6f38783f8d79"/>
-          <timestamp value="2026-07-11T09:48:35+00:00"/>
+          <identifier value="urn:uuid:68cfb24c-daf3-45b8-994e-f5731393f160"/>
+          <timestamp value="2026-07-11T14:04:14+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -3222,10 +3236,11 @@
         <name value="PBSFunctionVS"/>
         <title value="PBS Behaviour Function ValueSet"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:62be15ee-ede2-4c88-b11d-3ec4f450acc7"/>
-          <timestamp value="2026-07-11T09:48:24+00:00"/>
+          <identifier value="urn:uuid:e69d53e6-08df-4290-b472-2a63302c8fae"/>
+          <timestamp value="2026-07-11T14:04:05+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -3337,10 +3352,11 @@
         <name value="ONCPrognosisVS"/>
         <title value="Nursing Prognosis ValueSet"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7075a197-8e37-43ac-9281-fa82849a40a5"/>
-          <timestamp value="2026-07-11T09:48:35+00:00"/>
+          <identifier value="urn:uuid:3ca72b44-2fd4-4a68-83bf-2c8fa7bc3b16"/>
+          <timestamp value="2026-07-11T14:04:14+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3376,6 +3392,173 @@
             <system value="http://snomed.info/sct"/>
             <code value="385633008"/>
             <display value="Improving (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>
+                    <a href="ConceptMap-onc-to-nanda.html">Mapping ONC Relational Concepts to NANDA-I</a>
+                  </b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-patient-story"> </a>
+                  <code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-patient-story">patient-story</a>
+                </td>
+                <td>Patient Story</td>
+                <td>Narrative summary of patient background, preferences, and autobiography</td>
+                <td>
+                  <span title="RELATEDTO">?</span>00053
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;patient-story&quot;, &quot;display&quot;: &quot;Patient Story&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;patient-story&quot;&gt;&lt;display value=&quot;Patient Story&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-relational-engagement"> </a>
+                  <code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-relational-engagement">relational-engagement</a>
+                </td>
+                <td>Relational Engagement Score</td>
+                <td>Assessment of the quality of nurse-patient engagement (1-5)</td>
+                <td>
+                  <span title="RELATEDTO">?</span>00054
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;relational-engagement&quot;, &quot;display&quot;: &quot;Relational Engagement Score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;relational-engagement&quot;&gt;&lt;display value=&quot;Relational Engagement Score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://opennursingcoreig.com/CodeSystem/onc-observation-codes-mst-score"> </a>
+                  <code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-mst-score">mst-score</a>
+                </td>
+                <td>Monk Skin Tone Score</td>
+                <td>Assessment of skin tone using the Monk Skin Tone Scale</td>
+                <td>
+                  <span title="SOURCEISBROADERTHANTARGET">&gt;</span>399912005
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;mst-score&quot;, &quot;display&quot;: &quot;Monk Skin Tone Score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://opennursingcoreig.com/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;mst-score&quot;&gt;&lt;display value=&quot;Monk Skin Tone Score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs"/>
+        <version value="1.0.0"/>
+        <name value="ONCRelationalFindingsVS"/>
+        <title value="ONC Relational Findings"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:f7f4fcaa-a51c-455b-bb06-00c90d28322c"/>
+          <timestamp value="2026-07-11T14:04:14+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+            <code value="patient-story"/>
+            <display value="Patient Story"/>
+          </contains>
+          <contains>
+            <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+            <code value="relational-engagement"/>
+            <display value="Relational Engagement Score"/>
+          </contains>
+          <contains>
+            <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+            <code value="mst-score"/>
+            <display value="Monk Skin Tone Score"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -3421,10 +3604,11 @@
         <name value="ONCRelationalOutcomesVS"/>
         <title value="ONC Relational Care Outcomes"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a878d3a8-0cdb-42c6-bd94-72b735e4820e"/>
-          <timestamp value="2026-07-11T09:48:35+00:00"/>
+          <identifier value="urn:uuid:ace2bb04-a43b-4f39-8f4f-a54fd88f5352"/>
+          <timestamp value="2026-07-11T14:04:14+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -3746,10 +3930,10 @@
         <title value="Skin Tone Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ff1571e8-f0b6-4d50-b2b4-25f389d4e0c5"/>
-          <timestamp value="2026-07-11T09:48:33+00:00"/>
+          <identifier value="urn:uuid:e2d34017-0894-40e3-8b56-2256ed07c258"/>
+          <timestamp value="2026-07-11T14:04:12+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -3915,10 +4099,11 @@
         <name value="PainAssessmentCodeValueSet"/>
         <title value="Pain Assessment Code Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c4edec5c-fc5d-4c94-91a4-bfb6206a82b0"/>
-          <timestamp value="2026-07-11T09:48:32+00:00"/>
+          <identifier value="urn:uuid:f06dbdea-0ddf-4880-819e-2980ff0c79bc"/>
+          <timestamp value="2026-07-11T14:04:11+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -4067,10 +4252,10 @@
         <title value="Problem Category Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ed25bd71-ad76-413f-9540-4bd36844eca1"/>
-          <timestamp value="2026-07-11T09:48:31+00:00"/>
+          <identifier value="urn:uuid:f8766103-1edd-47fe-a449-3c9d8deee75a"/>
+          <timestamp value="2026-07-11T14:04:10+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -4282,10 +4467,11 @@
         <name value="WoundStageValueSet"/>
         <title value="Wound Stage Value Set"/>
         <status value="active"/>
-        <date value="2026-07-11T09:46:48+00:00"/>
+        <experimental value="false"/>
+        <date value="2026-07-11T14:02:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:74df8e97-623d-444a-8f12-7bc4fd1db42d"/>
-          <timestamp value="2026-07-11T09:48:34+00:00"/>
+          <identifier value="urn:uuid:d36cfb07-3d79-44b7-834c-0bf720828c74"/>
+          <timestamp value="2026-07-11T14:04:13+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>

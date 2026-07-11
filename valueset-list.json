@@ -160,7 +160,7 @@
     "status" : "active",
     "name" : "ONCMonkScaleVS",
     "title" : "Monk Skin Tone Scale ValueSet",
-    "description" : "",
+    "description" : "ValueSet for ONCMonkScaleVS used by the Open Nursing Core IG.",
     "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-monk-scale"]
   },
   {
@@ -199,6 +199,15 @@
     "title" : "Nursing Prognosis ValueSet",
     "description" : "Prognosis codes for clinical impression",
     "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCRelationalFindingsVS",
+    "title" : "ONC Relational Findings",
+    "description" : "The relational-care findings that the onc-to-nanda ConceptMap maps to formal nursing diagnoses.",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"]
   },
   {
     "url" : "https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs",
@@ -243,7 +252,7 @@
     "status" : "active",
     "name" : "WoundStageValueSet",
     "title" : "Wound Stage Value Set",
-    "description" : "",
+    "description" : "ValueSet for WoundStageValueSet used by the Open Nursing Core IG.",
     "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"]
   }]
 }

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-score.csv)
   "name" : "ONCNEWS2Score",
   "title" : "NEWS2 Score",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
   "fhirVersion" : "4.0.1",

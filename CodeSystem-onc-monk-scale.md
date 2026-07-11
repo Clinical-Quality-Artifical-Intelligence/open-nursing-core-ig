@@ -11,6 +11,9 @@
 | *Official URL*:https://opennursingcoreig.com/CodeSystem/onc-monk-scale | *Version*:1.0.0 |
 | Active as of 2026-07-11 | *Computable Name*:ONCMonkScale |
 
+ 
+The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment. 
+
  This Code system is referenced in the content logical definition of the following value sets: 
 
 * [ONCMonkScaleVS](ValueSet-onc-monk-scale-vs.md)
@@ -29,8 +32,11 @@
   "name" : "ONCMonkScale",
   "title" : "Monk Skin Tone Scale CodeSystem",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "experimental" : false,
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
+  "description" : "The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment.",
+  "caseSensitive" : true,
   "content" : "complete",
   "count" : 10,
   "concept" : [{

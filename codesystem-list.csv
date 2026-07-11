@@ -1,4 +1,4 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-https://opennursingcoreig.com/CodeSystem/onc-monk-scale,1.0.0,active,,ONCMonkScale,Monk Skin Tone Scale CodeSystem,"",
+https://opennursingcoreig.com/CodeSystem/onc-monk-scale,1.0.0,active,,ONCMonkScale,Monk Skin Tone Scale CodeSystem,"The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment.",
 https://opennursingcoreig.com/CodeSystem/onc-observation-codes,1.0.0,active,,ONCObservationCodes,ONC Observation Codes,"Custom observation codes for Open Nursing Core",
 https://opennursingcoreig.com/CodeSystem/onc-problem-type,1.0.0,active,,ONCProblemType,Problem Type CodeSystem,"Code system for categorizing types of nursing problems",

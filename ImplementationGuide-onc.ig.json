@@ -10,7 +10,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md.",
   "packageId" : "onc.ig",
@@ -936,6 +936,7 @@
         "reference" : "Observation/example-4at-delirium"
       },
       "name" : "example-4at-delirium",
+      "description" : "Worked example of a 4AT delirium screen conforming to ONC4ATDelirium.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium"
     },
     {
@@ -947,6 +948,7 @@
         "reference" : "Observation/example-abbey-pain"
       },
       "name" : "example-abbey-pain",
+      "description" : "Worked example of an Abbey Pain Scale assessment conforming to ONCAbbeyPainScale.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale"
     },
     {
@@ -1593,6 +1595,7 @@
         "reference" : "CodeSystem/onc-monk-scale"
       },
       "name" : "Monk Skin Tone Scale CodeSystem",
+      "description" : "The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment.",
       "exampleBoolean" : false
     },
     {
@@ -1604,6 +1607,7 @@
         "reference" : "ValueSet/onc-monk-scale-vs"
       },
       "name" : "Monk Skin Tone Scale ValueSet",
+      "description" : "ValueSet for ONCMonkScaleVS used by the Open Nursing Core IG.",
       "exampleBoolean" : false
     },
     {
@@ -1675,6 +1679,7 @@
         "reference" : "PlanDefinition/news2-escalation-plan"
       },
       "name" : "NEWS2 Escalation Protocol",
+      "description" : "Computable escalation protocol for NEWS2 results, encoding the RCP response bands: 0-4 routine monitoring; 3 in any single parameter registered-nurse review; 5-6 urgent review by a clinician competent in acute illness; 7+ emergency response.",
       "exampleBoolean" : false
     },
     {
@@ -1954,6 +1959,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/onc-relational-findings-vs"
+      },
+      "name" : "ONC Relational Findings",
+      "description" : "The relational-care findings that the onc-to-nanda ConceptMap maps to formal nursing diagnoses.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2183,7 +2200,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/onc-relational-care-logical"
+        "reference" : "StructureDefinition/ONCRelationalCareModel"
       },
       "name" : "Relational Care Logical Model",
       "description" : "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR.",
@@ -2366,6 +2383,7 @@
         "reference" : "ValueSet/wound-stage-vs"
       },
       "name" : "Wound Stage Value Set",
+      "description" : "ValueSet for WoundStageValueSet used by the Open Nursing Core IG.",
       "exampleBoolean" : false
     }],
     "page" : {

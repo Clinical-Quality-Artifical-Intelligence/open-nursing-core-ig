@@ -11,6 +11,9 @@
 | *Official URL*:http://opennursingcore.org/PlanDefinition/news2-escalation | *Version*:1.0.0 |
 | Active as of 2026-07-11 | *Computable Name*:NEWS2_Escalation_Protocol |
 
+ 
+Computable escalation protocol for NEWS2 results, encoding the RCP response bands: 0-4 routine monitoring; 3 in any single parameter registered-nurse review; 5-6 urgent review by a clinician competent in acute illness; 7+ emergency response. 
+
 * **Actions: **: **Url: **
   * : [NEWS2 Escalation Protocol](PlanDefinition-news2-escalation-plan.md)
 * **Actions: **: **Version: **
@@ -18,9 +21,11 @@
 * **Actions: **: **Title: **
   * : NEWS2 Escalation Protocol
 * **Actions: **: **Date: **
-  * : 2026-07-11 09:46:48+0000
+  * : 2026-07-11 14:02:42+0000
 * **Actions: **: **Publisher: **
   * : The Open Nursing Community
+* **Actions: **: **Description: **
+  * : Computable escalation protocol for NEWS2 results, encoding the RCP response bands: 0-4 routine monitoring; 3 in any single parameter registered-nurse review; 5-6 urgent review by a clinician competent in acute illness; 7+ emergency response.
 * **Actions: **: **Libraries: **
   * : 
 | |
@@ -47,8 +52,9 @@
     }]
   },
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
+  "description" : "Computable escalation protocol for NEWS2 results, encoding the RCP response bands: 0-4 routine monitoring; 3 in any single parameter registered-nurse review; 5-6 urgent review by a clinician competent in acute illness; 7+ emergency response.",
   "library" : ["http://opennursingcore.org/Library/ONC-NEWS2-CQL"],
   "action" : [{
     "title" : "High Clinical Risk - Emergency Response",

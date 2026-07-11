@@ -160,7 +160,7 @@
     "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
     "uses" : {
     },
-    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+    "StructureDefinition-ONCRelationalCareModel.html" : "Relational Care Logical Model"
   },
   {
     "url" : "https://opennursingcoreig.com/ValueSet/onc-cfs-vs",
@@ -184,10 +184,10 @@
     "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
     "uses" : {
     },
-    "StructureDefinition-onc-oral-care-assessment.html" : "Oral Care Needs Assessment",
-    "StructureDefinition-onc-hygiene-assessment.html" : "Personal Hygiene Needs Assessment",
     "StructureDefinition-onc-mobility-assessment.html" : "Mobility Assessment",
-    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+    "StructureDefinition-onc-hygiene-assessment.html" : "Personal Hygiene Needs Assessment",
+    "StructureDefinition-ONCRelationalCareModel.html" : "Relational Care Logical Model",
+    "StructureDefinition-onc-oral-care-assessment.html" : "Oral Care Needs Assessment"
   },
   {
     "url" : "https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs",
@@ -219,7 +219,7 @@
     "status" : "active",
     "name" : "ONCMonkScaleVS",
     "title" : "Monk Skin Tone Scale ValueSet",
-    "description" : "",
+    "description" : "ValueSet for ONCMonkScaleVS used by the Open Nursing Core IG.",
     "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-monk-scale"],
     "uses" : {
     },
@@ -269,6 +269,18 @@
     "StructureDefinition-onc-nursing-clinical-impression.html" : "ONC Nursing Clinical Impression"
   },
   {
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-relational-findings-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ONCRelationalFindingsVS",
+    "title" : "ONC Relational Findings",
+    "description" : "The relational-care findings that the onc-to-nanda ConceptMap maps to formal nursing diagnoses.",
+    "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
+    "uses" : {
+    },
+    "ConceptMap-onc-to-nanda.html" : "Mapping ONC Relational Concepts to NANDA-I"
+  },
+  {
     "url" : "https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs",
     "version" : "1.0.0",
     "status" : "active",
@@ -289,7 +301,7 @@
     "uses" : {
     },
     "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation (Fitzpatrick -- secondary/legacy)",
-    "StructureDefinition-onc-relational-care-logical.html" : "Relational Care Logical Model"
+    "StructureDefinition-ONCRelationalCareModel.html" : "Relational Care Logical Model"
   },
   {
     "url" : "https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs",
@@ -321,7 +333,7 @@
     "status" : "active",
     "name" : "WoundStageValueSet",
     "title" : "Wound Stage Value Set",
-    "description" : "",
+    "description" : "ValueSet for WoundStageValueSet used by the Open Nursing Core IG.",
     "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-observation-codes"],
     "uses" : {
     },

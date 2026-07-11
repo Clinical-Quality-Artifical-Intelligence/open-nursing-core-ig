@@ -16,6 +16,8 @@ Profile: [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.m
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
+**effective**: 2026-01-15 10:00:00+0000
+
 **performer**: [Practitioner Nightingale ](Practitioner-practitioner-example.md)
 
 **value**: Requires large print documents (Font size 16+).
@@ -47,6 +49,7 @@ Profile: [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.m
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
+  "effectiveDateTime" : "2026-01-15T10:00:00Z",
   "performer" : [{
     "reference" : "Practitioner/practitioner-example"
   }],

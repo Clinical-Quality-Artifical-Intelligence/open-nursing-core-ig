@@ -10,7 +10,7 @@
   "name" : "ONCHeartRate",
   "title" : "Heart Rate",
   "status" : "active",
-  "date" : "2026-07-11T09:46:48+00:00",
+  "date" : "2026-07-11T14:02:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Heart rate (pulse) observation for NEWS2",
   "fhirVersion" : "4.0.1",
