@@ -9,7 +9,6 @@ Description: "Point-of-care urine dipstick test results. Used to screen for urin
 * ^url = "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"
 * ^version = "0.1.0"
 * ^status = #draft
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = ONCObservationCodes#urinalysis-panel
 * value[x] only string
 * valueString 1..1 MS

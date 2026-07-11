@@ -9,7 +9,6 @@ Description: "Assessment of fluid intake, output, and balance. Critical for rena
 * ^url = "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"
 * ^version = "0.1.0"
 * ^status = #draft
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = ONCObservationCodes#fluid-balance
 * value[x] only Quantity
 * valueQuantity 1..1 MS

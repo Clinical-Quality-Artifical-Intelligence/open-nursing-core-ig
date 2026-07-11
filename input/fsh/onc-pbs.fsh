@@ -9,7 +9,6 @@ Description: "Antecedent-Behaviour-Consequence (ABC) Chart for recording behavio
 * ^url = "https://opennursingcoreig.com/StructureDefinition/onc-abc-chart"
 * ^version = "0.1.0"
 * ^status = #draft
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = ONCObservationCodes#abc-chart
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1 MS

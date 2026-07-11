@@ -9,7 +9,6 @@ Description: "Assessment of oral cavity health. Critical for prevention of pneum
 * ^url = "https://opennursingcoreig.com/StructureDefinition/onc-oral-health"
 * ^version = "0.1.0"
 * ^status = #draft
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = ONCObservationCodes#oral-health-score
 * value[x] only Quantity or string
 * valueQuantity 1..1 MS

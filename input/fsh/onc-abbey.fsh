@@ -9,7 +9,6 @@ Description: "Pain assessment for people with dementia or who cannot verbalise. 
 * ^url = "https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale"
 * ^version = "0.1.0"
 * ^status = #draft
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = ONCObservationCodes#abbey-score
 * value[x] only Quantity
 * valueQuantity 1..1 MS

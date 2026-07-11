@@ -12,7 +12,6 @@ Description: "Records the outcome of a Mental Capacity Assessment for a specific
 * ^url = "https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity"
 * ^version = "0.1.0"
 * ^status = #draft
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = ONCObservationCodes#mca-assessment
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1 MS
