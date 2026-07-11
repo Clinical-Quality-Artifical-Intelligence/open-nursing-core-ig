@@ -139,7 +139,7 @@ def main_app():
         st.markdown("---")
 
         if db:
-            st.success("📚 FoNS Knowledge Base: Active")
+            st.success("📚 IPDJ Knowledge Base: Active")
         else:
             st.error("⚠️ Knowledge Base Offline")
 
@@ -151,7 +151,7 @@ def main_app():
         st.markdown(
             "This tool uses Retrieval-Augmented Generation (RAG) "
             "to provide evidence-based nursing knowledge from the "
-            "Foundation of Nursing Studies."
+            "open-access International Practice Development Journal materials."
         )
 
     # Main content

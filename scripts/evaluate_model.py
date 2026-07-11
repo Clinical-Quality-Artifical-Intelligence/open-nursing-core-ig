@@ -45,12 +45,12 @@ def get_azure_judge():
 
 def evaluate_response(llm, instruction, input_text, model_output):
     """Use Azure GPT-4o to evaluate the model's response."""
-    prompt = f"""You are an expert nursing educator evaluating an AI assistant trained on FONS (Foundation of Nursing Studies) principles.
+    prompt = f"""You are an expert nursing educator evaluating a research AI assistant trained on open-access International Practice Development Journal (IPDJ) materials.
 
 Evaluate the following response on a scale of 1-10 for each criterion:
 1. **Clinical Accuracy** (1-10): Is the information clinically correct?
 2. **Person-Centred Language** (1-10): Does it use respectful, dignified language?
-3. **FONS Alignment** (1-10): Does it reflect FONS principles (relational care, practice development)?
+3. **IPDJ-informed practice** (1-10): Does it demonstrate person-centredness, relational care and practice-development characteristics described in IPDJ literature?
 
 **Instruction Given**: {instruction}
 **Context**: {input_text}
@@ -70,7 +70,7 @@ def run_evaluation():
             "input": "Patient is an 85-year-old male with acute confusion, fluctuating consciousness, and visual hallucinations. History of dementia."
         },
         {
-            "instruction": "What are the FONS principles for person-centred care?",
+            "instruction": "How does IPDJ literature describe person-centred practice?",
             "input": "A nurse is documenting care for a patient with dementia."
         },
         {

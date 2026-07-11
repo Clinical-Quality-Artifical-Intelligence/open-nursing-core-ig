@@ -20,11 +20,11 @@ pipeline_tag: text-generation
 <div align="center">
 
 ![License](https://img.shields.io/badge/License-CC_BY--NC_3.0-lightgrey.svg)
-![FONS](https://img.shields.io/badge/Alignment-FONS_Principles-blue)
+![IPDJ](https://img.shields.io/badge/Materials-IPDJ_Open_Access-blue)
 ![Equity](https://img.shields.io/badge/Equity-Skin_Tone_Invariant-purple)
 ![Finteuned with Unsloth](https://img.shields.io/badge/Finetuned%20with-Unsloth-orange)
 
-**The first open-source LLM fine-tuned on Foundation of Nursing Studies (FONS) literature for person-centred, equitable clinical documentation.**
+**A research LLM fine-tuned on open-access International Practice Development Journal (IPDJ) materials for person-centred, equitable clinical documentation.**
 
 </div>
 
@@ -32,7 +32,7 @@ pipeline_tag: text-generation
 
 ## 📄 Model Description
 
-**Relational Ai for Nursing** is a fine-tuned version of Llama-3 (8B) designed specifically to assist nursing professionals with documentation, care planning, and clinical reasoning. Unlike general-purpose models, Relational Ai for Nursing has been trained on **6,698 instruction-response pairs** derived from open-access nursing practice development literature, ensuring that its outputs align with the **FONS Principles** of person-centredness, relational care, and practice development.
+**Relational Ai for Nursing** is a fine-tuned version of Llama-3 (8B) designed to research assistance with nursing documentation, care planning, and clinical reasoning. It was trained on **6,698 instruction-response pairs** derived from open-access IPDJ materials concerning person-centredness, relational care and practice development. Training on these materials does not ensure alignment and does not imply endorsement by IPDJ, its authors or its publisher.
 
 - **Developed by:** NurseCitizenDeveloper / Open Nursing Core Team
 - **Base Model:** `unsloth/llama-3-8b-bnb-4bit`
@@ -41,8 +41,8 @@ pipeline_tag: text-generation
 - **License:** CC BY-NC 3.0
 
 ## 📜 Dataset & Licensing
-This model was fine-tuned on data derived from the **International Practice Development Journal (IPDJ)** and other FONS publications, which are licensed under [CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/).
-*   **Attribution:** Foundation of Nursing Studies (FONS)
+This model was fine-tuned on data derived from the **[International Practice Development Journal (IPDJ)](https://www.fons.org/library/journal/)**. IPDJ states that its articles are distributed under [CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/). Article-level attribution and provenance must be retained in derived datasets.
+*   **Source:** International Practice Development Journal (IPDJ), published by FoNS in association with its journal partners
 *   **Non-Commercial:** This model should be used for research and educational purposes only.
 
 ## 🌟 Key Features
@@ -50,7 +50,7 @@ This model was fine-tuned on data derived from the **International Practice Deve
 *   **Person-Centred Language**: Generates documentation that respects patient dignity and preferences.
 *   **Health Equity Focus**: Specifically trained to include **skin tone documentation** in pressure ulcer risk assessments (Braden Scale), addressing a critical gap in standard AI models.
 *   **Structured Nursing Process**: Follows the **ADPIE** key framework (Assessment, Diagnosis, Planning, Implementation, Evaluation).
-*   **FONS Alignment**: Prioritizes relational care and checking for understanding over generic medical jargon.
+*   **IPDJ-informed approach**: Prioritises relational care and checking for understanding over generic medical jargon.
 
 ## 📊 Evaluation Results
 
@@ -60,7 +60,7 @@ We evaluated Relational Ai for Nursing using **Azure GPT-4o typically as an "Exp
 | :--- | :---: | :--- |
 | **Clinical Accuracy** | **6.6** | Clinically sound interventions and assessments |
 | **Person-Centred Language** | **7.6** | High degree of respect, dignity, and personalization |
-| **FONS Alignment** | **6.0** | Good adherence to relational care principles |
+| **IPDJ-informed practice** | **6.0** | Internal evaluation of person-centred and relational-care characteristics |
 
 ### 🏆 Spotlight Performance
 
@@ -126,7 +126,7 @@ print(tokenizer.batch_decode(outputs)[0])
 ## ⚠️ Limitations & Ethical Considerations
 
 *   **Clinical Assistant, Not Replacement**: This model is a support tool. All outputs must be verified by a registered nurse.
-*   **Training Data**: While focused on FONS literature, the model may still hallucinate facts or reflect biases present in the base Llama-3 model.
+*   **Training Data**: While trained on IPDJ materials, the model may still hallucinate facts or reflect biases in the source corpus or base Llama-3 model.
 *   **Scope**: Optimized for UK/NHS context but applicable broadly.
 
 ## 📚 Citation

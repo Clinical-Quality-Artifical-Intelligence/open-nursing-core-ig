@@ -1,6 +1,6 @@
 # Relational Ai for Nursing
 
-**The first open-source LLM fine-tuned on Foundation of Nursing Studies (FONS) literature for person-centred, equitable clinical documentation.**
+**A research LLM fine-tuned on open-access [International Practice Development Journal (IPDJ)](https://www.fons.org/library/journal/) materials for person-centred, equitable clinical documentation.**
 
 <div style="background-color: #f0f7ff; border-left: 5px solid #005eb8; padding: 15px; margin-bottom: 20px;">
 <strong>🚀 Model Live on Hugging Face:</strong> <a href="https://huggingface.co/NurseCitizenDeveloper/nursing-llama-3-8b-fons" target="_blank">NurseCitizenDeveloper/nursing-llama-3-8b-fons</a>
@@ -19,7 +19,7 @@
 Instead of generic medical text, this model is trained to prioritize:
 *   **Relational Care:** Focusing on the patient's experience and preferences.
 *   **Health Equity:** Specifically trained to ensure inclusive documentation (e.g., correct skin tone assessment).
-*   **FONS Principles:** Aligned with the Foundation of Nursing Studies' core values.
+*   **IPDJ-informed:** Informed by open-access scholarship on person-centredness, practice development, facilitation and cultures where people can flourish.
 
 ## Key Capabilities
 
@@ -31,8 +31,8 @@ The model rewrites clinical jargon into language that respects the patient's dig
 *   *Before:* "Patient non-compliant with medication."
 *   *Relation Ai:* "Patient prefers to take medication with food to avoid nausea; discussed strategies to support adherence."
 
-### 3. FONS Alignment
-Trained on **6,698 instruction pairs** from the International Practice Development Journal (IPDJ), the model understands concepts like "flourishing," "authentic partnership," and "values-based practice."
+### 3. IPDJ-informed person-centred practice
+Trained on **6,698 instruction pairs** derived from open-access International Practice Development Journal (IPDJ) materials, the model has been exposed to concepts such as "flourishing," "authentic partnership," and "values-based practice." This does not imply endorsement by IPDJ, its authors or its publisher.
 
 ## Evaluation Results
 The model was evaluated using a rigorous multi-judge system (GPT-4o, GPT-5, Gemini 3 Pro).
