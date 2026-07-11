@@ -10,7 +10,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2026-07-11T14:17:07+00:00",
+  "date" : "2026-07-11T14:32:04+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. RELEASE 1.0.0 — Trial Use, Pre-Ballot Community Release. Not yet submitted to formal HL7 standards balloting; see STANDARDS_ROADMAP.md.",
   "packageId" : "onc.ig",
@@ -891,11 +891,95 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/example-barthel-index"
+      },
+      "name" : "Example Barthel Index",
+      "description" : "Worked example: Barthel Index of 65/100 indicating moderate dependency in activities of daily living. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-barthel-index"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/example-device"
+      },
+      "name" : "Example Device - Walking Frame",
+      "description" : "Worked example: the mobility aid referenced by the device use statement. Synthetic data.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DeviceUseStatement"
+      }],
+      "reference" : {
+        "reference" : "DeviceUseStatement/example-device-use"
+      },
+      "name" : "Example Device Use Statement",
+      "description" : "Worked example: patient mobilises with a four-wheeled walking frame. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/ExampleDressingAssessment"
       },
       "name" : "Example Dressing Assessment",
       "description" : "Demonstration of the ONCDressingAssessment profile.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-dressing-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-gcs"
+      },
+      "name" : "Example Glasgow Coma Scale",
+      "description" : "Worked example: GCS 14/15 (E4 V4 M6) - mild impairment, responds to voice with some confusion. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-glasgow-coma-scale"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-mmse"
+      },
+      "name" : "Example MMSE",
+      "description" : "Worked example: MMSE 22/30 indicating mild cognitive impairment; repeat screening and collateral history arranged. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-mmse"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-morse-fall"
+      },
+      "name" : "Example Morse Fall Scale",
+      "description" : "Worked example: Morse Fall Scale 55 - high falls risk; hourly rounding and low bed in place. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-morse-fall-scale"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-news2-subscore"
+      },
+      "name" : "Example NEWS2 Sub-score",
+      "description" : "Worked example: respiratory-rate parameter contributing 2 points to the NEWS2 total. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-news2-subscore"
     },
     {
       "extension" : [{
@@ -908,6 +992,30 @@
       "name" : "Example Nurse",
       "description" : "Synthetic registered nurse referenced by the worked examples. Not a real person.",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-nursing-assessment"
+      },
+      "name" : "Example Nursing Assessment (base profile)",
+      "description" : "Worked example: a generic structured nursing assessment using the base profile directly. Synthetic data - not a real person.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalImpression"
+      }],
+      "reference" : {
+        "reference" : "ClinicalImpression/example-clinical-impression"
+      },
+      "name" : "Example Nursing Clinical Impression",
+      "description" : "Worked example: end-of-cycle synthesis of progress against the care plan, feeding back into reassessment. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-clinical-impression"
     },
     {
       "extension" : [{
@@ -936,6 +1044,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-pain-nrs"
+      },
+      "name" : "Example Pain Assessment (NRS)",
+      "description" : "Worked example: pain 6/10 in the left hip on movement; analgesia reviewed. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-pain-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -951,11 +1071,59 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/example-qsofa"
+      },
+      "name" : "Example qSOFA",
+      "description" : "Worked example: qSOFA 1/3 (raised respiratory rate only) - below the sepsis high-risk threshold, continue monitoring. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-qsofa"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-relational-engagement"
+      },
+      "name" : "Example Relational Engagement Score",
+      "description" : "Worked example: engagement level 4/5 - active partnership in care planning. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/ExampleSkinAssessment"
       },
       "name" : "Example Skin Assessment",
       "description" : "Demonstration of the ONCSkinAssessment profile for general skin integrity.",
       "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-skin-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-sleep-pattern"
+      },
+      "name" : "Example Sleep Pattern",
+      "description" : "Worked example: disturbed sleep summary - relevant to delirium screening and wellbeing. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-wound-assessment"
+      },
+      "name" : "Example Wound Assessment",
+      "description" : "Worked example: sacral pressure ulcer staged 2, dimensions recorded, with the mandatory skin-tone context (equity gate) and the equity marker extension. Synthetic data.",
+      "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment"
     },
     {
       "extension" : [{

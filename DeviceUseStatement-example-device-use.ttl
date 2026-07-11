@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://opennursingcoreig.com/DeviceUseStatement/example-device-use> a fhir:DeviceUseStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example-device-use"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement" ;
+       fhir:index 0 ;
+       fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceUseStatement example-device-use</b></p><a name=\"example-device-use\"> </a><a name=\"hcexample-device-use\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-device-use-statement.html\">Device Use Statement</a></p></div><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Pat Example  Female, DoB: 1948-05-20</a></p><p><b>timing</b>: 2026-01-15</p><p><b>device</b>: <a href=\"Device-example-device.html\">Device</a></p><p><b>note</b>: </p><blockquote><div><p>Uses frame for all transfers and walking beyond a few steps; reviewed by physiotherapy.</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:DeviceUseStatement.status [ fhir:value "active"] ;
+  fhir:DeviceUseStatement.subject [
+     fhir:link <https://opennursingcoreig.com/Patient/example-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/example-patient" ]
+  ] ;
+  fhir:DeviceUseStatement.timingDateTime [ fhir:value "2026-01-15"^^xsd:date] ;
+  fhir:DeviceUseStatement.device [
+     fhir:link <https://opennursingcoreig.com/Device/example-device> ;
+     fhir:Reference.reference [ fhir:value "Device/example-device" ]
+  ] ;
+  fhir:DeviceUseStatement.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Uses frame for all transfers and walking beyond a few steps; reviewed by physiotherapy." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/DeviceUseStatement/example-device-use.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

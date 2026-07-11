@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://opennursingcoreig.com/Observation/example-nursing-assessment> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example-nursing-assessment"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment" ;
+       fhir:index 0 ;
+       fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-nursing-assessment</b></p><a name=\"example-nursing-assessment\"> </a><a name=\"hcexample-nursing-assessment\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-nursing-assessment.html\">Open Nursing Core Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 51848-0}\">Evaluation note</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Pat Example  Female, DoB: 1948-05-20</a></p><p><b>effective</b>: 2026-01-15 09:30:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-example-nurse.html\">Practitioner Alex Nurse </a></p><p><b>value</b>: Admission review completed. Alert and orientated; independent with hygiene; appetite reduced over past week - dietitian referral discussed and accepted.</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "survey" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:51848-0 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "51848-0" ] ;
+       fhir:Coding.display [ fhir:value "Evaluation note" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://opennursingcoreig.com/Patient/example-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/example-patient" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-01-15T09:30:00Z"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://opennursingcoreig.com/Practitioner/example-nurse> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/example-nurse" ]
+  ] ;
+  fhir:Observation.valueString [ fhir:value "Admission review completed. Alert and orientated; independent with hygiene; appetite reduced over past week - dietitian referral discussed and accepted."] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/Observation/example-nursing-assessment.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -16,7 +16,7 @@ Barthel Index for measuring independence in activities of daily living (ADL). Sc
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Specification
+* Examples for this Profile: [Observation/example-barthel-index](Observation-example-barthel-index.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-barthel-index.json)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
   "name" : "ONCBarthelIndex",
   "title" : "Barthel Index",
   "status" : "active",
-  "date" : "2026-07-11T14:17:07+00:00",
+  "date" : "2026-07-11T14:32:04+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.",
   "fhirVersion" : "4.0.1",

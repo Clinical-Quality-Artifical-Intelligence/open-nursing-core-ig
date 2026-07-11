@@ -10,21 +10,21 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-consistency-type.html" : "Fluid Consistency Type Codes",
-    "ValueSet-inspired-oxygen-vs.html" : "Inspired Oxygen Value Set",
-    "ValueSet-goal-evaluation-valueset.html" : "Goal Evaluation Value Set",
-    "ValueSet-onc-pain-score-vs.html" : "Pain Score Value Set",
-    "ValueSet-onc-4at-amt4-vs.html" : "4AT AMT4 Value Set",
-    "ValueSet-onc-news2-score-vs.html" : "NEWS2 Score Categories Value Set",
-    "ValueSet-nursing-intervention-valueset.html" : "Nursing Intervention Value Set",
     "ValueSet-onc-prognosis-vs.html" : "Nursing Prognosis ValueSet",
+    "ValueSet-onc-news2-score-vs.html" : "NEWS2 Score Categories Value Set",
+    "ValueSet-onc-4at-amt4-vs.html" : "4AT AMT4 Value Set",
     "ValueSet-onc-4at-attention-vs.html" : "4AT Attention Value Set",
-    "ValueSet-acvpu-vs.html" : "ACVPU Value Set",
-    "ValueSet-housing-status-vs.html" : "Housing Status Value Set",
     "ValueSet-onc-goal-target-measure-vs.html" : "Goal Target Measure ValueSet",
     "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
+    "ValueSet-onc-4at-acute-change-vs.html" : "4AT Acute Change Value Set",
+    "ValueSet-housing-status-vs.html" : "Housing Status Value Set",
     "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
+    "ValueSet-acvpu-vs.html" : "ACVPU Value Set",
+    "ValueSet-onc-pain-score-vs.html" : "Pain Score Value Set",
+    "ValueSet-inspired-oxygen-vs.html" : "Inspired Oxygen Value Set",
     "ValueSet-onc-relational-outcomes-vs.html" : "ONC Relational Care Outcomes",
-    "ValueSet-onc-4at-acute-change-vs.html" : "4AT Acute Change Value Set"
+    "ValueSet-nursing-intervention-valueset.html" : "Nursing Intervention Value Set",
+    "ValueSet-goal-evaluation-valueset.html" : "Goal Evaluation Value Set"
   },
   {
     "url" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
@@ -35,8 +35,8 @@
     "description" : "The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment.",
     "uses" : {
     },
-    "ValueSet-onc-monk-scale-vs.html" : "Monk Skin Tone Scale ValueSet",
-    "ValueSet-onc-skin-tone-vs.html" : "Skin Tone Value Set"
+    "ValueSet-onc-skin-tone-vs.html" : "Skin Tone Value Set",
+    "ValueSet-onc-monk-scale-vs.html" : "Monk Skin Tone Scale ValueSet"
   },
   {
     "url" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
@@ -47,20 +47,20 @@
     "description" : "Custom observation codes for Open Nursing Core",
     "uses" : {
     },
-    "ValueSet-onc-pbs-function-vs.html" : "PBS Behaviour Function ValueSet",
-    "ValueSet-wound-stage-vs.html" : "Wound Stage Value Set",
     "ValueSet-onc-cfs-vs.html" : "Clinical Frailty Scale Value Set",
-    "ValueSet-onc-pain-score-vs.html" : "Pain Score Value Set",
-    "ValueSet-onc-skin-tone-vs.html" : "Skin Tone Value Set",
-    "ValueSet-news2-code-vs.html" : "NEWS2 Code Value Set",
-    "ValueSet-onc-empathy-index-vs.html" : "ONC Empathy & Relational Engagement Index",
-    "ValueSet-onc-mca-vs.html" : "Mental Capacity Finding Value Set",
-    "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
+    "ValueSet-news2-subscore-code-vs.html" : "NEWS2 Sub-Score Codes",
     "ConceptMap-onc-to-nanda.html" : "Mapping ONC Relational Concepts to NANDA-I",
+    "ValueSet-onc-empathy-index-vs.html" : "ONC Empathy & Relational Engagement Index",
+    "ValueSet-onc-relational-findings-vs.html" : "ONC Relational Findings",
+    "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
     "ValueSet-onc-adpie-vs.html" : "ADPIE Nursing Process Phases",
     "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
-    "ValueSet-onc-relational-findings-vs.html" : "ONC Relational Findings",
-    "ValueSet-news2-subscore-code-vs.html" : "NEWS2 Sub-Score Codes"
+    "ValueSet-onc-pain-score-vs.html" : "Pain Score Value Set",
+    "ValueSet-wound-stage-vs.html" : "Wound Stage Value Set",
+    "ValueSet-onc-skin-tone-vs.html" : "Skin Tone Value Set",
+    "ValueSet-onc-mca-vs.html" : "Mental Capacity Finding Value Set",
+    "ValueSet-news2-code-vs.html" : "NEWS2 Code Value Set",
+    "ValueSet-onc-pbs-function-vs.html" : "PBS Behaviour Function ValueSet"
   },
   {
     "url" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type",

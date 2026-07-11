@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-relational-engagement"/>
+  <meta>
+    <profile value="https://opennursingcoreig.com/StructureDefinition/onc-relational-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation example-relational-engagement</b></p><a name="example-relational-engagement"> </a><a name="hcexample-relational-engagement"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-relational-observation.html">Relational Engagement Score</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes relational-engagement}">Relational Engagement Score</span></p><p><b>subject</b>: <a href="Patient-example-patient.html">Pat Example  Female, DoB: 1948-05-20</a></p><p><b>effective</b>: 2026-01-16 15:00:00+0000</p><p><b>value</b>: 4</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+      <code value="relational-engagement"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-patient"/>
+  </subject>
+  <effectiveDateTime value="2026-01-16T15:00:00Z"/>
+  <valueInteger value="4"/>
+</Observation>

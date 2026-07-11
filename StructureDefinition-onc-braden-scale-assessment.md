@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
   "name" : "ONCBradenScaleAssessment",
   "title" : "Braden Scale Assessment",
   "status" : "active",
-  "date" : "2026-07-11T14:17:07+00:00",
+  "date" : "2026-07-11T14:32:04+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
   "fhirVersion" : "4.0.1",

@@ -20,6 +20,7 @@ Extension to link goal evaluation observations to the patient goals being evalua
 **Usages:**
 
 * Use this Extension: [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
+* Examples for this Extension: [Observation/example-goal-evaluation](Observation-example-goal-evaluation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-observation-goal-reference.json)
 
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
   "name" : "ObservationGoalReference",
   "title" : "Observation Goal Reference",
   "status" : "active",
-  "date" : "2026-07-11T14:17:07+00:00",
+  "date" : "2026-07-11T14:32:04+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Extension to link goal evaluation observations to the patient goals being evaluated.",
   "fhirVersion" : "4.0.1",

@@ -18,7 +18,7 @@
   fhir:StructureDefinition.name [ fhir:value "ONCSkinToneObservation"] ;
   fhir:StructureDefinition.title [ fhir:value "Skin Tone Observation (Fitzpatrick -- secondary/legacy)"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:17:07+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-11T14:32:04+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:StructureDefinition.description [ fhir:value "Observation of patient skin tone using the Fitzpatrick skin type classification. Fitzpatrick was designed to describe UV photosensitivity, not clinical skin tone, and compresses the darker end of the range into few categories. This profile is RETAINED FOR BACKWARD COMPATIBILITY with systems that already record Fitzpatrick phototypes; it is secondary to, and SHOULD NOT be used in place of, the Monk Skin Tone Scale (see ONCMonkSkinToneObservation), which is this IG's primary and recommended skin-tone vocabulary."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;

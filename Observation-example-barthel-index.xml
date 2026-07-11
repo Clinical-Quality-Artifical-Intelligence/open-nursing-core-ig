@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-barthel-index"/>
+  <meta>
+    <profile value="https://opennursingcoreig.com/StructureDefinition/onc-barthel-index"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation example-barthel-index</b></p><a name="example-barthel-index"> </a><a name="hcexample-barthel-index"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-barthel-index.html">Barthel Index</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes barthel-score}">Barthel Index Score</span></p><p><b>subject</b>: <a href="Patient-example-patient.html">Pat Example  Female, DoB: 1948-05-20</a></p><p><b>effective</b>: 2026-01-15 10:00:00+0000</p><p><b>performer</b>: <a href="Practitioner-example-nurse.html">Practitioner Alex Nurse </a></p><p><b>value</b>: 65 {score}</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+      <code value="barthel-score"/>
+      <display value="Barthel Index Score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-patient"/>
+  </subject>
+  <effectiveDateTime value="2026-01-15T10:00:00Z"/>
+  <performer>
+    <reference value="Practitioner/example-nurse"/>
+  </performer>
+  <valueQuantity>
+    <value value="65"/>
+    <unit value="{score}"/>
+    <system value="http://unitsofmeasure.org"/>
+  </valueQuantity>
+</Observation>

@@ -16,7 +16,7 @@ Nurse's synthesis of patient progress against care plan, aggregating multiple go
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Specification
+* Examples for this Profile: [ClinicalImpression/example-clinical-impression](ClinicalImpression-example-clinical-impression.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-nursing-clinical-impression.json)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-clinical
   "name" : "ONCNursingClinicalImpression",
   "title" : "ONC Nursing Clinical Impression",
   "status" : "active",
-  "date" : "2026-07-11T14:17:07+00:00",
+  "date" : "2026-07-11T14:32:04+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations.",
   "fhirVersion" : "4.0.1",

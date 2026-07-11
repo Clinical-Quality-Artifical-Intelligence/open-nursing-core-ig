@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "Monk Skin Tone Scale CodeSystem"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-07-11T14:17:07+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-11T14:32:04+00:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "The Open Nursing Community"] ;
   fhir:CodeSystem.description [ fhir:value "The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment."] ;
   fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;

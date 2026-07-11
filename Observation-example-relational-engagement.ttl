@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://opennursingcoreig.com/Observation/example-relational-engagement> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example-relational-engagement"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://opennursingcoreig.com/StructureDefinition/onc-relational-observation" ;
+       fhir:index 0 ;
+       fhir:link <https://opennursingcoreig.com/StructureDefinition/onc-relational-observation>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-relational-engagement</b></p><a name=\"example-relational-engagement\"> </a><a name=\"hcexample-relational-engagement\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-relational-observation.html\">Relational Engagement Score</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes relational-engagement}\">Relational Engagement Score</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Pat Example  Female, DoB: 1948-05-20</a></p><p><b>effective</b>: 2026-01-16 15:00:00+0000</p><p><b>value</b>: 4</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://opennursingcoreig.com/CodeSystem/onc-observation-codes" ] ;
+       fhir:Coding.code [ fhir:value "relational-engagement" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://opennursingcoreig.com/Patient/example-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/example-patient" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-01-16T15:00:00Z"^^xsd:dateTime] ;
+  fhir:Observation.valueInteger [ fhir:value "4"^^xsd:integer] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://opennursingcoreig.com/Observation/example-relational-engagement.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,23 @@
+{
+  "resourceType" : "ClinicalImpression",
+  "id" : "example-clinical-impression",
+  "meta" : {
+    "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-nursing-clinical-impression"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalImpression example-clinical-impression</b></p><a name=\"example-clinical-impression\"> </a><a name=\"hcexample-clinical-impression\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-nursing-clinical-impression.html\">ONC Nursing Clinical Impression</a></p></div><p><b>status</b>: Completed</p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Pat Example  Female, DoB: 1948-05-20</a></p><p><b>date</b>: 2026-01-20 16:00:00+0000</p><p><b>assessor</b>: <a href=\"Practitioner-example-nurse.html\">Practitioner Alex Nurse </a></p><p><b>problem</b>: <a href=\"Condition-example-nursing-problem.html\">Condition Risk of falls</a></p><p><b>summary</b>: Mobility goal partially achieved: transfers now supervised rather than assisted. Nutrition improving with fortified diet. Pressure areas intact; continue current repositioning plan and re-evaluate in one week.</p></div>"
+  },
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/example-patient"
+  },
+  "date" : "2026-01-20T16:00:00Z",
+  "assessor" : {
+    "reference" : "Practitioner/example-nurse"
+  },
+  "problem" : [{
+    "reference" : "Condition/example-nursing-problem"
+  }],
+  "summary" : "Mobility goal partially achieved: transfers now supervised rather than assisted. Nutrition improving with fortified diet. Pressure areas intact; continue current repositioning plan and re-evaluate in one week."
+}

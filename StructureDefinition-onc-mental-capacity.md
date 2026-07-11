@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
   "name" : "ONCMentalCapacity",
   "title" : "Mental Capacity Assessment",
   "status" : "draft",
-  "date" : "2026-07-11T14:17:07+00:00",
+  "date" : "2026-07-11T14:32:04+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.",
   "fhirVersion" : "4.0.1",

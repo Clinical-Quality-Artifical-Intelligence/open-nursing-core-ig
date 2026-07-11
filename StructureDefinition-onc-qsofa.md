@@ -16,7 +16,7 @@ Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indic
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Specification
+* Examples for this Profile: [Observation/example-qsofa](Observation-example-qsofa.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-qsofa.json)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-qsofa.csv), [Exc
   "name" : "ONCqSOFA",
   "title" : "qSOFA (Quick SOFA)",
   "status" : "active",
-  "date" : "2026-07-11T14:17:07+00:00",
+  "date" : "2026-07-11T14:32:04+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3.",
   "fhirVersion" : "4.0.1",

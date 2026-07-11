@@ -181,12 +181,26 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
+| [Example Barthel Index](Observation-example-barthel-index.md) | Worked example: Barthel Index of 65/100 indicating moderate dependency in activities of daily living. Synthetic data. |
+| [Example Device - Walking Frame](Device-example-device.md) | Worked example: the mobility aid referenced by the device use statement. Synthetic data. |
+| [Example Device Use Statement](DeviceUseStatement-example-device-use.md) | Worked example: patient mobilises with a four-wheeled walking frame. Synthetic data. |
 | [Example Dressing Assessment](Observation-ExampleDressingAssessment.md) | Demonstration of the ONCDressingAssessment profile. |
+| [Example Glasgow Coma Scale](Observation-example-gcs.md) | Worked example: GCS 14/15 (E4 V4 M6) - mild impairment, responds to voice with some confusion. Synthetic data. |
+| [Example MMSE](Observation-example-mmse.md) | Worked example: MMSE 22/30 indicating mild cognitive impairment; repeat screening and collateral history arranged. Synthetic data. |
+| [Example Morse Fall Scale](Observation-example-morse-fall.md) | Worked example: Morse Fall Scale 55 - high falls risk; hourly rounding and low bed in place. Synthetic data. |
+| [Example NEWS2 Sub-score](Observation-example-news2-subscore.md) | Worked example: respiratory-rate parameter contributing 2 points to the NEWS2 total. Synthetic data. |
 | [Example Nurse](Practitioner-example-nurse.md) | Synthetic registered nurse referenced by the worked examples. Not a real person. |
+| [Example Nursing Assessment (base profile)](Observation-example-nursing-assessment.md) | Worked example: a generic structured nursing assessment using the base profile directly. Synthetic data - not a real person. |
+| [Example Nursing Clinical Impression](ClinicalImpression-example-clinical-impression.md) | Worked example: end-of-cycle synthesis of progress against the care plan, feeding back into reassessment. Synthetic data. |
 | [Example Nursing Need: Dressing Difficulty](Condition-ExampleNursingNeed-Dressing.md) | Demonstration of the ONCNursingNeed profile. |
 | [Example Nursing Strength: Motivation](Observation-ExampleNursingStrength-Motivation.md) | Demonstration of the ONCNursingStrength profile. |
+| [Example Pain Assessment (NRS)](Observation-example-pain-nrs.md) | Worked example: pain 6/10 in the left hip on movement; analgesia reviewed. Synthetic data. |
 | [Example Patient](Patient-example-patient.md) | Synthetic patient referenced by the worked examples. Not a real person. |
+| [Example Relational Engagement Score](Observation-example-relational-engagement.md) | Worked example: engagement level 4/5 - active partnership in care planning. Synthetic data. |
 | [Example Skin Assessment](Observation-ExampleSkinAssessment.md) | Demonstration of the ONCSkinAssessment profile for general skin integrity. |
+| [Example Sleep Pattern](Observation-example-sleep-pattern.md) | Worked example: disturbed sleep summary - relevant to delirium screening and wellbeing. Synthetic data. |
+| [Example Wound Assessment](Observation-example-wound-assessment.md) | Worked example: sacral pressure ulcer staged 2, dimensions recorded, with the mandatory skin-tone context (equity gate) and the equity marker extension. Synthetic data. |
+| [Example qSOFA](Observation-example-qsofa.md) | Worked example: qSOFA 1/3 (raised respiratory rate only) - below the sepsis high-risk threshold, continue monitoring. Synthetic data. |
 | [example-4at-delirium](Observation-example-4at-delirium.md) | Worked example of a 4AT delirium screen conforming to ONC4ATDelirium. |
 | [example-abbey-pain](Observation-example-abbey-pain.md) | Worked example of an Abbey Pain Scale assessment conforming to ONCAbbeyPainScale. |
 | [example-abc-chart](Observation-example-abc-chart.md) | Worked example: abc chart (ONCABCChart). Synthetic data - not a real person. |

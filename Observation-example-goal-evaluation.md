@@ -8,6 +8,8 @@
 
 Profile: [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
 
+**Observation Goal Reference**: [Goal: lifecycleStatus = active; description = ](Goal-example-patient-goal.md)
+
 **status**: Final
 
 **category**: Survey
@@ -35,6 +37,12 @@ Profile: [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
   "meta" : {
     "profile" : ["https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"]
   },
+  "extension" : [{
+    "url" : "https://opennursingcoreig.com/StructureDefinition/observation-goal-reference",
+    "valueReference" : {
+      "reference" : "Goal/example-patient-goal"
+    }
+  }],
   "status" : "final",
   "category" : [{
     "coding" : [{

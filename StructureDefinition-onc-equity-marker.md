@@ -19,7 +19,7 @@ A technical extension applied to observations that have passed the Mandatory Equ
 
 **Usages:**
 
-* This Extension is not used by any profiles in this Specification
+* Examples for this Extension: [Observation/example-wound-assessment](Observation-example-wound-assessment.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/onc.ig|current/StructureDefinition/StructureDefinition-onc-equity-marker.json)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-equity-marker.cs
   "name" : "ONCEquityMarker",
   "title" : "ONC Equity Marker",
   "status" : "active",
-  "date" : "2026-07-11T14:17:07+00:00",
+  "date" : "2026-07-11T14:32:04+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware).",
   "fhirVersion" : "4.0.1",
