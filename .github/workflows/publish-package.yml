@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@clinyqai'
+          scope: '@clinical-quality-artifical-intelligence'
 
       - name: Extract and Configure Package
         run: |
@@ -39,9 +39,9 @@ jobs:
           # The tgz usually contains a 'package' directory
           cd temp-package/package
 
-          # Update package.json name to match GitHub scope requirements (@clinyqai/open-nursing-core-ig)
+          # Update package.json name to match GitHub scope requirements (@clinical-quality-artifical-intelligence/open-nursing-core-ig)
           # We also ensure the version is valid semver (FHIR IGs usually use semver but sometimes X.Y.Z-draft)
-          jq '.name = "@clinyqai/open-nursing-core-ig" | .publishConfig = {"registry": "https://npm.pkg.github.com"}' package.json > package.json.tmp && mv package.json.tmp package.json
+          jq '.name = "@clinical-quality-artifical-intelligence/open-nursing-core-ig" | .publishConfig = {"registry": "https://npm.pkg.github.com"}' package.json > package.json.tmp && mv package.json.tmp package.json
 
           echo "Final package.json:"
           cat package.json
