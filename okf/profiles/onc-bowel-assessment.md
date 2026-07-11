@@ -4,7 +4,7 @@ title: "Bowel Assessment"
 description: "Detailed assessment of bowel function and regularity."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Bowel Assessment

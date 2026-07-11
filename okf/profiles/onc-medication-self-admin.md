@@ -4,7 +4,7 @@ title: "Medication Self-Administration Observation"
 description: "Observation of the patient performing self-administration."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Medication Self-Administration Observation

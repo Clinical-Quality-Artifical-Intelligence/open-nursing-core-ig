@@ -59,7 +59,7 @@ jobs:
     - name: Run IG Publisher
       run: |
         java -jar input-cache/publisher.jar -ig .
-        cp package-list.json output/package-list.json
+        cp publication/package-list.json output/package-list.json
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4

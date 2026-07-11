@@ -4,7 +4,7 @@ title: "Reasonable Adjustment"
 description: "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print')."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Reasonable Adjustment

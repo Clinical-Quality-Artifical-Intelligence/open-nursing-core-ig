@@ -4,7 +4,7 @@ title: "Fluid Balance"
 description: "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Fluid Balance
@@ -17,7 +17,6 @@ Assessment of fluid intake, output, and balance. Critical for renal function, hy
 
 | Path | Card. | Type | Notes |
 |------|-------|------|-------|
-| `Observation.code` |  |  |  |
 | `Observation.value[x]` | 1.. | Quantity | Net Fluid Balance (Input - Output) |
 | `Observation.value[x].unit` |  |  |  |
 | `Observation.value[x].system` |  |  |  |

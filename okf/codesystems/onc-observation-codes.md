@@ -4,7 +4,7 @@ title: "ONC Observation Codes"
 description: "Custom observation codes for Open Nursing Core"
 resource: "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
 tags: [fhir, nursing, codesystem]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # ONC Observation Codes

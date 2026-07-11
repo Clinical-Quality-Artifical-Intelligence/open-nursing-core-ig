@@ -88,6 +88,25 @@ Instruments for learning disability, mental health and older-person care.
 2. **Read the process guide** — start with [ADPIE](adpie.html) to understand how the profiles fit together.
 3. **Contribute** — the IG is open source under the MIT licence. Issues and pull requests are welcome on [GitHub](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig).
 
+## Dependencies and intellectual property
+
+This IG builds on the following specifications and terminologies:
+
+{% include dependency-table.xhtml %}
+
+### Cross-version analysis
+
+{% include cross-version-analysis.xhtml %}
+
+### Global profiles
+
+{% include globals-table.xhtml %}
+
+### Intellectual property statements
+
+{% include ip-statements.xhtml %}
+
+
 ---
 
 *The Open Nursing Core is maintained by the Open Nursing Community. This guide is a technical specification and does not replace professional clinical judgement; all clinical documentation must be verified by a registered nurse.*

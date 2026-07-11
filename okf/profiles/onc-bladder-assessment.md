@@ -4,7 +4,7 @@ title: "Bladder Assessment"
 description: "Detailed assessment of bladder function, including voiding patterns."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Bladder Assessment

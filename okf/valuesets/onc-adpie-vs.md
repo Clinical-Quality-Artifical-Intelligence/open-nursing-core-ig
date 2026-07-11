@@ -4,7 +4,7 @@ title: "ADPIE Nursing Process Phases"
 description: "The five phases of the professional nursing process."
 resource: "https://opennursingcoreig.com/ValueSet/onc-adpie-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # ADPIE Nursing Process Phases

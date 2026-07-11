@@ -23,6 +23,7 @@ Usage: #example
 Title: "Example Nursing Strength: Motivation"
 Description: "Demonstration of the ONCNursingStrength profile."
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(Patient/example-patient)
 * performer = Reference(Practitioner/example-nurse)
 * code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#nursing-strengths
@@ -38,6 +39,7 @@ Usage: #example
 Title: "Example Dressing Assessment"
 Description: "Demonstration of the ONCDressingAssessment profile."
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(Patient/example-patient)
 * performer = Reference(Practitioner/example-nurse)
 * code = http://snomed.info/sct#165235000 "Ability to dress"
@@ -53,6 +55,7 @@ Usage: #example
 Title: "Example Skin Assessment"
 Description: "Demonstration of the ONCSkinAssessment profile for general skin integrity."
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(Patient/example-patient)
 * performer = Reference(Practitioner/example-nurse)
 * code = http://snomed.info/sct#711041003 "Assessment of skin integrity"

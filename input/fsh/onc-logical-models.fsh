@@ -5,7 +5,7 @@
 // =============================================================================
 
 Logical: ONCRelationalCareModel
-Id: onc-relational-care-logical
+Id: ONCRelationalCareModel  // PascalCase: logical-model element paths derive from the id, and eld-20 requires simple alphanumerics
 Title: "Relational Care Logical Model"
 Description: "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR."
 * patientPreferences 1..1 string "The patient's personal goals and what matters most to them today."
@@ -30,6 +30,7 @@ ValueSet: ONCADPIEVS
 Id: onc-adpie-vs
 Title: "ADPIE Nursing Process Phases"
 Description: "The five phases of the professional nursing process."
+* ^experimental = false
 * ONCObservationCodes#adpie-a "Assessment"
 * ONCObservationCodes#adpie-d "Diagnosis"
 * ONCObservationCodes#adpie-p "Planning"

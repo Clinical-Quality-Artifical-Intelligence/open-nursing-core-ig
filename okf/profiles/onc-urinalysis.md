@@ -4,7 +4,7 @@ title: "Urinalysis"
 description: "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-urinalysis"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Urinalysis
@@ -17,7 +17,6 @@ Point-of-care urine dipstick test results. Used to screen for urinary tract infe
 
 | Path | Card. | Type | Notes |
 |------|-------|------|-------|
-| `Observation.code` |  |  |  |
 | `Observation.value[x]` | 1.. | string | Overall Interpretation (e.g. 'suggestive of UTI') |
 | `Observation.component` |  |  |  |
 | `Observation.component` | 0..1 |  |  |

@@ -5,6 +5,7 @@ Instance: example-what-matters
 InstanceOf: ONCWhatMattersToMe
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
@@ -15,6 +16,7 @@ Instance: example-patient-story
 InstanceOf: ONCPatientStory
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
@@ -27,6 +29,7 @@ Instance: example-clinical-frailty
 InstanceOf: ONCClinicalFrailtyScale
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -34,9 +37,11 @@ Usage: #example
 * note.text = "Mildly Frail - slowing up, needs help with high order IADLs"
 
 Instance: example-4at-delirium
+Description: "Worked example of a 4AT delirium screen conforming to ONC4ATDelirium."
 InstanceOf: ONC4ATDelirium
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -54,6 +59,7 @@ Instance: example-reasonable-adjustment
 InstanceOf: ONCReasonableAdjustment
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -63,6 +69,7 @@ Instance: example-mental-capacity
 InstanceOf: ONCMentalCapacity
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -76,6 +83,7 @@ Instance: example-bristol-stool
 InstanceOf: ONCBristolStoolChart
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -83,9 +91,11 @@ Usage: #example
 * valueQuantity.unit = "{score}"
 
 Instance: example-abbey-pain
+Description: "Worked example of an Abbey Pain Scale assessment conforming to ONCAbbeyPainScale."
 InstanceOf: ONCAbbeyPainScale
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -102,6 +112,7 @@ Instance: example-fluid-balance
 InstanceOf: ONCFluidBalance
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -119,6 +130,7 @@ Instance: example-abc-chart
 InstanceOf: ONCABCChart
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -132,6 +144,7 @@ Instance: example-oral-health
 InstanceOf: ONCOralHealth
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -146,6 +159,7 @@ Instance: example-seizure-record
 InstanceOf: ONCSeizureRecord
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
@@ -159,6 +173,7 @@ Instance: example-urinalysis
 InstanceOf: ONCUrinalysis
 Usage: #example
 * status = #final
+* effectiveDateTime = "2026-01-15T10:00:00Z"
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey

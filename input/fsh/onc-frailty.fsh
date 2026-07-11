@@ -26,6 +26,7 @@ ValueSet: ClinicalFrailtyScaleVS
 Id: onc-cfs-vs
 Title: "Clinical Frailty Scale Value Set"
 Description: "Codes for Rockwood Clinical Frailty Scale (1-9)"
+* ^experimental = false
 * include ONCObservationCodes#cfs-1
 * include ONCObservationCodes#cfs-2
 * include ONCObservationCodes#cfs-3

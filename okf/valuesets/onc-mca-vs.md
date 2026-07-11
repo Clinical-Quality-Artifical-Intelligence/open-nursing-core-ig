@@ -4,7 +4,7 @@ title: "Mental Capacity Finding Value Set"
 description: "Codes indicating presence or absence of capacity"
 resource: "https://opennursingcoreig.com/ValueSet/onc-mca-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Mental Capacity Finding Value Set

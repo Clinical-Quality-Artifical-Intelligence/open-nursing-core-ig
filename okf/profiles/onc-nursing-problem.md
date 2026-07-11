@@ -4,7 +4,7 @@ title: "Nursing Problem"
 description: "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Nursing Problem

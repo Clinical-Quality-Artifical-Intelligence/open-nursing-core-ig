@@ -4,7 +4,7 @@ title: "NEWS2 Sub-Score Codes"
 description: "SNOMED codes for NEWS2 sub-scores"
 resource: "https://opennursingcoreig.com/ValueSet/news2-subscore-code-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # NEWS2 Sub-Score Codes

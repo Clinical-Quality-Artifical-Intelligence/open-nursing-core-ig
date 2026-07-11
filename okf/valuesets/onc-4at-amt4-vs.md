@@ -4,7 +4,7 @@ title: "4AT AMT4 Value Set"
 description: "Scoring options for AMT4 (Age, DOB, Place, Year)"
 resource: "https://opennursingcoreig.com/ValueSet/onc-4at-amt4-vs"
 tags: [fhir, nursing, valueset]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # 4AT AMT4 Value Set

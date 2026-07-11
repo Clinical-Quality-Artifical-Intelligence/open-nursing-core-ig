@@ -4,7 +4,7 @@ title: "Intervention Goal Reference"
 description: "Extension to link nursing interventions to the patient goals they are intended to achieve."
 resource: "https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference"
 tags: [fhir, nursing, extension]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Intervention Goal Reference

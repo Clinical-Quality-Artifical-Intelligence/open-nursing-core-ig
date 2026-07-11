@@ -4,7 +4,7 @@ title: "NEWS2 (National Early Warning Score 2)"
 description: "SDC questionnaire for capturing the NEWS2 physiological parameter set and total score. Coded items extract to Observations conforming to the ONC NEWS2 and vital-sign profiles. Scoring and escalation logic is computable via the ONC_NEWS2_Logic CQL library and the news2-escalation PlanDefinition."
 resource: "https://opennursingcoreig.com/Questionnaire/onc-news2-questionnaire"
 tags: [fhir, nursing, questionnaire]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # NEWS2 (National Early Warning Score 2)

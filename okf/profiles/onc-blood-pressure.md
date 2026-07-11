@@ -4,7 +4,7 @@ title: "Blood Pressure"
 description: "Blood pressure observation for NEWS2 (systolic BP used for scoring)"
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # Blood Pressure

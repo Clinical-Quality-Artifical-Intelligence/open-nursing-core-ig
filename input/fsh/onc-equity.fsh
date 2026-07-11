@@ -28,6 +28,9 @@ Description: "Observation of patient skin tone using the Fitzpatrick skin type c
 CodeSystem: ONCMonkScale
 Id: onc-monk-scale
 Title: "Monk Skin Tone Scale CodeSystem"
+Description: "The ten-point (A-J) Monk Skin Tone Scale, the IG's primary vocabulary for equitable skin-tone assessment."
+* ^experimental = false
+* ^caseSensitive = true
 * #A "Light Skin"
 * #B "Light-Medium Skin"
 * #C "Medium Skin"
@@ -43,6 +46,8 @@ CodeSystem: ONCObservationCodes
 Id: onc-observation-codes
 Title: "ONC Observation Codes"
 Description: "Custom observation codes for Open Nursing Core"
+* ^experimental = false
+* ^caseSensitive = true
 * ^url = "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
 * #mst-score "Monk Skin Tone Score" "Assessment of skin tone using the Monk Skin Tone Scale"
 * #waterlow-score "Waterlow Score" "Total score for Waterlow pressure ulcer risk assessment"
@@ -216,6 +221,8 @@ Description: "Custom observation codes for Open Nursing Core"
 ValueSet: ONCMonkScaleVS
 Id: onc-monk-scale-vs
 Title: "Monk Skin Tone Scale ValueSet"
+Description: "ValueSet for ONCMonkScaleVS used by the Open Nursing Core IG."
+* ^experimental = false
 * include codes from system ONCMonkScale
 
 Profile: ONCMonkSkinToneObservation

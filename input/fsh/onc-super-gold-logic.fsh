@@ -11,6 +11,7 @@ ValueSet: ONCEmpathyIndexVS
 Id: onc-empathy-index-vs
 Title: "ONC Empathy & Relational Engagement Index"
 Description: "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome."
+* ^experimental = false
 * ONCObservationCodes#empathy-1 "Low Empathy: Task-focused interaction with minimal person-centred engagement."
 * ONCObservationCodes#empathy-2 "Basic Empathy: Professional interaction with patient identity acknowledged."
 * ONCObservationCodes#empathy-3 "Moderate Empathy: Active relational engagement with shared decision making."
@@ -32,6 +33,7 @@ ValueSet: ONCRelationalOutcomesVS
 Id: onc-relational-outcomes-vs
 Title: "ONC Relational Care Outcomes"
 Description: "Captures the measurable outcomes of relational and empathic nursing care."
+* ^experimental = false
 * http://snomed.info/sct#161096001 "Patient feels respected"
 * http://snomed.info/sct#307823004 "Patient feels heard"
 * http://snomed.info/sct#428131006 "Therapeutic relationship established"

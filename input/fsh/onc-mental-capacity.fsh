@@ -24,6 +24,7 @@ ValueSet: MentalCapacityVS
 Id: onc-mca-vs
 Title: "Mental Capacity Finding Value Set"
 Description: "Codes indicating presence or absence of capacity"
+* ^experimental = false
 * ONCObservationCodes#capacity-present "Capacity Present"
 * ONCObservationCodes#capacity-absent "Capacity Absent"
 * ONCObservationCodes#best-interest "Best Interest Decision Required"

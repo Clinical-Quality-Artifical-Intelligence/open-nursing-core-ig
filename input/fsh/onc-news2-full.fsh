@@ -30,6 +30,7 @@ ValueSet: NEWS2CodeValueSet
 Id: news2-code-vs
 Title: "NEWS2 Code Value Set"
 Description: "LOINC and SNOMED codes for NEWS2"
+* ^experimental = false
 * include ONCObservationCodes#news2-score
 
 // -----------------------------------------------------------------------------
@@ -59,6 +60,7 @@ ValueSet: NEWS2SubscoreCodeValueSet
 Id: news2-subscore-code-vs
 Title: "NEWS2 Sub-Score Codes"
 Description: "SNOMED codes for NEWS2 sub-scores"
+* ^experimental = false
 * include ONCObservationCodes#news2-subscore
 
 // -----------------------------------------------------------------------------
@@ -142,6 +144,7 @@ ValueSet: ACVPUValueSet
 Id: acvpu-vs
 Title: "ACVPU Value Set"
 Description: "ACVPU consciousness level codes"
+* ^experimental = false
 * http://snomed.info/sct#248234008 "Mentally alert"
 * http://snomed.info/sct#300202002 "Responds to voice"
 * http://snomed.info/sct#450847001 "Responds to pain"
@@ -163,5 +166,6 @@ ValueSet: InspiredOxygenValueSet
 Id: inspired-oxygen-vs
 Title: "Inspired Oxygen Value Set"
 Description: "Codes for inspired oxygen status"
+* ^experimental = false
 * http://snomed.info/sct#722742002 "Breathing room air"
 * http://snomed.info/sct#371825009 "Patient on oxygen"

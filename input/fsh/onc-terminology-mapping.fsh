@@ -3,6 +3,15 @@
 // This file maps custom ONC concepts to international nursing terminologies.
 // =============================================================================
 
+ValueSet: ONCRelationalFindingsVS
+Id: onc-relational-findings-vs
+Title: "ONC Relational Findings"
+Description: "The relational-care findings that the onc-to-nanda ConceptMap maps to formal nursing diagnoses."
+* ^experimental = false
+* ONCObservationCodes#patient-story "Patient Story"
+* ONCObservationCodes#relational-engagement "Relational Engagement Score"
+* ONCObservationCodes#mst-score "Monk Skin Tone Score"
+
 Instance: onc-to-nanda
 InstanceOf: ConceptMap
 Usage: #definition
@@ -37,7 +46,7 @@ Usage: #definition
 * group[0].element[1].target[0].equivalence = #relatedto
 
 // Map: Skin Assessment finding -> SNOMED concepts for Equity
-* group[0].element[2].code = #skintone-observation
+* group[0].element[2].code = #mst-score
 * group[0].element[2].target[0].code = #399912005
 * group[0].element[2].target[0].display = "Wound Assessment" 
 * group[0].element[2].target[0].equivalence = #specializes

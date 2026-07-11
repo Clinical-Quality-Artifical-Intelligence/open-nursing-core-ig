@@ -4,7 +4,7 @@ title: "qSOFA (Quick SOFA)"
 description: "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3."
 resource: "https://opennursingcoreig.com/StructureDefinition/onc-qsofa"
 tags: [fhir, nursing, profile]
-timestamp: 2026-07-11T09:01:38Z
+timestamp: 2026-07-11T13:58:05Z
 ---
 
 # qSOFA (Quick SOFA)
