@@ -104,6 +104,17 @@ jobs:
             if (views) fs.writeFileSync(`${dir}/views-badge.json`,
               badge('views (total)', `${views.totalC} · ${views.totalU} unique`));
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Render trend charts
+        run: |
+          pip install --quiet matplotlib
+          git show origin/main:.github/scripts/render_traffic_charts.py > /tmp/render_traffic_charts.py
+          python3 /tmp/render_traffic_charts.py
+
       - name: Commit updated stats to traffic-data
         run: |
           git config user.name "github-actions[bot]"

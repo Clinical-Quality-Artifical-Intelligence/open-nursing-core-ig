@@ -189,7 +189,14 @@ We welcome contributions from nurses, developers, clinical informaticians and re
 
 ## 📈 Repository traffic
 
-Clone and view counts are snapshotted weekly (GitHub only keeps 14 days) and stored in [`traffic/`](traffic/) with the badges shown at the top of this page. See [traffic/README.md](traffic/README.md) for the full history and CSVs.
+Clone and view counts are snapshotted weekly (GitHub only keeps 14 days) and stored in [`traffic/`](traffic/) with the badges shown at the top of this page. Charts below are regenerated on every snapshot. See [traffic/README.md](traffic/README.md) for the full history and CSVs.
+
+<div align="center">
+
+![Daily repository clones](https://raw.githubusercontent.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/traffic-data/traffic/clones.png)
+![Daily page views](https://raw.githubusercontent.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/traffic-data/traffic/views.png)
+
+</div>
 
 ---
 

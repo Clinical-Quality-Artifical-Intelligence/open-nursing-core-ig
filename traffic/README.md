@@ -26,8 +26,10 @@ and the README badges point at that branch's raw URLs.
 | `views.csv` | `date, count, uniques` — daily page-view counts |
 | `clones-badge.json` | [shields.io endpoint](https://shields.io/endpoint) badge data (cumulative) |
 | `views-badge.json` | shields.io endpoint badge data (cumulative) |
+| `clones.png` | Line chart of `clones.csv`, rendered by [`render_traffic_charts.py`](../.github/scripts/render_traffic_charts.py); embedded in the main [README](../README.md) |
+| `views.png` | Line chart of `views.csv`, same script |
 
-The CSVs are the source of truth if you want to chart the data over time.
+The CSVs are the source of truth if you want to chart the data yourself — the PNGs are just a rendering of them, regenerated on every snapshot.
 
 ## Required setup: `TRAFFIC_PAT` secret
 
