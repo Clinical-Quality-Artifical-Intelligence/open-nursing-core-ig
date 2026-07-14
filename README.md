@@ -1,6 +1,6 @@
 <div align="center">
 
-![Open Nursing Core Banner](assets/onc_project_banner.png)
+![Open Nursing Core logo — a nurse held within open care arcs and structured-data nodes](assets/open-nursing-core-logo.png)
 
 # 🌍 Open Nursing Core (ONC)
 
