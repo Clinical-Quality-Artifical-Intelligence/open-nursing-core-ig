@@ -28,7 +28,10 @@
 
 **[📖 Read the Implementation Guide](https://opennursingcoreig.com)** ·
 **[🚀 Try the Live Demo](https://huggingface.co/spaces/NurseCitizenDeveloper/relational-ai-4-nursing)** ·
-**[🤝 Contribute](CONTRIBUTING.md)**
+**[🤝 Contribute](CONTRIBUTING.md)** ·
+**[⭐ Star this repo](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/stargazers)**
+
+*If ONC is useful to your work, starring it helps other nurses and health-tech teams find it — that's the whole point of building this in the open.*
 
 </div>
 
@@ -190,6 +193,8 @@ We welcome contributions from nurses, developers, clinical informaticians and re
 ## 📈 Repository traffic
 
 Clone and view counts are snapshotted weekly (GitHub only keeps 14 days) and stored in [`traffic/`](traffic/) with the badges shown at the top of this page. Charts below are regenerated on every snapshot. See [traffic/README.md](traffic/README.md) for the full history and CSVs.
+
+> **Note on clone counts.** GitHub's Traffic API counts every `git clone`/`checkout` operation, including this repository's own CI workflows (CodeQL, PR validation, Hugging Face sync). A burst of pull requests or pushes will show up as a clone spike even with no new external interest — visible in the chart below around a period of heavy CI activity. Treat the trend as a proxy for repository activity, not a clean count of distinct external users; [stars](https://github.com/Clinical-Quality-Artifical-Intelligence/open-nursing-core-ig/stargazers) are a more reliable adoption signal.
 
 <div align="center">
 
