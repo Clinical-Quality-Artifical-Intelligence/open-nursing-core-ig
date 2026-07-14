@@ -323,7 +323,7 @@ class FHIRAPIClient:
             )
 
             if response.status_code in [200, 204]:
-                logger.info(f"Updated care plan: {care_plan_id}")
+                safe_log_info(logger, f"Updated care plan: {mask_identifier(care_plan_id)}")
                 return True
             else:
                 logger.warning(
