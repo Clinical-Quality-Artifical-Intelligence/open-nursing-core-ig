@@ -80,10 +80,7 @@ def verify_password(password: str, stored_hash: str) -> bool:
     """
     Verify a candidate password against a stored hash in constant time.
 
-    Supports modern bcrypt hashes (prefix ``$2``) and, for backward
-    compatibility with databases seeded before the bcrypt migration, legacy
-    unsalted SHA-256 hex digests. Legacy verifications are logged so operators
-    can re-hash affected accounts.
+    Only bcrypt hashes (prefix ``$2``) are accepted.
     """
     if not password or not stored_hash:
         return False
@@ -98,14 +95,7 @@ def verify_password(password: str, stored_hash: str) -> bool:
             logger.warning("Malformed bcrypt hash encountered during verification")
             return False
 
-    # Legacy unsalted SHA-256 fallback (deprecated) - constant-time compare.
-    legacy = hashlib.sha256(password.encode("utf-8")).hexdigest()
-    if hmac.compare_digest(legacy, stored_hash):
-        logger.warning(
-            "Authenticated user via legacy SHA-256 hash; "
-            "this account should be re-hashed with bcrypt."
-        )
-        return True
+    logger.warning("Rejected non-bcrypt password hash during verification")
     return False
 
 def get_default_users() -> Dict[str, Dict[str, str]]:
