@@ -24,7 +24,7 @@ pydantic>=2.6,<2.10
 # Backport of the stdlib audioop module removed in Python 3.13 (PEP 594);
 # gradio 4.x -> pydub needs it. No-op on the pinned 3.11 runtime, protective
 # if the python_version pin is ever lifted.
-audioop-lts>=0.2.1; python_version >= "3.13"
+audioop-lts>=0.2.2; python_version >= "3.13"
 torch>=2.4
 transformers>=4.45,<5
 accelerate>=0.30
